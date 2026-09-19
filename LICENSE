@@ -1,0 +1,34 @@
+# Licensing
+
+Granada Histórica uses separate licenses for software and content.
+
+## Software
+
+Unless a file states otherwise, original source code, build configuration,
+scripts, and software tests are licensed under the MIT License. See
+`LICENSE-CODE`.
+
+SPDX-License-Identifier: MIT
+
+## Data and documentation
+
+Unless a file states otherwise, original project data and documentation are
+licensed under the Creative Commons Attribution 4.0 International License.
+See `LICENSE-DATA`.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+Suggested attribution:
+
+> Granada Histórica contributors, "Granada Histórica", CC BY 4.0.
+
+## Third-party material
+
+These licenses do not apply to third-party material. Source images, historical
+maps, extracts, externally supplied datasets, and other third-party works remain
+subject to their own copyright and license terms. Inclusion in a bibliography
+or source registry does not grant permission to reproduce the underlying work.
+
+Files containing third-party material must identify their provenance and terms.
+Material with unknown or incompatible reuse rights must not be committed to the
+public repository.

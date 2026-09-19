@@ -1,0 +1,29 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+.vite/
+
+# Local environment
+.env
+.env.local
+.env.*.local
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local GIS and research material with unverified or restricted reuse rights
+research-local/
+gis/research-local/
+gis/scans/
+*.qgz~
+*.qgs~
+
+# QGIS sidecars and generated working files
+*.aux.xml
+*.ovr
+*.qgd
+*.qmd
