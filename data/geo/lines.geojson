@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "water.darro",
+      "properties": {
+        "id": "water.darro",
+        "name": "Río Darro",
+        "historical_name": null,
+        "modern_name": "Río Darro",
+        "aliases": ["Darro"],
+        "modern_search_terms": ["Carrera del Darro", "Paseo de los Tristes", "Plaza Nueva"],
+        "category": "water_infrastructure",
+        "subtype": "river",
+        "period": {
+          "from_year": null,
+          "to_year": null,
+          "from_precision": "unknown",
+          "to_precision": "unknown",
+          "note": "Curso natural anterior a la ciudad; se representa por su importancia en la Granada medieval y nazarí."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": ["documentary", "later_description"],
+        "summary": "Eje fluvial de la ciudad histórica y una de las bases de su abastecimiento y paisaje urbano.",
+        "context_1492": "El Darro articulaba el valle entre la Alhambra y el Albaicín. Junto con el Genil y el Beiro, abastecía la ciudad y alimentaba un sistema de acequias e infraestructuras hidráulicas ampliado durante los periodos zirí y nazarí.",
+        "after_1492": "La relación urbana con el río fue transformándose y parte de su recorrido central quedó cubierta. El tramo junto a la Carrera del Darro mantuvo su presencia visible y la conexión entre ambas laderas mediante puentes.",
+        "today": "El río sigue visible entre el Paseo de los Tristes y la Carrera del Darro, antes de quedar soterrado bajo el centro de la ciudad. La línea mostrada es una simplificación cartográfica del corredor fluvial.",
+        "evidence_note": "La existencia y el corredor general son seguros. Esta línea se ha generalizado para el prototipo y no debe utilizarse como deslinde hidráulico ni como reconstrucción centimétrica del cauce de 1492.",
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": ["source.granada-water-culture", "source.granada-carrera-darro"],
+        "citations": [
+          {
+            "source_id": "source.granada-water-culture",
+            "locator": "Apartado 5.2, «Red hidráulica medieval»",
+            "supports": "Función del Darro en el abastecimiento y relación con la red hidráulica medieval."
+          },
+          {
+            "source_id": "source.granada-carrera-darro",
+            "locator": "Descripción de la Carrera del Darro",
+            "supports": "Curso visible actual, puentes y relación espacial entre la Alhambra y el Albaicín."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-3.57484, 37.18112],
+          [-3.57736, 37.18038],
+          [-3.58021, 37.17954],
+          [-3.58275, 37.17872],
+          [-3.58537, 37.17814],
+          [-3.58782, 37.17791],
+          [-3.59018, 37.17774],
+          [-3.59212, 37.17758],
+          [-3.59407, 37.17739],
+          [-3.59554, 37.17716],
+          [-3.59673, 37.17686],
+          [-3.59762, 37.17653]
+        ]
+      }
+    }
+  ]
+}

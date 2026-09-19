@@ -1,0 +1,51 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "religious.madraza-yusufiyya",
+      "properties": {
+        "id": "religious.madraza-yusufiyya",
+        "name": "Madraza Yusufiyya",
+        "historical_name": "Madrasa Yusufiyya",
+        "modern_name": "Palacio de la Madraza",
+        "aliases": ["Madraza de Granada", "Madrasa Nasriyya"],
+        "modern_search_terms": ["Calle Oficios", "Capilla Real", "Catedral"],
+        "category": "religion_learning",
+        "subtype": "madrasa",
+        "period": {
+          "from_year": 1349,
+          "to_year": null,
+          "from_precision": "exact",
+          "to_precision": "unknown",
+          "note": "La institución fue inaugurada en 1349 y seguía activa al final del periodo nazarí."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "secure"
+        },
+        "evidence_basis": ["surviving_fabric", "documentary", "archaeology"],
+        "summary": "Centro de altos estudios fundado por Yusuf I y única madrasa estatal conocida de al-Ándalus.",
+        "context_1492": "En torno a 1492 la Madraza formaba parte del centro religioso e institucional de la medina. Su programa combinaba disciplinas jurídico-religiosas con lengua árabe, astronomía, cálculo y geometría, y contaba con biblioteca y financiación propia.",
+        "after_1492": "Tras la conquista mantuvo durante un tiempo funciones docentes bajo el arzobispo fray Hernando de Talavera. En 1500 el edificio pasó a ser sede del Cabildo de Granada y fue transformándose durante la Edad Moderna.",
+        "today": "El Palacio de la Madraza, propiedad de la Universidad de Granada, conserva el oratorio nazarí y otros restos materiales del edificio medieval. El punto señala el inmueble actual, no la huella completa de 1492.",
+        "evidence_note": "La ubicación es segura por la conservación del edificio y de parte de su fábrica nazarí. El marcador representa una localización de referencia y no una reconstrucción de su planta medieval.",
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": ["source.ugr-madraza"],
+        "citations": [
+          {
+            "source_id": "source.ugr-madraza",
+            "locator": "Apartados «Sobre el Palacio» e «Información ampliada»",
+            "supports": "Fundación en 1349, función docente, localización y transformaciones posteriores."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.59876, 37.17589]
+      }
+    }
+  ]
+}

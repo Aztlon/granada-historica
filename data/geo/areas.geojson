@@ -1,0 +1,71 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "royal.alhambra",
+      "properties": {
+        "id": "royal.alhambra",
+        "name": "Alhambra",
+        "historical_name": null,
+        "modern_name": "Conjunto Monumental de la Alhambra y el Generalife",
+        "aliases": ["Ciudad palatina de la Alhambra", "Ciudadela de la Alhambra"],
+        "modern_search_terms": ["Palacios Nazaríes", "Alcazaba", "Sabika"],
+        "category": "royal_elite",
+        "subtype": "palatine_city",
+        "period": {
+          "from_year": 1238,
+          "to_year": null,
+          "from_precision": "year",
+          "to_precision": "unknown",
+          "note": "La ciudad palatina fue fundada en época nazarí y continuó transformándose después de 1492. El área representa de forma generalizada su configuración en torno a esa fecha, no todas sus dependencias históricas ni el conjunto protegido actual."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": ["surviving_fabric", "archaeology", "documentary", "scholarly_reconstruction"],
+        "summary": "Ciudad palatina, fortaleza y sede de la corte nazarí sobre la colina de la Sabika.",
+        "context_1492": "La Alhambra reunía palacios, espacios administrativos, viviendas, talleres, mezquita, baños, sistemas de agua y una alcazaba militar. Su estructura respondía al servicio de la corte y había evolucionado durante más de dos siglos antes de la conquista.",
+        "after_1492": "Tras la conquista quedó establecida como Casa Real cristiana. Las reparaciones de los Reyes Católicos y, más tarde, la construcción del palacio de Carlos V y otros cambios alteraron partes del conjunto sin borrar su extensa fábrica nazarí.",
+        "today": "Es un conjunto monumental gestionado por el Patronato de la Alhambra y Generalife. El área de este mapa sirve para situar la ciudad palatina respecto a Granada y no equivale a un perímetro arqueológico o administrativo.",
+        "evidence_note": "La localización y la existencia en 1492 son seguras por la arquitectura conservada, la arqueología y la documentación. La geometría se dibuja como una envolvente aproximada para evitar atribuir precisión histórica a un primer prototipo.",
+        "geometry_method": "approximate_area",
+        "geometry_source_refs": ["source.alhambra-history", "source.alhambra-urban-structure"],
+        "citations": [
+          {
+            "source_id": "source.alhambra-history",
+            "locator": "Apartado «Siglo XIII-XV»",
+            "supports": "Cronología, funciones palatinas y evolución hasta la conquista de finales del siglo XV."
+          },
+          {
+            "source_id": "source.alhambra-urban-structure",
+            "locator": "Introducción y descripción de la Alcazaba y el área palacial",
+            "supports": "Carácter de ciudad palatina y organización urbana al servicio de la corte."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.59415, 37.17725],
+            [-3.59278, 37.17817],
+            [-3.58988, 37.17891],
+            [-3.58617, 37.17886],
+            [-3.58235, 37.17813],
+            [-3.57942, 37.17673],
+            [-3.58011, 37.17458],
+            [-3.58348, 37.17334],
+            [-3.58762, 37.17345],
+            [-3.59122, 37.17438],
+            [-3.59365, 37.17569],
+            [-3.59415, 37.17725]
+          ]
+        ]
+      }
+    }
+  ]
+}

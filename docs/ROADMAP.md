@@ -24,19 +24,18 @@ review.
 4. [x] Add the period badge, layer-control shell, and feature-drawer shell.
 5. [x] Add GitHub Actions for CI and GitHub Pages deployment.
 6. [x] Verify the local production UI in desktop and mobile viewports.
-7. [ ] Verify the deployed public URL after the first push to `main` and enable
-   GitHub Actions as the Pages source if the repository has not used it before.
+7. [x] Verify the deployed public URL after the first push to `main`.
 
 Exit gate: a public URL loads an interactive Granada map.
 
 ## M2 — Historical data system
 
-1. Define the shared TypeScript/Zod feature and source schemas.
-2. Add canonical point, line, and area GeoJSON plus the source registry.
-3. Validate IDs, enums, citations, coordinates, and publishability rules.
-4. Add category and confidence styling, including non-color distinctions.
-5. Add selection, detail content, evidence notes, and citations.
-6. Add one reviewed point, line, area, and approximate feature.
+1. [x] Define the shared TypeScript/Zod feature and source schemas.
+2. [x] Add canonical point, line, and area GeoJSON plus the source registry.
+3. [x] Validate IDs, enums, citations, coordinates, and publishability rules.
+4. [x] Add category and confidence styling, including non-color distinctions.
+5. [x] Add selection, detail content, evidence notes, and citations.
+6. [x] Add reviewed point, line, area, and approximate geometry examples.
 
 Exit gate: a valid GeoJSON feature becomes explorable without application-code
 changes.

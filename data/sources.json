@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source.alhambra-history",
+    "author": "Patronato de la Alhambra y Generalife",
+    "title": "Historia de la Alhambra y el Generalife",
+    "year": null,
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "type": "institutional_webpage",
+    "url": "https://www.alhambra-patronato.es/descubrir/alhambra-y-generalife/historia",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes ni planimetría.",
+    "notes": "Síntesis institucional sobre el desarrollo y las funciones de la ciudad palatina nazarí."
+  },
+  {
+    "id": "source.alhambra-urban-structure",
+    "author": "Patronato de la Alhambra y Generalife",
+    "title": "Estructura urbana",
+    "year": null,
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "type": "institutional_webpage",
+    "url": "https://www.alhambra-patronato.es/edificios-lugares/estructura-urbana",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes ni planimetría.",
+    "notes": "Describe la Alhambra nazarí como ciudad palatina y su organización urbana."
+  },
+  {
+    "id": "source.ugr-madraza",
+    "author": "Universidad de Granada",
+    "title": "Sobre el Palacio de la Madraza",
+    "year": null,
+    "publisher": "Universidad de Granada",
+    "type": "institutional_webpage",
+    "url": "https://lamadraza.ugr.es/sede/palacio-de-la-madraza/sobre-el-palacio-de-la-madraza/",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes ni recursos audiovisuales.",
+    "notes": "Historia institucional del edificio, su fundación nazarí y sus transformaciones posteriores."
+  },
+  {
+    "id": "source.granada-water-culture",
+    "author": "Ayuntamiento de Granada",
+    "title": "Granada: hacia una nueva cultura del agua",
+    "year": 2007,
+    "publisher": "Ayuntamiento de Granada",
+    "type": "institutional_report",
+    "url": "https://www.granada.org/inet/wambiente.nsf/c99b2e22b1abca6cc125788b0036163e/7a38b8a0d392c10ac12576f60037e94c/$FILE/Granada%20hacia%20una%20nueva%20cultura%20del%20agua.pdf",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproduce la publicación.",
+    "notes": "El apartado 5.2 resume la función de los ríos y acequias en la red hidráulica medieval."
+  },
+  {
+    "id": "source.granada-carrera-darro",
+    "author": "Ayuntamiento de Granada",
+    "title": "Carrera del Darro",
+    "year": null,
+    "publisher": "Turismo de Granada",
+    "type": "institutional_webpage",
+    "url": "https://turismo.granada.org/es/monumento/calle-emblematica/carrera-del-darro",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Referencia municipal sobre el curso visible del Darro, sus puentes y su relación con la Carrera del Darro."
+  }
+]

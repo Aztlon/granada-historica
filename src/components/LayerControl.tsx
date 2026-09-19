@@ -1,10 +1,35 @@
+import type { CSSProperties } from 'react'
+import { CATEGORY_CONFIG, CONFIDENCE_LABELS } from '../data/categories'
+import type { Confidence, FeatureCategory } from '../data/schema'
+
 interface LayerControlProps {
   isOpen: boolean
+  historicalVisible: boolean
+  visibleCategories: ReadonlySet<FeatureCategory>
+  categoryCounts: Record<FeatureCategory, number>
   onToggle: () => void
   onClose: () => void
+  onToggleHistorical: () => void
+  onToggleCategory: (category: FeatureCategory) => void
 }
 
-export function LayerControl({ isOpen, onToggle, onClose }: LayerControlProps) {
+const confidenceOrder: Confidence[] = [
+  'secure',
+  'probable',
+  'approximate',
+  'disputed',
+]
+
+export function LayerControl({
+  isOpen,
+  historicalVisible,
+  visibleCategories,
+  categoryCounts,
+  onToggle,
+  onClose,
+  onToggleHistorical,
+  onToggleCategory,
+}: LayerControlProps) {
   return (
     <div className="layer-control">
       <button
@@ -50,17 +75,62 @@ export function LayerControl({ isOpen, onToggle, onClose }: LayerControlProps) {
             />
           </label>
 
-          <div className="layer-row layer-row--disabled" aria-disabled="true">
+          <label className="layer-row">
             <span>
               <strong>Superposición histórica</strong>
-              <small>Los datos revisados empiezan en M2</small>
+              <small>{historicalVisible ? 'Visible' : 'Oculta'}</small>
             </span>
-            <span className="coming-soon">Próximamente</span>
-          </div>
+            <input
+              type="checkbox"
+              checked={historicalVisible}
+              aria-label="Superposición histórica"
+              onChange={onToggleHistorical}
+            />
+          </label>
 
-          <div className="layer-placeholder" role="note">
-            Las murallas, puertas, cursos de agua, barrios y lugares aparecerán
-            aquí únicamente cuando sus fuentes y geometrías hayan sido revisadas.
+          <fieldset className="category-filters" disabled={!historicalVisible}>
+            <legend>Categorías</legend>
+            {(Object.entries(CATEGORY_CONFIG) as [
+              FeatureCategory,
+              (typeof CATEGORY_CONFIG)[FeatureCategory],
+            ][]).map(([category, config]) => {
+              const count = categoryCounts[category]
+              return (
+                <label
+                  key={category}
+                  className={`category-row ${count === 0 ? 'category-row--empty' : ''}`}
+                >
+                  <span
+                    className="category-swatch"
+                    style={{ '--category-color': config.color } as CSSProperties}
+                    aria-hidden="true"
+                  />
+                  <span className="category-row__label">{config.shortLabel}</span>
+                  <span className="category-count" aria-label={`${count} elementos`}>
+                    {count}
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked={visibleCategories.has(category)}
+                    disabled={count === 0}
+                    aria-label={config.label}
+                    onChange={() => onToggleCategory(category)}
+                  />
+                </label>
+              )
+            })}
+          </fieldset>
+
+          <div className="confidence-legend">
+            <p>Certeza de localización</p>
+            <div className="confidence-legend__items">
+              {confidenceOrder.map((confidence) => (
+                <span key={confidence}>
+                  <i className={`confidence-mark confidence-mark--${confidence}`} />
+                  {CONFIDENCE_LABELS[confidence]}
+                </span>
+              ))}
+            </div>
           </div>
         </section>
       )}
