@@ -4,6 +4,37 @@ import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url'
 
 const GRANADA_CENTER: [number, number] = [-3.5986, 37.1773]
 const DEFAULT_STYLE = 'https://tiles.openfreemap.org/styles/liberty'
+const MAP_LOCALE = {
+  'AttributionControl.ToggleAttribution': 'Mostrar u ocultar la atribución',
+  'AttributionControl.MapFeedback': 'Enviar comentarios sobre el mapa',
+  'FullscreenControl.Enter': 'Ver a pantalla completa',
+  'FullscreenControl.Exit': 'Salir de pantalla completa',
+  'GeolocateControl.FindMyLocation': 'Mostrar mi ubicación',
+  'GeolocateControl.LocationNotAvailable': 'Ubicación no disponible',
+  'LogoControl.Title': 'Logotipo de MapLibre',
+  'Map.Title': 'Mapa',
+  'Marker.Title': 'Marcador del mapa',
+  'NavigationControl.ResetBearing':
+    'Arrastra para girar el mapa; pulsa para orientar el norte',
+  'NavigationControl.ZoomIn': 'Acercar',
+  'NavigationControl.ZoomOut': 'Alejar',
+  'Popup.Close': 'Cerrar ventana emergente',
+  'ScaleControl.Feet': 'pies',
+  'ScaleControl.Meters': 'm',
+  'ScaleControl.Kilometers': 'km',
+  'ScaleControl.Miles': 'mi',
+  'ScaleControl.NauticalMiles': 'mn',
+  'GlobeControl.Enable': 'Activar el globo',
+  'GlobeControl.Disable': 'Desactivar el globo',
+  'TerrainControl.Enable': 'Activar el relieve',
+  'TerrainControl.Disable': 'Desactivar el relieve',
+  'CooperativeGesturesHandler.WindowsHelpText':
+    'Usa Ctrl y la rueda del ratón para acercar o alejar el mapa',
+  'CooperativeGesturesHandler.MacHelpText':
+    'Usa ⌘ y la rueda del ratón para acercar o alejar el mapa',
+  'CooperativeGesturesHandler.MobileHelpText':
+    'Usa dos dedos para mover el mapa',
+}
 
 setWorkerUrl(workerUrl)
 
@@ -22,6 +53,7 @@ export function MapView() {
       minZoom: 10,
       maxZoom: 19,
       cooperativeGestures: true,
+      locale: MAP_LOCALE,
     })
 
     map.addControl(new NavigationControl({ showCompass: false }), 'bottom-right')
@@ -40,21 +72,21 @@ export function MapView() {
         id="map-canvas"
         className="map-canvas"
         role="region"
-        aria-label="Interactive modern map of central Granada"
+        aria-label="Mapa moderno interactivo del centro de Granada"
         tabIndex={0}
       />
 
       {status === 'loading' && (
         <div className="map-status" role="status">
           <span className="map-status__spinner" aria-hidden="true" />
-          Loading Granada…
+          Cargando Granada…
         </div>
       )}
 
       {status === 'error' && (
         <div className="map-status map-status--error" role="alert">
-          <strong>The basemap could not be loaded.</strong>
-          <span>Check the map style URL or your network connection.</span>
+          <strong>No se ha podido cargar el mapa base.</strong>
+          <span>Comprueba la URL del estilo o la conexión a internet.</span>
         </div>
       )}
     </div>

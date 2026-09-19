@@ -36,7 +36,7 @@ export function Header({ onOpenInfo }: HeaderProps) {
       <div className="brand-lockup" aria-label="Granada Histórica">
         <PomegranateMark />
         <div>
-          <p className="brand-kicker">An atlas of the city beneath the city</p>
+          <p className="brand-kicker">Un atlas de la ciudad bajo la ciudad</p>
           <h1>Granada Histórica</h1>
         </div>
       </div>
@@ -46,20 +46,20 @@ export function Header({ onOpenInfo }: HeaderProps) {
           <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
             <path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" />
           </svg>
-          <span className="sr-only">Search historical Granada</span>
+          <span className="sr-only">Buscar en la Granada histórica</span>
           <input
             type="search"
-            placeholder="Search arrives in M5"
+            placeholder="La búsqueda llegará en M5"
             disabled
             aria-describedby="search-status"
           />
           <span id="search-status" className="sr-only">
-            Search is not available in this milestone.
+            La búsqueda todavía no está disponible.
           </span>
         </label>
 
         <button className="text-button" type="button" onClick={onOpenInfo}>
-          About this map
+          Acerca del mapa
         </button>
       </div>
     </header>

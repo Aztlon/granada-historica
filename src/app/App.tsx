@@ -11,16 +11,16 @@ export function App() {
   return (
     <main className="app-shell">
       <a className="skip-link" href="#map-canvas">
-        Skip to map
+        Saltar al mapa
       </a>
 
       <Header onOpenInfo={() => setIsDrawerOpen(true)} />
 
-      <section className="map-workspace" aria-label="Historical map workspace">
+      <section className="map-workspace" aria-label="Espacio del mapa histórico">
         <MapView />
 
-        <div className="period-badge" aria-label="Displayed historical period">
-          <span className="period-badge__eyebrow">Historical view</span>
+        <div className="period-badge" aria-label="Periodo histórico mostrado">
+          <span className="period-badge__eyebrow">Vista histórica</span>
           <strong>Granada, c. 1492</strong>
         </div>
 
@@ -32,7 +32,7 @@ export function App() {
 
         <div className="map-note" role="note">
           <span className="map-note__mark" aria-hidden="true" />
-          <span>Modern reference map · historical layers arrive in M2</span>
+          <span>Mapa actual de referencia · las capas históricas llegarán en M2</span>
         </div>
       </section>
 

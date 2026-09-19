@@ -17,20 +17,20 @@ export function LayerControl({ isOpen, onToggle, onClose }: LayerControlProps) {
         <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
           <path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5" />
         </svg>
-        <span>Layers</span>
+        <span>Capas</span>
       </button>
 
       {isOpen && (
         <section id="layer-panel" className="layer-panel" aria-labelledby="layers-title">
           <div className="layer-panel__heading">
             <div>
-              <p className="panel-kicker">Map view</p>
-              <h2 id="layers-title">Layers</h2>
+              <p className="panel-kicker">Vista del mapa</p>
+              <h2 id="layers-title">Capas</h2>
             </div>
             <button
               className="icon-button"
               type="button"
-              aria-label="Close layers"
+              aria-label="Cerrar el panel de capas"
               onClick={onClose}
             >
               <span aria-hidden="true">×</span>
@@ -39,28 +39,28 @@ export function LayerControl({ isOpen, onToggle, onClose }: LayerControlProps) {
 
           <label className="layer-row">
             <span>
-              <strong>Modern context</strong>
-              <small>OpenStreetMap reference</small>
+              <strong>Contexto actual</strong>
+              <small>Referencia de OpenStreetMap</small>
             </span>
             <input
               type="checkbox"
               defaultChecked
               disabled
-              aria-label="Modern context"
+              aria-label="Contexto actual"
             />
           </label>
 
           <div className="layer-row layer-row--disabled" aria-disabled="true">
             <span>
-              <strong>Historical overlay</strong>
-              <small>Reviewed data begins in M2</small>
+              <strong>Superposición histórica</strong>
+              <small>Los datos revisados empiezan en M2</small>
             </span>
-            <span className="coming-soon">Soon</span>
+            <span className="coming-soon">Próximamente</span>
           </div>
 
           <div className="layer-placeholder" role="note">
-            Walls, gates, waterways, districts, and sites will appear here only
-            after their evidence and geometry are reviewed.
+            Las murallas, puertas, cursos de agua, barrios y lugares aparecerán
+            aquí únicamente cuando sus fuentes y geometrías hayan sido revisadas.
           </div>
         </section>
       )}
