@@ -11,8 +11,8 @@ reconstruction, what happened after 1492, and what is there today.
 ## Project status
 
 Milestones **M0 — Specification and repository setup**, **M1 — Working map
-shell**, and **M2 — Historical data system** are complete. **M3 — Historical
-morphology** has been reopened for a full corrective cartographic pass. The app
+shell**, **M2 — Historical data system**, and **M3 — Historical morphology** are
+complete. The app
 now renders validated historical GeoJSON over an
 interactive map of Granada, distinguishes categories and levels of spatial
 certainty, supports filtering and selection, and exposes historical context,
@@ -26,9 +26,11 @@ principal wall systems, gates, and two defensible routes; and an explicitly
 approximate late-Nasrid urban extent. Labels and confidence styling are designed
 to communicate the form of the city before a user opens an individual feature.
 
-The corrective pass currently has 18 of 21 geometries verified. The remaining
-work is deliberately limited to the lower-medina wall, the area derived from
-that enclosure, and the composite late-Nasrid urban extent.
+The corrective pass has verified all 21 geometries. The lower-medina wall is
+reconstructed from a documented sequence of modern streets and archaeological
+anchors; the lower-medina area is derived from that enclosure and other reviewed
+axes; and the late-Nasrid urban extent is the reproducible union of the verified
+Albaicín, lower-medina, and Alhambra sectors rather than a hand-drawn envelope.
 
 See:
 

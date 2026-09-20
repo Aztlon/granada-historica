@@ -622,17 +622,21 @@
           "parcel_morphology",
           "scholarly_reconstruction"
         ],
-        "summary": "Recorrido general de las defensas que encerraban la medina del llano y comunicaban sus puertas principales.",
-        "context_1492": "La cerca ordenaba los accesos a la medina baja y enlazaba puertas como Elvira y Bib-Rambla. No fue una línea construida de una vez, sino un sistema modificado durante siglos.",
+        "summary": "Cerca de Poniente que protegía la ciudad baja desde la Puerta de Elvira hasta Torres Bermejas.",
+        "context_1492": "La cerca descendía desde la Puerta de Elvira, enlazaba accesos como las Cuatro Fuentes, el Molino, Bibalmazán y Bib-Rambla, rodeaba los sectores del Campillo, Santo Domingo y el Realejo y concluía en Torres Bermejas. No fue una línea construida de una vez, sino un sistema modificado durante siglos.",
         "after_1492": "La expansión urbana, las reformas viarias y la pérdida de función defensiva provocaron la demolición o integración de muchos tramos en edificios posteriores.",
-        "today": "La mayor parte del recorrido ya no se percibe como una muralla continua. El mapa señala una reconstrucción general para comprender el perímetro, no restos visibles en todos sus puntos.",
-        "evidence_note": "Puertas y algunos encuentros son conocidos, pero largos tramos han desaparecido. Por ello el trazo es discontinuo en la evidencia y se representa con confianza aproximada.",
+        "today": "La mayor parte del recorrido desapareció o quedó bajo el caserío. El mapa encadena calles y enclaves modernos que conservan su huella —Loarte, Tinajilla, Navarrete, Boquerón, Universidad, Capuchinas, Bib-Rambla, Campillo, Santo Domingo y Realejo— hasta Torres Bermejas; no representa restos visibles de forma continua.",
+        "evidence_note": "La Puerta de Elvira, los hallazgos de Bibalmazán y Mariana Pineda, el tramo del Cuarto Real y Torres Bermejas fijan puntos concretos. Entre ellos se sigue la secuencia topográfica y viaria publicada por la Junta y el Ayuntamiento, manteniendo confianza aproximada donde la fábrica se ha perdido.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
           "source.granada-pepri-islamic-city",
+          "source.granada-centre-plan",
+          "source.junta-western-wall-2006",
+          "source.junta-gran-capitan-2015",
           "source.granada-elvira-gate",
           "source.alhambra-bib-rambla-gate",
-          "source.ugr-abbas-defences"
+          "source.ugr-abbas-defences",
+          "source.openstreetmap"
         ],
         "citations": [
           {
@@ -646,6 +650,16 @@
             "supports": "Encuentro de la muralla con la Puerta de Elvira y conexiones defensivas."
           },
           {
+            "source_id": "source.junta-western-wall-2006",
+            "locator": "pp. 1830-1831, descripción de la cerca de Poniente",
+            "supports": "Secuencia del recorrido desde Puerta Elvira por Boquerón, Universidad, Salamanca, Campillo, Santo Domingo y Realejo hasta Torres Bermejas."
+          },
+          {
+            "source_id": "source.junta-gran-capitan-2015",
+            "locator": "p. 2, valoración histórica y arqueológica",
+            "supports": "Localización aproximada de las puertas de las Cuatro Fuentes, del Molino y de Bibalmazán."
+          },
+          {
             "source_id": "source.alhambra-bib-rambla-gate",
             "locator": "Descripción histórica",
             "supports": "Posición de Bab al-Ramla en el lienzo de la medina baja."
@@ -656,38 +670,49 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [
-            -3.60186,
-            37.18142
-          ],
-          [
-            -3.60422,
-            37.17927
-          ],
-          [
-            -3.60585,
-            37.17562
-          ],
-          [
-            -3.60466,
-            37.17231
-          ],
-          [
-            -3.60118,
-            37.17033
-          ],
-          [
-            -3.59707,
-            37.17097
-          ],
-          [
-            -3.59463,
-            37.17361
-          ],
-          [
-            -3.59495,
-            37.17657
-          ]
+          [-3.5994918, 37.1821936],
+          [-3.6001521, 37.1822519],
+          [-3.6005481, 37.1819064],
+          [-3.6006899, 37.1817828],
+          [-3.6007874, 37.1817066],
+          [-3.6009366, 37.1815775],
+          [-3.6011053, 37.1814234],
+          [-3.6011493, 37.181385],
+          [-3.6011086, 37.1813649],
+          [-3.6010755, 37.1813485],
+          [-3.6009324, 37.1812295],
+          [-3.6006563, 37.180978],
+          [-3.6006345, 37.1809511],
+          [-3.6006231, 37.1809308],
+          [-3.6004758, 37.1806624],
+          [-3.6004628, 37.1805931],
+          [-3.6005746, 37.1805774],
+          [-3.6005985, 37.180524],
+          [-3.600982, 37.1802819],
+          [-3.6011014, 37.1803856],
+          [-3.6013084, 37.1805458],
+          [-3.6017334, 37.1785613],
+          [-3.601775, 37.1780521],
+          [-3.6017812, 37.1775243],
+          [-3.6012183, 37.1762951],
+          [-3.599744, 37.1746364],
+          [-3.5996842, 37.1745626],
+          [-3.599474, 37.1743273],
+          [-3.5992923, 37.1741297],
+          [-3.5992398, 37.1740862],
+          [-3.5980542, 37.1721727],
+          [-3.5971375, 37.1722659],
+          [-3.5949269, 37.171666],
+          [-3.5938441, 37.1706222],
+          [-3.5937585, 37.1705355],
+          [-3.5931362, 37.1738232],
+          [-3.5928874, 37.1739582],
+          [-3.5925565, 37.1740951],
+          [-3.5923992, 37.1741679],
+          [-3.5929865, 37.1748746],
+          [-3.5930082, 37.1750354],
+          [-3.5932498, 37.175238],
+          [-3.5934157, 37.1754807]
         ]
       }
     },

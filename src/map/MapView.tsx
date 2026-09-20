@@ -9,7 +9,7 @@ import {
 import type {
   ExpressionSpecification,
 } from '@maplibre/maplibre-gl-style-spec'
-import type { Feature, FeatureCollection } from 'geojson'
+import type { Feature, FeatureCollection, Point, Polygon, Position } from 'geojson'
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url'
 import { CATEGORY_CONFIG } from '../data/categories'
 import type {
@@ -21,6 +21,7 @@ import type {
 const GRANADA_CENTER: [number, number] = [-3.5986, 37.1773]
 const DEFAULT_STYLE = 'https://tiles.openfreemap.org/styles/liberty'
 const SOURCE_ID = 'historical-features'
+const AREA_LABEL_SOURCE_ID = 'historical-area-labels'
 
 const HISTORICAL_LAYER_IDS = [
   'historical-urban-extent-fill',
@@ -191,6 +192,7 @@ export function MapView({
         },
       })) as Feature[],
     }
+    const areaLabelData = buildAreaLabelCollection(renderedData)
 
     const map = new Map({
       container: containerRef.current,
@@ -212,6 +214,10 @@ export function MapView({
         type: 'geojson',
         data: renderedData,
         attribution: 'Datos históricos: Granada Histórica',
+      })
+      map.addSource(AREA_LABEL_SOURCE_ID, {
+        type: 'geojson',
+        data: areaLabelData,
       })
 
       addHistoricalLayers(map)
@@ -406,10 +412,10 @@ function addHistoricalLabels(map: Map) {
   map.addLayer({
     id: 'historical-label-sectors',
     type: 'symbol',
-    source: SOURCE_ID,
+    source: AREA_LABEL_SOURCE_ID,
     minzoom: 11.25,
     filter: allFilters(
-      geometryFilter('Polygon'),
+      geometryFilter('Point'),
       [
         'in',
         ['get', 'subtype'],
@@ -637,7 +643,7 @@ function applyMapState(
   map.setFilter(
     'historical-label-sectors',
     allFilters(
-      geometryFilter('Polygon'),
+      geometryFilter('Point'),
       [
         'in',
         ['get', 'subtype'],
@@ -692,4 +698,64 @@ function applyMapState(
     'historical-selection-point',
     allFilters(geometryFilter('Point'), ['==', ['get', 'id'], selected]),
   )
+}
+
+function buildAreaLabelCollection(
+  collection: FeatureCollection,
+): FeatureCollection<Point> {
+  const features: Feature<Point>[] = []
+
+  for (const feature of collection.features) {
+    const geometry = feature.geometry
+    if (!geometry || (geometry.type !== 'Polygon' && geometry.type !== 'MultiPolygon')) {
+      continue
+    }
+    if (feature.properties?.subtype === 'late_nasrid_extent') continue
+
+    const polygons = geometry.type === 'Polygon' ? [geometry.coordinates] : geometry.coordinates
+    const largest = polygons.reduce((current, candidate) =>
+      Math.abs(ringArea(candidate[0])) > Math.abs(ringArea(current[0]))
+        ? candidate
+        : current,
+    )
+
+    features.push({
+      type: 'Feature',
+      id: feature.id,
+      properties: feature.properties,
+      geometry: {
+        type: 'Point',
+        coordinates: polygonCentroid({ type: 'Polygon', coordinates: largest }),
+      },
+    })
+  }
+
+  return { type: 'FeatureCollection', features }
+}
+
+function polygonCentroid(polygon: Polygon): Position {
+  const ring = polygon.coordinates[0]
+  let crossSum = 0
+  let longitudeSum = 0
+  let latitudeSum = 0
+
+  for (let index = 0; index < ring.length - 1; index += 1) {
+    const current = ring[index]
+    const next = ring[index + 1]
+    const cross = current[0] * next[1] - next[0] * current[1]
+    crossSum += cross
+    longitudeSum += (current[0] + next[0]) * cross
+    latitudeSum += (current[1] + next[1]) * cross
+  }
+
+  if (Math.abs(crossSum) < Number.EPSILON) return ring[0]
+  return [longitudeSum / (3 * crossSum), latitudeSum / (3 * crossSum)]
+}
+
+function ringArea(ring: Position[]) {
+  let sum = 0
+  for (let index = 0; index < ring.length - 1; index += 1) {
+    sum += ring[index][0] * ring[index + 1][1] - ring[index + 1][0] * ring[index][1]
+  }
+  return sum / 2
 }

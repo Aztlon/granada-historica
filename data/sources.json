@@ -96,6 +96,42 @@
     "notes": "La memoria urbana incluye el plano «Estructura y elementos de la ciudad islámica» y explica la organización viaria y defensiva del Albaicín nazarí."
   },
   {
+    "id": "source.granada-centre-plan",
+    "author": "Ayuntamiento de Granada",
+    "title": "Plan Especial de Protección y Catálogo del Área Centro de Granada. Memoria",
+    "year": 2002,
+    "publisher": "Ayuntamiento de Granada",
+    "type": "institutional_plan",
+    "url": "https://www.granada.org/urbanismo.nsf/c3abb01dbb6ecb39c125812100281f63/3dba4fc4a3c66eb2c125811400392846/$FILE/Memoria.pdf",
+    "identifier": "",
+    "reuse_status": "Consulta y cita factual; no se redistribuye ni se reproduce la publicación.",
+    "notes": "Describe los límites de la antigua medina, la huella de la muralla entre Universidad, Bibalmazán y Bibarrambla, y los restos arqueológicos de Mariana Pineda y el entorno del Cuarto Real."
+  },
+  {
+    "id": "source.junta-western-wall-2006",
+    "author": "María Luisa Gámez-Leyva Hernández",
+    "title": "Parcelas II y III del A.I. del PEPRI Albaicín. Granada",
+    "year": 2006,
+    "publisher": "Anuario Arqueológico de Andalucía, Junta de Andalucía",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/bitstream/20.500.11947/3543/1/AAA_2006_190_gamezleyva_peprialbaicin_granada_borrador.pdf",
+    "identifier": "ISSN 2171-2174",
+    "reuse_status": "Consulta y cita factual; no se redistribuye ni se reproduce la publicación.",
+    "notes": "Documenta el recorrido general de la cerca de Poniente desde Puerta Elvira por Loarte, Tinajilla, Navarrete, Corazones, Boquerón, San Justo y Pastor, Universidad, Salamanca, Campillo, Santo Domingo y Realejo hasta Torres Bermejas."
+  },
+  {
+    "id": "source.junta-gran-capitan-2015",
+    "author": "María Muriel Rodríguez",
+    "title": "Memoria final de la actuación arqueológica preventiva en Gran Capitán 5",
+    "year": 2015,
+    "publisher": "Repositorio TABULA, Junta de Andalucía",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/bitstream/20.500.11947/9162/1/AAA_2015_137_murielrodriguez_grancapitan5granada_granada.pdf",
+    "identifier": "",
+    "reuse_status": "Consulta y cita factual; no se redistribuye ni se reproduce la publicación.",
+    "notes": "Sitúa la Puerta del Molino en el altar mayor de San Justo y Pastor, la Puerta de las Cuatro Fuentes en la placeta del Boquerón y Bibalmazán en la esquina de Trinidad con Capuchinas."
+  },
+  {
     "id": "source.alhambra-fortified-city-guide",
     "author": "Patronato de la Alhambra y Generalife",
     "title": "Muralla, torres y puertas de la Alhambra",
@@ -202,6 +238,18 @@
     "identifier": "Ficha 22",
     "reuse_status": "Cita factual; no se reproduce la publicación.",
     "notes": "Documenta la puerta, su integración en la muralla zirí y sus conexiones con Monaita y la calle Elvira."
+  },
+  {
+    "id": "source.granada-puerta-granadas",
+    "author": "Ayuntamiento de Granada",
+    "title": "Puerta de las Granadas",
+    "year": null,
+    "publisher": "Turismo de Granada",
+    "type": "institutional_webpage",
+    "url": "https://turismo.granada.org/es/puerta-granadas-1",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Confirma la existencia del lienzo que enlazaba la Alcazaba de la Alhambra con Torres Bermejas y sobre el que se abrió la puerta renacentista."
   },
   {
     "id": "source.alhambra-bib-rambla-gate",
