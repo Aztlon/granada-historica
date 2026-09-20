@@ -605,6 +605,277 @@
           37.177125
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.guadix",
+      "properties": {
+        "id": "gate.guadix",
+        "name": "Puerta de Guadix",
+        "historical_name": null,
+        "modern_name": "Emplazamiento de la desaparecida Puerta de Guadix",
+        "aliases": [
+          "Puerta de Guadix Alta"
+        ],
+        "modern_search_terms": [
+          "Paseo de los Tristes",
+          "Paseo del Padre Manjón",
+          "Cuesta del Chapiz",
+          "Cuesta del Rey Chico"
+        ],
+        "category": "walls_gates",
+        "subtype": "lost_city_gate",
+        "period": {
+          "from_year": null,
+          "to_year": null,
+          "from_precision": "unknown",
+          "to_precision": "unknown",
+          "note": "La puerta formaba parte de la cerca nazarí del Albaicín y estaba en uso al final del reino; no se asigna una fecha de construcción no demostrada."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Acceso oriental desaparecido de la cerca del Albaicín, situado en el extremo del actual Paseo de los Tristes.",
+        "context_1492": "La puerta controlaba la salida oriental del Albaicín hacia el valle del Darro y servía de arranque a la cerca que ascendía hacia San Miguel Alto y Fajalauza.",
+        "after_1492": "El acceso y sus lienzos inmediatos desaparecieron con las transformaciones del borde urbano y del corredor del Darro; el topónimo dejó de ser legible sobre el terreno.",
+        "today": "El marcador se sitúa al final del Paseo de los Tristes, junto al inicio de la Cuesta del Chapiz y la Cuesta del Rey Chico. No quedan restos visibles que permitan fijar el umbral exacto.",
+        "evidence_note": "La fuente municipal identifica el final del Paseo de los Tristes, pero no aporta una planta arqueológica. Por eso se publica un punto representativo y su localización se califica como aproximada.",
+        "geometry_method": "representative_point",
+        "geometry_source_refs": [
+          "source.granada-albaicin-wall-route",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-albaicin-wall-route",
+            "locator": "Recorrido de la muralla del Albayzín",
+            "supports": "Localización de la Puerta de Guadix al final del Paseo de los Tristes y relación con la cerca nazarí."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.58833,
+          37.17924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "religious.medina-great-mosque",
+      "properties": {
+        "id": "religious.medina-great-mosque",
+        "name": "Mezquita Mayor de la medina",
+        "historical_name": "Mezquita aljama",
+        "modern_name": "Iglesia del Sagrario y entorno catedralicio",
+        "aliases": [
+          "Mezquita Mayor de Granada",
+          "Mezquita aljama de Granada"
+        ],
+        "modern_search_terms": [
+          "Iglesia del Sagrario",
+          "Catedral de Granada",
+          "Plaza de las Pasiegas",
+          "Calle Oficios"
+        ],
+        "category": "religion_learning",
+        "subtype": "congregational_mosque",
+        "period": {
+          "from_year": 1000,
+          "to_year": 1501,
+          "from_precision": "century",
+          "to_precision": "circa",
+          "note": "La mezquita presidía la medina islámica; tras la conquista fue cristianizada y el conjunto monumental posterior transformó profundamente su solar y su entorno."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "archaeology",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Mezquita aljama que organizaba el corazón religioso de la medina, junto a la Madraza, la Alcaicería y el Zacatín.",
+        "context_1492": "Era el principal espacio de oración colectiva de Granada y uno de los focos que ordenaban el centro religioso, docente y comercial de la ciudad baja.",
+        "after_1492": "El edificio fue consagrado al culto cristiano y acogió provisionalmente la Catedral. La construcción de la Catedral, la Capilla Real y la posterior iglesia barroca del Sagrario rehízo el conjunto urbano.",
+        "today": "La Iglesia del Sagrario ocupa el solar identificado con la antigua mezquita mayor y forma parte del gran conjunto de la Catedral y la Capilla Real. El punto no reproduce la planta de la mezquita.",
+        "evidence_note": "La correspondencia del solar está respaldada por el Ayuntamiento y el planeamiento municipal. Sin una huella medieval publicable y completa, se usa el centro de la iglesia del Sagrario como referencia moderna.",
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.granada-sagrario",
+          "source.granada-centre-plan",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-sagrario",
+            "locator": "Descripción de la Iglesia del Sagrario",
+            "supports": "Ocupación del solar de la antigua Mezquita Mayor y uso catedralicio posterior."
+          },
+          {
+            "source_id": "source.granada-centre-plan",
+            "locator": "Memoria histórica del ámbito del Sagrario",
+            "supports": "Papel de la Mezquita Mayor en el centro religioso y comercial de la medina."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5990298,
+          37.1759292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bridge.cadi",
+      "properties": {
+        "id": "bridge.cadi",
+        "name": "Puerta de los Tableros / Puente del Cadí",
+        "historical_name": "Bab al-Difaf",
+        "modern_name": "Restos de la Puerta de los Tableros",
+        "aliases": [
+          "Puente del Cadí",
+          "Puerta de los Tableros",
+          "Bab al-Difaf"
+        ],
+        "modern_search_terms": [
+          "Carrera del Darro 35",
+          "Concepción de Zafra",
+          "El Bañuelo"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "river_gate_bridge",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Obra de origen zirí que continuaba formando parte de la estructura defensiva e hidráulica de la ciudad medieval."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Puerta-puente militar sobre el Darro que enlazaba las corachas de la Alcazaba Vieja y la Alhambra.",
+        "context_1492": "La estructura atravesaba el Darro y vinculaba los dispositivos defensivos que permitían tomar agua desde las fortalezas de ambas laderas; una reja cerraba el cauce frente a intrusos.",
+        "after_1492": "La obra perdió su continuidad sobre el río y quedó reducida a uno de sus estribos y al arranque del gran arco. El nombre tradicional de Puente del Cadí ha convivido con su identificación como Bab al-Difaf.",
+        "today": "Se conserva el estribo septentrional en la Carrera del Darro, con el arranque del arco y una puerta interior tapiada. El punto señala esa fábrica visible, no el centro del puente desaparecido.",
+        "evidence_note": "La posición es segura por los restos conservados. La denominación doble mantiene visible el uso turístico tradicional y la lectura institucional de la estructura como Puerta de los Tableros o Bab al-Difaf.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.granada-tableros-cadi",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-tableros-cadi",
+            "locator": "Descripción y dirección del monumento",
+            "supports": "Origen zirí, función defensiva e hidráulica, conservación del estribo y localización en Carrera del Darro 35."
+          },
+          {
+            "source_id": "source.alhambra-banuelo",
+            "locator": "Apartado dedicado a Bab al-Difaf y al entorno del Bañuelo",
+            "supports": "Distinción historiográfica entre Bab al-Difaf y el nombre tradicional Puente del Cadí."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.592682,
+          37.1782206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "religious.albaicin-great-mosque",
+      "properties": {
+        "id": "religious.albaicin-great-mosque",
+        "name": "Mezquita Mayor del Albaicín",
+        "historical_name": "Mezquita aljama del Albaicín",
+        "modern_name": "Iglesia del Salvador",
+        "aliases": [
+          "Mezquita Mayor del arrabal del Albaicín",
+          "Mezquita del Salvador"
+        ],
+        "modern_search_terms": [
+          "Iglesia del Salvador",
+          "Placeta de Abad",
+          "Calle Panaderos"
+        ],
+        "category": "religion_learning",
+        "subtype": "congregational_mosque",
+        "period": {
+          "from_year": null,
+          "to_year": 1527,
+          "from_precision": "unknown",
+          "to_precision": "circa",
+          "note": "La mezquita estaba activa en 1492; sobre ella se fundó la colegiata del Salvador en el primer tercio del siglo XVI."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology"
+        ],
+        "summary": "Mezquita aljama del Albaicín cuyo solar y parte del patio quedaron incorporados a la iglesia del Salvador.",
+        "context_1492": "El edificio atendía a la población del gran sector urbano del Albaicín y actuaba como uno de sus principales centros religiosos y comunitarios.",
+        "after_1492": "Sobre la mezquita se erigió la colegiata del Salvador, fundada en 1527 para la instrucción de la población morisca. El templo sufrió nuevas transformaciones y un incendio en 1936.",
+        "today": "La iglesia del Salvador ocupa el solar y conserva como atrio parte del antiguo patio o sahn. El punto se centra en el conjunto actual y no pretende reconstruir la planta completa de la mezquita.",
+        "evidence_note": "La fuente municipal establece la continuidad del solar y del patio. Como la correspondencia entre la fábrica actual y la planta islámica no es total, se publica una referencia puntual.",
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.granada-salvador",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-salvador",
+            "locator": "Descripción histórica de la Iglesia del Salvador",
+            "supports": "Continuidad del solar, conservación parcial del sahn, fundación de la colegiata y transformaciones posteriores."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5912485,
+          37.1822636
+        ]
+      }
     }
   ]
 }

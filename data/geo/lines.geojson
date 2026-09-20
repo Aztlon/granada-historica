@@ -1470,6 +1470,77 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "route.zacatin-axis",
+      "properties": {
+        "id": "route.zacatin-axis",
+        "name": "Eje del Zacatín",
+        "historical_name": "Al-Saqqatin",
+        "modern_name": "Calle Zacatín",
+        "aliases": [
+          "Zacatín",
+          "Calle de los ropavejeros"
+        ],
+        "modern_search_terms": [
+          "Calle Zacatín",
+          "Catedral",
+          "Alcaicería",
+          "Plaza Bib-Rambla"
+        ],
+        "category": "commerce_civic",
+        "subtype": "historical_route",
+        "period": {
+          "from_year": 1200,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "El eje comercial está documentado para la Granada nazarí y pervive como calle, aunque su anchura, alineaciones y encuentros han cambiado."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "toponymy",
+          "historical_cartography",
+          "parcel_morphology"
+        ],
+        "summary": "Principal eje comercial de la medina nazarí, asociado a los oficios y al recinto de la Alcaicería.",
+        "context_1492": "El Zacatín concentraba numerosos establecimientos comerciales y enlazaba el corazón religioso de la medina con el entorno de Bib-Rambla y sus mercados.",
+        "after_1492": "La calle mantuvo su función mercantil, pero las reformas del centro, los incendios y la apertura de nuevas vías alteraron fachadas, anchuras y conexiones.",
+        "today": "La calle Zacatín sigue siendo un eje peatonal comercial entre el entorno de la Catedral y Bib-Rambla. La línea sigue su eje actual y no reconstruye sus alineaciones de 1492.",
+        "evidence_note": "La continuidad toponímica y funcional permite fijar el corredor con buena base, pero no demuestra que cada quiebro y cada anchura modernos coincidan con la calle medieval.",
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.granada-centre-plan",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-centre-plan",
+            "locator": "Memoria histórica del ámbito del Sagrario",
+            "supports": "Carácter del Zacatín como calle comercial más representativa de la época nazarí y relación con la Alcaicería."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-3.5977998, 37.1760767],
+          [-3.598181, 37.1757812],
+          [-3.5982812, 37.1757152],
+          [-3.5984363, 37.1755916],
+          [-3.5987475, 37.1753635],
+          [-3.5989011, 37.1752542],
+          [-3.5990038, 37.1751776],
+          [-3.5993124, 37.1749566]
+        ]
+      }
     }
   ]
 }

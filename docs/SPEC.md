@@ -1191,7 +1191,7 @@ The proof of concept is successful when all of the following are true:
 - [ ] Modern geography remains available for comparison.
 - [ ] Historical district/sector labels are visible.
 - [ ] Walls/gates, major waterways, and important sites can be toggled or filtered.
-- [ ] At least 30 historical features are available.
+- [x] At least 30 historical features are available.
 - [ ] Every public feature has at least one source.
 - [ ] Every public feature exposes locational confidence.
 - [ ] Every public feature exposes temporal confidence.

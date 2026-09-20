@@ -55,11 +55,18 @@ Exit gate: the map communicates city-scale form before individual monuments.
 
 ## M4 — First reviewed dataset
 
-1. Build and prioritize the candidate feature inventory.
-2. Extract claims and record source locators.
-3. Draft content and geometry for each candidate.
-4. Review confidence, names, claims, geometry, and reuse status.
-5. Publish at least 30 substantive features across multiple categories.
+1. [x] Build and prioritize the candidate feature inventory.
+2. [x] Extract claims and record source locators.
+3. [x] Draft content and geometry for each candidate.
+4. [x] Review confidence, names, claims, geometry, and reuse status.
+5. [x] Publish at least 30 substantive features across multiple categories.
+
+M4 result: the dataset now contains 30 cited, publishable features with 30
+verified geometry audits and 34 registered sources. The nine additions cover
+the Puerta de Guadix, both major mosques, the Alcaicería and Zacatín commercial
+core, the Corral del Carbón, Maristán, El Bañuelo, and the Puerta de los
+Tableros / Puente del Cadí. Surviving footprints, modern reference points, and
+approximate historical areas remain explicitly distinguished.
 
 Exit gate: 30 or more cited, publishable features have meaningful details.
 

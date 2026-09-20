@@ -166,5 +166,77 @@
     "geometry_source_refs": ["source.granada-pepri-islamic-city", "source.granada-centre-plan", "source.junta-western-wall-2006", "source.alhambra-fortified-city-guide", "source.granada-albaicin-wall-route", "source.openstreetmap", "source.dera-hydrology"],
     "check_method": "Unión geométrica en EPSG:25830 de los polígonos verificados del Albaicín, la ciudad baja y la Alhambra, seguida de una simplificación cartográfica de 12 m y exportación a EPSG:4326.",
     "notes": "Sustituye la gran envolvente dibujada a mano. No incorpora el Generalife, que se mantiene como finca palatina separada, ni arrabales menores sin delimitación defendible; hereda la incertidumbre de los tres sectores de origen."
+  },
+  {
+    "feature_id": "gate.guadix",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.granada-albaicin-wall-route", "source.openstreetmap"],
+    "check_method": "Punto situado en el extremo oriental del Paseo de los Tristes identificado expresamente por la fuente municipal, ajustado al remate del espacio peatonal cartografiado en OpenStreetMap.",
+    "notes": "La auditoría verifica el ámbito de referencia, no un umbral arqueológico; al no conservarse una planta publicable, la localización permanece aproximada."
+  },
+  {
+    "feature_id": "religious.medina-great-mosque",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.granada-sagrario", "source.granada-centre-plan", "source.openstreetmap", "source.pnoa-andalucia-2022"],
+    "check_method": "Centroide de la huella actual de la Iglesia del Sagrario en OpenStreetMap, contrastado con la ortofoto PNOA y con la identificación municipal del solar de la antigua Mezquita Mayor.",
+    "notes": "Es una referencia moderna segura al solar histórico; no se presenta como centroide ni como planta exacta de la mezquita de 1492."
+  },
+  {
+    "feature_id": "bridge.cadi",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.granada-tableros-cadi", "source.openstreetmap", "source.pnoa-andalucia-2022"],
+    "check_method": "Nodo de los restos conservados en OpenStreetMap, contrastado con la ortofoto PNOA y con la dirección y descripción institucional de Carrera del Darro 35.",
+    "notes": "El marcador identifica el estribo septentrional visible; no reconstruye el vano perdido ni el encuentro con la ladera de la Alhambra."
+  },
+  {
+    "feature_id": "religious.albaicin-great-mosque",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.granada-salvador", "source.openstreetmap", "source.pnoa-andalucia-2022"],
+    "check_method": "Centroide de la huella actual de la Iglesia del Salvador en OpenStreetMap, contrastado con PNOA y con la identificación municipal de la mezquita y del sahn conservado en el atrio.",
+    "notes": "El punto representa el conjunto actual como referencia del solar; no afirma que la iglesia reproduzca la planta completa de la mezquita."
+  },
+  {
+    "feature_id": "route.zacatin-axis",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.granada-centre-plan", "source.openstreetmap"],
+    "check_method": "Eje completo de la calle Zacatín actual obtenido de OpenStreetMap y contrastado con el planeamiento municipal, que identifica su nombre, posición y función comercial en época nazarí.",
+    "notes": "Se verifica el corredor topográfico y toponímico; la confianza sigue siendo probable porque las alineaciones y anchuras medievales no se conservan sin cambios."
+  },
+  {
+    "feature_id": "commerce.alcaiceria",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.granada-alcaiceria", "source.granada-centre-plan", "source.openstreetmap"],
+    "check_method": "Envolvente manual del núcleo reconocible de las calles Alcaicería, Paños, Ermita y Placeta de la Seda, contrastada con la descripción institucional y el planeamiento histórico municipal.",
+    "notes": "El polígono se audita como área aproximada: no pretende abarcar toda la extensión histórica descrita entre los espacios centrales de la medina ni reproducir parcelas de 1492."
+  },
+  {
+    "feature_id": "commerce.corral-carbon",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.alhambra-corral-carbon", "source.openstreetmap", "source.pnoa-andalucia-2022"],
+    "check_method": "Huella del monumento en OpenStreetMap, incluido el vacío del patio, contrastada con la ortofoto PNOA y con la identificación y descripción institucional del Patronato.",
+    "notes": "La geometría delimita el inmueble conservado; no diferencia la fábrica nazarí de restauraciones y transformaciones posteriores."
+  },
+  {
+    "feature_id": "civic.maristan",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.alhambra-maristan", "source.openstreetmap", "source.pnoa-andalucia-2022"],
+    "check_method": "Huella del recinto arqueológico actual en OpenStreetMap, contrastada con PNOA y con la descripción institucional de la parcela, la planta rectangular y los restos conservados.",
+    "notes": "La delimitación es segura para el recinto actual, pero no separa muros medievales, reconstrucciones de 1843 y consolidaciones contemporáneas."
+  },
+  {
+    "feature_id": "water.banuelo",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.alhambra-banuelo", "source.openstreetmap", "source.pnoa-andalucia-2022"],
+    "check_method": "Huella del edificio conservado en OpenStreetMap, contrastada con la ortofoto PNOA, la dirección institucional y la descripción arquitectónica del Patronato.",
+    "notes": "La geometría es segura; la controversia se limita a la datación entre los siglos XI y XII y se conserva explícitamente en la ficha."
   }
 ]

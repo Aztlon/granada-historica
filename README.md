@@ -11,14 +11,14 @@ reconstruction, what happened after 1492, and what is there today.
 ## Project status
 
 Milestones **M0 — Specification and repository setup**, **M1 — Working map
-shell**, **M2 — Historical data system**, and **M3 — Historical morphology** are
-complete. The app
+shell**, **M2 — Historical data system**, **M3 — Historical morphology**, and
+**M4 — First reviewed dataset** are complete. The app
 now renders validated historical GeoJSON over an
 interactive map of Granada, distinguishes categories and levels of spatial
 certainty, supports filtering and selection, and exposes historical context,
 provenance, and citations in each feature card.
 
-The working dataset contains 21 features. None is assumed spatially correct:
+The working dataset contains 30 cited and publishable features. None is assumed spatially correct:
 each geometry must pass the review recorded in `data/geometry-audit.json`
 before it is shown on the public map. Its city-scale morphology includes
 the Albaicín, lower medina, Alhambra and Generalife; the Darro and Genil;
@@ -26,11 +26,15 @@ principal wall systems, gates, and two defensible routes; and an explicitly
 approximate late-Nasrid urban extent. Labels and confidence styling are designed
 to communicate the form of the city before a user opens an individual feature.
 
-The corrective pass has verified all 21 geometries. The lower-medina wall is
+The corrective pass and M4 review have verified all 30 geometries. The lower-medina wall is
 reconstructed from a documented sequence of modern streets and archaeological
 anchors; the lower-medina area is derived from that enclosure and other reviewed
 axes; and the late-Nasrid urban extent is the reproducible union of the verified
 Albaicín, lower-medina, and Alhambra sectors rather than a hand-drawn envelope.
+The first monument set adds the two major mosques, Alcaicería, Zacatín, Corral
+del Carbón, Maristán, El Bañuelo, Puerta de Guadix, and Puerta de los Tableros /
+Puente del Cadí, with surviving fabric kept distinct from representative points
+and approximate reconstructions.
 
 See:
 

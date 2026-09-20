@@ -322,5 +322,89 @@
     "identifier": "OpenStreetMap data",
     "reuse_status": "Datos © colaboradores de OpenStreetMap, disponibles bajo ODbL; se atribuye la procedencia y se usan como referencia secundaria.",
     "notes": "Huellas y nodos modernos utilizados como candidatos, siempre contrastados con ortofoto oficial y fuentes institucionales antes de verificarlos."
+  },
+  {
+    "id": "source.granada-sagrario",
+    "author": "Ayuntamiento de Granada",
+    "title": "Iglesia del Sagrario",
+    "year": null,
+    "publisher": "Turismo de Granada",
+    "type": "institutional_webpage",
+    "url": "https://turismo.granada.org/es/monumento/iglesia/iglesia-del-sagrario",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Identifica la Iglesia del Sagrario con el solar de la antigua Mezquita Mayor y documenta su uso catedralicio posterior."
+  },
+  {
+    "id": "source.granada-salvador",
+    "author": "Ayuntamiento de Granada",
+    "title": "Iglesia del Salvador",
+    "year": null,
+    "publisher": "Turismo de Granada",
+    "type": "institutional_webpage",
+    "url": "https://turismo.granada.org/es/monumento/edificio-religioso/iglesia-del-salvador",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Documenta la construcción de la iglesia sobre la mezquita mayor del Albaicín y la conservación de parte del antiguo sahn como atrio."
+  },
+  {
+    "id": "source.granada-tableros-cadi",
+    "author": "Ayuntamiento de Granada",
+    "title": "Puerta de los Tableros / Puente del Cadí",
+    "year": null,
+    "publisher": "Turismo de Granada",
+    "type": "institutional_webpage",
+    "url": "https://turismo.granada.org/es/monumento/fortaleza/puerta-tableros-puente-del-cadi",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Describe la estructura zirí, su función entre las corachas y los restos conservados en Carrera del Darro 35."
+  },
+  {
+    "id": "source.granada-alcaiceria",
+    "author": "Ayuntamiento de Granada",
+    "title": "Alcaicería",
+    "year": null,
+    "publisher": "Turismo de Granada",
+    "type": "institutional_webpage",
+    "url": "https://turismo.granada.org/es/monumento/calle-emblematica/alcaiceria",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Caracteriza la Alcaicería como entramado cerrado de calles dedicado a la fabricación y venta de seda en el núcleo de la medina."
+  },
+  {
+    "id": "source.alhambra-corral-carbon",
+    "author": "Patronato de la Alhambra y Generalife",
+    "title": "Corral del Carbón",
+    "year": null,
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "type": "institutional_webpage",
+    "url": "https://www.alhambra-patronato.es/descubrir/monumentos-andalusies/corral-del-carbon",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Historia institucional del funduq nazarí, sus funciones comerciales, transformaciones y restauración contemporánea."
+  },
+  {
+    "id": "source.alhambra-maristan",
+    "author": "Patronato de la Alhambra y Generalife",
+    "title": "El Maristán de Granada",
+    "year": null,
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "type": "institutional_webpage",
+    "url": "https://www.alhambra-patronato.es/maristan-de-granada",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes ni planimetría.",
+    "notes": "Documenta la fundación, organización, usos posteriores, restos conservados y restauración del hospital de Muhammad V."
+  },
+  {
+    "id": "source.alhambra-banuelo",
+    "author": "Patronato de la Alhambra y Generalife",
+    "title": "El Bañuelo",
+    "year": null,
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "type": "institutional_webpage",
+    "url": "https://www.alhambra-patronato.es/descubrir/monumentos-andalusies/el-banuelo",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Describe el hammam, el debate sobre su datación, su contexto urbano y la relación historiográfica entre Bab al-Difaf y el llamado Puente del Cadí."
   }
 ]

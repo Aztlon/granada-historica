@@ -94,4 +94,10 @@ export const SUBTYPE_LABELS: Record<string, string> = {
   city_gate: 'Puerta urbana',
   lost_city_gate: 'Puerta desaparecida',
   palatine_gate: 'Puerta palatina',
+  congregational_mosque: 'Mezquita aljama',
+  river_gate_bridge: 'Puerta-puente fluvial',
+  silk_market: 'Mercado de la seda',
+  funduq: 'Alhóndiga y alojamiento mercantil',
+  hospital: 'Hospital',
+  hammam: 'Baño público',
 }

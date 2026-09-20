@@ -1064,6 +1064,341 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "commerce.alcaiceria",
+      "properties": {
+        "id": "commerce.alcaiceria",
+        "name": "Alcaicería",
+        "historical_name": "Al-Qaysariyya",
+        "modern_name": "Recinto de la Alcaicería",
+        "aliases": [
+          "Mercado de la seda",
+          "Zoco de la Alcaicería"
+        ],
+        "modern_search_terms": [
+          "Alcaicería",
+          "Placeta de la Seda",
+          "Calle Paños",
+          "Calle Ermita",
+          "Catedral",
+          "Plaza Bib-Rambla"
+        ],
+        "category": "commerce_civic",
+        "subtype": "silk_market",
+        "period": {
+          "from_year": null,
+          "to_year": 1843,
+          "from_precision": "unknown",
+          "to_precision": "year",
+          "note": "El recinto mercantil era una pieza central de la medina nazarí; el incendio de 1843 destruyó casi por completo el conjunto histórico."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "parcel_morphology",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Recinto cerrado de calles mercantiles dedicado especialmente a la fabricación y venta de seda en el centro de la medina.",
+        "context_1492": "La Alcaicería formaba, junto con la Mezquita Mayor, la Madraza y el Zacatín, el núcleo religioso y comercial de Granada. Sus accesos controlaban un tejido denso de tiendas, talleres y alojamientos.",
+        "after_1492": "La actividad sedera continuó bajo nuevas instituciones hasta que el incendio de 1843 arrasó casi todo el conjunto. La reconstrucción regularizó y redujo el tejido, y en el siglo XX se reforzó su imagen de bazar artesanal.",
+        "today": "El recinto visitable conserva los nombres de Alcaicería, Paños, Ermita y Placeta de la Seda, pero su arquitectura es principalmente posterior a 1843. El polígono marca el núcleo reconocible, no toda la extensión histórica descrita por las fuentes.",
+        "evidence_note": "Las fuentes sitúan con seguridad la Alcaicería en este sector y describen un ámbito mayor entre los espacios centrales de la medina. Como no se dispone de un deslinde parcelario completo de 1492, la envolvente se publica como aproximada.",
+        "geometry_method": "approximate_area",
+        "geometry_source_refs": [
+          "source.granada-alcaiceria",
+          "source.granada-centre-plan",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-alcaiceria",
+            "locator": "Descripción del recinto histórico",
+            "supports": "Función como mercado de la seda, carácter de entramado cerrado y continuidad del lugar."
+          },
+          {
+            "source_id": "source.granada-centre-plan",
+            "locator": "Memoria histórica del ámbito del Sagrario y catálogo de espacios públicos",
+            "supports": "Relación espacial con la Mezquita Mayor y el Zacatín, e incendio y reconstrucción de 1843."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.59956, 37.17574],
+            [-3.59875, 37.17592],
+            [-3.59842, 37.17556],
+            [-3.59875, 37.17531],
+            [-3.59918, 37.17502],
+            [-3.59953, 37.17518],
+            [-3.59956, 37.17574]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "commerce.corral-carbon",
+      "properties": {
+        "id": "commerce.corral-carbon",
+        "name": "Corral del Carbón",
+        "historical_name": "Al-Funduq al-Yadida",
+        "modern_name": "Corral del Carbón",
+        "aliases": [
+          "Alhóndiga Nueva",
+          "Funduq al-Yadida"
+        ],
+        "modern_search_terms": [
+          "Calle Mariana Pineda",
+          "Corral del Carbón",
+          "Plaza Isabel la Católica"
+        ],
+        "category": "commerce_civic",
+        "subtype": "funduq",
+        "period": {
+          "from_year": 1300,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Fue construido en la primera mitad del siglo XIV y conserva su estructura fundamental pese a los cambios de uso."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology"
+        ],
+        "summary": "Alhóndiga nazarí que almacenaba y vendía trigo y daba alojamiento seguro a los mercaderes y sus mercancías.",
+        "context_1492": "El funduq funcionaba como una pieza de la infraestructura comercial de la medina: su patio organizaba depósitos y aposentos, y la puerta se cerraba al anochecer para proteger bienes y viajeros.",
+        "after_1492": "Pasó a propiedad cristiana, fue corral de comedias y de vecinos y terminó asociado al almacenamiento de carbón. Torres Balbás lo adquirió y restauró entre 1929 y 1931.",
+        "today": "El edificio se conserva en la calle Mariana Pineda y puede visitarse. La geometría sigue la huella moderna del monumento, incluido su patio central.",
+        "evidence_note": "La fábrica conservada permite una delimitación segura del inmueble actual. La geometría no separa las fases nazaríes de las restauraciones y transformaciones posteriores.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.alhambra-corral-carbon",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-corral-carbon",
+            "locator": "Descripción histórica y localización del monumento",
+            "supports": "Cronología, funciones nazaríes, cambios posteriores, restauración y conservación del edificio."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.5982412, 37.1749135],
+            [-3.5980958, 37.1748399],
+            [-3.5980796, 37.1748317],
+            [-3.598111, 37.1747953],
+            [-3.5980267, 37.1747572],
+            [-3.5979644, 37.1747294],
+            [-3.5979442, 37.1747499],
+            [-3.5979105, 37.1747349],
+            [-3.5978745, 37.1747188],
+            [-3.5977736, 37.1748515],
+            [-3.5978484, 37.1748885],
+            [-3.5978034, 37.1749476],
+            [-3.5977945, 37.1749594],
+            [-3.5980847, 37.1751053],
+            [-3.5981466, 37.1750279],
+            [-3.5981713, 37.1750398],
+            [-3.5982001, 37.1750048],
+            [-3.5982278, 37.1749711],
+            [-3.5982052, 37.1749602],
+            [-3.5982354, 37.174921],
+            [-3.5982412, 37.1749135]
+          ],
+          [
+            [-3.5981463, 37.1748983],
+            [-3.5980615, 37.1750111],
+            [-3.5979069, 37.1749297],
+            [-3.5979948, 37.1748237],
+            [-3.5981463, 37.1748983]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "civic.maristan",
+      "properties": {
+        "id": "civic.maristan",
+        "name": "Maristán",
+        "historical_name": "Maristán de Granada",
+        "modern_name": "Restos arqueológicos del Maristán",
+        "aliases": [
+          "Hospital de Muhammad V",
+          "Casa de la Moneda"
+        ],
+        "modern_search_terms": [
+          "Calle Concepción de Zafra",
+          "Carrera del Darro",
+          "El Bañuelo"
+        ],
+        "category": "commerce_civic",
+        "subtype": "hospital",
+        "period": {
+          "from_year": 1365,
+          "to_year": 1494,
+          "from_precision": "year",
+          "to_precision": "year",
+          "note": "Fundado por Muhammad V, se construyó entre 1365 y 1367 y mantuvo su función asistencial hasta 1494."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary"
+        ],
+        "summary": "Hospital fundado por Muhammad V en el barrio de Axares y organizado en torno a un patio porticado con alberca.",
+        "context_1492": "El Maristán seguía prestando asistencia en un edificio rectangular de cuatro crujías y dos alturas. Su fundación regia lo convertía en una institución singular de la Granada nazarí.",
+        "after_1492": "Desde 1497 albergó la Real Casa de la Moneda. Fue parcialmente demolido y reconstruido en 1843, y nuevas amenazas de derribo en el siglo XX impulsaron su investigación y protección.",
+        "today": "Se conservan el pórtico sur, la nave oriental y restos arqueológicos del subsuelo. El Patronato consolidó y restauró el pórtico entre 2017 y 2022.",
+        "evidence_note": "La parcela y los restos se conocen con seguridad, pero la huella cartografiada representa el recinto arqueológico actual y no diferencia cada muro original de las reconstrucciones posteriores.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.alhambra-maristan",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-maristan",
+            "locator": "Historia, descripción arquitectónica y restauración del Maristán",
+            "supports": "Fundación, fechas, función, planta general, cambios de uso, restos conservados y restauración."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.5930735, 37.1788179],
+            [-3.5929157, 37.1785712],
+            [-3.5928782, 37.1785099],
+            [-3.5927946, 37.1785465],
+            [-3.5926944, 37.1785904],
+            [-3.592614, 37.1786236],
+            [-3.5926545, 37.1786819],
+            [-3.5926682, 37.1787014],
+            [-3.592684, 37.1787211],
+            [-3.5926881, 37.1787193],
+            [-3.5927596, 37.17882],
+            [-3.5928266, 37.1789205],
+            [-3.5930735, 37.1788179]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.banuelo",
+      "properties": {
+        "id": "water.banuelo",
+        "name": "El Bañuelo",
+        "historical_name": "Hammam al-Yawza",
+        "modern_name": "El Bañuelo",
+        "aliases": [
+          "Baño del Nogal",
+          "Baño de la Puerta de Guadix"
+        ],
+        "modern_search_terms": [
+          "Carrera del Darro 31",
+          "Calle Bañuelo",
+          "Puente de Espinosa"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "hammam",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "circa",
+          "to_precision": "unknown",
+          "note": "Su datación se discute entre una construcción zirí del siglo XI y una propuesta del siglo XII; estaba plenamente integrado en la ciudad medieval antes de 1492."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "disputed"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Baño público andalusí junto al Darro, uno de los hammames medievales mejor conservados de la península.",
+        "context_1492": "El baño atendía a un sector densamente poblado junto a una vía principal y la Bab al-Difaf. Sus salas articulaban el ritual de limpieza física y espiritual propio del hammam urbano.",
+        "after_1492": "El edificio sobrevivió a las prohibiciones y transformaciones que hicieron desaparecer muchos baños públicos. Las restauraciones contemporáneas consolidaron una fábrica excepcional, aunque su fecha exacta sigue debatida.",
+        "today": "El Bañuelo se conserva y visita en Carrera del Darro 31. La geometría sigue la huella actual del edificio, que incorpora restauraciones y no equivale a una lectura fase por fase.",
+        "evidence_note": "La localización y la fábrica son seguras. Se marca como controvertida la cronología porque la propia síntesis del Patronato recoge propuestas del siglo XI y del XII.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.alhambra-banuelo",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-banuelo",
+            "locator": "Historia, datación y contexto urbano de El Bañuelo",
+            "supports": "Nombres históricos, debate cronológico, relación con Bab al-Difaf, función y conservación."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.5931302, 37.1785458],
+            [-3.5930437, 37.1784292],
+            [-3.5930302, 37.1784091],
+            [-3.5929784, 37.1783325],
+            [-3.5929567, 37.1783007],
+            [-3.5928509, 37.178349],
+            [-3.5928567, 37.1783581],
+            [-3.5928622, 37.1783667],
+            [-3.5928686, 37.1783767],
+            [-3.5929317, 37.1783514],
+            [-3.5929741, 37.178415],
+            [-3.5929098, 37.1784413],
+            [-3.5929114, 37.1784439],
+            [-3.5929072, 37.1784449],
+            [-3.5929139, 37.1784564],
+            [-3.5929928, 37.1785886],
+            [-3.592998, 37.1785862],
+            [-3.5930092, 37.1785809],
+            [-3.5930146, 37.1785896],
+            [-3.5931302, 37.1785458]
+          ]
+        ]
+      }
     }
   ]
 }
