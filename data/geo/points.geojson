@@ -9,8 +9,15 @@
         "name": "Madraza Yusufiyya",
         "historical_name": "Madrasa Yusufiyya",
         "modern_name": "Palacio de la Madraza",
-        "aliases": ["Madraza de Granada", "Madrasa Nasriyya"],
-        "modern_search_terms": ["Calle Oficios", "Capilla Real", "Catedral"],
+        "aliases": [
+          "Madraza de Granada",
+          "Madrasa Nasriyya"
+        ],
+        "modern_search_terms": [
+          "Calle Oficios",
+          "Capilla Real",
+          "Catedral"
+        ],
         "category": "religion_learning",
         "subtype": "madrasa",
         "period": {
@@ -25,14 +32,20 @@
           "location": "secure",
           "time": "secure"
         },
-        "evidence_basis": ["surviving_fabric", "documentary", "archaeology"],
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology"
+        ],
         "summary": "Centro de altos estudios fundado por Yusuf I y única madrasa estatal conocida de al-Ándalus.",
         "context_1492": "En torno a 1492 la Madraza formaba parte del centro religioso e institucional de la medina. Su programa combinaba disciplinas jurídico-religiosas con lengua árabe, astronomía, cálculo y geometría, y contaba con biblioteca y financiación propia.",
         "after_1492": "Tras la conquista mantuvo durante un tiempo funciones docentes bajo el arzobispo fray Hernando de Talavera. En 1500 el edificio pasó a ser sede del Cabildo de Granada y fue transformándose durante la Edad Moderna.",
         "today": "El Palacio de la Madraza, propiedad de la Universidad de Granada, conserva el oratorio nazarí y otros restos materiales del edificio medieval. El punto señala el inmueble actual, no la huella completa de 1492.",
         "evidence_note": "La ubicación es segura por la conservación del edificio y de parte de su fábrica nazarí. El marcador representa una localización de referencia y no una reconstrucción de su planta medieval.",
         "geometry_method": "modern_reference_location",
-        "geometry_source_refs": ["source.ugr-madraza"],
+        "geometry_source_refs": [
+          "source.ugr-madraza"
+        ],
         "citations": [
           {
             "source_id": "source.ugr-madraza",
@@ -44,7 +57,538 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-3.59876, 37.17589]
+        "coordinates": [
+          -3.59876,
+          37.17589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.elvira",
+      "properties": {
+        "id": "gate.elvira",
+        "name": "Puerta de Elvira",
+        "historical_name": "Bab Ilbira",
+        "modern_name": "Puerta de Elvira",
+        "aliases": [
+          "Bab Ilbira",
+          "Puerta de Ilbira"
+        ],
+        "modern_search_terms": [
+          "Plaza de San Gil",
+          "Calle Elvira",
+          "Cuesta de la Alhacaba"
+        ],
+        "category": "walls_gates",
+        "subtype": "city_gate",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "La puerta se formó en época zirí y recibió una importante configuración defensiva nazarí bajo Yusuf I."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology",
+          "historical_cartography"
+        ],
+        "summary": "Gran acceso noroccidental de la medina y punto de enlace entre la calle Elvira y las cercas del Albaicín.",
+        "context_1492": "La puerta funcionaba como una fortaleza de acceso, con defensas escalonadas que controlaban la entrada a la medina y la subida hacia la Alcazaba del Albaicín.",
+        "after_1492": "Las barbacanas y buena parte del complejo fueron demolidas o transformadas durante la Edad Moderna, mientras el arco principal permaneció como hito urbano.",
+        "today": "El arco conservado sigue marcando el extremo de la calle Elvira. El punto señala la fábrica histórica visible, no la extensión completa del castillo de la puerta.",
+        "evidence_note": "La localización es segura por la conservación material y la documentación. El marcador no reconstruye los patios, torres y barbacanas desaparecidos.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.granada-elvira-gate",
+          "source.granada-pepri-islamic-city"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-elvira-gate",
+            "locator": "Ficha 22, descripción histórica",
+            "supports": "Cronología, configuración defensiva, conexiones y transformaciones de la puerta."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.60187,
+          37.18136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.monaita",
+      "properties": {
+        "id": "gate.monaita",
+        "name": "Puerta Monaita",
+        "historical_name": "Bab al-Unaydar",
+        "modern_name": "Puerta Monaita",
+        "aliases": [
+          "Bib-Albunaida",
+          "Puerta de la Erilla"
+        ],
+        "modern_search_terms": [
+          "Carril de la Lona",
+          "Cuesta de la Alhacaba",
+          "Albaicín"
+        ],
+        "category": "walls_gates",
+        "subtype": "city_gate",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Acceso de origen zirí integrado después en el sistema defensivo de la Granada nazarí."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Puerta conservada de la antigua Alcazaba del Albaicín y enlace entre sus cercas y la medina.",
+        "context_1492": "Aunque su origen era anterior al reino nazarí, la puerta seguía integrada en el complejo sistema de recintos que estructuraba la ladera del Albaicín.",
+        "after_1492": "El entorno perdió parte de sus defensas y cambió con nuevas construcciones y caminos, pero la puerta sobrevivió como uno de los testimonios materiales más antiguos.",
+        "today": "Se conserva junto al Carril de la Lona y la Cuesta de la Alhacaba. El punto representa el acceso existente, no las cercas completas asociadas.",
+        "evidence_note": "La posición es segura por la fábrica conservada. La lectura de sus conexiones con otros lienzos se apoya en la cartografía histórica y la reconstrucción urbana.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.granada-pepri-islamic-city",
+          "source.granada-ziri-wall"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, p. 88 y plano de la ciudad islámica",
+            "supports": "Localización y relación de Monaita con las cercas y puertas del Albaicín."
+          },
+          {
+            "source_id": "source.granada-ziri-wall",
+            "locator": "Descripción de la muralla zirí",
+            "supports": "Permanencia de la línea defensiva zirí en la estructura medieval posterior."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.59664,
+          37.18369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.fajalauza",
+      "properties": {
+        "id": "gate.fajalauza",
+        "name": "Puerta de Fajalauza",
+        "historical_name": "Bab Fayy al-Lawza",
+        "modern_name": "Puerta de Fajalauza",
+        "aliases": [
+          "Puerta del Collado de los Almendros"
+        ],
+        "modern_search_terms": [
+          "Carretera de Murcia",
+          "Albaicín",
+          "San Miguel"
+        ],
+        "category": "walls_gates",
+        "subtype": "city_gate",
+        "period": {
+          "from_year": 1200,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Acceso medieval asociado a la ampliación de las cercas septentrionales del Albaicín."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "probable"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Acceso de la cerca alta del Albaicín hacia los caminos del norte y del este de Granada.",
+        "context_1492": "La puerta controlaba uno de los pasos de la muralla exterior del Albaicín y ayudaba a organizar la relación entre los barrios altos y el territorio circundante.",
+        "after_1492": "La fábrica y el entorno sufrieron reparaciones y transformaciones, pero el acceso continuó siendo un referente del límite urbano y de los caminos de la ladera.",
+        "today": "La puerta se conserva en el borde alto del Albaicín. El punto señala el monumento existente y no reconstruye sus defensas complementarias.",
+        "evidence_note": "La ubicación está asegurada por la fábrica conservada; la atribución precisa de todas sus fases y conexiones requiere una lectura arqueológica más detallada.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.granada-pepri-islamic-city",
+          "source.ugr-abbas-defences"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, plano «Estructura y elementos de la ciudad islámica»",
+            "supports": "Posición de Fajalauza en la cerca y relación con el sistema viario del Albaicín."
+          },
+          {
+            "source_id": "source.ugr-abbas-defences",
+            "locator": "Capítulos sobre las puertas y murallas de Granada",
+            "supports": "Contexto defensivo y contraste académico de los accesos nazaríes."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5902,
+          37.18825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.bib-rambla",
+      "properties": {
+        "id": "gate.bib-rambla",
+        "name": "Puerta de Bibarrambla",
+        "historical_name": "Bab al-Ramla",
+        "modern_name": "Emplazamiento original de la Puerta de Bibarrambla",
+        "aliases": [
+          "Puerta de Bibrambla",
+          "Arco de las Orejas",
+          "Puerta del Arenal"
+        ],
+        "modern_search_terms": [
+          "Plaza de Bib-Rambla",
+          "Calle Salamanca",
+          "Alcaicería"
+        ],
+        "category": "walls_gates",
+        "subtype": "lost_city_gate",
+        "period": {
+          "from_year": 1200,
+          "to_year": 1884,
+          "from_precision": "century",
+          "to_precision": "year",
+          "note": "Existía en época nazarí; fue desmontada en el último cuarto del siglo XIX y reconstruida después en otro lugar."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "historical_cartography",
+          "surviving_fabric",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Puerta meridional de la medina que daba acceso al entorno comercial de Bib-Rambla desde el arenal.",
+        "context_1492": "Bab al-Ramla abría la cerca hacia la plaza del mismo nombre, uno de los espacios neurálgicos de la ciudad nazarí extendida sobre el llano.",
+        "after_1492": "La puerta continuó en uso hasta su demolición entre 1873 y 1884. Sus piezas fueron conservadas y el arco se reconstruyó en el bosque de la Alhambra en 1933.",
+        "today": "El marcador señala de forma aproximada el emplazamiento urbano original, no la puerta reconstruida que hoy se encuentra junto al bosque de la Alhambra.",
+        "evidence_note": "La relación con la plaza y la cerca está documentada, pero la transformación del entorno aconseja no presentar un punto centimétrico para el emplazamiento desaparecido.",
+        "geometry_method": "representative_point",
+        "geometry_source_refs": [
+          "source.alhambra-bib-rambla-gate",
+          "source.granada-pepri-islamic-city"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-bib-rambla-gate",
+            "locator": "Descripción histórica",
+            "supports": "Nombre, función, emplazamiento en la muralla, demolición y reconstrucción posterior."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.60166,
+          37.1737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.alhambra-arms",
+      "properties": {
+        "id": "gate.alhambra-arms",
+        "name": "Puerta de las Armas",
+        "historical_name": "Bab al-Silah",
+        "modern_name": "Puerta de las Armas",
+        "aliases": [
+          "Bab al-Silah"
+        ],
+        "modern_search_terms": [
+          "Alcazaba",
+          "Torre de las Armas",
+          "Darro"
+        ],
+        "category": "walls_gates",
+        "subtype": "palatine_gate",
+        "period": {
+          "from_year": 1200,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Acceso construido en el siglo XIII y activo durante el periodo nazarí tardío."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology"
+        ],
+        "summary": "Principal acceso medieval entre Granada y la ciudad palatina por el flanco norte de la Alcazaba.",
+        "context_1492": "Era la entrada habitual desde la ciudad a la sede de la corte. El camino ascendía desde el Darro y atravesaba un acceso en recodo preparado para controlar el paso.",
+        "after_1492": "Los nuevos accesos cristianos cambiaron la circulación principal y la puerta perdió protagonismo, aunque su compleja estructura defensiva se conservó.",
+        "today": "La puerta permanece integrada en el recinto de la Alcazaba. El punto identifica su posición material dentro de la muralla norte.",
+        "evidence_note": "La ubicación, cronología general y función están respaldadas por la fábrica conservada y la documentación del Patronato.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.alhambra-arms-gate",
+          "source.alhambra-fortified-city-guide"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-arms-gate",
+            "locator": "Descripción del acceso y apartado «Herencia almohade»",
+            "supports": "Cronología, forma en recodo y papel como conexión directa con Granada."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.59147,
+          37.17802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.alhambra-justice",
+      "properties": {
+        "id": "gate.alhambra-justice",
+        "name": "Puerta de la Justicia",
+        "historical_name": "Bab al-Sharia",
+        "modern_name": "Puerta de la Justicia",
+        "aliases": [
+          "Bab al-Sharia",
+          "Puerta de la Explanada"
+        ],
+        "modern_search_terms": [
+          "Alhambra",
+          "Bosque de la Alhambra",
+          "Pilar de Carlos V"
+        ],
+        "category": "walls_gates",
+        "subtype": "palatine_gate",
+        "period": {
+          "from_year": 1348,
+          "to_year": null,
+          "from_precision": "year",
+          "to_precision": "unknown",
+          "note": "Gran acceso monumental levantado bajo Yusuf I y conservado con transformaciones posteriores."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology"
+        ],
+        "summary": "Acceso monumental del lienzo meridional de la Alhambra, concebido también como potente dispositivo defensivo.",
+        "context_1492": "La puerta controlaba la entrada desde el sur mediante un recorrido en recodo y expresaba el carácter político y defensivo de la ciudad palatina.",
+        "after_1492": "Continuó como uno de los accesos principales y recibió usos, restauraciones y lecturas simbólicas nuevas sin perder su fábrica nazarí esencial.",
+        "today": "Es una de las entradas más reconocibles del Conjunto Monumental. El punto señala el paso conservado dentro del frente sur de la muralla.",
+        "evidence_note": "La posición y la presencia en 1492 son seguras gracias a la inscripción, la arquitectura conservada y la documentación histórica.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.alhambra-gates",
+          "source.alhambra-fortified-city-guide"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-gates",
+            "locator": "Apartado «Puerta de la Justicia o Bab al-Sharía»",
+            "supports": "Nombre histórico, posición meridional y carácter monumental y defensivo."
+          },
+          {
+            "source_id": "source.alhambra-fortified-city-guide",
+            "locator": "pp. 25-35",
+            "supports": "Integración de la puerta en el sistema de accesos de la muralla."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.58985,
+          37.17616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.alhambra-seven-floors",
+      "properties": {
+        "id": "gate.alhambra-seven-floors",
+        "name": "Puerta de los Siete Suelos",
+        "historical_name": "Bab al-Gudur",
+        "modern_name": "Puerta de los Siete Suelos",
+        "aliases": [
+          "Bab al-Gudur"
+        ],
+        "modern_search_terms": [
+          "Alhambra",
+          "Medina de la Alhambra",
+          "Secano"
+        ],
+        "category": "walls_gates",
+        "subtype": "palatine_gate",
+        "period": {
+          "from_year": 1300,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Acceso nazarí reconstruido parcialmente tras su destrucción en el siglo XIX."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "historical_cartography",
+          "archaeology"
+        ],
+        "summary": "Puerta del lienzo suroriental de la Alhambra vinculada al sector de la medina palatina.",
+        "context_1492": "El acceso comunicaba el sur de la ciudad palatina y pudo tener una dimensión ceremonial además de su función defensiva.",
+        "after_1492": "Fue tapiada en el siglo XVIII y destruida en gran parte durante la ocupación napoleónica. Su imagen actual procede de una reconstrucción contemporánea apoyada en testimonios antiguos.",
+        "today": "La puerta reconstruida ocupa su emplazamiento histórico en el recinto. El punto indica el acceso, no el volumen completo de las defensas asociadas.",
+        "evidence_note": "El emplazamiento es seguro, pero parte de la fábrica visible es reconstruida. La interpretación formal debe distinguir los restos nazaríes de las reposiciones posteriores.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.alhambra-gates",
+          "source.alhambra-fortified-city-guide"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-gates",
+            "locator": "Apartado «Puerta de los Siete Suelos o Bab al-Gudur»",
+            "supports": "Posición, función, destrucción y reconstrucción de la puerta."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.58564,
+          37.17426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.alhambra-arrabal",
+      "properties": {
+        "id": "gate.alhambra-arrabal",
+        "name": "Puerta del Arrabal",
+        "historical_name": null,
+        "modern_name": "Puerta del Arrabal",
+        "aliases": [
+          "Puerta de la Torre de los Picos"
+        ],
+        "modern_search_terms": [
+          "Torre de los Picos",
+          "Cuesta del Rey Chico",
+          "Cuesta de los Chinos",
+          "Generalife"
+        ],
+        "category": "walls_gates",
+        "subtype": "palatine_gate",
+        "period": {
+          "from_year": 1273,
+          "to_year": null,
+          "from_precision": "circa",
+          "to_precision": "unknown",
+          "note": "Acceso probablemente construido bajo Muhammad II y reforzado en el siglo XV."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "probable"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Acceso septentrional de la Alhambra que articulaba la conexión con el Generalife y la Cuesta de los Chinos.",
+        "context_1492": "La puerta formaba parte de un complejo reforzado junto a la Torre de los Picos y permitía la circulación entre la ciudad palatina, el Generalife y Granada.",
+        "after_1492": "El complejo recibió reformas y mantuvo conexiones con el Generalife, aunque sus usos y accesos fueron cambiando con la gestión posterior del recinto.",
+        "today": "La puerta se conserva bajo la Torre de los Picos, próxima a la Cuesta de los Chinos. El marcador señala el acceso histórico dentro del complejo defensivo.",
+        "evidence_note": "La ubicación y función general son seguras; la cronología concreta de las distintas fases del baluarte y la puerta requiere matices.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.alhambra-gates",
+          "source.alhambra-fortified-city-guide"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-gates",
+            "locator": "Apartado «Puerta del Arrabal»",
+            "supports": "Posición, cronología probable y proximidad funcional al Generalife."
+          },
+          {
+            "source_id": "source.alhambra-fortified-city-guide",
+            "locator": "pp. 25-31, complejo defensivo de la Puerta del Arrabal",
+            "supports": "Relación con la Torre de los Picos, el baluarte y la conexión medieval al Generalife."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.58239,
+          37.17819
+        ]
       }
     }
   ]

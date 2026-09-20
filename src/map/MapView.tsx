@@ -23,6 +23,8 @@ const DEFAULT_STYLE = 'https://tiles.openfreemap.org/styles/liberty'
 const SOURCE_ID = 'historical-features'
 
 const HISTORICAL_LAYER_IDS = [
+  'historical-urban-extent-fill',
+  'historical-urban-extent-outline',
   'historical-area-fill',
   'historical-area-secure',
   'historical-area-probable',
@@ -39,6 +41,11 @@ const HISTORICAL_LAYER_IDS = [
   'historical-selection-area',
   'historical-selection-line',
   'historical-selection-point',
+  'historical-label-sectors',
+  'historical-label-walls',
+  'historical-label-rivers',
+  'historical-label-routes',
+  'historical-label-gates',
 ] as const
 
 const INTERACTIVE_LAYER_IDS = [
@@ -51,6 +58,12 @@ const INTERACTIVE_LAYER_IDS = [
   'historical-line-approximate',
   'historical-line-disputed',
   'historical-area-fill',
+  'historical-urban-extent-fill',
+  'historical-label-sectors',
+  'historical-label-walls',
+  'historical-label-rivers',
+  'historical-label-routes',
+  'historical-label-gates',
 ] as const
 
 const MAP_LOCALE = {
@@ -273,10 +286,43 @@ export function MapView({
 
 function addHistoricalLayers(map: Map) {
   map.addLayer({
+    id: 'historical-urban-extent-fill',
+    type: 'fill',
+    source: SOURCE_ID,
+    filter: allFilters(
+      geometryFilter('Polygon'),
+      ['==', ['get', 'subtype'], 'late_nasrid_extent'],
+    ),
+    paint: {
+      'fill-color': CATEGORY_CONFIG.urban_structure.color,
+      'fill-opacity': 0.07,
+    },
+  })
+
+  map.addLayer({
+    id: 'historical-urban-extent-outline',
+    type: 'line',
+    source: SOURCE_ID,
+    filter: allFilters(
+      geometryFilter('Polygon'),
+      ['==', ['get', 'subtype'], 'late_nasrid_extent'],
+    ),
+    paint: {
+      'line-color': CATEGORY_CONFIG.urban_structure.color,
+      'line-width': 2,
+      'line-dasharray': [1.2, 2.4],
+      'line-opacity': 0.8,
+    },
+  })
+
+  map.addLayer({
     id: 'historical-area-fill',
     type: 'fill',
     source: SOURCE_ID,
-    filter: geometryFilter('Polygon'),
+    filter: allFilters(
+      geometryFilter('Polygon'),
+      ['!=', ['get', 'subtype'], 'late_nasrid_extent'],
+    ),
     paint: {
       'fill-color': CATEGORY_COLOR,
       'fill-opacity': [
@@ -334,6 +380,8 @@ function addHistoricalLayers(map: Map) {
       'circle-stroke-width': 4,
     },
   })
+
+  addHistoricalLabels(map)
 }
 
 function addConfidenceAreaOutline(map: Map, confidence: Confidence, dasharray: number[]) {
@@ -341,11 +389,153 @@ function addConfidenceAreaOutline(map: Map, confidence: Confidence, dasharray: n
     id: `historical-area-${confidence}`,
     type: 'line',
     source: SOURCE_ID,
-    filter: allFilters(geometryFilter('Polygon'), confidenceFilter(confidence)),
+    filter: allFilters(
+      geometryFilter('Polygon'),
+      confidenceFilter(confidence),
+      ['!=', ['get', 'subtype'], 'late_nasrid_extent'],
+    ),
     paint: {
       'line-color': CATEGORY_COLOR,
       'line-width': confidence === 'secure' ? 2.5 : 2,
       ...(dasharray.length > 0 ? { 'line-dasharray': dasharray } : {}),
+    },
+  })
+}
+
+function addHistoricalLabels(map: Map) {
+  map.addLayer({
+    id: 'historical-label-sectors',
+    type: 'symbol',
+    source: SOURCE_ID,
+    minzoom: 11.25,
+    filter: allFilters(
+      geometryFilter('Polygon'),
+      [
+        'in',
+        ['get', 'subtype'],
+        ['literal', ['urban_sector', 'palatine_city', 'palatine_estate']],
+      ],
+    ),
+    layout: {
+      'text-field': ['get', 'name'],
+      'text-size': ['interpolate', ['linear'], ['zoom'], 11.25, 12, 15, 16],
+      'text-letter-spacing': 0.08,
+      'text-max-width': 12,
+      'text-transform': 'uppercase',
+      'text-allow-overlap': true,
+      'text-ignore-placement': true,
+      'text-anchor': [
+        'match',
+        ['get', 'subtype'],
+        'palatine_estate',
+        'left',
+        'center',
+      ],
+      'text-offset': [
+        'match',
+        ['get', 'subtype'],
+        'palatine_estate',
+        ['literal', [1.5, -0.4]],
+        ['literal', [0, 0]],
+      ],
+    },
+    paint: {
+      'text-color': '#4b2e22',
+      'text-halo-color': 'rgba(255, 249, 235, 0.94)',
+      'text-halo-width': 2,
+    },
+  })
+
+  map.addLayer({
+    id: 'historical-label-walls',
+    type: 'symbol',
+    source: SOURCE_ID,
+    minzoom: 13.5,
+    filter: allFilters(
+      geometryFilter('LineString'),
+      ['==', ['get', 'subtype'], 'defensive_wall'],
+    ),
+    layout: {
+      'symbol-placement': 'line',
+      'symbol-spacing': 480,
+      'text-field': ['get', 'name'],
+      'text-size': 11,
+      'text-max-angle': 35,
+    },
+    paint: {
+      'text-color': '#7d312a',
+      'text-halo-color': 'rgba(255, 249, 235, 0.92)',
+      'text-halo-width': 1.5,
+    },
+  })
+
+  map.addLayer({
+    id: 'historical-label-rivers',
+    type: 'symbol',
+    source: SOURCE_ID,
+    minzoom: 11.75,
+    filter: allFilters(
+      geometryFilter('LineString'),
+      ['==', ['get', 'subtype'], 'river'],
+    ),
+    layout: {
+      'symbol-placement': 'line',
+      'symbol-spacing': 360,
+      'text-field': ['get', 'name'],
+      'text-size': 12,
+      'text-letter-spacing': 0.08,
+      'text-max-angle': 35,
+    },
+    paint: {
+      'text-color': '#17677a',
+      'text-halo-color': 'rgba(244, 251, 251, 0.95)',
+      'text-halo-width': 1.5,
+    },
+  })
+
+  map.addLayer({
+    id: 'historical-label-routes',
+    type: 'symbol',
+    source: SOURCE_ID,
+    minzoom: 14.25,
+    filter: allFilters(
+      geometryFilter('LineString'),
+      ['==', ['get', 'subtype'], 'historical_route'],
+    ),
+    layout: {
+      'symbol-placement': 'line',
+      'symbol-spacing': 400,
+      'text-field': ['get', 'name'],
+      'text-size': 11,
+      'text-max-angle': 35,
+    },
+    paint: {
+      'text-color': '#6f4b31',
+      'text-halo-color': 'rgba(255, 249, 235, 0.92)',
+      'text-halo-width': 1.5,
+    },
+  })
+
+  map.addLayer({
+    id: 'historical-label-gates',
+    type: 'symbol',
+    source: SOURCE_ID,
+    minzoom: 14.25,
+    filter: allFilters(
+      geometryFilter('Point'),
+      ['==', ['get', 'category'], 'walls_gates'],
+    ),
+    layout: {
+      'text-field': ['get', 'name'],
+      'text-size': 11,
+      'text-offset': [0, 1.25],
+      'text-anchor': 'top',
+      'text-max-width': 12,
+    },
+    paint: {
+      'text-color': '#7d312a',
+      'text-halo-color': 'rgba(255, 249, 235, 0.96)',
+      'text-halo-width': 1.5,
     },
   })
 }
@@ -400,11 +590,39 @@ function applyMapState(
     if (map.getLayer(layerId)) map.setLayoutProperty(layerId, 'visibility', visibility)
   }
 
-  map.setFilter('historical-area-fill', allFilters(geometryFilter('Polygon'), categories))
+  map.setFilter(
+    'historical-urban-extent-fill',
+    allFilters(
+      geometryFilter('Polygon'),
+      ['==', ['get', 'subtype'], 'late_nasrid_extent'],
+      categories,
+    ),
+  )
+  map.setFilter(
+    'historical-urban-extent-outline',
+    allFilters(
+      geometryFilter('Polygon'),
+      ['==', ['get', 'subtype'], 'late_nasrid_extent'],
+      categories,
+    ),
+  )
+  map.setFilter(
+    'historical-area-fill',
+    allFilters(
+      geometryFilter('Polygon'),
+      ['!=', ['get', 'subtype'], 'late_nasrid_extent'],
+      categories,
+    ),
+  )
   for (const confidence of ['secure', 'probable', 'approximate', 'disputed'] as const) {
     map.setFilter(
       `historical-area-${confidence}`,
-      allFilters(geometryFilter('Polygon'), confidenceFilter(confidence), categories),
+      allFilters(
+        geometryFilter('Polygon'),
+        confidenceFilter(confidence),
+        ['!=', ['get', 'subtype'], 'late_nasrid_extent'],
+        categories,
+      ),
     )
     map.setFilter(
       `historical-line-${confidence}`,
@@ -415,6 +633,51 @@ function applyMapState(
       allFilters(geometryFilter('Point'), confidenceFilter(confidence), categories),
     )
   }
+
+  map.setFilter(
+    'historical-label-sectors',
+    allFilters(
+      geometryFilter('Polygon'),
+      [
+        'in',
+        ['get', 'subtype'],
+        ['literal', ['urban_sector', 'palatine_city', 'palatine_estate']],
+      ],
+      categories,
+    ),
+  )
+  map.setFilter(
+    'historical-label-walls',
+    allFilters(
+      geometryFilter('LineString'),
+      ['==', ['get', 'subtype'], 'defensive_wall'],
+      categories,
+    ),
+  )
+  map.setFilter(
+    'historical-label-rivers',
+    allFilters(
+      geometryFilter('LineString'),
+      ['==', ['get', 'subtype'], 'river'],
+      categories,
+    ),
+  )
+  map.setFilter(
+    'historical-label-routes',
+    allFilters(
+      geometryFilter('LineString'),
+      ['==', ['get', 'subtype'], 'historical_route'],
+      categories,
+    ),
+  )
+  map.setFilter(
+    'historical-label-gates',
+    allFilters(
+      geometryFilter('Point'),
+      ['==', ['get', 'category'], 'walls_gates'],
+      categories,
+    ),
+  )
 
   const selected = selectedFeatureId ?? ''
   map.setFilter(

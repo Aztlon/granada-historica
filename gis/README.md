@@ -1,14 +1,46 @@
-# GIS workspace
+# Flujo cartográfico de M3
 
-Use QGIS for research and editing. The working project coordinate reference
-system is ETRS89 / UTM zone 30N (EPSG:25830); web exports use WGS84
-(EPSG:4326).
+El proyecto QGIS trabaja en **ETRS89 / UTM zona 30N (EPSG:25830)** para que
+distancias, ajustes y revisiones se realicen en metros. Los GeoJSON públicos de
+`data/geo/` siguen siendo la copia canónica versionada y se publican en
+**WGS84 / EPSG:4326**, conforme a RFC 7946.
 
-For every created geometry, record its method and source references. A precise
-shape is appropriate only when supported by the evidence. Otherwise prefer an
-approximate area, representative point, or label.
+## Preparar el espacio de trabajo
 
-Local scans and research material with uncertain or restricted reuse rights
-belong in `gis/research-local/` or `gis/scans/`. Both are ignored by Git. Do not
-commit a QGIS project until it can open without private paths or unavailable
-licensed layers.
+Con QGIS LTR instalado:
+
+```powershell
+npm run gis:bootstrap
+```
+
+El comando valida los datos públicos, crea
+`gis/work/granada-historica.gpkg` en EPSG:25830 y genera
+`gis/granada-historica.qgz`. El GeoPackage es local y no se versiona para evitar
+dos fuentes de verdad.
+
+`gis:bootstrap` reconstruye el GeoPackage. Haz antes una exportación si contiene
+cambios que quieras conservar.
+
+## Editar y revisar
+
+1. Abre `gis/granada-historica.qgz` en QGIS.
+2. Edita las capas `points`, `lines` y `areas` dentro del GeoPackage.
+3. Conserva los campos JSON (`period`, `confidence`, citas y listas) como JSON
+   válido; QGIS los almacena como texto estructurado.
+4. Revisa en metros la relación con restos conservados, relieve y referencias.
+5. No conviertas una reconstrucción aproximada en un borde preciso sin añadir
+   una fuente y actualizar `confidence`, `geometry_method` y `evidence_note`.
+
+## Exportar para la web
+
+```powershell
+npm run gis:export
+```
+
+El comando reproyecta las tres capas a EPSG:4326, restaura los identificadores
+GeoJSON, valida esquema y fuentes, y solo entonces actualiza `data/geo/`. Después
+conviene revisar el diff y ejecutar `npm test` y `npm run build`.
+
+Los PDF, escaneos, mapas georreferenciados y demás materiales de investigación
+no se guardan en este directorio. Deben permanecer en `gis/research-local/` o
+`gis/scans/`, que están excluidos del repositorio.

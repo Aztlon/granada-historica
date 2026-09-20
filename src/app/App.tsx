@@ -97,7 +97,10 @@ export function App() {
 
         <div className="map-note" role="note">
           <span className="map-note__mark" aria-hidden="true" />
-          <span>3 elementos históricos revisados · selecciona uno para explorarlo</span>
+          <span>
+            {historicalFeatureCollection.features.length} elementos históricos revisados ·
+            selecciona uno para explorarlo
+          </span>
         </div>
       </section>
 

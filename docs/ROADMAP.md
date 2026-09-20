@@ -42,11 +42,11 @@ changes.
 
 ## M3 — Historical morphology
 
-1. Establish the QGIS project in EPSG:25830 and export workflow to EPSG:4326.
-2. Map major urban sectors and carefully qualified labels.
-3. Add major walls, gates, rivers, and defensible routes.
-4. Establish the Alhambra, Generalife, lower medina, and Albaicín relationship.
-5. Review all geometry precision and provenance.
+1. [x] Establish the QGIS project in EPSG:25830 and export workflow to EPSG:4326.
+2. [x] Map major urban sectors and carefully qualified labels.
+3. [x] Add major walls, gates, rivers, and defensible routes.
+4. [x] Establish the Alhambra, Generalife, lower medina, and Albaicín relationship.
+5. [x] Review all geometry precision and provenance.
 
 Exit gate: the map communicates city-scale form before individual monuments.
 

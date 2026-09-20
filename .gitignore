@@ -19,6 +19,8 @@ Thumbs.db
 research-local/
 gis/research-local/
 gis/scans/
+gis/export/
+gis/work/*.gpkg
 *.qgz~
 *.qgs~
 

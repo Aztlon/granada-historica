@@ -25,6 +25,14 @@ be clearly marked as demo material or pass historical review.
 The frontend imports these files directly. A valid public feature therefore
 appears automatically, without editing application code.
 
+## QGIS round trip
+
+Use `npm run gis:bootstrap` to build the local EPSG:25830 GeoPackage and QGIS
+project from these canonical files. After reviewing or editing geometry in
+QGIS, use `npm run gis:export` to reproject, normalize, and validate all three
+layers before they replace the public EPSG:4326 files. The complete workflow
+and safeguards are documented in `gis/README.md`.
+
 ## Validation
 
 The validator checks the Zod schema, file/geometry agreement, coordinate ranges,

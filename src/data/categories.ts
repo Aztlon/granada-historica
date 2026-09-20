@@ -86,4 +86,12 @@ export const SUBTYPE_LABELS: Record<string, string> = {
   madrasa: 'Madraza',
   river: 'Río',
   palatine_city: 'Ciudad palatina',
+  palatine_estate: 'Finca palatina',
+  urban_sector: 'Sector urbano',
+  late_nasrid_extent: 'Extensión urbana aproximada',
+  defensive_wall: 'Muralla o cerca',
+  historical_route: 'Ruta histórica',
+  city_gate: 'Puerta urbana',
+  lost_city_gate: 'Puerta desaparecida',
+  palatine_gate: 'Puerta palatina',
 }

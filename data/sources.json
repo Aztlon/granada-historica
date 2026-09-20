@@ -58,5 +58,113 @@
     "identifier": "",
     "reuse_status": "Cita factual; no se reproducen imágenes.",
     "notes": "Referencia municipal sobre el curso visible del Darro, sus puentes y su relación con la Carrera del Darro."
+  },
+  {
+    "id": "source.granada-pepri-islamic-city",
+    "author": "Ayuntamiento de Granada",
+    "title": "Avance del Plan Especial y Catálogo Albaicín-Sacromonte. V. Anexos: Memoria urbana",
+    "year": 2022,
+    "publisher": "Ayuntamiento de Granada",
+    "type": "institutional_plan",
+    "url": "https://www.granada.org/urbanismo.nsf/c3abb01dbb6ecb39c125812100281f63/1f312991b52af198c12588ee003fbeae/$FILE/V_PE-C%20ANEXOS.pdf",
+    "identifier": "Avance PE Albaicín-Sacromonte, V Anexos",
+    "reuse_status": "Cita y consulta cartográfica; no se redistribuye ni se reproduce el plano.",
+    "notes": "La memoria urbana incluye el plano «Estructura y elementos de la ciudad islámica» y explica la organización viaria y defensiva del Albaicín nazarí."
+  },
+  {
+    "id": "source.alhambra-fortified-city-guide",
+    "author": "Patronato de la Alhambra y Generalife",
+    "title": "Muralla, torres y puertas de la Alhambra",
+    "year": 2020,
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "type": "institutional_guide",
+    "url": "https://www.alhambra-patronato.es/wp-content/uploads/2020/04/alhambraciudad-fortaleza-2020-web-1.pdf",
+    "identifier": "Cuaderno para el profesorado",
+    "reuse_status": "Cita y consulta cartográfica; no se redistribuye ni se reproduce la publicación.",
+    "notes": "Describe las cercas y barrios de Granada, el recinto de la Alhambra, sus cuatro accesos exteriores y la relación con el Generalife."
+  },
+  {
+    "id": "source.alhambra-gates",
+    "author": "Patronato de la Alhambra y Generalife",
+    "title": "Las puertas de la Alhambra",
+    "year": 2018,
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "type": "institutional_webpage",
+    "url": "https://www.alhambra-patronato.es/las-puertas-de-la-alhambra",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Síntesis institucional de las puertas de la Justicia, Siete Suelos, Armas y Arrabal."
+  },
+  {
+    "id": "source.alhambra-arms-gate",
+    "author": "Patronato de la Alhambra y Generalife",
+    "title": "Puerta de las Armas: un camino histórico entre la Alhambra y Granada",
+    "year": 2020,
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "type": "institutional_webpage",
+    "url": "https://www.alhambra-patronato.es/puerta-de-las-armas-un-camino-historico-entre-la-alhambra-y-granada",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Explica la función de la Puerta de las Armas como conexión principal entre la ciudad y la corte nazarí."
+  },
+  {
+    "id": "source.alhambra-generalife",
+    "author": "Patronato de la Alhambra y Generalife",
+    "title": "Descubriendo el Generalife",
+    "year": 2013,
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "type": "institutional_webpage",
+    "url": "https://www.alhambra-patronato.es/descubriendo-el-generalife",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Sitúa el Generalife fuera de las murallas de la Alhambra y lo caracteriza como finca de recreo de los sultanes nazaríes."
+  },
+  {
+    "id": "source.granada-ziri-wall",
+    "author": "Ayuntamiento de Granada",
+    "title": "Muralla zirí",
+    "year": null,
+    "publisher": "Turismo de Granada",
+    "type": "institutional_webpage",
+    "url": "https://turismo.granada.org/es/muralla-ziri",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Referencia municipal sobre el tramo conservado de la muralla zirí y su prolongación hacia la Puerta de Elvira."
+  },
+  {
+    "id": "source.granada-elvira-gate",
+    "author": "Ayuntamiento de Granada",
+    "title": "Castillo de la Puerta de Elvira",
+    "year": null,
+    "publisher": "Plan General de Ordenación Municipal de Granada",
+    "type": "institutional_catalogue",
+    "url": "https://www.granada.org/urbanismo.nsf/in/NASLXRK/$file/memoria-ordenacion-4.pdf",
+    "identifier": "Ficha 22",
+    "reuse_status": "Cita factual; no se reproduce la publicación.",
+    "notes": "Documenta la puerta, su integración en la muralla zirí y sus conexiones con Monaita y la calle Elvira."
+  },
+  {
+    "id": "source.alhambra-bib-rambla-gate",
+    "author": "Patronato de la Alhambra y Generalife",
+    "title": "Puerta de Bibarrambla",
+    "year": null,
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "type": "institutional_webpage",
+    "url": "https://www.alhambra-patronato.es/edificios-lugares/puerta-de-bibarrambla",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Explica el emplazamiento original de Bab al-Ramla, su demolición y su reconstrucción posterior en el bosque de la Alhambra."
+  },
+  {
+    "id": "source.ugr-abbas-defences",
+    "author": "Nidal Abbas",
+    "title": "La arquitectura defensiva nazarí: murallas, torres y puertas de las ciudades del reino de Granada, Antequera y Archidona",
+    "year": 2014,
+    "publisher": "Universidad de Granada",
+    "type": "doctoral_thesis",
+    "url": "https://digibug.ugr.es/handle/10481/34259",
+    "identifier": "hdl:10481/34259",
+    "reuse_status": "Consulta y cita conforme a la licencia CC BY-NC-ND 3.0; no se redistribuye ni se adapta la publicación.",
+    "notes": "Estudio académico de referencia para contrastar la arquitectura defensiva nazarí y evitar presentar como seguras reconstrucciones no conservadas."
   }
 ]

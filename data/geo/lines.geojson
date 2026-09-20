@@ -9,8 +9,14 @@
         "name": "Río Darro",
         "historical_name": null,
         "modern_name": "Río Darro",
-        "aliases": ["Darro"],
-        "modern_search_terms": ["Carrera del Darro", "Paseo de los Tristes", "Plaza Nueva"],
+        "aliases": [
+          "Darro"
+        ],
+        "modern_search_terms": [
+          "Carrera del Darro",
+          "Paseo de los Tristes",
+          "Plaza Nueva"
+        ],
         "category": "water_infrastructure",
         "subtype": "river",
         "period": {
@@ -25,14 +31,20 @@
           "location": "probable",
           "time": "secure"
         },
-        "evidence_basis": ["documentary", "later_description"],
+        "evidence_basis": [
+          "documentary",
+          "later_description"
+        ],
         "summary": "Eje fluvial de la ciudad histórica y una de las bases de su abastecimiento y paisaje urbano.",
         "context_1492": "El Darro articulaba el valle entre la Alhambra y el Albaicín. Junto con el Genil y el Beiro, abastecía la ciudad y alimentaba un sistema de acequias e infraestructuras hidráulicas ampliado durante los periodos zirí y nazarí.",
         "after_1492": "La relación urbana con el río fue transformándose y parte de su recorrido central quedó cubierta. El tramo junto a la Carrera del Darro mantuvo su presencia visible y la conexión entre ambas laderas mediante puentes.",
         "today": "El río sigue visible entre el Paseo de los Tristes y la Carrera del Darro, antes de quedar soterrado bajo el centro de la ciudad. La línea mostrada es una simplificación cartográfica del corredor fluvial.",
         "evidence_note": "La existencia y el corredor general son seguros. Esta línea se ha generalizado para el prototipo y no debe utilizarse como deslinde hidráulico ni como reconstrucción centimétrica del cauce de 1492.",
         "geometry_method": "modern_reference_location",
-        "geometry_source_refs": ["source.granada-water-culture", "source.granada-carrera-darro"],
+        "geometry_source_refs": [
+          "source.granada-water-culture",
+          "source.granada-carrera-darro"
+        ],
         "citations": [
           {
             "source_id": "source.granada-water-culture",
@@ -50,18 +62,641 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-3.57484, 37.18112],
-          [-3.57736, 37.18038],
-          [-3.58021, 37.17954],
-          [-3.58275, 37.17872],
-          [-3.58537, 37.17814],
-          [-3.58782, 37.17791],
-          [-3.59018, 37.17774],
-          [-3.59212, 37.17758],
-          [-3.59407, 37.17739],
-          [-3.59554, 37.17716],
-          [-3.59673, 37.17686],
-          [-3.59762, 37.17653]
+          [
+            -3.57484,
+            37.18112
+          ],
+          [
+            -3.57736,
+            37.18038
+          ],
+          [
+            -3.58021,
+            37.17954
+          ],
+          [
+            -3.58275,
+            37.17872
+          ],
+          [
+            -3.58537,
+            37.17814
+          ],
+          [
+            -3.58782,
+            37.17791
+          ],
+          [
+            -3.59018,
+            37.17774
+          ],
+          [
+            -3.59212,
+            37.17758
+          ],
+          [
+            -3.59407,
+            37.17739
+          ],
+          [
+            -3.59554,
+            37.17716
+          ],
+          [
+            -3.59673,
+            37.17686
+          ],
+          [
+            -3.59762,
+            37.17653
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.genil",
+      "properties": {
+        "id": "water.genil",
+        "name": "Río Genil",
+        "historical_name": null,
+        "modern_name": "Río Genil",
+        "aliases": [
+          "Genil"
+        ],
+        "modern_search_terms": [
+          "Paseo del Salón",
+          "Puente Romano",
+          "Violón"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "river",
+        "period": {
+          "from_year": null,
+          "to_year": null,
+          "from_precision": "unknown",
+          "to_precision": "unknown",
+          "note": "Curso natural anterior a la ciudad, incluido por su papel en el paisaje y la red hidráulica histórica."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "historical_cartography",
+          "later_description"
+        ],
+        "summary": "Gran corredor fluvial al sur de la ciudad histórica y referencia del paisaje de la Granada nazarí.",
+        "context_1492": "El Genil delimitaba y organizaba el borde meridional de la ciudad y, junto con el Darro y otros cursos, sostenía sistemas de riego y abastecimiento vinculados a la vega y a los espacios urbanos.",
+        "after_1492": "Las riberas fueron canalizadas y urbanizadas gradualmente, mientras el río mantuvo su papel territorial y su relación con los puentes y paseos del sur de Granada.",
+        "today": "El Genil sigue siendo visible al sur del centro. La línea está simplificada para la lectura a escala urbana y no representa un deslinde hidráulico histórico ni actual.",
+        "evidence_note": "La presencia del río es segura; el trazado utiliza el corredor moderno como referencia general porque los márgenes y cauces han sido transformados.",
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.granada-water-culture",
+          "source.granada-pepri-islamic-city"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-water-culture",
+            "locator": "Apartado 5.2, «Red hidráulica medieval»",
+            "supports": "Papel del Genil en el sistema fluvial e hidráulico histórico de Granada."
+          },
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, p. 88",
+            "supports": "Relación de los ríos con la estructura de la ciudad nazarí."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.57738,
+            37.16804
+          ],
+          [
+            -3.58224,
+            37.16764
+          ],
+          [
+            -3.58768,
+            37.16718
+          ],
+          [
+            -3.59343,
+            37.16702
+          ],
+          [
+            -3.59907,
+            37.16699
+          ],
+          [
+            -3.60484,
+            37.16731
+          ],
+          [
+            -3.61031,
+            37.16815
+          ],
+          [
+            -3.61517,
+            37.16917
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "walls.albaicin-north",
+      "properties": {
+        "id": "walls.albaicin-north",
+        "name": "Cerca septentrional del Albaicín",
+        "historical_name": null,
+        "modern_name": "Murallas del Albaicín",
+        "aliases": [
+          "Cerca de Don Gonzalo",
+          "Muralla del Albaicín"
+        ],
+        "modern_search_terms": [
+          "San Cristóbal",
+          "Fajalauza",
+          "Cuesta de la Alhacaba"
+        ],
+        "category": "walls_gates",
+        "subtype": "defensive_wall",
+        "period": {
+          "from_year": 1200,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "La cerca reúne fases y reparaciones distintas; se representa su función en la ciudad nazarí tardía."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Línea defensiva que cerraba y articulaba los sectores septentrionales del Albaicín.",
+        "context_1492": "La cerca recorría la parte alta de la ladera y conectaba puertas y recintos formados en distintas etapas. Era uno de los bordes más visibles de la expansión urbana nazarí.",
+        "after_1492": "Muchos tramos fueron reparados, transformados o absorbidos por nuevas construcciones. Otros lienzos y torres siguen siendo legibles en el paisaje del Albaicín.",
+        "today": "Se conservan sectores visibles en torno a San Cristóbal y otros puntos de la ladera. La línea generaliza el recorrido y no debe confundirse con un levantamiento arqueológico continuo.",
+        "evidence_note": "La existencia de la cerca y numerosos tramos son seguros. Las conexiones entre restos se muestran de forma aproximada y requieren comprobación arqueológica a escala local.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-pepri-islamic-city",
+          "source.granada-ziri-wall",
+          "source.ugr-abbas-defences"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, pp. 88-90 y planos",
+            "supports": "Trazado general de cercas, puertas y organización defensiva del Albaicín."
+          },
+          {
+            "source_id": "source.ugr-abbas-defences",
+            "locator": "Capítulos sobre las defensas de Granada",
+            "supports": "Contraste tipológico e histórico del sistema defensivo nazarí."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.60179,
+            37.18159
+          ],
+          [
+            -3.60022,
+            37.18331
+          ],
+          [
+            -3.59758,
+            37.18514
+          ],
+          [
+            -3.59439,
+            37.18702
+          ],
+          [
+            -3.59021,
+            37.18828
+          ],
+          [
+            -3.58613,
+            37.18719
+          ],
+          [
+            -3.58398,
+            37.18415
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "walls.medina-lower",
+      "properties": {
+        "id": "walls.medina-lower",
+        "name": "Cerca de la medina baja",
+        "historical_name": null,
+        "modern_name": null,
+        "aliases": [
+          "Muralla de la medina",
+          "Cerca de Madinat Garnata"
+        ],
+        "modern_search_terms": [
+          "Puerta de Elvira",
+          "Bib-Rambla",
+          "Centro"
+        ],
+        "category": "walls_gates",
+        "subtype": "defensive_wall",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "La cerca urbana fue ampliada y reparada en varias fases; el trazado reúne sectores de cronología diversa."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "historical_cartography",
+          "documentary",
+          "parcel_morphology",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Recorrido general de las defensas que encerraban la medina del llano y comunicaban sus puertas principales.",
+        "context_1492": "La cerca ordenaba los accesos a la medina baja y enlazaba puertas como Elvira y Bib-Rambla. No fue una línea construida de una vez, sino un sistema modificado durante siglos.",
+        "after_1492": "La expansión urbana, las reformas viarias y la pérdida de función defensiva provocaron la demolición o integración de muchos tramos en edificios posteriores.",
+        "today": "La mayor parte del recorrido ya no se percibe como una muralla continua. El mapa señala una reconstrucción general para comprender el perímetro, no restos visibles en todos sus puntos.",
+        "evidence_note": "Puertas y algunos encuentros son conocidos, pero largos tramos han desaparecido. Por ello el trazo es discontinuo en la evidencia y se representa con confianza aproximada.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-pepri-islamic-city",
+          "source.granada-elvira-gate",
+          "source.alhambra-bib-rambla-gate",
+          "source.ugr-abbas-defences"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, p. 88 y cartografía asociada",
+            "supports": "Cercas y accesos de la medina en la lectura de conjunto de la ciudad islámica."
+          },
+          {
+            "source_id": "source.granada-elvira-gate",
+            "locator": "Ficha 22",
+            "supports": "Encuentro de la muralla con la Puerta de Elvira y conexiones defensivas."
+          },
+          {
+            "source_id": "source.alhambra-bib-rambla-gate",
+            "locator": "Descripción histórica",
+            "supports": "Posición de Bab al-Ramla en el lienzo de la medina baja."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.60186,
+            37.18142
+          ],
+          [
+            -3.60422,
+            37.17927
+          ],
+          [
+            -3.60585,
+            37.17562
+          ],
+          [
+            -3.60466,
+            37.17231
+          ],
+          [
+            -3.60118,
+            37.17033
+          ],
+          [
+            -3.59707,
+            37.17097
+          ],
+          [
+            -3.59463,
+            37.17361
+          ],
+          [
+            -3.59495,
+            37.17657
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "walls.alhambra-perimeter",
+      "properties": {
+        "id": "walls.alhambra-perimeter",
+        "name": "Muralla de la Alhambra",
+        "historical_name": null,
+        "modern_name": "Recinto amurallado de la Alhambra",
+        "aliases": [
+          "Cerca de la Alhambra"
+        ],
+        "modern_search_terms": [
+          "Alcazaba",
+          "Torres de la Alhambra",
+          "Camino de Ronda"
+        ],
+        "category": "walls_gates",
+        "subtype": "defensive_wall",
+        "period": {
+          "from_year": 1238,
+          "to_year": null,
+          "from_precision": "year",
+          "to_precision": "unknown",
+          "note": "El recinto se formó y transformó durante los siglos nazaríes y recibió intervenciones posteriores."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary",
+          "historical_cartography"
+        ],
+        "summary": "Perímetro defensivo de la ciudad palatina, reforzado por torres, camino de ronda y accesos en recodo.",
+        "context_1492": "La muralla separaba y protegía la Alcazaba, los palacios y la medina de la Alhambra. Cuatro grandes puertas exteriores controlaban la relación con Granada y el Generalife.",
+        "after_1492": "El recinto mantuvo funciones militares y palatinas, con reparaciones, demoliciones parciales y restauraciones que modificaron algunos puntos sin eliminar su lectura general.",
+        "today": "Gran parte de la muralla y sus torres se conserva dentro del Conjunto Monumental. El trazado se ha simplificado para la escala del mapa y no sustituye una planta arquitectónica.",
+        "evidence_note": "El perímetro es ampliamente reconocible por la fábrica conservada. La línea cartográfica suaviza torres, quiebros y recintos interiores, por lo que su precisión se clasifica como probable.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.alhambra-fortified-city-guide",
+          "source.alhambra-gates",
+          "source.alhambra-urban-structure"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-fortified-city-guide",
+            "locator": "pp. 15-35",
+            "supports": "Muralla, torres, camino de ronda, puertas y estructura interior de la ciudad palatina."
+          },
+          {
+            "source_id": "source.alhambra-gates",
+            "locator": "Descripción de los cuatro accesos principales",
+            "supports": "Relación entre el perímetro y las puertas de Justicia, Siete Suelos, Armas y Arrabal."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.59415,
+            37.17725
+          ],
+          [
+            -3.59278,
+            37.17817
+          ],
+          [
+            -3.58988,
+            37.17891
+          ],
+          [
+            -3.58617,
+            37.17886
+          ],
+          [
+            -3.58235,
+            37.17813
+          ],
+          [
+            -3.57942,
+            37.17673
+          ],
+          [
+            -3.58011,
+            37.17458
+          ],
+          [
+            -3.58348,
+            37.17334
+          ],
+          [
+            -3.58762,
+            37.17345
+          ],
+          [
+            -3.59122,
+            37.17438
+          ],
+          [
+            -3.59365,
+            37.17569
+          ],
+          [
+            -3.59415,
+            37.17725
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route.elvira-axis",
+      "properties": {
+        "id": "route.elvira-axis",
+        "name": "Eje de Elvira",
+        "historical_name": null,
+        "modern_name": "Calle Elvira",
+        "aliases": [
+          "Calle de Elvira"
+        ],
+        "modern_search_terms": [
+          "Puerta de Elvira",
+          "Plaza Nueva",
+          "Calle Elvira"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_route",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "El eje tiene continuidad histórica, aunque su anchura, rasante y encuentros han cambiado."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "historical_cartography",
+          "parcel_morphology",
+          "toponymy",
+          "documentary"
+        ],
+        "summary": "Eje principal de la medina que comunicaba el centro urbano con la Puerta de Elvira.",
+        "context_1492": "La vía articulaba el tramo septentrional de la medina y conducía hacia uno de sus accesos principales. A ella se conectaba una red jerarquizada de calles menores y adarves.",
+        "after_1492": "La calle conservó su función urbana, aunque las aperturas de plazas y nuevas vías alteraron sus extremos y su relación con la antigua cerca.",
+        "today": "La calle Elvira mantiene buena parte del corredor histórico entre Plaza Nueva y la puerta. La línea representa el eje general y no una anchura de calle medieval.",
+        "evidence_note": "La continuidad del corredor está respaldada por la cartografía y la morfología urbana. El recorrido se generaliza sobre la calle actual y se clasifica como probable.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-pepri-islamic-city",
+          "source.granada-elvira-gate"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, pp. 88-90",
+            "supports": "Función de Elvira como eje viario principal y jerarquía de la red urbana."
+          },
+          {
+            "source_id": "source.granada-elvira-gate",
+            "locator": "Ficha 22",
+            "supports": "Conexión histórica de la puerta fortificada con la calle Elvira."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.60179,
+            37.18139
+          ],
+          [
+            -3.60079,
+            37.18038
+          ],
+          [
+            -3.59935,
+            37.1792
+          ],
+          [
+            -3.59791,
+            37.1782
+          ],
+          [
+            -3.59643,
+            37.17748
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route.alhambra-arms-access",
+      "properties": {
+        "id": "route.alhambra-arms-access",
+        "name": "Acceso urbano a la Puerta de las Armas",
+        "historical_name": null,
+        "modern_name": null,
+        "aliases": [
+          "Camino de la Puerta de las Armas"
+        ],
+        "modern_search_terms": [
+          "Puerta de las Armas",
+          "Darro",
+          "Alcazaba"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_route",
+        "period": {
+          "from_year": 1200,
+          "to_year": 1500,
+          "from_precision": "century",
+          "to_precision": "circa",
+          "note": "Se representa la relación funcional medieval, no un itinerario peatonal moderno exacto."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Conexión principal entre la ciudad baja, los pasos del Darro y el acceso septentrional de la Alhambra.",
+        "context_1492": "Antes de las transformaciones cristianas, la Puerta de las Armas era la entrada que comunicaba directamente el centro de Granada con la sede de la corte en la Alhambra.",
+        "after_1492": "La reordenación de accesos y caminos redujo el protagonismo de este itinerario. Tramos y relaciones visuales sobreviven, pero el recorrido dejó de funcionar como entrada principal.",
+        "today": "El mapa muestra una conexión interpretativa entre el corredor del Darro y la puerta. No propone una ruta visitable continua ni afirma que cada tramo conserve la rasante medieval.",
+        "evidence_note": "La función y los extremos están documentados, pero el desarrollo preciso de la subida no se conserva íntegramente. Se dibuja una línea aproximada entre puntos seguros.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.alhambra-arms-gate",
+          "source.alhambra-fortified-city-guide"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-arms-gate",
+            "locator": "Apartado «Herencia almohade» y descripción del acceso",
+            "supports": "Papel de la Puerta de las Armas como conexión directa entre Granada y la corte."
+          },
+          {
+            "source_id": "source.alhambra-fortified-city-guide",
+            "locator": "pp. 25-35",
+            "supports": "Relación de las puertas exteriores con la muralla y las calles de la Alhambra."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.59791,
+            37.17755
+          ],
+          [
+            -3.59632,
+            37.17764
+          ],
+          [
+            -3.59464,
+            37.17752
+          ],
+          [
+            -3.59311,
+            37.17756
+          ],
+          [
+            -3.5916,
+            37.17776
+          ]
         ]
       }
     }

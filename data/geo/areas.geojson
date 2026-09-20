@@ -9,8 +9,15 @@
         "name": "Alhambra",
         "historical_name": null,
         "modern_name": "Conjunto Monumental de la Alhambra y el Generalife",
-        "aliases": ["Ciudad palatina de la Alhambra", "Ciudadela de la Alhambra"],
-        "modern_search_terms": ["Palacios Nazaríes", "Alcazaba", "Sabika"],
+        "aliases": [
+          "Ciudad palatina de la Alhambra",
+          "Ciudadela de la Alhambra"
+        ],
+        "modern_search_terms": [
+          "Palacios Nazaríes",
+          "Alcazaba",
+          "Sabika"
+        ],
         "category": "royal_elite",
         "subtype": "palatine_city",
         "period": {
@@ -25,14 +32,22 @@
           "location": "approximate",
           "time": "secure"
         },
-        "evidence_basis": ["surviving_fabric", "archaeology", "documentary", "scholarly_reconstruction"],
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary",
+          "scholarly_reconstruction"
+        ],
         "summary": "Ciudad palatina, fortaleza y sede de la corte nazarí sobre la colina de la Sabika.",
         "context_1492": "La Alhambra reunía palacios, espacios administrativos, viviendas, talleres, mezquita, baños, sistemas de agua y una alcazaba militar. Su estructura respondía al servicio de la corte y había evolucionado durante más de dos siglos antes de la conquista.",
         "after_1492": "Tras la conquista quedó establecida como Casa Real cristiana. Las reparaciones de los Reyes Católicos y, más tarde, la construcción del palacio de Carlos V y otros cambios alteraron partes del conjunto sin borrar su extensa fábrica nazarí.",
         "today": "Es un conjunto monumental gestionado por el Patronato de la Alhambra y Generalife. El área de este mapa sirve para situar la ciudad palatina respecto a Granada y no equivale a un perímetro arqueológico o administrativo.",
         "evidence_note": "La localización y la existencia en 1492 son seguras por la arquitectura conservada, la arqueología y la documentación. La geometría se dibuja como una envolvente aproximada para evitar atribuir precisión histórica a un primer prototipo.",
         "geometry_method": "approximate_area",
-        "geometry_source_refs": ["source.alhambra-history", "source.alhambra-urban-structure"],
+        "geometry_source_refs": [
+          "source.alhambra-history",
+          "source.alhambra-urban-structure"
+        ],
         "citations": [
           {
             "source_id": "source.alhambra-history",
@@ -51,18 +66,493 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [-3.59415, 37.17725],
-            [-3.59278, 37.17817],
-            [-3.58988, 37.17891],
-            [-3.58617, 37.17886],
-            [-3.58235, 37.17813],
-            [-3.57942, 37.17673],
-            [-3.58011, 37.17458],
-            [-3.58348, 37.17334],
-            [-3.58762, 37.17345],
-            [-3.59122, 37.17438],
-            [-3.59365, 37.17569],
-            [-3.59415, 37.17725]
+            [
+              -3.59415,
+              37.17725
+            ],
+            [
+              -3.59365,
+              37.17569
+            ],
+            [
+              -3.59122,
+              37.17438
+            ],
+            [
+              -3.58762,
+              37.17345
+            ],
+            [
+              -3.58348,
+              37.17334
+            ],
+            [
+              -3.58011,
+              37.17458
+            ],
+            [
+              -3.57942,
+              37.17673
+            ],
+            [
+              -3.58235,
+              37.17813
+            ],
+            [
+              -3.58617,
+              37.17886
+            ],
+            [
+              -3.58988,
+              37.17891
+            ],
+            [
+              -3.59278,
+              37.17817
+            ],
+            [
+              -3.59415,
+              37.17725
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "royal.generalife",
+      "properties": {
+        "id": "royal.generalife",
+        "name": "Generalife",
+        "historical_name": null,
+        "modern_name": "Palacio y jardines del Generalife",
+        "aliases": [
+          "Yannat al-Arif",
+          "Jannat al-Arif"
+        ],
+        "modern_search_terms": [
+          "Cerro del Sol",
+          "Patio de la Acequia",
+          "Cuesta de los Chinos"
+        ],
+        "category": "royal_elite",
+        "subtype": "palatine_estate",
+        "period": {
+          "from_year": 1273,
+          "to_year": null,
+          "from_precision": "circa",
+          "to_precision": "unknown",
+          "note": "La finca palatina se desarrolló durante la etapa nazarí y recibió reformas posteriores; el ámbito dibujado es orientativo."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Finca palatina, agrícola y de recreo situada fuera de la muralla oriental de la Alhambra.",
+        "context_1492": "El Generalife formaba un paisaje de palacio, huertas, jardines y agua ligado a la corte nazarí, pero separado físicamente del recinto amurallado de la Alhambra por el barranco y sus defensas.",
+        "after_1492": "La finca continuó transformándose y conservó su carácter ajardinado. Las intervenciones posteriores modificaron accesos, jardines y edificios sin borrar la organización histórica esencial.",
+        "today": "El palacio, las huertas y los jardines forman parte del Conjunto Monumental de la Alhambra y el Generalife. El área mostrada no coincide con un límite administrativo ni parcelario actual.",
+        "evidence_note": "La posición relativa respecto a la Alhambra y el origen nazarí son seguros. La envolvente es aproximada porque el paisaje histórico fue más complejo que el recinto visitable actual.",
+        "geometry_method": "approximate_area",
+        "geometry_source_refs": [
+          "source.alhambra-generalife",
+          "source.alhambra-fortified-city-guide"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-generalife",
+            "locator": "Descripción general del Generalife",
+            "supports": "Carácter de finca de recreo nazarí y posición exterior al este de la Alhambra."
+          },
+          {
+            "source_id": "source.alhambra-fortified-city-guide",
+            "locator": "pp. 25-30, acceso medieval al Generalife",
+            "supports": "Separación defensiva y conexión por la Puerta del Arrabal y la Cuesta de los Chinos."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.58257,
+              37.18087
+            ],
+            [
+              -3.58162,
+              37.17602
+            ],
+            [
+              -3.57912,
+              37.17494
+            ],
+            [
+              -3.57622,
+              37.17698
+            ],
+            [
+              -3.57552,
+              37.18026
+            ],
+            [
+              -3.57742,
+              37.18222
+            ],
+            [
+              -3.58065,
+              37.18217
+            ],
+            [
+              -3.58257,
+              37.18087
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urban.albaicin",
+      "properties": {
+        "id": "urban.albaicin",
+        "name": "Albaicín nazarí",
+        "historical_name": null,
+        "modern_name": "Albaicín",
+        "aliases": [
+          "Albayzín",
+          "Rabad al-Bayyazin"
+        ],
+        "modern_search_terms": [
+          "Cuesta de la Alhacaba",
+          "San Cristóbal",
+          "Sacromonte"
+        ],
+        "category": "urban_structure",
+        "subtype": "urban_sector",
+        "period": {
+          "from_year": 1200,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "El sector integra recintos y arrabales formados en distintas etapas; no se propone una fecha única para toda el área."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "historical_cartography",
+          "toponymy",
+          "parcel_morphology",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Gran sector urbano de la ladera norte del Darro, compuesto por recintos y barrios de formación sucesiva.",
+        "context_1492": "En época nazarí la ladera del Albaicín estaba densamente articulada por cercas, puertas, ejes radiales y una red secundaria de adarves. No constituía un barrio de límites simples ni idénticos a los actuales.",
+        "after_1492": "La población, los usos religiosos y la trama construida cambiaron profundamente, aunque numerosos recorridos, parcelas, aljibes y lienzos defensivos conservaron parte de la estructura heredada.",
+        "today": "El Albaicín es un barrio histórico y parte del bien Patrimonio Mundial. Esta mancha solo ayuda a leer su posición en la ciudad nazarí y no representa el límite contemporáneo del barrio.",
+        "evidence_note": "La entidad urbana y su posición son seguras, pero su borde varió y reunió varios recintos. Por ello se muestra una zona generalizada, sin atribuir exactitud a cada calle o parcela.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-pepri-islamic-city",
+          "source.alhambra-fortified-city-guide",
+          "source.granada-ziri-wall"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, pp. 88-90 y plano «La ciudad nazarí en el ámbito del PEPRI»",
+            "supports": "Organización del Albaicín nazarí mediante cercas, puertas, ejes radiales y adarves."
+          },
+          {
+            "source_id": "source.alhambra-fortified-city-guide",
+            "locator": "p. 7, «Los barrios de Granada y sus murallas»",
+            "supports": "Relación espacial entre el Albaicín, la medina y la Alhambra."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.60215,
+              37.18136
+            ],
+            [
+              -3.5991,
+              37.17927
+            ],
+            [
+              -3.59473,
+              37.17863
+            ],
+            [
+              -3.58842,
+              37.17952
+            ],
+            [
+              -3.58386,
+              37.18238
+            ],
+            [
+              -3.58402,
+              37.18652
+            ],
+            [
+              -3.58968,
+              37.18913
+            ],
+            [
+              -3.59502,
+              37.18842
+            ],
+            [
+              -3.59952,
+              37.1851
+            ],
+            [
+              -3.60215,
+              37.18136
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urban.lower-medina",
+      "properties": {
+        "id": "urban.lower-medina",
+        "name": "Medina baja",
+        "historical_name": "Madinat Garnata",
+        "modern_name": "Centro de Granada",
+        "aliases": [
+          "Medina de Granada",
+          "Ciudad baja"
+        ],
+        "modern_search_terms": [
+          "Catedral",
+          "Alcaicería",
+          "Bib-Rambla",
+          "Calle Elvira",
+          "Centro"
+        ],
+        "category": "urban_structure",
+        "subtype": "urban_sector",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "La medina se desarrolló desde época zirí y cambió de extensión y organización durante los siglos posteriores."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "parcel_morphology",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Núcleo urbano de la llanura, con el principal centro religioso, comercial y cívico de la Granada nazarí.",
+        "context_1492": "La medina baja reunía la mezquita aljama, la Alcaicería, la Madraza, mercados y alhóndigas. La calle Elvira estructuraba uno de sus ejes principales entre el interior urbano y la puerta del mismo nombre.",
+        "after_1492": "La instalación de instituciones cristianas, la transformación de la mezquita mayor y las grandes reformas viarias alteraron el centro. Parte de la trama menor y varios edificios andalusíes sobrevivieron de forma fragmentaria.",
+        "today": "El área coincide de manera general con sectores del Centro y el entorno de la Catedral, Plaza Nueva, la Alcaicería y Bib-Rambla. No implica equivalencia entre límites medievales y barrios actuales.",
+        "evidence_note": "Los principales lugares y ejes están bien documentados, pero gran parte de la cerca y de la trama fue transformada. La geometría expresa un sector urbano aproximado, no un parcelario reconstruido.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-pepri-islamic-city",
+          "source.granada-elvira-gate",
+          "source.alhambra-bib-rambla-gate"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, pp. 88-90",
+            "supports": "Estructura de la medina, eje de Elvira y localización del centro religioso y comercial."
+          },
+          {
+            "source_id": "source.granada-elvira-gate",
+            "locator": "Ficha 22, descripción histórica",
+            "supports": "Relación de la Puerta de Elvira con la calle del mismo nombre y la cerca de la medina."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.60318,
+              37.18103
+            ],
+            [
+              -3.60527,
+              37.17884
+            ],
+            [
+              -3.60704,
+              37.17524
+            ],
+            [
+              -3.60491,
+              37.17118
+            ],
+            [
+              -3.60016,
+              37.16988
+            ],
+            [
+              -3.59583,
+              37.17126
+            ],
+            [
+              -3.59444,
+              37.17668
+            ],
+            [
+              -3.59822,
+              37.17885
+            ],
+            [
+              -3.60318,
+              37.18103
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urban.late-nasrid-extent",
+      "properties": {
+        "id": "urban.late-nasrid-extent",
+        "name": "Extensión urbana tardonazarí",
+        "historical_name": null,
+        "modern_name": null,
+        "aliases": [
+          "Granada nazarí hacia 1492"
+        ],
+        "modern_search_terms": [
+          "Granada histórica",
+          "Ciudad nazarí"
+        ],
+        "category": "urban_structure",
+        "subtype": "late_nasrid_extent",
+        "period": {
+          "from_year": 1400,
+          "to_year": 1492,
+          "from_precision": "century",
+          "to_precision": "year",
+          "note": "Síntesis visual de la extensión urbana al final del periodo nazarí; no representa una ocupación homogénea ni una única cerca."
+        },
+        "present_c1492": "probable",
+        "confidence": {
+          "location": "approximate",
+          "time": "probable"
+        },
+        "evidence_basis": [
+          "historical_cartography",
+          "documentary",
+          "archaeology",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Envolvente orientativa de los principales sectores urbanos y palatinos de Granada al final del siglo XV.",
+        "context_1492": "Granada era una ciudad formada por recintos, arrabales, espacios agrícolas y corredores fluviales, con el Albaicín y la medina en torno al Darro y la ciudad palatina de la Alhambra sobre la Sabika.",
+        "after_1492": "La ciudad se expandió y reformó fuera y dentro de sus antiguas cercas. Las demoliciones, nuevos ejes y cambios de uso hicieron menos legible la continuidad del perímetro medieval.",
+        "today": "La envolvente cruza varios barrios contemporáneos y sirve únicamente como lectura a escala urbana. No debe emplearse como límite patrimonial, arqueológico o administrativo.",
+        "evidence_note": "No existe un único borde simple y completamente conservado para 1492. La mancha reúne sectores bien conocidos mediante una generalización deliberada y deja fuera la precisión parcelaria.",
+        "geometry_method": "approximate_area",
+        "geometry_source_refs": [
+          "source.granada-pepri-islamic-city",
+          "source.alhambra-fortified-city-guide",
+          "source.ugr-abbas-defences"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, p. 88 y cartografía asociada",
+            "supports": "Desarrollo máximo de la Granada nazarí, sectores, cercas, ejes y ríos."
+          },
+          {
+            "source_id": "source.alhambra-fortified-city-guide",
+            "locator": "pp. 7-9",
+            "supports": "Lectura conjunta de los barrios amurallados, la Alhambra y su posición topográfica."
+          },
+          {
+            "source_id": "source.ugr-abbas-defences",
+            "locator": "Capítulos dedicados a Granada",
+            "supports": "Contraste académico del sistema defensivo nazarí y sus distintos recintos."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.60776,
+              37.17057
+            ],
+            [
+              -3.59605,
+              37.16828
+            ],
+            [
+              -3.58439,
+              37.16928
+            ],
+            [
+              -3.57608,
+              37.17331
+            ],
+            [
+              -3.57474,
+              37.18012
+            ],
+            [
+              -3.57908,
+              37.18622
+            ],
+            [
+              -3.58708,
+              37.19004
+            ],
+            [
+              -3.59541,
+              37.18969
+            ],
+            [
+              -3.60207,
+              37.18404
+            ],
+            [
+              -3.60704,
+              37.17786
+            ],
+            [
+              -3.60776,
+              37.17057
+            ]
           ]
         ]
       }

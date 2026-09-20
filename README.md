@@ -11,15 +11,17 @@ reconstruction, what happened after 1492, and what is there today.
 ## Project status
 
 Milestones **M0 — Specification and repository setup**, **M1 — Working map
-shell**, and **M2 — Historical data system** are complete. The app now renders
-validated historical GeoJSON over an interactive map of Granada, distinguishes
-categories and levels of spatial certainty, supports filtering and selection,
-and exposes historical context, provenance, and citations in each feature card.
+shell**, **M2 — Historical data system**, and **M3 — Historical morphology**
+are complete. The app now renders validated historical GeoJSON over an
+interactive map of Granada, distinguishes categories and levels of spatial
+certainty, supports filtering and selection, and exposes historical context,
+provenance, and citations in each feature card.
 
-The M2 seed dataset contains three reviewed examples: the Madraza Yusufiyya,
-the Río Darro, and a deliberately approximate area for the Alhambra. They test
-point, line, and polygon rendering without implying that the historical dataset
-is complete.
+The reviewed dataset contains 21 features. Its city-scale morphology includes
+the Albaicín, lower medina, Alhambra and Generalife; the Darro and Genil;
+principal wall systems, gates, and two defensible routes; and an explicitly
+approximate late-Nasrid urban extent. Labels and confidence styling are designed
+to communicate the form of the city before a user opens an individual feature.
 
 See:
 
@@ -38,7 +40,7 @@ See:
 - Use open, portable formats and a static-site architecture.
 - Publish only reviewed historical features.
 
-## Planned stack
+## Stack
 
 - Vite, React, and TypeScript
 - MapLibre GL JS
@@ -52,7 +54,8 @@ data format is required for the proof of concept.
 
 ## Local development
 
-Requirements: Node.js 24 and npm.
+Requirements: Node.js 24 and npm. QGIS LTR is also required for cartographic
+editing, but not for ordinary frontend development.
 
 ```sh
 npm install
@@ -74,6 +77,17 @@ npm run build
 Copy `.env.example` to `.env.local` to override the default
 MapLibre-compatible basemap style URL. Never commit provider secrets.
 
+To create the local EPSG:25830 cartographic workspace or export reviewed QGIS
+edits back to the public EPSG:4326 GeoJSON files:
+
+```powershell
+npm run gis:bootstrap
+npm run gis:export
+```
+
+See [gis/README.md](gis/README.md) before rebuilding a workspace that contains
+unexported changes.
+
 ## Deployment
 
 The deployment workflow validates the historical dataset, builds the app, and
@@ -94,7 +108,6 @@ scripts/               Data and build utilities
 .github/workflows/     CI and deployment workflows
 ```
 
-Some directories are placeholders until their corresponding milestone begins.
 Restricted research scans and unlicensed third-party material must not be
 committed.
 
