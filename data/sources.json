@@ -180,6 +180,18 @@
     "notes": "Describe la cerca nazarí del Albaicín, su función y el Postigo de San Lorenzo conservado en el tramo de la Alberzana."
   },
   {
+    "id": "source.granada-albaicin-wall-route",
+    "author": "Ayuntamiento de Granada",
+    "title": "Muralla del Albayzín (muralla nazarí)",
+    "year": null,
+    "publisher": "Ayuntamiento de Granada",
+    "type": "institutional_webpage",
+    "url": "https://www.granada.org/inet/wfotos.nsf/b6b84f64f1f272a7c1256e3800403fc7/401105391e56991cc1256e2f007badbb!OpenDocument",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Describe el recorrido de la cerca nazarí desde la Puerta de Guadix, al final del actual Paseo de los Tristes, por San Miguel Alto, Fajalauza y el Postigo de San Lorenzo hasta la Puerta de Elvira."
+  },
+  {
     "id": "source.granada-elvira-gate",
     "author": "Ayuntamiento de Granada",
     "title": "Castillo de la Puerta de Elvira",

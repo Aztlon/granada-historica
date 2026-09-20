@@ -633,15 +633,18 @@
         "summary": "Gran sector urbano de la ladera norte del Darro, compuesto por recintos y barrios de formación sucesiva.",
         "context_1492": "En época nazarí la ladera del Albaicín estaba densamente articulada por cercas, puertas, ejes radiales y una red secundaria de adarves. No constituía un barrio de límites simples ni idénticos a los actuales.",
         "after_1492": "La población, los usos religiosos y la trama construida cambiaron profundamente, aunque numerosos recorridos, parcelas, aljibes y lienzos defensivos conservaron parte de la estructura heredada.",
-        "today": "El Albaicín es un barrio histórico y parte del bien Patrimonio Mundial. La mancha sigue la cerca exterior corregida y cierra por el corredor del Darro; no representa el límite contemporáneo del barrio.",
-        "evidence_note": "El borde norte y oriental deriva de la cerca revisada sobre restos conservados; el borde meridional junto al Darro continúa siendo una generalización de varios recintos y frentes urbanos.",
+        "today": "El Albaicín es un barrio histórico y parte del bien Patrimonio Mundial. La mancha sigue la cerca exterior desde la Puerta de Elvira, baja hasta el entorno de la desaparecida Puerta de Guadix, continúa por el Darro hasta Plaza Nueva y vuelve por el eje de la calle Elvira; no representa el límite contemporáneo del barrio.",
+        "evidence_note": "Los bordes septentrional, meridional y occidental reutilizan la cerca, el Darro y la calle Elvira ya revisados. La bajada oriental entre el extremo conservado de la cerca y la Puerta de Guadix se reconstruye de forma aproximada porque no conserva un eje material continuo.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
           "source.granada-pepri-islamic-city",
           "source.alhambra-fortified-city-guide",
           "source.granada-ziri-wall",
           "source.granada-albaicin-nasrid-wall",
-          "source.openstreetmap"
+          "source.granada-albaicin-wall-route",
+          "source.granada-elvira-gate",
+          "source.openstreetmap",
+          "source.dera-hydrology"
         ],
         "citations": [
           {
@@ -653,6 +656,21 @@
             "source_id": "source.alhambra-fortified-city-guide",
             "locator": "p. 7, «Los barrios de Granada y sus murallas»",
             "supports": "Relación espacial entre el Albaicín, la medina y la Alhambra."
+          },
+          {
+            "source_id": "source.granada-albaicin-wall-route",
+            "locator": "Recorrido de la muralla del Albayzín",
+            "supports": "Trazado de la cerca desde la Puerta de Guadix, al final del Paseo de los Tristes, por San Miguel Alto y Fajalauza hasta la Puerta de Elvira."
+          },
+          {
+            "source_id": "source.dera-hydrology",
+            "locator": "Eje hidrográfico del río Darro",
+            "supports": "Eje moderno empleado como referencia reproducible para el límite meridional."
+          },
+          {
+            "source_id": "source.granada-elvira-gate",
+            "locator": "Emplazamiento del Castillo de la Puerta de Elvira",
+            "supports": "Extremo occidental común de la cerca exterior y de la calle Elvira."
           }
         ],
         "publication_status": "publishable"
@@ -670,8 +688,10 @@
             [-3.5945015, 37.1855218],
             [-3.5937863, 37.185882],
             [-3.5931119, 37.1859342],
+            [-3.592966, 37.1859777],
             [-3.5925442, 37.1860617],
             [-3.5915528, 37.186192],
+            [-3.5914719, 37.1861891],
             [-3.5909078, 37.1861248],
             [-3.5904947, 37.1858184],
             [-3.5898731, 37.1854364],
@@ -682,11 +702,40 @@
             [-3.5873192, 37.183715],
             [-3.5872183, 37.1826812],
             [-3.5872614, 37.1816785],
-            [-3.5892, 37.1804],
-            [-3.5915, 37.1793],
-            [-3.5942, 37.1787],
-            [-3.5965, 37.1789],
-            [-3.5983, 37.18],
+            [-3.58833, 37.17924],
+            [-3.5882443, 37.1791079],
+            [-3.5894253, 37.1786145],
+            [-3.5906595, 37.1785531],
+            [-3.5914125, 37.178261],
+            [-3.5923349, 37.1784844],
+            [-3.5942273, 37.1777871],
+            [-3.5949134, 37.1773625],
+            [-3.5949065, 37.1773663],
+            [-3.5949955, 37.1772863],
+            [-3.59504, 37.1772078],
+            [-3.5951476, 37.1771325],
+            [-3.5957277, 37.1768159],
+            [-3.5963689, 37.1764627],
+            [-3.5965861, 37.1767225],
+            [-3.5967634, 37.1769489],
+            [-3.5970126, 37.177205],
+            [-3.5972524, 37.1773824],
+            [-3.5974702, 37.177535],
+            [-3.5976638, 37.1777342],
+            [-3.597801, 37.1780336],
+            [-3.5979548, 37.1783085],
+            [-3.5981206, 37.1784702],
+            [-3.5982961, 37.1786549],
+            [-3.5985535, 37.1789831],
+            [-3.5987828, 37.17949],
+            [-3.5989922, 37.1800447],
+            [-3.5990671, 37.1803921],
+            [-3.5990197, 37.180923],
+            [-3.5990716, 37.1812834],
+            [-3.5992357, 37.1818093],
+            [-3.5993467, 37.1819488],
+            [-3.59941, 37.1821407],
+            [-3.5995996, 37.182147],
             [-3.5994918, 37.1821936]
           ]
         ]

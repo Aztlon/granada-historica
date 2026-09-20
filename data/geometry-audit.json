@@ -147,9 +147,9 @@
     "feature_id": "urban.albaicin",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-pepri-islamic-city", "source.granada-albaicin-nasrid-wall", "source.openstreetmap", "source.dera-hydrology"],
-    "check_method": "Polígono derivado de la cerca septentrional revisada y cerrado por el corredor urbano al norte del Darro según la cartografía del PEPRI.",
-    "notes": "Sustituye la envolvente provisional, que excedía la cerca varios cientos de metros hacia el norte y el este. El borde fluvial sigue siendo una generalización interpretativa."
+    "geometry_source_refs": ["source.granada-pepri-islamic-city", "source.granada-albaicin-nasrid-wall", "source.granada-albaicin-wall-route", "source.granada-elvira-gate", "source.openstreetmap", "source.dera-hydrology"],
+    "check_method": "Polígono derivado de cuatro ejes reproducibles: la cerca exterior revisada desde la Puerta de Elvira; el cierre oriental reconstruido hasta la Puerta de Guadix al final del Paseo de los Tristes; el eje del Darro hasta Plaza Nueva; y el eje de la calle Elvira de vuelta a la puerta homónima.",
+    "notes": "Sustituye el cierre meridional dibujado a mano. La bajada entre el extremo conservado de la cerca y la desaparecida Puerta de Guadix es el único tramo sin eje material continuo y se representa mediante una conexión recta aproximada; los demás bordes reutilizan geometrías ya verificadas."
   },
   {
     "feature_id": "urban.lower-medina",
