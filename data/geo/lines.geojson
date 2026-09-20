@@ -15,7 +15,10 @@
         "modern_search_terms": [
           "Carrera del Darro",
           "Paseo de los Tristes",
-          "Plaza Nueva"
+          "Plaza Nueva",
+          "Reyes Católicos",
+          "Acera del Darro",
+          "Puerta Real"
         ],
         "category": "water_infrastructure",
         "subtype": "river",
@@ -38,13 +41,17 @@
         "summary": "Eje fluvial de la ciudad histórica y una de las bases de su abastecimiento y paisaje urbano.",
         "context_1492": "El Darro articulaba el valle entre la Alhambra y el Albaicín. Junto con el Genil y el Beiro, abastecía la ciudad y alimentaba un sistema de acequias e infraestructuras hidráulicas ampliado durante los periodos zirí y nazarí.",
         "after_1492": "La relación urbana con el río fue transformándose y parte de su recorrido central quedó cubierta. El tramo junto a la Carrera del Darro mantuvo su presencia visible y la conexión entre ambas laderas mediante puentes.",
-        "today": "El río sigue visible entre el Paseo de los Tristes y la Carrera del Darro, antes de quedar soterrado bajo el centro de la ciudad. La línea sigue el eje hidrográfico oficial moderno, simplificado para la escala urbana.",
-        "evidence_note": "La existencia y el corredor general son seguros. El eje DERA permite localizar el cauce moderno, pero no debe utilizarse como deslinde hidráulico ni como reconstrucción exacta del cauce de 1492.",
-        "geometry_method": "modern_reference_location",
+        "today": "El río sigue visible entre el Paseo de los Tristes y la Carrera del Darro. Desde Plaza Nueva discurre soterrado bajo Reyes Católicos, Puerta Real y Acera del Darro hasta desembocar en el Genil.",
+        "evidence_note": "El tramo visible sigue el eje DERA. El tramo cubierto utiliza el eje del conducto cartografiado en OpenStreetMap y está contrastado con fuentes municipales y arqueológicas. Es la mejor referencia disponible para el corredor de 1492, pero la bóveda moderna pudo rectificar localmente el lecho.",
+        "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
           "source.dera-hydrology",
           "source.granada-water-culture",
-          "source.granada-carrera-darro"
+          "source.granada-carrera-darro",
+          "source.granada-darro-vault",
+          "source.junta-darro-reyes-catolicos",
+          "source.granada-pepri-islamic-city",
+          "source.openstreetmap"
         ],
         "citations": [
           {
@@ -56,6 +63,16 @@
             "source_id": "source.granada-carrera-darro",
             "locator": "Descripción de la Carrera del Darro",
             "supports": "Curso visible actual, puentes y relación espacial entre la Alhambra y el Albaicín."
+          },
+          {
+            "source_id": "source.granada-darro-vault",
+            "locator": "Apartado «Embovedado del río Darro»",
+            "supports": "Continuidad del cauce cubierto desde Plaza Nueva hasta su desembocadura en el Genil."
+          },
+          {
+            "source_id": "source.junta-darro-reyes-catolicos",
+            "locator": "Resumen y resultados de la intervención",
+            "supports": "Paso del cauce y de la bóveda bajo la alineación de Reyes Católicos."
           }
         ],
         "publication_status": "publishable"
@@ -246,7 +263,44 @@
           [
             -3.5949134,
             37.1773625
-          ]
+          ],
+          [-3.5949065, 37.1773663],
+          [-3.5949955, 37.1772863],
+          [-3.59504, 37.1772078],
+          [-3.5951476, 37.1771325],
+          [-3.5957277, 37.1768159],
+          [-3.5963689, 37.1764627],
+          [-3.5964166, 37.1764137],
+          [-3.5972189, 37.175955],
+          [-3.5973014, 37.1759329],
+          [-3.5980447, 37.1754872],
+          [-3.5981617, 37.1754119],
+          [-3.5982679, 37.1753195],
+          [-3.5984014, 37.1751829],
+          [-3.5989547, 37.174368],
+          [-3.5992442, 37.1739583],
+          [-3.5995154, 37.1735965],
+          [-3.5996568, 37.1734359],
+          [-3.5996674, 37.1733409],
+          [-3.5994246, 37.1727763],
+          [-3.599347, 37.1726262],
+          [-3.5987799, 37.1715964],
+          [-3.5985833, 37.1712308],
+          [-3.5984425, 37.171009],
+          [-3.5979287, 37.1702356],
+          [-3.5969906, 37.1691588],
+          [-3.5967019, 37.1687817],
+          [-3.5966222, 37.1685807],
+          [-3.5965838, 37.1683466],
+          [-3.5965668, 37.1682275],
+          [-3.5965614, 37.1681739],
+          [-3.5965624, 37.1681367],
+          [-3.5965718, 37.1681015],
+          [-3.5965802, 37.1680854],
+          [-3.5965917, 37.1680701],
+          [-3.5966225, 37.1680429],
+          [-3.5966968, 37.1680086],
+          [-3.5966869, 37.1679243]
         ]
       }
     },

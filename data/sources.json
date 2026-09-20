@@ -60,6 +60,30 @@
     "notes": "Referencia municipal sobre el curso visible del Darro, sus puentes y su relación con la Carrera del Darro."
   },
   {
+    "id": "source.granada-darro-vault",
+    "author": "Ayuntamiento de Granada",
+    "title": "Embovedado del río Darro",
+    "year": null,
+    "publisher": "Ayuntamiento de Granada",
+    "type": "institutional_webpage",
+    "url": "https://www.granada.org/inet/sonidos.nsf/byclave/0101d",
+    "identifier": "Itinerario 1. Sonidos del río Darro",
+    "reuse_status": "Cita factual; no se reproducen imágenes ni grabaciones.",
+    "notes": "Sitúa el embovedado desde Plaza Nueva hasta la desembocadura del Darro en el Genil."
+  },
+  {
+    "id": "source.junta-darro-reyes-catolicos",
+    "author": "Junta de Andalucía, Consejería de Cultura",
+    "title": "Intervención arqueológica en calle Reyes Católicos 23",
+    "year": 2020,
+    "publisher": "Repositorio TABULA",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/handle/20.500.11947/33590",
+    "identifier": "AAA_2020_293",
+    "reuse_status": "Cita factual; el informe no se redistribuye.",
+    "notes": "Documenta el embovedado de 1858, la alineación de Reyes Católicos y estructuras apoyadas sobre los muros laterales de la bóveda."
+  },
+  {
     "id": "source.granada-pepri-islamic-city",
     "author": "Ayuntamiento de Granada",
     "title": "Avance del Plan Especial y Catálogo Albaicín-Sacromonte. V. Anexos: Memoria urbana",

@@ -75,9 +75,9 @@
     "feature_id": "water.darro",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.dera-hydrology"],
-    "check_method": "Recorte y simplificación a 12 m del eje hidrográfico oficial DERA en ETRS89 / UTM 30N, exportado a WGS84.",
-    "notes": "Es una referencia del cauce moderno, no un deslinde ni una reconstrucción exacta del lecho de 1492."
+    "geometry_source_refs": ["source.dera-hydrology", "source.openstreetmap", "source.granada-darro-vault", "source.junta-darro-reyes-catolicos", "source.granada-pepri-islamic-city"],
+    "check_method": "Eje DERA simplificado a 12 m para el tramo visible, enlazado con el conducto soterrado cartografiado en OpenStreetMap desde Plaza Nueva hasta el Genil y contrastado con documentación municipal, arqueológica e histórica.",
+    "notes": "La continuidad y el corredor histórico son seguros; bajo Reyes Católicos, Puerta Real y Acera del Darro la posición es probable porque las obras de embovedado pudieron rectificar localmente el cauce medieval."
   },
   {
     "feature_id": "water.genil",
