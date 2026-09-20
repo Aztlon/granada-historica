@@ -100,4 +100,5 @@ export const SUBTYPE_LABELS: Record<string, string> = {
   funduq: 'Alhóndiga y alojamiento mercantil',
   hospital: 'Hospital',
   hammam: 'Baño público',
+  historical_quarter: 'Barrio o arrabal histórico',
 }

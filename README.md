@@ -18,7 +18,7 @@ interactive map of Granada, distinguishes categories and levels of spatial
 certainty, supports filtering and selection, and exposes historical context,
 provenance, and citations in each feature card.
 
-The working dataset contains 30 cited and publishable features. None is assumed spatially correct:
+The working dataset contains 36 cited and publishable features. None is assumed spatially correct:
 each geometry must pass the review recorded in `data/geometry-audit.json`
 before it is shown on the public map. Its city-scale morphology includes
 the Albaicín, lower medina, Alhambra and Generalife; the Darro and Genil;
@@ -26,7 +26,7 @@ principal wall systems, gates, and two defensible routes; and an explicitly
 approximate late-Nasrid urban extent. Labels and confidence styling are designed
 to communicate the form of the city before a user opens an individual feature.
 
-The corrective pass and M4 review have verified all 30 geometries. The lower-medina wall is
+The corrective pass and M4 review have verified all 36 geometries. The lower-medina wall is
 reconstructed from a documented sequence of modern streets and archaeological
 anchors; the lower-medina area is derived from that enclosure and other reviewed
 axes; and the late-Nasrid urban extent is the reproducible union of the verified
@@ -35,6 +35,12 @@ The first monument set adds the two major mosques, Alcaicería, Zacatín, Corral
 del Carbón, Maristán, El Bañuelo, Puerta de Guadix, and Puerta de los Tableros /
 Puente del Cadí, with surviving fabric kept distinct from representative points
 and approximate reconstructions.
+
+A second urban-structure set adds six explicitly approximate historical quarters:
+Alcazaba Qadima, Axares, Garnata al-Yahud, the Alfareros quarter,
+Antequeruela, and the Loma quarter. Their map labels sit below the broader
+city sectors in the information hierarchy; historical names are retained where
+useful, while Spanish descriptions and modern landmarks make each area legible.
 
 See:
 

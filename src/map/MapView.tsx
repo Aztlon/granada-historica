@@ -43,6 +43,7 @@ const HISTORICAL_LAYER_IDS = [
   'historical-selection-line',
   'historical-selection-point',
   'historical-label-sectors',
+  'historical-label-quarters',
   'historical-label-walls',
   'historical-label-rivers',
   'historical-label-routes',
@@ -61,6 +62,7 @@ const INTERACTIVE_LAYER_IDS = [
   'historical-area-fill',
   'historical-urban-extent-fill',
   'historical-label-sectors',
+  'historical-label-quarters',
   'historical-label-walls',
   'historical-label-rivers',
   'historical-label-routes',
@@ -453,6 +455,31 @@ function addHistoricalLabels(map: Map) {
   })
 
   map.addLayer({
+    id: 'historical-label-quarters',
+    type: 'symbol',
+    source: AREA_LABEL_SOURCE_ID,
+    minzoom: 13.25,
+    filter: allFilters(
+      geometryFilter('Point'),
+      ['==', ['get', 'subtype'], 'historical_quarter'],
+    ),
+    layout: {
+      'text-field': ['get', 'name'],
+      'text-size': ['interpolate', ['linear'], ['zoom'], 13.25, 10, 16, 13],
+      'text-letter-spacing': 0.04,
+      'text-max-width': 11,
+      'text-transform': 'uppercase',
+      'text-allow-overlap': false,
+      'text-padding': 8,
+    },
+    paint: {
+      'text-color': '#654530',
+      'text-halo-color': 'rgba(255, 249, 235, 0.96)',
+      'text-halo-width': 1.75,
+    },
+  })
+
+  map.addLayer({
     id: 'historical-label-walls',
     type: 'symbol',
     source: SOURCE_ID,
@@ -649,6 +676,14 @@ function applyMapState(
         ['get', 'subtype'],
         ['literal', ['urban_sector', 'palatine_city', 'palatine_estate']],
       ],
+      categories,
+    ),
+  )
+  map.setFilter(
+    'historical-label-quarters',
+    allFilters(
+      geometryFilter('Point'),
+      ['==', ['get', 'subtype'], 'historical_quarter'],
       categories,
     ),
   )

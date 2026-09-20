@@ -406,5 +406,65 @@
     "identifier": "",
     "reuse_status": "Cita factual; no se reproducen imágenes.",
     "notes": "Describe el hammam, el debate sobre su datación, su contexto urbano y la relación historiográfica entre Bab al-Difaf y el llamado Puente del Cadí."
+  },
+  {
+    "id": "source.granada-pgom-urban-history",
+    "author": "Ayuntamiento de Granada",
+    "title": "Plan General de Ordenación Municipal de Granada. Memoria de información: evolución histórica y urbana",
+    "year": 2024,
+    "publisher": "Ayuntamiento de Granada",
+    "type": "institutional_plan",
+    "url": "https://www.granada.org/urbanismo.nsf/in/NASLNUP/$file/memoria-informacion-4.pdf",
+    "identifier": "Memoria de información, apartado histórico",
+    "reuse_status": "Consulta textual y cartográfica; no se redistribuye ni se reproduce la publicación.",
+    "notes": "Sintetiza la formación de Granada desde los núcleos de Iliberri y Garnata al-Yahud, las alcazabas Qadima y Yadida, la medina y los arrabales, e incluye cartografía histórica de referencia."
+  },
+  {
+    "id": "source.granada-casa-zafra",
+    "author": "Ayuntamiento de Granada",
+    "title": "Casa Árabe de Zafra: historia, situación y emplazamiento",
+    "year": null,
+    "publisher": "Ayuntamiento de Granada",
+    "type": "institutional_webpage",
+    "url": "https://www.granada.org/inet/wagenda.nsf/facb4754a8f61b87c1257855003e5157/354916ae1c1eff7ac1257c740043bbe6!OpenDocument",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes ni planimetría.",
+    "notes": "Identifica Axares o Rabad al-Ajsaris como ensanche del siglo XI de la Alcazaba Qadima extendido hasta el Darro, y sitúa allí la Casa de Zafra."
+  },
+  {
+    "id": "source.granada-realejo-jewish",
+    "author": "Ayuntamiento de Granada",
+    "title": "Plano del Realejo: Garnata al-Yahud",
+    "year": null,
+    "publisher": "Turismo de Granada",
+    "type": "institutional_guide",
+    "url": "https://turismo.granada.org/sites/default/files/2023-09/PLANO_REALEJO.pdf",
+    "identifier": "Itinerario del Realejo",
+    "reuse_status": "Cita factual; no se reproduce el plano ni sus ilustraciones.",
+    "notes": "Relaciona el Realejo con la antigua Garnata al-Yahud y describe el Mauror, la Antequeruela y Campo del Príncipe como ámbitos históricos del sector."
+  },
+  {
+    "id": "source.granada-cuarto-real",
+    "author": "Ayuntamiento de Granada",
+    "title": "Cuarto Real de Santo Domingo. Palacio Almanxarra",
+    "year": null,
+    "publisher": "Ayuntamiento de Granada",
+    "type": "institutional_webpage",
+    "url": "https://www.granada.org/inet/wagenda.nsf/1c76d615212af526c125757000406376/f41465719f31a84fc125775a0034db09!OpenDocument",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Sitúa el palacio nazarí de la Almanxarra junto a la muralla y dentro del arrabal de los Alfareros."
+  },
+  {
+    "id": "source.junta-belen-2008",
+    "author": "Rafael Turatti Guerrero",
+    "title": "Intervención arqueológica preventiva en calle Belén núm. 3",
+    "year": 2008,
+    "publisher": "Repositorio TABULA, Junta de Andalucía",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/handle/20.500.11947/27035",
+    "identifier": "AAA_2008_731; hdl:20.500.11947/27035",
+    "reuse_status": "Consulta y cita conforme a la licencia CC BY-NC-ND 4.0; no se redistribuye ni se adapta la publicación.",
+    "notes": "Documenta la maqbara de Bab al-Fajjarin y reúne referencias espaciales para los Alfareros, la Loma, la Antequeruela, Campo del Príncipe, San Cecilio y la cerca meridional."
   }
 ]

@@ -61,12 +61,19 @@ Exit gate: the map communicates city-scale form before individual monuments.
 4. [x] Review confidence, names, claims, geometry, and reuse status.
 5. [x] Publish at least 30 substantive features across multiple categories.
 
-M4 result: the dataset now contains 30 cited, publishable features with 30
-verified geometry audits and 34 registered sources. The nine additions cover
+M4 result: the dataset now contains 36 cited, publishable features with 36
+verified geometry audits and 39 registered sources. The first nine additions cover
 the Puerta de Guadix, both major mosques, the Alcaicería and Zacatín commercial
 core, the Corral del Carbón, Maristán, El Bañuelo, and the Puerta de los
 Tableros / Puente del Cadí. Surviving footprints, modern reference points, and
 approximate historical areas remain explicitly distinguished.
+
+The subsequent urban-structure set adds Alcazaba Qadima, Axares, Garnata
+al-Yahud, the Alfareros quarter, Antequeruela, and the Loma quarter. These
+reconstructions use a dedicated historical-quarter subtype and label layer;
+they complement, rather than replace, the broader analytical sectors such as
+the lower medina. Contested extents and overlaps remain visible in each
+feature's confidence and evidence notes.
 
 Exit gate: 30 or more cited, publishable features have meaningful details.
 

@@ -1399,6 +1399,506 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.alcazaba-qadima",
+      "properties": {
+        "id": "quarter.alcazaba-qadima",
+        "name": "Alcazaba Qadima",
+        "historical_name": "Al-Qasaba al-Qadima",
+        "modern_name": "Entorno de San Nicolás y la Casa de la Lona",
+        "aliases": [
+          "Alcazaba Vieja",
+          "Alcazaba Cadima",
+          "Al-Qasaba al-Qadima"
+        ],
+        "modern_search_terms": [
+          "San Nicolás",
+          "Casa de la Lona",
+          "Puerta de las Pesas",
+          "Puerta Monaita",
+          "Albaicín"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Núcleo político y defensivo zirí del siglo XI que siguió integrado en la ciudad durante el periodo nazarí, aunque perdió centralidad frente a la Alhambra."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Antigua ciudadela zirí del Albaicín y uno de los núcleos fundacionales de la Granada islámica.",
+        "context_1492": "La Alcazaba Qadima conservaba su identidad defensiva y urbana dentro del Albaicín, articulada por puertas como Monaita y las Pesas. Ya no era la principal sede regia, trasladada a la Alhambra, pero seguía siendo un recinto densamente habitado.",
+        "after_1492": "El sector perdió población y funciones, incorporó parroquias y conventos y desarrolló progresivamente la tipología residencial del carmen. Restos de muralla y puertas mantuvieron visible parte de su estructura.",
+        "today": "El ámbito aproximado rodea San Nicolás, la Casa de la Lona, la Puerta de las Pesas y la Puerta Monaita. No coincide con un barrio administrativo actual ni delimita un recinto arqueológico único.",
+        "evidence_note": "Las fuentes coinciden en el núcleo de San Nicolás y en sus puertas principales, pero las cercas interiores se conservan de forma fragmentaria. La envolvente conecta esos anclajes y no debe leerse como un parcelario exacto de 1492.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-pgom-urban-history",
+          "source.granada-pepri-islamic-city",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pgom-urban-history",
+            "locator": "Memoria de información, p. 127, estructura de la ciudad islámica",
+            "supports": "Papel de las alcazabas Qadima y Yadida, núcleo de San Nicolás y pérdida posterior de centralidad."
+          },
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, pp. 11-15",
+            "supports": "Formación del núcleo antiguo, evolución medieval y relación con el Albaicín nazarí."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.5975658, 37.1820543],
+            [-3.5965, 37.18302],
+            [-3.5948, 37.18372],
+            [-3.5937726, 37.1824667],
+            [-3.59295, 37.18155],
+            [-3.5926619, 37.1810405],
+            [-3.5942, 37.18085],
+            [-3.59565, 37.18102],
+            [-3.5975658, 37.1820543]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.axares",
+      "properties": {
+        "id": "quarter.axares",
+        "name": "Axares",
+        "historical_name": "Rabad al-Ajsaris",
+        "modern_name": "Ladera baja oriental del Albaicín",
+        "aliases": [
+          "Arrabal del Deleite",
+          "Arrabal de la Recreación",
+          "Ajsaris",
+          "Haxarris"
+        ],
+        "modern_search_terms": [
+          "Casa de Zafra",
+          "Carrera del Darro",
+          "Paseo de los Tristes",
+          "San Nicolás",
+          "Cuesta del Chapiz"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Arrabal formado desde el siglo XI como ensanche de la Alcazaba Qadima y consolidado en las etapas posteriores."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Arrabal de la ladera baja del Albaicín que extendió la ciudad antigua hasta la orilla derecha del Darro.",
+        "context_1492": "Axares era un sector urbano denso y apreciado, organizado entre la Alcazaba Qadima y el Darro. En él se encontraban residencias destacadas, baños, instituciones y accesos vinculados al río.",
+        "after_1492": "El barrio atrajo a familias de la nobleza castellana y recibió fundaciones conventuales. Parte de las viviendas nazaríes quedó incorporada a edificios posteriores, como ocurrió en el entorno de la Casa de Zafra.",
+        "today": "La envolvente comprende la ladera entre San Nicolás, la Carrera del Darro y el extremo oriental del Paseo de los Tristes. Incluye la Casa de Zafra, el Maristán y El Bañuelo como anclajes, pero no define un barrio contemporáneo.",
+        "evidence_note": "La relación entre Axares, la Alcazaba Qadima y el Darro está documentada; su perímetro cambió y no se conserva como una línea continua. La geometría expresa el ámbito general mediante anclajes históricos y topográficos.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-casa-zafra",
+          "source.granada-pepri-islamic-city",
+          "source.openstreetmap",
+          "source.dera-hydrology"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-casa-zafra",
+            "locator": "Apartado «Situación y emplazamiento»",
+            "supports": "Nombre histórico, formación como ensanche de la Alcazaba Qadima y extensión hasta el Darro."
+          },
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana y plano de estructura islámica",
+            "supports": "Relación del arrabal con los recintos del Albaicín y su red de puertas."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.5952, 37.18105],
+            [-3.5938, 37.18155],
+            [-3.5923, 37.18155],
+            [-3.5907, 37.1812],
+            [-3.58945, 37.18045],
+            [-3.58833, 37.17924],
+            [-3.5894253, 37.1786145],
+            [-3.5906595, 37.1785531],
+            [-3.5923349, 37.1784844],
+            [-3.5942273, 37.1777871],
+            [-3.59475, 37.17855],
+            [-3.5952, 37.18105]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.garnata-al-yahud",
+      "properties": {
+        "id": "quarter.garnata-al-yahud",
+        "name": "Garnata al-Yahud",
+        "historical_name": "Garnatat al-Yahud",
+        "modern_name": "Entorno del Mauror y el Realejo alto",
+        "aliases": [
+          "Granada de los judíos",
+          "Garnata Alyahud",
+          "Judería de Granada"
+        ],
+        "modern_search_terms": [
+          "Realejo",
+          "Mauror",
+          "Torres Bermejas",
+          "Cuesta del Realejo",
+          "Plaza Fortuny"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": null,
+          "to_year": 1492,
+          "from_precision": "unknown",
+          "to_precision": "year",
+          "note": "El topónimo designa uno de los núcleos antiguos de Granada y su asociación con la población judía; su continuidad espacial exacta hasta 1492 no puede darse por uniforme."
+        },
+        "present_c1492": "probable",
+        "confidence": {
+          "location": "approximate",
+          "time": "probable"
+        },
+        "evidence_basis": [
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Núcleo asociado históricamente a la población judía de Granada, situado al pie del Mauror y relacionado con el actual Realejo.",
+        "context_1492": "La comunidad judía formaba parte de la Granada tardomedieval, pero el nombre Garnata al-Yahud procede de una historia urbana más larga y no demuestra por sí solo que todo el ámbito fuera una judería homogénea en 1492.",
+        "after_1492": "La expulsión de 1492 y la cristianización alteraron radicalmente la población, los usos y la identidad del sector. El área quedó integrada en el Realejo y en los barrios parroquiales de la ciudad cristiana.",
+        "today": "El polígono se concentra en el Mauror y el Realejo alto, entre el pie de la Alhambra, Torres Bermejas y Plaza Fortuny. No equipara todo el Realejo contemporáneo con la judería medieval.",
+        "evidence_note": "Las fuentes municipales coinciden en situar Garnata al-Yahud en la margen izquierda del Darro y al pie del Mauror, pero ofrecen generalizaciones distintas de su extensión. Se publica una envolvente prudente y explícitamente aproximada.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-centre-plan",
+          "source.granada-pgom-urban-history",
+          "source.granada-realejo-jewish",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-centre-plan",
+            "locator": "Memoria, p. 22, apartado «La ciudad islámica»",
+            "supports": "Identificación del asentamiento judío en la margen izquierda del Darro y fusión con el crecimiento urbano posterior."
+          },
+          {
+            "source_id": "source.granada-pgom-urban-history",
+            "locator": "Memoria de información, pp. 126-127 y plano de crecimiento urbano",
+            "supports": "Relación de Garnata al-Yahud con uno de los núcleos primitivos y su posición general respecto a la Alhambra y la medina."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.5963981, 37.1764805],
+            [-3.5949065, 37.1773663],
+            [-3.5935049, 37.1779769],
+            [-3.5929, 37.17695],
+            [-3.5934157, 37.1754807],
+            [-3.5946522, 37.1752534],
+            [-3.5945139, 37.1737452],
+            [-3.5961, 37.17375],
+            [-3.59715, 37.17445],
+            [-3.5963981, 37.1764805]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.alfajjarin",
+      "properties": {
+        "id": "quarter.alfajjarin",
+        "name": "Arrabal de los Alfareros",
+        "historical_name": "Rabad al-Fajjarin",
+        "modern_name": "Entorno de Santo Domingo y Plaza Fortuny",
+        "aliases": [
+          "Rabad al-Fajjarin",
+          "Rabad Alfajjarin",
+          "Barrio de los Alfareros"
+        ],
+        "modern_search_terms": [
+          "Plaza Fortuny",
+          "Santo Domingo",
+          "Cuarto Real de Santo Domingo",
+          "Plaza de los Campos",
+          "Calle Belén"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": null,
+          "to_year": null,
+          "from_precision": "unknown",
+          "to_precision": "unknown",
+          "note": "Arrabal medieval especializado en la producción cerámica y plenamente incorporado a la ciudad antes del final del periodo nazarí."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Arrabal meridional vinculado a la producción de cerámica y situado junto a Garnata al-Yahud y el palacio de la Almanxarra.",
+        "context_1492": "El barrio reunía actividades alfareras y espacios residenciales junto a la cerca sur. La Puerta de los Alfareros y su necrópolis constituían referencias importantes del borde urbano.",
+        "after_1492": "El establecimiento de Santo Domingo y las transformaciones del Realejo alteraron la estructura productiva y residencial. El Cuarto Real y evidencias arqueológicas conservaron testimonios del paisaje nazarí.",
+        "today": "La envolvente utiliza Plaza Fortuny, Santo Domingo, Plaza de los Campos, el Cuarto Real y calle Belén como referencias. No delimita la distribución exacta de hornos, talleres o viviendas.",
+        "evidence_note": "La función y el sector están bien documentados y la necrópolis de Bab al-Fajjarin aporta un anclaje arqueológico. Los límites entre Alfareros, Garnata al-Yahud y otros barrios meridionales no son líneas conservadas y se representan aproximadamente.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-centre-plan",
+          "source.granada-cuarto-real",
+          "source.junta-belen-2008",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-centre-plan",
+            "locator": "Memoria, p. 22, apartado «La ciudad islámica»",
+            "supports": "Nombre, actividad alfarera y relación con Garnata al-Yahud y los barrios meridionales."
+          },
+          {
+            "source_id": "source.junta-belen-2008",
+            "locator": "Descripción del sector y excavación de la maqbara de Bab al-Fajjarin",
+            "supports": "Anclaje arqueológico de la Puerta de los Alfareros, su necrópolis y el contexto del arrabal."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.59715, 37.17445],
+            [-3.5945139, 37.1737452],
+            [-3.59355, 37.17335],
+            [-3.59325, 37.1722],
+            [-3.5949269, 37.171666],
+            [-3.5971375, 37.1722659],
+            [-3.5980542, 37.1721727],
+            [-3.59715, 37.17445]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.antequeruela",
+      "properties": {
+        "id": "quarter.antequeruela",
+        "name": "Antequeruela",
+        "historical_name": null,
+        "modern_name": "Campo del Príncipe y San Cecilio",
+        "aliases": [
+          "Barrio de la Antequeruela",
+          "Antequeruela de Granada"
+        ],
+        "modern_search_terms": [
+          "Campo del Príncipe",
+          "San Cecilio",
+          "Calle Molinos",
+          "Calle Santiago",
+          "Calle Solares"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": 1410,
+          "to_year": null,
+          "from_precision": "year",
+          "to_precision": "unknown",
+          "note": "El barrio se asocia a la llegada de población musulmana refugiada tras la conquista castellana de Antequera en 1410."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Expansión tardonazarí del sector meridional, asociada a refugiados procedentes de Antequera desde 1410.",
+        "context_1492": "La Antequeruela era un barrio reciente dentro del mosaico urbano del Realejo medieval. Se relacionaba con Campo del Príncipe, San Cecilio, la calle Molinos y los arrabales de los Alfareros y la Loma.",
+        "after_1492": "La red parroquial cristiana, la reforma de Campo del Príncipe y nuevas construcciones transformaron el barrio, aunque su nombre y parte de su trama sobrevivieron.",
+        "today": "La geometría reúne Campo del Príncipe, San Cecilio y los ejes de Molinos, Santiago y Solares citados por la investigación. Se solapa parcialmente con la Loma porque las fuentes describen relaciones de expansión, no fronteras excluyentes.",
+        "evidence_note": "La fecha de formación y los principales lugares modernos están documentados; el perímetro varía según autores y periodos. Se publica una síntesis espacial deliberadamente aproximada.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-centre-plan",
+          "source.junta-belen-2008",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-centre-plan",
+            "locator": "Memoria, p. 22, apartado «La ciudad islámica»",
+            "supports": "Formación de la Antequeruela en 1410 como ampliación del sector meridional."
+          },
+          {
+            "source_id": "source.junta-belen-2008",
+            "locator": "Contexto histórico y arqueológico del barrio de la Antequeruela",
+            "supports": "Relación con Garnata al-Yahud, Campo del Príncipe, Molinos, Santiago, Solares y San Cecilio."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.5945139, 37.1737452],
+            [-3.5921111, 37.1733097],
+            [-3.5905877, 37.1735226],
+            [-3.5891223, 37.1732537],
+            [-3.58905, 37.17165],
+            [-3.5919688, 37.1721113],
+            [-3.59325, 37.1722],
+            [-3.5945139, 37.1737452]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.loma",
+      "properties": {
+        "id": "quarter.loma",
+        "name": "Arrabal de la Loma",
+        "historical_name": "Rabad al-Nayd",
+        "modern_name": "Calle Molinos y Vistillas de los Ángeles",
+        "aliases": [
+          "Rabad El Neched",
+          "Rabad el-Necued",
+          "Barrio de la Loma"
+        ],
+        "modern_search_terms": [
+          "Calle Molinos",
+          "Vistillas de los Ángeles",
+          "San Cecilio",
+          "Campo de los Mártires",
+          "Puerta de los Molinos"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": null,
+          "to_year": null,
+          "from_precision": "unknown",
+          "to_precision": "unknown",
+          "note": "Arrabal medieval considerado expansión del barrio de los Alfareros y vinculado a la Puerta de los Molinos."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Arrabal de la ladera meridional, prolongación de los Alfareros hacia la Puerta de los Molinos y las huertas del Genil.",
+        "context_1492": "La Loma ocupaba el extremo sudoriental del recinto urbano y conectaba el tejido residencial con la Puerta de los Molinos, la vega y un paisaje de huertas regado por la Acequia Gorda.",
+        "after_1492": "La reorganización parroquial, los cambios de propiedad y la transformación de las huertas modificaron el sector. Parte de su identidad quedó absorbida por el Realejo, San Cecilio y la Antequeruela.",
+        "today": "La envolvente se apoya en la calle Molinos, San Cecilio y Vistillas de los Ángeles. Los nombres árabes presentan transcripciones divergentes y se conservan como alias de una misma entidad.",
+        "evidence_note": "Las fuentes fijan la relación con Alfareros y la Puerta de los Molinos, pero no ofrecen un límite parcelario único. El solape con Antequeruela refleja que esta se describe como una ampliación tardía del mismo sector urbano.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-centre-plan",
+          "source.junta-belen-2008",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-centre-plan",
+            "locator": "Memoria, p. 22, apartado «La ciudad islámica»",
+            "supports": "Identificación de la Loma como expansión de los Alfareros y relación con Bib Neched o Puerta de los Molinos."
+          },
+          {
+            "source_id": "source.junta-belen-2008",
+            "locator": "Contexto histórico del Realejo medieval y trazado de la cerca sur",
+            "supports": "Relación espacial entre la Loma, la Antequeruela, San Cecilio, Molinos y Vistillas de los Ángeles."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.5905877, 37.1735226],
+            [-3.58845, 37.17385],
+            [-3.58695, 37.17225],
+            [-3.5880357, 37.1704753],
+            [-3.59055, 37.1705],
+            [-3.5919688, 37.1721113],
+            [-3.5905877, 37.1735226]
+          ]
+        ]
+      }
     }
   ]
 }

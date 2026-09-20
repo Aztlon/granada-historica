@@ -238,5 +238,53 @@
     "geometry_source_refs": ["source.alhambra-banuelo", "source.openstreetmap", "source.pnoa-andalucia-2022"],
     "check_method": "Huella del edificio conservado en OpenStreetMap, contrastada con la ortofoto PNOA, la dirección institucional y la descripción arquitectónica del Patronato.",
     "notes": "La geometría es segura; la controversia se limita a la datación entre los siglos XI y XII y se conserva explícitamente en la ficha."
+  },
+  {
+    "feature_id": "quarter.alcazaba-qadima",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.granada-pgom-urban-history", "source.granada-pepri-islamic-city", "source.openstreetmap"],
+    "check_method": "Envolvente reconstruida a partir del núcleo de San Nicolás, la Casa de la Lona y las puertas conservadas de Monaita y las Pesas, contrastada con los planos históricos municipales.",
+    "notes": "La auditoría verifica la coherencia del ámbito y sus anclajes; las cercas interiores fragmentarias impiden considerar exacto el perímetro completo."
+  },
+  {
+    "feature_id": "quarter.axares",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.granada-casa-zafra", "source.granada-pepri-islamic-city", "source.openstreetmap", "source.dera-hydrology"],
+    "check_method": "Envolvente de la ladera entre la Alcazaba Qadima y el eje verificado del Darro, ajustada mediante Casa de Zafra, Maristán, Bañuelo, San Nicolás y Puerta de Guadix.",
+    "notes": "Se verifica como reconstrucción aproximada del ámbito general; no representa una cerca continua ni límites estables para todas las fases medievales."
+  },
+  {
+    "feature_id": "quarter.garnata-al-yahud",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.granada-centre-plan", "source.granada-pgom-urban-history", "source.granada-realejo-jewish", "source.openstreetmap"],
+    "check_method": "Envolvente prudente del Mauror y Realejo alto fijada mediante el pie meridional del Darro, Torres Bermejas, Cuesta del Realejo, el nodo moderno del Mauror y Plaza Fortuny, contrastada con cartografía municipal.",
+    "notes": "No equipara el Realejo actual con una judería homogénea de 1492. El topónimo y el sector son defendibles; la extensión y continuidad temporal siguen siendo aproximadas."
+  },
+  {
+    "feature_id": "quarter.alfajjarin",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.granada-centre-plan", "source.granada-cuarto-real", "source.junta-belen-2008", "source.openstreetmap"],
+    "check_method": "Envolvente reconstruida con Plaza Fortuny, Santo Domingo, Plaza de los Campos, Cuarto Real y calle Belén como anclajes, contrastada con el plan municipal y la maqbara excavada de Bab al-Fajjarin.",
+    "notes": "El área indica el sector productivo y residencial; no delimita hornos, talleres, necrópolis ni parcelas de forma individual."
+  },
+  {
+    "feature_id": "quarter.antequeruela",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-belen-2008", "source.openstreetmap"],
+    "check_method": "Síntesis espacial trazada con Campo del Príncipe, San Cecilio y los ejes modernos de Molinos, Santiago y Solares citados en la investigación arqueológica y contrastados con el planeamiento municipal.",
+    "notes": "La fecha de formación desde 1410 es sólida; el perímetro es aproximado y se solapa deliberadamente con la Loma por la relación de expansión descrita en las fuentes."
+  },
+  {
+    "feature_id": "quarter.loma",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-belen-2008", "source.openstreetmap"],
+    "check_method": "Envolvente del extremo sudoriental ajustada a San Cecilio, calle Molinos y Vistillas de los Ángeles, y contrastada con la relación documental entre Rabad al-Nayd, Bib Neched y los Alfareros.",
+    "notes": "El sector y sus relaciones urbanas son defendibles; las variantes toponímicas y la ausencia de una cerca continua exigen mantener localización aproximada."
   }
 ]
