@@ -1,8 +1,13 @@
 import { describe, expect, it } from 'vitest'
-import { historicalFeatureCollection, sourcesById } from './historicalData'
+import {
+  allHistoricalFeatureCollection,
+  geometryAudit,
+  historicalFeatureCollection,
+  sourcesById,
+} from './historicalData'
 
 describe('datos históricos', () => {
-  it('carga las geometrías publicables de puntos, líneas y áreas', () => {
+  it('solo carga en el mapa las geometrías publicables ya verificadas', () => {
     const geometryTypes = historicalFeatureCollection.features.map(
       (feature) => feature.geometry.type,
     )
@@ -10,11 +15,16 @@ describe('datos históricos', () => {
     expect(geometryTypes).toContain('Point')
     expect(geometryTypes).toContain('LineString')
     expect(geometryTypes).toContain('Polygon')
-    expect(historicalFeatureCollection.features).toHaveLength(21)
+    expect(historicalFeatureCollection.features).toHaveLength(
+      geometryAudit.filter((entry) => entry.status === 'verified').length,
+    )
+    expect(
+      geometryAudit.filter((entry) => entry.status === 'verified').map((entry) => entry.feature_id),
+    ).toEqual(expect.arrayContaining(historicalFeatureCollection.features.map((feature) => feature.id)))
   })
 
   it('resuelve todas las referencias bibliográficas', () => {
-    for (const feature of historicalFeatureCollection.features) {
+    for (const feature of allHistoricalFeatureCollection.features) {
       expect(feature.properties.citations.length).toBeGreaterThan(0)
       for (const citation of feature.properties.citations) {
         expect(sourcesById.has(citation.source_id)).toBe(true)
@@ -27,7 +37,7 @@ describe('datos históricos', () => {
 
   it('incluye al menos una geometría aproximada', () => {
     expect(
-      historicalFeatureCollection.features.some(
+      allHistoricalFeatureCollection.features.some(
         (feature) => feature.properties.confidence.location === 'approximate',
       ),
     ).toBe(true)
@@ -35,7 +45,7 @@ describe('datos históricos', () => {
 
   it('incluye la morfología urbana necesaria para M3', () => {
     const featureIds = new Set(
-      historicalFeatureCollection.features.map((feature) => feature.id),
+      allHistoricalFeatureCollection.features.map((feature) => feature.id),
     )
 
     for (const featureId of [

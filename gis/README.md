@@ -1,5 +1,9 @@
 # Flujo cartográfico de M3
 
+M3 está en una pasada correctiva completa. Ninguna geometría de trabajo se
+considera válida por herencia: su estado y método de control se registran en
+`data/geometry-audit.json`. El mapa web solo muestra entradas `verified`.
+
 El proyecto QGIS trabaja en **ETRS89 / UTM zona 30N (EPSG:25830)** para que
 distancias, ajustes y revisiones se realicen en metros. Los GeoJSON públicos de
 `data/geo/` siguen siendo la copia canónica versionada y se publican en
@@ -30,6 +34,12 @@ cambios que quieras conservar.
 4. Revisa en metros la relación con restos conservados, relieve y referencias.
 5. No conviertas una reconstrucción aproximada en un borde preciso sin añadir
    una fuente y actualizar `confidence`, `geometry_method` y `evidence_note`.
+6. Actualiza `data/geometry-audit.json` solo después de documentar la fuente, el
+   método y la fecha de la comprobación.
+
+El proyecto incluye la ortofoto oficial PNOA Andalucía 2022 como referencia de
+control y OpenStreetMap como contexto secundario. La ortofoto permite comprobar
+fábricas visibles actuales; no demuestra por sí sola una geometría histórica.
 
 ## Exportar para la web
 

@@ -3,7 +3,11 @@ import { FeatureDrawer } from '../components/FeatureDrawer'
 import { Header } from '../components/Header'
 import { LayerControl } from '../components/LayerControl'
 import { CATEGORY_CONFIG } from '../data/categories'
-import { historicalFeatureCollection, sourcesById } from '../data/historicalData'
+import {
+  geometryAuditSummary,
+  historicalFeatureCollection,
+  sourcesById,
+} from '../data/historicalData'
 import type { FeatureCategory } from '../data/schema'
 import { MapView } from '../map/MapView'
 
@@ -98,8 +102,8 @@ export function App() {
         <div className="map-note" role="note">
           <span className="map-note__mark" aria-hidden="true" />
           <span>
-            {historicalFeatureCollection.features.length} elementos históricos revisados ·
-            selecciona uno para explorarlo
+            Revisión cartográfica en curso · {geometryAuditSummary.verified} de{' '}
+            {geometryAuditSummary.total} geometrías comprobadas
           </span>
         </div>
       </section>

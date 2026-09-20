@@ -11,17 +11,24 @@ reconstruction, what happened after 1492, and what is there today.
 ## Project status
 
 Milestones **M0 — Specification and repository setup**, **M1 — Working map
-shell**, **M2 — Historical data system**, and **M3 — Historical morphology**
-are complete. The app now renders validated historical GeoJSON over an
+shell**, and **M2 — Historical data system** are complete. **M3 — Historical
+morphology** has been reopened for a full corrective cartographic pass. The app
+now renders validated historical GeoJSON over an
 interactive map of Granada, distinguishes categories and levels of spatial
 certainty, supports filtering and selection, and exposes historical context,
 provenance, and citations in each feature card.
 
-The reviewed dataset contains 21 features. Its city-scale morphology includes
+The working dataset contains 21 features. None is assumed spatially correct:
+each geometry must pass the review recorded in `data/geometry-audit.json`
+before it is shown on the public map. Its city-scale morphology includes
 the Albaicín, lower medina, Alhambra and Generalife; the Darro and Genil;
 principal wall systems, gates, and two defensible routes; and an explicitly
 approximate late-Nasrid urban extent. Labels and confidence styling are designed
 to communicate the form of the city before a user opens an individual feature.
+
+The corrective pass currently has 18 of 21 geometries verified. The remaining
+work is deliberately limited to the lower-medina wall, the area derived from
+that enclosure, and the composite late-Nasrid urban extent.
 
 See:
 
@@ -123,12 +130,15 @@ are in [docs/ROADMAP.md](docs/ROADMAP.md).
 Before contributing historical material, read the methodology and provenance
 requirements in [docs/SPEC.md](docs/SPEC.md). Every public feature must have a
 stable ID, explicit spatial and temporal confidence, geometry provenance, at
-least one resolvable citation, and `publishable` review status.
+least one resolvable citation, `publishable` review status, and a `verified`
+entry in the geometry audit.
 
-Add canonical geometry to the matching file in `data/geo/` and register every
-referenced source in `data/sources.json`. A valid `publishable` feature appears
-on the map automatically; `npm run validate:data` reports broken identifiers,
-geometry, citations, coordinate ranges, and publication requirements.
+Add canonical geometry to the matching file in `data/geo/`, register every
+referenced source in `data/sources.json`, and document the check in
+`data/geometry-audit.json`. A feature appears on the map only when both its
+content and geometry have passed review; `npm run validate:data` reports broken
+identifiers, geometry, citations, coordinate ranges, audit coverage, and
+publication requirements.
 
 Do not commit source imagery, copied datasets, or traced geometry unless its
 reuse terms have been checked and recorded.

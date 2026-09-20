@@ -163,6 +163,43 @@ export const sourceSchema = z.object({
 
 export const sourceRegistrySchema = z.array(sourceSchema)
 
+export const geometryAuditEntrySchema = z
+  .object({
+    feature_id: featureIdSchema,
+    status: z.enum(['unverified', 'in_review', 'verified']),
+    reviewed_on: z.iso.date().nullable(),
+    geometry_source_refs: z.array(z.string().min(1)),
+    check_method: z.string(),
+    notes: z.string().min(1),
+  })
+  .superRefine((entry, context) => {
+    if (entry.status === 'verified') {
+      if (!entry.reviewed_on) {
+        context.addIssue({
+          code: 'custom',
+          path: ['reviewed_on'],
+          message: 'Una geometría verificada debe indicar la fecha de revisión.',
+        })
+      }
+      if (entry.geometry_source_refs.length === 0) {
+        context.addIssue({
+          code: 'custom',
+          path: ['geometry_source_refs'],
+          message: 'Una geometría verificada debe indicar al menos una fuente geométrica.',
+        })
+      }
+      if (entry.check_method.length < 20) {
+        context.addIssue({
+          code: 'custom',
+          path: ['check_method'],
+          message: 'Una geometría verificada debe documentar el método de comprobación.',
+        })
+      }
+    }
+  })
+
+export const geometryAuditSchema = z.array(geometryAuditEntrySchema)
+
 export type FeatureCategory = (typeof FEATURE_CATEGORIES)[number]
 export type Confidence = (typeof CONFIDENCE_VALUES)[number]
 export type EvidenceBasis = (typeof EVIDENCE_BASIS_VALUES)[number]
@@ -170,3 +207,4 @@ export type GeometryMethod = (typeof GEOMETRY_METHOD_VALUES)[number]
 export type HistoricalFeature = z.infer<typeof historicalFeatureSchema>
 export type HistoricalFeatureCollection = z.infer<typeof featureCollectionSchema>
 export type HistoricalSource = z.infer<typeof sourceSchema>
+export type GeometryAuditEntry = z.infer<typeof geometryAuditEntrySchema>

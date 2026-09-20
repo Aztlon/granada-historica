@@ -120,6 +120,18 @@
     "notes": "Sitúa el Generalife fuera de las murallas de la Alhambra y lo caracteriza como finca de recreo de los sultanes nazaríes."
   },
   {
+    "id": "source.alhambra-plan-director-landscape",
+    "author": "Patronato de la Alhambra y Generalife",
+    "title": "Plan Director de la Alhambra. Tomo 2: La Alhambra como paisaje cultural",
+    "year": 2010,
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "type": "institutional_plan",
+    "url": "https://www.alhambra-patronato.es/wp-content/uploads/2018/08/TOMO_2-1-1.pdf",
+    "identifier": "Plan Director de la Alhambra, tomo 2",
+    "reuse_status": "Cita y consulta cartográfica; no se redistribuye ni se reproduce la publicación.",
+    "notes": "El plano de la página 357 clasifica por épocas históricas el palacio, los jardines y las huertas del Generalife, e identifica los ámbitos medievales islámicos."
+  },
+  {
     "id": "source.granada-ziri-wall",
     "author": "Ayuntamiento de Granada",
     "title": "Muralla zirí",
@@ -130,6 +142,18 @@
     "identifier": "",
     "reuse_status": "Cita factual; no se reproducen imágenes.",
     "notes": "Referencia municipal sobre el tramo conservado de la muralla zirí y su prolongación hacia la Puerta de Elvira."
+  },
+  {
+    "id": "source.granada-albaicin-nasrid-wall",
+    "author": "Ayuntamiento de Granada",
+    "title": "Muralla de la Alberzana",
+    "year": null,
+    "publisher": "Turismo de Granada",
+    "type": "institutional_webpage",
+    "url": "https://turismo.granada.org/es/muralla-alberzana",
+    "identifier": "",
+    "reuse_status": "Cita factual; no se reproducen imágenes.",
+    "notes": "Describe la cerca nazarí del Albaicín, su función y el Postigo de San Lorenzo conservado en el tramo de la Alberzana."
   },
   {
     "id": "source.granada-elvira-gate",
@@ -150,10 +174,10 @@
     "year": null,
     "publisher": "Patronato de la Alhambra y Generalife",
     "type": "institutional_webpage",
-    "url": "https://www.alhambra-patronato.es/edificios-lugares/puerta-de-bibarrambla",
+    "url": "https://www.alhambra-patronato.es/la-puerta-de-bibarrambla2",
     "identifier": "",
     "reuse_status": "Cita factual; no se reproducen imágenes.",
-    "notes": "Explica el emplazamiento original de Bab al-Ramla, su demolición y su reconstrucción posterior en el bosque de la Alhambra."
+    "notes": "Explica el emplazamiento original de Bab al-Ramla en Arco de las Orejas con Salamanca, el hallazgo arqueológico de 2016, su demolición y su reconstrucción posterior en el bosque de la Alhambra."
   },
   {
     "id": "source.ugr-abbas-defences",
@@ -166,5 +190,53 @@
     "identifier": "hdl:10481/34259",
     "reuse_status": "Consulta y cita conforme a la licencia CC BY-NC-ND 3.0; no se redistribuye ni se adapta la publicación.",
     "notes": "Estudio académico de referencia para contrastar la arquitectura defensiva nazarí y evitar presentar como seguras reconstrucciones no conservadas."
+  },
+  {
+    "id": "source.dera-hydrology",
+    "author": "Instituto de Estadística y Cartografía de Andalucía",
+    "title": "Datos Espaciales de Referencia de Andalucía (DERA): 03. Hidrografía",
+    "year": null,
+    "publisher": "Junta de Andalucía",
+    "type": "official_geospatial_dataset",
+    "url": "https://www.juntadeandalucia.es/institutodeestadisticaycartografia/dega/datos-espaciales-de-referencia-de-andalucia-dera",
+    "identifier": "WFS DERA_g3_hidrografia:g03_01_Rio",
+    "reuse_status": "Datos reutilizados conforme a CC BY 4.0; la geometría publicada está recortada, simplificada y reproyectada.",
+    "notes": "Ejes hidrográficos oficiales en ETRS89 / UTM 30N. Se utilizan como referencia moderna de localización, no como reconstrucción exacta del cauce de 1492."
+  },
+  {
+    "id": "source.dera-protected-heritage",
+    "author": "Instituto de Estadística y Cartografía de Andalucía",
+    "title": "Datos Espaciales de Referencia de Andalucía (DERA): 11. Patrimonio. Bienes protegidos",
+    "year": null,
+    "publisher": "Junta de Andalucía",
+    "type": "official_geospatial_dataset",
+    "url": "https://www.juntadeandalucia.es/institutodeestadisticaycartografia/dega/datos-espaciales-de-referencia-de-andalucia-dera",
+    "identifier": "WFS DERA_g11_patrimonio:g11_18_BienesProtegidos_pol",
+    "reuse_status": "Datos reutilizados conforme a CC BY 4.0; los puntos se derivan de las delimitaciones oficiales de los bienes.",
+    "notes": "Delimitaciones oficiales de bienes protegidos en ETRS89 / UTM 30N, utilizadas para comprobar monumentos conservados."
+  },
+  {
+    "id": "source.pnoa-andalucia-2022",
+    "author": "Instituto Geográfico Nacional e Instituto de Estadística y Cartografía de Andalucía",
+    "title": "Ortofotografía de Andalucía 2022",
+    "year": 2022,
+    "publisher": "Junta de Andalucía",
+    "type": "official_orthophoto_service",
+    "url": "https://www.ideandalucia.es/wms/ortofoto_2022?",
+    "identifier": "WMS ortofotografia_2022_rgb",
+    "reuse_status": "Consulta y comprobación geométrica conforme a licencia compatible con CC BY 4.0; no se redistribuye la ortofoto.",
+    "notes": "Ortofotografía PNOA de 0,25 m/píxel empleada para comprobar la coincidencia de marcadores con fábricas conservadas."
+  },
+  {
+    "id": "source.openstreetmap",
+    "author": "Colaboradores de OpenStreetMap",
+    "title": "OpenStreetMap",
+    "year": null,
+    "publisher": "OpenStreetMap Foundation",
+    "type": "collaborative_geospatial_dataset",
+    "url": "https://www.openstreetmap.org/copyright",
+    "identifier": "OpenStreetMap data",
+    "reuse_status": "Datos © colaboradores de OpenStreetMap, disponibles bajo ODbL; se atribuye la procedencia y se usan como referencia secundaria.",
+    "notes": "Huellas y nodos modernos utilizados como candidatos, siempre contrastados con ortofoto oficial y fuentes institucionales antes de verificarlos."
   }
 ]

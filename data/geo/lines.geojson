@@ -38,10 +38,11 @@
         "summary": "Eje fluvial de la ciudad histórica y una de las bases de su abastecimiento y paisaje urbano.",
         "context_1492": "El Darro articulaba el valle entre la Alhambra y el Albaicín. Junto con el Genil y el Beiro, abastecía la ciudad y alimentaba un sistema de acequias e infraestructuras hidráulicas ampliado durante los periodos zirí y nazarí.",
         "after_1492": "La relación urbana con el río fue transformándose y parte de su recorrido central quedó cubierta. El tramo junto a la Carrera del Darro mantuvo su presencia visible y la conexión entre ambas laderas mediante puentes.",
-        "today": "El río sigue visible entre el Paseo de los Tristes y la Carrera del Darro, antes de quedar soterrado bajo el centro de la ciudad. La línea mostrada es una simplificación cartográfica del corredor fluvial.",
-        "evidence_note": "La existencia y el corredor general son seguros. Esta línea se ha generalizado para el prototipo y no debe utilizarse como deslinde hidráulico ni como reconstrucción centimétrica del cauce de 1492.",
+        "today": "El río sigue visible entre el Paseo de los Tristes y la Carrera del Darro, antes de quedar soterrado bajo el centro de la ciudad. La línea sigue el eje hidrográfico oficial moderno, simplificado para la escala urbana.",
+        "evidence_note": "La existencia y el corredor general son seguros. El eje DERA permite localizar el cauce moderno, pero no debe utilizarse como deslinde hidráulico ni como reconstrucción exacta del cauce de 1492.",
         "geometry_method": "modern_reference_location",
         "geometry_source_refs": [
+          "source.dera-hydrology",
           "source.granada-water-culture",
           "source.granada-carrera-darro"
         ],
@@ -63,52 +64,188 @@
         "type": "LineString",
         "coordinates": [
           [
-            -3.57484,
-            37.18112
+            -3.551999,
+            37.1782832
           ],
           [
-            -3.57736,
-            37.18038
+            -3.5533966,
+            37.1784179
           ],
           [
-            -3.58021,
-            37.17954
+            -3.5538969,
+            37.1786851
           ],
           [
-            -3.58275,
-            37.17872
+            -3.5541821,
+            37.1792803
           ],
           [
-            -3.58537,
-            37.17814
+            -3.5546546,
+            37.1795632
           ],
           [
-            -3.58782,
-            37.17791
+            -3.5564348,
+            37.179822
           ],
           [
-            -3.59018,
-            37.17774
+            -3.5572625,
+            37.1801852
           ],
           [
-            -3.59212,
-            37.17758
+            -3.5591066,
+            37.1798482
           ],
           [
-            -3.59407,
-            37.17739
+            -3.5593045,
+            37.1804355
           ],
           [
-            -3.59554,
-            37.17716
+            -3.5601674,
+            37.1805691
           ],
           [
-            -3.59673,
-            37.17686
+            -3.5607659,
+            37.1808604
           ],
           [
-            -3.59762,
-            37.17653
+            -3.561127,
+            37.1808631
+          ],
+          [
+            -3.5620045,
+            37.1803129
+          ],
+          [
+            -3.5626387,
+            37.18045
+          ],
+          [
+            -3.5636913,
+            37.1810264
+          ],
+          [
+            -3.5659735,
+            37.1806347
+          ],
+          [
+            -3.5666482,
+            37.1809227
+          ],
+          [
+            -3.5676113,
+            37.1810015
+          ],
+          [
+            -3.5680004,
+            37.1809207
+          ],
+          [
+            -3.5683881,
+            37.1803037
+          ],
+          [
+            -3.568821,
+            37.1801233
+          ],
+          [
+            -3.5693966,
+            37.1809219
+          ],
+          [
+            -3.5703758,
+            37.1809975
+          ],
+          [
+            -3.5718614,
+            37.181448
+          ],
+          [
+            -3.5731571,
+            37.1813112
+          ],
+          [
+            -3.5739227,
+            37.1809537
+          ],
+          [
+            -3.5745005,
+            37.1809688
+          ],
+          [
+            -3.5756351,
+            37.1806076
+          ],
+          [
+            -3.5764222,
+            37.1808857
+          ],
+          [
+            -3.5779101,
+            37.1806233
+          ],
+          [
+            -3.5804635,
+            37.1809366
+          ],
+          [
+            -3.5810798,
+            37.1806075
+          ],
+          [
+            -3.5817521,
+            37.1807845
+          ],
+          [
+            -3.5830254,
+            37.1807697
+          ],
+          [
+            -3.5836849,
+            37.1805186
+          ],
+          [
+            -3.5844088,
+            37.1809799
+          ],
+          [
+            -3.5849481,
+            37.181104
+          ],
+          [
+            -3.586172,
+            37.1801611
+          ],
+          [
+            -3.5865722,
+            37.1793728
+          ],
+          [
+            -3.587697,
+            37.1793365
+          ],
+          [
+            -3.5894253,
+            37.1786145
+          ],
+          [
+            -3.5906595,
+            37.1785531
+          ],
+          [
+            -3.5914125,
+            37.178261
+          ],
+          [
+            -3.5923349,
+            37.1784844
+          ],
+          [
+            -3.5942273,
+            37.1777871
+          ],
+          [
+            -3.5949134,
+            37.1773625
           ]
         ]
       }
@@ -151,10 +288,11 @@
         "summary": "Gran corredor fluvial al sur de la ciudad histórica y referencia del paisaje de la Granada nazarí.",
         "context_1492": "El Genil delimitaba y organizaba el borde meridional de la ciudad y, junto con el Darro y otros cursos, sostenía sistemas de riego y abastecimiento vinculados a la vega y a los espacios urbanos.",
         "after_1492": "Las riberas fueron canalizadas y urbanizadas gradualmente, mientras el río mantuvo su papel territorial y su relación con los puentes y paseos del sur de Granada.",
-        "today": "El Genil sigue siendo visible al sur del centro. La línea está simplificada para la lectura a escala urbana y no representa un deslinde hidráulico histórico ni actual.",
-        "evidence_note": "La presencia del río es segura; el trazado utiliza el corredor moderno como referencia general porque los márgenes y cauces han sido transformados.",
+        "today": "El Genil sigue siendo visible al sur del centro. La línea sigue el eje hidrográfico oficial moderno, simplificado para la escala urbana, y no representa un deslinde hidráulico histórico ni actual.",
+        "evidence_note": "La presencia del río es segura; el eje DERA ofrece una referencia moderna comprobable, aunque los márgenes y el cauce han sido transformados desde 1492.",
         "geometry_method": "modern_reference_location",
         "geometry_source_refs": [
+          "source.dera-hydrology",
           "source.granada-water-culture",
           "source.granada-pepri-islamic-city"
         ],
@@ -176,36 +314,120 @@
         "type": "LineString",
         "coordinates": [
           [
-            -3.57738,
-            37.16804
+            -3.5518556,
+            37.1585642
           ],
           [
-            -3.58224,
-            37.16764
+            -3.5532352,
+            37.1587631
           ],
           [
-            -3.58768,
-            37.16718
+            -3.5564956,
+            37.1598675
           ],
           [
-            -3.59343,
-            37.16702
+            -3.5596392,
+            37.1606843
           ],
           [
-            -3.59907,
-            37.16699
+            -3.5629167,
+            37.1612623
           ],
           [
-            -3.60484,
-            37.16731
+            -3.5660098,
+            37.1610403
           ],
           [
-            -3.61031,
-            37.16815
+            -3.5681795,
+            37.161243
           ],
           [
-            -3.61517,
-            37.16917
+            -3.5762094,
+            37.1631504
+          ],
+          [
+            -3.5783725,
+            37.1635212
+          ],
+          [
+            -3.5828027,
+            37.1649566
+          ],
+          [
+            -3.5874676,
+            37.1658347
+          ],
+          [
+            -3.5882388,
+            37.1661965
+          ],
+          [
+            -3.5892728,
+            37.16712
+          ],
+          [
+            -3.5915969,
+            37.1686535
+          ],
+          [
+            -3.5932462,
+            37.1691318
+          ],
+          [
+            -3.5945267,
+            37.1689389
+          ],
+          [
+            -3.5965469,
+            37.1679632
+          ],
+          [
+            -3.6043681,
+            37.165255
+          ],
+          [
+            -3.6095079,
+            37.1627634
+          ],
+          [
+            -3.6144331,
+            37.1615555
+          ],
+          [
+            -3.6166504,
+            37.1614056
+          ],
+          [
+            -3.6199185,
+            37.1616731
+          ],
+          [
+            -3.6247865,
+            37.1624784
+          ],
+          [
+            -3.6440298,
+            37.1687539
+          ],
+          [
+            -3.6466418,
+            37.1699525
+          ],
+          [
+            -3.6484887,
+            37.171094
+          ],
+          [
+            -3.6490509,
+            37.1711917
+          ],
+          [
+            -3.652411,
+            37.1727493
+          ],
+          [
+            -3.6533401,
+            37.1730079
           ]
         ]
       }
@@ -250,19 +472,26 @@
         "summary": "Línea defensiva que cerraba y articulaba los sectores septentrionales del Albaicín.",
         "context_1492": "La cerca recorría la parte alta de la ladera y conectaba puertas y recintos formados en distintas etapas. Era uno de los bordes más visibles de la expansión urbana nazarí.",
         "after_1492": "Muchos tramos fueron reparados, transformados o absorbidos por nuevas construcciones. Otros lienzos y torres siguen siendo legibles en el paisaje del Albaicín.",
-        "today": "Se conservan sectores visibles en torno a San Cristóbal y otros puntos de la ladera. La línea generaliza el recorrido y no debe confundirse con un levantamiento arqueológico continuo.",
-        "evidence_note": "La existencia de la cerca y numerosos tramos son seguros. Las conexiones entre restos se muestran de forma aproximada y requieren comprobación arqueológica a escala local.",
+        "today": "Se conservan largos sectores entre la Alberzana, San Cristóbal, Fajalauza y San Miguel. La línea sigue esos restos y reconstruye los huecos hasta los accesos históricos; no equivale a un levantamiento arqueológico continuo.",
+        "evidence_note": "Los lienzos conservados proceden de la geometría moderna de OpenStreetMap y se contrastan con la cartografía municipal. Las conexiones desaparecidas se mantienen como aproximadas.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
           "source.granada-pepri-islamic-city",
-          "source.granada-ziri-wall",
-          "source.ugr-abbas-defences"
+          "source.granada-albaicin-nasrid-wall",
+          "source.ugr-abbas-defences",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
         ],
         "citations": [
           {
             "source_id": "source.granada-pepri-islamic-city",
             "locator": "Anexo V, Memoria urbana, pp. 88-90 y planos",
             "supports": "Trazado general de cercas, puertas y organización defensiva del Albaicín."
+          },
+          {
+            "source_id": "source.granada-albaicin-nasrid-wall",
+            "locator": "Descripción de la muralla y del Postigo de San Lorenzo",
+            "supports": "Recorrido de la cerca exterior del Albaicín y conservación del tramo de la Alberzana."
           },
           {
             "source_id": "source.ugr-abbas-defences",
@@ -275,34 +504,29 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [
-            -3.60179,
-            37.18159
-          ],
-          [
-            -3.60022,
-            37.18331
-          ],
-          [
-            -3.59758,
-            37.18514
-          ],
-          [
-            -3.59439,
-            37.18702
-          ],
-          [
-            -3.59021,
-            37.18828
-          ],
-          [
-            -3.58613,
-            37.18719
-          ],
-          [
-            -3.58398,
-            37.18415
-          ]
+          [-3.5994918, 37.1821936],
+          [-3.5978093, 37.1848455],
+          [-3.5972537, 37.1846439],
+          [-3.596339, 37.1846974],
+          [-3.5954314, 37.1845066],
+          [-3.5949473, 37.1851205],
+          [-3.5945015, 37.1855218],
+          [-3.5937863, 37.185882],
+          [-3.5931119, 37.1859342],
+          [-3.592966, 37.1859777],
+          [-3.5925442, 37.1860617],
+          [-3.5915528, 37.186192],
+          [-3.5914719, 37.1861891],
+          [-3.5909078, 37.1861248],
+          [-3.5904947, 37.1858184],
+          [-3.5898731, 37.1854364],
+          [-3.5891889, 37.1852347],
+          [-3.5887198, 37.1851044],
+          [-3.5879719, 37.1848548],
+          [-3.5877155, 37.1846022],
+          [-3.5873192, 37.183715],
+          [-3.5872183, 37.1826812],
+          [-3.5872614, 37.1816785]
         ]
       }
     },
@@ -452,10 +676,12 @@
         "summary": "Perímetro defensivo de la ciudad palatina, reforzado por torres, camino de ronda y accesos en recodo.",
         "context_1492": "La muralla separaba y protegía la Alcazaba, los palacios y la medina de la Alhambra. Cuatro grandes puertas exteriores controlaban la relación con Granada y el Generalife.",
         "after_1492": "El recinto mantuvo funciones militares y palatinas, con reparaciones, demoliciones parciales y restauraciones que modificaron algunos puntos sin eliminar su lectura general.",
-        "today": "Gran parte de la muralla y sus torres se conserva dentro del Conjunto Monumental. El trazado se ha simplificado para la escala del mapa y no sustituye una planta arquitectónica.",
-        "evidence_note": "El perímetro es ampliamente reconocible por la fábrica conservada. La línea cartográfica suaviza torres, quiebros y recintos interiores, por lo que su precisión se clasifica como probable.",
-        "geometry_method": "reconstructed_from_multiple_sources",
+        "today": "Gran parte de la muralla y sus torres se conserva dentro del Conjunto Monumental. La línea sigue la fábrica exterior cartografiada, simplificada a tres metros para la escala del mapa, y no sustituye una planta arquitectónica.",
+        "evidence_note": "El perímetro exterior se reconoce en la fábrica conservada y en ortofoto. El trazado procede de la línea de muralla de OpenStreetMap contrastada con PNOA y con la guía del Patronato; no incluye recintos interiores ni pretende separar fases constructivas.",
+        "geometry_method": "surviving_footprint",
         "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
           "source.alhambra-fortified-city-guide",
           "source.alhambra-gates",
           "source.alhambra-urban-structure"
@@ -478,52 +704,444 @@
         "type": "LineString",
         "coordinates": [
           [
-            -3.59415,
-            37.17725
+            -3.5904008,
+            37.1762034
           ],
           [
-            -3.59278,
-            37.17817
+            -3.5904632,
+            37.1760845
           ],
           [
-            -3.58988,
-            37.17891
+            -3.5903181,
+            37.1760362
           ],
           [
-            -3.58617,
-            37.17886
+            -3.5902421,
+            37.1761837
           ],
           [
-            -3.58235,
-            37.17813
+            -3.5898379,
+            37.1760016
           ],
           [
-            -3.57942,
-            37.17673
+            -3.5898207,
+            37.1760299
           ],
           [
-            -3.58011,
-            37.17458
+            -3.5893598,
+            37.1759021
           ],
           [
-            -3.58348,
-            37.17334
+            -3.5888185,
+            37.175696
           ],
           [
-            -3.58762,
-            37.17345
+            -3.58824,
+            37.1753493
           ],
           [
-            -3.59122,
-            37.17438
+            -3.5884215,
+            37.1751752
           ],
           [
-            -3.59365,
-            37.17569
+            -3.588307,
+            37.175092
           ],
           [
-            -3.59415,
-            37.17725
+            -3.588113,
+            37.1752738
+          ],
+          [
+            -3.5877169,
+            37.175031
+          ],
+          [
+            -3.587757,
+            37.1749793
+          ],
+          [
+            -3.5876955,
+            37.174949
+          ],
+          [
+            -3.5876555,
+            37.1750008
+          ],
+          [
+            -3.587296,
+            37.1748742
+          ],
+          [
+            -3.5873264,
+            37.1748148
+          ],
+          [
+            -3.5872563,
+            37.1747902
+          ],
+          [
+            -3.5872203,
+            37.1748496
+          ],
+          [
+            -3.5868464,
+            37.1747795
+          ],
+          [
+            -3.5868569,
+            37.1745239
+          ],
+          [
+            -3.5867888,
+            37.1744557
+          ],
+          [
+            -3.5866438,
+            37.1744889
+          ],
+          [
+            -3.5866362,
+            37.174769
+          ],
+          [
+            -3.5860332,
+            37.1747367
+          ],
+          [
+            -3.5860382,
+            37.1746621
+          ],
+          [
+            -3.5859778,
+            37.1746595
+          ],
+          [
+            -3.5859727,
+            37.1747341
+          ],
+          [
+            -3.5856612,
+            37.1747092
+          ],
+          [
+            -3.5856229,
+            37.1746328
+          ],
+          [
+            -3.5855575,
+            37.1746537
+          ],
+          [
+            -3.5855962,
+            37.174731
+          ],
+          [
+            -3.5853783,
+            37.1748143
+          ],
+          [
+            -3.5851333,
+            37.1747984
+          ],
+          [
+            -3.5851283,
+            37.1748943
+          ],
+          [
+            -3.5851749,
+            37.1749141
+          ],
+          [
+            -3.5851523,
+            37.175106
+          ],
+          [
+            -3.5851054,
+            37.1752708
+          ],
+          [
+            -3.5850124,
+            37.1752835
+          ],
+          [
+            -3.5850174,
+            37.1753266
+          ],
+          [
+            -3.5851426,
+            37.1753323
+          ],
+          [
+            -3.5857955,
+            37.1756592
+          ],
+          [
+            -3.585736,
+            37.1757398
+          ],
+          [
+            -3.5858321,
+            37.1757848
+          ],
+          [
+            -3.5858867,
+            37.1757109
+          ],
+          [
+            -3.5860817,
+            37.1758411
+          ],
+          [
+            -3.5863404,
+            37.1761548
+          ],
+          [
+            -3.5862042,
+            37.1762143
+          ],
+          [
+            -3.5862482,
+            37.1762782
+          ],
+          [
+            -3.5863844,
+            37.1762187
+          ],
+          [
+            -3.586602,
+            37.1763751
+          ],
+          [
+            -3.5867935,
+            37.1766103
+          ],
+          [
+            -3.5867189,
+            37.1766663
+          ],
+          [
+            -3.5867603,
+            37.1767014
+          ],
+          [
+            -3.586835,
+            37.1766454
+          ],
+          [
+            -3.5872402,
+            37.1768709
+          ],
+          [
+            -3.5871387,
+            37.176937
+          ],
+          [
+            -3.5871925,
+            37.1770251
+          ],
+          [
+            -3.5871071,
+            37.1770715
+          ],
+          [
+            -3.5871513,
+            37.1771175
+          ],
+          [
+            -3.5870855,
+            37.1771584
+          ],
+          [
+            -3.5871434,
+            37.1772187
+          ],
+          [
+            -3.587341,
+            37.1771162
+          ],
+          [
+            -3.5874662,
+            37.1772301
+          ],
+          [
+            -3.5875589,
+            37.1771667
+          ],
+          [
+            -3.5879109,
+            37.1771306
+          ],
+          [
+            -3.5882113,
+            37.177264
+          ],
+          [
+            -3.5884071,
+            37.1773826
+          ],
+          [
+            -3.5884087,
+            37.1774272
+          ],
+          [
+            -3.5884797,
+            37.1774256
+          ],
+          [
+            -3.5884806,
+            37.1774789
+          ],
+          [
+            -3.5885558,
+            37.177478
+          ],
+          [
+            -3.5885548,
+            37.1774248
+          ],
+          [
+            -3.5888708,
+            37.1774184
+          ],
+          [
+            -3.589209,
+            37.1776591
+          ],
+          [
+            -3.5892664,
+            37.1776483
+          ],
+          [
+            -3.5892533,
+            37.1776041
+          ],
+          [
+            -3.5895935,
+            37.1775553
+          ],
+          [
+            -3.5895922,
+            37.1776325
+          ],
+          [
+            -3.5897694,
+            37.1776344
+          ],
+          [
+            -3.5897718,
+            37.1774932
+          ],
+          [
+            -3.5901561,
+            37.1775157
+          ],
+          [
+            -3.5901551,
+            37.177547
+          ],
+          [
+            -3.5905371,
+            37.1775102
+          ],
+          [
+            -3.5905348,
+            37.1775486
+          ],
+          [
+            -3.5908728,
+            37.1775293
+          ],
+          [
+            -3.5910547,
+            37.1775787
+          ],
+          [
+            -3.5913596,
+            37.1775878
+          ],
+          [
+            -3.5918529,
+            37.1773218
+          ],
+          [
+            -3.5919636,
+            37.1773102
+          ],
+          [
+            -3.5919805,
+            37.1773929
+          ],
+          [
+            -3.59209,
+            37.1773788
+          ],
+          [
+            -3.5920724,
+            37.1772921
+          ],
+          [
+            -3.5925184,
+            37.1772352
+          ],
+          [
+            -3.5929544,
+            37.1771175
+          ],
+          [
+            -3.5929711,
+            37.1771469
+          ],
+          [
+            -3.593067,
+            37.1770697
+          ],
+          [
+            -3.5930402,
+            37.176965
+          ],
+          [
+            -3.5927612,
+            37.1767876
+          ],
+          [
+            -3.5927532,
+            37.1768282
+          ],
+          [
+            -3.592331,
+            37.1768173
+          ],
+          [
+            -3.5923204,
+            37.1767407
+          ],
+          [
+            -3.5921224,
+            37.1767265
+          ],
+          [
+            -3.5921146,
+            37.1768227
+          ],
+          [
+            -3.5912123,
+            37.1767793
+          ],
+          [
+            -3.5909558,
+            37.1765922
+          ],
+          [
+            -3.5910053,
+            37.1765267
+          ],
+          [
+            -3.590914,
+            37.1763735
+          ],
+          [
+            -3.5904008,
+            37.1762034
           ]
         ]
       }
@@ -572,7 +1190,8 @@
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
           "source.granada-pepri-islamic-city",
-          "source.granada-elvira-gate"
+          "source.granada-elvira-gate",
+          "source.openstreetmap"
         ],
         "citations": [
           {
@@ -592,24 +1211,88 @@
         "type": "LineString",
         "coordinates": [
           [
-            -3.60179,
-            37.18139
+            -3.5994918,
+            37.1821936
           ],
           [
-            -3.60079,
-            37.18038
+            -3.5995996,
+            37.182147
           ],
           [
-            -3.59935,
-            37.1792
+            -3.5994100,
+            37.1821407
           ],
           [
-            -3.59791,
-            37.1782
+            -3.5993467,
+            37.1819488
           ],
           [
-            -3.59643,
-            37.17748
+            -3.5992357,
+            37.1818093
+          ],
+          [
+            -3.5990716,
+            37.1812834
+          ],
+          [
+            -3.5990197,
+            37.180923
+          ],
+          [
+            -3.5990671,
+            37.1803921
+          ],
+          [
+            -3.5989922,
+            37.1800447
+          ],
+          [
+            -3.5987828,
+            37.17949
+          ],
+          [
+            -3.5985535,
+            37.1789831
+          ],
+          [
+            -3.5982961,
+            37.1786549
+          ],
+          [
+            -3.5981206,
+            37.1784702
+          ],
+          [
+            -3.5979548,
+            37.1783085
+          ],
+          [
+            -3.597801,
+            37.1780336
+          ],
+          [
+            -3.5976638,
+            37.1777342
+          ],
+          [
+            -3.5974702,
+            37.177535
+          ],
+          [
+            -3.5972524,
+            37.1773824
+          ],
+          [
+            -3.5970126,
+            37.177205
+          ],
+          [
+            -3.5967634,
+            37.1769489
+          ],
+          [
+            -3.5965861,
+            37.1767225
           ]
         ]
       }
@@ -658,7 +1341,8 @@
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
           "source.alhambra-arms-gate",
-          "source.alhambra-fortified-city-guide"
+          "source.alhambra-fortified-city-guide",
+          "source.openstreetmap"
         ],
         "citations": [
           {
@@ -678,24 +1362,32 @@
         "type": "LineString",
         "coordinates": [
           [
-            -3.59791,
-            37.17755
+            -3.592682,
+            37.1782206
           ],
           [
-            -3.59632,
-            37.17764
+            -3.59258,
+            37.17807
           ],
           [
-            -3.59464,
-            37.17752
+            -3.59245,
+            37.17788
           ],
           [
-            -3.59311,
-            37.17756
+            -3.5923,
+            37.17767
           ],
           [
-            -3.5916,
-            37.17776
+            -3.59215,
+            37.17746
+          ],
+          [
+            -3.59203,
+            37.1773
+          ],
+          [
+            -3.5919919,
+            37.1771498
           ]
         ]
       }

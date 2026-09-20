@@ -43,10 +43,13 @@ changes.
 ## M3 — Historical morphology
 
 1. [x] Establish the QGIS project in EPSG:25830 and export workflow to EPSG:4326.
-2. [x] Map major urban sectors and carefully qualified labels.
-3. [x] Add major walls, gates, rivers, and defensible routes.
-4. [x] Establish the Alhambra, Generalife, lower medina, and Albaicín relationship.
-5. [x] Review all geometry precision and provenance.
+2. [ ] Correct and revalidate the major urban sectors and their labels.
+3. [ ] Correct and revalidate the major walls, gates, rivers, and defensible routes.
+4. [ ] Reconstruct the Alhambra, Generalife, lower medina, and Albaicín relationship from explicit evidence.
+5. [ ] Complete the per-entity geometry audit; no draft geometry is presumed correct.
+
+Corrective-pass checkpoint: 18 of 21 geometries are verified. The lower-medina
+wall, lower-medina area, and composite late-Nasrid extent remain withheld.
 
 Exit gate: the map communicates city-scale form before individual monuments.
 

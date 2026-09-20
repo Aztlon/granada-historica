@@ -44,6 +44,8 @@
         "evidence_note": "La ubicación es segura por la conservación del edificio y de parte de su fábrica nazarí. El marcador representa una localización de referencia y no una reconstrucción de su planta medieval.",
         "geometry_method": "modern_reference_location",
         "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
           "source.ugr-madraza"
         ],
         "citations": [
@@ -58,8 +60,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.59876,
-          37.17589
+          -3.5982757,
+          37.176086
         ]
       }
     },
@@ -107,6 +109,7 @@
         "evidence_note": "La localización es segura por la conservación material y la documentación. El marcador no reconstruye los patios, torres y barbacanas desaparecidos.",
         "geometry_method": "surviving_footprint",
         "geometry_source_refs": [
+          "source.dera-protected-heritage",
           "source.granada-elvira-gate",
           "source.granada-pepri-islamic-city"
         ],
@@ -122,8 +125,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.60187,
-          37.18136
+          -3.5994918,
+          37.1821936
         ]
       }
     },
@@ -171,6 +174,7 @@
         "evidence_note": "La posición es segura por la fábrica conservada. La lectura de sus conexiones con otros lienzos se apoya en la cartografía histórica y la reconstrucción urbana.",
         "geometry_method": "surviving_footprint",
         "geometry_source_refs": [
+          "source.dera-protected-heritage",
           "source.granada-pepri-islamic-city",
           "source.granada-ziri-wall"
         ],
@@ -191,8 +195,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.59664,
-          37.18369
+          -3.5975658,
+          37.1820543
         ]
       }
     },
@@ -239,6 +243,8 @@
         "evidence_note": "La ubicación está asegurada por la fábrica conservada; la atribución precisa de todas sus fases y conexiones requiere una lectura arqueológica más detallada.",
         "geometry_method": "surviving_footprint",
         "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
           "source.granada-pepri-islamic-city",
           "source.ugr-abbas-defences"
         ],
@@ -259,8 +265,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.5902,
-          37.18825
+          -3.5915098,
+          37.1862322
         ]
       }
     },
@@ -293,7 +299,7 @@
         },
         "present_c1492": "secure",
         "confidence": {
-          "location": "approximate",
+          "location": "probable",
           "time": "secure"
         },
         "evidence_basis": [
@@ -305,18 +311,19 @@
         "summary": "Puerta meridional de la medina que daba acceso al entorno comercial de Bib-Rambla desde el arenal.",
         "context_1492": "Bab al-Ramla abría la cerca hacia la plaza del mismo nombre, uno de los espacios neurálgicos de la ciudad nazarí extendida sobre el llano.",
         "after_1492": "La puerta continuó en uso hasta su demolición entre 1873 y 1884. Sus piezas fueron conservadas y el arco se reconstruyó en el bosque de la Alhambra en 1933.",
-        "today": "El marcador señala de forma aproximada el emplazamiento urbano original, no la puerta reconstruida que hoy se encuentra junto al bosque de la Alhambra.",
-        "evidence_note": "La relación con la plaza y la cerca está documentada, pero la transformación del entorno aconseja no presentar un punto centimétrico para el emplazamiento desaparecido.",
+        "today": "El marcador señala la intersección de las calles Arco de las Orejas y Salamanca, donde la arqueología ha confirmado el emplazamiento original; no señala la puerta reconstruida en el bosque de la Alhambra.",
+        "evidence_note": "El Patronato sitúa la puerta en esta intersección y documenta el hallazgo arqueológico de 2016. El punto representa el cruce actual, no la planta completa del acceso desaparecido.",
         "geometry_method": "representative_point",
         "geometry_source_refs": [
           "source.alhambra-bib-rambla-gate",
-          "source.granada-pepri-islamic-city"
+          "source.granada-pepri-islamic-city",
+          "source.openstreetmap"
         ],
         "citations": [
           {
             "source_id": "source.alhambra-bib-rambla-gate",
-            "locator": "Descripción histórica",
-            "supports": "Nombre, función, emplazamiento en la muralla, demolición y reconstrucción posterior."
+            "locator": "Apartado «La Puerta de Bibarrambla», localización y excavaciones de 2016",
+            "supports": "Emplazamiento original en la confluencia de Arco de las Orejas y Salamanca, hallazgo arqueológico, demolición y reconstrucción posterior."
           }
         ],
         "publication_status": "publishable"
@@ -324,8 +331,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.60166,
-          37.1737
+          -3.599744,
+          37.1746364
         ]
       }
     },
@@ -371,6 +378,8 @@
         "evidence_note": "La ubicación, cronología general y función están respaldadas por la fábrica conservada y la documentación del Patronato.",
         "geometry_method": "surviving_footprint",
         "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
           "source.alhambra-arms-gate",
           "source.alhambra-fortified-city-guide"
         ],
@@ -386,8 +395,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.59147,
-          37.17802
+          -3.5919919,
+          37.1771498
         ]
       }
     },
@@ -434,6 +443,8 @@
         "evidence_note": "La posición y la presencia en 1492 son seguras gracias a la inscripción, la arquitectura conservada y la documentación histórica.",
         "geometry_method": "surviving_footprint",
         "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
           "source.alhambra-gates",
           "source.alhambra-fortified-city-guide"
         ],
@@ -454,8 +465,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.58985,
-          37.17616
+          -3.5903595,
+          37.1761198
         ]
       }
     },
@@ -502,6 +513,8 @@
         "evidence_note": "El emplazamiento es seguro, pero parte de la fábrica visible es reconstruida. La interpretación formal debe distinguir los restos nazaríes de las reposiciones posteriores.",
         "geometry_method": "surviving_footprint",
         "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
           "source.alhambra-gates",
           "source.alhambra-fortified-city-guide"
         ],
@@ -517,8 +530,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.58564,
-          37.17426
+          -3.5867353,
+          37.1747742
         ]
       }
     },
@@ -562,10 +575,12 @@
         "summary": "Acceso septentrional de la Alhambra que articulaba la conexión con el Generalife y la Cuesta de los Chinos.",
         "context_1492": "La puerta formaba parte de un complejo reforzado junto a la Torre de los Picos y permitía la circulación entre la ciudad palatina, el Generalife y Granada.",
         "after_1492": "El complejo recibió reformas y mantuvo conexiones con el Generalife, aunque sus usos y accesos fueron cambiando con la gestión posterior del recinto.",
-        "today": "La puerta se conserva bajo la Torre de los Picos, próxima a la Cuesta de los Chinos. El marcador señala el acceso histórico dentro del complejo defensivo.",
-        "evidence_note": "La ubicación y función general son seguras; la cronología concreta de las distintas fases del baluarte y la puerta requiere matices.",
+        "today": "La puerta se conserva bajo la Torre de los Picos, próxima a la Cuesta de los Chinos. El marcador se centra en la torre para identificar el complejo defensivo, no el umbral exacto del paso cubierto.",
+        "evidence_note": "La ubicación y función general son seguras y la huella de la Torre de los Picos se reconoce en ortofoto; la cronología concreta de las distintas fases del baluarte y la puerta requiere matices.",
         "geometry_method": "surviving_footprint",
         "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
           "source.alhambra-gates",
           "source.alhambra-fortified-city-guide"
         ],
@@ -586,8 +601,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.58239,
-          37.17819
+          -3.587477,
+          37.177125
         ]
       }
     }

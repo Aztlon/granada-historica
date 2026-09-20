@@ -3,6 +3,7 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import {
   featureCollectionSchema,
+  geometryAuditSchema,
   sourceRegistrySchema,
   type HistoricalFeature,
 } from '../src/data/schema'
@@ -76,6 +77,34 @@ async function validate() {
     }
   }
 
+  const auditResult = geometryAuditSchema.safeParse(await readJson('data/geometry-audit.json'))
+  if (!auditResult.success) {
+    errors.push(formatIssues('data/geometry-audit.json', auditResult.error.issues))
+  } else {
+    const auditedFeatureIds = new Set<string>()
+    for (const entry of auditResult.data) {
+      if (auditedFeatureIds.has(entry.feature_id)) {
+        errors.push(`  - Revisión geométrica duplicada: ${entry.feature_id}`)
+      }
+      auditedFeatureIds.add(entry.feature_id)
+
+      if (!featureIds.has(entry.feature_id)) {
+        errors.push(`  - La revisión geométrica referencia una entidad inexistente: ${entry.feature_id}`)
+      }
+      for (const sourceId of entry.geometry_source_refs) {
+        if (!sourceIds.has(sourceId)) {
+          errors.push(`  - ${entry.feature_id} usa una fuente geométrica inexistente: ${sourceId}`)
+        }
+      }
+    }
+
+    for (const featureId of featureIds) {
+      if (!auditedFeatureIds.has(featureId)) {
+        errors.push(`  - Falta la revisión geométrica de ${featureId}`)
+      }
+    }
+  }
+
   if (errors.length > 0) {
     throw new Error(`La validación de datos ha fallado:\n${errors.join('\n')}`)
   }
@@ -83,8 +112,11 @@ async function validate() {
   const publishableCount = features.filter(
     (feature) => feature.properties.publication_status === 'publishable',
   ).length
+  const verifiedCount = auditResult.success
+    ? auditResult.data.filter((entry) => entry.status === 'verified').length
+    : 0
   console.log(
-    `Datos válidos: ${features.length} entidades (${publishableCount} publicables) y ${sources.length} fuentes.`,
+    `Datos válidos: ${features.length} entidades (${publishableCount} publicables, ${verifiedCount} con geometría verificada) y ${sources.length} fuentes.`,
   )
 }
 

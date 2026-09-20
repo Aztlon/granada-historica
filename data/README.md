@@ -2,7 +2,8 @@
 
 `geo/` contains the canonical public GeoJSON, split into points, lines, and
 areas. `content/` is reserved for long-form feature content if keeping it inside
-GeoJSON becomes cumbersome. `sources.json` is the normalized source registry.
+GeoJSON becomes cumbersome. `sources.json` is the normalized source registry,
+and `geometry-audit.json` records the independent cartographic review state.
 
 Public web coordinates must use WGS84 (EPSG:4326). Every feature must follow the
 schema and provenance rules in `docs/SPEC.md`; in particular, it needs a stable
@@ -20,10 +21,13 @@ be clearly marked as demo material or pass historical review.
 4. Reference those source IDs from `citations` and `geometry_source_refs`.
 5. Record separate locational and temporal confidence values.
 6. Use `publication_status: "publishable"` only after historical review.
-7. Run `npm run validate:data`.
+7. Add or update the matching entry in `geometry-audit.json`. Use `verified`
+   only after recording the check date, sources, method, and limitations.
+8. Run `npm run validate:data`.
 
-The frontend imports these files directly. A valid public feature therefore
-appears automatically, without editing application code.
+The frontend imports these files directly. A valid public feature appears only
+when it is both `publishable` and geometrically `verified`, without editing
+application code.
 
 ## QGIS round trip
 

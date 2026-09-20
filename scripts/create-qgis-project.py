@@ -92,6 +92,16 @@ def main() -> int:
             project.addMapLayer(layer, False)
             historical_group.addLayer(layer)
 
+        reference_group = project.layerTreeRoot().addGroup("Referencias de control (no editar)")
+        ortho_uri = (
+            "crs=EPSG:25830&format=image/png&layers=ortofotografia_2022_rgb"
+            "&styles=&url=https://www.ideandalucia.es/wms/ortofoto_2022?"
+        )
+        ortho = QgsRasterLayer(ortho_uri, "PNOA Andalucía 2022 · 0,25 m", "wms")
+        if ortho.isValid():
+            project.addMapLayer(ortho, False)
+            reference_group.addLayer(ortho)
+
         basemap_uri = (
             "type=xyz&url=https://tile.openstreetmap.org/{z}/{x}/{y}.png"
             "&zmin=0&zmax=19"
@@ -99,7 +109,8 @@ def main() -> int:
         basemap = QgsRasterLayer(basemap_uri, "Contexto moderno - OpenStreetMap", "wms")
         if basemap.isValid():
             project.addMapLayer(basemap, False)
-            project.layerTreeRoot().insertLayer(-1, basemap)
+            reference_group.addLayer(basemap)
+            reference_group.findLayer(basemap.id()).setItemVisibilityChecked(False)
 
         if not project.write(str(project_path)):
             raise RuntimeError(f"No se ha podido escribir el proyecto {project_path}.")

@@ -1,0 +1,170 @@
+[
+  {
+    "feature_id": "religious.madraza-yusufiyya",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.ugr-madraza"],
+    "check_method": "Centroide de la huella moderna de OpenStreetMap, contrastado con la ortofoto PNOA y la identificación institucional del inmueble.",
+    "notes": "El punto representa el Palacio de la Madraza actual; no afirma una planta medieval completa."
+  },
+  {
+    "feature_id": "gate.elvira",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.dera-protected-heritage"],
+    "check_method": "Centroide de la delimitación oficial del bien protegido, contrastado con la fábrica visible.",
+    "notes": "Sustituye el punto provisional, desplazado al oeste del arco conservado."
+  },
+  {
+    "feature_id": "gate.monaita",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.dera-protected-heritage"],
+    "check_method": "Centroide de la delimitación oficial del bien protegido, contrastado con la fábrica visible.",
+    "notes": "El marcador representa el acceso conservado, no el conjunto completo de la cerca."
+  },
+  {
+    "feature_id": "gate.fajalauza",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.granada-pepri-islamic-city"],
+    "check_method": "Centroide de la huella conservada en OpenStreetMap, contrastado con la ortofoto PNOA y la cartografía patrimonial municipal.",
+    "notes": "El punto identifica la puerta conservada en el cruce de la carretera con la cerca, no sus defensas anexas."
+  },
+  {
+    "feature_id": "gate.bib-rambla",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.alhambra-bib-rambla-gate", "source.openstreetmap", "source.granada-pepri-islamic-city"],
+    "check_method": "Intersección actual de las calles Arco de las Orejas y Salamanca, identificada por el Patronato como emplazamiento original y contrastada con el hallazgo arqueológico de 2016 y la cartografía municipal.",
+    "notes": "Sustituye el punto provisional, desplazado unos 200 m al oeste. El marcador no representa la puerta reconstruida en el bosque de la Alhambra ni su planta completa."
+  },
+  {
+    "feature_id": "gate.alhambra-arms",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.alhambra-arms-gate"],
+    "check_method": "Nodo del acceso conservado en OpenStreetMap, contrastado con la ortofoto PNOA y la descripción institucional del Patronato.",
+    "notes": "Sustituye el punto provisional, que estaba desplazado al norte de la Torre de las Armas."
+  },
+  {
+    "feature_id": "gate.alhambra-justice",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.alhambra-gates"],
+    "check_method": "Centroide de la Torre de la Justicia en OpenStreetMap, contrastado con la ortofoto PNOA y la descripción institucional del acceso.",
+    "notes": "El marcador identifica el paso dentro del conjunto de la torre, no una medición del umbral."
+  },
+  {
+    "feature_id": "gate.alhambra-seven-floors",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.alhambra-gates"],
+    "check_method": "Nodo de la puerta en OpenStreetMap, contrastado con la ortofoto PNOA y la descripción institucional de su reconstrucción.",
+    "notes": "Sustituye el punto provisional desplazado; la ficha mantiene la advertencia sobre la reconstrucción contemporánea."
+  },
+  {
+    "feature_id": "gate.alhambra-arrabal",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.alhambra-gates"],
+    "check_method": "Centroide de la huella de la Torre de los Picos en OpenStreetMap, contrastado con la ortofoto PNOA y la descripción institucional de la puerta bajo la torre.",
+    "notes": "Sustituye el punto provisional, desplazado unos cientos de metros al este; el marcador identifica el complejo y no el umbral cubierto."
+  },
+  {
+    "feature_id": "water.darro",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.dera-hydrology"],
+    "check_method": "Recorte y simplificación a 12 m del eje hidrográfico oficial DERA en ETRS89 / UTM 30N, exportado a WGS84.",
+    "notes": "Es una referencia del cauce moderno, no un deslinde ni una reconstrucción exacta del lecho de 1492."
+  },
+  {
+    "feature_id": "water.genil",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.dera-hydrology"],
+    "check_method": "Recorte y simplificación a 12 m del eje hidrográfico oficial DERA en ETRS89 / UTM 30N, exportado a WGS84.",
+    "notes": "Es una referencia del cauce moderno, no un deslinde ni una reconstrucción exacta del lecho de 1492."
+  },
+  {
+    "feature_id": "walls.albaicin-north",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.granada-pepri-islamic-city", "source.granada-albaicin-nasrid-wall"],
+    "check_method": "Trazado compuesto por los lienzos conservados cartografiados en OpenStreetMap entre la Alberzana, Fajalauza y San Miguel, contrastados con PNOA y el PEPRI, con conexiones aproximadas hasta las puertas documentadas.",
+    "notes": "Sustituye el arco provisional, que discurría demasiado al norte. Los huecos entre fábricas conservadas siguen siendo reconstrucciones y no se presentan como restos visibles."
+  },
+  {
+    "feature_id": "walls.medina-lower",
+    "status": "unverified",
+    "reviewed_on": null,
+    "geometry_source_refs": [],
+    "check_method": "",
+    "notes": "Pendiente de reconstrucción tramo a tramo; no se acepta el anillo provisional."
+  },
+  {
+    "feature_id": "walls.alhambra-perimeter",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.alhambra-fortified-city-guide"],
+    "check_method": "Línea de muralla exterior de OpenStreetMap reproyectada a ETRS89 / UTM 30N, simplificada a 3 m y contrastada con PNOA y la guía institucional.",
+    "notes": "Representa la fábrica exterior conservada como una línea continua; no diferencia fases ni incluye recintos interiores."
+  },
+  {
+    "feature_id": "route.elvira-axis",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.granada-pepri-islamic-city", "source.granada-elvira-gate", "source.openstreetmap"],
+    "check_method": "Eje de la calle Elvira actual trazado desde la Puerta de Elvira hasta Plaza Nueva con la geometría viaria de OpenStreetMap, contrastado con la identificación explícita del corredor en el PEPRI.",
+    "notes": "La línea sigue el corredor conservado; no atribuye anchura ni rasante medieval y generaliza los encuentros transformados en ambos extremos."
+  },
+  {
+    "feature_id": "route.alhambra-arms-access",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.alhambra-arms-gate", "source.alhambra-fortified-city-guide", "source.openstreetmap"],
+    "check_method": "Corredor reconstruido entre los emplazamientos del desaparecido Puente del Cadí y la Puerta de las Armas, extremos identificados por la guía institucional y comprobados sobre la topografía actual.",
+    "notes": "Sustituye la polilínea provisional, que atravesaba la ciudad baja en sentido este-oeste. El trazado intermedio expresa el corredor de subida, no una rasante arqueológicamente levantada."
+  },
+  {
+    "feature_id": "royal.alhambra",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.alhambra-fortified-city-guide"],
+    "check_method": "Polígono derivado de la línea cerrada de la muralla exterior conservada, contrastada con PNOA y la guía institucional del recinto.",
+    "notes": "Representa la ciudad palatina intramuros; no equivale al BIC actual ni incluye posesiones exteriores."
+  },
+  {
+    "feature_id": "royal.generalife",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.alhambra-plan-director-landscape", "source.openstreetmap", "source.alhambra-generalife"],
+    "check_method": "Selección del núcleo del Generalife y de las huertas Colorada, Grande, de la Mercería y de Fuente Peña cartografiadas en OpenStreetMap, contrastadas con su clasificación como espacios medievales islámicos en el Plan Director.",
+    "notes": "Sustituye la gran envolvente provisional, desplazada al este. Los polígonos siguen ámbitos actuales supervivientes y no equivalen a un deslinde parcelario de 1492."
+  },
+  {
+    "feature_id": "urban.albaicin",
+    "status": "verified",
+    "reviewed_on": "2026-09-20",
+    "geometry_source_refs": ["source.granada-pepri-islamic-city", "source.granada-albaicin-nasrid-wall", "source.openstreetmap", "source.dera-hydrology"],
+    "check_method": "Polígono derivado de la cerca septentrional revisada y cerrado por el corredor urbano al norte del Darro según la cartografía del PEPRI.",
+    "notes": "Sustituye la envolvente provisional, que excedía la cerca varios cientos de metros hacia el norte y el este. El borde fluvial sigue siendo una generalización interpretativa."
+  },
+  {
+    "feature_id": "urban.lower-medina",
+    "status": "unverified",
+    "reviewed_on": null,
+    "geometry_source_refs": [],
+    "check_method": "",
+    "notes": "Pendiente de reconstrucción sobre cercas, parcelario y cartografía histórica georreferenciada."
+  },
+  {
+    "feature_id": "urban.late-nasrid-extent",
+    "status": "unverified",
+    "reviewed_on": null,
+    "geometry_source_refs": [],
+    "check_method": "",
+    "notes": "La envolvente provisional queda retirada; requiere una definición reproducible y no puede derivarse por simple unión visual."
+  }
+]

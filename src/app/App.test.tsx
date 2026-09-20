@@ -8,9 +8,9 @@ vi.mock('../map/MapView', () => ({
     <div aria-label="Mapa moderno interactivo del centro de Granada">
       <button
         type="button"
-        onClick={() => onSelectFeature('religious.madraza-yusufiyya')}
+        onClick={() => onSelectFeature('gate.elvira')}
       >
-        Seleccionar la Madraza en el mapa
+        Seleccionar la Puerta de Elvira en el mapa
       </button>
     </div>
   ),
@@ -59,12 +59,12 @@ describe('App', () => {
     render(<App />)
 
     await user.click(
-      screen.getByRole('button', { name: 'Seleccionar la Madraza en el mapa' }),
+      screen.getByRole('button', { name: 'Seleccionar la Puerta de Elvira en el mapa' }),
     )
 
-    expect(screen.getByRole('heading', { name: 'Madraza Yusufiyya' })).toBeVisible()
+    expect(screen.getByRole('heading', { name: 'Puerta de Elvira' })).toBeVisible()
     expect(screen.getByRole('heading', { name: '¿Cómo lo sabemos?' })).toBeVisible()
     expect(screen.getByRole('heading', { name: 'Fuentes' })).toBeVisible()
-    expect(screen.getByRole('link', { name: 'Sobre el Palacio de la Madraza' })).toBeVisible()
+    expect(screen.getByRole('link', { name: 'Castillo de la Puerta de Elvira' })).toBeVisible()
   })
 })
