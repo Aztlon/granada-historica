@@ -779,28 +779,27 @@
           "parcel_morphology",
           "scholarly_reconstruction"
         ],
-        "summary": "Línea defensiva interior entre el entorno del Cuarto Real, las puertas de Alfareros y Mawrur y Torres Bermejas.",
+        "summary": "Corredor defensivo interior desde Campos y Santo Domingo a las puertas de Alfareros y Mawrur y Torres Bermejas.",
         "context_1492": "Tras quedar al-Fajjarin y al-Nayd dentro del perímetro exterior, esta cerca ya no era el límite total de la ciudad. Sus puertas seguían organizando la comunicación entre la medina anterior, el Mauror y los arrabales meridionales.",
         "after_1492": "La pérdida de función defensiva, la integración en el caserío y las reformas del Realejo fragmentaron o borraron gran parte de su recorrido.",
-        "today": "Se representa una línea interpretativa entre Cuarto Real, Plaza Fortuny, Placeta de la Puerta del Sol y Torres Bermejas. No debe confundirse con la cerca exterior tardonazarí de La Loma.",
-        "evidence_note": "Se corrige una incoherencia interna: la antigua línea no pasaba por las puertas de Alfareros y Mauror publicadas y arrancaba en la Puerta del Pescado pese a describir el Cuarto Real. El corredor se enlaza ahora con los dos puntos documentados y el frente de Cuesta de Aixa. No se impone el contorno de los siglos XI-XIII sobre todas las ampliaciones nazaríes; los enlaces siguen siendo aproximados.",
+        "today": "Corredor aproximado Campos–Santo Domingo–Plaza Fortuny–Puerta del Sol–Torres Bermejas, no trazado de fábrica conservada.",
+        "evidence_note": "Se corrige el tramo casi vertical anterior: desde Bab al-Fajjarin la cerca continuaba al suroeste junto a Santo Domingo, hacia Campos–Cuesta del Progreso. Garrido López (2024, p. 663 y figs. 5–6) y Cuesta del Realejo 26 respaldan el corredor, no cada vértice. No es la cerca exterior tardonazarí.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
-          "source.granada-centre-plan",
-          "source.junta-aguado-2009",
-          "source.junta-porteria-santo-domingo-2012",
+          "source.garrido-alfareros-2024",
+          "source.junta-cuesta-realejo-2004",
           "source.openstreetmap"
         ],
         "citations": [
           {
-            "source_id": "source.junta-aguado-2009",
-            "locator": "Contexto histórico-arqueológico",
-            "supports": "Diferenciación de la línea Torres Bermejas–Cuarto Real respecto de las cercas exteriores nazaríes y localización de Bab Mawrur y Bab al-Fajjarin."
+            "source_id": "source.garrido-alfareros-2024",
+            "locator": "pp. 663–679, figuras 1, 5 y 6",
+            "supports": "Situación del arrabal, cerca occidental y cronología de alfares; límite con al-Nayd no identificado."
           },
           {
-            "source_id": "source.junta-porteria-santo-domingo-2012",
-            "locator": "pp. 4-5, formación de los arrabales meridionales",
-            "supports": "Comunicación de los arrabales con la medina por Bab al-Fajjarin y, secundariamente, Bab Mawrur."
+            "source_id": "source.junta-cuesta-realejo-2004",
+            "locator": "pp. 470–472: contexto histórico",
+            "supports": "Alfareros en Realejo Alto; puertas, Santo Domingo, Santiago y Cuarto Real."
           }
         ],
         "publication_status": "publishable"
@@ -809,16 +808,24 @@
         "type": "LineString",
         "coordinates": [
           [
-            -3.5949269,
-            37.171666
+            -3.5961247,
+            37.1723578
           ],
           [
-            -3.59465,
-            37.1723
+            -3.59584,
+            37.1726
           ],
           [
-            -3.59452,
+            -3.59551,
+            37.1728
+          ],
+          [
+            -3.5952,
             37.1731
+          ],
+          [
+            -3.59491,
+            37.17344
           ],
           [
             -3.59449,

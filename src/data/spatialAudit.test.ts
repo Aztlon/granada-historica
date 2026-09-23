@@ -9,6 +9,24 @@ function replace(id: string, geometry: HistoricalFeature['geometry']) {
 }
 
 describe('auditoría de relaciones espaciales', () => {
+  it('rechaza el desplazamiento de Alfareros bajo la Alhambra', () => {
+    const features = replace('quarter.alfajjarin', {
+      type: 'Polygon', coordinates: [[[-3.5945,37.1737],[-3.586,37.1737],
+        [-3.586,37.1768],[-3.5945,37.1768],[-3.5945,37.1737]]],
+    })
+    expect(auditSpatialRelationships(features)).toContain('Alfareros: falta un sector arqueológico documentado.')
+    expect(auditSpatialRelationships(features)).toContain('Alfareros: extensión no respaldada bajo la Alhambra.')
+  })
+
+  it('rechaza la cerca interior casi vertical que excluía Santo Domingo', () => {
+    const features = replace('walls.mauror-realejo-inner', {
+      type: 'LineString', coordinates: [[-3.59493,37.17167],[-3.59449,37.17375],[-3.59448,37.17512]],
+    })
+    expect(auditSpatialRelationships(features)).toContain(
+      'La cerca interior debe continuar al suroeste hacia Santo Domingo y Campos.',
+    )
+  })
+
   it('valida los canales, puentes y recintos revisados', () => {
     expect(auditSpatialRelationships(baseline)).toEqual([])
   })

@@ -133,7 +133,7 @@ export function auditSpatialRelationships(features: HistoricalFeature[]): string
       `El recinto y la cerca de ${name} deben expresar la misma hipótesis.`)
   }
   for (const [a, b] of [['alcazaba-qadima','axares'],['alcazaba-qadima','albayyazin'],
-    ['axares','albayyazin'],['alfajjarin','loma']]) {
+    ['axares','albayyazin']]) {
     const first = ring(`quarter.${a}`), second = ring(`quarter.${b}`)
     let shared = 0
     for (let i = 1; i < first.length; i++) {
@@ -146,5 +146,15 @@ export function auditSpatialRelationships(features: HistoricalFeature[]): string
     require(!first.some((p) => inside(p,second)) && !second.some((p) => inside(p,first)),
       `${a}/${b}: solape entre recintos del mismo nivel.`)
   }
+  // Archaeological anchors constrain the envelope; no invented Alfareros/Loma boundary.
+  for (const p of [[-3.59484,37.17339],[-3.59508,37.17245],
+    [-3.59297,37.17220],[-3.59567,37.17194]] as Position[]) {
+    require(inside(p, ring('quarter.alfajjarin')), 'Alfareros: falta un sector arqueológico documentado.')
+  }
+  for (const p of [[-3.591,37.1755],[-3.588,37.1748]] as Position[]) {
+    require(!inside(p, ring('quarter.alfajjarin')), 'Alfareros: extensión no respaldada bajo la Alhambra.')
+  }
+  require(distanceToLines([-3.59551,37.17280], lines('walls.mauror-realejo-inner')) < 30,
+    'La cerca interior debe continuar al suroeste hacia Santo Domingo y Campos.')
   return errors
 }

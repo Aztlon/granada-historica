@@ -106,18 +106,12 @@ polygon("urban.lower-medina", medina[:end] + [bridge_crossing, qe[-1]] + qs[1:] 
 # Elongated Arenal along the outside of the medina wall; trim the small map-fit overlap.
 ramla = Polygon(chain("ramla_outer"))
 set_shape("quarter.ramla", ramla.difference(shape(features["urban.lower-medina"]["geometry"])))
-# Southern quarters: the interior Mauror wall is their western boundary.
-inner = [[-3.5949269,37.171666],[-3.59465,37.1723],[-3.59452,37.1731],
-         point("gate.alfajjarin"),[-3.59446,37.1744],point("gate.mawrur"),[-3.5934157,37.1754807]]
-geo("walls.mauror-realejo-inner", "LineString", inner)
-divide = [inner[3], [-3.5918,37.1738], [-3.5905877,37.1735226],
-          [-3.58845,37.17385], [-3.5867,37.1737]]
-city = shape(features["urban.lower-medina"]["geometry"])
-alf = Polygon(inner[3:] + [[-3.5929,37.1761],[-3.5918,37.1767],[-3.582,37.1767],
-                          [-3.582,37.1737]] + list(reversed(divide)))
-set_shape("quarter.alfajjarin", alf.intersection(city))
-loma = Polygon(inner[:3] + divide + [[-3.582,37.1737],[-3.582,37.166],[-3.59,37.166],inner[0]])
-set_shape("quarter.loma", loma.intersection(city))
+# Specialist archaeological review supersedes the schematic map for this sector.
+# Do not fill all enclosed space or manufacture an unidentified quarter boundary.
+southern_review = read("data/reconstruction/alfareros-review.json")
+geo("walls.mauror-realejo-inner", "LineString", southern_review["interior_wall"])
+polygon("quarter.alfajjarin", southern_review["alfareros_envelope"])
+polygon("quarter.loma", southern_review["loma_envelope"])
 set_shape("urban.late-nasrid-extent", unary_union([shape(features[f]["geometry"]) for f in
           ["urban.albaicin", "urban.lower-medina", "royal.alhambra", "quarter.ramla"]]))
 # Channels follow digitized source lines. No invented upstream intake connections.
@@ -183,12 +177,24 @@ for water, river in [("gorda","genil"),("gorda","darro"),("tarramonta","genil"),
     result = shape(features[f"water.acequia-{water}"]["geometry"]).intersection(shape(features[f"water.{river}"]["geometry"]))
     report["crossings"][f"{water}/{river}"] = mapping(result)
 for a,b in [("alcazaba-qadima","axares"),("alcazaba-qadima","albayyazin"),
-            ("axares","albayyazin"),("alfajjarin","loma")]:
+            ("axares","albayyazin")]:
     first, second = metric(f"quarter.{a}"), metric(f"quarter.{b}")
     report["quarter_shared_edges_m"][f"{a}/{b}"] = round(first.boundary.intersection(second.boundary).length, 1)
     report["quarter_overlap_area_m2"][f"{a}/{b}"] = round(first.intersection(second).area, 2)
 if report["invalid_geometries"] or any(v > 0.5 for v in report["quarter_overlap_area_m2"].values()):
     raise ValueError(f"Invalid reconstruction: {report}")
+alf = shape(features["quarter.alfajjarin"]["geometry"])
+report["southern_review"] = {
+    "input": "data/reconstruction/alfareros-review.json",
+    "method": southern_review["method"],
+    "boundary_status": southern_review["unknown"],
+    "inclusions": {a["name"]: alf.contains(Point(a["wgs84"])) for a in southern_review["inclusion_checks"]},
+    "exclusions": {a["name"]: not alf.contains(Point(a["wgs84"])) for a in southern_review["exclusion_checks"]},
+    "overlap_m2": round(metric("quarter.alfajjarin").intersection(metric("quarter.loma")).area, 2),
+}
+assert all(report["southern_review"]["inclusions"].values())
+assert all(report["southern_review"]["exclusions"].values())
+assert report["southern_review"]["overlap_m2"] < 0.5
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--inspect", action="store_true")
@@ -225,6 +231,8 @@ else:
             entry.update(reviewed_on="2026-09-23", geometry_source_refs=p["geometry_source_refs"],
                          check_method="Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
                          notes=p["evidence_note"])
+            if fid in ["quarter.alfajjarin", "quarter.loma", "walls.mauror-realejo-inner"]:
+                entry["check_method"] = "Revisión arqueológica Garrido López 2024 y Cuesta del Realejo 26; anclajes modernos OSM. Envolventes editoriales y corredor de cerca aproximados, no registro afín: docs/ALFAREROS-REVIEW.md."
     updates["data/geometry-audit.json"] = audits
     updates["data/reconstruction/water-urban-audit.json"] = report
     print("*** Begin Patch")

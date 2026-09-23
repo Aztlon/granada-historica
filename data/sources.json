@@ -646,5 +646,41 @@
     "identifier": "AAA_2005_193",
     "reuse_status": "Consulta y cita factual; no se redistribuye ni se adapta la publicación.",
     "notes": "Discute el recinto de Axares, sus accesos y los arrabales orientales cuya identificación o delimitación sigue abierta."
+  },
+  {
+    "reuse_status": "Consulta y cita factual; no se redistribuyen figuras.",
+    "notes": "Revisión de Alfareros: docs/ALFAREROS-REVIEW.md.",
+    "id": "source.garrido-alfareros-2024",
+    "author": "Jorge Garrido López",
+    "title": "Configuración y desarrollo de un espacio artesanal: los talleres alfareros de Rabḍ Fajjārīn, Granada (siglos XII–XVI)",
+    "year": 2024,
+    "publisher": "UNED, Espacio, Tiempo y Forma, Serie III, 37, pp. 657–690",
+    "type": "scholarly_article",
+    "url": "https://revistas.uned.es/index.php/ETFIII/article/download/36264/29879",
+    "identifier": "10.5944/etfiii.37.2024.36264"
+  },
+  {
+    "reuse_status": "Consulta y cita factual; no se redistribuyen figuras.",
+    "notes": "Revisión de Alfareros: docs/ALFAREROS-REVIEW.md.",
+    "id": "source.junta-cuesta-realejo-2004",
+    "author": "María Isabel Mancilla Cabello y Julio Miguel Román Punzón",
+    "title": "Intervención arqueológica mediante seguimiento en Cuesta del Realejo, nº 26 (Barrio del Realejo, Granada)",
+    "year": 2004,
+    "publisher": "Junta de Andalucía, Anuario Arqueológico de Andalucía",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/bitstream/20.500.11947/22163/1/AAA_2004_626_mancillacabello_cuestderealejo26_grannada2.pdf",
+    "identifier": "20.500.11947/22163"
+  },
+  {
+    "reuse_status": "Consulta y cita factual; no se redistribuyen figuras.",
+    "notes": "Revisión de Alfareros: docs/ALFAREROS-REVIEW.md.",
+    "id": "source.patronato-gomerez-2022",
+    "author": "Patronato de la Alhambra y Generalife",
+    "title": "Bosque de Gomérez",
+    "year": 2022,
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "type": "institutional_webpage",
+    "url": "https://www.alhambra-patronato.es/bosque-de-gomerez",
+    "identifier": ""
   }
 ]

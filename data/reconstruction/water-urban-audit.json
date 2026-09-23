@@ -92,13 +92,27 @@
   "quarter_shared_edges_m": {
     "alcazaba-qadima/axares": 378.8,
     "alcazaba-qadima/albayyazin": 583.7,
-    "axares/albayyazin": 622.4,
-    "alfajjarin/loma": 700.5
+    "axares/albayyazin": 622.4
   },
   "quarter_overlap_area_m2": {
     "alcazaba-qadima/axares": 0.0,
     "alcazaba-qadima/albayyazin": 0.0,
-    "axares/albayyazin": 0.0,
-    "alfajjarin/loma": 0.0
+    "axares/albayyazin": 0.0
+  },
+  "southern_review": {
+    "input": "data/reconstruction/alfareros-review.json",
+    "method": "Editorial core envelopes, not a parcel survey or exhaustive partition. Historical sectors from Garrido López 2024 pp. 663–679 and Cuesta del Realejo 26 excavation report pp. 470–472; modern street anchors from OSM. No affine accuracy claimed for these vertices.",
+    "boundary_status": "The Alfareros/al-Nayd boundary is explicitly unidentified. Space between the two envelopes is an unresolved transition, not evidence of an empty strip, wall or disconnected settlement.",
+    "inclusions": {
+      "Santo Domingo / Portería": true,
+      "Callejón de Santo Domingo": true,
+      "Santiago / Jarrería corridor": true,
+      "Cuarto Real, northern qubba sector": true
+    },
+    "exclusions": {
+      "Gomérez defensive slope, not assigned to Alfareros": true,
+      "Eastern slope below Alhambra, withdrawn assignment": true
+    },
+    "overlap_m2": 0.0
   }
 }

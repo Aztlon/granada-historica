@@ -105,12 +105,13 @@ the medieval banks. The adjustments are explicit in the reconstruction script.
 - Arenal/Rambla becomes an elongated, approximately rectangular strip outside
   the medina, corroborated by the Isac diagram; overlap from the map fit is
   trimmed against the medina. It is not all of modern Magdalena.
-- Alfareros is placed east of the interior Mauror wall, below the Sabika, with
-  an interpretive common edge with Loma near Campo del Príncipe. Its old polygon
-  occupied much of the earlier medina west of that wall. The interior wall now
-  actually meets the published Alfareros/Mauror gate points and Cuesta de Aixa,
-  instead of beginning at Pescado while describing the Cuarto Real. Its links
-  remain approximate. Antequeruela remains a later overlapping subarea.
+- **Superseded southern-quarter inference:** the original Map 5-based Alfareros
+  polygon extended too far under the Alhambra. The archaeological correction in
+  [ALFAREROS-REVIEW.md](ALFAREROS-REVIEW.md) restores the documented
+  Santo Domingo–Santiago sector and the southwestward interior-wall corridor.
+  Alfareros and Loma are approximate reference envelopes, not a forced partition
+  along an unidentified border. The water-map affine residuals do not measure
+  the accuracy of their editorial vertices. Antequeruela remains overlapping.
 - The southern **outer** late-Nasrid wall retains the archaeological anchors
   from the earlier southern-edge review. It is not replaced wholesale by the
   older-phase schematic perimeter. Medina and overall urban extent are

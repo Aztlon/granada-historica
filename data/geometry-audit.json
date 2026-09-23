@@ -428,14 +428,15 @@
     "status": "verified",
     "reviewed_on": "2026-09-23",
     "geometry_source_refs": [
-      "source.ujaen-water-route-2025",
+      "source.garrido-alfareros-2024",
+      "source.junta-cuesta-realejo-2004",
       "source.granada-pepri-islamic-city",
       "source.granada-centre-plan",
       "source.junta-porteria-santo-domingo-2012",
       "source.openstreetmap"
     ],
-    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
-    "notes": "La revisión corrige la ocupación anterior de gran parte de la medina al oeste de la cerca interior. El Mapa 5 y el esquema de Isac sitúan el arrabal al este de ella. El límite con la Loma es interpretativo y compartido; la especialización alfarera no implica que todos sus solares fueran talleres."
+    "check_method": "Revisión arqueológica Garrido López 2024 y Cuesta del Realejo 26; anclajes modernos OSM. Envolventes editoriales y corredor de cerca aproximados, no registro afín: docs/ALFAREROS-REVIEW.md.",
+    "notes": "Se retira la extensión no respaldada bajo la Alhambra y se recupera el sector Santo Domingo–Santiago–Cuarto Real. Garrido López (2024, pp. 663–679) permite situar el arrabal, no trazar su frontera exacta con La Loma. El espacio entre envolventes expresa incertidumbre, no un barrio intermedio ni una franja vacía. Vértices editoriales, no levantamiento arqueológico."
   },
   {
     "feature_id": "quarter.antequeruela",
@@ -455,28 +456,28 @@
     "status": "verified",
     "reviewed_on": "2026-09-23",
     "geometry_source_refs": [
-      "source.ujaen-water-route-2025",
+      "source.garrido-alfareros-2024",
+      "source.junta-cuesta-realejo-2004",
       "source.granada-pepri-islamic-city",
       "source.granada-centre-plan",
       "source.junta-porteria-santo-domingo-2012",
       "source.junta-hoteles-belen-2020",
       "source.openstreetmap"
     ],
-    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
-    "notes": "El borde occidental se ajusta a la cerca interior, el exterior conserva los anclajes arqueológicos previos y el contacto con Alfareros se comparte sin huecos ni solapes. La división entre los dos arrabales sigue siendo interpretativa. Antequeruela se mantiene como ámbito tardío superpuesto, no como partición de idéntico rango."
+    "check_method": "Revisión arqueológica Garrido López 2024 y Cuesta del Realejo 26; anclajes modernos OSM. Envolventes editoriales y corredor de cerca aproximados, no registro afín: docs/ALFAREROS-REVIEW.md.",
+    "notes": "Se retira la partición forzada que asignaba Santo Domingo y Santiago a La Loma. Garrido López (2024, p. 663) declara no identificado el límite entre los arrabales. Las envolventes dejan una transición sin asignar, no una discontinuidad de población ni una muralla entre barrios."
   },
   {
     "feature_id": "walls.mauror-realejo-inner",
     "status": "verified",
     "reviewed_on": "2026-09-23",
     "geometry_source_refs": [
-      "source.granada-centre-plan",
-      "source.junta-aguado-2009",
-      "source.junta-porteria-santo-domingo-2012",
+      "source.garrido-alfareros-2024",
+      "source.junta-cuesta-realejo-2004",
       "source.openstreetmap"
     ],
-    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
-    "notes": "Se corrige una incoherencia interna: la antigua línea no pasaba por las puertas de Alfareros y Mauror publicadas y arrancaba en la Puerta del Pescado pese a describir el Cuarto Real. El corredor se enlaza ahora con los dos puntos documentados y el frente de Cuesta de Aixa. No se impone el contorno de los siglos XI-XIII sobre todas las ampliaciones nazaríes; los enlaces siguen siendo aproximados."
+    "check_method": "Revisión arqueológica Garrido López 2024 y Cuesta del Realejo 26; anclajes modernos OSM. Envolventes editoriales y corredor de cerca aproximados, no registro afín: docs/ALFAREROS-REVIEW.md.",
+    "notes": "Se corrige el tramo casi vertical anterior: desde Bab al-Fajjarin la cerca continuaba al suroeste junto a Santo Domingo, hacia Campos–Cuesta del Progreso. Garrido López (2024, p. 663 y figs. 5–6) y Cuesta del Realejo 26 respaldan el corredor, no cada vértice. No es la cerca exterior tardonazarí."
   },
   {
     "feature_id": "gate.alfajjarin",

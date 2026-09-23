@@ -3238,7 +3238,7 @@
         "id": "quarter.alfajjarin",
         "name": "Arrabal de los Alfareros",
         "historical_name": "Rabad al-Fajjarin",
-        "modern_name": "Ladera bajo la Sabika y entorno de Campo del Príncipe",
+        "modern_name": "Realejo: Santo Domingo, Santiago, Jarrería y Cuarto Real",
         "aliases": [
           "Rabad al-Fajjarin",
           "Rabad Alfajjarin",
@@ -3273,13 +3273,14 @@
           "scholarly_reconstruction"
         ],
         "summary": "Arrabal meridional vinculado a la producción cerámica, contiguo a al-Nayd y encerrado con él dentro de las ampliaciones defensivas nazaríes.",
-        "context_1492": "El barrio reunía talleres, viviendas, huertas y fincas palatinas. Hacia levante enlazaba con La Loma a través de un paisaje donde la maqbara de Bab al-Fajjarin y la de al-Assal ocupaban Campo del Príncipe y sus inmediaciones; la Puerta de los Alfareros comunicaba ambos arrabales con la medina anterior.",
+        "context_1492": "Arrabal con alfares, viviendas, huertas, cementerios y almunias. La arqueología sitúa talleres bajomedievales en Santo Domingo, Santiago, Jarrería y Molinos; los primeros alfares de Casa de los Tiros son anteriores y no fijan por sí solos el arrabal de 1492. Su límite con al-Nayd no está identificado.",
         "after_1492": "El establecimiento de Santo Domingo y las transformaciones del Realejo alteraron la estructura productiva y residencial. El Cuarto Real y evidencias arqueológicas conservaron testimonios del paisaje nazarí.",
-        "today": "Sector al este de la cerca interior del Mauror, entre las puertas antiguas, el pie de la Sabika y la transición de Campo del Príncipe hacia la Loma.",
-        "evidence_note": "La revisión corrige la ocupación anterior de gran parte de la medina al oeste de la cerca interior. El Mapa 5 y el esquema de Isac sitúan el arrabal al este de ella. El límite con la Loma es interpretativo y compartido; la especialización alfarera no implica que todos sus solares fueran talleres.",
+        "today": "Envolvente aproximada del Realejo documentado por excavaciones, desde Plaza Fortuny y la vertiente sur del Mauror hasta Santo Domingo, Santiago y el Cuarto Real. No representa parcelas medievales ni edificación continua.",
+        "evidence_note": "Se retira la extensión no respaldada bajo la Alhambra y se recupera el sector Santo Domingo–Santiago–Cuarto Real. Garrido López (2024, pp. 663–679) permite situar el arrabal, no trazar su frontera exacta con La Loma. El espacio entre envolventes expresa incertidumbre, no un barrio intermedio ni una franja vacía. Vértices editoriales, no levantamiento arqueológico.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
-          "source.ujaen-water-route-2025",
+          "source.garrido-alfareros-2024",
+          "source.junta-cuesta-realejo-2004",
           "source.granada-pepri-islamic-city",
           "source.granada-centre-plan",
           "source.junta-porteria-santo-domingo-2012",
@@ -3302,9 +3303,19 @@
             "supports": "Contigüidad de al-Fajjarin y al-Nayd, incorporación conjunta al recinto y localización de la necrópolis oriental en Campo del Príncipe."
           },
           {
-            "source_id": "source.ujaen-water-route-2025",
-            "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
-            "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+            "source_id": "source.garrido-alfareros-2024",
+            "locator": "pp. 663–679, figuras 1, 5 y 6",
+            "supports": "Situación del arrabal, cerca occidental y cronología de alfares; límite con al-Nayd no identificado."
+          },
+          {
+            "source_id": "source.junta-cuesta-realejo-2004",
+            "locator": "pp. 470–472: contexto histórico",
+            "supports": "Alfareros en Realejo Alto; puertas, Santo Domingo, Santiago y Cuarto Real."
+          },
+          {
+            "source_id": "source.patronato-gomerez-2022",
+            "locator": "Uso militar medieval y reforestación posterior",
+            "supports": "El bosque actual no prueba el uso del suelo de 1492, ni documenta aquí el arrabal."
           }
         ],
         "publication_status": "publishable"
@@ -3314,152 +3325,24 @@
         "coordinates": [
           [
             [
-              -3.59446,
-              37.1744
+              -3.5961247,
+              37.1723578
             ],
             [
-              -3.59448,
-              37.17512
+              -3.59584,
+              37.1726
             ],
             [
-              -3.5934157,
-              37.1754807
+              -3.59551,
+              37.1728
             ],
             [
-              -3.5929,
-              37.1761
+              -3.5952,
+              37.1731
             ],
             [
-              -3.5918,
-              37.1767
-            ],
-            [
-              -3.5911036,
-              37.1767
-            ],
-            [
-              -3.5909558,
-              37.1765922
-            ],
-            [
-              -3.5910053,
-              37.1765267
-            ],
-            [
-              -3.590914,
-              37.1763735
-            ],
-            [
-              -3.5904008,
-              37.1762034
-            ],
-            [
-              -3.5904632,
-              37.1760845
-            ],
-            [
-              -3.5903181,
-              37.1760362
-            ],
-            [
-              -3.5902421,
-              37.1761837
-            ],
-            [
-              -3.5898379,
-              37.1760016
-            ],
-            [
-              -3.5898207,
-              37.1760299
-            ],
-            [
-              -3.5893598,
-              37.1759021
-            ],
-            [
-              -3.5888185,
-              37.175696
-            ],
-            [
-              -3.58824,
-              37.1753493
-            ],
-            [
-              -3.5884215,
-              37.1751752
-            ],
-            [
-              -3.588307,
-              37.175092
-            ],
-            [
-              -3.588113,
-              37.1752738
-            ],
-            [
-              -3.5877169,
-              37.175031
-            ],
-            [
-              -3.587757,
-              37.1749793
-            ],
-            [
-              -3.5876955,
-              37.174949
-            ],
-            [
-              -3.5876555,
-              37.1750008
-            ],
-            [
-              -3.587296,
-              37.1748742
-            ],
-            [
-              -3.5873264,
-              37.1748148
-            ],
-            [
-              -3.5872563,
-              37.1747902
-            ],
-            [
-              -3.5872203,
-              37.1748496
-            ],
-            [
-              -3.5868464,
-              37.1747795
-            ],
-            [
-              -3.5868569,
-              37.1745239
-            ],
-            [
-              -3.5867888,
-              37.1744557
-            ],
-            [
-              -3.586698,
-              37.1737
-            ],
-            [
-              -3.5867,
-              37.1737
-            ],
-            [
-              -3.58845,
-              37.17385
-            ],
-            [
-              -3.5905877,
-              37.1735226
-            ],
-            [
-              -3.5918,
-              37.1738
+              -3.59491,
+              37.17344
             ],
             [
               -3.59449,
@@ -3468,6 +3351,74 @@
             [
               -3.59446,
               37.1744
+            ],
+            [
+              -3.5937,
+              37.17455
+            ],
+            [
+              -3.5928,
+              37.1745
+            ],
+            [
+              -3.5918,
+              37.17448
+            ],
+            [
+              -3.5911,
+              37.1743
+            ],
+            [
+              -3.5913,
+              37.1739
+            ],
+            [
+              -3.5916,
+              37.1734
+            ],
+            [
+              -3.5918,
+              37.17285
+            ],
+            [
+              -3.5915,
+              37.1722
+            ],
+            [
+              -3.59105,
+              37.1715
+            ],
+            [
+              -3.5915,
+              37.1708
+            ],
+            [
+              -3.5924,
+              37.1709
+            ],
+            [
+              -3.5934,
+              37.1711
+            ],
+            [
+              -3.5942,
+              37.1716
+            ],
+            [
+              -3.5949,
+              37.17195
+            ],
+            [
+              -3.5955,
+              37.17178
+            ],
+            [
+              -3.5958,
+              37.17205
+            ],
+            [
+              -3.5961247,
+              37.1723578
             ]
           ]
         ]
@@ -3690,11 +3641,12 @@
         "summary": "Arrabal contiguo a los Alfareros que ocupaba la ladera meridional hasta la Puerta de la Loma, las huertas y la cerca exterior tardonazarí.",
         "context_1492": "La Loma ocupaba el extremo sudoriental intramuros. Su territorio enlazaba con al-Fajjarin en torno al Campo del Príncipe y reunía tejido residencial, alfares dispersos, cementerios, almunias y huertas articuladas por la Acequia Gorda. La Puerta de la Loma o de los Molinos lo comunicaba con el Genil y los caminos de la sierra.",
         "after_1492": "La reorganización parroquial, los cambios de propiedad y la transformación de las huertas modificaron el sector. Parte de su identidad quedó absorbida por el Realejo, San Cecilio y la Antequeruela.",
-        "today": "Sector meridional de expansión, entre la cerca interior del Realejo y el recinto exterior de Solares, Vistillas y Los Mártires, contiguo a los Alfareros.",
-        "evidence_note": "El borde occidental se ajusta a la cerca interior, el exterior conserva los anclajes arqueológicos previos y el contacto con Alfareros se comparte sin huecos ni solapes. La división entre los dos arrabales sigue siendo interpretativa. Antequeruela se mantiene como ámbito tardío superpuesto, no como partición de idéntico rango.",
+        "today": "Envolvente aproximada del sector sudoriental de Molinos, San Cecilio y Vistillas. La transición occidental hacia Alfareros no tiene una línea histórica identificada.",
+        "evidence_note": "Se retira la partición forzada que asignaba Santo Domingo y Santiago a La Loma. Garrido López (2024, p. 663) declara no identificado el límite entre los arrabales. Las envolventes dejan una transición sin asignar, no una discontinuidad de población ni una muralla entre barrios.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
-          "source.ujaen-water-route-2025",
+          "source.garrido-alfareros-2024",
+          "source.junta-cuesta-realejo-2004",
           "source.granada-pepri-islamic-city",
           "source.granada-centre-plan",
           "source.junta-porteria-santo-domingo-2012",
@@ -3723,9 +3675,14 @@
             "supports": "Borde meridional agrícola y funerario de La Loma y relación con la cerca hasta Puerta de los Molinos."
           },
           {
-            "source_id": "source.ujaen-water-route-2025",
-            "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
-            "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+            "source_id": "source.garrido-alfareros-2024",
+            "locator": "pp. 663–679, figuras 1, 5 y 6",
+            "supports": "Situación del arrabal, cerca occidental y cronología de alfares; límite con al-Nayd no identificado."
+          },
+          {
+            "source_id": "source.junta-cuesta-realejo-2004",
+            "locator": "pp. 470–472: contexto histórico",
+            "supports": "Alfareros en Realejo Alto; puertas, Santo Domingo, Santiago y Cuarto Real."
           }
         ],
         "publication_status": "publishable"
@@ -3735,24 +3692,12 @@
         "coordinates": [
           [
             [
-              -3.59465,
-              37.1723
+              -3.59125,
+              37.17345
             ],
             [
-              -3.59452,
-              37.1731
-            ],
-            [
-              -3.59449,
-              37.17375
-            ],
-            [
-              -3.5918,
-              37.1738
-            ],
-            [
-              -3.5905877,
-              37.1735226
+              -3.59059,
+              37.17352
             ],
             [
               -3.58845,
@@ -3760,10 +3705,6 @@
             ],
             [
               -3.5867,
-              37.1737
-            ],
-            [
-              -3.586698,
               37.1737
             ],
             [
@@ -3807,24 +3748,32 @@
               37.16995
             ],
             [
-              -3.59295,
-              37.1703
+              -3.5925,
+              37.17015
             ],
             [
-              -3.5937585,
-              37.1705355
+              -3.5922,
+              37.17055
             ],
             [
-              -3.5938441,
-              37.1706222
+              -3.5913,
+              37.1705
             ],
             [
-              -3.5949269,
-              37.171666
+              -3.5907,
+              37.17145
             ],
             [
-              -3.59465,
-              37.1723
+              -3.5911,
+              37.1722
+            ],
+            [
+              -3.59145,
+              37.17285
+            ],
+            [
+              -3.59125,
+              37.17345
             ]
           ]
         ]

@@ -1,0 +1,19 @@
+{
+  "reviewed_on": "2026-09-23",
+  "method": "Editorial core envelopes, not a parcel survey or exhaustive partition. Historical sectors from Garrido López 2024 pp. 663–679 and Cuesta del Realejo 26 excavation report pp. 470–472; modern street anchors from OSM. No affine accuracy claimed for these vertices.",
+  "unknown": "The Alfareros/al-Nayd boundary is explicitly unidentified. Space between the two envelopes is an unresolved transition, not evidence of an empty strip, wall or disconnected settlement.",
+  "supersedes": "The Map 5-based eastern Alfareros envelope and nearly north-south interior wall used in the preceding water audit.",
+  "interior_wall": [[-3.5961247,37.1723578],[-3.59584,37.17260],[-3.59551,37.17280],[-3.59520,37.17310],[-3.59491,37.17344],[-3.59449,37.17375],[-3.59446,37.1744],[-3.59448,37.17512],[-3.5934157,37.1754807]],
+  "alfareros_envelope": [[-3.5961247,37.1723578],[-3.59584,37.17260],[-3.59551,37.17280],[-3.59520,37.17310],[-3.59491,37.17344],[-3.59449,37.17375],[-3.59446,37.1744],[-3.5937,37.17455],[-3.5928,37.17450],[-3.5918,37.17448],[-3.5911,37.17430],[-3.5913,37.1739],[-3.5916,37.1734],[-3.5918,37.17285],[-3.5915,37.1722],[-3.59105,37.1715],[-3.5915,37.1708],[-3.5924,37.1709],[-3.5934,37.1711],[-3.5942,37.1716],[-3.5949,37.17195],[-3.5955,37.17178],[-3.5958,37.17205],[-3.5961247,37.1723578]],
+  "loma_envelope": [[-3.59125,37.17345],[-3.59059,37.17352],[-3.58845,37.17385],[-3.5867,37.1737],[-3.58665,37.1733],[-3.58675,37.17225],[-3.58695,37.1713],[-3.58725,37.17035],[-3.5877,37.16955],[-3.58815,37.16885],[-3.588662,37.169046],[-3.58975,37.16935],[-3.59085,37.16965],[-3.59195,37.16995],[-3.5925,37.17015],[-3.5922,37.17055],[-3.5913,37.1705],[-3.5907,37.17145],[-3.5911,37.1722],[-3.59145,37.17285],[-3.59125,37.17345]],
+  "inclusion_checks": [
+    {"name":"Santo Domingo / Portería", "wgs84":[-3.59484,37.17339]},
+    {"name":"Callejón de Santo Domingo", "wgs84":[-3.59508,37.17245]},
+    {"name":"Santiago / Jarrería corridor", "wgs84":[-3.59297,37.17220]},
+    {"name":"Cuarto Real, northern qubba sector", "wgs84":[-3.59567,37.17194]}
+  ],
+  "exclusion_checks": [
+    {"name":"Gomérez defensive slope, not assigned to Alfareros", "wgs84":[-3.591,37.1755]},
+    {"name":"Eastern slope below Alhambra, withdrawn assignment", "wgs84":[-3.588,37.1748]}
+  ]
+}
