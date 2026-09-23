@@ -39,10 +39,20 @@ describe('App', () => {
     expect(screen.getByRole('heading', { name: 'Capas' })).toBeVisible()
     expect(screen.getByLabelText('Superposición histórica')).toBeChecked()
     expect(screen.getByLabelText('Contexto actual')).toBeChecked()
+    const modernStrength = screen.getByRole('slider', {
+      name: 'Intensidad del contexto actual',
+    })
+    expect(modernStrength).toHaveValue('0.55')
     expect(screen.getByLabelText('Opacidad de la superposición histórica')).toHaveValue('0.85')
+
+    fireEvent.change(modernStrength, {
+      target: { value: '0.4' },
+    })
+    expect(modernStrength).toHaveValue('0.4')
 
     await user.click(screen.getByLabelText('Contexto actual'))
     expect(screen.getByLabelText('Contexto actual')).not.toBeChecked()
+    expect(modernStrength).toBeDisabled()
 
     fireEvent.change(screen.getByLabelText('Opacidad de la superposición histórica'), {
       target: { value: '0.5' },

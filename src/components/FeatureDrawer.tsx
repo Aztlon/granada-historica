@@ -7,11 +7,13 @@ import {
   GEOMETRY_METHOD_LABELS,
   SUBTYPE_LABELS,
 } from '../data/categories'
-import type { HistoricalFeature, HistoricalSource } from '../data/schema'
+import { gazetteerSummary } from '../data/historicalData'
+import type { GazetteerEntry, HistoricalFeature, HistoricalSource } from '../data/schema'
 
 interface FeatureDrawerProps {
   isOpen: boolean
   feature: HistoricalFeature | null
+  gazetteerEntry: GazetteerEntry | null
   sourcesById: ReadonlyMap<string, HistoricalSource>
   onClose: () => void
 }
@@ -19,6 +21,7 @@ interface FeatureDrawerProps {
 export function FeatureDrawer({
   isOpen,
   feature,
+  gazetteerEntry,
   sourcesById,
   onClose,
 }: FeatureDrawerProps) {
@@ -101,7 +104,11 @@ export function FeatureDrawer({
         </div>
 
         {feature ? (
-          <FeatureDetails feature={feature} sourcesById={sourcesById} />
+          <FeatureDetails
+            feature={feature}
+            gazetteerEntry={gazetteerEntry}
+            sourcesById={sourcesById}
+          />
         ) : (
           <ProjectIntroduction />
         )}
@@ -144,10 +151,11 @@ function ProjectIntroduction() {
       <div className="milestone-note">
         <span className="status-dot" aria-hidden="true" />
         <div>
-          <strong>M5 · Explorar y comparar</strong>
+          <strong>M6 · Inventario y contexto territorial</strong>
           <p>
-            El prototipo reúne 44 elementos revisados y permite buscarlos por
-            nombres históricos, actuales y referencias urbanas modernas.
+            El nomenclátor reúne {gazetteerSummary.total} entidades: {' '}
+            {gazetteerSummary.mapped} cartografiadas y {gazetteerSummary.unresolved} {' '}
+            pendientes, discutidas, rechazadas o aún sin localizar.
           </p>
         </div>
       </div>
@@ -157,9 +165,11 @@ function ProjectIntroduction() {
 
 function FeatureDetails({
   feature,
+  gazetteerEntry,
   sourcesById,
 }: {
   feature: HistoricalFeature
+  gazetteerEntry: GazetteerEntry | null
   sourcesById: ReadonlyMap<string, HistoricalSource>
 }) {
   const { properties } = feature
@@ -186,6 +196,38 @@ function FeatureDetails({
       <DetailSection title="¿Qué hay hoy?">
         <p>{properties.today}</p>
       </DetailSection>
+
+      {gazetteerEntry && (
+        <section className="gazetteer-panel" aria-labelledby="gazetteer-title">
+          <p className="panel-kicker">Nomenclátor histórico</p>
+          <h3 id="gazetteer-title">Nombre y supervivencia</h3>
+          <dl className="confidence-list">
+            <div>
+              <dt>Atestación</dt>
+              <dd>
+                <strong>{NAME_ATTESTATION_LABELS[gazetteerEntry.name_attestation.status]}</strong>
+                <span>{gazetteerEntry.name_attestation.note}</span>
+              </dd>
+            </div>
+            <div>
+              <dt>Supervivencia</dt>
+              <dd>
+                <strong>{SURVIVAL_LABELS[gazetteerEntry.survival.status]}</strong>
+                <span>{gazetteerEntry.survival.note}</span>
+              </dd>
+            </div>
+            {gazetteerEntry.defensive_context && (
+              <div>
+                <dt>Recinto</dt>
+                <dd>
+                  <strong>{DEFENSIVE_ROLE_LABELS[gazetteerEntry.defensive_context.role]}</strong>
+                  <span>{gazetteerEntry.defensive_context.relationship_note}</span>
+                </dd>
+              </div>
+            )}
+          </dl>
+        </section>
+      )}
 
       <section className="evidence-panel" aria-labelledby="evidence-title">
         <p className="panel-kicker">Transparencia histórica</p>
@@ -255,6 +297,32 @@ function FeatureDetails({
       </section>
     </div>
   )
+}
+
+const NAME_ATTESTATION_LABELS: Record<GazetteerEntry['name_attestation']['status'], string> = {
+  contemporary_documentary: 'Documentación coetánea',
+  near_contemporary: 'Documentación próxima en el tiempo',
+  later_documentary: 'Documentación posterior',
+  modern_conventional: 'Denominación moderna convencional',
+  reconstructed: 'Nombre analítico reconstruido',
+  uncertain: 'Atestación incierta',
+}
+
+const SURVIVAL_LABELS: Record<GazetteerEntry['survival']['status'], string> = {
+  surviving: 'Conservado',
+  partial: 'Conservación parcial',
+  lost: 'Desaparecido',
+  buried: 'Enterrado o cubierto',
+  landscape_continuity: 'Continuidad del paisaje o la trama',
+  unknown: 'Sin evaluar',
+  not_applicable: 'No aplicable',
+}
+
+const DEFENSIVE_ROLE_LABELS: Record<NonNullable<GazetteerEntry['defensive_context']>['role'], string> = {
+  outer_enclosure: 'Cerca exterior',
+  inner_enclosure: 'Cerca interior',
+  palatine_enclosure: 'Recinto palatino',
+  unknown: 'Relación defensiva incierta',
 }
 
 function DetailSection({ title, children }: { title: string; children: ReactNode }) {

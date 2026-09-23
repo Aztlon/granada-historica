@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import {
   allHistoricalFeatureCollection,
   geometryAudit,
+  gazetteer,
   historicalFeatureCollection,
   sourcesById,
 } from './historicalData'
@@ -62,5 +63,32 @@ describe('datos históricos', () => {
     ]) {
       expect(featureIds.has(featureId), featureId).toBe(true)
     }
+  })
+
+  it('mantiene un nomenclátor completo sin convertir dudas en geometrías', () => {
+    const mappedIds = gazetteer
+      .filter((entry) => entry.inventory_status === 'mapped')
+      .map((entry) => entry.feature_id)
+
+    expect(mappedIds).toHaveLength(allHistoricalFeatureCollection.features.length)
+    expect(mappedIds).toEqual(
+      expect.arrayContaining(allHistoricalFeatureCollection.features.map((feature) => feature.id)),
+    )
+    expect(gazetteer.some((entry) => entry.inventory_status === 'candidate')).toBe(true)
+    expect(gazetteer.some((entry) => entry.inventory_status === 'disputed')).toBe(true)
+    expect(gazetteer.some((entry) => entry.inventory_status === 'rejected')).toBe(true)
+    expect(gazetteer.some((entry) => entry.inventory_status === 'unlocated')).toBe(true)
+    expect(
+      gazetteer
+        .filter((entry) => entry.inventory_status !== 'mapped')
+        .every((entry) => entry.feature_id === null),
+    ).toBe(true)
+  })
+
+  it('clasifica las cercas sucesivas como exteriores, interiores o palatinas', () => {
+    const defensiveEntries = gazetteer.filter((entry) => entry.defensive_context)
+    const roles = defensiveEntries.map((entry) => entry.defensive_context?.role)
+
+    expect(roles).toEqual(expect.arrayContaining(['outer_enclosure', 'inner_enclosure', 'palatine_enclosure']))
   })
 })

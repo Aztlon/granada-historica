@@ -350,5 +350,101 @@
     "geometry_source_refs": ["source.junta-belen-2008", "source.junta-porteria-santo-domingo-2012", "source.junta-cuesta-pescado-2023", "source.openstreetmap"],
     "check_method": "Envolvente de Campo del Príncipe y calles próximas construida con referencias documentales a Bab al-Fajjarin y al-Assal y con los puntos de enterramiento arqueológicamente registrados.",
     "notes": "La capa representa un paisaje funerario de extensión cambiante y posible fusión de varias maqbaras; no afirma ocupación simultánea de toda la superficie."
+  },
+  {
+    "feature_id": "bridge.carbon",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.ugr-puente-carbon", "source.junta-darro-reyes-catolicos", "source.openstreetmap"],
+    "check_method": "Punto representativo situado en el cruce del corredor histórico del Darro con la calle Puente del Carbón, junto al funduq conservado, contrastado con la evidencia arqueológica publicada.",
+    "notes": "Verifica el lugar del paso; no representa el ancho del tablero ni una pila concreta."
+  },
+  {
+    "feature_id": "water.acequia-aynadamar",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.openstreetmap"],
+    "check_method": "Corredor urbano generalizado desde la aproximación de Alfacar y El Fargue por Fajalauza hasta el Albaicín alto, contrastado con la síntesis académica y la topografía moderna.",
+    "notes": "No representa la totalidad del canal ni sus ramales; la incertidumbre se expresa como localización aproximada."
+  },
+  {
+    "feature_id": "water.acequia-axares",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.openstreetmap"],
+    "check_method": "Corredor interpretativo trazado por la margen derecha del valle del Darro entre Guadix y el Albaicín bajo conforme a la secuencia territorial publicada.",
+    "notes": "La verificación corresponde al corredor y la margen; no a una caja hidráulica continua."
+  },
+  {
+    "feature_id": "water.acequia-romayla",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.openstreetmap"],
+    "check_method": "Polilínea construida con la secuencia publicada de cruces del Darro, ladera del Avellano y Sabika y llegada al entorno de la Mezquita Mayor.",
+    "notes": "Los puntos de cruce y la rasante intermedia son aproximados."
+  },
+  {
+    "feature_id": "water.acequia-cadi",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.junta-camino-cementerio-2014", "source.openstreetmap"],
+    "check_method": "Corredor generalizado desde el acceso oriental por Barranco del Abogado y Camino del Cementerio hasta Antequeruela y Campo del Príncipe, contrastado con los hitos territoriales publicados.",
+    "notes": "No fija el recorrido parcelario ni la posición de todos los repartidores."
+  },
+  {
+    "feature_id": "water.acequia-gorda",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.dera-hydrology"],
+    "check_method": "Corredor periurbano generalizado paralelo al Genil y dirigido hacia la Vega, comprobado contra el eje hidrográfico oficial y la síntesis histórica del sistema.",
+    "notes": "No equivale al parcelario de riego moderno ni representa todos los ramales."
+  },
+  {
+    "feature_id": "water.acequia-realejo",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.openstreetmap"],
+    "check_method": "Corredor aproximado enlazado con la Acequia Gorda y conducido por la dirección de la actual calle Santiago conforme a la descripción académica.",
+    "notes": "La comprobación avala la relación espacial general, no un nombre propio ni una rasante exacta."
+  },
+  {
+    "feature_id": "water.acequia-real-alhambra",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.alhambra-real-acequia", "source.ujaen-water-route-2025", "source.alhambra-plan-director-landscape"],
+    "check_method": "Eje generalizado entre la captación oriental del Darro, el Cerro del Sol, las huertas del Generalife y la Alhambra, contrastado con las descripciones institucional y académica.",
+    "notes": "No distingue los ramales del Tercio y Dos Tercios ni todos los tramos conservados."
+  },
+  {
+    "feature_id": "route.darro-axis",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.granada-carrera-darro", "source.granada-pepri-islamic-city", "source.openstreetmap"],
+    "check_method": "Eje siguiendo Carrera del Darro y Paseo de los Tristes entre Plaza Nueva y la Puerta de Guadix, contrastado con la geometría viaria y la descripción municipal.",
+    "notes": "Se verifica el corredor, no la anchura ni la rasante de 1492."
+  },
+  {
+    "feature_id": "route.molinos-sierra-axis",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.junta-hoteles-belen-2020", "source.junta-aguado-2009", "source.openstreetmap"],
+    "check_method": "Corredor de salida trazado desde el punto revisado de la Puerta de la Loma por la dirección de Cuesta de los Molinos hacia el Genil.",
+    "notes": "La prolongación exterior expresa destino y movimiento, no una calzada arqueológicamente documentada."
+  },
+  {
+    "feature_id": "walls.alcazaba-qadima-inner",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.junta-monaita-wall-2000", "source.granada-ziri-wall", "source.openstreetmap"],
+    "check_method": "Circuito esquemático anclado en Puerta Monaita, Casa de la Lona, San Nicolás y el entorno de las Pesas, contrastado con restos y reconstrucciones publicadas.",
+    "notes": "Los anclajes son defendibles; los enlaces sin fábrica visible permanecen aproximados."
+  },
+  {
+    "feature_id": "walls.axares-inner",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.junta-carmen-negro-2005", "source.granada-pepri-islamic-city", "source.openstreetmap"],
+    "check_method": "Circuito territorial esquemático entre el borde oriental de la Alcazaba Qadima, la Puerta de Guadix, el Darro y la ladera de Axares, contrastado con la discusión arqueológica publicada.",
+    "notes": "La geometría es deliberadamente aproximada porque algunos tramos y accesos del recinto siguen discutidos."
   }
 ]

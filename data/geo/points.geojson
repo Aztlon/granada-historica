@@ -1020,6 +1020,34 @@
           37.1822636
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "bridge.carbon",
+      "properties": {
+        "id": "bridge.carbon",
+        "name": "Puente del Carbón",
+        "historical_name": "Al-qantara al-yadida",
+        "modern_name": "Calle Puente del Carbón",
+        "aliases": ["Puente Nuevo", "Puente del Corral del Carbón"],
+        "modern_search_terms": ["Corral del Carbón", "Calle Puente del Carbón", "Reyes Católicos"],
+        "category": "water_infrastructure",
+        "subtype": "lost_bridge",
+        "period": {"from_year": 1300, "to_year": 1884, "from_precision": "century", "to_precision": "circa", "note": "Puente nazarí del siglo XIV, desaparecido con las transformaciones del Darro y del centro urbano."},
+        "present_c1492": "secure",
+        "confidence": {"location": "probable", "time": "secure"},
+        "evidence_basis": ["archaeology", "documentary", "toponymy", "historical_cartography"],
+        "summary": "Puente nazarí que conectaba el entorno del Corral del Carbón con la margen opuesta del Darro.",
+        "context_1492": "El Puente Nuevo formaba parte de la red de pasos que cosía el centro comercial a ambos lados del Darro y daba acceso al funduq cercano.",
+        "after_1492": "El embovedado del río y la apertura de Reyes Católicos transformaron el lugar y eliminaron el puente como estructura visible.",
+        "today": "La calle Puente del Carbón conserva el topónimo. El punto señala el paso aproximado, no una pila o estribo conservado a la vista.",
+        "evidence_note": "La asociación con el Corral y la calle es sólida, y existen restos arqueológicos del frente del puente; la posición puntual resume una estructura transversal desaparecida.",
+        "geometry_method": "representative_point",
+        "geometry_source_refs": ["source.ugr-puente-carbon", "source.junta-darro-reyes-catolicos", "source.openstreetmap"],
+        "citations": [{"source_id": "source.ugr-puente-carbon", "locator": "Contexto histórico y arqueológico de la tenería", "supports": "Existencia y cronología nazarí del puente junto al Corral del Carbón."}],
+        "publication_status": "publishable"
+      },
+      "geometry": {"type": "Point", "coordinates": [-3.6005, 37.17515]}
     }
   ]
 }

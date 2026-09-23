@@ -1645,6 +1645,204 @@
           [-3.5993124, 37.1749566]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-aynadamar",
+      "properties": {
+        "id": "water.acequia-aynadamar", "name": "Acequia de Aynadamar", "historical_name": "Ayn al-Dam'", "modern_name": "Acequia de Aynadamar", "aliases": ["Acequia de Alfacar"],
+        "modern_search_terms": ["Fuente Grande", "El Fargue", "Fajalauza", "Albaicín alto"], "category": "water_infrastructure", "subtype": "irrigation_channel",
+        "period": {"from_year": 1000, "to_year": null, "from_precision": "century", "to_precision": "unknown", "note": "Conducción formada en época zirí y mantenida durante el periodo nazarí."},
+        "present_c1492": "secure", "confidence": {"location": "approximate", "time": "secure"}, "evidence_basis": ["documentary", "toponymy", "scholarly_reconstruction"],
+        "summary": "Gran conducción que llevaba el agua de Alfacar al Albaicín alto y distribuía ramales por la ciudad.",
+        "context_1492": "Aynadamar abastecía al Albaicín alto, sus aljibes, baños, huertas y viviendas mediante una red de derivaciones urbanas.",
+        "after_1492": "La acequia siguió activa con reparaciones y transformaciones; su trazado rural y varios testimonios urbanos conservaron la memoria del sistema.",
+        "today": "Se representa solo el corredor de llegada al ámbito urbano, no todos los ramales ni una caja hidráulica continua conservada.",
+        "evidence_note": "La fuente y los grandes hitos del recorrido son sólidos; el segmento urbano se generaliza entre referencias topográficas y no equivale a un levantamiento arqueológico.",
+        "geometry_method": "reconstructed_from_multiple_sources", "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.openstreetmap"],
+        "citations": [{"source_id": "source.ujaen-water-route-2025", "locator": "Apartado sobre las acequias de Granada", "supports": "Origen en Fuente Grande, llegada al Albaicín alto y distribución mediante ramales urbanos."}], "publication_status": "publishable"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[-3.5735,37.1907],[-3.5805,37.1894],[-3.586,37.1882],[-3.5915098,37.1862322],[-3.5924,37.1847],[-3.5929,37.1832]]}
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-axares",
+      "properties": {
+        "id": "water.acequia-axares", "name": "Acequia de Axares", "historical_name": "Acequia de Axares", "modern_name": null, "aliases": ["Acequia de San Juan"],
+        "modern_search_terms": ["Paseo de los Tristes", "Carrera del Darro", "San Juan de los Reyes"], "category": "water_infrastructure", "subtype": "irrigation_channel",
+        "period": {"from_year": 1090, "to_year": null, "from_precision": "circa", "to_precision": "unknown", "note": "Ramal asociado a la expansión urbana de finales del siglo XI."},
+        "present_c1492": "secure", "confidence": {"location": "approximate", "time": "secure"}, "evidence_basis": ["documentary", "toponymy", "scholarly_reconstruction"],
+        "summary": "Ramal del sistema del Darro que abastecía la ladera baja de Axares y el Albaicín meridional.",
+        "context_1492": "La acequia recorría la margen derecha del valle y servía viviendas, baños y huertas del sector de Axares.",
+        "after_1492": "El sistema se mantuvo y transformó dentro de la red urbana moderna, con tramos ocultos o alterados.",
+        "today": "La línea expresa un corredor hidráulico general paralelo al Darro y no una traza visible continua.",
+        "evidence_note": "La existencia, función y margen están documentadas, pero el detalle parcelario del trazado medieval no se ha trasladado a esta escala.",
+        "geometry_method": "reconstructed_from_multiple_sources", "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.openstreetmap"],
+        "citations": [{"source_id": "source.ujaen-water-route-2025", "locator": "Apartado sobre Axares y Romayla", "supports": "Cronología, margen del Darro y función de la acequia de Axares."}], "publication_status": "publishable"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[-3.58833,37.17924],[-3.5903,37.1791],[-3.5922,37.17875],[-3.594,37.178],[-3.5953,37.17725],[-3.5965,37.17655]]}
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-romayla",
+      "properties": {
+        "id": "water.acequia-romayla", "name": "Acequia de Romayla", "historical_name": "Acequia de Romayla", "modern_name": "Acequia de Santa Ana", "aliases": ["Acequia de Santa Ana"],
+        "modern_search_terms": ["Fuente del Avellano", "Cuesta de Gomérez", "Plaza Nueva", "Sagrario"], "category": "water_infrastructure", "subtype": "irrigation_channel",
+        "period": {"from_year": 1090, "to_year": null, "from_precision": "circa", "to_precision": "unknown", "note": "Conducción de finales del siglo XI, activa en época nazarí."},
+        "present_c1492": "secure", "confidence": {"location": "approximate", "time": "secure"}, "evidence_basis": ["documentary", "toponymy", "scholarly_reconstruction"],
+        "summary": "Conducción del Darro que cruzaba el río, recorría la ladera de la Sabika y abastecía la medina.",
+        "context_1492": "Romayla llevaba agua por la ladera inferior de la Alhambra y volvía a cruzar el Darro para terminar cerca de la Mezquita Mayor.",
+        "after_1492": "Pervivió como acequia de Santa Ana, aunque las cubriciones del Darro y la reforma del centro alteraron su lectura urbana.",
+        "today": "La polilínea muestra la secuencia de cruces y sectores descrita por las fuentes, no una tubería moderna ni una caja medieval excavada.",
+        "evidence_note": "Los extremos funcionales son consistentes; la rasante entre ellos y los puntos exactos de cruce permanecen aproximados.",
+        "geometry_method": "reconstructed_from_multiple_sources", "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.openstreetmap"],
+        "citations": [{"source_id": "source.ujaen-water-route-2025", "locator": "Apartado sobre Axares y Romayla", "supports": "Cruces del Darro, paso por Avellano y Sabika y llegada a la Mezquita Mayor."}], "publication_status": "publishable"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[-3.582,37.1802],[-3.5872,37.1792],[-3.592682,37.1782206],[-3.5934,37.1772],[-3.5952,37.1763],[-3.597,37.17565],[-3.5990298,37.1759292]]}
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-cadi",
+      "properties": {
+        "id": "water.acequia-cadi", "name": "Acequia del Cadí", "historical_name": "Acequia del Cadí", "modern_name": "Acequia del Cadí", "aliases": ["Acequia de las Tinajas"],
+        "modern_search_terms": ["Aguas Blancas", "Cenes de la Vega", "Barranco del Abogado", "Antequeruela", "Campo del Príncipe"], "category": "water_infrastructure", "subtype": "irrigation_channel",
+        "period": {"from_year": 1100, "to_year": null, "from_precision": "century", "to_precision": "unknown", "note": "Conducción de comienzos del siglo XII, reutilizada en época nazarí."},
+        "present_c1492": "secure", "confidence": {"location": "approximate", "time": "secure"}, "evidence_basis": ["documentary", "toponymy", "scholarly_reconstruction"],
+        "summary": "Acequia alta que abastecía los Mártires, Antequeruela, Mauror y el entorno del Campo del Príncipe.",
+        "context_1492": "El Cadí enlazaba el sistema de Aguas Blancas con los barrios y huertas de la ladera meridional de Granada.",
+        "after_1492": "Continuó integrada en el regadío histórico, con transformaciones de caja, reparto y tramos urbanos.",
+        "today": "Se cartografía el corredor urbano general desde el Barranco del Abogado hasta Campo del Príncipe.",
+        "evidence_note": "La secuencia territorial está bien atestiguada; el recorrido se generaliza y no fija el paso exacto por cada parcela.",
+        "geometry_method": "reconstructed_from_multiple_sources", "geometry_source_refs": ["source.ujaen-water-route-2025", "source.junta-camino-cementerio-2014", "source.openstreetmap"],
+        "citations": [{"source_id": "source.ujaen-water-route-2025", "locator": "Apartado sobre la Acequia del Cadí", "supports": "Cronología, captación y abastecimiento de Mártires, Antequeruela y Mauror."}], "publication_status": "publishable"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[-3.573,37.167],[-3.5785,37.1675],[-3.5835,37.1682],[-3.587,37.1702],[-3.5895,37.1723],[-3.5928,37.1738]]}
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-gorda",
+      "properties": {
+        "id": "water.acequia-gorda", "name": "Acequia Gorda", "historical_name": "Acequia Gorda", "modern_name": "Acequia Gorda del Genil", "aliases": ["Acequia Mayor del Genil"],
+        "modern_search_terms": ["Río Genil", "Paseo del Salón", "Vega de Granada"], "category": "water_infrastructure", "subtype": "irrigation_channel",
+        "period": {"from_year": 1000, "to_year": null, "from_precision": "century", "to_precision": "unknown", "note": "Sistema medieval de larga duración, activo en 1492."},
+        "present_c1492": "secure", "confidence": {"location": "approximate", "time": "secure"}, "evidence_basis": ["documentary", "toponymy", "scholarly_reconstruction"],
+        "summary": "Principal derivación del Genil para el regadío de la Vega y el abastecimiento de sectores meridionales de la ciudad.",
+        "context_1492": "La Acequia Gorda articulaba huertas, molinos y ramales urbanos al sur y al oeste de la medina.",
+        "after_1492": "Mantuvo una función esencial en el regadío histórico, aunque su red y administración evolucionaron.",
+        "today": "La línea muestra el corredor de aproximación a la ciudad y no la totalidad de la comunidad de riego actual.",
+        "evidence_note": "La conducción está sólidamente documentada; a esta escala solo se ofrece una generalización del tramo urbano y periurbano.",
+        "geometry_method": "reconstructed_from_multiple_sources", "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.dera-hydrology"],
+        "citations": [{"source_id": "source.ujaen-water-route-2025", "locator": "Apartado sobre la Acequia Gorda", "supports": "Derivación del Genil, uso agrícola y servicio a la zona oriental de Granada."}], "publication_status": "publishable"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[-3.575,37.1633],[-3.581,37.1648],[-3.587,37.166],[-3.5918,37.1683],[-3.5964,37.1681],[-3.602,37.1668]]}
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-realejo",
+      "properties": {
+        "id": "water.acequia-realejo", "name": "Ramal del Realejo", "historical_name": null, "modern_name": null, "aliases": ["Ramal de la Acequia Gorda"],
+        "modern_search_terms": ["Calle Santiago", "Realejo", "Campo del Príncipe"], "category": "water_infrastructure", "subtype": "irrigation_channel",
+        "period": {"from_year": 1200, "to_year": null, "from_precision": "century", "to_precision": "unknown", "note": "Ramal medieval documentado por su paso hacia el Realejo y la Vega."},
+        "present_c1492": "probable", "confidence": {"location": "approximate", "time": "probable"}, "evidence_basis": ["documentary", "toponymy", "scholarly_reconstruction"],
+        "summary": "Ramal meridional que llevaba agua desde el sistema del Genil hacia el Realejo y sus huertas.",
+        "context_1492": "El ramal seguía el entorno de la actual calle Santiago y conectaba el tejido del Realejo con el paisaje irrigado de la Vega.",
+        "after_1492": "La urbanización y la transformación de las huertas ocultaron o modificaron gran parte de su recorrido.",
+        "today": "La línea es una hipótesis de corredor basada en la calle Santiago y la relación con la Acequia Gorda.",
+        "evidence_note": "La fuente moderna identifica el corredor general, pero no permite reconstruir una traza métrica continua para 1492.",
+        "geometry_method": "reconstructed_from_multiple_sources", "geometry_source_refs": ["source.ujaen-water-route-2025", "source.openstreetmap"],
+        "citations": [{"source_id": "source.ujaen-water-route-2025", "locator": "Apartado sobre la Acequia Gorda y el ramal del Realejo", "supports": "Paso por la actual calle Santiago y dirección hacia la Vega."}], "publication_status": "publishable"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[-3.5964,37.1681],[-3.5959,37.1695],[-3.5953,37.171],[-3.5947,37.1722],[-3.5938,37.1736]]}
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-real-alhambra",
+      "properties": {
+        "id": "water.acequia-real-alhambra", "name": "Acequia Real de la Alhambra", "historical_name": "Acequia del Sultán", "modern_name": "Acequia Real", "aliases": ["Acequia del Rey"],
+        "modern_search_terms": ["Darro", "Cerro del Sol", "Generalife", "Alhambra"], "category": "water_infrastructure", "subtype": "irrigation_channel",
+        "period": {"from_year": 1238, "to_year": null, "from_precision": "circa", "to_precision": "unknown", "note": "Creada al inicio del emirato nazarí y ampliada mediante ramales."},
+        "present_c1492": "secure", "confidence": {"location": "probable", "time": "secure"}, "evidence_basis": ["surviving_fabric", "documentary", "archaeology", "scholarly_reconstruction"],
+        "summary": "Conducción palatina que captaba el Darro para regar el Generalife y abastecer la ciudad de la Alhambra.",
+        "context_1492": "La Acequia Real sostenía jardines, huertas, fuentes, baños y consumo doméstico de los recintos palatinos.",
+        "after_1492": "Permaneció como infraestructura esencial del conjunto, con reparaciones y adaptaciones sucesivas.",
+        "today": "Se conservan y reconocen múltiples tramos; el mapa simplifica el largo corredor desde la captación hasta la Alhambra.",
+        "evidence_note": "La conducción y sus destinos son seguros. La línea está generalizada y no separa los ramales del Tercio y Dos Tercios ni todas las fases de obra.",
+        "geometry_method": "reconstructed_from_multiple_sources", "geometry_source_refs": ["source.alhambra-real-acequia", "source.ujaen-water-route-2025", "source.alhambra-plan-director-landscape"],
+        "citations": [{"source_id": "source.alhambra-real-acequia", "locator": "Ventana arqueológica dedicada a la Acequia Real", "supports": "Captación en el Darro, paso por Cerro del Sol y abastecimiento de Generalife y Alhambra."}], "publication_status": "publishable"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[-3.566,37.1809],[-3.573,37.1802],[-3.578,37.1788],[-3.5822,37.1772],[-3.5844,37.1761],[-3.5866,37.1762],[-3.5892,37.1764]]}
+    },
+    {
+      "type": "Feature",
+      "id": "route.darro-axis",
+      "properties": {
+        "id": "route.darro-axis", "name": "Eje urbano del Darro", "historical_name": null, "modern_name": "Carrera del Darro y Paseo de los Tristes", "aliases": ["Camino del Darro"],
+        "modern_search_terms": ["Plaza Nueva", "Carrera del Darro", "Paseo de los Tristes", "Puerta de Guadix"], "category": "urban_structure", "subtype": "historical_route",
+        "period": {"from_year": 1000, "to_year": null, "from_precision": "century", "to_precision": "unknown", "note": "Corredor de larga duración entre la medina y el acceso oriental."},
+        "present_c1492": "secure", "confidence": {"location": "probable", "time": "secure"}, "evidence_basis": ["documentary", "toponymy", "historical_cartography", "parcel_morphology"],
+        "summary": "Corredor longitudinal que enlazaba el centro urbano, los puentes del Darro, Axares y la Puerta de Guadix.",
+        "context_1492": "El itinerario articulaba movilidad, abastecimiento y accesos entre la medina, el Albaicín bajo y la ruta oriental.",
+        "after_1492": "La apertura de Plaza Nueva y otras reformas alteró su extremo occidental, mientras Carrera del Darro conservó buena parte de su dirección.",
+        "today": "El eje corresponde aproximadamente a Carrera del Darro y Paseo de los Tristes.",
+        "evidence_note": "La continuidad del corredor es firme, pero las anchuras, rasantes y encuentros de 1492 no coinciden necesariamente con la calle actual.",
+        "geometry_method": "modern_reference_location", "geometry_source_refs": ["source.granada-carrera-darro", "source.granada-pepri-islamic-city", "source.openstreetmap"],
+        "citations": [{"source_id": "source.granada-carrera-darro", "locator": "Descripción histórica de la Carrera del Darro", "supports": "Continuidad del corredor fluvial y relación con los puentes y ambas laderas."}], "publication_status": "publishable"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[-3.5971,37.1767],[-3.5957,37.1771],[-3.5942,37.1778],[-3.5927,37.1782],[-3.5907,37.17855],[-3.58833,37.17924]]}
+    },
+    {
+      "type": "Feature",
+      "id": "route.molinos-sierra-axis",
+      "properties": {
+        "id": "route.molinos-sierra-axis", "name": "Camino de los Molinos y la sierra", "historical_name": null, "modern_name": "Cuesta de los Molinos", "aliases": ["Camino de Güéjar"],
+        "modern_search_terms": ["Puerta de los Molinos", "Cuesta Escoriaza", "Genil", "Güéjar Sierra"], "category": "urban_structure", "subtype": "historical_route",
+        "period": {"from_year": 1300, "to_year": null, "from_precision": "century", "to_precision": "unknown", "note": "Corredor asociado a Bab al-Nayd y a los caminos meridionales."},
+        "present_c1492": "probable", "confidence": {"location": "approximate", "time": "probable"}, "evidence_basis": ["documentary", "toponymy", "historical_cartography", "scholarly_reconstruction"],
+        "summary": "Salida meridional desde La Loma hacia los molinos del Genil, las huertas y los caminos de la sierra.",
+        "context_1492": "Bab al-Nayd canalizaba el paso entre el recinto urbano, las infraestructuras molineras y los territorios del Genil y la sierra.",
+        "after_1492": "El corredor mantuvo funciones de salida y acceso, aunque la puerta fue demolida y la red viaria se transformó.",
+        "today": "La línea prolonga la Cuesta de los Molinos hacia el Genil como corredor interpretativo.",
+        "evidence_note": "La puerta y la dirección funcional están documentadas; el trazado fuera del recinto no se presenta como calzada medieval exacta.",
+        "geometry_method": "reconstructed_from_multiple_sources", "geometry_source_refs": ["source.junta-hoteles-belen-2020", "source.junta-aguado-2009", "source.openstreetmap"],
+        "citations": [{"source_id": "source.junta-hoteles-belen-2020", "locator": "Contexto histórico-arqueológico general", "supports": "Función de la Puerta de la Loma o de los Molinos y su relación con los accesos meridionales."}], "publication_status": "publishable"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[-3.58815,37.16885],[-3.5892,37.1678],[-3.5904,37.1667],[-3.5916,37.1657],[-3.5927,37.1647]]}
+    },
+    {
+      "type": "Feature",
+      "id": "walls.alcazaba-qadima-inner",
+      "properties": {
+        "id": "walls.alcazaba-qadima-inner", "name": "Cerca interior de la Alcazaba Qadima", "historical_name": null, "modern_name": null, "aliases": ["Muralla zirí de la Alcazaba Vieja"],
+        "modern_search_terms": ["Puerta Monaita", "Casa de la Lona", "San Nicolás", "Puerta de las Pesas"], "category": "walls_gates", "subtype": "defensive_wall",
+        "period": {"from_year": 1000, "to_year": null, "from_precision": "century", "to_precision": "unknown", "note": "Recinto zirí anterior a las ampliaciones nazaríes, todavía legible como cerca interior en 1492."},
+        "present_c1492": "secure", "confidence": {"location": "approximate", "time": "secure"}, "evidence_basis": ["surviving_fabric", "archaeology", "documentary", "scholarly_reconstruction"],
+        "summary": "Recinto primitivo del núcleo palatino zirí, convertido en una cerca interior tras la expansión de Granada.",
+        "context_1492": "La antigua Alcazaba Qadima conservaba puertas y lienzos dentro del Albaicín, aunque ya no constituía el perímetro exterior de la ciudad.",
+        "after_1492": "La urbanización incorporó, ocultó o destruyó tramos; Monaita y varios lienzos permiten reconocer el sistema.",
+        "today": "La línea enlaza tramos y accesos conocidos, con interrupciones y sectores hipotéticos.",
+        "evidence_note": "Los anclajes conservados son seguros, pero no todo el circuito puede seguirse materialmente; los enlaces se representan de forma discontinua y aproximada.",
+        "geometry_method": "reconstructed_from_multiple_sources", "geometry_source_refs": ["source.junta-monaita-wall-2000", "source.granada-ziri-wall", "source.openstreetmap"],
+        "citations": [{"source_id": "source.junta-monaita-wall-2000", "locator": "Estudio histórico y resultados arqueológicos", "supports": "Recorrido, puertas y fábrica conservada de la cerca de la Alcazaba Qadima."}], "publication_status": "publishable"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[-3.5975658,37.1820543],[-3.5971,37.183],[-3.5958,37.1838],[-3.594,37.184],[-3.5927,37.1832],[-3.5938,37.1815],[-3.5956,37.1812],[-3.5975658,37.1820543]]}
+    },
+    {
+      "type": "Feature",
+      "id": "walls.axares-inner",
+      "properties": {
+        "id": "walls.axares-inner", "name": "Cerca interior de Axares", "historical_name": null, "modern_name": null, "aliases": ["Muralla del arrabal de Axares"],
+        "modern_search_terms": ["San Juan de los Reyes", "Puerta de Guadix", "Paseo de los Tristes", "Cuesta del Chapiz"], "category": "walls_gates", "subtype": "defensive_wall",
+        "period": {"from_year": 1100, "to_year": null, "from_precision": "century", "to_precision": "unknown", "note": "Cierre asociado a la expansión de Axares, interiorizado por recintos posteriores."},
+        "present_c1492": "probable", "confidence": {"location": "approximate", "time": "probable"}, "evidence_basis": ["archaeology", "documentary", "toponymy", "scholarly_reconstruction"],
+        "summary": "Recinto de la expansión de Axares que ayuda a explicar las sucesivas envolventes defensivas del Albaicín.",
+        "context_1492": "Tras la gran ampliación nazarí del Albaicín, esta cerca funcionaba principalmente como límite interior heredado y como soporte de accesos locales.",
+        "after_1492": "Muchos tramos fueron absorbidos por construcciones y calles; la reconstrucción depende de restos parciales y lecturas historiográficas.",
+        "today": "El circuito se dibuja como hipótesis territorial y no como una muralla continua conservada.",
+        "evidence_note": "La existencia del recinto es defendible, pero el recorrido oriental y la identificación de algunas puertas siguen abiertos; por eso toda la línea es aproximada.",
+        "geometry_method": "reconstructed_from_multiple_sources", "geometry_source_refs": ["source.junta-carmen-negro-2005", "source.granada-pepri-islamic-city", "source.openstreetmap"],
+        "citations": [{"source_id": "source.junta-carmen-negro-2005", "locator": "Contexto urbano medieval", "supports": "Configuración del recinto de Axares y problemas de identificación de sus accesos."}], "publication_status": "publishable"
+      },
+      "geometry": {"type": "LineString", "coordinates": [[-3.5927,37.1832],[-3.5908,37.1821],[-3.5894,37.1806],[-3.58833,37.17924],[-3.5907,37.17855],[-3.592682,37.1782206],[-3.5942,37.1802],[-3.5927,37.1832]]}
     }
   ]
 }

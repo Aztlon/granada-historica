@@ -7,12 +7,14 @@ interface LayerControlProps {
   historicalVisible: boolean
   historicalOpacity: number
   modernVisible: boolean
+  modernStrength: number
   visibleCategories: ReadonlySet<FeatureCategory>
   categoryCounts: Record<FeatureCategory, number>
   onToggle: () => void
   onClose: () => void
   onToggleHistorical: () => void
   onToggleModern: () => void
+  onChangeModernStrength: (strength: number) => void
   onChangeHistoricalOpacity: (opacity: number) => void
   onToggleCategory: (category: FeatureCategory) => void
   onShowAllCategories: () => void
@@ -31,12 +33,14 @@ export function LayerControl({
   historicalVisible,
   historicalOpacity,
   modernVisible,
+  modernStrength,
   visibleCategories,
   categoryCounts,
   onToggle,
   onClose,
   onToggleHistorical,
   onToggleModern,
+  onChangeModernStrength,
   onChangeHistoricalOpacity,
   onToggleCategory,
   onShowAllCategories,
@@ -108,6 +112,23 @@ export function LayerControl({
               checked={modernVisible}
               aria-label="Contexto actual"
               onChange={onToggleModern}
+            />
+          </label>
+
+          <label className={`opacity-control ${!modernVisible ? 'opacity-control--disabled' : ''}`}>
+            <span>
+              <strong>Intensidad del contexto actual</strong>
+              <output>{Math.round(modernStrength * 100)}%</output>
+            </span>
+            <input
+              type="range"
+              min="0.25"
+              max="1"
+              step="0.05"
+              value={modernStrength}
+              disabled={!modernVisible}
+              aria-label="Intensidad del contexto actual"
+              onChange={(event) => onChangeModernStrength(Number(event.target.value))}
             />
           </label>
 

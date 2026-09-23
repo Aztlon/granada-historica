@@ -5,6 +5,7 @@ import { LayerControl } from '../components/LayerControl'
 import { CATEGORY_CONFIG } from '../data/categories'
 import {
   geometryAuditSummary,
+  gazetteerByFeatureId,
   historicalFeatureCollection,
   sourcesById,
 } from '../data/historicalData'
@@ -17,6 +18,7 @@ export function App() {
   const [isLayerControlOpen, setIsLayerControlOpen] = useState(false)
   const [isHistoricalVisible, setIsHistoricalVisible] = useState(true)
   const [isModernVisible, setIsModernVisible] = useState(true)
+  const [modernStrength, setModernStrength] = useState(0.55)
   const [historicalOpacity, setHistoricalOpacity] = useState(0.85)
   const [selectedFeatureId, setSelectedFeatureId] = useState<string | null>(initialFeatureId)
   const [visibleCategories, setVisibleCategories] = useState<Set<FeatureCategory>>(
@@ -119,6 +121,7 @@ export function App() {
           historicalVisible={isHistoricalVisible}
           historicalOpacity={historicalOpacity}
           modernVisible={isModernVisible}
+          modernStrength={modernStrength}
           selectedFeatureId={selectedFeatureId}
           visibleCategories={[...visibleCategories]}
           onSelectFeature={selectFeature}
@@ -134,12 +137,14 @@ export function App() {
           historicalVisible={isHistoricalVisible}
           historicalOpacity={historicalOpacity}
           modernVisible={isModernVisible}
+          modernStrength={modernStrength}
           visibleCategories={visibleCategories}
           categoryCounts={categoryCounts}
           onToggle={() => setIsLayerControlOpen((isOpen) => !isOpen)}
           onClose={() => setIsLayerControlOpen(false)}
           onToggleHistorical={() => setIsHistoricalVisible((visible) => !visible)}
           onToggleModern={() => setIsModernVisible((visible) => !visible)}
+          onChangeModernStrength={setModernStrength}
           onChangeHistoricalOpacity={setHistoricalOpacity}
           onToggleCategory={toggleCategory}
           onShowAllCategories={() =>
@@ -163,6 +168,7 @@ export function App() {
       <FeatureDrawer
         isOpen={isDrawerOpen}
         feature={selectedFeature}
+        gazetteerEntry={selectedFeature ? gazetteerByFeatureId.get(selectedFeature.id) ?? null : null}
         sourcesById={sourcesById}
         onClose={closeDrawer}
       />

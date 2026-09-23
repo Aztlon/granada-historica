@@ -22,6 +22,9 @@ const GRANADA_CENTER: [number, number] = [-3.5986, 37.1773]
 const DEFAULT_STYLE = 'https://tiles.openfreemap.org/styles/liberty'
 const SOURCE_ID = 'historical-features'
 const AREA_LABEL_SOURCE_ID = 'historical-area-labels'
+const BASEMAP_VEIL_SOURCE_ID = 'basemap-veil-source'
+const BASEMAP_VEIL_LAYER_ID = 'basemap-veil'
+const BUSINESS_POI_MIN_ZOOM = 16
 
 const HISTORICAL_LAYER_IDS = [
   'historical-urban-extent-fill',
@@ -152,6 +155,7 @@ interface MapViewProps {
   historicalVisible: boolean
   historicalOpacity: number
   modernVisible: boolean
+  modernStrength: number
   selectedFeatureId: string | null
   visibleCategories: readonly FeatureCategory[]
   onSelectFeature: (featureId: string) => void
@@ -164,6 +168,7 @@ export function MapView({
   historicalVisible,
   historicalOpacity,
   modernVisible,
+  modernStrength,
   selectedFeatureId,
   visibleCategories,
   onSelectFeature,
@@ -177,6 +182,7 @@ export function MapView({
     historicalVisible,
     historicalOpacity,
     modernVisible,
+    modernStrength,
     selectedFeatureId,
     visibleCategories,
   })
@@ -187,10 +193,11 @@ export function MapView({
       historicalVisible,
       historicalOpacity,
       modernVisible,
+      modernStrength,
       selectedFeatureId,
       visibleCategories,
     }
-  }, [historicalOpacity, historicalVisible, modernVisible, selectedFeatureId, visibleCategories])
+  }, [historicalOpacity, historicalVisible, modernStrength, modernVisible, selectedFeatureId, visibleCategories])
 
   useEffect(() => {
     if (!containerRef.current) return
@@ -223,6 +230,7 @@ export function MapView({
     map.addControl(new ScaleControl({ maxWidth: 110, unit: 'metric' }), 'bottom-left')
 
     map.once('load', () => {
+      styleBasemap(map)
       basemapVisibilityRef.current = new globalThis.Map(
         (map.getStyle().layers ?? []).map((layer) => [
           layer.id,
@@ -239,6 +247,8 @@ export function MapView({
         data: areaLabelData,
       })
 
+      addBasemapVeil(map)
+
       addHistoricalLayers(map)
       const current = renderedStateRef.current
       applyMapState(
@@ -246,6 +256,7 @@ export function MapView({
         current.historicalVisible,
         current.historicalOpacity,
         current.modernVisible,
+        current.modernStrength,
         current.visibleCategories,
         current.selectedFeatureId,
         basemapVisibilityRef.current,
@@ -287,11 +298,12 @@ export function MapView({
       historicalVisible,
       historicalOpacity,
       modernVisible,
+      modernStrength,
       visibleCategories,
       selectedFeatureId,
       basemapVisibilityRef.current,
     )
-  }, [historicalOpacity, historicalVisible, modernVisible, selectedFeatureId, visibleCategories])
+  }, [historicalOpacity, historicalVisible, modernStrength, modernVisible, selectedFeatureId, visibleCategories])
 
   useEffect(() => {
     const map = mapRef.current
@@ -330,6 +342,137 @@ export function MapView({
       )}
     </div>
   )
+}
+
+function styleBasemap(map: Map) {
+  const layers = map.getStyle().layers ?? []
+
+  for (const layer of layers) {
+    const id = layer.id.toLowerCase()
+    const sourceLayer = 'source-layer' in layer
+      ? String(layer['source-layer'] ?? '').toLowerCase()
+      : ''
+
+    const isTransit = /transit|public.transport|bus|tram|subway/.test(`${id} ${sourceLayer}`)
+    const isRoadFurniture = /one.way.arrow|highway.shield|road.shield/.test(id)
+    if (isTransit || isRoadFurniture) {
+      map.setLayoutProperty(layer.id, 'visibility', 'none')
+      continue
+    }
+
+    if (sourceLayer === 'poi') {
+      const originalFilter = map.getFilter(layer.id)
+      const poiFilter: ExpressionSpecification = [
+        'all',
+        ...(originalFilter ? [originalFilter as ExpressionSpecification] : []),
+        ['!', ['in', ['get', 'class'], ['literal', ['airport', 'bus', 'rail']]]],
+        [
+          '!',
+          [
+            'in',
+            ['get', 'subclass'],
+            [
+              'literal',
+              ['bus_stop', 'halt', 'station', 'subway', 'subway_entrance', 'tram_stop'],
+            ],
+          ],
+        ],
+      ]
+      map.setFilter(layer.id, poiFilter)
+      map.setLayerZoomRange(
+        layer.id,
+        Math.max(layer.minzoom ?? 0, BUSINESS_POI_MIN_ZOOM),
+        layer.maxzoom ?? 24,
+      )
+      map.setPaintProperty(layer.id, 'text-opacity', 0.72)
+      map.setPaintProperty(layer.id, 'icon-opacity', 0.62)
+      continue
+    }
+
+    if (layer.type === 'line' && sourceLayer === 'transportation') {
+      const isCasing = id.includes('casing') || id.includes('hatching')
+      const isMinor = /minor|service|track|path|pedestrian|link/.test(id)
+      map.setPaintProperty(
+        layer.id,
+        'line-color',
+        isCasing ? '#c9c4bb' : isMinor ? '#bbb6ad' : '#aaa59c',
+      )
+      map.setPaintProperty(
+        layer.id,
+        'line-opacity',
+        isCasing ? 0.2 : isMinor ? 0.32 : 0.5,
+      )
+      continue
+    }
+
+    if (layer.type === 'fill' && sourceLayer === 'building') {
+      map.setPaintProperty(layer.id, 'fill-color', '#c8c4bb')
+      map.setPaintProperty(layer.id, 'fill-opacity', 0.38)
+      continue
+    }
+
+    if (layer.type === 'fill-extrusion' && sourceLayer === 'building') {
+      map.setPaintProperty(layer.id, 'fill-extrusion-color', '#c8c4bb')
+      map.setPaintProperty(layer.id, 'fill-extrusion-opacity', 0.28)
+      continue
+    }
+
+    if (
+      layer.type === 'fill'
+      && ['landcover', 'landuse', 'park'].includes(sourceLayer)
+    ) {
+      map.setPaintProperty(layer.id, 'fill-opacity', 0.42)
+    }
+
+    if (layer.type === 'symbol') {
+      const isWaterLabel = sourceLayer === 'water_name' || sourceLayer === 'waterway'
+      const isMajorRoadLabel = id.includes('highway-name-major')
+      const isMinorRoadLabel = /highway-name-(minor|path)/.test(id)
+      map.setPaintProperty(
+        layer.id,
+        'text-opacity',
+        isWaterLabel ? 0.72 : isMajorRoadLabel ? 0.58 : isMinorRoadLabel ? 0.42 : 0.5,
+      )
+      map.setPaintProperty(layer.id, 'icon-opacity', 0.34)
+
+      if (isMinorRoadLabel) {
+        map.setLayerZoomRange(
+          layer.id,
+          Math.max(layer.minzoom ?? 0, id.includes('path') ? 16.5 : 16),
+          layer.maxzoom ?? 24,
+        )
+      }
+    }
+  }
+}
+
+function addBasemapVeil(map: Map) {
+  map.addSource(BASEMAP_VEIL_SOURCE_ID, {
+    type: 'geojson',
+    data: {
+      type: 'Feature',
+      properties: {},
+      geometry: {
+        type: 'Polygon',
+        coordinates: [[
+          [-180, -85],
+          [180, -85],
+          [180, 85],
+          [-180, 85],
+          [-180, -85],
+        ]],
+      },
+    },
+  })
+  map.addLayer({
+    id: BASEMAP_VEIL_LAYER_ID,
+    type: 'fill',
+    source: BASEMAP_VEIL_SOURCE_ID,
+    paint: {
+      'fill-color': '#fbf8f1',
+      'fill-opacity': 0.28,
+    },
+  })
 }
 
 function addHistoricalLayers(map: Map) {
@@ -491,7 +634,7 @@ function addHistoricalLabels(map: Map) {
     paint: {
       'text-color': '#4b2e22',
       'text-halo-color': 'rgba(255, 249, 235, 0.94)',
-      'text-halo-width': 2,
+      'text-halo-width': 2.5,
     },
   })
 
@@ -516,7 +659,7 @@ function addHistoricalLabels(map: Map) {
     paint: {
       'text-color': '#654530',
       'text-halo-color': 'rgba(255, 249, 235, 0.96)',
-      'text-halo-width': 1.75,
+      'text-halo-width': 2.25,
     },
   })
 
@@ -539,7 +682,7 @@ function addHistoricalLabels(map: Map) {
     paint: {
       'text-color': '#7d312a',
       'text-halo-color': 'rgba(255, 249, 235, 0.92)',
-      'text-halo-width': 1.5,
+      'text-halo-width': 2,
     },
   })
 
@@ -550,7 +693,7 @@ function addHistoricalLabels(map: Map) {
     minzoom: 11.75,
     filter: allFilters(
       geometryFilter('LineString'),
-      ['==', ['get', 'subtype'], 'river'],
+      ['in', ['get', 'subtype'], ['literal', ['river', 'irrigation_channel']]],
     ),
     layout: {
       'symbol-placement': 'line',
@@ -563,7 +706,7 @@ function addHistoricalLabels(map: Map) {
     paint: {
       'text-color': '#17677a',
       'text-halo-color': 'rgba(244, 251, 251, 0.95)',
-      'text-halo-width': 1.5,
+      'text-halo-width': 2,
     },
   })
 
@@ -586,7 +729,7 @@ function addHistoricalLabels(map: Map) {
     paint: {
       'text-color': '#6f4b31',
       'text-halo-color': 'rgba(255, 249, 235, 0.92)',
-      'text-halo-width': 1.5,
+      'text-halo-width': 2,
     },
   })
 
@@ -610,7 +753,7 @@ function addHistoricalLabels(map: Map) {
     paint: {
       'text-color': '#7d312a',
       'text-halo-color': 'rgba(255, 249, 235, 0.96)',
-      'text-halo-width': 1.5,
+      'text-halo-width': 2,
     },
   })
 }
@@ -657,6 +800,7 @@ function applyMapState(
   historicalVisible: boolean,
   historicalOpacity: number,
   modernVisible: boolean,
+  modernStrength: number,
   visibleCategories: readonly FeatureCategory[],
   selectedFeatureId: string | null,
   basemapVisibility: ReadonlyMap<string, 'visible' | 'none'>,
@@ -676,6 +820,12 @@ function applyMapState(
       modernVisible ? originalVisibility : 'none',
     )
   }
+
+  map.setPaintProperty(
+    BASEMAP_VEIL_LAYER_ID,
+    'fill-opacity',
+    modernVisible ? 0.62 * (1 - modernStrength) : 0.96,
+  )
 
   applyHistoricalOpacity(map, historicalOpacity)
 
@@ -755,7 +905,7 @@ function applyMapState(
     'historical-label-rivers',
     allFilters(
       geometryFilter('LineString'),
-      ['==', ['get', 'subtype'], 'river'],
+      ['in', ['get', 'subtype'], ['literal', ['river', 'irrigation_channel']]],
       categories,
     ),
   )

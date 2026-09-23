@@ -200,6 +200,96 @@ export const geometryAuditEntrySchema = z
 
 export const geometryAuditSchema = z.array(geometryAuditEntrySchema)
 
+export const GAZETTEER_ENTITY_TYPES = [
+  'quarter',
+  'gate',
+  'wall',
+  'waterway',
+  'bridge',
+  'route',
+  'building',
+  'sector',
+  'cemetery',
+  'interpretation',
+] as const
+
+export const INVENTORY_STATUS_VALUES = [
+  'mapped',
+  'candidate',
+  'disputed',
+  'rejected',
+  'unlocated',
+] as const
+
+export const NAME_ATTESTATION_VALUES = [
+  'contemporary_documentary',
+  'near_contemporary',
+  'later_documentary',
+  'modern_conventional',
+  'reconstructed',
+  'uncertain',
+] as const
+
+export const SURVIVAL_STATUS_VALUES = [
+  'surviving',
+  'partial',
+  'lost',
+  'buried',
+  'landscape_continuity',
+  'unknown',
+  'not_applicable',
+] as const
+
+export const gazetteerEntrySchema = z
+  .object({
+    id: z.string().min(3).regex(/^gaz\.[a-z0-9-]+(?:\.[a-z0-9-]+)*$/),
+    canonical_name: z.string().min(1),
+    entity_type: z.enum(GAZETTEER_ENTITY_TYPES),
+    inventory_status: z.enum(INVENTORY_STATUS_VALUES),
+    feature_id: featureIdSchema.nullable(),
+    name_attestation: z.object({
+      status: z.enum(NAME_ATTESTATION_VALUES),
+      attested_name: z.string().min(1).nullable(),
+      date_note: z.string().min(1),
+      note: z.string().min(1),
+      source_refs: z.array(z.string().min(1)).min(1),
+    }),
+    survival: z.object({
+      status: z.enum(SURVIVAL_STATUS_VALUES),
+      note: z.string().min(1),
+    }),
+    parent_ids: z.array(z.string().min(1)).default([]),
+    related_ids: z.array(z.string().min(1)).default([]),
+    source_refs: z.array(z.string().min(1)).min(1),
+    notes: z.string().min(1),
+    defensive_context: z
+      .object({
+        phase: z.string().min(1),
+        role: z.enum(['outer_enclosure', 'inner_enclosure', 'palatine_enclosure', 'unknown']),
+        in_use_c1492: z.enum(CONFIDENCE_VALUES),
+        relationship_note: z.string().min(1),
+      })
+      .optional(),
+  })
+  .superRefine((entry, context) => {
+    if (entry.inventory_status === 'mapped' && !entry.feature_id) {
+      context.addIssue({
+        code: 'custom',
+        path: ['feature_id'],
+        message: 'Una entrada cartografiada debe enlazar una entidad.',
+      })
+    }
+    if (entry.inventory_status !== 'mapped' && entry.feature_id) {
+      context.addIssue({
+        code: 'custom',
+        path: ['feature_id'],
+        message: 'Una entrada no cartografiada no puede enlazar una geometría pública.',
+      })
+    }
+  })
+
+export const gazetteerSchema = z.array(gazetteerEntrySchema)
+
 export type FeatureCategory = (typeof FEATURE_CATEGORIES)[number]
 export type Confidence = (typeof CONFIDENCE_VALUES)[number]
 export type EvidenceBasis = (typeof EVIDENCE_BASIS_VALUES)[number]
@@ -208,3 +298,7 @@ export type HistoricalFeature = z.infer<typeof historicalFeatureSchema>
 export type HistoricalFeatureCollection = z.infer<typeof featureCollectionSchema>
 export type HistoricalSource = z.infer<typeof sourceSchema>
 export type GeometryAuditEntry = z.infer<typeof geometryAuditEntrySchema>
+export type GazetteerEntry = z.infer<typeof gazetteerEntrySchema>
+export type InventoryStatus = (typeof INVENTORY_STATUS_VALUES)[number]
+export type NameAttestation = (typeof NAME_ATTESTATION_VALUES)[number]
+export type SurvivalStatus = (typeof SURVIVAL_STATUS_VALUES)[number]

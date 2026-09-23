@@ -3,6 +3,7 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import {
   featureCollectionSchema,
+  gazetteerSchema,
   geometryAuditSchema,
   sourceRegistrySchema,
   type HistoricalFeature,
@@ -77,6 +78,52 @@ async function validate() {
     }
   }
 
+  const gazetteerResult = gazetteerSchema.safeParse(await readJson('data/gazetteer.json'))
+  if (!gazetteerResult.success) {
+    errors.push(formatIssues('data/gazetteer.json', gazetteerResult.error.issues))
+  } else {
+    const gazetteerIds = new Set<string>()
+    const mappedFeatureIds = new Set<string>()
+
+    for (const entry of gazetteerResult.data) {
+      if (gazetteerIds.has(entry.id)) errors.push(`  - Entrada de nomenclátor duplicada: ${entry.id}`)
+      gazetteerIds.add(entry.id)
+
+      if (entry.feature_id) {
+        if (!featureIds.has(entry.feature_id)) {
+          errors.push(`  - ${entry.id} enlaza una entidad inexistente: ${entry.feature_id}`)
+        }
+        if (mappedFeatureIds.has(entry.feature_id)) {
+          errors.push(`  - Entidad duplicada en el nomenclátor: ${entry.feature_id}`)
+        }
+        mappedFeatureIds.add(entry.feature_id)
+      }
+
+      for (const sourceId of new Set([
+        ...entry.source_refs,
+        ...entry.name_attestation.source_refs,
+      ])) {
+        if (!sourceIds.has(sourceId)) {
+          errors.push(`  - ${entry.id} referencia una fuente inexistente: ${sourceId}`)
+        }
+      }
+    }
+
+    for (const entry of gazetteerResult.data) {
+      for (const relatedId of [...entry.parent_ids, ...entry.related_ids]) {
+        if (!gazetteerIds.has(relatedId)) {
+          errors.push(`  - ${entry.id} relaciona una entrada inexistente: ${relatedId}`)
+        }
+      }
+    }
+
+    for (const featureId of featureIds) {
+      if (!mappedFeatureIds.has(featureId)) {
+        errors.push(`  - Falta la entrada de nomenclátor para ${featureId}`)
+      }
+    }
+  }
+
   const auditResult = geometryAuditSchema.safeParse(await readJson('data/geometry-audit.json'))
   if (!auditResult.success) {
     errors.push(formatIssues('data/geometry-audit.json', auditResult.error.issues))
@@ -116,7 +163,7 @@ async function validate() {
     ? auditResult.data.filter((entry) => entry.status === 'verified').length
     : 0
   console.log(
-    `Datos válidos: ${features.length} entidades (${publishableCount} publicables, ${verifiedCount} con geometría verificada) y ${sources.length} fuentes.`,
+    `Datos válidos: ${features.length} entidades (${publishableCount} publicables, ${verifiedCount} con geometría verificada), ${gazetteerResult.success ? gazetteerResult.data.length : 0} entradas de nomenclátor y ${sources.length} fuentes.`,
   )
 }
 

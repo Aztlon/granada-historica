@@ -1,9 +1,11 @@
 # Data workspace
 
 `geo/` contains the canonical public GeoJSON, split into points, lines, and
-areas. `content/` is reserved for long-form feature content if keeping it inside
-GeoJSON becomes cumbersome. `sources.json` is the normalized source registry,
-and `geometry-audit.json` records the independent cartographic review state.
+areas. `gazetteer.json` is the canonical inventory of mapped, candidate,
+disputed, rejected, and still-unlocated entities. `content/` is reserved for
+long-form feature content if keeping it inside GeoJSON becomes cumbersome.
+`sources.json` is the normalized source registry, and `geometry-audit.json`
+records the independent cartographic review state.
 
 Public web coordinates must use WGS84 (EPSG:4326). Every feature must follow the
 schema and provenance rules in `docs/SPEC.md`; in particular, it needs a stable
@@ -24,6 +26,12 @@ be clearly marked as demo material or pass historical review.
 7. Add or update the matching entry in `geometry-audit.json`. Use `verified`
    only after recording the check date, sources, method, and limitations.
 8. Run `npm run validate:data`.
+
+Every mapped feature also requires exactly one `gazetteer.json` entry. The
+gazetteer records the status of the name attestation and material survival,
+and may relate the feature to successive defensive enclosures. Keep known but
+unmapped candidates in the inventory with `feature_id: null`; never invent a
+point merely to satisfy the inventory.
 
 The frontend imports these files directly. A valid public feature appears only
 when it is both `publishable` and geometrically `verified`, without editing

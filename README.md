@@ -17,18 +17,20 @@ complete. The app
 now renders validated historical GeoJSON over an
 interactive map of Granada, distinguishes categories and levels of spatial
 certainty, supports normalized search, comparison controls, filtering, URL-based
-selection, and exposes historical context, provenance, and citations in each
-feature card. M6 public proof-of-concept review is the remaining v0.1 milestone.
+selection, and exposes historical context, provenance, name attestation,
+survival status, and citations in each feature card. M6 public proof-of-concept
+review remains in progress.
 
-The working dataset contains 44 cited and publishable features. None is assumed spatially correct:
+The working dataset contains 56 cited and publishable features and a 66-entry
+historical gazetteer. None is assumed spatially correct:
 each geometry must pass the review recorded in `data/geometry-audit.json`
 before it is shown on the public map. Its city-scale morphology includes
 the Albaicín, lower medina, Alhambra and Generalife; the Darro and Genil;
-principal wall systems, gates, and two defensible routes; and an explicitly
-approximate late-Nasrid urban extent. Labels and confidence styling are designed
+the principal acequias, wall systems, gates, bridges, and movement corridors;
+and an explicitly approximate late-Nasrid urban extent. Labels and confidence styling are designed
 to communicate the form of the city before a user opens an individual feature.
 
-The corrective pass and M4 review have verified all 44 geometries. The lower-medina wall is
+The corrective pass, M4 review, and first M6 expansion have verified all 56 geometries. The lower-medina wall is
 reconstructed from a documented sequence of modern streets and archaeological
 anchors; the lower-medina area is derived from that enclosure and other reviewed
 axes; and the late-Nasrid urban extent is the reproducible union of the verified
@@ -49,6 +51,13 @@ the Fajjarin/Assal cemetery zone, and four gates associated with the late-Nasrid
 enclosure. It also separates the interior Mauror–Realejo wall from the outer wall,
 corrects Antequeruela and the relationship between Alfareros and the Loma, and
 revises the lower-medina boundary without presenting uncertain stretches as exact.
+
+The first M6 expansion adds Aynadamar, Axares, Romayla, Cadí, Gorda, its Realejo
+branch, and the Acequia Real; the Puente del Carbón; the Darro and Molinos
+movement corridors; and the interior enclosures of the Alcazaba Qadima and
+Axares. The gazetteer also retains ten candidate, disputed, rejected, or
+unlocated names without inventing map points for them. Successive walls now
+state whether they were outer, inner, or palatine enclosures around 1492.
 
 See:
 

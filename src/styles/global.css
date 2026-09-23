@@ -877,6 +877,19 @@ a:focus-visible,
   border-radius: 12px;
 }
 
+.gazetteer-panel {
+  padding: 20px;
+  background: rgba(154, 104, 69, 0.07);
+  border: 1px solid rgba(154, 104, 69, 0.2);
+  border-radius: 12px;
+}
+
+.gazetteer-panel h3 {
+  margin: 4px 0 14px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.35rem;
+}
+
 .confidence-list {
   margin: 15px 0;
 }

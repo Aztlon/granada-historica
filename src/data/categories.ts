@@ -85,6 +85,8 @@ export const GEOMETRY_METHOD_LABELS: Record<GeometryMethod, string> = {
 export const SUBTYPE_LABELS: Record<string, string> = {
   madrasa: 'Madraza',
   river: 'Río',
+  irrigation_channel: 'Acequia histórica',
+  lost_bridge: 'Puente desaparecido',
   palatine_city: 'Ciudad palatina',
   palatine_estate: 'Finca palatina',
   urban_sector: 'Sector urbano',

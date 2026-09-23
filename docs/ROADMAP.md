@@ -116,4 +116,20 @@ desktop and mobile.
 3. Record and correct errors or misleading precision.
 4. Confirm the repository alone can rebuild and deploy the site.
 
+Completed M6 research-infrastructure work:
+
+1. [x] Create a canonical 66-entry gazetteer covering all 56 mapped entities
+   plus candidate, disputed, rejected, and unlocated names.
+2. [x] Add the principal water system, a first bridge inventory, and the main
+   missing movement corridors without implying survey-level precision.
+3. [x] Distinguish the outer late-Nasrid enclosures from the earlier interior
+   circuits of the Alcazaba Qadima, Axares, and Mauror–Realejo.
+4. [x] Add structured name-attestation, survival, and defensive-context fields,
+   validate them, and expose them in feature cards.
+
+Current M6 dataset result: 56 cited, publishable, and geometrically audited map
+features; 66 gazetteer records; and 53 registered sources. The remaining M6
+work is the canonical question review, full QA, correction pass, and clean
+repository rebuild/deployment confirmation above.
+
 Exit gate: all v0.1 acceptance criteria in the specification pass.

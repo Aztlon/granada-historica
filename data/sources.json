@@ -574,5 +574,65 @@
     "identifier": "AAA_2005_199; hdl:20.500.11947/3099",
     "reuse_status": "Consulta y cita conforme a la licencia CC BY-NC-ND 4.0; no se redistribuye ni se adapta la publicación.",
     "notes": "Relaciona el Albaicín nazarí con los arrabales al-Bayyazin y Axares y con la nueva cerca de finales del siglo XIII y comienzos del XIV."
+  },
+  {
+    "id": "source.ujaen-water-route-2025",
+    "author": "Adelaida Martín Martín et al.",
+    "title": "El camino del agua desde sus fuentes hasta la medina de la Alhambra y Granada en época islámica",
+    "year": 2025,
+    "publisher": "Arqueología y Territorio Medieval, Universidad de Jaén",
+    "type": "scholarly_article",
+    "url": "https://revistaselectronicas.ujaen.es/index.php/atma/article/view/9097",
+    "identifier": "DOI:10.17561/at.27.9097",
+    "reuse_status": "Consulta, cita y síntesis conforme a la licencia CC BY 4.0; no se redistribuyen sus figuras.",
+    "notes": "Síntesis reciente de Aynadamar, Axares, Romayla, Gorda, Cadí y Acequia Real, con cronología, función y recorridos urbanos generales."
+  },
+  {
+    "id": "source.alhambra-real-acequia",
+    "author": "Patronato de la Alhambra y Generalife",
+    "title": "Ventana arqueológica: la Acequia Real",
+    "year": null,
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "type": "institutional_webpage",
+    "url": "https://www.alhambra-patronato.es/ventana-arqueologica",
+    "identifier": "",
+    "reuse_status": "Consulta y cita factual; no se reproducen imágenes ni textos extensos.",
+    "notes": "Describe la captación en el Darro, el paso por el Cerro del Sol y el abastecimiento del Generalife y la Alhambra."
+  },
+  {
+    "id": "source.ugr-puente-carbon",
+    "author": "Eva María Castaño Aguilar et al.",
+    "title": "La cerámica islámica y cristiana de la tenería del Puente del Carbón (Granada)",
+    "year": 2005,
+    "publisher": "Arqueología y Territorio, Universidad de Granada",
+    "type": "scholarly_article",
+    "url": "https://www.ugr.es/~arqueologyterritorio/Artics2/Arti2_7.htm",
+    "identifier": "Arqueología y Territorio 2, pp. 109-124",
+    "reuse_status": "Consulta y cita factual; no se redistribuye ni se adapta la publicación.",
+    "notes": "Contextualiza el puente medieval junto al Corral del Carbón y la tenería asociada, con evidencia arqueológica nazarí."
+  },
+  {
+    "id": "source.junta-monaita-wall-2000",
+    "author": "Manuel López López y Antonio Orihuela Uzal",
+    "title": "Intervención arqueológica en el entorno de la Puerta Monaita y el aljibe del Rey, Granada",
+    "year": 2000,
+    "publisher": "Anuario Arqueológico de Andalucía, Junta de Andalucía",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/bitstream/20.500.11947/17621/1/AAA_2000_050_lopezlpoez_puertamonaitayaljibedelrey_granada.pdf",
+    "identifier": "AAA_2000_050",
+    "reuse_status": "Consulta y cita factual; no se redistribuye ni se adapta la publicación.",
+    "notes": "Documenta la cerca de la Alcazaba Qadima, sus tramos conservados y la relación con Monaita, Hernán Román, Puerta Nueva y la Casa de la Lona."
+  },
+  {
+    "id": "source.junta-carmen-negro-2005",
+    "author": "Ángel Rodríguez Aguilera et al.",
+    "title": "Intervención arqueológica en el Carmen del Negro, Albaicín, Granada",
+    "year": 2005,
+    "publisher": "Anuario Arqueológico de Andalucía, Junta de Andalucía",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/bitstream/20.500.11947/3093/7/AAA_2005_193_rodriguezaguilera_carmendelnegro.pdf.pdf",
+    "identifier": "AAA_2005_193",
+    "reuse_status": "Consulta y cita factual; no se redistribuye ni se adapta la publicación.",
+    "notes": "Discute el recinto de Axares, sus accesos y los arrabales orientales cuya identificación o delimitación sigue abierta."
   }
 ]
