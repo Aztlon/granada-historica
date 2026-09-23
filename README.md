@@ -12,13 +12,15 @@ reconstruction, what happened after 1492, and what is there today.
 
 Milestones **M0 — Specification and repository setup**, **M1 — Working map
 shell**, **M2 — Historical data system**, **M3 — Historical morphology**, and
-**M4 — First reviewed dataset** are complete. The app
+**M4 — First reviewed dataset**, and **M5 — Search, comparison, and polish** are
+complete. The app
 now renders validated historical GeoJSON over an
 interactive map of Granada, distinguishes categories and levels of spatial
-certainty, supports filtering and selection, and exposes historical context,
-provenance, and citations in each feature card.
+certainty, supports normalized search, comparison controls, filtering, URL-based
+selection, and exposes historical context, provenance, and citations in each
+feature card. M6 public proof-of-concept review is the remaining v0.1 milestone.
 
-The working dataset contains 36 cited and publishable features. None is assumed spatially correct:
+The working dataset contains 44 cited and publishable features. None is assumed spatially correct:
 each geometry must pass the review recorded in `data/geometry-audit.json`
 before it is shown on the public map. Its city-scale morphology includes
 the Albaicín, lower medina, Alhambra and Generalife; the Darro and Genil;
@@ -26,7 +28,7 @@ principal wall systems, gates, and two defensible routes; and an explicitly
 approximate late-Nasrid urban extent. Labels and confidence styling are designed
 to communicate the form of the city before a user opens an individual feature.
 
-The corrective pass and M4 review have verified all 36 geometries. The lower-medina wall is
+The corrective pass and M4 review have verified all 44 geometries. The lower-medina wall is
 reconstructed from a documented sequence of modern streets and archaeological
 anchors; the lower-medina area is derived from that enclosure and other reviewed
 axes; and the late-Nasrid urban extent is the reproducible union of the verified
@@ -41,6 +43,12 @@ Alcazaba Qadima, Axares, Garnata al-Yahud, the Alfareros quarter,
 Antequeruela, and the Loma quarter. Their map labels sit below the broader
 city sectors in the information hierarchy; historical names are retained where
 useful, while Spanish descriptions and modern landmarks make each area legible.
+
+A subsequent eastern and southern urban-edge review adds al-Ramla, al-Bayyazin,
+the Fajjarin/Assal cemetery zone, and four gates associated with the late-Nasrid
+enclosure. It also separates the interior Mauror–Realejo wall from the outer wall,
+corrects Antequeruela and the relationship between Alfareros and the Loma, and
+revises the lower-medina boundary without presenting uncertain stretches as exact.
 
 See:
 

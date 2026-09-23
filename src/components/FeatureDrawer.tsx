@@ -23,17 +23,40 @@ export function FeatureDrawer({
   onClose,
 }: FeatureDrawerProps) {
   const closeButtonRef = useRef<HTMLButtonElement>(null)
+  const drawerRef = useRef<HTMLElement>(null)
+  const returnFocusRef = useRef<HTMLElement | null>(null)
 
   useEffect(() => {
     if (!isOpen) return
 
+    returnFocusRef.current = document.activeElement as HTMLElement | null
     closeButtonRef.current?.focus()
-    const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') onClose()
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        onClose()
+        return
+      }
+      if (event.key !== 'Tab' || !drawerRef.current) return
+      const focusable = [...drawerRef.current.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      )]
+      if (focusable.length === 0) return
+      const first = focusable[0]
+      const last = focusable.at(-1) ?? first
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault()
+        last.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first.focus()
+      }
     }
 
-    window.addEventListener('keydown', closeOnEscape)
-    return () => window.removeEventListener('keydown', closeOnEscape)
+    window.addEventListener('keydown', handleKeyDown)
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+      returnFocusRef.current?.focus()
+    }
   }, [isOpen, onClose])
 
   return (
@@ -42,13 +65,19 @@ export function FeatureDrawer({
         className={`drawer-backdrop ${isOpen ? 'drawer-backdrop--visible' : ''}`}
         type="button"
         aria-label="Descartar el panel informativo"
+        aria-hidden={!isOpen}
+        disabled={!isOpen}
         tabIndex={isOpen ? 0 : -1}
         onClick={onClose}
       />
       <aside
+        ref={drawerRef}
         className={`feature-drawer ${isOpen ? 'feature-drawer--open' : ''}`}
+        role="dialog"
+        aria-modal={isOpen}
         aria-labelledby="drawer-title"
         aria-hidden={!isOpen}
+        inert={!isOpen}
       >
         <div className="drawer-handle" aria-hidden="true" />
         <div className="drawer-header">
@@ -115,10 +144,10 @@ function ProjectIntroduction() {
       <div className="milestone-note">
         <span className="status-dot" aria-hidden="true" />
         <div>
-          <strong>M2 · Sistema histórico</strong>
+          <strong>M5 · Explorar y comparar</strong>
           <p>
-            El prototipo contiene tres elementos semilla revisados para probar
-            puntos, líneas, áreas, citas y grados de certeza.
+            El prototipo reúne 44 elementos revisados y permite buscarlos por
+            nombres históricos, actuales y referencias urbanas modernas.
           </p>
         </div>
       </div>
@@ -200,16 +229,25 @@ function FeatureDetails({
                 <p>
                   <strong>{source.author}.</strong>{' '}
                   {source.url ? (
-                    <a href={source.url} target="_blank" rel="noreferrer">
+                    <a
+                      href={source.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      title="Abrir fuente en una pestaña nueva"
+                    >
                       <cite>{source.title}</cite>
+                      <span aria-hidden="true"> ↗</span>
                     </a>
                   ) : (
                     <cite>{source.title}</cite>
-                  )}
-                  {source.year ? ` (${source.year})` : ''}.
+                  )}.{' '}
+                  <span className="citation-publication">
+                    {source.publisher}{source.year ? `, ${source.year}` : ''}.
+                  </span>
                 </p>
-                <span>{citation.locator}</span>
+                <span>Localizador: {citation.locator}</span>
                 <small>Respalda: {citation.supports}</small>
+                {source.identifier && <small>Identificador: {source.identifier}</small>}
               </li>
             )
           })}

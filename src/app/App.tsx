@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { FeatureDrawer } from '../components/FeatureDrawer'
 import { Header } from '../components/Header'
 import { LayerControl } from '../components/LayerControl'
@@ -12,10 +12,13 @@ import type { FeatureCategory } from '../data/schema'
 import { MapView } from '../map/MapView'
 
 export function App() {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+  const initialFeatureId = useMemo(() => getFeatureIdFromUrl(), [])
+  const [isDrawerOpen, setIsDrawerOpen] = useState(Boolean(initialFeatureId))
   const [isLayerControlOpen, setIsLayerControlOpen] = useState(false)
   const [isHistoricalVisible, setIsHistoricalVisible] = useState(true)
-  const [selectedFeatureId, setSelectedFeatureId] = useState<string | null>(null)
+  const [isModernVisible, setIsModernVisible] = useState(true)
+  const [historicalOpacity, setHistoricalOpacity] = useState(0.85)
+  const [selectedFeatureId, setSelectedFeatureId] = useState<string | null>(initialFeatureId)
   const [visibleCategories, setVisibleCategories] = useState<Set<FeatureCategory>>(
     () => new Set(Object.keys(CATEGORY_CONFIG) as FeatureCategory[]),
   )
@@ -41,11 +44,44 @@ export function App() {
   const selectFeature = useCallback((featureId: string) => {
     setSelectedFeatureId(featureId)
     setIsDrawerOpen(true)
+    setIsHistoricalVisible(true)
+    const feature = historicalFeatureCollection.features.find(
+      (candidate) => candidate.id === featureId,
+    )
+    if (feature) {
+      setVisibleCategories((current) => {
+        if (current.has(feature.properties.category)) return current
+        return new Set(current).add(feature.properties.category)
+      })
+    }
+    updateFeatureUrl(featureId)
   }, [])
 
   const closeDrawer = useCallback(() => {
     setIsDrawerOpen(false)
     setSelectedFeatureId(null)
+    updateFeatureUrl(null)
+  }, [])
+
+  useEffect(() => {
+    const restoreUrlSelection = () => {
+      const featureId = getFeatureIdFromUrl()
+      setSelectedFeatureId(featureId)
+      setIsDrawerOpen(Boolean(featureId))
+      const feature = historicalFeatureCollection.features.find(
+        (candidate) => candidate.id === featureId,
+      )
+      if (feature) {
+        setIsHistoricalVisible(true)
+        setVisibleCategories((current) =>
+          current.has(feature.properties.category)
+            ? current
+            : new Set(current).add(feature.properties.category),
+        )
+      }
+    }
+    window.addEventListener('popstate', restoreUrlSelection)
+    return () => window.removeEventListener('popstate', restoreUrlSelection)
   }, [])
 
   const toggleCategory = (category: FeatureCategory) => {
@@ -68,9 +104,12 @@ export function App() {
       </a>
 
       <Header
+        features={historicalFeatureCollection.features}
+        onSelectFeature={selectFeature}
         onOpenInfo={() => {
           setSelectedFeatureId(null)
           setIsDrawerOpen(true)
+          updateFeatureUrl(null)
         }}
       />
 
@@ -78,6 +117,8 @@ export function App() {
         <MapView
           featureCollection={historicalFeatureCollection}
           historicalVisible={isHistoricalVisible}
+          historicalOpacity={historicalOpacity}
+          modernVisible={isModernVisible}
           selectedFeatureId={selectedFeatureId}
           visibleCategories={[...visibleCategories]}
           onSelectFeature={selectFeature}
@@ -91,12 +132,23 @@ export function App() {
         <LayerControl
           isOpen={isLayerControlOpen}
           historicalVisible={isHistoricalVisible}
+          historicalOpacity={historicalOpacity}
+          modernVisible={isModernVisible}
           visibleCategories={visibleCategories}
           categoryCounts={categoryCounts}
           onToggle={() => setIsLayerControlOpen((isOpen) => !isOpen)}
           onClose={() => setIsLayerControlOpen(false)}
           onToggleHistorical={() => setIsHistoricalVisible((visible) => !visible)}
+          onToggleModern={() => setIsModernVisible((visible) => !visible)}
+          onChangeHistoricalOpacity={setHistoricalOpacity}
           onToggleCategory={toggleCategory}
+          onShowAllCategories={() =>
+            setVisibleCategories(new Set(Object.keys(CATEGORY_CONFIG) as FeatureCategory[]))
+          }
+          onHideAllCategories={() => {
+            setVisibleCategories(new Set())
+            closeDrawer()
+          }}
         />
 
         <div className="map-note" role="note">
@@ -116,4 +168,18 @@ export function App() {
       />
     </main>
   )
+}
+
+function getFeatureIdFromUrl() {
+  const candidate = new URL(window.location.href).searchParams.get('feature')
+  return historicalFeatureCollection.features.some((feature) => feature.id === candidate)
+    ? candidate
+    : null
+}
+
+function updateFeatureUrl(featureId: string | null) {
+  const url = new URL(window.location.href)
+  if (featureId) url.searchParams.set('feature', featureId)
+  else url.searchParams.delete('feature')
+  window.history.pushState({}, '', `${url.pathname}${url.search}${url.hash}`)
 }

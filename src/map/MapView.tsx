@@ -150,6 +150,8 @@ const allFilters = (...filters: ExpressionSpecification[]): ExpressionSpecificat
 interface MapViewProps {
   featureCollection: HistoricalFeatureCollection
   historicalVisible: boolean
+  historicalOpacity: number
+  modernVisible: boolean
   selectedFeatureId: string | null
   visibleCategories: readonly FeatureCategory[]
   onSelectFeature: (featureId: string) => void
@@ -160,14 +162,21 @@ setWorkerUrl(workerUrl)
 export function MapView({
   featureCollection,
   historicalVisible,
+  historicalOpacity,
+  modernVisible,
   selectedFeatureId,
   visibleCategories,
   onSelectFeature,
 }: MapViewProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<Map | null>(null)
+  const basemapVisibilityRef = useRef(
+    new globalThis.Map<string, 'visible' | 'none'>(),
+  )
   const renderedStateRef = useRef({
     historicalVisible,
+    historicalOpacity,
+    modernVisible,
     selectedFeatureId,
     visibleCategories,
   })
@@ -176,10 +185,12 @@ export function MapView({
   useEffect(() => {
     renderedStateRef.current = {
       historicalVisible,
+      historicalOpacity,
+      modernVisible,
       selectedFeatureId,
       visibleCategories,
     }
-  }, [historicalVisible, selectedFeatureId, visibleCategories])
+  }, [historicalOpacity, historicalVisible, modernVisible, selectedFeatureId, visibleCategories])
 
   useEffect(() => {
     if (!containerRef.current) return
@@ -212,6 +223,12 @@ export function MapView({
     map.addControl(new ScaleControl({ maxWidth: 110, unit: 'metric' }), 'bottom-left')
 
     map.once('load', () => {
+      basemapVisibilityRef.current = new globalThis.Map(
+        (map.getStyle().layers ?? []).map((layer) => [
+          layer.id,
+          layer.layout?.visibility === 'none' ? 'none' as const : 'visible' as const,
+        ]),
+      )
       map.addSource(SOURCE_ID, {
         type: 'geojson',
         data: renderedData,
@@ -227,9 +244,13 @@ export function MapView({
       applyMapState(
         map,
         current.historicalVisible,
+        current.historicalOpacity,
+        current.modernVisible,
         current.visibleCategories,
         current.selectedFeatureId,
+        basemapVisibilityRef.current,
       )
+      focusFeature(map, featureCollection, current.selectedFeatureId)
       setStatus('ready')
     })
 
@@ -261,8 +282,22 @@ export function MapView({
   useEffect(() => {
     const map = mapRef.current
     if (!map?.getSource(SOURCE_ID)) return
-    applyMapState(map, historicalVisible, visibleCategories, selectedFeatureId)
-  }, [historicalVisible, selectedFeatureId, visibleCategories])
+    applyMapState(
+      map,
+      historicalVisible,
+      historicalOpacity,
+      modernVisible,
+      visibleCategories,
+      selectedFeatureId,
+      basemapVisibilityRef.current,
+    )
+  }, [historicalOpacity, historicalVisible, modernVisible, selectedFeatureId, visibleCategories])
+
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map?.getSource(SOURCE_ID) || !selectedFeatureId) return
+    focusFeature(map, featureCollection, selectedFeatureId)
+  }, [featureCollection, selectedFeatureId])
 
   return (
     <div className="map-frame">
@@ -272,8 +307,13 @@ export function MapView({
         className="map-canvas"
         role="region"
         aria-label="Mapa moderno interactivo del centro de Granada con elementos históricos"
+        aria-describedby="map-keyboard-help"
         tabIndex={0}
       />
+      <p id="map-keyboard-help" className="sr-only">
+        Usa las teclas de flecha para desplazarte y las teclas más y menos para cambiar el zoom.
+        Busca un lugar para centrarlo y abrir su ficha histórica.
+      </p>
 
       {status === 'loading' && (
         <div className="map-status" role="status">
@@ -430,8 +470,9 @@ function addHistoricalLabels(map: Map) {
       'text-letter-spacing': 0.08,
       'text-max-width': 12,
       'text-transform': 'uppercase',
-      'text-allow-overlap': true,
-      'text-ignore-placement': true,
+      'text-allow-overlap': false,
+      'text-ignore-placement': false,
+      'text-padding': 10,
       'text-anchor': [
         'match',
         ['get', 'subtype'],
@@ -564,6 +605,7 @@ function addHistoricalLabels(map: Map) {
       'text-offset': [0, 1.25],
       'text-anchor': 'top',
       'text-max-width': 12,
+      'text-optional': true,
     },
     paint: {
       'text-color': '#7d312a',
@@ -613,8 +655,11 @@ function addConfidencePoint(
 function applyMapState(
   map: Map,
   historicalVisible: boolean,
+  historicalOpacity: number,
+  modernVisible: boolean,
   visibleCategories: readonly FeatureCategory[],
   selectedFeatureId: string | null,
+  basemapVisibility: ReadonlyMap<string, 'visible' | 'none'>,
 ) {
   const visibility = historicalVisible ? 'visible' : 'none'
   const categories = categoryFilter(visibleCategories)
@@ -622,6 +667,17 @@ function applyMapState(
   for (const layerId of HISTORICAL_LAYER_IDS) {
     if (map.getLayer(layerId)) map.setLayoutProperty(layerId, 'visibility', visibility)
   }
+
+  for (const [layerId, originalVisibility] of basemapVisibility) {
+    if (!map.getLayer(layerId)) continue
+    map.setLayoutProperty(
+      layerId,
+      'visibility',
+      modernVisible ? originalVisibility : 'none',
+    )
+  }
+
+  applyHistoricalOpacity(map, historicalOpacity)
 
   map.setFilter(
     'historical-urban-extent-fill',
@@ -733,6 +789,93 @@ function applyMapState(
     'historical-selection-point',
     allFilters(geometryFilter('Point'), ['==', ['get', 'id'], selected]),
   )
+}
+
+function applyHistoricalOpacity(map: Map, opacity: number) {
+  map.setPaintProperty('historical-urban-extent-fill', 'fill-opacity', 0.07 * opacity)
+  map.setPaintProperty('historical-urban-extent-outline', 'line-opacity', 0.8 * opacity)
+  map.setPaintProperty('historical-area-fill', 'fill-opacity', [
+    'match',
+    ['get', 'confidence_location'],
+    'secure',
+    0.32 * opacity,
+    'probable',
+    0.24 * opacity,
+    'approximate',
+    0.16 * opacity,
+    'disputed',
+    0.1 * opacity,
+    0.2 * opacity,
+  ])
+
+  for (const confidence of ['secure', 'probable', 'approximate', 'disputed'] as const) {
+    map.setPaintProperty(`historical-area-${confidence}`, 'line-opacity', opacity)
+    map.setPaintProperty(
+      `historical-line-${confidence}`,
+      'line-opacity',
+      (confidence === 'disputed' ? 0.75 : 0.94) * opacity,
+    )
+    const pointOpacity = confidence === 'secure' ? 1 : confidence === 'probable' ? 0.7 : confidence === 'approximate' ? 0.12 : 0
+    map.setPaintProperty(`historical-point-${confidence}`, 'circle-opacity', pointOpacity * opacity)
+    map.setPaintProperty(`historical-point-${confidence}`, 'circle-stroke-opacity', opacity)
+  }
+
+  for (const layerId of [
+    'historical-label-sectors',
+    'historical-label-quarters',
+    'historical-label-walls',
+    'historical-label-rivers',
+    'historical-label-routes',
+    'historical-label-gates',
+  ]) {
+    map.setPaintProperty(layerId, 'text-opacity', opacity)
+  }
+}
+
+function focusFeature(
+  map: Map,
+  collection: HistoricalFeatureCollection,
+  selectedFeatureId: string | null,
+) {
+  if (!selectedFeatureId) return
+  const feature = collection.features.find((candidate) => candidate.id === selectedFeatureId)
+  if (!feature) return
+
+  const coordinates = collectCoordinates(feature.geometry.coordinates)
+  if (coordinates.length === 0) return
+  if (feature.geometry.type === 'Point') {
+    map.easeTo({ center: coordinates[0] as [number, number], zoom: Math.max(map.getZoom(), 15.5), duration: 650 })
+    return
+  }
+
+  const longitudes = coordinates.map((position) => position[0])
+  const latitudes = coordinates.map((position) => position[1])
+  const mobile = window.matchMedia('(max-width: 720px)').matches
+  map.fitBounds(
+    [
+      [Math.min(...longitudes), Math.min(...latitudes)],
+      [Math.max(...longitudes), Math.max(...latitudes)],
+    ],
+    {
+      padding: mobile
+        ? { top: 90, right: 35, bottom: 260, left: 35 }
+        : { top: 90, right: 420, bottom: 90, left: 80 },
+      maxZoom: 16,
+      duration: 650,
+    },
+  )
+}
+
+function collectCoordinates(value: unknown): Position[] {
+  if (!Array.isArray(value)) return []
+  if (
+    value.length >= 2 &&
+    typeof value[0] === 'number' &&
+    typeof value[1] === 'number'
+  ) {
+    return [value as Position]
+  }
+  return value.flatMap(collectCoordinates)
 }
 
 function buildAreaLabelCollection(

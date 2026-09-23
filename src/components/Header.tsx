@@ -1,4 +1,9 @@
+import { SearchBox } from './SearchBox'
+import type { HistoricalFeature } from '../data/schema'
+
 interface HeaderProps {
+  features: readonly HistoricalFeature[]
+  onSelectFeature: (featureId: string) => void
   onOpenInfo: () => void
 }
 
@@ -30,7 +35,7 @@ function PomegranateMark() {
   )
 }
 
-export function Header({ onOpenInfo }: HeaderProps) {
+export function Header({ features, onSelectFeature, onOpenInfo }: HeaderProps) {
   return (
     <header className="site-header">
       <div className="brand-lockup" aria-label="Granada Histórica">
@@ -42,24 +47,16 @@ export function Header({ onOpenInfo }: HeaderProps) {
       </div>
 
       <div className="header-actions">
-        <label className="search-shell">
-          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
-            <path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" />
-          </svg>
-          <span className="sr-only">Buscar en la Granada histórica</span>
-          <input
-            type="search"
-            placeholder="La búsqueda llegará en M5"
-            disabled
-            aria-describedby="search-status"
-          />
-          <span id="search-status" className="sr-only">
-            La búsqueda todavía no está disponible.
-          </span>
-        </label>
+        <SearchBox features={features} onSelectFeature={onSelectFeature} />
 
-        <button className="text-button" type="button" onClick={onOpenInfo}>
-          Acerca del mapa
+        <button
+          className="text-button"
+          type="button"
+          aria-label="Acerca del mapa"
+          onClick={onOpenInfo}
+        >
+          <span className="about-label--desktop">Acerca del mapa</span>
+          <span className="about-label--mobile">Acerca</span>
         </button>
       </div>
     </header>

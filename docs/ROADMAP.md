@@ -48,8 +48,9 @@ changes.
 4. [x] Reconstruct the Alhambra, Generalife, lower medina, and Albaicín relationship from explicit evidence.
 5. [x] Complete the per-entity geometry audit; no draft geometry is presumed correct.
 
-Corrective-pass result: all 21 geometries are verified. Approximate and reconstructed
-borders retain explicit confidence, provenance, and limitation notes.
+Corrective-pass result: all 21 geometries in the initial morphology set were
+verified. Approximate and reconstructed borders retain explicit confidence,
+provenance, and limitation notes; later M4 additions follow the same audit process.
 
 Exit gate: the map communicates city-scale form before individual monuments.
 
@@ -61,8 +62,8 @@ Exit gate: the map communicates city-scale form before individual monuments.
 4. [x] Review confidence, names, claims, geometry, and reuse status.
 5. [x] Publish at least 30 substantive features across multiple categories.
 
-M4 result: the dataset now contains 36 cited, publishable features with 36
-verified geometry audits and 39 registered sources. The first nine additions cover
+M4 result: the dataset now contains 44 cited, publishable features with 44
+verified geometry audits and 48 registered sources. The first nine additions cover
 the Puerta de Guadix, both major mosques, the Alcaicería and Zacatín commercial
 core, the Corral del Carbón, Maristán, El Bañuelo, and the Puerta de los
 Tableros / Puente del Cadí. Surviving footprints, modern reference points, and
@@ -75,15 +76,35 @@ they complement, rather than replace, the broader analytical sectors such as
 the lower medina. Contested extents and overlaps remain visible in each
 feature's confidence and evidence notes.
 
+The later eastern and southern urban-edge review adds al-Ramla, al-Bayyazin,
+the Fajjarin/Assal cemetery zone, and the Bab al-Fajjarin, Bab Mawrur, Puerta del
+Pescado, and Puerta de la Loma/Molinos gates. It separates the interior
+Mauror–Realejo wall from the outer late-Nasrid enclosure and corrects the placement
+and interpretation of Antequeruela, Alfareros, the Loma, and the lower-medina
+boundary. Uncertain wall stretches and neighborhood limits remain explicitly
+probable or approximate rather than being promoted to secure geometry.
+
 Exit gate: 30 or more cited, publishable features have meaningful details.
 
 ## M5 — Search, comparison, and polish
 
-1. Add normalized search across names, aliases, and modern landmarks.
-2. Add category filters, layer toggles, and historical opacity.
-3. Add URL-selected features with query parameters.
-4. Tune labels, legend, keyboard behavior, touch targets, and mobile layout.
-5. Test the interactions and complete an accessibility pass.
+1. [x] Add normalized search across names, aliases, and modern landmarks.
+2. [x] Add category filters, layer toggles, and historical opacity.
+3. [x] Add URL-selected features with query parameters.
+4. [x] Tune labels, legend, keyboard behavior, touch targets, and mobile layout.
+5. [x] Test the interactions and complete an accessibility pass.
+
+M5 result: accent-insensitive search now ranks canonical names, historical
+names, aliases, current names, streets, and modern landmarks, with keyboard and
+mobile result selection. Users can independently toggle the modern context and
+historical overlay, adjust historical opacity, filter categories, and reveal all
+or no categories. Feature selections persist in `?feature=` URLs and browser
+history, restore hidden categories when necessary, and focus the map on the
+selected geometry. Label collision rules, responsive search, touch targets,
+focus restoration, Escape handling, drawer focus containment, and reduced-motion
+behavior received an accessibility and interaction pass. Citations use a
+consistent author–title–publisher–year format while preserving locators,
+identifiers, supported claims, and direct source links.
 
 Exit gate: discovery, comparison, sharing, and core interactions work across
 desktop and mobile.

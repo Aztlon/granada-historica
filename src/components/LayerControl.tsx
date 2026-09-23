@@ -1,16 +1,22 @@
-import type { CSSProperties } from 'react'
+import { useEffect, useRef, type CSSProperties } from 'react'
 import { CATEGORY_CONFIG, CONFIDENCE_LABELS } from '../data/categories'
 import type { Confidence, FeatureCategory } from '../data/schema'
 
 interface LayerControlProps {
   isOpen: boolean
   historicalVisible: boolean
+  historicalOpacity: number
+  modernVisible: boolean
   visibleCategories: ReadonlySet<FeatureCategory>
   categoryCounts: Record<FeatureCategory, number>
   onToggle: () => void
   onClose: () => void
   onToggleHistorical: () => void
+  onToggleModern: () => void
+  onChangeHistoricalOpacity: (opacity: number) => void
   onToggleCategory: (category: FeatureCategory) => void
+  onShowAllCategories: () => void
+  onHideAllCategories: () => void
 }
 
 const confidenceOrder: Confidence[] = [
@@ -23,16 +29,45 @@ const confidenceOrder: Confidence[] = [
 export function LayerControl({
   isOpen,
   historicalVisible,
+  historicalOpacity,
+  modernVisible,
   visibleCategories,
   categoryCounts,
   onToggle,
   onClose,
   onToggleHistorical,
+  onToggleModern,
+  onChangeHistoricalOpacity,
   onToggleCategory,
+  onShowAllCategories,
+  onHideAllCategories,
 }: LayerControlProps) {
+  const toggleRef = useRef<HTMLButtonElement>(null)
+  const closeRef = useRef<HTMLButtonElement>(null)
+  const onCloseRef = useRef(onClose)
+
+  useEffect(() => {
+    onCloseRef.current = onClose
+  }, [onClose])
+
+  useEffect(() => {
+    if (!isOpen) return
+    const toggleButton = toggleRef.current
+    closeRef.current?.focus()
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') onCloseRef.current()
+    }
+    window.addEventListener('keydown', closeOnEscape)
+    return () => {
+      window.removeEventListener('keydown', closeOnEscape)
+      toggleButton?.focus()
+    }
+  }, [isOpen])
+
   return (
     <div className="layer-control">
       <button
+        ref={toggleRef}
         className="map-control-button"
         type="button"
         aria-expanded={isOpen}
@@ -53,6 +88,7 @@ export function LayerControl({
               <h2 id="layers-title">Capas</h2>
             </div>
             <button
+              ref={closeRef}
               className="icon-button"
               type="button"
               aria-label="Cerrar el panel de capas"
@@ -69,9 +105,9 @@ export function LayerControl({
             </span>
             <input
               type="checkbox"
-              defaultChecked
-              disabled
+              checked={modernVisible}
               aria-label="Contexto actual"
+              onChange={onToggleModern}
             />
           </label>
 
@@ -88,8 +124,32 @@ export function LayerControl({
             />
           </label>
 
+          <label className={`opacity-control ${!historicalVisible ? 'opacity-control--disabled' : ''}`}>
+            <span>
+              <strong>Opacidad histórica</strong>
+              <output>{Math.round(historicalOpacity * 100)}%</output>
+            </span>
+            <input
+              type="range"
+              min="0.2"
+              max="1"
+              step="0.05"
+              value={historicalOpacity}
+              disabled={!historicalVisible}
+              aria-label="Opacidad de la superposición histórica"
+              onChange={(event) => onChangeHistoricalOpacity(Number(event.target.value))}
+            />
+          </label>
+
           <fieldset className="category-filters" disabled={!historicalVisible}>
-            <legend>Categorías</legend>
+            <legend className="sr-only">Categorías históricas</legend>
+            <div className="category-filters__heading">
+              <span>Categorías</span>
+              <span>
+                <button type="button" onClick={onShowAllCategories}>Todas</button>
+                <button type="button" onClick={onHideAllCategories}>Ninguna</button>
+              </span>
+            </div>
             {(Object.entries(CATEGORY_CONFIG) as [
               FeatureCategory,
               (typeof CATEGORY_CONFIG)[FeatureCategory],
