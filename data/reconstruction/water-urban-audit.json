@@ -1,0 +1,104 @@
+{
+  "source_id": "source.ujaen-water-route-2025",
+  "target_crs": "EPSG:25830",
+  "affine_pixel_to_utm": [
+    [
+      2.376778079739786,
+      0.04916411312444454
+    ],
+    [
+      0.05633003593629837,
+      -2.3790483808224963
+    ],
+    [
+      445853.58702372824,
+      4116497.099559733
+    ]
+  ],
+  "control_rmse_m": 8.37,
+  "control_residuals_m": {
+    "Monaita": 10.77,
+    "Mezquita Mayor / Sagrario": 11.26,
+    "Bab al-Difaf crossing": 6.84,
+    "Fajalauza": 5.99,
+    "Darro-Genil confluence": 5.01
+  },
+  "independent_check_residuals_m": {
+    "Elvira": 14.58,
+    "Las Pesas": 10.6,
+    "San Miguel Bajo mosque site": 3.45
+  },
+  "historical_accuracy": "Unquantified; drawing generalization, anchor identification and historical phase differences exceed registration residuals.",
+  "reviewed_features": [
+    "bridge.carbon",
+    "quarter.albayyazin",
+    "quarter.alcazaba-qadima",
+    "quarter.alfajjarin",
+    "quarter.axares",
+    "quarter.loma",
+    "quarter.ramla",
+    "urban.albaicin",
+    "urban.late-nasrid-extent",
+    "urban.lower-medina",
+    "walls.alcazaba-qadima-inner",
+    "walls.axares-inner",
+    "walls.mauror-realejo-inner",
+    "water.acequia-arabuleila",
+    "water.acequia-axares",
+    "water.acequia-aynadamar",
+    "water.acequia-cadi",
+    "water.acequia-gorda",
+    "water.acequia-real-alhambra",
+    "water.acequia-realejo",
+    "water.acequia-romayla",
+    "water.acequia-tarramonta"
+  ],
+  "invalid_geometries": [],
+  "crossings": {
+    "gorda/genil": {
+      "type": "LineString",
+      "coordinates": []
+    },
+    "gorda/darro": {
+      "type": "Point",
+      "coordinates": [
+        -3.59672282621863,
+        37.168809033831124
+      ]
+    },
+    "tarramonta/genil": {
+      "type": "Point",
+      "coordinates": [
+        -3.591875856220331,
+        37.168734397811306
+      ]
+    },
+    "arabuleila/genil": {
+      "type": "Point",
+      "coordinates": [
+        -3.588483343717399,
+        37.166414910177
+      ]
+    },
+    "axares/darro": {
+      "type": "LineString",
+      "coordinates": []
+    },
+    "romayla/darro": {
+      "type": "LineString",
+      "coordinates": []
+    }
+  },
+  "quarter_shared_edges_m": {
+    "alcazaba-qadima/axares": 378.8,
+    "alcazaba-qadima/albayyazin": 583.7,
+    "axares/albayyazin": 622.4,
+    "alfajjarin/loma": 700.5
+  },
+  "quarter_overlap_area_m2": {
+    "alcazaba-qadima/axares": 0.0,
+    "alcazaba-qadima/albayyazin": 0.0,
+    "axares/albayyazin": 0.0,
+    "alfajjarin/loma": 0.0
+  }
+}

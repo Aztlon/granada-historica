@@ -9,6 +9,8 @@ import {
   type HistoricalFeature,
 } from '../src/data/schema'
 
+import { auditSpatialRelationships } from '../src/data/spatialAudit'
+
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 
 const dataFiles = [
@@ -30,52 +32,6 @@ function formatIssues(path: string, issues: { path: PropertyKey[]; message: stri
   return issues
     .map((issue) => `  - ${path}:${issue.path.join('.') || '<raíz>'}: ${issue.message}`)
     .join('\n')
-}
-
-type Position = [number, number]
-
-function lineParts(feature: HistoricalFeature | undefined): Position[][] {
-  if (!feature) return []
-  if (feature.geometry.type === 'LineString') return [feature.geometry.coordinates]
-  if (feature.geometry.type === 'MultiLineString') return feature.geometry.coordinates
-  return []
-}
-
-function linesIntersect(first: Position[][], second: Position[][]) {
-  return countLineIntersections(first, second) > 0
-}
-
-function countLineIntersections(first: Position[][], second: Position[][]) {
-  return first.reduce((count, firstPart) => count + second.reduce(
-    (partCount, secondPart) => partCount + firstPart.slice(1).reduce(
-      (segmentCount, firstEnd, firstIndex) => segmentCount + secondPart.slice(1).filter(
-        (secondEnd, secondIndex) => segmentsIntersect(
-          firstPart[firstIndex],
-          firstEnd,
-          secondPart[secondIndex],
-          secondEnd,
-        ),
-      ).length,
-      0,
-    ),
-    0,
-  ), 0)
-}
-
-function segmentsIntersect(a: Position, b: Position, c: Position, d: Position) {
-  const cross = (p: Position, q: Position, r: Position) =>
-    (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0])
-  const abC = cross(a, b, c)
-  const abD = cross(a, b, d)
-  const cdA = cross(c, d, a)
-  const cdB = cross(c, d, b)
-  return abC * abD <= 0 && cdA * cdB <= 0
-}
-
-function positionsEqual(first: Position[], second: Position[]) {
-  return first.length === second.length && first.every(
-    (position, index) => position[0] === second[index][0] && position[1] === second[index][1],
-  )
 }
 
 async function validate() {
@@ -124,59 +80,7 @@ async function validate() {
     }
   }
 
-  const featuresById = new Map(features.map((feature) => [feature.id, feature]))
-  const darro = lineParts(featuresById.get('water.darro'))
-  const genil = lineParts(featuresById.get('water.genil'))
-  const cadiBridge = lineParts(featuresById.get('bridge.cadi'))
-  const gorda = lineParts(featuresById.get('water.acequia-gorda'))
-  const tarramonta = lineParts(featuresById.get('water.acequia-tarramonta'))
-  const axares = lineParts(featuresById.get('water.acequia-axares'))
-  const romayla = lineParts(featuresById.get('water.acequia-romayla'))
-
-  if (!linesIntersect(cadiBridge, darro)) {
-    errors.push('  - La geometría de bridge.cadi debe atravesar el eje del Darro.')
-  }
-  if (linesIntersect(gorda, genil)) {
-    errors.push('  - La Acequia Gorda no debe cruzar el eje del Genil en el ámbito representado.')
-  }
-  if (!linesIntersect(tarramonta, genil)) {
-    errors.push('  - La Acequia Tarramonta debe cruzar el eje del Genil.')
-  }
-  if (linesIntersect(axares, darro)) {
-    errors.push('  - La Acequia de Axares debe permanecer en la margen derecha del Darro.')
-  }
-  if (countLineIntersections(romayla, darro) < 2) {
-    errors.push('  - La Acequia de Romayla debe conservar sus dos cruces del Darro.')
-  }
-
-  for (const [wallId, areaId] of [
-    ['walls.alcazaba-qadima-inner', 'quarter.alcazaba-qadima'],
-    ['walls.axares-inner', 'quarter.axares'],
-  ] as const) {
-    const wall = featuresById.get(wallId)
-    const area = featuresById.get(areaId)
-    const wallCoordinates = wall?.geometry.type === 'LineString' ? wall.geometry.coordinates : []
-    const areaCoordinates = area?.geometry.type === 'Polygon' ? area.geometry.coordinates[0] : []
-    if (!positionsEqual(wallCoordinates, areaCoordinates)) {
-      errors.push(`  - ${wallId} debe reutilizar exactamente la envolvente de ${areaId}.`)
-    }
-  }
-
-  const aynadamar = featuresById.get('water.acequia-aynadamar')
-  const qadima = featuresById.get('quarter.alcazaba-qadima')
-  if (
-    aynadamar?.geometry.type !== 'MultiLineString'
-    || qadima?.geometry.type !== 'Polygon'
-    || !aynadamar.geometry.coordinates.flat().some((position) =>
-      pointInPolygon(position, qadima.geometry.type === 'Polygon' ? qadima.geometry.coordinates[0] : []),
-    )
-  ) {
-    errors.push('  - Aynadamar debe conservar sus ramales y alcanzar la envolvente de la Alcazaba Qadima.')
-  }
-
-  if (!axares.flat().some((position) => position[0] > -3.58)) {
-    errors.push('  - La Acequia de Axares debe prolongarse al este del ámbito urbano central.')
-  }
+  errors.push(...auditSpatialRelationships(features).map((error) => `  - ${error}`))
 
   const gazetteerResult = gazetteerSchema.safeParse(await readJson('data/gazetteer.json'))
   if (!gazetteerResult.success) {
@@ -265,18 +169,6 @@ async function validate() {
   console.log(
     `Datos válidos: ${features.length} entidades (${publishableCount} publicables, ${verifiedCount} con geometría verificada), ${gazetteerResult.success ? gazetteerResult.data.length : 0} entradas de nomenclátor y ${sources.length} fuentes.`,
   )
-}
-
-function pointInPolygon(point: Position, ring: Position[]) {
-  let inside = false
-  for (let current = 0, previous = ring.length - 1; current < ring.length; previous = current++) {
-    const [currentX, currentY] = ring[current]
-    const [previousX, previousY] = ring[previous]
-    const crosses = currentY > point[1] !== previousY > point[1]
-      && point[0] < ((previousX - currentX) * (point[1] - currentY)) / (previousY - currentY) + currentX
-    if (crosses) inside = !inside
-  }
-  return inside
 }
 
 validate().catch((error: unknown) => {

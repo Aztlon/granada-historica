@@ -47,6 +47,9 @@ and safeguards are documented in `gis/README.md`.
 
 The specific registration and topology rules for the Islamic water network are
 documented in [`docs/WATER-NETWORK-METHOD.md`](../docs/WATER-NETWORK-METHOD.md).
+`reconstruction/` preserves source pixels, registration controls, editorial
+decisions and the generated QA report for the September 2026 water/urban audit.
+The reconstruction script emits reviewable patches rather than overwriting data.
 
 ## Validation
 
@@ -55,3 +58,6 @@ closed polygon rings, permanent and unique IDs, source resolution, required
 public text, confidence values, evidence types, geometry provenance, and the
 citation requirement for publishable entities. Validation runs locally, during
 the production build, and in both GitHub Actions workflows.
+Spatial regression checks additionally cover mosque supply, canal crossings and
+branches, bridges on the Darro, wall/gate alignment and shared quarter edges.
+They enforce documented reconstruction assumptions, not historical certainty.

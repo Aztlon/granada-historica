@@ -1,0 +1,551 @@
+{
+  "water.acequia-aynadamar": {
+    "summary": "Red de la colina del Albaicín, con ramales para sus barrios, mezquitas y aljibes.",
+    "context_1492": "El agua de Alfacar se repartía por el arrabal del Albaicín, la Alcazaba Vieja y las zonas altas de Axares. Se representa la distribución de la colina, incluidos los ramales hacia San Miguel Bajo y San José.",
+    "today": "Los ramales urbanos son reconstrucciones aproximadas. Sus finales indican el alcance representado, no que todo el caudal terminara allí.",
+    "evidence_note": "Se elimina la prolongación sin fundamento hasta el Sagrario. El Mapa 5 se registra mediante cinco controles; el PEPRI, pp. 69-70, distingue la red alta de Aynadamar del abastecimiento de la mezquita mayor por Axares. Los símbolos de las mezquitas de la colina no son las dos aljamas modernas del inventario.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.openstreetmap"
+    ],
+    "citations": [
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "p. 137 y Mapa 5 (p. 138)",
+        "supports": "Ramificación por la colina y suministro del Albaicín, Alcazaba y Axares alto."
+      },
+      {
+        "source_id": "source.granada-pepri-islamic-city",
+        "locator": "Memoria urbana, pp. 69-70 (PDF 71-72)",
+        "supports": "Aljibes del Rey, Tomasas y San José; diferenciación de Aynadamar y Axares."
+      }
+    ]
+  },
+  "water.acequia-axares": {
+    "summary": "Acequia de la margen derecha del Darro que abastecía Axares y el aljibe de la Mezquita Mayor.",
+    "context_1492": "Desde el valle oriental recorría el corredor de San Juan de los Reyes y descendía hacia la medina. Axares era el suministro principal del aljibe de la Mezquita Mayor según la síntesis municipal.",
+    "today": "La línea sigue el corredor histórico hasta el solar del Sagrario. El encuentro con el punto de la mezquita expresa su abastecimiento; no identifica una acometida excavada.",
+    "evidence_note": "El Mapa 5 y el PEPRI, pp. 69-70, respaldan este destino. Se conserva como alias San Juan, denominación posterior. La geometría procede del registro afín y permanece aproximada a escala de calle.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.openstreetmap"
+    ],
+    "citations": [
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapa 5; p. 137, nota 29",
+        "supports": "Trazado de Axares y denominación posterior de San Juan."
+      },
+      {
+        "source_id": "source.granada-pepri-islamic-city",
+        "locator": "Memoria urbana, pp. 69-70 (PDF 71-72)",
+        "supports": "Axares como principal abastecimiento del aljibe de la Mezquita Mayor."
+      }
+    ]
+  },
+  "water.acequia-romayla": {
+    "summary": "Acequia del Darro por el Avellano y la ladera baja de la Sabika, con distribución hacia la ciudad de la margen izquierda.",
+    "context_1492": "El corredor urbano representado discurre por la margen izquierda del Darro y sirve los sectores artesanales al pie de la Alhambra y del Mauror. El acueducto de derivación aguas arriba queda fuera del tramo dibujado.",
+    "today": "Se muestra el corredor urbano que permite seguir el Mapa 5. No se reconstruyen todos los repartimientos posteriores ni se fija una acometida a la Mezquita Mayor.",
+    "evidence_note": "Existe una discrepancia: el texto de 2025, p. 137, atribuye a Romayla un retorno a la zona de la mezquita, mientras el Mapa 5 y el PEPRI asignan a Axares su abastecimiento principal. Se retira el enlace directo especulativo al Sagrario y se conserva explícita la discrepancia. No se fuerzan dos cruces dentro de este recorte urbano.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.openstreetmap"
+    ],
+    "citations": [
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "p. 137 y Mapa 5 (p. 138)",
+        "supports": "Recorrido por Avellano y Sabika; discrepancia entre la descripción del final y su representación cartográfica."
+      },
+      {
+        "source_id": "source.granada-pepri-islamic-city",
+        "locator": "Memoria urbana, p. 70 (PDF 72)",
+        "supports": "Romayla abastece la margen izquierda y los talleres; Axares el aljibe de la mezquita."
+      }
+    ]
+  },
+  "water.acequia-gorda": {
+    "context_1492": "La conducción principal procedía del Genil y repartía agua a ramales urbanos y agrícolas. En el tramo representado pasa al norte del Genil y salva el Darro antes de continuar hacia la Vega.",
+    "today": "Se representa el tramo urbano y periurbano del Mapa 5, con los encuentros de Tarramonta, Arabuleila y Realejo. La toma del Genil queda aguas arriba, fuera del recorte.",
+    "evidence_note": "Se sustituye el dibujo manual anterior por el corredor registrado del Mapa 5. La topología comprobada incluye el cruce del Darro, la ausencia de cruces del Genil y los repartimientos orientales. Los cauces actuales sirven de control, con posibles diferencias respecto de 1492.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.dera-hydrology",
+      "source.openstreetmap"
+    ],
+    "citations": [
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapa 5, p. 137 y nota 31",
+        "supports": "Corredor principal, cruce del Darro y derivaciones agrícolas y urbanas."
+      }
+    ]
+  },
+  "water.acequia-tarramonta": {
+    "today": "El cruce aproximado se sitúa al este de la confluencia Darro-Genil, en el entorno meridional de La Loma; desde allí el ramal continúa hacia el suroeste.",
+    "evidence_note": "El trazado anterior cruzaba el Genil aguas abajo, al oeste, con orientación incorrecta. La revisión digitaliza el ramal rotulado Tarramonta en el Mapa 5 y comprueba el cruce oriental respecto de la confluencia. El punto exacto del paso medieval permanece aproximado.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.dera-hydrology"
+    ],
+    "citations": [
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapa 5, sector meridional (p. 138); nota 31",
+        "supports": "Derivación desde Gorda, cruce del Genil al este de la confluencia y continuidad hacia el suroeste."
+      }
+    ]
+  },
+  "water.acequia-arabuleila": {
+    "today": "El ramal se separa del corredor de Gorda al este de Tarramonta, cruza el Genil y continúa por la margen meridional hacia las tierras de riego.",
+    "evidence_note": "Se sigue el ramal meridional rotulado Arabuleila en el Mapa 5. Se corrige la anterior diagonal que atravesaba la confluencia sin reproducir su derivación ni su cruce oriental. Solo se cartografía el tramo incluido en la figura.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.dera-hydrology"
+    ],
+    "citations": [
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapa 5 y nota 31",
+        "supports": "Nombre, condición de derivación de Gorda y destino agrícola de Arabuleila."
+      }
+    ]
+  },
+  "water.acequia-realejo": {
+    "summary": "Derivación urbana del sistema de Gorda que entra desde el sector oriental y abastece el Realejo, con salida hacia la Vega.",
+    "context_1492": "El ramal servía huertas, talleres y viviendas de la ciudad meridional. Su relación con la actual calle Santiago y los repartimientos próximos a los Molinos permite reconocer el corredor general.",
+    "today": "La red representa el corredor oriental, la penetración por el Realejo y una salida hacia Gorda. Los quiebros proceden de la reconstrucción publicada y no de un levantamiento de conducciones subterráneas.",
+    "evidence_note": "Se elimina el ramal corto trazado desde la confluencia hacia el norte. La nueva secuencia se contrasta con el Mapa 5 y la referencia textual a Santiago; la identificación de pequeños repartimientos sigue siendo aproximada.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.openstreetmap"
+    ],
+    "citations": [
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Apartado sobre la Acequia Gorda y el ramal del Realejo",
+        "supports": "Paso por la actual calle Santiago y dirección hacia la Vega."
+      }
+    ]
+  },
+  "water.acequia-cadi": {
+    "aliases": [
+      "Acequia del Candil",
+      "Acequia de las Tinajas"
+    ],
+    "today": "Se muestra el corredor alto meridional dentro del ámbito del Mapa 5. La captación en Aguas Blancas y su largo recorrido exterior no están representados.",
+    "evidence_note": "El corredor se revisa mediante el registro del Mapa 5 y la secuencia topográfica descrita en p. 139. La figura no rotula todos los tramos: la adscripción de este corredor alto se apoya también en el texto y se conserva como aproximada.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.junta-camino-cementerio-2014",
+      "source.openstreetmap"
+    ],
+    "citations": [
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Apartado sobre la Acequia del Cadí",
+        "supports": "Cronología, captación y abastecimiento de Mártires, Antequeruela y Mauror."
+      }
+    ]
+  },
+  "water.acequia-real-alhambra": {
+    "confidence": {
+      "location": "approximate",
+      "time": "secure"
+    },
+    "today": "Se representa la aproximación oriental al Generalife, el paso por el Patio de la Acequia y la entrada por el acueducto junto a la Torre del Agua. La captación de Jesús del Valle queda fuera del recorte.",
+    "evidence_note": "Se corrige el atajo anterior que no pasaba por el Generalife ni por el acueducto de entrada. Los tramos visibles y sus extremos se apoyan en OSM; los enlaces y la distribución interior se generalizan conforme al Patronato. No se afirma que la línea empiece en la toma del Darro.",
+    "geometry_source_refs": [
+      "source.alhambra-real-acequia",
+      "source.alhambra-torre-agua",
+      "source.openstreetmap"
+    ],
+    "citations": [
+      {
+        "source_id": "source.alhambra-real-acequia",
+        "locator": "Recorrido por Generalife y entrada a la Alhambra",
+        "supports": "Paso por el Patio de la Acequia y distribución palatina."
+      },
+      {
+        "source_id": "source.alhambra-torre-agua",
+        "locator": "Descripción del acueducto y la Torre del Agua",
+        "supports": "Punto de entrada del agua en el recinto amurallado."
+      }
+    ]
+  },
+  "bridge.carbon": {
+    "today": "La línea cruza el Darro soterrado al prolongar la calle Puente del Carbón, junto a la entrada del Corral. Resume el paso desaparecido; no reproduce su anchura medieval.",
+    "evidence_note": "Se retira el punto erróneo al noroeste de Bibarrambla. El eje de la calle conservada se prolonga sobre el cauce cubierto y se contrasta con la excavación del estribo de 1992. La reconstrucción del vano sigue siendo probable.",
+    "geometry_method": "reconstructed_from_multiple_sources"
+  },
+  "quarter.alcazaba-qadima": {
+    "today": "El recinto se extiende desde Monaita y las Pesas hasta las Tomasas y San Juan de los Reyes, incluyendo la ampliación zirí hacia San Miguel Bajo, San José y la Casa de la Lona.",
+    "evidence_note": "Se sustituye el pequeño polígono aislado por la envolvente de la Alcazaba Vieja desarrollada: Mapa 5 registrado y recorrido descrito en el PEPRI, pp. 63-64. Se distinguen así el núcleo primitivo y el recinto zirí ampliado, sin atribuir todo el perímetro a una sola fase. Comparte límites con Axares y al-Bayyazin.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.junta-monaita-wall-2000",
+      "source.openstreetmap"
+    ],
+    "citations": [
+      {
+        "source_id": "source.granada-pepri-islamic-city",
+        "locator": "Memoria urbana, pp. 63-64 (PDF 65-66)",
+        "supports": "Itinerario Monaita–Pesas–Tomasas–San Juan de los Reyes–Lona, con sus ampliaciones."
+      },
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapa 5",
+        "supports": "Forma del recinto y contacto con Axares y el arrabal septentrional."
+      }
+    ]
+  },
+  "quarter.axares": {
+    "today": "Sector entre el recinto de la Alcazaba Vieja, las laderas de la Victoria y el Darro. Su borde occidental se relaciona con la coracha de Bab al-Difaf.",
+    "evidence_note": "El contorno se reconstruye conjuntamente con la Alcazaba y al-Bayyazin. Su frente fluvial reutiliza el Darro; la línea común con la Alcazaba se digitaliza una sola vez. Se eliminan solapes y bordes inconexos, pero los tramos desaparecidos conservan confianza aproximada.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.alhambra-banuelo",
+      "source.dera-hydrology",
+      "source.openstreetmap"
+    ],
+    "citations": [
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapas 4 y 5",
+        "supports": "Relación de Axares con la Alcazaba, la coracha y el Darro."
+      },
+      {
+        "source_id": "source.granada-pepri-islamic-city",
+        "locator": "Memoria urbana, pp. 63-65 y 88",
+        "supports": "Recintos sucesivos del Albaicín y extensión hacia Axares."
+      },
+      {
+        "source_id": "source.alhambra-banuelo",
+        "locator": "Contexto de Bab al-Difaf y Axares",
+        "supports": "Coracha y relación con los accesos de la Victoria."
+      }
+    ]
+  },
+  "quarter.albayyazin": {
+    "name": "Arrabal del Albaicín / al-Bayyazin",
+    "aliases": [
+      "Albayzín",
+      "Rabad al-Bayyazin",
+      "Los Alconeros",
+      "Barrio de los Alconeros"
+    ],
+    "today": "El arrabal ocupa el espacio comprendido entre la cerca exterior nazarí y los recintos anteriores de la Alcazaba Vieja y Axares. La denominación «Los Alconeros» se recoge como rótulo del Mapa 5, no como etimología demostrada.",
+    "evidence_note": "El borde exterior mantiene los lienzos conservados y anclajes ya contrastados con OSM y el PEPRI. Los bordes interiores son compartidos con Qadima y Axares. Así se sustituyen las manchas separadas por recintos contiguos; no se reconstruyen límites de cada barrio menor ni una ocupación edificada homogénea.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.granada-albaicin-wall-route",
+      "source.openstreetmap"
+    ],
+    "citations": [
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapa 5, rótulo «Barrio de los Alconeros / Rabat Al-bayyazin»",
+        "supports": "Identificación del arrabal septentrional y contacto con los recintos anteriores."
+      },
+      {
+        "source_id": "source.granada-pepri-islamic-city",
+        "locator": "Memoria urbana, p. 88 y plano del Albaicín nazarí",
+        "supports": "Envolvente tardonazarí contrastada con los lienzos conservados."
+      }
+    ]
+  },
+  "quarter.ramla": {
+    "name": "Arrabal del Arenal / la Rambla",
+    "today": "Franja alargada al exterior occidental de la medina, relacionada con Mesones y Bibarrambla. El contorno no delimita todo el posterior barrio de la Magdalena.",
+    "evidence_note": "El Mapa 5 registrado y el esquema de Isac en el PEPRI, p. 88, muestran una franja aproximadamente rectangular y oblicua adosada al recinto. Se sustituye el anterior hexágono y se recorta el encuentro con la cerca de la medina; los bordes exteriores siguen siendo aproximados.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.granada-centre-plan",
+      "source.openstreetmap"
+    ],
+    "citations": [
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapa 5, «Arrabal del Arenal»",
+        "supports": "Forma alargada junto al límite occidental de la medina."
+      },
+      {
+        "source_id": "source.granada-pepri-islamic-city",
+        "locator": "Memoria urbana, p. 88, plano de Isac",
+        "supports": "Contraste de la posición y forma del Arenal en la ciudad nazarí."
+      }
+    ]
+  },
+  "quarter.alfajjarin": {
+    "today": "Sector al este de la cerca interior del Mauror, entre las puertas antiguas, el pie de la Sabika y la transición de Campo del Príncipe hacia la Loma.",
+    "evidence_note": "La revisión corrige la ocupación anterior de gran parte de la medina al oeste de la cerca interior. El Mapa 5 y el esquema de Isac sitúan el arrabal al este de ella. El límite con la Loma es interpretativo y compartido; la especialización alfarera no implica que todos sus solares fueran talleres.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.granada-centre-plan",
+      "source.junta-porteria-santo-domingo-2012",
+      "source.openstreetmap"
+    ],
+    "modern_name": "Ladera bajo la Sabika y entorno de Campo del Príncipe",
+    "citations": [
+      {
+        "source_id": "source.granada-centre-plan",
+        "locator": "Memoria, p. 22, apartado «La ciudad islámica»",
+        "supports": "Nombre, actividad alfarera y relación con Garnata al-Yahud y los barrios meridionales."
+      },
+      {
+        "source_id": "source.junta-belen-2008",
+        "locator": "Descripción del sector y excavación de la maqbara de Bab al-Fajjarin",
+        "supports": "Anclaje arqueológico de la Puerta de los Alfareros, su necrópolis y el contexto del arrabal."
+      },
+      {
+        "source_id": "source.junta-cuesta-pescado-2023",
+        "locator": "Contexto histórico y arqueológico de los arrabales meridionales",
+        "supports": "Contigüidad de al-Fajjarin y al-Nayd, incorporación conjunta al recinto y localización de la necrópolis oriental en Campo del Príncipe."
+      },
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+        "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+      }
+    ]
+  },
+  "quarter.loma": {
+    "today": "Sector meridional de expansión, entre la cerca interior del Realejo y el recinto exterior de Solares, Vistillas y Los Mártires, contiguo a los Alfareros.",
+    "evidence_note": "El borde occidental se ajusta a la cerca interior, el exterior conserva los anclajes arqueológicos previos y el contacto con Alfareros se comparte sin huecos ni solapes. La división entre los dos arrabales sigue siendo interpretativa. Antequeruela se mantiene como ámbito tardío superpuesto, no como partición de idéntico rango.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.granada-centre-plan",
+      "source.junta-porteria-santo-domingo-2012",
+      "source.junta-hoteles-belen-2020",
+      "source.openstreetmap"
+    ],
+    "citations": [
+      {
+        "source_id": "source.granada-centre-plan",
+        "locator": "Memoria, p. 22, apartado «La ciudad islámica»",
+        "supports": "Identificación de la Loma como expansión de los Alfareros y relación con Bib Neched o Puerta de los Molinos."
+      },
+      {
+        "source_id": "source.junta-belen-2008",
+        "locator": "Contexto histórico del Realejo medieval y trazado de la cerca sur",
+        "supports": "Relación espacial entre la Loma, la Antequeruela, San Cecilio, Molinos y Vistillas de los Ángeles."
+      },
+      {
+        "source_id": "source.junta-porteria-santo-domingo-2012",
+        "locator": "pp. 4-6, formación, cerca y usos del arrabal de al-Nayd",
+        "supports": "Contigüidad con al-Fajjarin, puertas exteriores, huertas, alfares y necrópolis incorporados al recinto."
+      },
+      {
+        "source_id": "source.junta-hoteles-belen-2020",
+        "locator": "Resumen y contexto histórico-arqueológico",
+        "supports": "Borde meridional agrícola y funerario de La Loma y relación con la cerca hasta Puerta de los Molinos."
+      },
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+        "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+      }
+    ]
+  },
+  "walls.mauror-realejo-inner": {
+    "evidence_note": "Se corrige una incoherencia interna: la antigua línea no pasaba por las puertas de Alfareros y Mauror publicadas y arrancaba en la Puerta del Pescado pese a describir el Cuarto Real. El corredor se enlaza ahora con los dos puntos documentados y el frente de Cuesta de Aixa. No se impone el contorno de los siglos XI-XIII sobre todas las ampliaciones nazaríes; los enlaces siguen siendo aproximados."
+  },
+  "walls.alcazaba-qadima-inner": {
+    "today": "Recinto zirí desarrollado entre Monaita, las Pesas, las Tomasas y San Juan de los Reyes, con enlaces reconstruidos hasta la Lona.",
+    "evidence_note": "La línea y el polígono se reconstruyen juntos conforme al Mapa 5 y al itinerario del PEPRI, pp. 63-64. La coincidencia geométrica expresa una sola hipótesis editorial; no demuestra que todo el circuito sea conservado, coetáneo o igualmente seguro.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.junta-monaita-wall-2000",
+      "source.openstreetmap"
+    ],
+    "citations": [
+      {
+        "source_id": "source.junta-monaita-wall-2000",
+        "locator": "Estudio histórico y resultados arqueológicos",
+        "supports": "Recorrido, puertas y fábrica conservada de la cerca de la Alcazaba Qadima."
+      },
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+        "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+      }
+    ]
+  },
+  "walls.axares-inner": {
+    "evidence_note": "Circuito interpretativo reconstruido con el barrio, compartiendo el tramo de contacto con Qadima y el frente del Darro. La correspondencia entre cerca y envolvente territorial es aproximada; el río se usa como eje de referencia del frente, no como huella de cimentación.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.alhambra-banuelo",
+      "source.dera-hydrology",
+      "source.openstreetmap"
+    ],
+    "citations": [
+      {
+        "source_id": "source.junta-carmen-negro-2005",
+        "locator": "Contexto urbano medieval",
+        "supports": "Configuración del recinto de Axares y problemas de identificación de sus accesos."
+      },
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+        "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+      }
+    ]
+  },
+  "urban.albaicin": {
+    "today": "Unión de las envolventes de la Alcazaba Vieja, Axares y el arrabal de al-Bayyazin. La calle Elvira atraviesa la medina y deja de emplearse como frontera artificial de estos recintos.",
+    "evidence_note": "Derivación geométrica de tres recintos contiguos. El borde exterior conserva la cerca nazarí auditada y los interiores se contrastan con el Mapa 5 y el PEPRI. No equivale al barrio administrativo actual.",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.granada-albaicin-wall-route",
+      "source.openstreetmap",
+      "source.dera-hydrology"
+    ],
+    "citations": [
+      {
+        "source_id": "source.granada-pepri-islamic-city",
+        "locator": "Anexo V, Memoria urbana, pp. 88-90 y plano «La ciudad nazarí en el ámbito del PEPRI»",
+        "supports": "Organización del Albaicín nazarí mediante cercas, puertas, ejes radiales y adarves."
+      },
+      {
+        "source_id": "source.alhambra-fortified-city-guide",
+        "locator": "p. 7, «Los barrios de Granada y sus murallas»",
+        "supports": "Relación espacial entre el Albaicín, la medina y la Alhambra."
+      },
+      {
+        "source_id": "source.granada-albaicin-wall-route",
+        "locator": "Recorrido de la muralla del Albayzín",
+        "supports": "Trazado de la cerca desde la Puerta de Guadix, al final del Paseo de los Tristes, por San Miguel Alto y Fajalauza hasta la Puerta de Elvira."
+      },
+      {
+        "source_id": "source.dera-hydrology",
+        "locator": "Eje hidrográfico del río Darro",
+        "supports": "Eje moderno empleado como referencia reproducible para el límite meridional."
+      },
+      {
+        "source_id": "source.granada-elvira-gate",
+        "locator": "Emplazamiento del Castillo de la Puerta de Elvira",
+        "supports": "Extremo occidental común de la cerca exterior y de la calle Elvira."
+      },
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+        "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+      }
+    ]
+  },
+  "urban.lower-medina": {
+    "today": "Envolvente de la ciudad baja y sus ampliaciones meridionales. Al norte enlaza con la Alcazaba Vieja y Axares por sus cercas; incluye el sector de la medina a ambos lados de calle Elvira.",
+    "evidence_note": "El borde norte se revisa junto con los recintos del Albaicín, sustituyendo el cierre artificial por calle Elvira. El perímetro exterior meridional conserva la reconstrucción arqueológica previa. Esta entidad agrega la medina y sus arrabales incorporados; no afirma que todos fueran un único barrio.",
+    "geometry_source_refs": [
+      "source.granada-pepri-islamic-city",
+      "source.granada-centre-plan",
+      "source.junta-western-wall-2006",
+      "source.junta-gran-capitan-2015",
+      "source.granada-elvira-gate",
+      "source.alhambra-bib-rambla-gate",
+      "source.granada-puerta-granadas",
+      "source.alhambra-arms-gate",
+      "source.junta-aguado-2009",
+      "source.junta-hoteles-belen-2020",
+      "source.junta-porteria-santo-domingo-2012",
+      "source.openstreetmap",
+      "source.dera-hydrology",
+      "source.ujaen-water-route-2025"
+    ],
+    "citations": [
+      {
+        "source_id": "source.granada-pepri-islamic-city",
+        "locator": "Anexo V, Memoria urbana, pp. 88-90",
+        "supports": "Estructura de la medina, eje de Elvira y localización del centro religioso y comercial."
+      },
+      {
+        "source_id": "source.granada-elvira-gate",
+        "locator": "Ficha 22, descripción histórica",
+        "supports": "Relación de la Puerta de Elvira con la calle del mismo nombre y la cerca de la medina."
+      },
+      {
+        "source_id": "source.junta-western-wall-2006",
+        "locator": "pp. 1830-1831, descripción de la cerca de Poniente",
+        "supports": "Perímetro occidental y meridional de la ciudad baja hasta Torres Bermejas."
+      },
+      {
+        "source_id": "source.granada-puerta-granadas",
+        "locator": "Descripción histórica del lienzo defensivo",
+        "supports": "Conexión amurallada entre Torres Bermejas y la Alcazaba de la Alhambra."
+      },
+      {
+        "source_id": "source.alhambra-arms-gate",
+        "locator": "Camino histórico entre la Alhambra y Granada",
+        "supports": "Relación entre la Puerta de las Armas, el Darro y la ciudad baja."
+      },
+      {
+        "source_id": "source.junta-aguado-2009",
+        "locator": "Contexto histórico-arqueológico y figura 1",
+        "supports": "Recorrido de la cerca Sur que incorporó Alfareros, Nayd y Antequeruela al recinto urbano y ascendía hacia la Alhambra."
+      },
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+        "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+      }
+    ]
+  },
+  "urban.late-nasrid-extent": {
+    "today": "Unión reproducible del Albaicín, la ciudad baja, la Alhambra y el Arenal. El Generalife permanece como almunia separada. La envolvente expresa extensión urbana y espacios interiores, no densidad edificada uniforme.",
+    "evidence_note": "Se recalcula después de corregir los recintos compartidos y añadir el Arenal exterior a la medina. No se suavizan ni rellenan automáticamente los huecos históricos; se conserva la incertidumbre de los bordes reconstruidos.",
+    "geometry_source_refs": [
+      "source.granada-pepri-islamic-city",
+      "source.granada-centre-plan",
+      "source.junta-western-wall-2006",
+      "source.alhambra-fortified-city-guide",
+      "source.granada-albaicin-wall-route",
+      "source.ugr-abbas-defences",
+      "source.junta-aguado-2009",
+      "source.junta-hoteles-belen-2020",
+      "source.openstreetmap",
+      "source.dera-hydrology",
+      "source.ujaen-water-route-2025"
+    ],
+    "citations": [
+      {
+        "source_id": "source.granada-pepri-islamic-city",
+        "locator": "Anexo V, Memoria urbana, p. 88 y cartografía asociada",
+        "supports": "Desarrollo máximo de la Granada nazarí, sectores, cercas, ejes y ríos."
+      },
+      {
+        "source_id": "source.alhambra-fortified-city-guide",
+        "locator": "pp. 7-9",
+        "supports": "Lectura conjunta de los barrios amurallados, la Alhambra y su posición topográfica."
+      },
+      {
+        "source_id": "source.ugr-abbas-defences",
+        "locator": "Capítulos dedicados a Granada",
+        "supports": "Contraste académico del sistema defensivo nazarí y sus distintos recintos."
+      },
+      {
+        "source_id": "source.junta-aguado-2009",
+        "locator": "Contexto histórico-arqueológico y figura 1",
+        "supports": "Extensión del recinto tardonazarí por la cerca Sur alrededor de Alfareros, Nayd y Antequeruela."
+      },
+      {
+        "source_id": "source.ujaen-water-route-2025",
+        "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+        "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+      }
+    ]
+  }
+}

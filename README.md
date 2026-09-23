@@ -1,109 +1,127 @@
 # Granada Histórica
 
-Granada Histórica is an interactive historical atlas that will place a sourced,
-uncertainty-aware reconstruction of **Granada, c. 1492** over the modern city.
-The first release is deliberately focused on the final years of Nasrid Granada.
+**Español** | [English](README.en.md)
 
-The map is intended to explain not only what may have occupied a place, but how
-securely its location and date are known, which evidence supports the
-reconstruction, what happened after 1492, and what is there today.
+Granada Histórica es un atlas histórico interactivo que superpone sobre la
+ciudad actual una reconstrucción documentada y consciente de la incertidumbre
+de **Granada hacia 1492**. La primera versión se centra deliberadamente en los
+últimos años de la Granada nazarí.
 
-## Project status
+El mapa pretende explicar no solo qué pudo haber ocupado un lugar, sino también
+con qué grado de certeza se conocen su ubicación y su fecha, qué pruebas
+respaldan la reconstrucción, qué sucedió después de 1492 y qué existe allí en la
+actualidad.
 
-Milestones **M0 — Specification and repository setup**, **M1 — Working map
-shell**, **M2 — Historical data system**, **M3 — Historical morphology**, and
-**M4 — First reviewed dataset**, and **M5 — Search, comparison, and polish** are
-complete. The app
-now renders validated historical GeoJSON over an
-interactive map of Granada, distinguishes categories and levels of spatial
-certainty, supports normalized search, comparison controls, filtering, URL-based
-selection, and exposes historical context, provenance, name attestation,
-survival status, and citations in each feature card. M6 public proof-of-concept
-review remains in progress.
+## Estado del proyecto
 
-The working dataset contains 58 cited and publishable features and a 70-entry
-historical gazetteer. None is assumed spatially correct:
-each geometry must pass the review recorded in `data/geometry-audit.json`
-before it is shown on the public map. Its city-scale morphology includes
-the Albaicín, lower medina, Alhambra and Generalife; the Darro and Genil;
-the principal acequias, wall systems, gates, bridges, and movement corridors;
-and an explicitly approximate late-Nasrid urban extent. Labels and confidence styling are designed
-to communicate the form of the city before a user opens an individual feature.
+Se han completado los hitos **M0 — Especificación y configuración del
+repositorio**, **M1 — Estructura funcional del mapa**, **M2 — Sistema de datos
+históricos**, **M3 — Morfología histórica**, **M4 — Primer conjunto de datos
+revisado** y **M5 — Búsqueda, comparación y acabado**. La aplicación representa
+ahora datos GeoJSON históricos validados sobre un mapa interactivo de Granada,
+distingue categorías y niveles de certeza espacial, admite búsqueda normalizada,
+controles de comparación, filtrado y selección mediante URL, y muestra en la
+ficha de cada elemento su contexto histórico, procedencia, testimonios del
+nombre, estado de conservación y citas. La revisión pública de la prueba de
+concepto M6 sigue en curso.
 
-The corrective pass, M4 review, and first M6 expansion have verified all 58 geometries. The lower-medina wall is
-reconstructed from a documented sequence of modern streets and archaeological
-anchors; the lower-medina area is derived from that enclosure and other reviewed
-axes; and the late-Nasrid urban extent is the reproducible union of the verified
-Albaicín, lower-medina, and Alhambra sectors rather than a hand-drawn envelope.
-The first monument set adds the two major mosques, Alcaicería, Zacatín, Corral
-del Carbón, Maristán, El Bañuelo, Puerta de Guadix, and Puerta de los Tableros /
-Puente del Cadí, with surviving fabric kept distinct from representative points
-and approximate reconstructions.
+El conjunto de datos de trabajo contiene 58 elementos citados y publicables y
+un nomenclátor histórico con 70 entradas. No se presupone que ninguno sea
+espacialmente correcto: cada geometría debe superar la revisión registrada en
+`data/geometry-audit.json` antes de mostrarse en el mapa público. Su morfología a
+escala urbana incluye el Albaicín, la medina baja, la Alhambra y el Generalife;
+los ríos Darro y Genil; las principales acequias, sistemas de murallas, puertas,
+puentes y ejes de circulación; y una extensión urbana tardonazarí explícitamente
+aproximada. Las etiquetas y los estilos de confianza están diseñados para
+comunicar la forma de la ciudad antes de que el usuario abra un elemento
+concreto.
 
-A second urban-structure set adds six explicitly approximate historical quarters:
-Alcazaba Qadima, Axares, Garnata al-Yahud, the Alfareros quarter,
-Antequeruela, and the Loma quarter. Their map labels sit below the broader
-city sectors in the information hierarchy; historical names are retained where
-useful, while Spanish descriptions and modern landmarks make each area legible.
+La fase de corrección, la revisión M4 y la primera ampliación M6 han verificado
+las 58 geometrías. La muralla de la medina baja se reconstruye a partir de una
+secuencia documentada de calles actuales y referencias arqueológicas; el área de
+la medina baja se deriva de ese recinto y de otros ejes revisados; y la extensión
+urbana tardonazarí es la unión reproducible de los sectores verificados del
+Albaicín, la medina baja y la Alhambra, en lugar de una envolvente dibujada a
+mano. El primer conjunto de monumentos incorpora las dos mezquitas principales,
+la Alcaicería, el Zacatín, el Corral del Carbón, el Maristán, El Bañuelo, la
+Puerta de Guadix y la Puerta de los Tableros / Puente del Cadí, manteniendo los
+restos conservados diferenciados de los puntos representativos y de las
+reconstrucciones aproximadas.
 
-A subsequent eastern and southern urban-edge review adds al-Ramla, al-Bayyazin,
-the Fajjarin/Assal cemetery zone, and four gates associated with the late-Nasrid
-enclosure. It also separates the interior Mauror–Realejo wall from the outer wall,
-corrects Antequeruela and the relationship between Alfareros and the Loma, and
-revises the lower-medina boundary without presenting uncertain stretches as exact.
+Un segundo conjunto de estructura urbana añade seis barrios históricos
+explícitamente aproximados: Alcazaba Qadima, Axares, Garnata al-Yahud, el barrio
+de los Alfareros, Antequeruela y el barrio de la Loma. Sus etiquetas aparecen por
+debajo de los sectores urbanos más amplios en la jerarquía informativa; se
+conservan los nombres históricos cuando resultan útiles, mientras que las
+descripciones en español y los hitos actuales hacen comprensible cada zona.
 
-The first M6 expansion adds Aynadamar, Axares, Romayla, Cadí, Gorda, its Realejo
-branch, Tarramonta, Arabuleila, and the Acequia Real; the Puente del Carbón; the Darro and Molinos
-movement corridors; and the interior enclosures of the Alcazaba Qadima and
-Axares. The gazetteer also retains twelve candidate, disputed, rejected, or
-unlocated names without inventing map points for them. A subsequent water-layer
-review corrects Gorda, Aynadamar, Axares/San Juan, Romayla, Bab al-Difaf, and
-the displaced Alcazaba Qadima and Axares wall circuits. Successive walls now
-state whether they were outer, inner, or palatine enclosures around 1492.
+Una revisión posterior de los bordes urbanos oriental y meridional incorpora
+al-Ramla, al-Bayyazin, la zona del cementerio Fajjarin/Assal y cuatro puertas
+asociadas al recinto tardonazarí. También separa la muralla interior del
+Mauror–Realejo de la muralla exterior, corrige Antequeruela y la relación entre
+Alfareros y la Loma, y revisa el límite de la medina baja sin presentar como
+exactos los tramos inciertos.
 
-See:
+La primera ampliación M6 añade Aynadamar, Axares, Romayla, Cadí, Gorda, su ramal
+del Realejo, Tarramonta, Arabuleila y la Acequia Real; el Puente del Carbón; los
+ejes de circulación del Darro y de Molinos; y los recintos interiores de la
+Alcazaba Qadima y Axares. El nomenclátor también conserva doce nombres
+candidatos, controvertidos, descartados o no localizados sin inventar puntos en
+el mapa para ellos. Una revisión posterior de la capa de aguas corrige Gorda,
+Aynadamar, Axares/San Juan, Romayla, Bab al-Difaf y los trazados desplazados de
+las murallas de la Alcazaba Qadima y Axares. Las murallas sucesivas indican ahora
+si hacia 1492 eran recintos exteriores, interiores o palatinos.
 
-- [Product specification](docs/SPEC.md)
-- [Implementation roadmap](docs/ROADMAP.md)
-- [Licensing decision](docs/decisions/0001-project-licensing.md)
-- [Data workspace](data/README.md)
-- [GIS workflow](gis/README.md)
+La auditoría del 23 de septiembre de 2026 añade un registro afín reproducible
+del plano fuente, corrige el abastecimiento de la Mezquita Mayor por Axares,
+los cruces orientales del Genil y el Puente del Carbón, y reconstruye límites
+compartidos entre los barrios. Las decisiones, discrepancias entre fuentes y
+limitaciones se documentan en [la metodología](docs/WATER-NETWORK-METHOD.md).
 
-## Principles
+Véase:
 
-- Prefer historical usefulness to decorative mapping.
-- Show uncertainty instead of disguising it as precise geometry.
-- Keep modern Granada legible for comparison.
-- Put evidence and citations in the feature interface.
-- Use open, portable formats and a static-site architecture.
-- Publish only reviewed historical features.
+- [Especificación del producto](docs/SPEC.md)
+- [Hoja de ruta de implementación](docs/ROADMAP.md)
+- [Decisión sobre licencias](docs/decisions/0001-project-licensing.md)
+- [Área de trabajo de datos](data/README.md)
+- [Flujo de trabajo SIG](gis/README.md)
 
-## Stack
+## Principios
 
-- Vite, React, and TypeScript
+- Priorizar la utilidad histórica frente a la cartografía decorativa.
+- Mostrar la incertidumbre en lugar de ocultarla tras una geometría precisa.
+- Mantener legible la Granada actual para facilitar la comparación.
+- Incluir las pruebas y citas en la interfaz de cada elemento.
+- Utilizar formatos abiertos y portables y una arquitectura de sitio estático.
+- Publicar únicamente elementos históricos revisados.
+
+## Tecnologías
+
+- Vite, React y TypeScript
 - MapLibre GL JS
-- GeoJSON in WGS84 (EPSG:4326) as the canonical public data format
-- QGIS in ETRS89 / UTM zone 30N (EPSG:25830) for GIS editing
-- Zod-compatible data validation and Vitest tests
-- GitHub Pages deployment through GitHub Actions
+- GeoJSON en WGS84 (EPSG:4326) como formato canónico de los datos públicos
+- QGIS en ETRS89 / UTM huso 30N (EPSG:25830) para la edición SIG
+- Validación de datos compatible con Zod y pruebas con Vitest
+- Despliegue en GitHub Pages mediante GitHub Actions
 
-No backend, account system, paid GIS subscription, or proprietary canonical
-data format is required for the proof of concept.
+La prueba de concepto no requiere servidor, sistema de cuentas, suscripción SIG
+de pago ni ningún formato de datos canónico propietario.
 
-## Local development
+## Desarrollo local
 
-Requirements: Node.js 24 and npm. QGIS LTR is also required for cartographic
-editing, but not for ordinary frontend development.
+Requisitos: Node.js 24 y npm. QGIS LTR también es necesario para la edición
+cartográfica, pero no para el desarrollo habitual de la interfaz.
 
 ```sh
 npm install
 npm run dev
 ```
 
-Vite serves the project at
-`http://localhost:5173/granada-historica/` by default.
+De forma predeterminada, Vite sirve el proyecto en
+`http://localhost:5173/granada-historica/`.
 
-Before submitting changes, run the same checks used by CI:
+Antes de enviar cambios, ejecute las mismas comprobaciones que utiliza la
+integración continua:
 
 ```sh
 npm run lint
@@ -112,71 +130,75 @@ npm test
 npm run build
 ```
 
-Copy `.env.example` to `.env.local` to override the default
-MapLibre-compatible basemap style URL. Never commit provider secrets.
+Copie `.env.example` como `.env.local` para sustituir la URL predeterminada del
+estilo de mapa base compatible con MapLibre. No incluya nunca secretos de
+proveedores en el repositorio.
 
-To create the local EPSG:25830 cartographic workspace or export reviewed QGIS
-edits back to the public EPSG:4326 GeoJSON files:
+Para crear el entorno cartográfico local en EPSG:25830 o exportar las ediciones
+revisadas de QGIS a los archivos GeoJSON públicos en EPSG:4326:
 
 ```powershell
 npm run gis:bootstrap
 npm run gis:export
 ```
 
-See [gis/README.md](gis/README.md) before rebuilding a workspace that contains
-unexported changes.
+Consulte [gis/README.md](gis/README.md) antes de volver a generar un entorno que
+contenga cambios sin exportar.
 
-## Deployment
+## Despliegue
 
-The deployment workflow validates the historical dataset, builds the app, and
-publishes `dist/` on pushes to `main`. The project URL is:
+El flujo de despliegue valida el conjunto de datos históricos, compila la
+aplicación y publica `dist/` con cada envío a `main`. La URL del proyecto es:
 
 `https://aztlon.github.io/granada-historica/`
 
-## Repository layout
+## Estructura del repositorio
 
 ```text
-docs/                 Product specification, roadmap, and decisions
-data/geo/             Canonical public point, line, and area GeoJSON
-data/content/         Optional long-form feature content
-gis/                  QGIS workflow and project files
-src/                  Web application source (from M1)
-public/assets/         Publicly reusable static assets
-scripts/               Data and build utilities
-.github/workflows/     CI and deployment workflows
+docs/                 Especificación del producto, hoja de ruta y decisiones
+data/geo/             GeoJSON canónico público de puntos, líneas y áreas
+data/content/         Contenido extenso opcional de los elementos
+gis/                  Flujo de trabajo y archivos de proyecto de QGIS
+src/                  Código fuente de la aplicación web (desde M1)
+public/assets/         Recursos estáticos públicos y reutilizables
+scripts/               Herramientas de datos y compilación
+.github/workflows/     Flujos de integración continua y despliegue
 ```
 
-Restricted research scans and unlicensed third-party material must not be
-committed.
+No deben incorporarse al repositorio escaneos de investigación restringidos ni
+material de terceros sin licencia.
 
-## Milestones
+## Hitos
 
-The proof of concept progresses from the working map shell (M1), through the
-validated historical data system and city morphology, to at least 30 reviewed
-features and a public usability pass. The detailed gates and issue-sized tasks
-are in [docs/ROADMAP.md](docs/ROADMAP.md).
+La prueba de concepto avanza desde la estructura funcional del mapa (M1),
+pasando por el sistema validado de datos históricos y la morfología urbana,
+hasta alcanzar al menos 30 elementos revisados y una fase pública de evaluación
+de usabilidad. Los criterios detallados y las tareas dimensionadas como
+incidencias se encuentran en [docs/ROADMAP.md](docs/ROADMAP.md).
 
-## Contributing
+## Contribuciones
 
-Before contributing historical material, read the methodology and provenance
-requirements in [docs/SPEC.md](docs/SPEC.md). Every public feature must have a
-stable ID, explicit spatial and temporal confidence, geometry provenance, at
-least one resolvable citation, `publishable` review status, and a `verified`
-entry in the geometry audit.
+Antes de aportar material histórico, lea los requisitos de metodología y
+procedencia en [docs/SPEC.md](docs/SPEC.md). Cada elemento público debe tener un
+identificador estable, niveles explícitos de confianza espacial y temporal,
+procedencia de la geometría, al menos una cita accesible, estado de revisión
+`publishable` y una entrada `verified` en la auditoría de geometrías.
 
-Add canonical geometry to the matching file in `data/geo/`, register every
-referenced source in `data/sources.json`, and document the check in
-`data/geometry-audit.json`. A feature appears on the map only when both its
-content and geometry have passed review; `npm run validate:data` reports broken
-identifiers, geometry, citations, coordinate ranges, audit coverage, and
-publication requirements.
+Añada la geometría canónica al archivo correspondiente de `data/geo/`, registre
+cada fuente citada en `data/sources.json` y documente la comprobación en
+`data/geometry-audit.json`. Un elemento aparece en el mapa solo cuando tanto su
+contenido como su geometría han superado la revisión; `npm run validate:data`
+informa de identificadores, geometrías, citas, rangos de coordenadas, cobertura
+de auditoría y requisitos de publicación que sean incorrectos.
 
-Do not commit source imagery, copied datasets, or traced geometry unless its
-reuse terms have been checked and recorded.
+No incorpore imágenes de fuentes, conjuntos de datos copiados ni geometrías
+calcadas a menos que se hayan comprobado y registrado sus condiciones de
+reutilización.
 
-## License
+## Licencia
 
-Original software code is licensed under the MIT License. Original data and
-documentation are licensed under Creative Commons Attribution 4.0 International
-(CC BY 4.0). Third-party material is excluded and remains under its respective
-terms. See [LICENSE](LICENSE) for details.
+El código original del programa se distribuye bajo la licencia MIT. Los datos y
+la documentación originales se distribuyen bajo la licencia Creative Commons
+Reconocimiento 4.0 Internacional (CC BY 4.0). El material de terceros queda
+excluido y sujeto a sus respectivas condiciones. Consulte [LICENSE](LICENSE)
+para obtener más información.

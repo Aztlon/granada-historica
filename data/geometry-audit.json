@@ -3,7 +3,11 @@
     "feature_id": "religious.madraza-yusufiyya",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.ugr-madraza"],
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.ugr-madraza"
+    ],
     "check_method": "Centroide de la huella moderna de OpenStreetMap, contrastado con la ortofoto PNOA y la identificación institucional del inmueble.",
     "notes": "El punto representa el Palacio de la Madraza actual; no afirma una planta medieval completa."
   },
@@ -11,7 +15,9 @@
     "feature_id": "gate.elvira",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.dera-protected-heritage"],
+    "geometry_source_refs": [
+      "source.dera-protected-heritage"
+    ],
     "check_method": "Centroide de la delimitación oficial del bien protegido, contrastado con la fábrica visible.",
     "notes": "Sustituye el punto provisional, desplazado al oeste del arco conservado."
   },
@@ -19,7 +25,9 @@
     "feature_id": "gate.monaita",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.dera-protected-heritage"],
+    "geometry_source_refs": [
+      "source.dera-protected-heritage"
+    ],
     "check_method": "Centroide de la delimitación oficial del bien protegido, contrastado con la fábrica visible.",
     "notes": "El marcador representa el acceso conservado, no el conjunto completo de la cerca."
   },
@@ -27,7 +35,11 @@
     "feature_id": "gate.fajalauza",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.granada-pepri-islamic-city"],
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.granada-pepri-islamic-city"
+    ],
     "check_method": "Centroide de la huella conservada en OpenStreetMap, contrastado con la ortofoto PNOA y la cartografía patrimonial municipal.",
     "notes": "El punto identifica la puerta conservada en el cruce de la carretera con la cerca, no sus defensas anexas."
   },
@@ -35,7 +47,11 @@
     "feature_id": "gate.bib-rambla",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.alhambra-bib-rambla-gate", "source.openstreetmap", "source.granada-pepri-islamic-city"],
+    "geometry_source_refs": [
+      "source.alhambra-bib-rambla-gate",
+      "source.openstreetmap",
+      "source.granada-pepri-islamic-city"
+    ],
     "check_method": "Intersección actual de las calles Arco de las Orejas y Salamanca, identificada por el Patronato como emplazamiento original y contrastada con el hallazgo arqueológico de 2016 y la cartografía municipal.",
     "notes": "Sustituye el punto provisional, desplazado unos 200 m al oeste. El marcador no representa la puerta reconstruida en el bosque de la Alhambra ni su planta completa."
   },
@@ -43,7 +59,11 @@
     "feature_id": "gate.alhambra-arms",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.alhambra-arms-gate"],
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-arms-gate"
+    ],
     "check_method": "Nodo del acceso conservado en OpenStreetMap, contrastado con la ortofoto PNOA y la descripción institucional del Patronato.",
     "notes": "Sustituye el punto provisional, que estaba desplazado al norte de la Torre de las Armas."
   },
@@ -51,7 +71,11 @@
     "feature_id": "gate.alhambra-justice",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.alhambra-gates"],
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-gates"
+    ],
     "check_method": "Centroide de la Torre de la Justicia en OpenStreetMap, contrastado con la ortofoto PNOA y la descripción institucional del acceso.",
     "notes": "El marcador identifica el paso dentro del conjunto de la torre, no una medición del umbral."
   },
@@ -59,7 +83,11 @@
     "feature_id": "gate.alhambra-seven-floors",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.alhambra-gates"],
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-gates"
+    ],
     "check_method": "Nodo de la puerta en OpenStreetMap, contrastado con la ortofoto PNOA y la descripción institucional de su reconstrucción.",
     "notes": "Sustituye el punto provisional desplazado; la ficha mantiene la advertencia sobre la reconstrucción contemporánea."
   },
@@ -67,7 +95,11 @@
     "feature_id": "gate.alhambra-arrabal",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.alhambra-gates"],
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-gates"
+    ],
     "check_method": "Centroide de la huella de la Torre de los Picos en OpenStreetMap, contrastado con la ortofoto PNOA y la descripción institucional de la puerta bajo la torre.",
     "notes": "Sustituye el punto provisional, desplazado unos cientos de metros al este; el marcador identifica el complejo y no el umbral cubierto."
   },
@@ -75,7 +107,13 @@
     "feature_id": "water.darro",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.dera-hydrology", "source.openstreetmap", "source.granada-darro-vault", "source.junta-darro-reyes-catolicos", "source.granada-pepri-islamic-city"],
+    "geometry_source_refs": [
+      "source.dera-hydrology",
+      "source.openstreetmap",
+      "source.granada-darro-vault",
+      "source.junta-darro-reyes-catolicos",
+      "source.granada-pepri-islamic-city"
+    ],
     "check_method": "Eje DERA simplificado a 12 m para el tramo visible, enlazado con el conducto soterrado cartografiado en OpenStreetMap desde Plaza Nueva hasta el Genil y contrastado con documentación municipal, arqueológica e histórica.",
     "notes": "La continuidad y el corredor histórico son seguros; bajo Reyes Católicos, Puerta Real y Acera del Darro la posición es probable porque las obras de embovedado pudieron rectificar localmente el cauce medieval."
   },
@@ -83,7 +121,9 @@
     "feature_id": "water.genil",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.dera-hydrology"],
+    "geometry_source_refs": [
+      "source.dera-hydrology"
+    ],
     "check_method": "Recorte y simplificación a 12 m del eje hidrográfico oficial DERA en ETRS89 / UTM 30N, exportado a WGS84.",
     "notes": "Es una referencia del cauce moderno, no un deslinde ni una reconstrucción exacta del lecho de 1492."
   },
@@ -91,7 +131,12 @@
     "feature_id": "walls.albaicin-north",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.granada-pepri-islamic-city", "source.granada-albaicin-nasrid-wall"],
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.granada-pepri-islamic-city",
+      "source.granada-albaicin-nasrid-wall"
+    ],
     "check_method": "Trazado compuesto por los lienzos conservados cartografiados en OpenStreetMap entre la Alberzana, Fajalauza y San Miguel, contrastados con PNOA y el PEPRI, con conexiones aproximadas hasta las puertas documentadas.",
     "notes": "Sustituye el arco provisional, que discurría demasiado al norte. Los huecos entre fábricas conservadas siguen siendo reconstrucciones y no se presentan como restos visibles."
   },
@@ -99,7 +144,17 @@
     "feature_id": "walls.medina-lower",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-western-wall-2006", "source.junta-gran-capitan-2015", "source.granada-elvira-gate", "source.alhambra-bib-rambla-gate", "source.junta-aguado-2009", "source.junta-hoteles-belen-2020", "source.junta-porteria-santo-domingo-2012", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.granada-centre-plan",
+      "source.junta-western-wall-2006",
+      "source.junta-gran-capitan-2015",
+      "source.granada-elvira-gate",
+      "source.alhambra-bib-rambla-gate",
+      "source.junta-aguado-2009",
+      "source.junta-hoteles-belen-2020",
+      "source.junta-porteria-santo-domingo-2012",
+      "source.openstreetmap"
+    ],
     "check_method": "El frente de Poniente conserva la secuencia Puerta Elvira–Bibarrambla–Campillo–Cuesta de Aixa. Desde Cuesta del Pescado se sustituye el retorno por la cerca interior por el recorrido exterior publicado: Solares, Vistillas, Puerta de la Loma, Cerro de Ahabul y muralla meridional de la Alhambra.",
     "notes": "La revisión separa dos fases antes mezcladas. Los anclajes de Poniente, Cuarto Real y Cuesta del Pescado son más firmes; Solares–Vistillas y la subida a la Alhambra siguen siendo una reconstrucción aproximada."
   },
@@ -107,7 +162,11 @@
     "feature_id": "walls.alhambra-perimeter",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.alhambra-fortified-city-guide"],
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-fortified-city-guide"
+    ],
     "check_method": "Línea de muralla exterior de OpenStreetMap reproyectada a ETRS89 / UTM 30N, simplificada a 3 m y contrastada con PNOA y la guía institucional.",
     "notes": "Representa la fábrica exterior conservada como una línea continua; no diferencia fases ni incluye recintos interiores."
   },
@@ -115,7 +174,11 @@
     "feature_id": "route.elvira-axis",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-pepri-islamic-city", "source.granada-elvira-gate", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.granada-pepri-islamic-city",
+      "source.granada-elvira-gate",
+      "source.openstreetmap"
+    ],
     "check_method": "Eje de la calle Elvira actual trazado desde la Puerta de Elvira hasta Plaza Nueva con la geometría viaria de OpenStreetMap, contrastado con la identificación explícita del corredor en el PEPRI.",
     "notes": "La línea sigue el corredor conservado; no atribuye anchura ni rasante medieval y generaliza los encuentros transformados en ambos extremos."
   },
@@ -123,7 +186,11 @@
     "feature_id": "route.alhambra-arms-access",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.alhambra-arms-gate", "source.alhambra-fortified-city-guide", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.alhambra-arms-gate",
+      "source.alhambra-fortified-city-guide",
+      "source.openstreetmap"
+    ],
     "check_method": "Corredor reconstruido entre los emplazamientos del desaparecido Puente del Cadí y la Puerta de las Armas, extremos identificados por la guía institucional y comprobados sobre la topografía actual.",
     "notes": "Sustituye la polilínea provisional, que atravesaba la ciudad baja en sentido este-oeste. El trazado intermedio expresa el corredor de subida, no una rasante arqueológicamente levantada."
   },
@@ -131,7 +198,11 @@
     "feature_id": "royal.alhambra",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.openstreetmap", "source.pnoa-andalucia-2022", "source.alhambra-fortified-city-guide"],
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-fortified-city-guide"
+    ],
     "check_method": "Polígono derivado de la línea cerrada de la muralla exterior conservada, contrastada con PNOA y la guía institucional del recinto.",
     "notes": "Representa la ciudad palatina intramuros; no equivale al BIC actual ni incluye posesiones exteriores."
   },
@@ -139,39 +210,79 @@
     "feature_id": "royal.generalife",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.alhambra-plan-director-landscape", "source.openstreetmap", "source.alhambra-generalife"],
+    "geometry_source_refs": [
+      "source.alhambra-plan-director-landscape",
+      "source.openstreetmap",
+      "source.alhambra-generalife"
+    ],
     "check_method": "Selección del núcleo del Generalife y de las huertas Colorada, Grande, de la Mercería y de Fuente Peña cartografiadas en OpenStreetMap, contrastadas con su clasificación como espacios medievales islámicos en el Plan Director.",
     "notes": "Sustituye la gran envolvente provisional, desplazada al este. Los polígonos siguen ámbitos actuales supervivientes y no equivalen a un deslinde parcelario de 1492."
   },
   {
     "feature_id": "urban.albaicin",
     "status": "verified",
-    "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-pepri-islamic-city", "source.granada-albaicin-nasrid-wall", "source.granada-albaicin-wall-route", "source.granada-elvira-gate", "source.openstreetmap", "source.dera-hydrology"],
-    "check_method": "Polígono derivado de cuatro ejes reproducibles: la cerca exterior revisada desde la Puerta de Elvira; el cierre oriental reconstruido hasta la Puerta de Guadix al final del Paseo de los Tristes; el eje del Darro hasta Plaza Nueva; y el eje de la calle Elvira de vuelta a la puerta homónima.",
-    "notes": "Sustituye el cierre meridional dibujado a mano. La bajada entre el extremo conservado de la cerca y la desaparecida Puerta de Guadix es el único tramo sin eje material continuo y se representa mediante una conexión recta aproximada; los demás bordes reutilizan geometrías ya verificadas."
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.granada-albaicin-wall-route",
+      "source.openstreetmap",
+      "source.dera-hydrology"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "Derivación geométrica de tres recintos contiguos. El borde exterior conserva la cerca nazarí auditada y los interiores se contrastan con el Mapa 5 y el PEPRI. No equivale al barrio administrativo actual."
   },
   {
     "feature_id": "urban.lower-medina",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-western-wall-2006", "source.granada-puerta-granadas", "source.alhambra-arms-gate", "source.junta-aguado-2009", "source.junta-hoteles-belen-2020", "source.junta-porteria-santo-domingo-2012", "source.openstreetmap", "source.dera-hydrology"],
-    "check_method": "Polígono derivado de la cerca exterior tardonazarí completa: frente de Poniente, cerca Sur de al-Fajjarin y al-Nayd hasta la Alhambra, tramo occidental de la muralla palatina hasta la Puerta de las Armas, Darro y calle Elvira.",
-    "notes": "La revisión incorpora Realejo, Nayd y Antequeruela al recinto intramuros de 1492. El tramo Puerta de la Loma–Cerro de Ahabul–Alhambra permanece aproximado y no expresa densidad edificatoria."
+    "geometry_source_refs": [
+      "source.granada-pepri-islamic-city",
+      "source.granada-centre-plan",
+      "source.junta-western-wall-2006",
+      "source.junta-gran-capitan-2015",
+      "source.granada-elvira-gate",
+      "source.alhambra-bib-rambla-gate",
+      "source.granada-puerta-granadas",
+      "source.alhambra-arms-gate",
+      "source.junta-aguado-2009",
+      "source.junta-hoteles-belen-2020",
+      "source.junta-porteria-santo-domingo-2012",
+      "source.openstreetmap",
+      "source.dera-hydrology",
+      "source.ujaen-water-route-2025"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "El borde norte se revisa junto con los recintos del Albaicín, sustituyendo el cierre artificial por calle Elvira. El perímetro exterior meridional conserva la reconstrucción arqueológica previa. Esta entidad agrega la medina y sus arrabales incorporados; no afirma que todos fueran un único barrio."
   },
   {
     "feature_id": "urban.late-nasrid-extent",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.granada-pepri-islamic-city", "source.granada-centre-plan", "source.junta-western-wall-2006", "source.alhambra-fortified-city-guide", "source.granada-albaicin-wall-route", "source.junta-aguado-2009", "source.junta-hoteles-belen-2020", "source.openstreetmap", "source.dera-hydrology"],
-    "check_method": "Contorno exterior de los polígonos verificados del Albaicín, ciudad baja corregida y Alhambra, sustituyendo el cierre interior por Torres Bermejas por la cerca Sur exterior que rodea Nayd y alcanza la muralla meridional de la Alhambra.",
-    "notes": "No incorpora el Generalife y no implica ocupación homogénea. Hereda especialmente la incertidumbre del recorrido de la cerca exterior entre Solares, Vistillas y el Cerro de Ahabul."
+    "geometry_source_refs": [
+      "source.granada-pepri-islamic-city",
+      "source.granada-centre-plan",
+      "source.junta-western-wall-2006",
+      "source.alhambra-fortified-city-guide",
+      "source.granada-albaicin-wall-route",
+      "source.ugr-abbas-defences",
+      "source.junta-aguado-2009",
+      "source.junta-hoteles-belen-2020",
+      "source.openstreetmap",
+      "source.dera-hydrology",
+      "source.ujaen-water-route-2025"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "Se recalcula después de corregir los recintos compartidos y añadir el Arenal exterior a la medina. No se suavizan ni rellenan automáticamente los huecos históricos; se conserva la incertidumbre de los bordes reconstruidos."
   },
   {
     "feature_id": "gate.guadix",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-albaicin-wall-route", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.granada-albaicin-wall-route",
+      "source.openstreetmap"
+    ],
     "check_method": "Punto situado en el extremo oriental del Paseo de los Tristes identificado expresamente por la fuente municipal, ajustado al remate del espacio peatonal cartografiado en OpenStreetMap.",
     "notes": "La auditoría verifica el ámbito de referencia, no un umbral arqueológico; al no conservarse una planta publicable, la localización permanece aproximada."
   },
@@ -179,7 +290,12 @@
     "feature_id": "religious.medina-great-mosque",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-sagrario", "source.granada-centre-plan", "source.openstreetmap", "source.pnoa-andalucia-2022"],
+    "geometry_source_refs": [
+      "source.granada-sagrario",
+      "source.granada-centre-plan",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022"
+    ],
     "check_method": "Centroide de la huella actual de la Iglesia del Sagrario en OpenStreetMap, contrastado con la ortofoto PNOA y con la identificación municipal del solar de la antigua Mezquita Mayor.",
     "notes": "Es una referencia moderna segura al solar histórico; no se presenta como centroide ni como planta exacta de la mezquita de 1492."
   },
@@ -187,7 +303,12 @@
     "feature_id": "bridge.cadi",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-tableros-cadi", "source.openstreetmap", "source.pnoa-andalucia-2022"],
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-tableros-cadi",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022"
+    ],
     "check_method": "Eje transversal reconstruido desde la margen septentrional del Darro hasta el resto meridional conservado, siguiendo el Mapa 4 y la Figura 2 del estudio de 2025 y contrastándolo con el cauce y la ortofoto.",
     "notes": "Sustituye el punto del estribo por una línea que atraviesa el río. El extremo meridional es seguro; el vano y el encuentro septentrional desaparecidos son probables."
   },
@@ -195,7 +316,11 @@
     "feature_id": "religious.albaicin-great-mosque",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-salvador", "source.openstreetmap", "source.pnoa-andalucia-2022"],
+    "geometry_source_refs": [
+      "source.granada-salvador",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022"
+    ],
     "check_method": "Centroide de la huella actual de la Iglesia del Salvador en OpenStreetMap, contrastado con PNOA y con la identificación municipal de la mezquita y del sahn conservado en el atrio.",
     "notes": "El punto representa el conjunto actual como referencia del solar; no afirma que la iglesia reproduzca la planta completa de la mezquita."
   },
@@ -203,7 +328,10 @@
     "feature_id": "route.zacatin-axis",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-centre-plan", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.granada-centre-plan",
+      "source.openstreetmap"
+    ],
     "check_method": "Eje completo de la calle Zacatín actual obtenido de OpenStreetMap y contrastado con el planeamiento municipal, que identifica su nombre, posición y función comercial en época nazarí.",
     "notes": "Se verifica el corredor topográfico y toponímico; la confianza sigue siendo probable porque las alineaciones y anchuras medievales no se conservan sin cambios."
   },
@@ -211,7 +339,11 @@
     "feature_id": "commerce.alcaiceria",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-alcaiceria", "source.granada-centre-plan", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.granada-alcaiceria",
+      "source.granada-centre-plan",
+      "source.openstreetmap"
+    ],
     "check_method": "Envolvente manual del núcleo reconocible de las calles Alcaicería, Paños, Ermita y Placeta de la Seda, contrastada con la descripción institucional y el planeamiento histórico municipal.",
     "notes": "El polígono se audita como área aproximada: no pretende abarcar toda la extensión histórica descrita entre los espacios centrales de la medina ni reproducir parcelas de 1492."
   },
@@ -219,7 +351,11 @@
     "feature_id": "commerce.corral-carbon",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.alhambra-corral-carbon", "source.openstreetmap", "source.pnoa-andalucia-2022"],
+    "geometry_source_refs": [
+      "source.alhambra-corral-carbon",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022"
+    ],
     "check_method": "Huella del monumento en OpenStreetMap, incluido el vacío del patio, contrastada con la ortofoto PNOA y con la identificación y descripción institucional del Patronato.",
     "notes": "La geometría delimita el inmueble conservado; no diferencia la fábrica nazarí de restauraciones y transformaciones posteriores."
   },
@@ -227,7 +363,11 @@
     "feature_id": "civic.maristan",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.alhambra-maristan", "source.openstreetmap", "source.pnoa-andalucia-2022"],
+    "geometry_source_refs": [
+      "source.alhambra-maristan",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022"
+    ],
     "check_method": "Huella del recinto arqueológico actual en OpenStreetMap, contrastada con PNOA y con la descripción institucional de la parcela, la planta rectangular y los restos conservados.",
     "notes": "La delimitación es segura para el recinto actual, pero no separa muros medievales, reconstrucciones de 1843 y consolidaciones contemporáneas."
   },
@@ -235,31 +375,51 @@
     "feature_id": "water.banuelo",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.alhambra-banuelo", "source.openstreetmap", "source.pnoa-andalucia-2022"],
+    "geometry_source_refs": [
+      "source.alhambra-banuelo",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022"
+    ],
     "check_method": "Huella del edificio conservado en OpenStreetMap, contrastada con la ortofoto PNOA, la dirección institucional y la descripción arquitectónica del Patronato.",
     "notes": "La geometría es segura; la controversia se limita a la datación entre los siglos XI y XII y se conserva explícitamente en la ficha."
   },
   {
     "feature_id": "quarter.alcazaba-qadima",
     "status": "verified",
-    "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-pgom-urban-history", "source.granada-pepri-islamic-city", "source.openstreetmap"],
-    "check_method": "Envolvente reconstruida a partir del núcleo de San Nicolás, la Casa de la Lona y las puertas conservadas de Monaita y las Pesas, contrastada con los planos históricos municipales.",
-    "notes": "La auditoría verifica la coherencia del ámbito y sus anclajes; las cercas interiores fragmentarias impiden considerar exacto el perímetro completo."
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.junta-monaita-wall-2000",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "Se sustituye el pequeño polígono aislado por la envolvente de la Alcazaba Vieja desarrollada: Mapa 5 registrado y recorrido descrito en el PEPRI, pp. 63-64. Se distinguen así el núcleo primitivo y el recinto zirí ampliado, sin atribuir todo el perímetro a una sola fase. Comparte límites con Axares y al-Bayyazin."
   },
   {
     "feature_id": "quarter.axares",
     "status": "verified",
-    "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-casa-zafra", "source.granada-pepri-islamic-city", "source.openstreetmap", "source.dera-hydrology"],
-    "check_method": "Envolvente de la ladera entre la Alcazaba Qadima y el eje verificado del Darro, ajustada mediante Casa de Zafra, Maristán, Bañuelo, San Nicolás y Puerta de Guadix.",
-    "notes": "Se verifica como reconstrucción aproximada del ámbito general; no representa una cerca continua ni límites estables para todas las fases medievales."
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.alhambra-banuelo",
+      "source.dera-hydrology",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "El contorno se reconstruye conjuntamente con la Alcazaba y al-Bayyazin. Su frente fluvial reutiliza el Darro; la línea común con la Alcazaba se digitaliza una sola vez. Se eliminan solapes y bordes inconexos, pero los tramos desaparecidos conservan confianza aproximada."
   },
   {
     "feature_id": "quarter.garnata-al-yahud",
     "status": "verified",
     "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-centre-plan", "source.granada-pgom-urban-history", "source.granada-realejo-jewish", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.granada-centre-plan",
+      "source.granada-pgom-urban-history",
+      "source.granada-realejo-jewish",
+      "source.openstreetmap"
+    ],
     "check_method": "Envolvente prudente del Mauror y Realejo alto fijada mediante el pie meridional del Darro, Torres Bermejas, Cuesta del Realejo, el nodo moderno del Mauror y Plaza Fortuny, contrastada con cartografía municipal.",
     "notes": "No equipara el Realejo actual con una judería homogénea de 1492. El topónimo y el sector son defendibles; la extensión y continuidad temporal siguen siendo aproximadas."
   },
@@ -267,15 +427,26 @@
     "feature_id": "quarter.alfajjarin",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.granada-centre-plan", "source.granada-cuarto-real", "source.junta-belen-2008", "source.junta-cuesta-pescado-2023", "source.junta-porteria-santo-domingo-2012", "source.openstreetmap"],
-    "check_method": "Envolvente reconstruida con Fortuny, Santo Domingo, Plaza de los Campos, Cuarto Real y Belén, prolongada hacia Campo del Príncipe para incluir el ámbito funerario oriental documentado y establecer una transición territorial con al-Nayd.",
-    "notes": "El área reúne usos productivos, residenciales, funerarios y agrícolas. La franja oriental se solapa deliberadamente con Nayd y la capa funeraria porque no existe un deslinde parcelario defendible."
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.granada-centre-plan",
+      "source.junta-porteria-santo-domingo-2012",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "La revisión corrige la ocupación anterior de gran parte de la medina al oeste de la cerca interior. El Mapa 5 y el esquema de Isac sitúan el arrabal al este de ella. El límite con la Loma es interpretativo y compartido; la especialización alfarera no implica que todos sus solares fueran talleres."
   },
   {
     "feature_id": "quarter.antequeruela",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.junta-honda-realejo-2004", "source.junta-camino-cementerio-2014", "source.ugr-vico-2023", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.junta-honda-realejo-2004",
+      "source.junta-camino-cementerio-2014",
+      "source.ugr-vico-2023",
+      "source.openstreetmap"
+    ],
     "check_method": "Envolvente compacta reconstruida sobre Antequeruela Alta y Baja: la Baja se comprueba entre Carril de San Cecilio y Los Mártires, la Alta como ramal sin salida, y el extremo meridional mediante el cruce documentado con Cuesta del Caidero y Camino Nuevo del Cementerio. Los ejes modernos se contrastan con OpenStreetMap y la posición general con la Plataforma de Vico.",
     "notes": "Sustituye la envolvente de 2026-09-20, que había convertido referencias al Realejo, Campo del Príncipe, Molinos, Santiago y Solares en una extensión excesiva hacia el suroeste. El núcleo está bien localizado, pero el borde sigue siendo aproximado y Vico se usa solo como corroboración posterior."
   },
@@ -283,23 +454,39 @@
     "feature_id": "quarter.loma",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-belen-2008", "source.junta-porteria-santo-domingo-2012", "source.junta-cuesta-pescado-2023", "source.junta-hoteles-belen-2020", "source.openstreetmap"],
-    "check_method": "Envolvente ampliada desde la transición funeraria de Campo del Príncipe por Molinos, San Cecilio, Solares y Vistillas hasta la cerca Sur y la ladera de Los Mártires, manteniendo Antequeruela como subámbito solapado.",
-    "notes": "Corrige el aislamiento artificial respecto de Alfareros. El perímetro expresa territorio aproximado con viviendas, alfares, cementerios y huertas, no una mancha edificada continua."
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.granada-centre-plan",
+      "source.junta-porteria-santo-domingo-2012",
+      "source.junta-hoteles-belen-2020",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "El borde occidental se ajusta a la cerca interior, el exterior conserva los anclajes arqueológicos previos y el contacto con Alfareros se comparte sin huecos ni solapes. La división entre los dos arrabales sigue siendo interpretativa. Antequeruela se mantiene como ámbito tardío superpuesto, no como partición de idéntico rango."
   },
   {
     "feature_id": "walls.mauror-realejo-inner",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-aguado-2009", "source.junta-porteria-santo-domingo-2012", "source.openstreetmap"],
-    "check_method": "Línea separada a partir del antiguo cierre Cuarto Real–Fortuny–Puerta del Sol–Torres Bermejas, usando las dos puertas y Torres Bermejas como anclajes y manteniendo el corredor intermedio como reconstrucción.",
-    "notes": "Representa una cerca interior de fase anterior, no el perímetro exterior de la ciudad en 1492. El tramo inmediato a Bab Mawrur es especialmente incierto."
+    "geometry_source_refs": [
+      "source.granada-centre-plan",
+      "source.junta-aguado-2009",
+      "source.junta-porteria-santo-domingo-2012",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "Se corrige una incoherencia interna: la antigua línea no pasaba por las puertas de Alfareros y Mauror publicadas y arrancaba en la Puerta del Pescado pese a describir el Cuarto Real. El corredor se enlaza ahora con los dos puntos documentados y el frente de Cuesta de Aixa. No se impone el contorno de los siglos XI-XIII sobre todas las ampliaciones nazaríes; los enlaces siguen siendo aproximados."
   },
   {
     "feature_id": "gate.alfajjarin",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.junta-porteria-santo-domingo-2012", "source.junta-cuesta-pescado-2023", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.junta-porteria-santo-domingo-2012",
+      "source.junta-cuesta-pescado-2023",
+      "source.openstreetmap"
+    ],
     "check_method": "Punto representativo centrado en Plaza Fortuny, ámbito identificado reiteradamente por las fuentes para Bab al-Fajjarin y contrastado con el eje viario moderno.",
     "notes": "La puerta está documentada, pero no se conserva una planta arqueológica publicable del vano; por ello la localización permanece aproximada."
   },
@@ -307,7 +494,11 @@
     "feature_id": "gate.mawrur",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.junta-aguado-2009", "source.junta-porteria-santo-domingo-2012", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.junta-aguado-2009",
+      "source.junta-porteria-santo-domingo-2012",
+      "source.openstreetmap"
+    ],
     "check_method": "Punto representativo colocado en la Placeta de la Puerta del Sol, cuyo topónimo y posición coinciden con la localización publicada de Bab Mawrur.",
     "notes": "La puerta es un anclaje defendible; el lienzo de muralla contiguo tiene un trazado más discutido y se mantiene aproximado."
   },
@@ -315,7 +506,11 @@
     "feature_id": "gate.pescado",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.junta-cuesta-pescado-2023", "source.junta-porteria-santo-domingo-2012", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.junta-cuesta-pescado-2023",
+      "source.junta-porteria-santo-domingo-2012",
+      "source.openstreetmap"
+    ],
     "check_method": "Punto representativo en el extremo meridional de Cuesta del Pescado, coincidente con el quiebro documentado de la cerca Sur y con la localización tradicional de Bab al-Hayar.",
     "notes": "El ámbito es estable en las fuentes; la posición métrica del umbral y su planta exacta no se consideran seguras."
   },
@@ -323,7 +518,11 @@
     "feature_id": "gate.molinos",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.junta-hoteles-belen-2020", "source.junta-aguado-2009", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.junta-hoteles-belen-2020",
+      "source.junta-aguado-2009",
+      "source.openstreetmap"
+    ],
     "check_method": "Punto representativo en la confluencia de Cuesta Escoriaza, Vistillas de los Ángeles y el acceso a Cuesta de los Molinos, contrastado con las descripciones de la Puerta de la Loma.",
     "notes": "La identificación del cruce es consistente, pero las reconstrucciones no coinciden en la posición métrica del vano desaparecido."
   },
@@ -331,23 +530,38 @@
     "feature_id": "quarter.ramla",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-mesones-2010", "source.alhambra-bib-rambla-gate", "source.openstreetmap"],
-    "check_method": "Envolvente aproximada alrededor de Bib-Rambla, Mesones, Trinidad y la posterior Magdalena, anclada por la excavación de Mesones 48 y por la puerta homónima.",
-    "notes": "La existencia y el corredor comercial son seguros; el límite con la medina y la equivalencia con la collación cristiana posterior no se tratan como exactos."
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.granada-centre-plan",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "El Mapa 5 registrado y el esquema de Isac en el PEPRI, p. 88, muestran una franja aproximadamente rectangular y oblicua adosada al recinto. Se sustituye el anterior hexágono y se recorta el encuentro con la cerca de la medina; los bordes exteriores siguen siendo aproximados."
   },
   {
     "feature_id": "quarter.albayyazin",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.junta-san-miguel-alto-2005", "source.granada-albaicin-wall-route", "source.granada-pepri-islamic-city", "source.openstreetmap"],
-    "check_method": "Envolvente del núcleo alto comprendido entre San Nicolás, San Buenaventura, San Miguel y la cerca exterior, contrastada con la distinción publicada entre al-Bayyazin, Axares y Alcazaba Qadima.",
-    "notes": "Se publica como sector aproximado dentro del Albaicín general; los bordes interiores entre los tres núcleos no se presentan como deslindes exactos."
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.granada-albaicin-wall-route",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "El borde exterior mantiene los lienzos conservados y anclajes ya contrastados con OSM y el PEPRI. Los bordes interiores son compartidos con Qadima y Axares. Así se sustituyen las manchas separadas por recintos contiguos; no se reconstruyen límites de cada barrio menor ni una ocupación edificada homogénea."
   },
   {
     "feature_id": "burial.fajjarin-assal",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.junta-belen-2008", "source.junta-porteria-santo-domingo-2012", "source.junta-cuesta-pescado-2023", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.junta-belen-2008",
+      "source.junta-porteria-santo-domingo-2012",
+      "source.junta-cuesta-pescado-2023",
+      "source.openstreetmap"
+    ],
     "check_method": "Envolvente de Campo del Príncipe y calles próximas construida con referencias documentales a Bab al-Fajjarin y al-Assal y con los puntos de enterramiento arqueológicamente registrados.",
     "notes": "La capa representa un paisaje funerario de extensión cambiante y posible fusión de varias maqbaras; no afirma ocupación simultánea de toda la superficie."
   },
@@ -355,87 +569,128 @@
     "feature_id": "bridge.carbon",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.ugr-puente-carbon", "source.junta-darro-reyes-catolicos", "source.openstreetmap"],
-    "check_method": "Punto representativo situado en el cruce del corredor histórico del Darro con la calle Puente del Carbón, junto al funduq conservado, contrastado con la evidencia arqueológica publicada.",
-    "notes": "Verifica el lugar del paso; no representa el ancho del tablero ni una pila concreta."
+    "geometry_source_refs": [
+      "source.ugr-puente-carbon",
+      "source.junta-darro-reyes-catolicos",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "Se retira el punto erróneo al noroeste de Bibarrambla. El eje de la calle conservada se prolonga sobre el cauce cubierto y se contrasta con la excavación del estribo de 1992. La reconstrucción del vano sigue siendo probable."
   },
   {
     "feature_id": "water.acequia-aynadamar",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.openstreetmap"],
-    "check_method": "Red ramificada digitada de forma general desde el Mapa 5 del estudio de 2025 y registrada sobre Fajalauza, el Albaicín alto, la envolvente revisada de la Alcazaba Qadima y los solares de las dos mezquitas mayores.",
-    "notes": "Sustituye el corredor único desplazado al este. La topología de bifurcaciones y llegada a la ciudad queda representada; los quiebros métricos siguen siendo aproximados."
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "Se elimina la prolongación sin fundamento hasta el Sagrario. El Mapa 5 se registra mediante cinco controles; el PEPRI, pp. 69-70, distingue la red alta de Aynadamar del abastecimiento de la mezquita mayor por Axares. Los símbolos de las mezquitas de la colina no son las dos aljamas modernas del inventario."
   },
   {
     "feature_id": "water.acequia-axares",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.openstreetmap"],
-    "check_method": "Corredor digitado del Mapa 5 y prolongado hacia el este, manteniéndolo en la margen derecha y a una cota superior al Darro a través de Axares y la medina baja.",
-    "notes": "Sustituye la línea que abrazaba el cauce. Verifica la relación topográfica general y la continuidad posterior como acequia de San Juan, no una caja continua."
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "El Mapa 5 y el PEPRI, pp. 69-70, respaldan este destino. Se conserva como alias San Juan, denominación posterior. La geometría procede del registro afín y permanece aproximada a escala de calle."
   },
   {
     "feature_id": "water.acequia-romayla",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.openstreetmap"],
-    "check_method": "Polilínea corregida a partir del Mapa 5 y del texto de las pp. 137-138: derivación aguas arriba, primer cruce, ladera del Avellano y Sabika y regreso final hacia la Mezquita Mayor.",
-    "notes": "Se elimina el falso paso por Bab al-Difaf. Los dos puntos de cruce y la rasante intermedia siguen siendo aproximados."
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "Existe una discrepancia: el texto de 2025, p. 137, atribuye a Romayla un retorno a la zona de la mezquita, mientras el Mapa 5 y el PEPRI asignan a Axares su abastecimiento principal. Se retira el enlace directo especulativo al Sagrario y se conserva explícita la discrepancia. No se fuerzan dos cruces dentro de este recorte urbano."
   },
   {
     "feature_id": "water.acequia-cadi",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.junta-camino-cementerio-2014", "source.openstreetmap"],
-    "check_method": "Corredor generalizado desde el acceso oriental por Barranco del Abogado y Camino del Cementerio hasta Antequeruela y Campo del Príncipe, contrastado con los hitos territoriales publicados.",
-    "notes": "No fija el recorrido parcelario ni la posición de todos los repartidores."
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.junta-camino-cementerio-2014",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "El corredor se revisa mediante el registro del Mapa 5 y la secuencia topográfica descrita en p. 139. La figura no rotula todos los tramos: la adscripción de este corredor alto se apoya también en el texto y se conserva como aproximada."
   },
   {
     "feature_id": "water.acequia-gorda",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.dera-hydrology"],
-    "check_method": "Corredor redibujado desde el Mapa 5 y comprobado contra el eje DERA del Genil, manteniendo todos sus vértices al norte del río y separando Tarramonta como derivación propia.",
-    "notes": "Corrige la versión que cruzaba al sur del Genil. No equivale al parcelario de riego moderno ni representa todos los ramales."
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.dera-hydrology",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "Se sustituye el dibujo manual anterior por el corredor registrado del Mapa 5. La topología comprobada incluye el cruce del Darro, la ausencia de cruces del Genil y los repartimientos orientales. Los cauces actuales sirven de control, con posibles diferencias respecto de 1492."
   },
   {
     "feature_id": "water.acequia-realejo",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.openstreetmap"],
-    "check_method": "Corredor aproximado enlazado con la Acequia Gorda y conducido por la dirección de la actual calle Santiago conforme a la descripción académica.",
-    "notes": "La comprobación avala la relación espacial general, no un nombre propio ni una rasante exacta."
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "Se elimina el ramal corto trazado desde la confluencia hacia el norte. La nueva secuencia se contrasta con el Mapa 5 y la referencia textual a Santiago; la identificación de pequeños repartimientos sigue siendo aproximada."
   },
   {
     "feature_id": "water.acequia-tarramonta",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.dera-hydrology"],
-    "check_method": "Derivación separada de Gorda conforme al Mapa 5 y la nota 31, con un cruce explícito del eje DERA del Genil y continuación por la Vega meridional.",
-    "notes": "El cruce está topológicamente verificado; el desarrollo agrícola exterior se mantiene aproximado."
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.dera-hydrology"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "El trazado anterior cruzaba el Genil aguas abajo, al oeste, con orientación incorrecta. La revisión digitaliza el ramal rotulado Tarramonta en el Mapa 5 y comprueba el cruce oriental respecto de la confluencia. El punto exacto del paso medieval permanece aproximado."
   },
   {
     "feature_id": "water.acequia-arabuleila",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.dera-hydrology"],
-    "check_method": "Corredor general digitado desde el Mapa 5 para la derivación de Arabuleila, contrastando su relación con Gorda y el eje del Genil.",
-    "notes": "Se verifica como ramal agrícola aproximado; no se atribuye precisión parcelaria."
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.dera-hydrology"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "Se sigue el ramal meridional rotulado Arabuleila en el Mapa 5. Se corrige la anterior diagonal que atravesaba la confluencia sin reproducir su derivación ni su cruce oriental. Solo se cartografía el tramo incluido en la figura."
   },
   {
     "feature_id": "water.acequia-real-alhambra",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.alhambra-real-acequia", "source.ujaen-water-route-2025", "source.alhambra-plan-director-landscape"],
-    "check_method": "Eje generalizado entre la captación oriental del Darro, el Cerro del Sol, las huertas del Generalife y la Alhambra, contrastado con las descripciones institucional y académica.",
-    "notes": "No distingue los ramales del Tercio y Dos Tercios ni todos los tramos conservados."
+    "geometry_source_refs": [
+      "source.alhambra-real-acequia",
+      "source.alhambra-torre-agua",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "Se corrige el atajo anterior que no pasaba por el Generalife ni por el acueducto de entrada. Los tramos visibles y sus extremos se apoyan en OSM; los enlaces y la distribución interior se generalizan conforme al Patronato. No se afirma que la línea empiece en la toma del Darro."
   },
   {
     "feature_id": "route.darro-axis",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.granada-carrera-darro", "source.granada-pepri-islamic-city", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.granada-carrera-darro",
+      "source.granada-pepri-islamic-city",
+      "source.openstreetmap"
+    ],
     "check_method": "Eje siguiendo Carrera del Darro y Paseo de los Tristes entre Plaza Nueva y la Puerta de Guadix, contrastado con la geometría viaria y la descripción municipal.",
     "notes": "Se verifica el corredor, no la anchura ni la rasante de 1492."
   },
@@ -443,7 +698,11 @@
     "feature_id": "route.molinos-sierra-axis",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.junta-hoteles-belen-2020", "source.junta-aguado-2009", "source.openstreetmap"],
+    "geometry_source_refs": [
+      "source.junta-hoteles-belen-2020",
+      "source.junta-aguado-2009",
+      "source.openstreetmap"
+    ],
     "check_method": "Corredor de salida trazado desde el punto revisado de la Puerta de la Loma por la dirección de Cuesta de los Molinos hacia el Genil.",
     "notes": "La prolongación exterior expresa destino y movimiento, no una calzada arqueológicamente documentada."
   },
@@ -451,16 +710,27 @@
     "feature_id": "walls.alcazaba-qadima-inner",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.junta-monaita-wall-2000", "source.granada-ziri-wall", "source.ujaen-water-route-2025", "source.openstreetmap"],
-    "check_method": "Circuito corregido para reutilizar exactamente el anillo de la envolvente auditada de la Alcazaba Qadima y contrastado con el Mapa 5, Puerta Monaita, Casa de la Lona, San Nicolás y el entorno de las Pesas.",
-    "notes": "Elimina el desplazamiento artificial entre polígono y cerca. La coincidencia expresa una única reconstrucción aproximada, no dos límites históricos distintos."
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.junta-monaita-wall-2000",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "La línea y el polígono se reconstruyen juntos conforme al Mapa 5 y al itinerario del PEPRI, pp. 63-64. La coincidencia geométrica expresa una sola hipótesis editorial; no demuestra que todo el circuito sea conservado, coetáneo o igualmente seguro."
   },
   {
     "feature_id": "walls.axares-inner",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.junta-carmen-negro-2005", "source.granada-pepri-islamic-city", "source.ujaen-water-route-2025", "source.alhambra-banuelo", "source.openstreetmap"],
-    "check_method": "Circuito corregido para reutilizar el anillo de la envolvente auditada de Axares, contrastado con el Mapa 5 y con la secuencia Bab al-Difaf-margen del río-Cuesta de la Victoria-Bab al-Bunud descrita por el Patronato.",
-    "notes": "La coincidencia evita el doble límite contradictorio; la geometría sigue siendo aproximada porque varios tramos y accesos se discuten."
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.alhambra-banuelo",
+      "source.dera-hydrology",
+      "source.openstreetmap"
+    ],
+    "check_method": "Registro afín reproducible del Mapa 5 y contraste con PEPRI, cartografía moderna y anclajes documentados; auditoría en data/reconstruction/water-urban-audit.json.",
+    "notes": "Circuito interpretativo reconstruido con el barrio, compartiendo el tramo de contacto con Qadima y el frente del Darro. La correspondencia entre cerca y envolvente territorial es aproximada; el río se usa como eje de referencia del frente, no como huella de cimentación."
   }
 ]

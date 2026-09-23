@@ -633,16 +633,13 @@
         "summary": "Gran sector urbano de la ladera norte del Darro, compuesto por recintos y barrios de formación sucesiva.",
         "context_1492": "En época nazarí la ladera del Albaicín estaba densamente articulada por cercas, puertas, ejes radiales y una red secundaria de adarves. No constituía un barrio de límites simples ni idénticos a los actuales.",
         "after_1492": "La población, los usos religiosos y la trama construida cambiaron profundamente, aunque numerosos recorridos, parcelas, aljibes y lienzos defensivos conservaron parte de la estructura heredada.",
-        "today": "El Albaicín es un barrio histórico y parte del bien Patrimonio Mundial. La mancha sigue la cerca exterior desde la Puerta de Elvira, baja hasta el entorno de la desaparecida Puerta de Guadix, continúa por el Darro hasta Plaza Nueva y vuelve por el eje de la calle Elvira; no representa el límite contemporáneo del barrio.",
-        "evidence_note": "Los bordes septentrional, meridional y occidental reutilizan la cerca, el Darro y la calle Elvira ya revisados. La bajada oriental entre el extremo conservado de la cerca y la Puerta de Guadix se reconstruye de forma aproximada porque no conserva un eje material continuo.",
+        "today": "Unión de las envolventes de la Alcazaba Vieja, Axares y el arrabal de al-Bayyazin. La calle Elvira atraviesa la medina y deja de emplearse como frontera artificial de estos recintos.",
+        "evidence_note": "Derivación geométrica de tres recintos contiguos. El borde exterior conserva la cerca nazarí auditada y los interiores se contrastan con el Mapa 5 y el PEPRI. No equivale al barrio administrativo actual.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
           "source.granada-pepri-islamic-city",
-          "source.alhambra-fortified-city-guide",
-          "source.granada-ziri-wall",
-          "source.granada-albaicin-nasrid-wall",
           "source.granada-albaicin-wall-route",
-          "source.granada-elvira-gate",
           "source.openstreetmap",
           "source.dera-hydrology"
         ],
@@ -671,6 +668,11 @@
             "source_id": "source.granada-elvira-gate",
             "locator": "Emplazamiento del Castillo de la Puerta de Elvira",
             "supports": "Extremo occidental común de la cerca exterior y de la calle Elvira."
+          },
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+            "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
           }
         ],
         "publication_status": "publishable"
@@ -679,64 +681,174 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [-3.5994918, 37.1821936],
-            [-3.5978093, 37.1848455],
-            [-3.5972537, 37.1846439],
-            [-3.596339, 37.1846974],
-            [-3.5954314, 37.1845066],
-            [-3.5949473, 37.1851205],
-            [-3.5945015, 37.1855218],
-            [-3.5937863, 37.185882],
-            [-3.5931119, 37.1859342],
-            [-3.592966, 37.1859777],
-            [-3.5925442, 37.1860617],
-            [-3.5915528, 37.186192],
-            [-3.5914719, 37.1861891],
-            [-3.5909078, 37.1861248],
-            [-3.5904947, 37.1858184],
-            [-3.5898731, 37.1854364],
-            [-3.5891889, 37.1852347],
-            [-3.5887198, 37.1851044],
-            [-3.5879719, 37.1848548],
-            [-3.5877155, 37.1846022],
-            [-3.5873192, 37.183715],
-            [-3.5872183, 37.1826812],
-            [-3.5872614, 37.1816785],
-            [-3.58833, 37.17924],
-            [-3.5882443, 37.1791079],
-            [-3.5894253, 37.1786145],
-            [-3.5906595, 37.1785531],
-            [-3.5914125, 37.178261],
-            [-3.5923349, 37.1784844],
-            [-3.5942273, 37.1777871],
-            [-3.5949134, 37.1773625],
-            [-3.5949065, 37.1773663],
-            [-3.5949955, 37.1772863],
-            [-3.59504, 37.1772078],
-            [-3.5951476, 37.1771325],
-            [-3.5957277, 37.1768159],
-            [-3.5963689, 37.1764627],
-            [-3.5965861, 37.1767225],
-            [-3.5967634, 37.1769489],
-            [-3.5970126, 37.177205],
-            [-3.5972524, 37.1773824],
-            [-3.5974702, 37.177535],
-            [-3.5976638, 37.1777342],
-            [-3.597801, 37.1780336],
-            [-3.5979548, 37.1783085],
-            [-3.5981206, 37.1784702],
-            [-3.5982961, 37.1786549],
-            [-3.5985535, 37.1789831],
-            [-3.5987828, 37.17949],
-            [-3.5989922, 37.1800447],
-            [-3.5990671, 37.1803921],
-            [-3.5990197, 37.180923],
-            [-3.5990716, 37.1812834],
-            [-3.5992357, 37.1818093],
-            [-3.5993467, 37.1819488],
-            [-3.59941, 37.1821407],
-            [-3.5995996, 37.182147],
-            [-3.5994918, 37.1821936]
+            [
+              -3.5906595,
+              37.1785531
+            ],
+            [
+              -3.5914125,
+              37.178261
+            ],
+            [
+              -3.5923349,
+              37.1784844
+            ],
+            [
+              -3.5927468,
+              37.1783326
+            ],
+            [
+              -3.5932689,
+              37.1791099
+            ],
+            [
+              -3.5940354,
+              37.178816
+            ],
+            [
+              -3.5947454,
+              37.1784574
+            ],
+            [
+              -3.5956711,
+              37.178137
+            ],
+            [
+              -3.5962925,
+              37.1782738
+            ],
+            [
+              -3.5970345,
+              37.1787728
+            ],
+            [
+              -3.5974805,
+              37.1792352
+            ],
+            [
+              -3.5977196,
+              37.1798952
+            ],
+            [
+              -3.5978224,
+              37.1804939
+            ],
+            [
+              -3.5976883,
+              37.1812049
+            ],
+            [
+              -3.5975658,
+              37.1820543
+            ],
+            [
+              -3.5994918,
+              37.1821936
+            ],
+            [
+              -3.5978093,
+              37.1848455
+            ],
+            [
+              -3.5972537,
+              37.1846439
+            ],
+            [
+              -3.596339,
+              37.1846974
+            ],
+            [
+              -3.5954314,
+              37.1845066
+            ],
+            [
+              -3.5949473,
+              37.1851205
+            ],
+            [
+              -3.5945015,
+              37.1855218
+            ],
+            [
+              -3.5937863,
+              37.185882
+            ],
+            [
+              -3.5931119,
+              37.1859342
+            ],
+            [
+              -3.592966,
+              37.1859777
+            ],
+            [
+              -3.5925442,
+              37.1860617
+            ],
+            [
+              -3.5915528,
+              37.186192
+            ],
+            [
+              -3.5914719,
+              37.1861891
+            ],
+            [
+              -3.5909078,
+              37.1861248
+            ],
+            [
+              -3.5904947,
+              37.1858184
+            ],
+            [
+              -3.5898731,
+              37.1854364
+            ],
+            [
+              -3.5891889,
+              37.1852347
+            ],
+            [
+              -3.5887198,
+              37.1851044
+            ],
+            [
+              -3.5879719,
+              37.1848548
+            ],
+            [
+              -3.5877155,
+              37.1846022
+            ],
+            [
+              -3.5873192,
+              37.183715
+            ],
+            [
+              -3.5872183,
+              37.1826812
+            ],
+            [
+              -3.5872614,
+              37.1816785
+            ],
+            [
+              -3.58833,
+              37.17924
+            ],
+            [
+              -3.5882703,
+              37.179097
+            ],
+            [
+              -3.5894253,
+              37.1786145
+            ],
+            [
+              -3.5906595,
+              37.1785531
+            ]
           ]
         ]
       }
@@ -787,8 +899,8 @@
         "summary": "Ciudad baja intramuros, donde se concentraban el principal centro religioso y comercial y varios arrabales de la Granada nazarí.",
         "context_1492": "La ciudad baja reunía la mezquita aljama, la Alcaicería, la Madraza, mercados, alhóndigas y los antiguos arrabales incorporados del Campillo, al-Fajjarin y al-Nayd. La calle Elvira estructuraba su borde septentrional; la cerca de Poniente y la cerca Sur encerraban el llano, el Realejo, la Antequeruela y las laderas hasta la muralla de la Alhambra.",
         "after_1492": "La instalación de instituciones cristianas, la transformación de la mezquita mayor y las grandes reformas viarias alteraron el centro. Parte de la trama menor y varios edificios andalusíes sobrevivieron de forma fragmentaria.",
-        "today": "El área comprende buena parte del Centro y el Realejo, incluido el corredor Solares–Vistillas y la ladera de Los Mártires hasta el recinto de la Alhambra. Su límite reutiliza la cerca exterior revisada, el muro occidental de la Alhambra, la Puerta de las Armas, el Darro y la calle Elvira; no equivale a barrios administrativos actuales.",
-        "evidence_note": "La geometría distingue ahora la cerca exterior tardonazarí de la antigua línea interior Mauror–Realejo. La fábrica conservada es fragmentaria y el ascenso desde Puerta de la Loma hasta la Alhambra es una reconstrucción topográfica e historiográfica aproximada; el polígono expresa pertenencia al recinto urbano, no densidad edificatoria.",
+        "today": "Envolvente de la ciudad baja y sus ampliaciones meridionales. Al norte enlaza con la Alcazaba Vieja y Axares por sus cercas; incluye el sector de la medina a ambos lados de calle Elvira.",
+        "evidence_note": "El borde norte se revisa junto con los recintos del Albaicín, sustituyendo el cierre artificial por calle Elvira. El perímetro exterior meridional conserva la reconstrucción arqueológica previa. Esta entidad agrega la medina y sus arrabales incorporados; no afirma que todos fueran un único barrio.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
           "source.granada-pepri-islamic-city",
@@ -803,7 +915,8 @@
           "source.junta-hoteles-belen-2020",
           "source.junta-porteria-santo-domingo-2012",
           "source.openstreetmap",
-          "source.dera-hydrology"
+          "source.dera-hydrology",
+          "source.ujaen-water-route-2025"
         ],
         "citations": [
           {
@@ -835,6 +948,11 @@
             "source_id": "source.junta-aguado-2009",
             "locator": "Contexto histórico-arqueológico y figura 1",
             "supports": "Recorrido de la cerca Sur que incorporó Alfareros, Nayd y Antequeruela al recinto urbano y ascendía hacia la Alhambra."
+          },
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+            "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
           }
         ],
         "publication_status": "publishable"
@@ -843,126 +961,418 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [-3.5994918, 37.1821936],
-            [-3.6001521, 37.1822519],
-            [-3.6005481, 37.1819064],
-            [-3.6006899, 37.1817828],
-            [-3.6007874, 37.1817066],
-            [-3.6009366, 37.1815775],
-            [-3.6011053, 37.1814234],
-            [-3.6011493, 37.181385],
-            [-3.6011086, 37.1813649],
-            [-3.6010755, 37.1813485],
-            [-3.6009324, 37.1812295],
-            [-3.6006563, 37.180978],
-            [-3.6006345, 37.1809511],
-            [-3.6006231, 37.1809308],
-            [-3.6004758, 37.1806624],
-            [-3.6004628, 37.1805931],
-            [-3.6005746, 37.1805774],
-            [-3.6005985, 37.180524],
-            [-3.600982, 37.1802819],
-            [-3.6011014, 37.1803856],
-            [-3.6013084, 37.1805458],
-            [-3.6017334, 37.1785613],
-            [-3.601775, 37.1780521],
-            [-3.6017812, 37.1775243],
-            [-3.6012183, 37.1762951],
-            [-3.599744, 37.1746364],
-            [-3.5996842, 37.1745626],
-            [-3.599474, 37.1743273],
-            [-3.5992923, 37.1741297],
-            [-3.5992398, 37.1740862],
-            [-3.5980542, 37.1721727],
-            [-3.5971375, 37.1722659],
-            [-3.5949269, 37.171666],
-            [-3.5938441, 37.1706222],
-            [-3.5937585, 37.1705355],
-            [-3.59295, 37.1703],
-            [-3.59195, 37.16995],
-            [-3.59085, 37.16965],
-            [-3.58975, 37.16935],
-            [-3.588662, 37.169046],
-            [-3.58815, 37.16885],
-            [-3.5877, 37.16955],
-            [-3.58725, 37.17035],
-            [-3.58695, 37.1713],
-            [-3.58675, 37.17225],
-            [-3.58665, 37.1733],
-            [-3.5867888, 37.1744557],
-            [-3.5868569, 37.1745239],
-            [-3.5868464, 37.1747795],
-            [-3.5872203, 37.1748496],
-            [-3.5872563, 37.1747902],
-            [-3.5873264, 37.1748148],
-            [-3.587296, 37.1748742],
-            [-3.5876555, 37.1750008],
-            [-3.5876955, 37.174949],
-            [-3.587757, 37.1749793],
-            [-3.5877169, 37.175031],
-            [-3.588113, 37.1752738],
-            [-3.588307, 37.175092],
-            [-3.5884215, 37.1751752],
-            [-3.58824, 37.1753493],
-            [-3.5888185, 37.175696],
-            [-3.5893598, 37.1759021],
-            [-3.5898207, 37.1760299],
-            [-3.5898379, 37.1760016],
-            [-3.5902421, 37.1761837],
-            [-3.5903181, 37.1760362],
-            [-3.5904632, 37.1760845],
-            [-3.5904008, 37.1762034],
-            [-3.590914, 37.1763735],
-            [-3.5910053, 37.1765267],
-            [-3.5909558, 37.1765922],
-            [-3.5912123, 37.1767793],
-            [-3.5921146, 37.1768227],
-            [-3.5921224, 37.1767265],
-            [-3.5923204, 37.1767407],
-            [-3.592331, 37.1768173],
-            [-3.5927532, 37.1768282],
-            [-3.5927612, 37.1767876],
-            [-3.5930402, 37.176965],
-            [-3.593067, 37.1770697],
-            [-3.5929544, 37.1771175],
-            [-3.5925184, 37.1772352],
-            [-3.5919919, 37.1771498],
-            [-3.59203, 37.1773],
-            [-3.59215, 37.17746],
-            [-3.5923, 37.17767],
-            [-3.59245, 37.17788],
-            [-3.59258, 37.17807],
-            [-3.592682, 37.1782206],
-            [-3.5927462, 37.1783328],
-            [-3.5942273, 37.1777871],
-            [-3.5949134, 37.1773625],
-            [-3.5949065, 37.1773663],
-            [-3.5949955, 37.1772863],
-            [-3.59504, 37.1772078],
-            [-3.5951476, 37.1771325],
-            [-3.5957277, 37.1768159],
-            [-3.5963689, 37.1764627],
-            [-3.5965861, 37.1767225],
-            [-3.5967634, 37.1769489],
-            [-3.5970126, 37.177205],
-            [-3.5972524, 37.1773824],
-            [-3.5974702, 37.177535],
-            [-3.5976638, 37.1777342],
-            [-3.597801, 37.1780336],
-            [-3.5979548, 37.1783085],
-            [-3.5981206, 37.1784702],
-            [-3.5982961, 37.1786549],
-            [-3.5985535, 37.1789831],
-            [-3.5987828, 37.17949],
-            [-3.5989922, 37.1800447],
-            [-3.5990671, 37.1803921],
-            [-3.5990197, 37.180923],
-            [-3.5990716, 37.1812834],
-            [-3.5992357, 37.1818093],
-            [-3.5993467, 37.1819488],
-            [-3.59941, 37.1821407],
-            [-3.5995996, 37.182147],
-            [-3.5994918, 37.1821936]
+            [
+              -3.5994918,
+              37.1821936
+            ],
+            [
+              -3.6001521,
+              37.1822519
+            ],
+            [
+              -3.6005481,
+              37.1819064
+            ],
+            [
+              -3.6006899,
+              37.1817828
+            ],
+            [
+              -3.6007874,
+              37.1817066
+            ],
+            [
+              -3.6009366,
+              37.1815775
+            ],
+            [
+              -3.6011053,
+              37.1814234
+            ],
+            [
+              -3.6011493,
+              37.181385
+            ],
+            [
+              -3.6011086,
+              37.1813649
+            ],
+            [
+              -3.6010755,
+              37.1813485
+            ],
+            [
+              -3.6009324,
+              37.1812295
+            ],
+            [
+              -3.6006563,
+              37.180978
+            ],
+            [
+              -3.6006345,
+              37.1809511
+            ],
+            [
+              -3.6006231,
+              37.1809308
+            ],
+            [
+              -3.6004758,
+              37.1806624
+            ],
+            [
+              -3.6004628,
+              37.1805931
+            ],
+            [
+              -3.6005746,
+              37.1805774
+            ],
+            [
+              -3.6005985,
+              37.180524
+            ],
+            [
+              -3.600982,
+              37.1802819
+            ],
+            [
+              -3.6011014,
+              37.1803856
+            ],
+            [
+              -3.6013084,
+              37.1805458
+            ],
+            [
+              -3.6017334,
+              37.1785613
+            ],
+            [
+              -3.601775,
+              37.1780521
+            ],
+            [
+              -3.6017812,
+              37.1775243
+            ],
+            [
+              -3.6012183,
+              37.1762951
+            ],
+            [
+              -3.599744,
+              37.1746364
+            ],
+            [
+              -3.5996842,
+              37.1745626
+            ],
+            [
+              -3.599474,
+              37.1743273
+            ],
+            [
+              -3.5992923,
+              37.1741297
+            ],
+            [
+              -3.5992398,
+              37.1740862
+            ],
+            [
+              -3.5980542,
+              37.1721727
+            ],
+            [
+              -3.5971375,
+              37.1722659
+            ],
+            [
+              -3.5949269,
+              37.171666
+            ],
+            [
+              -3.5938441,
+              37.1706222
+            ],
+            [
+              -3.5937585,
+              37.1705355
+            ],
+            [
+              -3.59295,
+              37.1703
+            ],
+            [
+              -3.59195,
+              37.16995
+            ],
+            [
+              -3.59085,
+              37.16965
+            ],
+            [
+              -3.58975,
+              37.16935
+            ],
+            [
+              -3.588662,
+              37.169046
+            ],
+            [
+              -3.58815,
+              37.16885
+            ],
+            [
+              -3.5877,
+              37.16955
+            ],
+            [
+              -3.58725,
+              37.17035
+            ],
+            [
+              -3.58695,
+              37.1713
+            ],
+            [
+              -3.58675,
+              37.17225
+            ],
+            [
+              -3.58665,
+              37.1733
+            ],
+            [
+              -3.5867888,
+              37.1744557
+            ],
+            [
+              -3.5868569,
+              37.1745239
+            ],
+            [
+              -3.5868464,
+              37.1747795
+            ],
+            [
+              -3.5872203,
+              37.1748496
+            ],
+            [
+              -3.5872563,
+              37.1747902
+            ],
+            [
+              -3.5873264,
+              37.1748148
+            ],
+            [
+              -3.587296,
+              37.1748742
+            ],
+            [
+              -3.5876555,
+              37.1750008
+            ],
+            [
+              -3.5876955,
+              37.174949
+            ],
+            [
+              -3.587757,
+              37.1749793
+            ],
+            [
+              -3.5877169,
+              37.175031
+            ],
+            [
+              -3.588113,
+              37.1752738
+            ],
+            [
+              -3.588307,
+              37.175092
+            ],
+            [
+              -3.5884215,
+              37.1751752
+            ],
+            [
+              -3.58824,
+              37.1753493
+            ],
+            [
+              -3.5888185,
+              37.175696
+            ],
+            [
+              -3.5893598,
+              37.1759021
+            ],
+            [
+              -3.5898207,
+              37.1760299
+            ],
+            [
+              -3.5898379,
+              37.1760016
+            ],
+            [
+              -3.5902421,
+              37.1761837
+            ],
+            [
+              -3.5903181,
+              37.1760362
+            ],
+            [
+              -3.5904632,
+              37.1760845
+            ],
+            [
+              -3.5904008,
+              37.1762034
+            ],
+            [
+              -3.590914,
+              37.1763735
+            ],
+            [
+              -3.5910053,
+              37.1765267
+            ],
+            [
+              -3.5909558,
+              37.1765922
+            ],
+            [
+              -3.5912123,
+              37.1767793
+            ],
+            [
+              -3.5921146,
+              37.1768227
+            ],
+            [
+              -3.5921224,
+              37.1767265
+            ],
+            [
+              -3.5923204,
+              37.1767407
+            ],
+            [
+              -3.592331,
+              37.1768173
+            ],
+            [
+              -3.5927532,
+              37.1768282
+            ],
+            [
+              -3.5927612,
+              37.1767876
+            ],
+            [
+              -3.5930402,
+              37.176965
+            ],
+            [
+              -3.593067,
+              37.1770697
+            ],
+            [
+              -3.5929544,
+              37.1771175
+            ],
+            [
+              -3.5925184,
+              37.1772352
+            ],
+            [
+              -3.5919919,
+              37.1771498
+            ],
+            [
+              -3.59203,
+              37.1773
+            ],
+            [
+              -3.59215,
+              37.17746
+            ],
+            [
+              -3.5923,
+              37.17767
+            ],
+            [
+              -3.59245,
+              37.17788
+            ],
+            [
+              -3.59258,
+              37.17807
+            ],
+            [
+              -3.592682,
+              37.1782206
+            ],
+            [
+              -3.592746806758957,
+              37.17833262311191
+            ],
+            [
+              -3.5932689,
+              37.1791099
+            ],
+            [
+              -3.5940354,
+              37.178816
+            ],
+            [
+              -3.5947454,
+              37.1784574
+            ],
+            [
+              -3.5956711,
+              37.178137
+            ],
+            [
+              -3.5962925,
+              37.1782738
+            ],
+            [
+              -3.5970345,
+              37.1787728
+            ],
+            [
+              -3.5974805,
+              37.1792352
+            ],
+            [
+              -3.5977196,
+              37.1798952
+            ],
+            [
+              -3.5978224,
+              37.1804939
+            ],
+            [
+              -3.5976883,
+              37.1812049
+            ],
+            [
+              -3.5975658,
+              37.1820543
+            ],
+            [
+              -3.5994918,
+              37.1821936
+            ]
           ]
         ]
       }
@@ -1005,8 +1415,8 @@
         "summary": "Síntesis cartográfica de los tres grandes recintos urbanos revisados: Albaicín, ciudad baja y Alhambra.",
         "context_1492": "Granada era una ciudad formada por recintos, arrabales, espacios agrícolas y corredores fluviales, con el Albaicín y la medina en torno al Darro y la ciudad palatina de la Alhambra sobre la Sabika.",
         "after_1492": "La ciudad se expandió y reformó fuera y dentro de sus antiguas cercas. Las demoliciones, nuevos ejes y cambios de uso hicieron menos legible la continuidad del perímetro medieval.",
-        "today": "La mancha corresponde a la unión cartográfica del Albaicín, la ciudad baja corregida y la Alhambra. El borde meridional incorpora ahora los arrabales amurallados de al-Fajjarin y al-Nayd hasta Vistillas y Los Mártires. El Generalife se mantiene como finca palatina separada; no es un límite patrimonial, arqueológico ni administrativo.",
-        "evidence_note": "La geometría deriva de los tres grandes sectores urbanos y sustituye el cierre por Torres Bermejas por la cerca Sur exterior que alcanzaba la Alhambra desde la Puerta de la Loma. Hereda la incertidumbre del recorrido Solares–Vistillas–Cerro de Ahabul y no implica ocupación edificada homogénea.",
+        "today": "Unión reproducible del Albaicín, la ciudad baja, la Alhambra y el Arenal. El Generalife permanece como almunia separada. La envolvente expresa extensión urbana y espacios interiores, no densidad edificada uniforme.",
+        "evidence_note": "Se recalcula después de corregir los recintos compartidos y añadir el Arenal exterior a la medina. No se suavizan ni rellenan automáticamente los huecos históricos; se conserva la incertidumbre de los bordes reconstruidos.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
           "source.granada-pepri-islamic-city",
@@ -1018,7 +1428,8 @@
           "source.junta-aguado-2009",
           "source.junta-hoteles-belen-2020",
           "source.openstreetmap",
-          "source.dera-hydrology"
+          "source.dera-hydrology",
+          "source.ujaen-water-route-2025"
         ],
         "citations": [
           {
@@ -1040,77 +1451,669 @@
             "source_id": "source.junta-aguado-2009",
             "locator": "Contexto histórico-arqueológico y figura 1",
             "supports": "Extensión del recinto tardonazarí por la cerca Sur alrededor de Alfareros, Nayd y Antequeruela."
+          },
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+            "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
           }
         ],
         "publication_status": "publishable"
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "MultiPolygon",
         "coordinates": [
           [
-            [-3.5919805, 37.1773929],
-            [-3.5913596, 37.1775878],
-            [-3.5897718, 37.1774932],
-            [-3.5897694, 37.1776344],
-            [-3.589209, 37.1776591],
-            [-3.5879109, 37.1771306],
-            [-3.5871434, 37.1772187],
-            [-3.5872402, 37.1768709],
-            [-3.5867603, 37.1767014],
-            [-3.5863844, 37.1762187],
-            [-3.5862482, 37.1762782],
-            [-3.5860817, 37.1758411],
-            [-3.5850174, 37.1753266],
-            [-3.5851333, 37.1747984],
-            [-3.5856229, 37.1746328],
-            [-3.5866362, 37.174769],
-            [-3.5867888, 37.1744557],
-            [-3.58665, 37.1733],
-            [-3.58675, 37.17225],
-            [-3.58695, 37.1713],
-            [-3.58725, 37.17035],
-            [-3.5877, 37.16955],
-            [-3.58815, 37.16885],
-            [-3.588662, 37.169046],
-            [-3.58975, 37.16935],
-            [-3.59085, 37.16965],
-            [-3.59195, 37.16995],
-            [-3.59295, 37.1703],
-            [-3.5937585, 37.1705355],
-            [-3.5949269, 37.171666],
-            [-3.5971375, 37.1722659],
-            [-3.5980542, 37.1721727],
-            [-3.5992398, 37.1740862],
-            [-3.6012183, 37.1762951],
-            [-3.6017812, 37.1775243],
-            [-3.601775, 37.1780521],
-            [-3.6013084, 37.1805458],
-            [-3.600982, 37.1802819],
-            [-3.6004628, 37.1805931],
-            [-3.6011493, 37.181385],
-            [-3.6001521, 37.1822519],
-            [-3.5994918, 37.1821936],
-            [-3.5978093, 37.1848455],
-            [-3.5972537, 37.1846439],
-            [-3.596339, 37.1846974],
-            [-3.5954314, 37.1845066],
-            [-3.5945015, 37.1855218],
-            [-3.5937863, 37.185882],
-            [-3.5915528, 37.186192],
-            [-3.5909078, 37.1861248],
-            [-3.5898731, 37.1854364],
-            [-3.5879719, 37.1848548],
-            [-3.5877155, 37.1846022],
-            [-3.5873192, 37.183715],
-            [-3.5872614, 37.1816785],
-            [-3.5882443, 37.1791079],
-            [-3.5894253, 37.1786145],
-            [-3.5906595, 37.1785531],
-            [-3.5914125, 37.178261],
-            [-3.5923349, 37.1784844],
-            [-3.5942273, 37.1777871],
-            [-3.5927462, 37.1783328],
-            [-3.5919805, 37.1773929]
+            [
+              [
+                -3.6001742,
+                37.1731902
+              ],
+              [
+                -3.6005853,
+                37.1734388
+              ],
+              [
+                -3.6011513,
+                37.174242
+              ],
+              [
+                -3.6016677,
+                37.1751535
+              ],
+              [
+                -3.6022061,
+                37.1759358
+              ],
+              [
+                -3.6014078,
+                37.1760818
+              ],
+              [
+                -3.5993709,
+                37.1739157
+              ],
+              [
+                -3.5995746,
+                37.1736323
+              ],
+              [
+                -3.6001742,
+                37.1731902
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -3.592682,
+                37.1782206
+              ],
+              [
+                -3.59258,
+                37.17807
+              ],
+              [
+                -3.59245,
+                37.17788
+              ],
+              [
+                -3.5923,
+                37.17767
+              ],
+              [
+                -3.59215,
+                37.17746
+              ],
+              [
+                -3.5920892,
+                37.1773789
+              ],
+              [
+                -3.5919805,
+                37.1773929
+              ],
+              [
+                -3.5919636,
+                37.1773102
+              ],
+              [
+                -3.5918529,
+                37.1773218
+              ],
+              [
+                -3.5913596,
+                37.1775878
+              ],
+              [
+                -3.5910547,
+                37.1775787
+              ],
+              [
+                -3.5908728,
+                37.1775293
+              ],
+              [
+                -3.5905348,
+                37.1775486
+              ],
+              [
+                -3.5905371,
+                37.1775102
+              ],
+              [
+                -3.5901551,
+                37.177547
+              ],
+              [
+                -3.5901561,
+                37.1775157
+              ],
+              [
+                -3.5897718,
+                37.1774932
+              ],
+              [
+                -3.5897694,
+                37.1776344
+              ],
+              [
+                -3.5895922,
+                37.1776325
+              ],
+              [
+                -3.5895935,
+                37.1775553
+              ],
+              [
+                -3.5892533,
+                37.1776041
+              ],
+              [
+                -3.5892664,
+                37.1776483
+              ],
+              [
+                -3.589209,
+                37.1776591
+              ],
+              [
+                -3.5888708,
+                37.1774184
+              ],
+              [
+                -3.5885548,
+                37.1774248
+              ],
+              [
+                -3.5885558,
+                37.177478
+              ],
+              [
+                -3.5884806,
+                37.1774789
+              ],
+              [
+                -3.5884797,
+                37.1774256
+              ],
+              [
+                -3.5884087,
+                37.1774272
+              ],
+              [
+                -3.5884071,
+                37.1773826
+              ],
+              [
+                -3.5882113,
+                37.177264
+              ],
+              [
+                -3.5879109,
+                37.1771306
+              ],
+              [
+                -3.5875589,
+                37.1771667
+              ],
+              [
+                -3.5874662,
+                37.1772301
+              ],
+              [
+                -3.587341,
+                37.1771162
+              ],
+              [
+                -3.5871434,
+                37.1772187
+              ],
+              [
+                -3.5870855,
+                37.1771584
+              ],
+              [
+                -3.5871513,
+                37.1771175
+              ],
+              [
+                -3.5871071,
+                37.1770715
+              ],
+              [
+                -3.5871925,
+                37.1770251
+              ],
+              [
+                -3.5871387,
+                37.176937
+              ],
+              [
+                -3.5872402,
+                37.1768709
+              ],
+              [
+                -3.586835,
+                37.1766454
+              ],
+              [
+                -3.5867603,
+                37.1767014
+              ],
+              [
+                -3.5867189,
+                37.1766663
+              ],
+              [
+                -3.5867935,
+                37.1766103
+              ],
+              [
+                -3.586602,
+                37.1763751
+              ],
+              [
+                -3.5863844,
+                37.1762187
+              ],
+              [
+                -3.5862482,
+                37.1762782
+              ],
+              [
+                -3.5862042,
+                37.1762143
+              ],
+              [
+                -3.5863404,
+                37.1761548
+              ],
+              [
+                -3.5860817,
+                37.1758411
+              ],
+              [
+                -3.5858867,
+                37.1757109
+              ],
+              [
+                -3.5858321,
+                37.1757848
+              ],
+              [
+                -3.585736,
+                37.1757398
+              ],
+              [
+                -3.5857955,
+                37.1756592
+              ],
+              [
+                -3.5851426,
+                37.1753323
+              ],
+              [
+                -3.5850174,
+                37.1753266
+              ],
+              [
+                -3.5850124,
+                37.1752835
+              ],
+              [
+                -3.5851054,
+                37.1752708
+              ],
+              [
+                -3.5851523,
+                37.175106
+              ],
+              [
+                -3.5851749,
+                37.1749141
+              ],
+              [
+                -3.5851283,
+                37.1748943
+              ],
+              [
+                -3.5851333,
+                37.1747984
+              ],
+              [
+                -3.5853783,
+                37.1748143
+              ],
+              [
+                -3.5855962,
+                37.174731
+              ],
+              [
+                -3.5855575,
+                37.1746537
+              ],
+              [
+                -3.5856229,
+                37.1746328
+              ],
+              [
+                -3.5856612,
+                37.1747092
+              ],
+              [
+                -3.5859727,
+                37.1747341
+              ],
+              [
+                -3.5859778,
+                37.1746595
+              ],
+              [
+                -3.5860382,
+                37.1746621
+              ],
+              [
+                -3.5860332,
+                37.1747367
+              ],
+              [
+                -3.5866362,
+                37.174769
+              ],
+              [
+                -3.5866438,
+                37.1744889
+              ],
+              [
+                -3.5867888,
+                37.1744557
+              ],
+              [
+                -3.58665,
+                37.1733
+              ],
+              [
+                -3.58675,
+                37.17225
+              ],
+              [
+                -3.58695,
+                37.1713
+              ],
+              [
+                -3.58725,
+                37.17035
+              ],
+              [
+                -3.5877,
+                37.16955
+              ],
+              [
+                -3.58815,
+                37.16885
+              ],
+              [
+                -3.588662,
+                37.169046
+              ],
+              [
+                -3.58975,
+                37.16935
+              ],
+              [
+                -3.59085,
+                37.16965
+              ],
+              [
+                -3.59195,
+                37.16995
+              ],
+              [
+                -3.59295,
+                37.1703
+              ],
+              [
+                -3.5937585,
+                37.1705355
+              ],
+              [
+                -3.5938441,
+                37.1706222
+              ],
+              [
+                -3.5949269,
+                37.171666
+              ],
+              [
+                -3.5971375,
+                37.1722659
+              ],
+              [
+                -3.5980542,
+                37.1721727
+              ],
+              [
+                -3.5992398,
+                37.1740862
+              ],
+              [
+                -3.5992923,
+                37.1741297
+              ],
+              [
+                -3.599474,
+                37.1743273
+              ],
+              [
+                -3.5996842,
+                37.1745626
+              ],
+              [
+                -3.599744,
+                37.1746364
+              ],
+              [
+                -3.6012183,
+                37.1762951
+              ],
+              [
+                -3.6017812,
+                37.1775243
+              ],
+              [
+                -3.601775,
+                37.1780521
+              ],
+              [
+                -3.6017334,
+                37.1785613
+              ],
+              [
+                -3.6013084,
+                37.1805458
+              ],
+              [
+                -3.6011014,
+                37.1803856
+              ],
+              [
+                -3.600982,
+                37.1802819
+              ],
+              [
+                -3.6005985,
+                37.180524
+              ],
+              [
+                -3.6005746,
+                37.1805774
+              ],
+              [
+                -3.6004628,
+                37.1805931
+              ],
+              [
+                -3.6004758,
+                37.1806624
+              ],
+              [
+                -3.6006231,
+                37.1809308
+              ],
+              [
+                -3.6006345,
+                37.1809511
+              ],
+              [
+                -3.6006563,
+                37.180978
+              ],
+              [
+                -3.6009324,
+                37.1812295
+              ],
+              [
+                -3.6010755,
+                37.1813485
+              ],
+              [
+                -3.6011086,
+                37.1813649
+              ],
+              [
+                -3.6011493,
+                37.181385
+              ],
+              [
+                -3.6011053,
+                37.1814234
+              ],
+              [
+                -3.6009366,
+                37.1815775
+              ],
+              [
+                -3.6007874,
+                37.1817066
+              ],
+              [
+                -3.6006899,
+                37.1817828
+              ],
+              [
+                -3.6005481,
+                37.1819064
+              ],
+              [
+                -3.6001521,
+                37.1822519
+              ],
+              [
+                -3.5994918,
+                37.1821936
+              ],
+              [
+                -3.5978093,
+                37.1848455
+              ],
+              [
+                -3.5972537,
+                37.1846439
+              ],
+              [
+                -3.596339,
+                37.1846974
+              ],
+              [
+                -3.5954314,
+                37.1845066
+              ],
+              [
+                -3.5949473,
+                37.1851205
+              ],
+              [
+                -3.5945015,
+                37.1855218
+              ],
+              [
+                -3.5937863,
+                37.185882
+              ],
+              [
+                -3.5931119,
+                37.1859342
+              ],
+              [
+                -3.592966,
+                37.1859777
+              ],
+              [
+                -3.5925442,
+                37.1860617
+              ],
+              [
+                -3.5915528,
+                37.186192
+              ],
+              [
+                -3.5914719,
+                37.1861891
+              ],
+              [
+                -3.5909078,
+                37.1861248
+              ],
+              [
+                -3.5904947,
+                37.1858184
+              ],
+              [
+                -3.5898731,
+                37.1854364
+              ],
+              [
+                -3.5891889,
+                37.1852347
+              ],
+              [
+                -3.5887198,
+                37.1851044
+              ],
+              [
+                -3.5879719,
+                37.1848548
+              ],
+              [
+                -3.5877155,
+                37.1846022
+              ],
+              [
+                -3.5873192,
+                37.183715
+              ],
+              [
+                -3.5872183,
+                37.1826812
+              ],
+              [
+                -3.5872614,
+                37.1816785
+              ],
+              [
+                -3.58833,
+                37.17924
+              ],
+              [
+                -3.5882703,
+                37.179097
+              ],
+              [
+                -3.5894253,
+                37.1786145
+              ],
+              [
+                -3.5906595,
+                37.1785531
+              ],
+              [
+                -3.5914125,
+                37.178261
+              ],
+              [
+                -3.5923349,
+                37.1784844
+              ],
+              [
+                -3.5927468,
+                37.1783326
+              ],
+              [
+                -3.592682,
+                37.1782206
+              ]
+            ]
           ]
         ]
       }
@@ -1494,24 +2497,25 @@
         "summary": "Antigua ciudadela zirí del Albaicín y uno de los núcleos fundacionales de la Granada islámica.",
         "context_1492": "La Alcazaba Qadima conservaba su identidad defensiva y urbana dentro del Albaicín, articulada por puertas como Monaita y las Pesas. Ya no era la principal sede regia, trasladada a la Alhambra, pero seguía siendo un recinto densamente habitado.",
         "after_1492": "El sector perdió población y funciones, incorporó parroquias y conventos y desarrolló progresivamente la tipología residencial del carmen. Restos de muralla y puertas mantuvieron visible parte de su estructura.",
-        "today": "El ámbito aproximado rodea San Nicolás, la Casa de la Lona, la Puerta de las Pesas y la Puerta Monaita. No coincide con un barrio administrativo actual ni delimita un recinto arqueológico único.",
-        "evidence_note": "Las fuentes coinciden en el núcleo de San Nicolás y en sus puertas principales, pero las cercas interiores se conservan de forma fragmentaria. La envolvente conecta esos anclajes y no debe leerse como un parcelario exacto de 1492.",
+        "today": "El recinto se extiende desde Monaita y las Pesas hasta las Tomasas y San Juan de los Reyes, incluyendo la ampliación zirí hacia San Miguel Bajo, San José y la Casa de la Lona.",
+        "evidence_note": "Se sustituye el pequeño polígono aislado por la envolvente de la Alcazaba Vieja desarrollada: Mapa 5 registrado y recorrido descrito en el PEPRI, pp. 63-64. Se distinguen así el núcleo primitivo y el recinto zirí ampliado, sin atribuir todo el perímetro a una sola fase. Comparte límites con Axares y al-Bayyazin.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
-          "source.granada-pgom-urban-history",
+          "source.ujaen-water-route-2025",
           "source.granada-pepri-islamic-city",
+          "source.junta-monaita-wall-2000",
           "source.openstreetmap"
         ],
         "citations": [
           {
-            "source_id": "source.granada-pgom-urban-history",
-            "locator": "Memoria de información, p. 127, estructura de la ciudad islámica",
-            "supports": "Papel de las alcazabas Qadima y Yadida, núcleo de San Nicolás y pérdida posterior de centralidad."
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Memoria urbana, pp. 63-64 (PDF 65-66)",
+            "supports": "Itinerario Monaita–Pesas–Tomasas–San Juan de los Reyes–Lona, con sus ampliaciones."
           },
           {
-            "source_id": "source.granada-pepri-islamic-city",
-            "locator": "Anexo V, Memoria urbana, pp. 11-15",
-            "supports": "Formación del núcleo antiguo, evolución medieval y relación con el Albaicín nazarí."
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5",
+            "supports": "Forma del recinto y contacto con Axares y el arrabal septentrional."
           }
         ],
         "publication_status": "publishable"
@@ -1520,15 +2524,102 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [-3.5975658, 37.1820543],
-            [-3.5965, 37.18302],
-            [-3.5948, 37.18372],
-            [-3.5937726, 37.1824667],
-            [-3.59295, 37.18155],
-            [-3.5926619, 37.1810405],
-            [-3.5942, 37.18085],
-            [-3.59565, 37.18102],
-            [-3.5975658, 37.1820543]
+            [
+              -3.5975658,
+              37.1820543
+            ],
+            [
+              -3.5968809,
+              37.1818231
+            ],
+            [
+              -3.595999,
+              37.1818851
+            ],
+            [
+              -3.5947285,
+              37.1822987
+            ],
+            [
+              -3.5937726,
+              37.1824667
+            ],
+            [
+              -3.593282,
+              37.1823085
+            ],
+            [
+              -3.5923621,
+              37.1820708
+            ],
+            [
+              -3.5914334,
+              37.1815973
+            ],
+            [
+              -3.5917215,
+              37.1814194
+            ],
+            [
+              -3.5916571,
+              37.1804123
+            ],
+            [
+              -3.5921901,
+              37.1803364
+            ],
+            [
+              -3.5921748,
+              37.179929
+            ],
+            [
+              -3.5927062,
+              37.1798103
+            ],
+            [
+              -3.5932689,
+              37.1791099
+            ],
+            [
+              -3.5940354,
+              37.178816
+            ],
+            [
+              -3.5947454,
+              37.1784574
+            ],
+            [
+              -3.5956711,
+              37.178137
+            ],
+            [
+              -3.5962925,
+              37.1782738
+            ],
+            [
+              -3.5970345,
+              37.1787728
+            ],
+            [
+              -3.5974805,
+              37.1792352
+            ],
+            [
+              -3.5977196,
+              37.1798952
+            ],
+            [
+              -3.5978224,
+              37.1804939
+            ],
+            [
+              -3.5976883,
+              37.1812049
+            ],
+            [
+              -3.5975658,
+              37.1820543
+            ]
           ]
         ]
       }
@@ -1578,25 +2669,31 @@
         "summary": "Arrabal de la ladera baja del Albaicín que extendió la ciudad antigua hasta la orilla derecha del Darro.",
         "context_1492": "Axares era un sector urbano denso y apreciado, organizado entre la Alcazaba Qadima y el Darro. En él se encontraban residencias destacadas, baños, instituciones y accesos vinculados al río.",
         "after_1492": "El barrio atrajo a familias de la nobleza castellana y recibió fundaciones conventuales. Parte de las viviendas nazaríes quedó incorporada a edificios posteriores, como ocurrió en el entorno de la Casa de Zafra.",
-        "today": "La envolvente comprende la ladera entre San Nicolás, la Carrera del Darro y el extremo oriental del Paseo de los Tristes. Incluye la Casa de Zafra, el Maristán y El Bañuelo como anclajes, pero no define un barrio contemporáneo.",
-        "evidence_note": "La relación entre Axares, la Alcazaba Qadima y el Darro está documentada; su perímetro cambió y no se conserva como una línea continua. La geometría expresa el ámbito general mediante anclajes históricos y topográficos.",
+        "today": "Sector entre el recinto de la Alcazaba Vieja, las laderas de la Victoria y el Darro. Su borde occidental se relaciona con la coracha de Bab al-Difaf.",
+        "evidence_note": "El contorno se reconstruye conjuntamente con la Alcazaba y al-Bayyazin. Su frente fluvial reutiliza el Darro; la línea común con la Alcazaba se digitaliza una sola vez. Se eliminan solapes y bordes inconexos, pero los tramos desaparecidos conservan confianza aproximada.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
-          "source.granada-casa-zafra",
+          "source.ujaen-water-route-2025",
           "source.granada-pepri-islamic-city",
-          "source.openstreetmap",
-          "source.dera-hydrology"
+          "source.alhambra-banuelo",
+          "source.dera-hydrology",
+          "source.openstreetmap"
         ],
         "citations": [
           {
-            "source_id": "source.granada-casa-zafra",
-            "locator": "Apartado «Situación y emplazamiento»",
-            "supports": "Nombre histórico, formación como ensanche de la Alcazaba Qadima y extensión hasta el Darro."
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapas 4 y 5",
+            "supports": "Relación de Axares con la Alcazaba, la coracha y el Darro."
           },
           {
             "source_id": "source.granada-pepri-islamic-city",
-            "locator": "Anexo V, Memoria urbana y plano de estructura islámica",
-            "supports": "Relación del arrabal con los recintos del Albaicín y su red de puertas."
+            "locator": "Memoria urbana, pp. 63-65 y 88",
+            "supports": "Recintos sucesivos del Albaicín y extensión hacia Axares."
+          },
+          {
+            "source_id": "source.alhambra-banuelo",
+            "locator": "Contexto de Bab al-Difaf y Axares",
+            "supports": "Coracha y relación con los accesos de la Victoria."
           }
         ],
         "publication_status": "publishable"
@@ -1605,18 +2702,90 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [-3.5952, 37.18105],
-            [-3.5938, 37.18155],
-            [-3.5923, 37.18155],
-            [-3.5907, 37.1812],
-            [-3.58945, 37.18045],
-            [-3.58833, 37.17924],
-            [-3.5894253, 37.1786145],
-            [-3.5906595, 37.1785531],
-            [-3.5923349, 37.1784844],
-            [-3.5942273, 37.1777871],
-            [-3.59475, 37.17855],
-            [-3.5952, 37.18105]
+            [
+              -3.5932689,
+              37.1791099
+            ],
+            [
+              -3.5927062,
+              37.1798103
+            ],
+            [
+              -3.5921748,
+              37.179929
+            ],
+            [
+              -3.5921901,
+              37.1803364
+            ],
+            [
+              -3.5916571,
+              37.1804123
+            ],
+            [
+              -3.5917215,
+              37.1814194
+            ],
+            [
+              -3.5914334,
+              37.1815973
+            ],
+            [
+              -3.5912161,
+              37.1815161
+            ],
+            [
+              -3.5904681,
+              37.1815752
+            ],
+            [
+              -3.590192,
+              37.1820746
+            ],
+            [
+              -3.589406,
+              37.1818341
+            ],
+            [
+              -3.5890703,
+              37.1814551
+            ],
+            [
+              -3.5887874,
+              37.1810534
+            ],
+            [
+              -3.5884673,
+              37.1803737
+            ],
+            [
+              -3.58865,
+              37.17965
+            ],
+            [
+              -3.5894253,
+              37.1786145
+            ],
+            [
+              -3.5906595,
+              37.1785531
+            ],
+            [
+              -3.5914125,
+              37.178261
+            ],
+            [
+              -3.5923349,
+              37.1784844
+            ],
+            [
+              -3.592746806758957,
+              37.17833262311191
+            ],
+            [
+              -3.5932689,
+              37.1791099
+            ]
           ]
         ]
       }
@@ -1710,7 +2879,7 @@
       "id": "quarter.ramla",
       "properties": {
         "id": "quarter.ramla",
-        "name": "Arrabal de la Rambla",
+        "name": "Arrabal del Arenal / la Rambla",
         "historical_name": "Rabad al-Ramla",
         "modern_name": "Bib-Rambla, Mesones y entorno de la Magdalena",
         "aliases": [
@@ -1748,25 +2917,25 @@
         "summary": "Arrabal comercial desarrollado junto a Bib-Rambla y la calle Mesones, asociado posteriormente al barrio de la Magdalena.",
         "context_1492": "Al-Ramla ocupaba el borde meridional del principal centro comercial y recibía población, mercancías y recursos de la vega. La arqueología documenta edificios nazaríes del siglo XIV bajo la trama de Mesones.",
         "after_1492": "El sector quedó integrado en la organización cristiana de la Magdalena y conservó una marcada función comercial, aunque plazas, calles y edificios fueron profundamente reformados.",
-        "today": "La envolvente aproxima el ámbito entre Bib-Rambla, Mesones, Trinidad y la Magdalena. No equipara automáticamente el arrabal nazarí con los límites parroquiales cristianos posteriores.",
-        "evidence_note": "La existencia y el eje de Mesones están arqueológicamente documentados, pero la extensión exacta y su relación con las cercas sucesivas no permiten dibujar un perímetro parcelario seguro.",
+        "today": "Franja alargada al exterior occidental de la medina, relacionada con Mesones y Bibarrambla. El contorno no delimita todo el posterior barrio de la Magdalena.",
+        "evidence_note": "El Mapa 5 registrado y el esquema de Isac en el PEPRI, p. 88, muestran una franja aproximadamente rectangular y oblicua adosada al recinto. Se sustituye el anterior hexágono y se recorta el encuentro con la cerca de la medina; los bordes exteriores siguen siendo aproximados.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.granada-pepri-islamic-city",
           "source.granada-centre-plan",
-          "source.junta-mesones-2010",
-          "source.alhambra-bib-rambla-gate",
           "source.openstreetmap"
         ],
         "citations": [
           {
-            "source_id": "source.junta-mesones-2010",
-            "locator": "Resumen y resultados de la intervención en Mesones 48",
-            "supports": "Documentación de los niveles fundacionales del arrabal de la Rambla y de un edificio nazarí del siglo XIV."
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5, «Arrabal del Arenal»",
+            "supports": "Forma alargada junto al límite occidental de la medina."
           },
           {
-            "source_id": "source.granada-centre-plan",
-            "locator": "Memoria, apartado «La ciudad islámica»",
-            "supports": "Identificación de al-Ramla como uno de los arrabales de la ciudad baja."
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Memoria urbana, p. 88, plano de Isac",
+            "supports": "Contraste de la posición y forma del Arenal en la ciudad nazarí."
           }
         ],
         "publication_status": "publishable"
@@ -1775,13 +2944,42 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [-3.60125, 37.17605],
-            [-3.59975, 37.17535],
-            [-3.5988, 37.17465],
-            [-3.59935, 37.17365],
-            [-3.60095, 37.17355],
-            [-3.60145, 37.17465],
-            [-3.60125, 37.17605]
+            [
+              -3.5993709,
+              37.1739157
+            ],
+            [
+              -3.5995746,
+              37.1736323
+            ],
+            [
+              -3.6001742,
+              37.1731902
+            ],
+            [
+              -3.6005853,
+              37.1734388
+            ],
+            [
+              -3.6011513,
+              37.174242
+            ],
+            [
+              -3.6016677,
+              37.1751535
+            ],
+            [
+              -3.6022061,
+              37.1759358
+            ],
+            [
+              -3.6014078,
+              37.1760818
+            ],
+            [
+              -3.5993709,
+              37.1739157
+            ]
           ]
         ]
       }
@@ -1791,13 +2989,14 @@
       "id": "quarter.albayyazin",
       "properties": {
         "id": "quarter.albayyazin",
-        "name": "Arrabal del Albaicín",
+        "name": "Arrabal del Albaicín / al-Bayyazin",
         "historical_name": "Rabad al-Bayyazin",
         "modern_name": "Albaicín alto y entorno de San Miguel",
         "aliases": [
-          "Arrabal de los Halconeros",
-          "Al-Bayyazin",
-          "Rabad al-Bayyacín"
+          "Albayzín",
+          "Rabad al-Bayyazin",
+          "Los Alconeros",
+          "Barrio de los Alconeros"
         ],
         "modern_search_terms": [
           "San Miguel Alto",
@@ -1829,25 +3028,25 @@
         "summary": "Gran arrabal septentrional que, junto con Axares y la Alcazaba Qadima, formaba el complejo urbano del Albaicín tardonazarí.",
         "context_1492": "Al-Bayyazin era un núcleo urbano diferenciado pero integrado en el amplio recinto del Albaicín. Su expansión quedó ordenada por la cerca nazarí y por los caminos y puertas de la ladera alta.",
         "after_1492": "Las parroquias, conventos y transformaciones residenciales cristianas y moriscas alteraron sus subdivisiones, mientras Albaicín pasó a designar un ámbito histórico mucho más amplio.",
-        "today": "La envolvente distingue el arrabal histórico del actual barrio administrativo y del sector urbano general del Albaicín. Sus bordes interiores con Axares y la Alcazaba Qadima son aproximados.",
-        "evidence_note": "Las fuentes confirman la entidad y su relación con la cerca exterior, pero difieren sobre la extensión exacta de sus subdivisiones; se representa un núcleo amplio en la ladera alta, con solapes deliberados en los bordes inciertos.",
+        "today": "El arrabal ocupa el espacio comprendido entre la cerca exterior nazarí y los recintos anteriores de la Alcazaba Vieja y Axares. La denominación «Los Alconeros» se recoge como rótulo del Mapa 5, no como etimología demostrada.",
+        "evidence_note": "El borde exterior mantiene los lienzos conservados y anclajes ya contrastados con OSM y el PEPRI. Los bordes interiores son compartidos con Qadima y Axares. Así se sustituyen las manchas separadas por recintos contiguos; no se reconstruyen límites de cada barrio menor ni una ocupación edificada homogénea.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
-          "source.junta-san-miguel-alto-2005",
-          "source.granada-albaicin-wall-route",
+          "source.ujaen-water-route-2025",
           "source.granada-pepri-islamic-city",
+          "source.granada-albaicin-wall-route",
           "source.openstreetmap"
         ],
         "citations": [
           {
-            "source_id": "source.junta-san-miguel-alto-2005",
-            "locator": "Resumen y contextualización del Albaicín musulmán",
-            "supports": "Formación del Albaicín a partir de al-Bayyazin y Axares y articulación mediante la nueva cerca de finales del siglo XIII y comienzos del XIV."
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5, rótulo «Barrio de los Alconeros / Rabat Al-bayyazin»",
+            "supports": "Identificación del arrabal septentrional y contacto con los recintos anteriores."
           },
           {
             "source_id": "source.granada-pepri-islamic-city",
-            "locator": "Anexo V, memoria urbana y cartografía asociada",
-            "supports": "Organización del Albaicín tardomedieval en núcleos y recintos diferenciados."
+            "locator": "Memoria urbana, p. 88 y plano del Albaicín nazarí",
+            "supports": "Envolvente tardonazarí contrastada con los lienzos conservados."
           }
         ],
         "publication_status": "publishable"
@@ -1856,16 +3055,178 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [-3.5948, 37.1847],
-            [-3.5937, 37.1859],
-            [-3.59155, 37.1862],
-            [-3.58985, 37.18545],
-            [-3.588, 37.1848],
-            [-3.5875, 37.18365],
-            [-3.5885, 37.18245],
-            [-3.5912, 37.182],
-            [-3.5938, 37.18275],
-            [-3.5948, 37.1847]
+            [
+              -3.5994918,
+              37.1821936
+            ],
+            [
+              -3.5978093,
+              37.1848455
+            ],
+            [
+              -3.5972537,
+              37.1846439
+            ],
+            [
+              -3.596339,
+              37.1846974
+            ],
+            [
+              -3.5954314,
+              37.1845066
+            ],
+            [
+              -3.5949473,
+              37.1851205
+            ],
+            [
+              -3.5945015,
+              37.1855218
+            ],
+            [
+              -3.5937863,
+              37.185882
+            ],
+            [
+              -3.5931119,
+              37.1859342
+            ],
+            [
+              -3.592966,
+              37.1859777
+            ],
+            [
+              -3.5925442,
+              37.1860617
+            ],
+            [
+              -3.5915528,
+              37.186192
+            ],
+            [
+              -3.5914719,
+              37.1861891
+            ],
+            [
+              -3.5909078,
+              37.1861248
+            ],
+            [
+              -3.5904947,
+              37.1858184
+            ],
+            [
+              -3.5898731,
+              37.1854364
+            ],
+            [
+              -3.5891889,
+              37.1852347
+            ],
+            [
+              -3.5887198,
+              37.1851044
+            ],
+            [
+              -3.5879719,
+              37.1848548
+            ],
+            [
+              -3.5877155,
+              37.1846022
+            ],
+            [
+              -3.5873192,
+              37.183715
+            ],
+            [
+              -3.5872183,
+              37.1826812
+            ],
+            [
+              -3.5872614,
+              37.1816785
+            ],
+            [
+              -3.58833,
+              37.17924
+            ],
+            [
+              -3.588270268325397,
+              37.17909701626978
+            ],
+            [
+              -3.5894253,
+              37.1786145
+            ],
+            [
+              -3.58865,
+              37.17965
+            ],
+            [
+              -3.5884673,
+              37.1803737
+            ],
+            [
+              -3.5887874,
+              37.1810534
+            ],
+            [
+              -3.5890703,
+              37.1814551
+            ],
+            [
+              -3.589406,
+              37.1818341
+            ],
+            [
+              -3.590192,
+              37.1820746
+            ],
+            [
+              -3.5904681,
+              37.1815752
+            ],
+            [
+              -3.5912161,
+              37.1815161
+            ],
+            [
+              -3.5914334,
+              37.1815973
+            ],
+            [
+              -3.5923621,
+              37.1820708
+            ],
+            [
+              -3.593282,
+              37.1823085
+            ],
+            [
+              -3.5937726,
+              37.1824667
+            ],
+            [
+              -3.5947285,
+              37.1822987
+            ],
+            [
+              -3.595999,
+              37.1818851
+            ],
+            [
+              -3.5968809,
+              37.1818231
+            ],
+            [
+              -3.5975658,
+              37.1820543
+            ],
+            [
+              -3.5994918,
+              37.1821936
+            ]
           ]
         ]
       }
@@ -1877,7 +3238,7 @@
         "id": "quarter.alfajjarin",
         "name": "Arrabal de los Alfareros",
         "historical_name": "Rabad al-Fajjarin",
-        "modern_name": "Entorno de Santo Domingo y Plaza Fortuny",
+        "modern_name": "Ladera bajo la Sabika y entorno de Campo del Príncipe",
         "aliases": [
           "Rabad al-Fajjarin",
           "Rabad Alfajjarin",
@@ -1914,14 +3275,13 @@
         "summary": "Arrabal meridional vinculado a la producción cerámica, contiguo a al-Nayd y encerrado con él dentro de las ampliaciones defensivas nazaríes.",
         "context_1492": "El barrio reunía talleres, viviendas, huertas y fincas palatinas. Hacia levante enlazaba con La Loma a través de un paisaje donde la maqbara de Bab al-Fajjarin y la de al-Assal ocupaban Campo del Príncipe y sus inmediaciones; la Puerta de los Alfareros comunicaba ambos arrabales con la medina anterior.",
         "after_1492": "El establecimiento de Santo Domingo y las transformaciones del Realejo alteraron la estructura productiva y residencial. El Cuarto Real y evidencias arqueológicas conservaron testimonios del paisaje nazarí.",
-        "today": "La envolvente utiliza Plaza Fortuny, Santo Domingo, Plaza de los Campos, el Cuarto Real, Belén y el borde occidental del Campo del Príncipe. Incluye espacios productivos, residenciales, funerarios y agrícolas, no solo una mancha continua de viviendas.",
-        "evidence_note": "La función y el sector están bien documentados. La geometría se prolonga ahora hasta el ámbito funerario de Campo del Príncipe para evitar una separación territorial artificial con al-Nayd; la franja compartida sigue siendo aproximada y no constituye un deslinde parcelario.",
+        "today": "Sector al este de la cerca interior del Mauror, entre las puertas antiguas, el pie de la Sabika y la transición de Campo del Príncipe hacia la Loma.",
+        "evidence_note": "La revisión corrige la ocupación anterior de gran parte de la medina al oeste de la cerca interior. El Mapa 5 y el esquema de Isac sitúan el arrabal al este de ella. El límite con la Loma es interpretativo y compartido; la especialización alfarera no implica que todos sus solares fueran talleres.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.granada-pepri-islamic-city",
           "source.granada-centre-plan",
-          "source.granada-cuarto-real",
-          "source.junta-belen-2008",
-          "source.junta-cuesta-pescado-2023",
           "source.junta-porteria-santo-domingo-2012",
           "source.openstreetmap"
         ],
@@ -1940,6 +3300,11 @@
             "source_id": "source.junta-cuesta-pescado-2023",
             "locator": "Contexto histórico y arqueológico de los arrabales meridionales",
             "supports": "Contigüidad de al-Fajjarin y al-Nayd, incorporación conjunta al recinto y localización de la necrópolis oriental en Campo del Príncipe."
+          },
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+            "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
           }
         ],
         "publication_status": "publishable"
@@ -1948,18 +3313,162 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [-3.59715, 37.17445],
-            [-3.5945139, 37.1737452],
-            [-3.5932, 37.17405],
-            [-3.5918, 37.1738],
-            [-3.5911, 37.1729],
-            [-3.5915, 37.1718],
-            [-3.5927, 37.1712],
-            [-3.5938441, 37.1706222],
-            [-3.5949269, 37.171666],
-            [-3.5971375, 37.1722659],
-            [-3.5980542, 37.1721727],
-            [-3.59715, 37.17445]
+            [
+              -3.59446,
+              37.1744
+            ],
+            [
+              -3.59448,
+              37.17512
+            ],
+            [
+              -3.5934157,
+              37.1754807
+            ],
+            [
+              -3.5929,
+              37.1761
+            ],
+            [
+              -3.5918,
+              37.1767
+            ],
+            [
+              -3.5911036,
+              37.1767
+            ],
+            [
+              -3.5909558,
+              37.1765922
+            ],
+            [
+              -3.5910053,
+              37.1765267
+            ],
+            [
+              -3.590914,
+              37.1763735
+            ],
+            [
+              -3.5904008,
+              37.1762034
+            ],
+            [
+              -3.5904632,
+              37.1760845
+            ],
+            [
+              -3.5903181,
+              37.1760362
+            ],
+            [
+              -3.5902421,
+              37.1761837
+            ],
+            [
+              -3.5898379,
+              37.1760016
+            ],
+            [
+              -3.5898207,
+              37.1760299
+            ],
+            [
+              -3.5893598,
+              37.1759021
+            ],
+            [
+              -3.5888185,
+              37.175696
+            ],
+            [
+              -3.58824,
+              37.1753493
+            ],
+            [
+              -3.5884215,
+              37.1751752
+            ],
+            [
+              -3.588307,
+              37.175092
+            ],
+            [
+              -3.588113,
+              37.1752738
+            ],
+            [
+              -3.5877169,
+              37.175031
+            ],
+            [
+              -3.587757,
+              37.1749793
+            ],
+            [
+              -3.5876955,
+              37.174949
+            ],
+            [
+              -3.5876555,
+              37.1750008
+            ],
+            [
+              -3.587296,
+              37.1748742
+            ],
+            [
+              -3.5873264,
+              37.1748148
+            ],
+            [
+              -3.5872563,
+              37.1747902
+            ],
+            [
+              -3.5872203,
+              37.1748496
+            ],
+            [
+              -3.5868464,
+              37.1747795
+            ],
+            [
+              -3.5868569,
+              37.1745239
+            ],
+            [
+              -3.5867888,
+              37.1744557
+            ],
+            [
+              -3.586698,
+              37.1737
+            ],
+            [
+              -3.5867,
+              37.1737
+            ],
+            [
+              -3.58845,
+              37.17385
+            ],
+            [
+              -3.5905877,
+              37.1735226
+            ],
+            [
+              -3.5918,
+              37.1738
+            ],
+            [
+              -3.59449,
+              37.17375
+            ],
+            [
+              -3.59446,
+              37.1744
+            ]
           ]
         ]
       }
@@ -2181,14 +3690,14 @@
         "summary": "Arrabal contiguo a los Alfareros que ocupaba la ladera meridional hasta la Puerta de la Loma, las huertas y la cerca exterior tardonazarí.",
         "context_1492": "La Loma ocupaba el extremo sudoriental intramuros. Su territorio enlazaba con al-Fajjarin en torno al Campo del Príncipe y reunía tejido residencial, alfares dispersos, cementerios, almunias y huertas articuladas por la Acequia Gorda. La Puerta de la Loma o de los Molinos lo comunicaba con el Genil y los caminos de la sierra.",
         "after_1492": "La reorganización parroquial, los cambios de propiedad y la transformación de las huertas modificaron el sector. Parte de su identidad quedó absorbida por el Realejo, San Cecilio y la Antequeruela.",
-        "today": "La envolvente se apoya en Campo del Príncipe, calle Molinos, San Cecilio, Solares, Vistillas de los Ángeles y Los Mártires. Los nombres árabes presentan transcripciones divergentes y se conservan como alias de una misma entidad.",
-        "evidence_note": "Las fuentes describen al-Nayd como contiguo o desarrollado más allá de al-Fajjarin y lo sitúan dentro de una cerca propia. La envolvente se amplía hacia poniente para incluir la transición funeraria de Campo del Príncipe y hacia el exterior hasta la cerca Sur; los solapes representan incertidumbre histórica, no duplicación exacta de suelo.",
+        "today": "Sector meridional de expansión, entre la cerca interior del Realejo y el recinto exterior de Solares, Vistillas y Los Mártires, contiguo a los Alfareros.",
+        "evidence_note": "El borde occidental se ajusta a la cerca interior, el exterior conserva los anclajes arqueológicos previos y el contacto con Alfareros se comparte sin huecos ni solapes. La división entre los dos arrabales sigue siendo interpretativa. Antequeruela se mantiene como ámbito tardío superpuesto, no como partición de idéntico rango.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.granada-pepri-islamic-city",
           "source.granada-centre-plan",
-          "source.junta-belen-2008",
           "source.junta-porteria-santo-domingo-2012",
-          "source.junta-cuesta-pescado-2023",
           "source.junta-hoteles-belen-2020",
           "source.openstreetmap"
         ],
@@ -2212,6 +3721,11 @@
             "source_id": "source.junta-hoteles-belen-2020",
             "locator": "Resumen y contexto histórico-arqueológico",
             "supports": "Borde meridional agrícola y funerario de La Loma y relación con la cerca hasta Puerta de los Molinos."
+          },
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+            "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
           }
         ],
         "publication_status": "publishable"
@@ -2220,22 +3734,98 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [-3.5932, 37.17405],
-            [-3.5918, 37.1738],
-            [-3.5905877, 37.1735226],
-            [-3.58845, 37.17385],
-            [-3.58665, 37.1733],
-            [-3.58675, 37.17225],
-            [-3.58695, 37.1713],
-            [-3.58725, 37.17035],
-            [-3.58815, 37.16885],
-            [-3.58975, 37.16935],
-            [-3.59195, 37.16995],
-            [-3.5938441, 37.1706222],
-            [-3.5927, 37.1712],
-            [-3.5915, 37.1718],
-            [-3.5911, 37.1729],
-            [-3.5932, 37.17405]
+            [
+              -3.59465,
+              37.1723
+            ],
+            [
+              -3.59452,
+              37.1731
+            ],
+            [
+              -3.59449,
+              37.17375
+            ],
+            [
+              -3.5918,
+              37.1738
+            ],
+            [
+              -3.5905877,
+              37.1735226
+            ],
+            [
+              -3.58845,
+              37.17385
+            ],
+            [
+              -3.5867,
+              37.1737
+            ],
+            [
+              -3.586698,
+              37.1737
+            ],
+            [
+              -3.58665,
+              37.1733
+            ],
+            [
+              -3.58675,
+              37.17225
+            ],
+            [
+              -3.58695,
+              37.1713
+            ],
+            [
+              -3.58725,
+              37.17035
+            ],
+            [
+              -3.5877,
+              37.16955
+            ],
+            [
+              -3.58815,
+              37.16885
+            ],
+            [
+              -3.588662,
+              37.169046
+            ],
+            [
+              -3.58975,
+              37.16935
+            ],
+            [
+              -3.59085,
+              37.16965
+            ],
+            [
+              -3.59195,
+              37.16995
+            ],
+            [
+              -3.59295,
+              37.1703
+            ],
+            [
+              -3.5937585,
+              37.1705355
+            ],
+            [
+              -3.5938441,
+              37.1706222
+            ],
+            [
+              -3.5949269,
+              37.171666
+            ],
+            [
+              -3.59465,
+              37.1723
+            ]
           ]
         ]
       }

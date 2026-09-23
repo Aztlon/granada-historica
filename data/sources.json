@@ -580,7 +580,7 @@
     "author": "Adelaida Martín Martín et al.",
     "title": "El camino del agua desde sus fuentes hasta la medina de la Alhambra y Granada en época islámica",
     "year": 2025,
-    "publisher": "Arqueología y Territorio Medieval, Universidad de Jaén",
+    "publisher": "Agua y Territorio / Water and Landscape, Universidad de Jaén",
     "type": "scholarly_article",
     "url": "https://revistaselectronicas.ujaen.es/index.php/atma/article/view/9097",
     "identifier": "DOI:10.17561/at.27.9097",
@@ -590,18 +590,18 @@
   {
     "id": "source.alhambra-real-acequia",
     "author": "Patronato de la Alhambra y Generalife",
-    "title": "Ventana arqueológica: la Acequia Real",
+    "title": "La Acequia Real. Una ventana abierta de la historia en el Museo de la Alhambra",
     "year": null,
     "publisher": "Patronato de la Alhambra y Generalife",
     "type": "institutional_webpage",
-    "url": "https://www.alhambra-patronato.es/ventana-arqueologica",
+    "url": "https://www.alhambra-patronato.es/la-acequia-real-una-ventana-abierta-de-la-historia-en-el-museo",
     "identifier": "",
     "reuse_status": "Consulta y cita factual; no se reproducen imágenes ni textos extensos.",
     "notes": "Describe la captación en el Darro, el paso por el Cerro del Sol y el abastecimiento del Generalife y la Alhambra."
   },
   {
     "id": "source.ugr-puente-carbon",
-    "author": "Eva María Castaño Aguilar et al.",
+    "author": "Encarnación Reyes Martínez",
     "title": "La cerámica islámica y cristiana de la tenería del Puente del Carbón (Granada)",
     "year": 2005,
     "publisher": "Arqueología y Territorio, Universidad de Granada",
@@ -610,6 +610,18 @@
     "identifier": "Arqueología y Territorio 2, pp. 109-124",
     "reuse_status": "Consulta y cita factual; no se redistribuye ni se adapta la publicación.",
     "notes": "Contextualiza el puente medieval junto al Corral del Carbón y la tenería asociada, con evidencia arqueológica nazarí."
+  },
+  {
+    "id": "source.alhambra-torre-agua",
+    "author": "Patronato de la Alhambra y Generalife",
+    "title": "Torre del Agua",
+    "year": null,
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "type": "institutional_webpage",
+    "url": "https://www.alhambra-patronato.es/edificios-lugares/torre-del-agua",
+    "identifier": "",
+    "reuse_status": "Consulta y cita factual; no se reproducen imágenes.",
+    "notes": "Identifica el acueducto junto a la Torre del Agua como entrada de la acequia del Sultán al recinto desde el Generalife."
   },
   {
     "id": "source.junta-monaita-wall-2000",

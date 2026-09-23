@@ -128,9 +128,13 @@ Completed M6 research-infrastructure work:
    validate them, and expose them in feature cards.
 
 Current M6 dataset result: 58 cited, publishable, and geometrically audited map
-features; 70 gazetteer records; and 53 registered sources. The water-network
-revision now enforces the source map's bank, crossing, branching, and wall-
-alignment relationships in automated validation. The remaining M6
+features; 70 gazetteer records; and 54 registered sources. The September 2026
+water/urban audit adds reproducible affine registration, corrects mosque supply
+and upstream canal crossings, places
+Carbón on the Darro, and reconstructs shared quarter boundaries. Automated
+checks cover endpoints, crossings, bridge alignments, gates, and shared edges;
+source conflicts and mixed historical phases remain documented in
+`WATER-NETWORK-METHOD.md`. The remaining M6
 work is the canonical question review, full QA, correction pass, and clean
 repository rebuild/deployment confirmation above.
 
