@@ -589,17 +589,24 @@
       "id": "walls.medina-lower",
       "properties": {
         "id": "walls.medina-lower",
-        "name": "Cerca de la medina baja",
+        "name": "Cerca exterior de la ciudad baja",
         "historical_name": null,
         "modern_name": null,
         "aliases": [
           "Muralla de la medina",
-          "Cerca de Madinat Garnata"
+          "Cerca de Madinat Garnata",
+          "Cerca Sur",
+          "Cerca de los arrabales meridionales"
         ],
         "modern_search_terms": [
           "Puerta de Elvira",
           "Bib-Rambla",
-          "Centro"
+          "Centro",
+          "Cuesta del Pescado",
+          "Calle Solares",
+          "Vistillas de los Ángeles",
+          "Cuesta Escoriaza",
+          "Cerro de los Mártires"
         ],
         "category": "walls_gates",
         "subtype": "defensive_wall",
@@ -608,7 +615,7 @@
           "to_year": null,
           "from_precision": "century",
           "to_precision": "unknown",
-          "note": "La cerca urbana fue ampliada y reparada en varias fases; el trazado reúne sectores de cronología diversa."
+          "note": "El frente occidental reúne fases anteriores; la prolongación meridional que encerró al-Fajjarin y al-Nayd se completó entre finales del siglo XIII y mediados del XIV."
         },
         "present_c1492": "secure",
         "confidence": {
@@ -622,11 +629,11 @@
           "parcel_morphology",
           "scholarly_reconstruction"
         ],
-        "summary": "Cerca de Poniente que protegía la ciudad baja desde la Puerta de Elvira hasta Torres Bermejas.",
-        "context_1492": "La cerca descendía desde la Puerta de Elvira, enlazaba accesos como las Cuatro Fuentes, el Molino, Bibalmazán y Bib-Rambla, rodeaba los sectores del Campillo, Santo Domingo y el Realejo y concluía en Torres Bermejas. No fue una línea construida de una vez, sino un sistema modificado durante siglos.",
+        "summary": "Perímetro exterior tardonazarí de la ciudad baja, prolongado para encerrar los arrabales de al-Fajjarin y al-Nayd.",
+        "context_1492": "La cerca descendía desde la Puerta de Elvira por el frente de Poniente y, desde Cuesta de Aixa y el Cuarto Real, envolvía los arrabales meridionales por Cuesta del Pescado, Solares y Vistillas. Pasaba por la Puerta de la Loma o de los Molinos y ascendía por el Cerro de Ahabul hacia la muralla de la Alhambra.",
         "after_1492": "La expansión urbana, las reformas viarias y la pérdida de función defensiva provocaron la demolición o integración de muchos tramos en edificios posteriores.",
-        "today": "La mayor parte del recorrido desapareció o quedó bajo el caserío. El mapa encadena calles y enclaves modernos que conservan su huella —Loarte, Tinajilla, Navarrete, Boquerón, Universidad, Capuchinas, Bib-Rambla, Campillo, Santo Domingo y Realejo— hasta Torres Bermejas; no representa restos visibles de forma continua.",
-        "evidence_note": "La Puerta de Elvira, los hallazgos de Bibalmazán y Mariana Pineda, el tramo del Cuarto Real y Torres Bermejas fijan puntos concretos. Entre ellos se sigue la secuencia topográfica y viaria publicada por la Junta y el Ayuntamiento, manteniendo confianza aproximada donde la fábrica se ha perdido.",
+        "today": "La mayor parte del recorrido desapareció o quedó bajo el caserío. El mapa enlaza el frente de Poniente con los anclajes de Cuarto Real, Cuesta del Pescado, Solares, Vistillas, la confluencia de Escoriaza y la subida de Los Mártires; no representa fábrica visible de forma continua.",
+        "evidence_note": "Puerta de Elvira, Bibalmazán, Mariana Pineda, Cuarto Real y restos próximos al Paseo de la Bomba ofrecen anclajes desiguales. El tramo Solares–Vistillas–Puerta de la Loma y la subida al Cerro de Ahabul se reconstruyen por documentos, topografía y trazados publicados, por lo que permanecen aproximados.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
           "source.granada-pepri-islamic-city",
@@ -636,6 +643,9 @@
           "source.granada-elvira-gate",
           "source.alhambra-bib-rambla-gate",
           "source.ugr-abbas-defences",
+          "source.junta-aguado-2009",
+          "source.junta-hoteles-belen-2020",
+          "source.junta-porteria-santo-domingo-2012",
           "source.openstreetmap"
         ],
         "citations": [
@@ -663,6 +673,16 @@
             "source_id": "source.alhambra-bib-rambla-gate",
             "locator": "Descripción histórica",
             "supports": "Posición de Bab al-Ramla en el lienzo de la medina baja."
+          },
+          {
+            "source_id": "source.junta-aguado-2009",
+            "locator": "Contexto histórico-arqueológico y figura 1",
+            "supports": "Distingue la cerca interior de la cerca Sur exterior y describe el recorrido Cuesta de Aixa–Cuarto Real–Solares–Vistillas–Puerta de la Loma–Cerro de Ahabul–Alhambra."
+          },
+          {
+            "source_id": "source.junta-hoteles-belen-2020",
+            "locator": "Contexto histórico-arqueológico general",
+            "supports": "Confirma el borde del escarpe, el paso junto al Convento de los Ángeles y la aproximación a Vistillas y Puerta de los Molinos."
           }
         ],
         "publication_status": "publishable"
@@ -704,6 +724,90 @@
           [-3.5971375, 37.1722659],
           [-3.5949269, 37.171666],
           [-3.5938441, 37.1706222],
+          [-3.5937585, 37.1705355],
+          [-3.59295, 37.1703],
+          [-3.59195, 37.16995],
+          [-3.59085, 37.16965],
+          [-3.58975, 37.16935],
+          [-3.588662, 37.169046],
+          [-3.58815, 37.16885],
+          [-3.5877, 37.16955],
+          [-3.58725, 37.17035],
+          [-3.58695, 37.1713],
+          [-3.58675, 37.17225],
+          [-3.58665, 37.1733],
+          [-3.5867888, 37.1744557]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "walls.mauror-realejo-inner",
+      "properties": {
+        "id": "walls.mauror-realejo-inner",
+        "name": "Cerca interior del Mauror y el Realejo",
+        "historical_name": null,
+        "modern_name": null,
+        "aliases": [
+          "Muralla interior del Mauror",
+          "Cerca de Torres Bermejas a los Alfareros"
+        ],
+        "modern_search_terms": [
+          "Cuarto Real de Santo Domingo",
+          "Plaza Fortuny",
+          "Placeta de la Puerta del Sol",
+          "Torres Bermejas"
+        ],
+        "category": "walls_gates",
+        "subtype": "defensive_wall",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Cerca anterior a la ampliación nazarí exterior; siguió estructurando los pasos entre el núcleo urbano y los arrabales incorporados."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "parcel_morphology",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Línea defensiva interior entre el entorno del Cuarto Real, las puertas de Alfareros y Mawrur y Torres Bermejas.",
+        "context_1492": "Tras quedar al-Fajjarin y al-Nayd dentro del perímetro exterior, esta cerca ya no era el límite total de la ciudad. Sus puertas seguían organizando la comunicación entre la medina anterior, el Mauror y los arrabales meridionales.",
+        "after_1492": "La pérdida de función defensiva, la integración en el caserío y las reformas del Realejo fragmentaron o borraron gran parte de su recorrido.",
+        "today": "Se representa una línea interpretativa entre Cuarto Real, Plaza Fortuny, Placeta de la Puerta del Sol y Torres Bermejas. No debe confundirse con la cerca exterior tardonazarí de La Loma.",
+        "evidence_note": "Las puertas y Torres Bermejas fijan el corredor general, pero el tramo próximo a la Puerta del Sol es expresamente discutido en la bibliografía y apenas conserva vestigios.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-centre-plan",
+          "source.junta-aguado-2009",
+          "source.junta-porteria-santo-domingo-2012",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.junta-aguado-2009",
+            "locator": "Contexto histórico-arqueológico",
+            "supports": "Diferenciación de la línea Torres Bermejas–Cuarto Real respecto de las cercas exteriores nazaríes y localización de Bab Mawrur y Bab al-Fajjarin."
+          },
+          {
+            "source_id": "source.junta-porteria-santo-domingo-2012",
+            "locator": "pp. 4-5, formación de los arrabales meridionales",
+            "supports": "Comunicación de los arrabales con la medina por Bab al-Fajjarin y, secundariamente, Bab Mawrur."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-3.5937585, 37.1705355],
           [-3.5931362, 37.1738232],
           [-3.5928874, 37.1739582],

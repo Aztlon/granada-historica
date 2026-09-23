@@ -815,6 +815,150 @@
     },
     {
       "type": "Feature",
+      "id": "gate.alfajjarin",
+      "properties": {
+        "id": "gate.alfajjarin",
+        "name": "Puerta de los Alfareros",
+        "historical_name": "Bab al-Fajjarin",
+        "modern_name": "Plaza Fortuny",
+        "aliases": ["Puerta de al-Fajjarin"],
+        "modern_search_terms": ["Plaza Fortuny", "Plaza del Realejo"],
+        "category": "walls_gates",
+        "subtype": "lost_city_gate",
+        "period": {
+          "from_year": null,
+          "to_year": null,
+          "from_precision": "unknown",
+          "to_precision": "unknown",
+          "note": "Puerta de la cerca anterior que seguía en uso como paso entre la medina y los arrabales meridionales en 1492."
+        },
+        "present_c1492": "secure",
+        "confidence": {"location": "approximate", "time": "secure"},
+        "evidence_basis": ["documentary", "archaeology", "toponymy", "scholarly_reconstruction"],
+        "summary": "Paso principal entre la medina anterior y los arrabales de al-Fajjarin y al-Nayd, situado en el entorno de Plaza Fortuny.",
+        "context_1492": "Aunque los arrabales ya estaban dentro de la cerca exterior, Bab al-Fajjarin seguía articulando su comunicación con el núcleo urbano anterior.",
+        "after_1492": "La puerta desapareció y las reformas del Realejo alteraron su encuentro viario, pero su posición se conserva como referencia historiográfica.",
+        "today": "El punto representa el entorno de Plaza Fortuny y no una planta arqueológica conservada del vano.",
+        "evidence_note": "Las fuentes coinciden en Plaza Fortuny como ámbito de la puerta; la ausencia de fábrica visible obliga a mantener una localización aproximada.",
+        "geometry_method": "representative_point",
+        "geometry_source_refs": ["source.junta-porteria-santo-domingo-2012", "source.junta-cuesta-pescado-2023", "source.openstreetmap"],
+        "citations": [
+          {"source_id": "source.junta-cuesta-pescado-2023", "locator": "Contexto histórico de los arrabales meridionales", "supports": "Localización de Bab al-Fajjarin en la actual Plaza Fortuny y función de comunicación con la medina."}
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {"type": "Point", "coordinates": [-3.59449, 37.17375]}
+    },
+    {
+      "type": "Feature",
+      "id": "gate.mawrur",
+      "properties": {
+        "id": "gate.mawrur",
+        "name": "Puerta del Mauror",
+        "historical_name": "Bab Mawrur",
+        "modern_name": "Placeta de la Puerta del Sol",
+        "aliases": ["Puerta del Sol", "Bab al-Mawrur"],
+        "modern_search_terms": ["Placeta de la Puerta del Sol", "Lavadero de la Puerta del Sol"],
+        "category": "walls_gates",
+        "subtype": "lost_city_gate",
+        "period": {
+          "from_year": null,
+          "to_year": null,
+          "from_precision": "unknown",
+          "to_precision": "unknown",
+          "note": "Paso secundario de la cerca interior del Mauror, documentado para la organización medieval del sector."
+        },
+        "present_c1492": "secure",
+        "confidence": {"location": "approximate", "time": "secure"},
+        "evidence_basis": ["documentary", "toponymy", "historical_cartography", "scholarly_reconstruction"],
+        "summary": "Puerta secundaria de la cerca interior que comunicaba el Mauror con el Realejo y los arrabales meridionales.",
+        "context_1492": "Bab Mawrur constituía un paso secundario respecto de Bab al-Fajjarin y seguía estructurando la ladera después de la ampliación de la cerca exterior.",
+        "after_1492": "El vano desapareció, pero el topónimo Puerta del Sol y el lavadero conservaron la memoria del paso.",
+        "today": "El punto se sitúa en la placeta homónima y representa el ámbito de la puerta desaparecida.",
+        "evidence_note": "La placeta fija el ámbito general, pero las publicaciones califican como dudoso el recorrido exacto de la muralla inmediata.",
+        "geometry_method": "representative_point",
+        "geometry_source_refs": ["source.junta-aguado-2009", "source.junta-porteria-santo-domingo-2012", "source.openstreetmap"],
+        "citations": [
+          {"source_id": "source.junta-aguado-2009", "locator": "Contexto histórico-arqueológico", "supports": "Localización de Bab Mawrur en la Placeta de la Puerta del Sol y relación con la cerca interior."}
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {"type": "Point", "coordinates": [-3.59448, 37.17512]}
+    },
+    {
+      "type": "Feature",
+      "id": "gate.pescado",
+      "properties": {
+        "id": "gate.pescado",
+        "name": "Puerta del Pescado",
+        "historical_name": "Bab al-Hayar",
+        "modern_name": "Cuesta del Pescado",
+        "aliases": ["Puerta de la Piedra", "Puerta del Ocaso"],
+        "modern_search_terms": ["Cuesta del Pescado", "Cuarto Real de Santo Domingo"],
+        "category": "walls_gates",
+        "subtype": "lost_city_gate",
+        "period": {
+          "from_year": 1200,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Acceso exterior del recinto de los arrabales meridionales, activo en época nazarí."
+        },
+        "present_c1492": "secure",
+        "confidence": {"location": "approximate", "time": "secure"},
+        "evidence_basis": ["archaeology", "documentary", "historical_cartography", "toponymy"],
+        "summary": "Acceso suroccidental de los arrabales amurallados, situado al final de la Cuesta del Pescado junto al escarpe del Genil.",
+        "context_1492": "Bab al-Hayar comunicaba al-Fajjarin y al-Nayd con el exterior y marcaba uno de los anclajes de la cerca Sur.",
+        "after_1492": "La puerta fue eliminada y su entorno quedó absorbido por edificaciones y alineaciones posteriores.",
+        "today": "El punto señala el extremo meridional de Cuesta del Pescado, no restos visibles de un arco conservado.",
+        "evidence_note": "El topónimo, la documentación y el análisis de estructuras fijan el ámbito, aunque la planta exacta del vano no está publicada como huella conservada.",
+        "geometry_method": "representative_point",
+        "geometry_source_refs": ["source.junta-cuesta-pescado-2023", "source.junta-porteria-santo-domingo-2012", "source.openstreetmap"],
+        "citations": [
+          {"source_id": "source.junta-cuesta-pescado-2023", "locator": "Contexto histórico de los arrabales meridionales", "supports": "Identificación de Bab al-Hayar con la Puerta del Pescado y su función como acceso exterior."}
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {"type": "Point", "coordinates": [-3.5937585, 37.1705355]}
+    },
+    {
+      "type": "Feature",
+      "id": "gate.molinos",
+      "properties": {
+        "id": "gate.molinos",
+        "name": "Puerta de la Loma o de los Molinos",
+        "historical_name": "Bab al-Nayd",
+        "modern_name": "Confluencia de Cuesta Escoriaza y Vistillas de los Ángeles",
+        "aliases": ["Puerta de los Molinos", "Puerta de Güéjar", "Bib Neched"],
+        "modern_search_terms": ["Cuesta Escoriaza", "Vistillas de los Ángeles", "Cuesta de los Molinos"],
+        "category": "walls_gates",
+        "subtype": "lost_city_gate",
+        "period": {
+          "from_year": 1300,
+          "to_year": 1833,
+          "from_precision": "century",
+          "to_precision": "year",
+          "note": "Puerta del recinto de La Loma, conservada parcialmente hasta su demolición definitiva en 1833."
+        },
+        "present_c1492": "secure",
+        "confidence": {"location": "approximate", "time": "secure"},
+        "evidence_basis": ["documentary", "historical_cartography", "toponymy", "scholarly_reconstruction"],
+        "summary": "Acceso meridional de al-Nayd y punto donde la cerca Sur doblaba hacia el Cerro de Ahabul y la Alhambra.",
+        "context_1492": "Bab al-Nayd comunicaba La Loma con los molinos, el Genil y los caminos de la sierra. Desde ella la cerca ascendía hacia Los Mártires y el recinto de la Alhambra.",
+        "after_1492": "Conocida como Puerta de los Molinos o de Güéjar, perdió su función y fue demolida definitivamente en 1833.",
+        "today": "El punto aproxima la confluencia de Cuesta Escoriaza y Vistillas de los Ángeles; no se conserva el vano.",
+        "evidence_note": "Las fuentes fijan la confluencia viaria y describen una entrada en recodo, pero la posición métrica varía entre reconstrucciones.",
+        "geometry_method": "representative_point",
+        "geometry_source_refs": ["source.junta-hoteles-belen-2020", "source.junta-aguado-2009", "source.openstreetmap"],
+        "citations": [
+          {"source_id": "source.junta-hoteles-belen-2020", "locator": "Contexto histórico-arqueológico general", "supports": "Localización de la Puerta de la Loma en la confluencia de Escoriaza y Vistillas, función y demolición en 1833."}
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {"type": "Point", "coordinates": [-3.58815, 37.16885]}
+    },
+    {
+      "type": "Feature",
       "id": "religious.albaicin-great-mosque",
       "properties": {
         "id": "religious.albaicin-great-mosque",

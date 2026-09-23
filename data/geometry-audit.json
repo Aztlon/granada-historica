@@ -98,10 +98,10 @@
   {
     "feature_id": "walls.medina-lower",
     "status": "verified",
-    "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-western-wall-2006", "source.junta-gran-capitan-2015", "source.granada-elvira-gate", "source.alhambra-bib-rambla-gate", "source.openstreetmap"],
-    "check_method": "Reconstrucción de la cerca de Poniente mediante la secuencia publicada Puerta Elvira–Loarte–Tinajilla–Navarrete–Corazones–Boquerón–San Justo y Pastor–Universidad–Bibalmazán–Bibarrambla–Campillo–Santo Domingo–Realejo–Torres Bermejas, ajustada a los ejes y enclaves modernos de OpenStreetMap.",
-    "notes": "Sustituye la polilínea provisional de ocho vértices. Los puntos arqueológicos y monumentales fijan varios extremos e hitos; los largos tramos sin fábrica visible conservan confianza aproximada y no se presentan como restos continuos."
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-western-wall-2006", "source.junta-gran-capitan-2015", "source.granada-elvira-gate", "source.alhambra-bib-rambla-gate", "source.junta-aguado-2009", "source.junta-hoteles-belen-2020", "source.junta-porteria-santo-domingo-2012", "source.openstreetmap"],
+    "check_method": "El frente de Poniente conserva la secuencia Puerta Elvira–Bibarrambla–Campillo–Cuesta de Aixa. Desde Cuesta del Pescado se sustituye el retorno por la cerca interior por el recorrido exterior publicado: Solares, Vistillas, Puerta de la Loma, Cerro de Ahabul y muralla meridional de la Alhambra.",
+    "notes": "La revisión separa dos fases antes mezcladas. Los anclajes de Poniente, Cuarto Real y Cuesta del Pescado son más firmes; Solares–Vistillas y la subida a la Alhambra siguen siendo una reconstrucción aproximada."
   },
   {
     "feature_id": "walls.alhambra-perimeter",
@@ -154,18 +154,18 @@
   {
     "feature_id": "urban.lower-medina",
     "status": "verified",
-    "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-western-wall-2006", "source.granada-puerta-granadas", "source.alhambra-arms-gate", "source.openstreetmap", "source.dera-hydrology"],
-    "check_method": "Polígono derivado de la cerca de Poniente revisada, el enlace documentado entre Torres Bermejas y la Alcazaba, el acceso urbano de la Puerta de las Armas, el eje del Darro hasta Plaza Nueva y el eje de la calle Elvira hasta la puerta homónima.",
-    "notes": "Sustituye la envolvente provisional. La cerca desaparecida y el enlace Torres Bermejas–Alcazaba siguen siendo aproximados; los demás bordes reutilizan geometrías verificadas."
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-western-wall-2006", "source.granada-puerta-granadas", "source.alhambra-arms-gate", "source.junta-aguado-2009", "source.junta-hoteles-belen-2020", "source.junta-porteria-santo-domingo-2012", "source.openstreetmap", "source.dera-hydrology"],
+    "check_method": "Polígono derivado de la cerca exterior tardonazarí completa: frente de Poniente, cerca Sur de al-Fajjarin y al-Nayd hasta la Alhambra, tramo occidental de la muralla palatina hasta la Puerta de las Armas, Darro y calle Elvira.",
+    "notes": "La revisión incorpora Realejo, Nayd y Antequeruela al recinto intramuros de 1492. El tramo Puerta de la Loma–Cerro de Ahabul–Alhambra permanece aproximado y no expresa densidad edificatoria."
   },
   {
     "feature_id": "urban.late-nasrid-extent",
     "status": "verified",
-    "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-pepri-islamic-city", "source.granada-centre-plan", "source.junta-western-wall-2006", "source.alhambra-fortified-city-guide", "source.granada-albaicin-wall-route", "source.openstreetmap", "source.dera-hydrology"],
-    "check_method": "Unión geométrica en EPSG:25830 de los polígonos verificados del Albaicín, la ciudad baja y la Alhambra, seguida de una simplificación cartográfica de 12 m y exportación a EPSG:4326.",
-    "notes": "Sustituye la gran envolvente dibujada a mano. No incorpora el Generalife, que se mantiene como finca palatina separada, ni arrabales menores sin delimitación defendible; hereda la incertidumbre de los tres sectores de origen."
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.granada-pepri-islamic-city", "source.granada-centre-plan", "source.junta-western-wall-2006", "source.alhambra-fortified-city-guide", "source.granada-albaicin-wall-route", "source.junta-aguado-2009", "source.junta-hoteles-belen-2020", "source.openstreetmap", "source.dera-hydrology"],
+    "check_method": "Contorno exterior de los polígonos verificados del Albaicín, ciudad baja corregida y Alhambra, sustituyendo el cierre interior por Torres Bermejas por la cerca Sur exterior que rodea Nayd y alcanza la muralla meridional de la Alhambra.",
+    "notes": "No incorpora el Generalife y no implica ocupación homogénea. Hereda especialmente la incertidumbre del recorrido de la cerca exterior entre Solares, Vistillas y el Cerro de Ahabul."
   },
   {
     "feature_id": "gate.guadix",
@@ -266,25 +266,89 @@
   {
     "feature_id": "quarter.alfajjarin",
     "status": "verified",
-    "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-centre-plan", "source.granada-cuarto-real", "source.junta-belen-2008", "source.openstreetmap"],
-    "check_method": "Envolvente reconstruida con Plaza Fortuny, Santo Domingo, Plaza de los Campos, Cuarto Real y calle Belén como anclajes, contrastada con el plan municipal y la maqbara excavada de Bab al-Fajjarin.",
-    "notes": "El área indica el sector productivo y residencial; no delimita hornos, talleres, necrópolis ni parcelas de forma individual."
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.granada-centre-plan", "source.granada-cuarto-real", "source.junta-belen-2008", "source.junta-cuesta-pescado-2023", "source.junta-porteria-santo-domingo-2012", "source.openstreetmap"],
+    "check_method": "Envolvente reconstruida con Fortuny, Santo Domingo, Plaza de los Campos, Cuarto Real y Belén, prolongada hacia Campo del Príncipe para incluir el ámbito funerario oriental documentado y establecer una transición territorial con al-Nayd.",
+    "notes": "El área reúne usos productivos, residenciales, funerarios y agrícolas. La franja oriental se solapa deliberadamente con Nayd y la capa funeraria porque no existe un deslinde parcelario defendible."
   },
   {
     "feature_id": "quarter.antequeruela",
     "status": "verified",
-    "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-belen-2008", "source.openstreetmap"],
-    "check_method": "Síntesis espacial trazada con Campo del Príncipe, San Cecilio y los ejes modernos de Molinos, Santiago y Solares citados en la investigación arqueológica y contrastados con el planeamiento municipal.",
-    "notes": "La fecha de formación desde 1410 es sólida; el perímetro es aproximado y se solapa deliberadamente con la Loma por la relación de expansión descrita en las fuentes."
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.junta-honda-realejo-2004", "source.junta-camino-cementerio-2014", "source.ugr-vico-2023", "source.openstreetmap"],
+    "check_method": "Envolvente compacta reconstruida sobre Antequeruela Alta y Baja: la Baja se comprueba entre Carril de San Cecilio y Los Mártires, la Alta como ramal sin salida, y el extremo meridional mediante el cruce documentado con Cuesta del Caidero y Camino Nuevo del Cementerio. Los ejes modernos se contrastan con OpenStreetMap y la posición general con la Plataforma de Vico.",
+    "notes": "Sustituye la envolvente de 2026-09-20, que había convertido referencias al Realejo, Campo del Príncipe, Molinos, Santiago y Solares en una extensión excesiva hacia el suroeste. El núcleo está bien localizado, pero el borde sigue siendo aproximado y Vico se usa solo como corroboración posterior."
   },
   {
     "feature_id": "quarter.loma",
     "status": "verified",
-    "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-belen-2008", "source.openstreetmap"],
-    "check_method": "Envolvente del extremo sudoriental ajustada a San Cecilio, calle Molinos y Vistillas de los Ángeles, y contrastada con la relación documental entre Rabad al-Nayd, Bib Neched y los Alfareros.",
-    "notes": "El sector y sus relaciones urbanas son defendibles; las variantes toponímicas y la ausencia de una cerca continua exigen mantener localización aproximada."
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-belen-2008", "source.junta-porteria-santo-domingo-2012", "source.junta-cuesta-pescado-2023", "source.junta-hoteles-belen-2020", "source.openstreetmap"],
+    "check_method": "Envolvente ampliada desde la transición funeraria de Campo del Príncipe por Molinos, San Cecilio, Solares y Vistillas hasta la cerca Sur y la ladera de Los Mártires, manteniendo Antequeruela como subámbito solapado.",
+    "notes": "Corrige el aislamiento artificial respecto de Alfareros. El perímetro expresa territorio aproximado con viviendas, alfares, cementerios y huertas, no una mancha edificada continua."
+  },
+  {
+    "feature_id": "walls.mauror-realejo-inner",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-aguado-2009", "source.junta-porteria-santo-domingo-2012", "source.openstreetmap"],
+    "check_method": "Línea separada a partir del antiguo cierre Cuarto Real–Fortuny–Puerta del Sol–Torres Bermejas, usando las dos puertas y Torres Bermejas como anclajes y manteniendo el corredor intermedio como reconstrucción.",
+    "notes": "Representa una cerca interior de fase anterior, no el perímetro exterior de la ciudad en 1492. El tramo inmediato a Bab Mawrur es especialmente incierto."
+  },
+  {
+    "feature_id": "gate.alfajjarin",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.junta-porteria-santo-domingo-2012", "source.junta-cuesta-pescado-2023", "source.openstreetmap"],
+    "check_method": "Punto representativo centrado en Plaza Fortuny, ámbito identificado reiteradamente por las fuentes para Bab al-Fajjarin y contrastado con el eje viario moderno.",
+    "notes": "La puerta está documentada, pero no se conserva una planta arqueológica publicable del vano; por ello la localización permanece aproximada."
+  },
+  {
+    "feature_id": "gate.mawrur",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.junta-aguado-2009", "source.junta-porteria-santo-domingo-2012", "source.openstreetmap"],
+    "check_method": "Punto representativo colocado en la Placeta de la Puerta del Sol, cuyo topónimo y posición coinciden con la localización publicada de Bab Mawrur.",
+    "notes": "La puerta es un anclaje defendible; el lienzo de muralla contiguo tiene un trazado más discutido y se mantiene aproximado."
+  },
+  {
+    "feature_id": "gate.pescado",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.junta-cuesta-pescado-2023", "source.junta-porteria-santo-domingo-2012", "source.openstreetmap"],
+    "check_method": "Punto representativo en el extremo meridional de Cuesta del Pescado, coincidente con el quiebro documentado de la cerca Sur y con la localización tradicional de Bab al-Hayar.",
+    "notes": "El ámbito es estable en las fuentes; la posición métrica del umbral y su planta exacta no se consideran seguras."
+  },
+  {
+    "feature_id": "gate.molinos",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.junta-hoteles-belen-2020", "source.junta-aguado-2009", "source.openstreetmap"],
+    "check_method": "Punto representativo en la confluencia de Cuesta Escoriaza, Vistillas de los Ángeles y el acceso a Cuesta de los Molinos, contrastado con las descripciones de la Puerta de la Loma.",
+    "notes": "La identificación del cruce es consistente, pero las reconstrucciones no coinciden en la posición métrica del vano desaparecido."
+  },
+  {
+    "feature_id": "quarter.ramla",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.granada-centre-plan", "source.junta-mesones-2010", "source.alhambra-bib-rambla-gate", "source.openstreetmap"],
+    "check_method": "Envolvente aproximada alrededor de Bib-Rambla, Mesones, Trinidad y la posterior Magdalena, anclada por la excavación de Mesones 48 y por la puerta homónima.",
+    "notes": "La existencia y el corredor comercial son seguros; el límite con la medina y la equivalencia con la collación cristiana posterior no se tratan como exactos."
+  },
+  {
+    "feature_id": "quarter.albayyazin",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.junta-san-miguel-alto-2005", "source.granada-albaicin-wall-route", "source.granada-pepri-islamic-city", "source.openstreetmap"],
+    "check_method": "Envolvente del núcleo alto comprendido entre San Nicolás, San Buenaventura, San Miguel y la cerca exterior, contrastada con la distinción publicada entre al-Bayyazin, Axares y Alcazaba Qadima.",
+    "notes": "Se publica como sector aproximado dentro del Albaicín general; los bordes interiores entre los tres núcleos no se presentan como deslindes exactos."
+  },
+  {
+    "feature_id": "burial.fajjarin-assal",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.junta-belen-2008", "source.junta-porteria-santo-domingo-2012", "source.junta-cuesta-pescado-2023", "source.openstreetmap"],
+    "check_method": "Envolvente de Campo del Príncipe y calles próximas construida con referencias documentales a Bab al-Fajjarin y al-Assal y con los puntos de enterramiento arqueológicamente registrados.",
+    "notes": "La capa representa un paisaje funerario de extensión cambiante y posible fusión de varias maqbaras; no afirma ocupación simultánea de toda la superficie."
   }
 ]

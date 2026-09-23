@@ -101,4 +101,5 @@ export const SUBTYPE_LABELS: Record<string, string> = {
   hospital: 'Hospital',
   hammam: 'Baño público',
   historical_quarter: 'Barrio o arrabal histórico',
+  cemetery: 'Necrópolis o cementerio',
 }

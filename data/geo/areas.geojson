@@ -748,7 +748,7 @@
         "id": "urban.lower-medina",
         "name": "Medina baja",
         "historical_name": "Madinat Garnata",
-        "modern_name": "Centro de Granada",
+        "modern_name": "Centro, Realejo y laderas occidentales de la Alhambra",
         "aliases": [
           "Medina de Granada",
           "Ciudad baja"
@@ -758,7 +758,10 @@
           "Alcaicería",
           "Bib-Rambla",
           "Calle Elvira",
-          "Centro"
+          "Centro",
+          "Realejo",
+          "Campo del Príncipe",
+          "Vistillas de los Ángeles"
         ],
         "category": "urban_structure",
         "subtype": "urban_sector",
@@ -782,10 +785,10 @@
           "scholarly_reconstruction"
         ],
         "summary": "Ciudad baja intramuros, donde se concentraban el principal centro religioso y comercial y varios arrabales de la Granada nazarí.",
-        "context_1492": "La ciudad baja reunía la mezquita aljama, la Alcaicería, la Madraza, mercados, alhóndigas y arrabales extendidos hacia el Campillo, Santo Domingo y el Realejo. La calle Elvira estructuraba su borde septentrional, mientras la cerca de Poniente y la conexión defensiva con la Alhambra cerraban el llano y las laderas meridionales.",
+        "context_1492": "La ciudad baja reunía la mezquita aljama, la Alcaicería, la Madraza, mercados, alhóndigas y los antiguos arrabales incorporados del Campillo, al-Fajjarin y al-Nayd. La calle Elvira estructuraba su borde septentrional; la cerca de Poniente y la cerca Sur encerraban el llano, el Realejo, la Antequeruela y las laderas hasta la muralla de la Alhambra.",
         "after_1492": "La instalación de instituciones cristianas, la transformación de la mezquita mayor y las grandes reformas viarias alteraron el centro. Parte de la trama menor y varios edificios andalusíes sobrevivieron de forma fragmentaria.",
-        "today": "El área comprende buena parte del Centro, el entorno de la Catedral, Bib-Rambla, Campillo, Santo Domingo y Realejo hasta el pie de la Alhambra. Su límite se deriva de la cerca revisada, el enlace Torres Bermejas–Alcazaba, el acceso de la Puerta de las Armas, el Darro y la calle Elvira; no equivale a barrios administrativos actuales.",
-        "evidence_note": "La geometría reutiliza ejes verificados y cierra el recinto con la conexión defensiva documentada entre Torres Bermejas y la Alcazaba. La cerca desaparecida y ese enlace se mantienen como aproximados; el polígono expresa una relación urbana a escala de ciudad, no un parcelario de 1492.",
+        "today": "El área comprende buena parte del Centro y el Realejo, incluido el corredor Solares–Vistillas y la ladera de Los Mártires hasta el recinto de la Alhambra. Su límite reutiliza la cerca exterior revisada, el muro occidental de la Alhambra, la Puerta de las Armas, el Darro y la calle Elvira; no equivale a barrios administrativos actuales.",
+        "evidence_note": "La geometría distingue ahora la cerca exterior tardonazarí de la antigua línea interior Mauror–Realejo. La fábrica conservada es fragmentaria y el ascenso desde Puerta de la Loma hasta la Alhambra es una reconstrucción topográfica e historiográfica aproximada; el polígono expresa pertenencia al recinto urbano, no densidad edificatoria.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
           "source.granada-pepri-islamic-city",
@@ -796,6 +799,9 @@
           "source.alhambra-bib-rambla-gate",
           "source.granada-puerta-granadas",
           "source.alhambra-arms-gate",
+          "source.junta-aguado-2009",
+          "source.junta-hoteles-belen-2020",
+          "source.junta-porteria-santo-domingo-2012",
           "source.openstreetmap",
           "source.dera-hydrology"
         ],
@@ -824,6 +830,11 @@
             "source_id": "source.alhambra-arms-gate",
             "locator": "Camino histórico entre la Alhambra y Granada",
             "supports": "Relación entre la Puerta de las Armas, el Darro y la ciudad baja."
+          },
+          {
+            "source_id": "source.junta-aguado-2009",
+            "locator": "Contexto histórico-arqueológico y figura 1",
+            "supports": "Recorrido de la cerca Sur que incorporó Alfareros, Nayd y Antequeruela al recinto urbano y ascendía hacia la Alhambra."
           }
         ],
         "publication_status": "publishable"
@@ -867,14 +878,51 @@
             [-3.5949269, 37.171666],
             [-3.5938441, 37.1706222],
             [-3.5937585, 37.1705355],
-            [-3.5931362, 37.1738232],
-            [-3.5928874, 37.1739582],
-            [-3.5925565, 37.1740951],
-            [-3.5923992, 37.1741679],
-            [-3.5929865, 37.1748746],
-            [-3.5930082, 37.1750354],
-            [-3.5932498, 37.175238],
-            [-3.5934157, 37.1754807],
+            [-3.59295, 37.1703],
+            [-3.59195, 37.16995],
+            [-3.59085, 37.16965],
+            [-3.58975, 37.16935],
+            [-3.588662, 37.169046],
+            [-3.58815, 37.16885],
+            [-3.5877, 37.16955],
+            [-3.58725, 37.17035],
+            [-3.58695, 37.1713],
+            [-3.58675, 37.17225],
+            [-3.58665, 37.1733],
+            [-3.5867888, 37.1744557],
+            [-3.5868569, 37.1745239],
+            [-3.5868464, 37.1747795],
+            [-3.5872203, 37.1748496],
+            [-3.5872563, 37.1747902],
+            [-3.5873264, 37.1748148],
+            [-3.587296, 37.1748742],
+            [-3.5876555, 37.1750008],
+            [-3.5876955, 37.174949],
+            [-3.587757, 37.1749793],
+            [-3.5877169, 37.175031],
+            [-3.588113, 37.1752738],
+            [-3.588307, 37.175092],
+            [-3.5884215, 37.1751752],
+            [-3.58824, 37.1753493],
+            [-3.5888185, 37.175696],
+            [-3.5893598, 37.1759021],
+            [-3.5898207, 37.1760299],
+            [-3.5898379, 37.1760016],
+            [-3.5902421, 37.1761837],
+            [-3.5903181, 37.1760362],
+            [-3.5904632, 37.1760845],
+            [-3.5904008, 37.1762034],
+            [-3.590914, 37.1763735],
+            [-3.5910053, 37.1765267],
+            [-3.5909558, 37.1765922],
+            [-3.5912123, 37.1767793],
+            [-3.5921146, 37.1768227],
+            [-3.5921224, 37.1767265],
+            [-3.5923204, 37.1767407],
+            [-3.592331, 37.1768173],
+            [-3.5927532, 37.1768282],
+            [-3.5927612, 37.1767876],
+            [-3.5930402, 37.176965],
             [-3.593067, 37.1770697],
             [-3.5929544, 37.1771175],
             [-3.5925184, 37.1772352],
@@ -957,8 +1005,8 @@
         "summary": "Síntesis cartográfica de los tres grandes recintos urbanos revisados: Albaicín, ciudad baja y Alhambra.",
         "context_1492": "Granada era una ciudad formada por recintos, arrabales, espacios agrícolas y corredores fluviales, con el Albaicín y la medina en torno al Darro y la ciudad palatina de la Alhambra sobre la Sabika.",
         "after_1492": "La ciudad se expandió y reformó fuera y dentro de sus antiguas cercas. Las demoliciones, nuevos ejes y cambios de uso hicieron menos legible la continuidad del perímetro medieval.",
-        "today": "La mancha corresponde a la unión geométrica, simplificada a doce metros, del Albaicín, la ciudad baja y la Alhambra ya revisados. El Generalife se mantiene como finca palatina separada para no presentarlo como tejido urbano continuo. No es un límite patrimonial, arqueológico ni administrativo.",
-        "evidence_note": "No se dibuja una envolvente independiente: la geometría se deriva reproduciblemente de tres sectores verificados y conserva sus entrantes principales. Hereda la incertidumbre de sus bordes reconstruidos y no incluye arrabales menores cuya extensión aún no pueda defenderse.",
+        "today": "La mancha corresponde a la unión cartográfica del Albaicín, la ciudad baja corregida y la Alhambra. El borde meridional incorpora ahora los arrabales amurallados de al-Fajjarin y al-Nayd hasta Vistillas y Los Mártires. El Generalife se mantiene como finca palatina separada; no es un límite patrimonial, arqueológico ni administrativo.",
+        "evidence_note": "La geometría deriva de los tres grandes sectores urbanos y sustituye el cierre por Torres Bermejas por la cerca Sur exterior que alcanzaba la Alhambra desde la Puerta de la Loma. Hereda la incertidumbre del recorrido Solares–Vistillas–Cerro de Ahabul y no implica ocupación edificada homogénea.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
           "source.granada-pepri-islamic-city",
@@ -967,6 +1015,8 @@
           "source.alhambra-fortified-city-guide",
           "source.granada-albaicin-wall-route",
           "source.ugr-abbas-defences",
+          "source.junta-aguado-2009",
+          "source.junta-hoteles-belen-2020",
           "source.openstreetmap",
           "source.dera-hydrology"
         ],
@@ -985,6 +1035,11 @@
             "source_id": "source.ugr-abbas-defences",
             "locator": "Capítulos dedicados a Granada",
             "supports": "Contraste académico del sistema defensivo nazarí y sus distintos recintos."
+          },
+          {
+            "source_id": "source.junta-aguado-2009",
+            "locator": "Contexto histórico-arqueológico y figura 1",
+            "supports": "Extensión del recinto tardonazarí por la cerca Sur alrededor de Alfareros, Nayd y Antequeruela."
           }
         ],
         "publication_status": "publishable"
@@ -1010,22 +1065,17 @@
             [-3.5856229, 37.1746328],
             [-3.5866362, 37.174769],
             [-3.5867888, 37.1744557],
-            [-3.5868464, 37.1747795],
-            [-3.5876955, 37.174949],
-            [-3.588113, 37.1752738],
-            [-3.588307, 37.175092],
-            [-3.58824, 37.1753493],
-            [-3.5888185, 37.175696],
-            [-3.5902421, 37.1761837],
-            [-3.5904632, 37.1760845],
-            [-3.5904008, 37.1762034],
-            [-3.590914, 37.1763735],
-            [-3.5912123, 37.1767793],
-            [-3.5927612, 37.1767876],
-            [-3.593067, 37.1770697],
-            [-3.5934157, 37.1754807],
-            [-3.5923992, 37.1741679],
-            [-3.5931362, 37.1738232],
+            [-3.58665, 37.1733],
+            [-3.58675, 37.17225],
+            [-3.58695, 37.1713],
+            [-3.58725, 37.17035],
+            [-3.5877, 37.16955],
+            [-3.58815, 37.16885],
+            [-3.588662, 37.169046],
+            [-3.58975, 37.16935],
+            [-3.59085, 37.16965],
+            [-3.59195, 37.16995],
+            [-3.59295, 37.1703],
             [-3.5937585, 37.1705355],
             [-3.5949269, 37.171666],
             [-3.5971375, 37.1722659],
@@ -1657,6 +1707,171 @@
     },
     {
       "type": "Feature",
+      "id": "quarter.ramla",
+      "properties": {
+        "id": "quarter.ramla",
+        "name": "Arrabal de la Rambla",
+        "historical_name": "Rabad al-Ramla",
+        "modern_name": "Bib-Rambla, Mesones y entorno de la Magdalena",
+        "aliases": [
+          "Arrabal del Arenal",
+          "Rabad Arrambla",
+          "Al-Ramla"
+        ],
+        "modern_search_terms": [
+          "Plaza Bib-Rambla",
+          "Calle Mesones",
+          "Plaza de la Trinidad",
+          "Barrio de la Magdalena"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": 1100,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "El arrabal se desarrolló desde el siglo XII y alcanzó una intensa ocupación comercial y residencial en época nazarí."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Arrabal comercial desarrollado junto a Bib-Rambla y la calle Mesones, asociado posteriormente al barrio de la Magdalena.",
+        "context_1492": "Al-Ramla ocupaba el borde meridional del principal centro comercial y recibía población, mercancías y recursos de la vega. La arqueología documenta edificios nazaríes del siglo XIV bajo la trama de Mesones.",
+        "after_1492": "El sector quedó integrado en la organización cristiana de la Magdalena y conservó una marcada función comercial, aunque plazas, calles y edificios fueron profundamente reformados.",
+        "today": "La envolvente aproxima el ámbito entre Bib-Rambla, Mesones, Trinidad y la Magdalena. No equipara automáticamente el arrabal nazarí con los límites parroquiales cristianos posteriores.",
+        "evidence_note": "La existencia y el eje de Mesones están arqueológicamente documentados, pero la extensión exacta y su relación con las cercas sucesivas no permiten dibujar un perímetro parcelario seguro.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-centre-plan",
+          "source.junta-mesones-2010",
+          "source.alhambra-bib-rambla-gate",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.junta-mesones-2010",
+            "locator": "Resumen y resultados de la intervención en Mesones 48",
+            "supports": "Documentación de los niveles fundacionales del arrabal de la Rambla y de un edificio nazarí del siglo XIV."
+          },
+          {
+            "source_id": "source.granada-centre-plan",
+            "locator": "Memoria, apartado «La ciudad islámica»",
+            "supports": "Identificación de al-Ramla como uno de los arrabales de la ciudad baja."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.60125, 37.17605],
+            [-3.59975, 37.17535],
+            [-3.5988, 37.17465],
+            [-3.59935, 37.17365],
+            [-3.60095, 37.17355],
+            [-3.60145, 37.17465],
+            [-3.60125, 37.17605]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.albayyazin",
+      "properties": {
+        "id": "quarter.albayyazin",
+        "name": "Arrabal del Albaicín",
+        "historical_name": "Rabad al-Bayyazin",
+        "modern_name": "Albaicín alto y entorno de San Miguel",
+        "aliases": [
+          "Arrabal de los Halconeros",
+          "Al-Bayyazin",
+          "Rabad al-Bayyacín"
+        ],
+        "modern_search_terms": [
+          "San Miguel Alto",
+          "San Nicolás",
+          "San Buenaventura",
+          "Albaicín"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": 1200,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "El arrabal se consolidó y quedó articulado por la nueva cerca entre finales del siglo XIII y comienzos del XIV."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Gran arrabal septentrional que, junto con Axares y la Alcazaba Qadima, formaba el complejo urbano del Albaicín tardonazarí.",
+        "context_1492": "Al-Bayyazin era un núcleo urbano diferenciado pero integrado en el amplio recinto del Albaicín. Su expansión quedó ordenada por la cerca nazarí y por los caminos y puertas de la ladera alta.",
+        "after_1492": "Las parroquias, conventos y transformaciones residenciales cristianas y moriscas alteraron sus subdivisiones, mientras Albaicín pasó a designar un ámbito histórico mucho más amplio.",
+        "today": "La envolvente distingue el arrabal histórico del actual barrio administrativo y del sector urbano general del Albaicín. Sus bordes interiores con Axares y la Alcazaba Qadima son aproximados.",
+        "evidence_note": "Las fuentes confirman la entidad y su relación con la cerca exterior, pero difieren sobre la extensión exacta de sus subdivisiones; se representa un núcleo amplio en la ladera alta, con solapes deliberados en los bordes inciertos.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.junta-san-miguel-alto-2005",
+          "source.granada-albaicin-wall-route",
+          "source.granada-pepri-islamic-city",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.junta-san-miguel-alto-2005",
+            "locator": "Resumen y contextualización del Albaicín musulmán",
+            "supports": "Formación del Albaicín a partir de al-Bayyazin y Axares y articulación mediante la nueva cerca de finales del siglo XIII y comienzos del XIV."
+          },
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, memoria urbana y cartografía asociada",
+            "supports": "Organización del Albaicín tardomedieval en núcleos y recintos diferenciados."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.5948, 37.1847],
+            [-3.5937, 37.1859],
+            [-3.59155, 37.1862],
+            [-3.58985, 37.18545],
+            [-3.588, 37.1848],
+            [-3.5875, 37.18365],
+            [-3.5885, 37.18245],
+            [-3.5912, 37.182],
+            [-3.5938, 37.18275],
+            [-3.5948, 37.1847]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "quarter.alfajjarin",
       "properties": {
         "id": "quarter.alfajjarin",
@@ -1696,16 +1911,18 @@
           "toponymy",
           "scholarly_reconstruction"
         ],
-        "summary": "Arrabal meridional vinculado a la producción de cerámica y situado junto a Garnata al-Yahud y el palacio de la Almanxarra.",
-        "context_1492": "El barrio reunía actividades alfareras y espacios residenciales junto a la cerca sur. La Puerta de los Alfareros y su necrópolis constituían referencias importantes del borde urbano.",
+        "summary": "Arrabal meridional vinculado a la producción cerámica, contiguo a al-Nayd y encerrado con él dentro de las ampliaciones defensivas nazaríes.",
+        "context_1492": "El barrio reunía talleres, viviendas, huertas y fincas palatinas. Hacia levante enlazaba con La Loma a través de un paisaje donde la maqbara de Bab al-Fajjarin y la de al-Assal ocupaban Campo del Príncipe y sus inmediaciones; la Puerta de los Alfareros comunicaba ambos arrabales con la medina anterior.",
         "after_1492": "El establecimiento de Santo Domingo y las transformaciones del Realejo alteraron la estructura productiva y residencial. El Cuarto Real y evidencias arqueológicas conservaron testimonios del paisaje nazarí.",
-        "today": "La envolvente utiliza Plaza Fortuny, Santo Domingo, Plaza de los Campos, el Cuarto Real y calle Belén como referencias. No delimita la distribución exacta de hornos, talleres o viviendas.",
-        "evidence_note": "La función y el sector están bien documentados y la necrópolis de Bab al-Fajjarin aporta un anclaje arqueológico. Los límites entre Alfareros, Garnata al-Yahud y otros barrios meridionales no son líneas conservadas y se representan aproximadamente.",
+        "today": "La envolvente utiliza Plaza Fortuny, Santo Domingo, Plaza de los Campos, el Cuarto Real, Belén y el borde occidental del Campo del Príncipe. Incluye espacios productivos, residenciales, funerarios y agrícolas, no solo una mancha continua de viviendas.",
+        "evidence_note": "La función y el sector están bien documentados. La geometría se prolonga ahora hasta el ámbito funerario de Campo del Príncipe para evitar una separación territorial artificial con al-Nayd; la franja compartida sigue siendo aproximada y no constituye un deslinde parcelario.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
           "source.granada-centre-plan",
           "source.granada-cuarto-real",
           "source.junta-belen-2008",
+          "source.junta-cuesta-pescado-2023",
+          "source.junta-porteria-santo-domingo-2012",
           "source.openstreetmap"
         ],
         "citations": [
@@ -1718,6 +1935,11 @@
             "source_id": "source.junta-belen-2008",
             "locator": "Descripción del sector y excavación de la maqbara de Bab al-Fajjarin",
             "supports": "Anclaje arqueológico de la Puerta de los Alfareros, su necrópolis y el contexto del arrabal."
+          },
+          {
+            "source_id": "source.junta-cuesta-pescado-2023",
+            "locator": "Contexto histórico y arqueológico de los arrabales meridionales",
+            "supports": "Contigüidad de al-Fajjarin y al-Nayd, incorporación conjunta al recinto y localización de la necrópolis oriental en Campo del Príncipe."
           }
         ],
         "publication_status": "publishable"
@@ -1728,12 +1950,97 @@
           [
             [-3.59715, 37.17445],
             [-3.5945139, 37.1737452],
-            [-3.59355, 37.17335],
-            [-3.59325, 37.1722],
+            [-3.5932, 37.17405],
+            [-3.5918, 37.1738],
+            [-3.5911, 37.1729],
+            [-3.5915, 37.1718],
+            [-3.5927, 37.1712],
+            [-3.5938441, 37.1706222],
             [-3.5949269, 37.171666],
             [-3.5971375, 37.1722659],
             [-3.5980542, 37.1721727],
             [-3.59715, 37.17445]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "burial.fajjarin-assal",
+      "properties": {
+        "id": "burial.fajjarin-assal",
+        "name": "Necrópolis de Bab al-Fajjarin y al-Assal",
+        "historical_name": "Maqbarat Bab al-Fajjarin / Maqbarat al-Assal",
+        "modern_name": "Campo del Príncipe y calles próximas",
+        "aliases": [
+          "Cementerio de la Puerta de los Alfareros",
+          "Cementerio del Melero",
+          "Necrópolis de Albunest"
+        ],
+        "modern_search_terms": [
+          "Campo del Príncipe",
+          "Calle Molinos",
+          "Calle Damasqueros",
+          "Calle Cocheras de San Cecilio",
+          "Calle Plegadero"
+        ],
+        "category": "burial_other",
+        "subtype": "cemetery",
+        "period": {
+          "from_year": 1100,
+          "to_year": 1501,
+          "from_precision": "century",
+          "to_precision": "circa",
+          "note": "Los primeros enterramientos se remontan al periodo almohade y el uso funerario continuó hasta poco después de la conquista."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Amplio paisaje funerario que ocupaba Campo del Príncipe y explicaba la transición abierta entre al-Fajjarin y al-Nayd.",
+        "context_1492": "Las maqbaras de Bab al-Fajjarin y al-Assal se habían aproximado o fusionado en el sector oriental de los Alfareros y el contacto con La Loma. Quedaron dentro de las ampliaciones amuralladas, aunque su origen había sido extramuros.",
+        "after_1492": "Los enterramientos islámicos fueron prohibidos desde 1501 y el terreno se allanó y urbanizó progresivamente como Campo del Príncipe y calles adyacentes.",
+        "today": "La envolvente reúne hallazgos y referencias en Campo del Príncipe, Damasqueros, Cocheras de San Cecilio y calles próximas. No afirma que toda la superficie estuviera ocupada simultáneamente por tumbas.",
+        "evidence_note": "Las excavaciones confirman enterramientos en varios puntos, pero la continuidad y los límites entre las maqbaras son reconstruidos. Se representa como una franja funeraria superpuesta a los arrabales, no como un barrio separado.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.junta-belen-2008",
+          "source.junta-porteria-santo-domingo-2012",
+          "source.junta-cuesta-pescado-2023",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.junta-porteria-santo-domingo-2012",
+            "locator": "pp. 4-6, áreas cementeriales del Realejo",
+            "supports": "Localización de al-Assal en Campo del Príncipe, a levante de la Acequia de las Tinajas, y su fusión con Bab al-Fajjarin."
+          },
+          {
+            "source_id": "source.junta-cuesta-pescado-2023",
+            "locator": "Contexto histórico de al-Fajjarin y al-Nayd",
+            "supports": "Extensión de la gran necrópolis oriental de Alfareros y su incorporación posterior al recinto amurallado."
+          }
+        ],
+        "publication_status": "publishable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.59365, 37.17385],
+            [-3.5922, 37.17405],
+            [-3.59135, 37.17355],
+            [-3.59085, 37.17275],
+            [-3.59125, 37.1717],
+            [-3.5927, 37.17115],
+            [-3.59355, 37.1721],
+            [-3.59365, 37.17385]
           ]
         ]
       }
@@ -1745,17 +2052,18 @@
         "id": "quarter.antequeruela",
         "name": "Antequeruela",
         "historical_name": null,
-        "modern_name": "Campo del Príncipe y San Cecilio",
+        "modern_name": "Antequeruela Alta y Baja, junto a San Cecilio y Los Mártires",
         "aliases": [
           "Barrio de la Antequeruela",
           "Antequeruela de Granada"
         ],
         "modern_search_terms": [
-          "Campo del Príncipe",
+          "Antequeruela Alta",
+          "Antequeruela Baja",
           "San Cecilio",
-          "Calle Molinos",
-          "Calle Santiago",
-          "Calle Solares"
+          "Carril de San Cecilio",
+          "Cuesta del Caidero",
+          "Carmen de los Mártires"
         ],
         "category": "urban_structure",
         "subtype": "historical_quarter",
@@ -1779,14 +2087,15 @@
           "scholarly_reconstruction"
         ],
         "summary": "Expansión tardonazarí del sector meridional, asociada a refugiados procedentes de Antequera desde 1410.",
-        "context_1492": "La Antequeruela era un barrio reciente dentro del mosaico urbano del Realejo medieval. Se relacionaba con Campo del Príncipe, San Cecilio, la calle Molinos y los arrabales de los Alfareros y la Loma.",
+        "context_1492": "La Antequeruela era un barrio reciente dentro del arrabal de la Loma o Nayd. Su núcleo se sitúa en la ladera entre San Cecilio y Los Mártires, en el entorno conservado por los topónimos Antequeruela Alta y Antequeruela Baja.",
         "after_1492": "La red parroquial cristiana, la reforma de Campo del Príncipe y nuevas construcciones transformaron el barrio, aunque su nombre y parte de su trama sobrevivieron.",
-        "today": "La geometría reúne Campo del Príncipe, San Cecilio y los ejes de Molinos, Santiago y Solares citados por la investigación. Se solapa parcialmente con la Loma porque las fuentes describen relaciones de expansión, no fronteras excluyentes.",
-        "evidence_note": "La fecha de formación y los principales lugares modernos están documentados; el perímetro varía según autores y periodos. Se publica una síntesis espacial deliberadamente aproximada.",
+        "today": "La geometría se concentra en las calles Antequeruela Alta y Baja, desde el Carril de San Cecilio hacia Los Mártires, e incluye el cruce con Cuesta del Caidero y Camino Nuevo del Cementerio. No equivale a un límite administrativo actual.",
+        "evidence_note": "Las fuentes localizan con claridad el núcleo de la Antequeruela, pero no conservan un perímetro parcelario de 1492. La envolvente sigue los topónimos y ejes documentados y se mantiene deliberadamente aproximada; la Plataforma de Vico aporta corroboración posterior, no un deslinde nazarí exacto.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
-          "source.granada-centre-plan",
-          "source.junta-belen-2008",
+          "source.junta-honda-realejo-2004",
+          "source.junta-camino-cementerio-2014",
+          "source.ugr-vico-2023",
           "source.openstreetmap"
         ],
         "citations": [
@@ -1796,9 +2105,19 @@
             "supports": "Formación de la Antequeruela en 1410 como ampliación del sector meridional."
           },
           {
-            "source_id": "source.junta-belen-2008",
-            "locator": "Contexto histórico y arqueológico del barrio de la Antequeruela",
-            "supports": "Relación con Garnata al-Yahud, Campo del Príncipe, Molinos, Santiago, Solares y San Cecilio."
+            "source_id": "source.junta-honda-realejo-2004",
+            "locator": "Contextualización histórica, descripción de Antequeruela Alta y Baja",
+            "supports": "Sitúa Antequeruela Baja entre el Carril de San Cecilio y Los Mártires y describe Antequeruela Alta como un ramal sin salida accesible desde la Baja."
+          },
+          {
+            "source_id": "source.junta-camino-cementerio-2014",
+            "locator": "pp. 1246-1247, localización y estudio histórico-arqueológico",
+            "supports": "Identifica como Antequeruela el cruce de Antequeruela Baja, Carril de San Cecilio, Cuesta del Caidero y Camino Nuevo del Cementerio, junto a Los Mártires."
+          },
+          {
+            "source_id": "source.ugr-vico-2023",
+            "locator": "Análisis de la Plataforma de Vico y representación del sector de la Antequeruela",
+            "supports": "Corrobora la posición del topónimo en la ladera de Los Mártires, al este de Campo del Príncipe, a comienzos del siglo XVII."
           }
         ],
         "publication_status": "publishable"
@@ -1807,14 +2126,13 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [-3.5945139, 37.1737452],
-            [-3.5921111, 37.1733097],
-            [-3.5905877, 37.1735226],
-            [-3.5891223, 37.1732537],
-            [-3.58905, 37.17165],
-            [-3.5919688, 37.1721113],
-            [-3.59325, 37.1722],
-            [-3.5945139, 37.1737452]
+            [-3.59055, 37.1732],
+            [-3.59005, 37.1743],
+            [-3.58915, 37.17445],
+            [-3.5885, 37.1737],
+            [-3.58855, 37.1726],
+            [-3.5891, 37.1725],
+            [-3.59055, 37.1732]
           ]
         ]
       }
@@ -1860,15 +2178,18 @@
           "toponymy",
           "scholarly_reconstruction"
         ],
-        "summary": "Arrabal de la ladera meridional, prolongación de los Alfareros hacia la Puerta de los Molinos y las huertas del Genil.",
-        "context_1492": "La Loma ocupaba el extremo sudoriental del recinto urbano y conectaba el tejido residencial con la Puerta de los Molinos, la vega y un paisaje de huertas regado por la Acequia Gorda.",
+        "summary": "Arrabal contiguo a los Alfareros que ocupaba la ladera meridional hasta la Puerta de la Loma, las huertas y la cerca exterior tardonazarí.",
+        "context_1492": "La Loma ocupaba el extremo sudoriental intramuros. Su territorio enlazaba con al-Fajjarin en torno al Campo del Príncipe y reunía tejido residencial, alfares dispersos, cementerios, almunias y huertas articuladas por la Acequia Gorda. La Puerta de la Loma o de los Molinos lo comunicaba con el Genil y los caminos de la sierra.",
         "after_1492": "La reorganización parroquial, los cambios de propiedad y la transformación de las huertas modificaron el sector. Parte de su identidad quedó absorbida por el Realejo, San Cecilio y la Antequeruela.",
-        "today": "La envolvente se apoya en la calle Molinos, San Cecilio y Vistillas de los Ángeles. Los nombres árabes presentan transcripciones divergentes y se conservan como alias de una misma entidad.",
-        "evidence_note": "Las fuentes fijan la relación con Alfareros y la Puerta de los Molinos, pero no ofrecen un límite parcelario único. El solape con Antequeruela refleja que esta se describe como una ampliación tardía del mismo sector urbano.",
+        "today": "La envolvente se apoya en Campo del Príncipe, calle Molinos, San Cecilio, Solares, Vistillas de los Ángeles y Los Mártires. Los nombres árabes presentan transcripciones divergentes y se conservan como alias de una misma entidad.",
+        "evidence_note": "Las fuentes describen al-Nayd como contiguo o desarrollado más allá de al-Fajjarin y lo sitúan dentro de una cerca propia. La envolvente se amplía hacia poniente para incluir la transición funeraria de Campo del Príncipe y hacia el exterior hasta la cerca Sur; los solapes representan incertidumbre histórica, no duplicación exacta de suelo.",
         "geometry_method": "reconstructed_from_multiple_sources",
         "geometry_source_refs": [
           "source.granada-centre-plan",
           "source.junta-belen-2008",
+          "source.junta-porteria-santo-domingo-2012",
+          "source.junta-cuesta-pescado-2023",
+          "source.junta-hoteles-belen-2020",
           "source.openstreetmap"
         ],
         "citations": [
@@ -1881,6 +2202,16 @@
             "source_id": "source.junta-belen-2008",
             "locator": "Contexto histórico del Realejo medieval y trazado de la cerca sur",
             "supports": "Relación espacial entre la Loma, la Antequeruela, San Cecilio, Molinos y Vistillas de los Ángeles."
+          },
+          {
+            "source_id": "source.junta-porteria-santo-domingo-2012",
+            "locator": "pp. 4-6, formación, cerca y usos del arrabal de al-Nayd",
+            "supports": "Contigüidad con al-Fajjarin, puertas exteriores, huertas, alfares y necrópolis incorporados al recinto."
+          },
+          {
+            "source_id": "source.junta-hoteles-belen-2020",
+            "locator": "Resumen y contexto histórico-arqueológico",
+            "supports": "Borde meridional agrícola y funerario de La Loma y relación con la cerca hasta Puerta de los Molinos."
           }
         ],
         "publication_status": "publishable"
@@ -1889,13 +2220,22 @@
         "type": "Polygon",
         "coordinates": [
           [
+            [-3.5932, 37.17405],
+            [-3.5918, 37.1738],
             [-3.5905877, 37.1735226],
             [-3.58845, 37.17385],
-            [-3.58695, 37.17225],
-            [-3.5880357, 37.1704753],
-            [-3.59055, 37.1705],
-            [-3.5919688, 37.1721113],
-            [-3.5905877, 37.1735226]
+            [-3.58665, 37.1733],
+            [-3.58675, 37.17225],
+            [-3.58695, 37.1713],
+            [-3.58725, 37.17035],
+            [-3.58815, 37.16885],
+            [-3.58975, 37.16935],
+            [-3.59195, 37.16995],
+            [-3.5938441, 37.1706222],
+            [-3.5927, 37.1712],
+            [-3.5915, 37.1718],
+            [-3.5911, 37.1729],
+            [-3.5932, 37.17405]
           ]
         ]
       }

@@ -466,5 +466,113 @@
     "identifier": "AAA_2008_731; hdl:20.500.11947/27035",
     "reuse_status": "Consulta y cita conforme a la licencia CC BY-NC-ND 4.0; no se redistribuye ni se adapta la publicación.",
     "notes": "Documenta la maqbara de Bab al-Fajjarin y reúne referencias espaciales para los Alfareros, la Loma, la Antequeruela, Campo del Príncipe, San Cecilio y la cerca meridional."
+  },
+  {
+    "id": "source.junta-honda-realejo-2004",
+    "author": "Ana Tapia Espinosa",
+    "title": "Actividad arqueológica preventiva en un solar de la calle Honda del Realejo números 13, 15 y 17, Granada",
+    "year": 2004,
+    "publisher": "Anuario Arqueológico de Andalucía, Junta de Andalucía",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/bitstream/20.500.11947/12865/3/AAA_2004_161_tapiaespinosa_hondadelrealejo_granada.pdf",
+    "identifier": "AAA_2004_161",
+    "reuse_status": "Consulta y cita factual; no se redistribuye ni se adapta la publicación.",
+    "notes": "Distingue Antequeruela Alta y Baja y localiza la Baja desde el Carril de San Cecilio hasta Los Mártires; indica que la Alta se accede desde la Baja y carece de salida."
+  },
+  {
+    "id": "source.junta-camino-cementerio-2014",
+    "author": "María Isabel Mancilla Cabello y Julio M. Román Punzón",
+    "title": "Intervención arqueológica preventiva en Camino Nuevo del Cementerio n.º 14 (barrio del Realejo)",
+    "year": 2014,
+    "publisher": "Anuario Arqueológico de Andalucía, Junta de Andalucía",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/bitstream/20.500.11947/20246/1/AAA_2014_155_mancillacabello_caminocementerio14_granada_borrador.pdf",
+    "identifier": "AAA_2014_155",
+    "reuse_status": "Consulta y cita factual; no se redistribuye ni se adapta la publicación.",
+    "notes": "Identifica la zona de Antequeruela en el cruce de Antequeruela Baja, Carril de San Cecilio, Cuesta del Caidero y Camino Nuevo del Cementerio y la relaciona con Los Mártires."
+  },
+  {
+    "id": "source.ugr-vico-2023",
+    "author": "Rafael Jesús López-Guzmán Guzmán",
+    "title": "La Plataforma de Vico: origen histórico y análisis urbanístico",
+    "year": 2023,
+    "publisher": "Universidad de Granada, DIGIBUG",
+    "type": "scholarly_cartographic_study",
+    "url": "https://hdl.handle.net/10481/107181",
+    "identifier": "hdl:10481/107181; ISBN 978-84-1369-680-5",
+    "reuse_status": "Consulta y cita conforme a la licencia CC BY-NC-ND 4.0; no se reproduce la cartografía.",
+    "notes": "Analiza la Plataforma de Granada dibujada por Ambrosio de Vico y su valor para estudiar la estructura urbana de comienzos del siglo XVII."
+  },
+  {
+    "id": "source.junta-porteria-santo-domingo-2012",
+    "author": "Ángel Rodríguez Aguilera",
+    "title": "Actividad arqueológica preventiva mediante sondeos en la Portería de Santo Domingo, Granada",
+    "year": 2012,
+    "publisher": "Repositorio TABULA, Junta de Andalucía",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/handle/20.500.11947/6877",
+    "identifier": "AAA_2012_170; hdl:20.500.11947/6877",
+    "reuse_status": "Consulta y cita conforme a la licencia del repositorio; no se redistribuye ni se adapta la publicación.",
+    "notes": "Explica la formación contigua de al-Fajjarin y al-Nayd, su incorporación a la ciudad, las puertas de Alfareros, Pescado, Molinos y Mawrur, las huertas meridionales y las maqbaras al-Assal y Bab al-Fajjarin."
+  },
+  {
+    "id": "source.junta-cuesta-pescado-2023",
+    "author": "Carmen Jódar Hódar",
+    "title": "Actividad arqueológica preventiva mediante sondeos en Cuesta del Pescado 6, Granada",
+    "year": 2023,
+    "publisher": "Repositorio TABULA, Junta de Andalucía",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/bitstream/20.500.11947/34382/1/AAA_2023_028_jodarhodarcarmen_cuestadelpescado6_granada.pdf",
+    "identifier": "AAA_2023_028",
+    "reuse_status": "Consulta y cita conforme a la licencia CC BY-NC-ND 4.0; no se redistribuye ni se adapta la publicación.",
+    "notes": "Fecha el amurallamiento de los arrabales meridionales, identifica sus puertas interiores y exteriores y sitúa la gran necrópolis oriental de al-Fajjarin en torno al Campo del Príncipe."
+  },
+  {
+    "id": "source.junta-aguado-2009",
+    "author": "Alejandro Fornell Muñoz",
+    "title": "Intervención arqueológica preventiva en calle Aguado 7, Granada",
+    "year": 2009,
+    "publisher": "Anuario Arqueológico de Andalucía, Junta de Andalucía",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/bitstream/20.500.11947/5428/1/AAA_2009_275_fornellmunoz_aguado7_granada.pdf",
+    "identifier": "AAA_2009_275",
+    "reuse_status": "Consulta y cita factual; no se redistribuye ni se adapta la publicación.",
+    "notes": "Distingue la cerca interior Mauror-Realejo de la cerca Sur exterior y describe esta última desde Cuesta de Aixa y Cuarto Real por Solares, Vistillas, Puerta de la Loma y Cerro de Ahabul hasta la Alhambra."
+  },
+  {
+    "id": "source.junta-hoteles-belen-2020",
+    "author": "Ana Tapia Espinosa y María Luisa Gámez-Leyva Hernández",
+    "title": "Intervención arqueológica preventiva en calle Hoteles de Belén 9, Granada",
+    "year": 2020,
+    "publisher": "Repositorio TABULA, Junta de Andalucía",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/handle/20.500.11947/29447",
+    "identifier": "AAA_2020_078; hdl:20.500.11947/29447",
+    "reuse_status": "Consulta y cita conforme a la licencia CC BY-NC-ND 4.0; no se redistribuye ni se adapta la publicación.",
+    "notes": "Sitúa el borde meridional de La Loma y resume la cerca desde Cuarto Real y el Convento de los Ángeles hasta Vistillas y la Puerta de los Molinos."
+  },
+  {
+    "id": "source.junta-mesones-2010",
+    "author": "Francisco Javier Domínguez Muñoz",
+    "title": "Intervención arqueológica preventiva mediante sondeo en calle Mesones 48, Granada",
+    "year": 2010,
+    "publisher": "Repositorio TABULA, Junta de Andalucía",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/handle/20.500.11947/5978",
+    "identifier": "AAA_2010_181; hdl:20.500.11947/5978",
+    "reuse_status": "Consulta y cita conforme a la licencia CC BY-NC-ND 4.0; no se redistribuye ni se adapta la publicación.",
+    "notes": "Documenta una vivienda o funduq nazarí del siglo XIV en el arrabal de la Rambla y aporta un anclaje arqueológico para al-Ramla."
+  },
+  {
+    "id": "source.junta-san-miguel-alto-2005",
+    "author": "Daniel Campos López et al.",
+    "title": "Intervención arqueológica preventiva en San Miguel Alto y entorno, Granada",
+    "year": 2005,
+    "publisher": "Repositorio TABULA, Junta de Andalucía",
+    "type": "archaeological_report",
+    "url": "https://www.juntadeandalucia.es/cultura/tabula/handle/20.500.11947/3099",
+    "identifier": "AAA_2005_199; hdl:20.500.11947/3099",
+    "reuse_status": "Consulta y cita conforme a la licencia CC BY-NC-ND 4.0; no se redistribuye ni se adapta la publicación.",
+    "notes": "Relaciona el Albaicín nazarí con los arrabales al-Bayyazin y Axares y con la nueva cerca de finales del siglo XIII y comienzos del XIV."
   }
 ]
