@@ -45,6 +45,9 @@ QGIS, use `npm run gis:export` to reproject, normalize, and validate all three
 layers before they replace the public EPSG:4326 files. The complete workflow
 and safeguards are documented in `gis/README.md`.
 
+The specific registration and topology rules for the Islamic water network are
+documented in [`docs/WATER-NETWORK-METHOD.md`](../docs/WATER-NETWORK-METHOD.md).
+
 ## Validation
 
 The validator checks the Zod schema, file/geometry agreement, coordinate ranges,

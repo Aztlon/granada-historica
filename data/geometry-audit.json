@@ -186,10 +186,10 @@
   {
     "feature_id": "bridge.cadi",
     "status": "verified",
-    "reviewed_on": "2026-09-20",
-    "geometry_source_refs": ["source.granada-tableros-cadi", "source.openstreetmap", "source.pnoa-andalucia-2022"],
-    "check_method": "Nodo de los restos conservados en OpenStreetMap, contrastado con la ortofoto PNOA y con la dirección y descripción institucional de Carrera del Darro 35.",
-    "notes": "El marcador identifica el estribo septentrional visible; no reconstruye el vano perdido ni el encuentro con la ladera de la Alhambra."
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-tableros-cadi", "source.openstreetmap", "source.pnoa-andalucia-2022"],
+    "check_method": "Eje transversal reconstruido desde la margen septentrional del Darro hasta el resto meridional conservado, siguiendo el Mapa 4 y la Figura 2 del estudio de 2025 y contrastándolo con el cauce y la ortofoto.",
+    "notes": "Sustituye el punto del estribo por una línea que atraviesa el río. El extremo meridional es seguro; el vano y el encuentro septentrional desaparecidos son probables."
   },
   {
     "feature_id": "religious.albaicin-great-mosque",
@@ -364,24 +364,24 @@
     "status": "verified",
     "reviewed_on": "2026-09-23",
     "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.openstreetmap"],
-    "check_method": "Corredor urbano generalizado desde la aproximación de Alfacar y El Fargue por Fajalauza hasta el Albaicín alto, contrastado con la síntesis académica y la topografía moderna.",
-    "notes": "No representa la totalidad del canal ni sus ramales; la incertidumbre se expresa como localización aproximada."
+    "check_method": "Red ramificada digitada de forma general desde el Mapa 5 del estudio de 2025 y registrada sobre Fajalauza, el Albaicín alto, la envolvente revisada de la Alcazaba Qadima y los solares de las dos mezquitas mayores.",
+    "notes": "Sustituye el corredor único desplazado al este. La topología de bifurcaciones y llegada a la ciudad queda representada; los quiebros métricos siguen siendo aproximados."
   },
   {
     "feature_id": "water.acequia-axares",
     "status": "verified",
     "reviewed_on": "2026-09-23",
     "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.openstreetmap"],
-    "check_method": "Corredor interpretativo trazado por la margen derecha del valle del Darro entre Guadix y el Albaicín bajo conforme a la secuencia territorial publicada.",
-    "notes": "La verificación corresponde al corredor y la margen; no a una caja hidráulica continua."
+    "check_method": "Corredor digitado del Mapa 5 y prolongado hacia el este, manteniéndolo en la margen derecha y a una cota superior al Darro a través de Axares y la medina baja.",
+    "notes": "Sustituye la línea que abrazaba el cauce. Verifica la relación topográfica general y la continuidad posterior como acequia de San Juan, no una caja continua."
   },
   {
     "feature_id": "water.acequia-romayla",
     "status": "verified",
     "reviewed_on": "2026-09-23",
     "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.openstreetmap"],
-    "check_method": "Polilínea construida con la secuencia publicada de cruces del Darro, ladera del Avellano y Sabika y llegada al entorno de la Mezquita Mayor.",
-    "notes": "Los puntos de cruce y la rasante intermedia son aproximados."
+    "check_method": "Polilínea corregida a partir del Mapa 5 y del texto de las pp. 137-138: derivación aguas arriba, primer cruce, ladera del Avellano y Sabika y regreso final hacia la Mezquita Mayor.",
+    "notes": "Se elimina el falso paso por Bab al-Difaf. Los dos puntos de cruce y la rasante intermedia siguen siendo aproximados."
   },
   {
     "feature_id": "water.acequia-cadi",
@@ -396,8 +396,8 @@
     "status": "verified",
     "reviewed_on": "2026-09-23",
     "geometry_source_refs": ["source.ujaen-water-route-2025", "source.granada-water-culture", "source.dera-hydrology"],
-    "check_method": "Corredor periurbano generalizado paralelo al Genil y dirigido hacia la Vega, comprobado contra el eje hidrográfico oficial y la síntesis histórica del sistema.",
-    "notes": "No equivale al parcelario de riego moderno ni representa todos los ramales."
+    "check_method": "Corredor redibujado desde el Mapa 5 y comprobado contra el eje DERA del Genil, manteniendo todos sus vértices al norte del río y separando Tarramonta como derivación propia.",
+    "notes": "Corrige la versión que cruzaba al sur del Genil. No equivale al parcelario de riego moderno ni representa todos los ramales."
   },
   {
     "feature_id": "water.acequia-realejo",
@@ -406,6 +406,22 @@
     "geometry_source_refs": ["source.ujaen-water-route-2025", "source.openstreetmap"],
     "check_method": "Corredor aproximado enlazado con la Acequia Gorda y conducido por la dirección de la actual calle Santiago conforme a la descripción académica.",
     "notes": "La comprobación avala la relación espacial general, no un nombre propio ni una rasante exacta."
+  },
+  {
+    "feature_id": "water.acequia-tarramonta",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.dera-hydrology"],
+    "check_method": "Derivación separada de Gorda conforme al Mapa 5 y la nota 31, con un cruce explícito del eje DERA del Genil y continuación por la Vega meridional.",
+    "notes": "El cruce está topológicamente verificado; el desarrollo agrícola exterior se mantiene aproximado."
+  },
+  {
+    "feature_id": "water.acequia-arabuleila",
+    "status": "verified",
+    "reviewed_on": "2026-09-23",
+    "geometry_source_refs": ["source.ujaen-water-route-2025", "source.dera-hydrology"],
+    "check_method": "Corredor general digitado desde el Mapa 5 para la derivación de Arabuleila, contrastando su relación con Gorda y el eje del Genil.",
+    "notes": "Se verifica como ramal agrícola aproximado; no se atribuye precisión parcelaria."
   },
   {
     "feature_id": "water.acequia-real-alhambra",
@@ -435,16 +451,16 @@
     "feature_id": "walls.alcazaba-qadima-inner",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.junta-monaita-wall-2000", "source.granada-ziri-wall", "source.openstreetmap"],
-    "check_method": "Circuito esquemático anclado en Puerta Monaita, Casa de la Lona, San Nicolás y el entorno de las Pesas, contrastado con restos y reconstrucciones publicadas.",
-    "notes": "Los anclajes son defendibles; los enlaces sin fábrica visible permanecen aproximados."
+    "geometry_source_refs": ["source.junta-monaita-wall-2000", "source.granada-ziri-wall", "source.ujaen-water-route-2025", "source.openstreetmap"],
+    "check_method": "Circuito corregido para reutilizar exactamente el anillo de la envolvente auditada de la Alcazaba Qadima y contrastado con el Mapa 5, Puerta Monaita, Casa de la Lona, San Nicolás y el entorno de las Pesas.",
+    "notes": "Elimina el desplazamiento artificial entre polígono y cerca. La coincidencia expresa una única reconstrucción aproximada, no dos límites históricos distintos."
   },
   {
     "feature_id": "walls.axares-inner",
     "status": "verified",
     "reviewed_on": "2026-09-23",
-    "geometry_source_refs": ["source.junta-carmen-negro-2005", "source.granada-pepri-islamic-city", "source.openstreetmap"],
-    "check_method": "Circuito territorial esquemático entre el borde oriental de la Alcazaba Qadima, la Puerta de Guadix, el Darro y la ladera de Axares, contrastado con la discusión arqueológica publicada.",
-    "notes": "La geometría es deliberadamente aproximada porque algunos tramos y accesos del recinto siguen discutidos."
+    "geometry_source_refs": ["source.junta-carmen-negro-2005", "source.granada-pepri-islamic-city", "source.ujaen-water-route-2025", "source.alhambra-banuelo", "source.openstreetmap"],
+    "check_method": "Circuito corregido para reutilizar el anillo de la envolvente auditada de Axares, contrastado con el Mapa 5 y con la secuencia Bab al-Difaf-margen del río-Cuesta de la Victoria-Bab al-Bunud descrita por el Patronato.",
+    "notes": "La coincidencia evita el doble límite contradictorio; la geometría sigue siendo aproximada porque varios tramos y accesos se discuten."
   }
 ]

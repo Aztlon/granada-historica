@@ -118,7 +118,7 @@ desktop and mobile.
 
 Completed M6 research-infrastructure work:
 
-1. [x] Create a canonical 66-entry gazetteer covering all 56 mapped entities
+1. [x] Create a canonical 70-entry gazetteer covering all 58 mapped entities
    plus candidate, disputed, rejected, and unlocated names.
 2. [x] Add the principal water system, a first bridge inventory, and the main
    missing movement corridors without implying survey-level precision.
@@ -127,8 +127,10 @@ Completed M6 research-infrastructure work:
 4. [x] Add structured name-attestation, survival, and defensive-context fields,
    validate them, and expose them in feature cards.
 
-Current M6 dataset result: 56 cited, publishable, and geometrically audited map
-features; 66 gazetteer records; and 53 registered sources. The remaining M6
+Current M6 dataset result: 58 cited, publishable, and geometrically audited map
+features; 70 gazetteer records; and 53 registered sources. The water-network
+revision now enforces the source map's bank, crossing, branching, and wall-
+alignment relationships in automated validation. The remaining M6
 work is the canonical question review, full QA, correction pass, and clean
 repository rebuild/deployment confirmation above.
 

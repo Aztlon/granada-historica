@@ -734,7 +734,7 @@ a:focus-visible,
   padding: 0;
   pointer-events: none;
   visibility: hidden;
-  background: rgba(8, 20, 16, 0.22);
+  background: transparent;
   border: 0;
   opacity: 0;
   transition: opacity 220ms ease, visibility 220ms ease;

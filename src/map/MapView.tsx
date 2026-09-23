@@ -83,7 +83,7 @@ const MAP_LOCALE = {
   'Map.Title': 'Mapa',
   'Marker.Title': 'Marcador del mapa',
   'NavigationControl.ResetBearing':
-    'Arrastra para girar el mapa; pulsa para orientar el norte',
+    'Arrastra para girar e inclinar el mapa; pulsa para orientar el norte y restablecer la inclinación',
   'NavigationControl.ZoomIn': 'Acercar',
   'NavigationControl.ZoomOut': 'Alejar',
   'Popup.Close': 'Cerrar ventana emergente',
@@ -226,7 +226,10 @@ export function MapView({
     })
     mapRef.current = map
 
-    map.addControl(new NavigationControl({ showCompass: false }), 'bottom-right')
+    map.addControl(
+      new NavigationControl({ showCompass: true, visualizePitch: true }),
+      'bottom-right',
+    )
     map.addControl(new ScaleControl({ maxWidth: 110, unit: 'metric' }), 'bottom-left')
 
     map.once('load', () => {
