@@ -3,7 +3,7 @@
 **Repository:** `Aztlon/granada-historica`  
 **Working title:** Granada Histórica  
 **Initial release:** *Granada, c. 1492*  
-**Status:** Draft v0.1  
+**Status:** v0.1 public proof of concept complete; post-v0.1 institutional pilot in discovery
 **Purpose of this document:** Define the product, historical methodology, technical architecture, data model, research workflow, and implementation sequence for the first usable historical web map of Granada.
 
 ---
@@ -1183,27 +1183,28 @@ Collect errors and missing context before adding another historical period.
 
 ## 17. v0.1 acceptance criteria
 
-The proof of concept is successful when all of the following are true:
+The proof of concept is successful when all of the following are true. The v0.1
+release review completed these criteria in September 2026:
 
-- [ ] A user can open a public URL without logging in.
-- [ ] The map opens centered on Granada.
-- [ ] The map clearly identifies itself as **Granada, c. 1492**.
-- [ ] Modern geography remains available for comparison.
-- [ ] Historical district/sector labels are visible.
-- [ ] Walls/gates, major waterways, and important sites can be toggled or filtered.
+- [x] A user can open a public URL without logging in.
+- [x] The map opens centered on Granada.
+- [x] The map clearly identifies itself as **Granada, c. 1492**.
+- [x] Modern geography remains available for comparison.
+- [x] Historical district/sector labels are visible.
+- [x] Walls/gates, major waterways, and important sites can be toggled or filtered.
 - [x] At least 30 historical features are available.
-- [ ] Every public feature has at least one source.
-- [ ] Every public feature exposes locational confidence.
-- [ ] Every public feature exposes temporal confidence.
-- [ ] Approximate/disputed geometry is visually distinguishable from secure geometry.
-- [ ] Important features contain substantive historical text, not just a photo/caption.
-- [ ] A user can understand what happened to a selected site after 1492.
-- [ ] A user can understand what is at or near that location today.
-- [ ] The dataset passes automated validation.
-- [ ] The site works on desktop and mobile.
-- [ ] No ArcGIS subscription or backend server is required.
-- [ ] Restricted source imagery/data is not inadvertently republished.
-- [ ] The project can be rebuilt and deployed entirely from the Git repository.
+- [x] Every public feature has at least one source.
+- [x] Every public feature exposes locational confidence.
+- [x] Every public feature exposes temporal confidence.
+- [x] Approximate/disputed geometry is visually distinguishable from secure geometry.
+- [x] Important features contain substantive historical text, not just a photo/caption.
+- [x] A user can understand what happened to a selected site after 1492.
+- [x] A user can understand what is at or near that location today.
+- [x] The dataset passes automated validation.
+- [x] The site works on desktop and mobile.
+- [x] No ArcGIS subscription or backend server is required.
+- [x] Restricted source imagery/data is not inadvertently republished.
+- [x] The project can be rebuilt and deployed entirely from the Git repository.
 
 ---
 
@@ -1367,7 +1368,66 @@ An AI-generated feature draft is a research artifact until its source claims and
 
 ## 23. Future roadmap
 
-Only after v0.1 works.
+v0.1 is complete. The next product question is how its historical model can
+support public access in the city without weakening its evidence and uncertainty
+standards.
+
+### Institutional pilot — from place to evidence
+
+The proposed public pathway is:
+
+```text
+physical place or QR marker
+  → location-aware historical map
+  → selected historical entity
+  → concise interpretation and confidence
+  → sources and reconstruction method
+  → optional reviewed image or AR view
+```
+
+This is not primarily an AR tourism application. Granada Histórica should remain
+an open digital cartography of Granada through time. Physical QR markers,
+geolocation, illustrated reconstructions, AR/VR, exhibitions, and educational
+interfaces are clients of the same canonical historical model.
+
+The first institutional pilot should:
+
+- require no native-app installation;
+- keep location processing client-side by default and never retain it without
+  separate, explicit consent;
+- open durable place and feature URLs from public QR markers;
+- offer the full map, history, uncertainty, and sources without requiring AR;
+- add optional reconstruction assets with authorship, license, represented date,
+  scholarly review state, and component-level confidence;
+- start with one or a few well-documented sites and evaluate actual public use;
+- define maintenance and review responsibilities before installing permanent
+  signage.
+
+Bab al-Ramla / Puerta de Bibarrambla is a strong demonstration candidate: a
+visitor in Plaza de Bib-Rambla could see the gate restored to its historical
+position on the map, understand its relationship to the wall and surrounding
+urban institutions, follow the evidence, and optionally open a reviewed visual
+reconstruction. The experience would spatialize existing scholarship rather
+than replace it.
+
+AR registration is a distinct research and design problem. Phone GPS alone is
+not sufficiently precise for architectural alignment; a pilot may require
+device orientation plus landmark or manual calibration. Citywide photorealistic
+AR must not be promised before the historical assets, rights, review process,
+street-level calibration, performance, accessibility, and non-camera fallback
+have been proven at a small scale.
+
+The collaboration model is intentionally multidisciplinary:
+
+- Granada Histórica provides the spatial system, open data model, interface,
+  provenance, and uncertainty language;
+- historians, archaeologists, and architectural historians review claims and
+  reconstruction decisions;
+- illustrators and 3D artists translate evidence into attributable visual
+  assets;
+- Medialab UGR can support research connections, participation, and testing;
+- the Ayuntamiento, Granada 2031, and heritage institutions can support public
+  integration, signage, data access, stewardship, and cultural programming.
 
 ### v0.2 — Late medieval / early Christian transition
 
@@ -1406,6 +1466,10 @@ Do not implement the slider until there are at least two historically defensible
 ### Later possibilities
 
 - 1492 / 1600 / 1800 / 1900 / present presets;
+- public QR routes with durable place links;
+- opt-in, client-side visitor location;
+- reviewed 2D and 3D reconstruction assets;
+- browser-based AR windows at selected, calibrated sites;
 - historical walking mode;
 - “what was here?” location lookup;
 - georeferenced historical map library;

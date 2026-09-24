@@ -17,13 +17,21 @@ actualidad.
 Se han completado los hitos **M0 — Especificación y configuración del
 repositorio**, **M1 — Estructura funcional del mapa**, **M2 — Sistema de datos
 históricos**, **M3 — Morfología histórica**, **M4 — Primer conjunto de datos
-revisado** y **M5 — Búsqueda, comparación y acabado**. La aplicación representa
+revisado**, **M5 — Búsqueda, comparación y acabado** y **M6 — Revisión pública
+de la prueba de concepto**. La versión v0.1 está lista como prueba de concepto
+pública. La aplicación representa
 ahora datos GeoJSON históricos validados sobre un mapa interactivo de Granada,
 distingue categorías y niveles de certeza espacial, admite búsqueda normalizada,
 controles de comparación, filtrado y selección mediante URL, y muestra en la
 ficha de cada elemento su contexto histórico, procedencia, testimonios del
-nombre, estado de conservación y citas. La revisión pública de la prueba de
-concepto M6 sigue en curso.
+nombre, estado de conservación y citas.
+
+La siguiente etapa propuesta convierte este núcleo en infraestructura histórica
+pública: enlaces duraderos y códigos QR desde lugares de la ciudad, localización
+opcional procesada en el dispositivo, reconstrucciones visuales revisadas y una
+prueba de realidad aumentada en un número reducido de emplazamientos. El mapa,
+la explicación de la incertidumbre y las fuentes seguirán funcionando sin AR.
+Consulte la [hoja de ruta](docs/ROADMAP.md) y la [especificación](docs/SPEC.md).
 
 El conjunto de datos de trabajo contiene 58 elementos citados y publicables y
 un nomenclátor histórico con 70 entradas. No se presupone que ninguno sea

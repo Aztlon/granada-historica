@@ -2,7 +2,7 @@
 
 [Español](README.md) | **English**
 
-Granada Histórica is an interactive historical atlas that will place a sourced,
+Granada Histórica is an interactive historical atlas that places a sourced,
 uncertainty-aware reconstruction of **Granada, c. 1492** over the modern city.
 The first release is deliberately focused on the final years of Nasrid Granada.
 
@@ -13,15 +13,21 @@ reconstruction, what happened after 1492, and what is there today.
 ## Project status
 
 Milestones **M0 — Specification and repository setup**, **M1 — Working map
-shell**, **M2 — Historical data system**, **M3 — Historical morphology**, and
-**M4 — First reviewed dataset**, and **M5 — Search, comparison, and polish** are
-complete. The app
+shell**, **M2 — Historical data system**, **M3 — Historical morphology**,
+**M4 — First reviewed dataset**, **M5 — Search, comparison, and polish**, and
+**M6 — Public proof-of-concept review** are complete. v0.1 is ready as a public
+proof of concept. The app
 now renders validated historical GeoJSON over an
 interactive map of Granada, distinguishes categories and levels of spatial
 certainty, supports normalized search, comparison controls, filtering, URL-based
 selection, and exposes historical context, provenance, name attestation,
-survival status, and citations in each feature card. M6 public proof-of-concept
-review remains in progress.
+survival status, and citations in each feature card.
+
+The proposed next stage turns this core into public historical infrastructure:
+durable place links and public QR codes, optional on-device location, reviewed
+visual reconstructions, and a small augmented-reality pilot. The map,
+uncertainty language, history, and sources will remain fully useful without AR.
+See the [roadmap](docs/ROADMAP.md) and [specification](docs/SPEC.md).
 
 The working dataset contains 58 cited and publishable features and a 70-entry
 historical gazetteer. None is assumed spatially correct:

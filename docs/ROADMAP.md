@@ -111,10 +111,12 @@ desktop and mobile.
 
 ## M6 — Public proof-of-concept review
 
-1. Test the representative historical questions listed in the specification.
-2. Conduct historical, geographic, copyright, accessibility, and performance QA.
-3. Record and correct errors or misleading precision.
-4. Confirm the repository alone can rebuild and deploy the site.
+1. [x] Test the representative historical questions listed in the specification.
+2. [x] Conduct the v0.1 historical, geographic, copyright, accessibility, and
+   performance review.
+3. [x] Record and correct errors or misleading precision found during the
+   corrective passes.
+4. [x] Confirm the repository alone can rebuild and deploy the site.
 
 Completed M6 research-infrastructure work:
 
@@ -127,15 +129,91 @@ Completed M6 research-infrastructure work:
 4. [x] Add structured name-attestation, survival, and defensive-context fields,
    validate them, and expose them in feature cards.
 
-Current M6 dataset result: 58 cited, publishable, and geometrically audited map
+Final v0.1 dataset result: 58 cited, publishable, and geometrically audited map
 features; 70 gazetteer records; and 57 registered sources. The September 2026
 water/urban audit adds reproducible affine registration, corrects mosque supply
 and upstream canal crossings, places
 Carbón on the Darro, and reconstructs shared quarter boundaries. Automated
 checks cover endpoints, crossings, bridge alignments, gates, and shared edges;
 source conflicts and mixed historical phases remain documented in
-`WATER-NETWORK-METHOD.md`. The remaining M6
-work is the canonical question review, full QA, correction pass, and clean
-repository rebuild/deployment confirmation above.
+`WATER-NETWORK-METHOD.md`. Automated validation, tests, a clean production
+build, and live desktop/mobile review complete the public proof of concept.
+Future expert review remains welcome and may revise individual interpretations
+without reopening the v0.1 product milestone.
 
 Exit gate: all v0.1 acceptance criteria in the specification pass.
+
+## Post-v0.1 — Public historical infrastructure
+
+The next stage treats Granada Histórica as an open historical data and
+interpretation platform. QR access, location-aware exploration, illustrated
+reconstruction, AR, VR, educational displays, and future periods should remain
+presentation layers over the same sourced entities, geometries, dates,
+translations, citations, and confidence metadata.
+
+This is a collaboration roadmap rather than committed v0.1 scope.
+
+### M7 — Place-based public access pilot
+
+1. Define durable place URLs and a QR resolver so a public marker can open the
+   relevant map position and historical feature without requiring an app.
+2. Add an opt-in, client-side `where am I?` mode; do not transmit or retain a
+   visitor's coordinates by default.
+3. Design a focused mobile place view for use while standing in the city.
+4. Add Spanish/English interface and content-routing foundations.
+5. Develop a signage and maintenance proposal with the Ayuntamiento or another
+   institutional partner, beginning with a small, evaluated pilot.
+
+Candidate demonstration: a QR marker in or near Plaza de Bib-Rambla opens the
+historical position of Bab al-Ramla, relates it to the wall, Alcaicería, Zacatín,
+Madraza, and Mezquita Mayor, and distinguishes the original site from the
+surviving reconstructed fabric in the Alhambra woods.
+
+Exit gate: a visitor can move from a physical place to its sourced historical
+context in one scan, with no installation and a clear privacy explanation.
+
+### M8 — Reviewed visual reconstruction
+
+1. Extend the data model with optional reconstruction assets, represented date,
+   authorship, license, review state, and component-level confidence.
+2. Produce historically reviewed illustrated reconstructions for a small number
+   of high-value sites before attempting citywide coverage.
+3. Present secure, probable, approximate, and artistic-inference elements as
+   visibly different parts of the reconstruction.
+4. Preserve a useful text, map, and image experience when no 3D asset exists.
+
+The first reconstruction should be selected for evidentiary quality and public
+legibility, not spectacle alone. Bab al-Ramla is a strong candidate because its
+original position, documented form, demolition, surviving material, and later
+reconstruction make the spatial argument immediately understandable.
+
+Exit gate: at least one visual reconstruction is publishable, attributable,
+licensed, reviewed, and explicit about uncertainty.
+
+### M9 — Optional AR window pilot
+
+1. Test browser-based AR at one reviewed site without making AR a prerequisite
+   for the map or requiring a native application.
+2. Evaluate GPS, device orientation, and a visible landmark/manual calibration
+   step; ordinary phone GPS must not be presented as architectural precision.
+3. Provide a non-camera fallback with the same history, sources, and artwork.
+4. Test performance, accessibility, safety, privacy, and device compatibility
+   in the actual street environment.
+
+Exit gate: the pilot places a reviewed reconstruction usefully and honestly at
+one site, while degrading gracefully on unsupported devices.
+
+### M10 — Multi-period civic platform
+
+1. Add a second historically defensible city state before introducing a time
+   slider.
+2. Establish editorial governance with historians, archaeologists,
+   architectural historians, artists, GIS specialists, educators, and public
+   institutions.
+3. Reuse the canonical historical model across maps, QR routes, AR/VR,
+   exhibitions, research exports, and educational material.
+4. Define long-term hosting, review, asset licensing, attribution, and
+   maintenance responsibilities with institutional partners.
+
+Exit gate: Granada Histórica operates as maintained public historical
+infrastructure rather than as a one-off tourism or AR application.
