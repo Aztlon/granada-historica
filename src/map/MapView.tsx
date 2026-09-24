@@ -221,7 +221,7 @@ export function MapView({
       zoom: 13.25,
       minZoom: 10,
       maxZoom: 19,
-      cooperativeGestures: true,
+      cooperativeGestures: false,
       locale: MAP_LOCALE,
     })
     mapRef.current = map
