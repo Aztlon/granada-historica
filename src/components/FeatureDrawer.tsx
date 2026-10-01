@@ -1,14 +1,10 @@
 import { useEffect, useRef, type ReactNode } from 'react'
 import {
-  CATEGORY_CONFIG,
-  CONFIDENCE_DESCRIPTIONS,
-  CONFIDENCE_LABELS,
-  EVIDENCE_LABELS,
-  GEOMETRY_METHOD_LABELS,
   SUBTYPE_LABELS,
 } from '../data/categories'
 import { gazetteerSummary } from '../data/historicalData'
 import type { GazetteerEntry, HistoricalFeature, HistoricalSource } from '../data/schema'
+import type { Messages } from '../i18n/messages'
 
 interface FeatureDrawerProps {
   isOpen: boolean
@@ -16,6 +12,8 @@ interface FeatureDrawerProps {
   gazetteerEntry: GazetteerEntry | null
   sourcesById: ReadonlyMap<string, HistoricalSource>
   onClose: () => void
+  isLanguageFallback: boolean
+  text: Messages
 }
 
 export function FeatureDrawer({
@@ -24,6 +22,8 @@ export function FeatureDrawer({
   gazetteerEntry,
   sourcesById,
   onClose,
+  isLanguageFallback,
+  text,
 }: FeatureDrawerProps) {
   const closeButtonRef = useRef<HTMLButtonElement>(null)
   const drawerRef = useRef<HTMLElement>(null)
@@ -67,7 +67,7 @@ export function FeatureDrawer({
       <button
         className={`drawer-backdrop ${isOpen ? 'drawer-backdrop--visible' : ''}`}
         type="button"
-        aria-label="Descartar el panel informativo"
+        aria-label={text.dismissPanel}
         aria-hidden={!isOpen}
         disabled={!isOpen}
         tabIndex={isOpen ? 0 : -1}
@@ -86,17 +86,17 @@ export function FeatureDrawer({
         <div className="drawer-header">
           <div>
             <p className="panel-kicker">
-              {feature ? CATEGORY_CONFIG[feature.properties.category].label : 'Sobre el proyecto'}
+              {feature ? text.categoryLabels[feature.properties.category] : text.aboutProject}
             </p>
             <h2 id="drawer-title">
-              {feature ? feature.properties.name : 'Una ciudad reconstruida con rigor'}
+              {feature ? feature.properties.name : text.projectTitle}
             </h2>
           </div>
           <button
             ref={closeButtonRef}
             className="icon-button"
             type="button"
-            aria-label="Cerrar el panel informativo"
+            aria-label={text.closePanel}
             onClick={onClose}
           >
             <span aria-hidden="true">×</span>
@@ -108,31 +108,33 @@ export function FeatureDrawer({
             feature={feature}
             gazetteerEntry={gazetteerEntry}
             sourcesById={sourcesById}
+            isLanguageFallback={isLanguageFallback}
+            text={text}
           />
         ) : (
-          <ProjectIntroduction />
+          <ProjectIntroduction text={text} />
         )}
       </aside>
     </>
   )
 }
 
-function ProjectIntroduction() {
+function ProjectIntroduction({ text }: { text: Messages }) {
+  const en = text.locale === 'en'
   return (
     <div className="drawer-content">
       <p className="drawer-lede">
-        Granada Histórica te permite comparar la ciudad actual con una
-        reconstrucción documentada de la Granada de los últimos años del reino
-        nazarí.
+        {en
+          ? 'Granada Histórica compares the present-day city with a documented reconstruction of Granada in the final years of the Nasrid kingdom.'
+          : 'Granada Histórica te permite comparar la ciudad actual con una reconstrucción documentada de la Granada de los últimos años del reino nazarí.'}
       </p>
 
       <div className="principle-card">
         <span className="principle-card__number">01</span>
         <div>
-          <h3>Las fuentes, siempre a la vista</h3>
+          <h3>{en ? 'Sources remain visible' : 'Las fuentes, siempre a la vista'}</h3>
           <p>
-            Cada elemento publicado explica qué fuentes respaldan su ubicación,
-            fecha e interpretación.
+            {en ? 'Every published feature explains the sources supporting its location, date and interpretation.' : 'Cada elemento publicado explica qué fuentes respaldan su ubicación, fecha e interpretación.'}
           </p>
         </div>
       </div>
@@ -140,10 +142,9 @@ function ProjectIntroduction() {
       <div className="principle-card">
         <span className="principle-card__number">02</span>
         <div>
-          <h3>La incertidumbre forma parte del mapa</h3>
+          <h3>{en ? 'Uncertainty is part of the map' : 'La incertidumbre forma parte del mapa'}</h3>
           <p>
-            Las reconstrucciones seguras, probables, aproximadas o controvertidas
-            nunca se muestran como si tuviesen el mismo grado de certeza.
+            {en ? 'Secure, probable, approximate and disputed reconstructions are never presented as if they had equal certainty.' : 'Las reconstrucciones seguras, probables, aproximadas o controvertidas nunca se muestran como si tuviesen el mismo grado de certeza.'}
           </p>
         </div>
       </div>
@@ -151,11 +152,11 @@ function ProjectIntroduction() {
       <div className="milestone-note">
         <span className="status-dot" aria-hidden="true" />
         <div>
-          <strong>M6 · Inventario y contexto territorial</strong>
+          <strong>{en ? 'M6 · Inventory and territorial context' : 'M6 · Inventario y contexto territorial'}</strong>
           <p>
-            El nomenclátor reúne {gazetteerSummary.total} entidades: {' '}
-            {gazetteerSummary.mapped} cartografiadas y {gazetteerSummary.unresolved} {' '}
-            pendientes, discutidas, rechazadas o aún sin localizar.
+            {en
+              ? `The gazetteer contains ${gazetteerSummary.total} entities: ${gazetteerSummary.mapped} mapped and ${gazetteerSummary.unresolved} pending, disputed, rejected or still unlocated.`
+              : `El nomenclátor reúne ${gazetteerSummary.total} entidades: ${gazetteerSummary.mapped} cartografiadas y ${gazetteerSummary.unresolved} pendientes, discutidas, rechazadas o aún sin localizar.`}
           </p>
         </div>
       </div>
@@ -167,37 +168,43 @@ function FeatureDetails({
   feature,
   gazetteerEntry,
   sourcesById,
+  isLanguageFallback,
+  text,
 }: {
   feature: HistoricalFeature
   gazetteerEntry: GazetteerEntry | null
   sourcesById: ReadonlyMap<string, HistoricalSource>
+  isLanguageFallback: boolean
+  text: Messages
 }) {
   const { properties } = feature
 
   return (
     <div className="drawer-content feature-details">
       <div className="feature-meta">
-        <span>{SUBTYPE_LABELS[properties.subtype] ?? properties.subtype}</span>
-        <span>{CONFIDENCE_LABELS[properties.confidence.location]}</span>
+        <span>{subtypeLabel(properties.subtype, text.locale)}</span>
+        <span>{text.confidenceLabels[properties.confidence.location]}</span>
       </div>
 
+      {isLanguageFallback && <p className="language-fallback" role="note">{text.fallback}</p>}
+
       {properties.modern_name && properties.modern_name !== properties.name && (
-        <p className="modern-name">Hoy: {properties.modern_name}</p>
+        <p className="modern-name">{text.todayPrefix}: {properties.modern_name}</p>
       )}
 
       <p className="drawer-lede">{properties.summary}</p>
 
-      <DetailSection title="¿Qué había aquí hacia 1492?">
+      <DetailSection title={text.whatHere}>
         <p>{properties.context_1492}</p>
       </DetailSection>
-      <DetailSection title="¿Qué ocurrió después?">
+      <DetailSection title={text.whatAfter}>
         <p>{properties.after_1492}</p>
       </DetailSection>
-      <DetailSection title="¿Qué hay hoy?">
+      <DetailSection title={text.whatToday}>
         <p>{properties.today}</p>
       </DetailSection>
 
-      {gazetteerEntry && (
+      {gazetteerEntry && text.locale === 'es' && (
         <section className="gazetteer-panel" aria-labelledby="gazetteer-title">
           <p className="panel-kicker">Nomenclátor histórico</p>
           <h3 id="gazetteer-title">Nombre y supervivencia</h3>
@@ -230,38 +237,38 @@ function FeatureDetails({
       )}
 
       <section className="evidence-panel" aria-labelledby="evidence-title">
-        <p className="panel-kicker">Transparencia histórica</p>
-        <h3 id="evidence-title">¿Cómo lo sabemos?</h3>
+        <p className="panel-kicker">{text.evidenceKicker}</p>
+        <h3 id="evidence-title">{text.evidenceTitle}</h3>
         <dl className="confidence-list">
           <div>
-            <dt>Ubicación</dt>
+            <dt>{text.location}</dt>
             <dd>
-              <strong>{CONFIDENCE_LABELS[properties.confidence.location]}</strong>
-              <span>{CONFIDENCE_DESCRIPTIONS[properties.confidence.location]}</span>
+              <strong>{text.confidenceLabels[properties.confidence.location]}</strong>
+              <span>{text.confidenceDescriptions[properties.confidence.location]}</span>
             </dd>
           </div>
           <div>
-            <dt>Fecha hacia 1492</dt>
+            <dt>{text.date1492}</dt>
             <dd>
-              <strong>{CONFIDENCE_LABELS[properties.confidence.time]}</strong>
-              <span>{CONFIDENCE_DESCRIPTIONS[properties.confidence.time]}</span>
+              <strong>{text.confidenceLabels[properties.confidence.time]}</strong>
+              <span>{text.confidenceDescriptions[properties.confidence.time]}</span>
             </dd>
           </div>
           <div>
-            <dt>Pruebas</dt>
-            <dd>{properties.evidence_basis.map((item) => EVIDENCE_LABELS[item]).join(' · ')}</dd>
+            <dt>{text.evidence}</dt>
+            <dd>{properties.evidence_basis.map((item) => text.evidenceLabels[item]).join(' · ')}</dd>
           </div>
           <div>
-            <dt>Geometría</dt>
-            <dd>{GEOMETRY_METHOD_LABELS[properties.geometry_method]}</dd>
+            <dt>{text.geometry}</dt>
+            <dd>{text.geometryLabels[properties.geometry_method]}</dd>
           </div>
         </dl>
         <p className="evidence-note">{properties.evidence_note}</p>
       </section>
 
       <section className="sources-section" aria-labelledby="sources-title">
-        <p className="panel-kicker">Bibliografía</p>
-        <h3 id="sources-title">Fuentes</h3>
+        <p className="panel-kicker">{text.bibliography}</p>
+        <h3 id="sources-title">{text.sources}</h3>
         <ol>
           {properties.citations.map((citation) => {
             const source = sourcesById.get(citation.source_id)
@@ -275,7 +282,7 @@ function FeatureDetails({
                       href={source.url}
                       target="_blank"
                       rel="noreferrer"
-                      title="Abrir fuente en una pestaña nueva"
+                      title={text.openSource}
                     >
                       <cite>{source.title}</cite>
                       <span aria-hidden="true"> ↗</span>
@@ -287,9 +294,9 @@ function FeatureDetails({
                     {source.publisher}{source.year ? `, ${source.year}` : ''}.
                   </span>
                 </p>
-                <span>Localizador: {citation.locator}</span>
-                <small>Respalda: {citation.supports}</small>
-                {source.identifier && <small>Identificador: {source.identifier}</small>}
+                <span>{text.locator}: {citation.locator}</span>
+                <small>{text.supports}: {citation.supports}</small>
+                {source.identifier && <small>{text.identifier}: {source.identifier}</small>}
               </li>
             )
           })}
@@ -332,4 +339,20 @@ function DetailSection({ title, children }: { title: string; children: ReactNode
       {children}
     </section>
   )
+}
+
+const ENGLISH_SUBTYPE_LABELS: Record<string, string> = {
+  madrasa: 'Madrasa', river: 'River', irrigation_channel: 'Historic irrigation channel',
+  lost_bridge: 'Lost bridge', palatine_city: 'Palatine city', palatine_estate: 'Palatine estate',
+  urban_sector: 'Urban sector', late_nasrid_extent: 'Approximate urban extent', defensive_wall: 'Wall or enclosure',
+  historical_route: 'Historic route', city_gate: 'City gate', lost_city_gate: 'Lost city gate',
+  palatine_gate: 'Palatine gate', congregational_mosque: 'Congregational mosque', river_gate_bridge: 'River gate-bridge',
+  silk_market: 'Silk market', funduq: 'Funduq and merchant lodging', hospital: 'Hospital', hammam: 'Public bath',
+  historical_quarter: 'Historic quarter or suburb', cemetery: 'Cemetery',
+}
+
+function subtypeLabel(subtype: string, locale: Messages['locale']) {
+  return locale === 'en'
+    ? ENGLISH_SUBTYPE_LABELS[subtype] ?? subtype
+    : SUBTYPE_LABELS[subtype] ?? subtype
 }

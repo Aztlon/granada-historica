@@ -23,10 +23,12 @@ certainty, supports normalized search, comparison controls, filtering, URL-based
 selection, and exposes historical context, provenance, name attestation,
 survival status, and citations in each feature card.
 
-The proposed next stage turns this core into public historical infrastructure:
-durable place links and public QR codes, optional on-device location, reviewed
-visual reconstructions, and a small augmented-reality pilot. The map,
-uncertainty language, history, and sources will remain fully useful without AR.
+M7 now has a preview implementation: a bilingual five-stop route from
+Bibarrambla to the former Great Mosque, durable links, QR codes, focused place
+views, and one-shot location processed on the device. It remains hidden from the
+main navigation and marked `noindex` until historical and native-English review,
+field checks, accessibility testing, and maintenance approval are complete.
+Visual reconstruction and augmented reality remain outside this pilot.
 See the [roadmap](docs/ROADMAP.md) and [specification](docs/SPEC.md).
 
 The working dataset contains 58 cited and publishable features and a 70-entry

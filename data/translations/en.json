@@ -1,0 +1,88 @@
+{
+  "features": {
+    "gate.bib-rambla": {
+      "name": "Bibarrambla Gate",
+      "historical_name": "Bab al-Ramla",
+      "modern_name": "Original site of Bibarrambla Gate",
+      "aliases": ["Bibrambla Gate", "Gate of the Ears", "Gate of the Sandy Ground"],
+      "modern_search_terms": ["Plaza de Bib-Rambla", "Calle Salamanca", "Alcaicería"],
+      "period_note": "The gate existed in the Nasrid period; it was dismantled in the last quarter of the nineteenth century and later reconstructed elsewhere.",
+      "summary": "Southern gate of the medina, opening from the sandy ground into the commercial surroundings of Bib-Rambla.",
+      "context_1492": "Bab al-Ramla opened the city wall towards the square of the same name, one of the key spaces of the Nasrid city as it extended over the plain.",
+      "after_1492": "The gate remained in use until its demolition between 1873 and 1884. Its pieces were preserved and the arch was reconstructed in the Alhambra woods in 1933.",
+      "today": "The marker identifies the junction of Arco de las Orejas and Salamanca, where archaeology confirmed the original site. It does not mark the reconstructed gate in the Alhambra woods.",
+      "evidence_note": "The Alhambra authority places the gate at this junction and documents the 2016 archaeological discovery. The point represents the modern crossing, not the complete plan of the lost entrance.",
+      "citation_supports": ["Original site at the junction of Arco de las Orejas and Salamanca, the archaeological discovery, demolition and later reconstruction."]
+    },
+    "route.zacatin-axis": {
+      "name": "Zacatín axis",
+      "historical_name": "Al-Saqqatin",
+      "modern_name": "Calle Zacatín",
+      "aliases": ["Zacatín", "Street of the clothes dealers"],
+      "modern_search_terms": ["Calle Zacatín", "Cathedral", "Alcaicería", "Plaza Bib-Rambla"],
+      "period_note": "The commercial axis is documented for Nasrid Granada and survives as a street, although its width, alignments and junctions have changed.",
+      "summary": "Principal commercial axis of the Nasrid medina, associated with crafts and the Alcaicería precinct.",
+      "context_1492": "Zacatín concentrated numerous commercial establishments and linked the religious heart of the medina with Bib-Rambla and its markets.",
+      "after_1492": "The street retained its commercial role, but rebuilding in the centre, fires and new streets altered its façades, width and connections.",
+      "today": "Calle Zacatín remains a pedestrian shopping street between the Cathedral area and Bib-Rambla. The line follows its modern axis and does not reconstruct its 1492 alignments.",
+      "evidence_note": "Toponymic and functional continuity provide a strong basis for the corridor, but do not prove that every modern bend and width matches the medieval street.",
+      "citation_supports": ["Zacatín's role as the representative commercial street of Nasrid Granada and its relationship with the Alcaicería."]
+    },
+    "commerce.alcaiceria": {
+      "name": "Alcaicería",
+      "historical_name": "Al-Qaysariyya",
+      "modern_name": "Alcaicería precinct",
+      "aliases": ["Silk market", "Alcaicería bazaar"],
+      "modern_search_terms": ["Alcaicería", "Placeta de la Seda", "Calle Paños", "Calle Ermita", "Cathedral", "Plaza Bib-Rambla"],
+      "period_note": "The commercial precinct was central to the Nasrid medina; the 1843 fire destroyed almost all of the historic complex.",
+      "summary": "Enclosed network of commercial streets devoted especially to the production and sale of silk in the centre of the medina.",
+      "context_1492": "Together with the Great Mosque, Madrasa and Zacatín, the Alcaicería formed Granada's religious and commercial core. Its controlled entrances led into a dense fabric of shops, workshops and lodgings.",
+      "after_1492": "The silk trade continued under new institutions until the fire of 1843 destroyed almost the entire complex. Reconstruction regularised and reduced the fabric, while the twentieth century reinforced its image as a craft bazaar.",
+      "today": "The surviving visitor precinct preserves names such as Alcaicería, Paños, Ermita and Placeta de la Seda, but its architecture largely postdates 1843. The polygon marks the recognisable core, not the full historical extent described by the sources.",
+      "evidence_note": "The sources securely place the Alcaicería in this sector and describe a larger area within the central medina. Because no complete parcel boundary for 1492 is available, the published envelope remains approximate.",
+      "citation_supports": ["Its function as a silk market, its enclosed street network and the continuity of the site.", "Its spatial relationship with the Great Mosque and Zacatín, and its destruction and reconstruction after the 1843 fire."]
+    },
+    "religious.madraza-yusufiyya": {
+      "name": "Yusufiyya Madrasa",
+      "historical_name": "Madrasa Yusufiyya",
+      "modern_name": "Palacio de la Madraza",
+      "aliases": ["Madrasa of Granada", "Nasrid Madrasa"],
+      "modern_search_terms": ["Calle Oficios", "Royal Chapel", "Cathedral"],
+      "period_note": "The institution opened in 1349 and remained active at the end of the Nasrid period.",
+      "summary": "Centre of higher learning founded by Yusuf I and the only known state madrasa in al-Andalus.",
+      "context_1492": "Around 1492 the Madrasa formed part of the medina's religious and institutional centre. Its curriculum combined legal and religious studies with Arabic, astronomy, arithmetic and geometry, supported by a library and its own endowment.",
+      "after_1492": "After the conquest it briefly retained a teaching role under Archbishop Hernando de Talavera. In 1500 the building became the seat of Granada's municipal council and was transformed throughout the early modern period.",
+      "today": "The Palacio de la Madraza, owned by the University of Granada, preserves the Nasrid prayer hall and other medieval fabric. The point marks the present building, not its complete 1492 footprint.",
+      "evidence_note": "The location is secure because the building and part of its Nasrid fabric survive. The marker is a reference location rather than a reconstruction of the medieval plan.",
+      "citation_supports": ["Its foundation in 1349, teaching role, location and later transformations."]
+    },
+    "religious.medina-great-mosque": {
+      "name": "Great Mosque of the medina",
+      "historical_name": "Congregational mosque",
+      "modern_name": "Sagrario church and Cathedral precinct",
+      "aliases": ["Great Mosque of Granada", "Congregational Mosque of Granada"],
+      "modern_search_terms": ["Sagrario church", "Granada Cathedral", "Plaza de las Pasiegas", "Calle Oficios"],
+      "period_note": "The mosque presided over the Islamic medina; after the conquest it was converted to Christian worship and the later monumental complex profoundly transformed its site and surroundings.",
+      "summary": "Congregational mosque that structured the religious heart of the medina beside the Madrasa, Alcaicería and Zacatín.",
+      "context_1492": "It was Granada's principal place of communal prayer and one of the centres that organised the religious, educational and commercial core of the lower city.",
+      "after_1492": "The building was consecrated for Christian worship and temporarily housed the Cathedral. Construction of the Cathedral, Royal Chapel and later Baroque Sagrario church reshaped the urban complex.",
+      "today": "The Sagrario church occupies the site identified with the former Great Mosque and forms part of the Cathedral and Royal Chapel complex. The point does not reproduce the mosque's plan.",
+      "evidence_note": "The site identification is supported by the City Council and municipal planning. In the absence of a complete publishable medieval footprint, the centre of the Sagrario church is used as a modern reference.",
+      "citation_supports": ["The Sagrario's occupation of the former Great Mosque site and its later use as a cathedral.", "The Great Mosque's role in the medina's religious and commercial centre."]
+    },
+    "walls.medina-lower": {
+      "name": "Outer wall of the lower city",
+      "historical_name": null,
+      "modern_name": null,
+      "aliases": ["Medina wall", "Wall of Madinat Garnata", "Southern wall", "Wall of the southern suburbs"],
+      "modern_search_terms": ["Puerta de Elvira", "Bib-Rambla", "City centre", "Cuesta del Pescado", "Calle Solares", "Vistillas de los Ángeles", "Cuesta Escoriaza", "Cerro de los Mártires"],
+      "period_note": "The western front includes earlier phases; the southern extension enclosing al-Fajjarin and al-Nayd was completed between the late thirteenth and mid-fourteenth centuries.",
+      "summary": "Late Nasrid outer perimeter of the lower city, extended to enclose the southern suburbs of al-Fajjarin and al-Nayd.",
+      "context_1492": "The wall descended from Puerta de Elvira along the western front and, from Cuesta de Aixa and Cuarto Real, enclosed the southern suburbs by Cuesta del Pescado, Solares and Vistillas. It passed through the Loma or Molinos Gate and climbed Cerro de Ahabul towards the Alhambra wall.",
+      "after_1492": "Urban expansion, street alterations and the loss of defensive function caused many stretches to be demolished or absorbed into later buildings.",
+      "today": "Most of the circuit has disappeared or lies beneath the modern city. The map joins unequal anchors and reconstructed corridors; it does not represent continuously surviving masonry.",
+      "evidence_note": "The surviving and documented anchors vary in strength. The southern and eastern stretches are reconstructed from documents, topography and published plans, and therefore remain approximate.",
+      "citation_supports": ["Walls and entrances of the medina in the overall interpretation of the Islamic city.", "The wall's junction with Puerta de Elvira and its defensive connections.", "The western wall sequence from Puerta de Elvira through the lower city towards Torres Bermejas.", "Approximate location of gates on the western front.", "Bab al-Ramla's position in the wall of the lower medina.", "The distinction between the inner and outer southern walls and the route around the southern suburbs.", "The southern escarpment and the approach to Vistillas and the Molinos Gate."]
+    }
+  }
+}

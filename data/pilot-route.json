@@ -1,0 +1,100 @@
+{
+  "id": "route.bib-rambla",
+  "slug": "bib-rambla",
+  "status": "preview",
+  "title": {
+    "es": "De Bibarrambla al corazón de la medina",
+    "en": "From Bibarrambla to the heart of the medina"
+  },
+  "description": {
+    "es": "Cinco paradas para recorrer el acceso meridional, el eje comercial y el centro religioso de la Granada nazarí.",
+    "en": "Five stops through the southern entrance, commercial axis and religious centre of Nasrid Granada."
+  },
+  "stops": [
+    {
+      "id": "place.bib-rambla",
+      "slug": "bib-rambla",
+      "order": 1,
+      "focus": [-3.599744, 37.1746364],
+      "primary_feature_id": "gate.bib-rambla",
+      "related_feature_ids": ["walls.medina-lower", "route.zacatin-axis", "commerce.alcaiceria"],
+      "title": { "es": "Puerta de Bibarrambla", "en": "Bibarrambla Gate" },
+      "introduction": {
+        "es": "Aquí se abría Bab al-Ramla, la puerta que conectaba el arenal y la plaza con el recinto de la medina.",
+        "en": "Bab al-Ramla opened here, connecting the sandy open ground and square with the walled medina."
+      },
+      "arrival_cue": {
+        "es": "Punto provisional en la confluencia de Arco de las Orejas y Salamanca.",
+        "en": "Provisional point at the junction of Arco de las Orejas and Salamanca."
+      }
+    },
+    {
+      "id": "place.zacatin",
+      "slug": "zacatin",
+      "order": 2,
+      "focus": [-3.5993124, 37.1749566],
+      "primary_feature_id": "route.zacatin-axis",
+      "related_feature_ids": ["gate.bib-rambla", "commerce.alcaiceria", "religious.medina-great-mosque"],
+      "title": { "es": "Zacatín", "en": "Zacatín" },
+      "introduction": {
+        "es": "El corredor de los ropavejeros enlazaba Bib-Rambla con el núcleo religioso y mercantil de la ciudad baja.",
+        "en": "The clothes-dealers' corridor linked Bib-Rambla with the religious and commercial core of the lower city."
+      },
+      "arrival_cue": {
+        "es": "Anclaje provisional en el acceso meridional de la calle Zacatín.",
+        "en": "Provisional anchor at the southern entrance to Calle Zacatín."
+      }
+    },
+    {
+      "id": "place.alcaiceria",
+      "slug": "alcaiceria",
+      "order": 3,
+      "focus": [-3.59953, 37.17518],
+      "primary_feature_id": "commerce.alcaiceria",
+      "related_feature_ids": ["route.zacatin-axis", "religious.madraza-yusufiyya", "religious.medina-great-mosque"],
+      "title": { "es": "Alcaicería", "en": "Alcaicería" },
+      "introduction": {
+        "es": "Este recinto controlado concentraba tiendas, talleres y el comercio de la seda junto a la mezquita mayor.",
+        "en": "This controlled precinct concentrated shops, workshops and the silk trade beside the Great Mosque."
+      },
+      "arrival_cue": {
+        "es": "Anclaje provisional en el acceso a la Alcaicería desde Bib-Rambla.",
+        "en": "Provisional anchor at the Bib-Rambla entrance to the Alcaicería."
+      }
+    },
+    {
+      "id": "place.madraza-yusufiyya",
+      "slug": "madraza",
+      "order": 4,
+      "focus": [-3.5982757, 37.176086],
+      "primary_feature_id": "religious.madraza-yusufiyya",
+      "related_feature_ids": ["religious.medina-great-mosque", "commerce.alcaiceria", "route.zacatin-axis"],
+      "title": { "es": "Madraza Yusufiyya", "en": "Yusufiyya Madrasa" },
+      "introduction": {
+        "es": "La institución fundada por Yusuf I formaba a juristas y estudiosos junto al principal centro religioso de la medina.",
+        "en": "The institution founded by Yusuf I educated jurists and scholars beside the medina's principal religious centre."
+      },
+      "arrival_cue": {
+        "es": "Palacio de la Madraza, en la calle Oficios.",
+        "en": "Palacio de la Madraza on Calle Oficios."
+      }
+    },
+    {
+      "id": "place.mezquita-mayor",
+      "slug": "mezquita-mayor",
+      "order": 5,
+      "focus": [-3.5990298, 37.1759292],
+      "primary_feature_id": "religious.medina-great-mosque",
+      "related_feature_ids": ["religious.madraza-yusufiyya", "commerce.alcaiceria", "route.zacatin-axis"],
+      "title": { "es": "Mezquita Mayor de la medina", "en": "Great Mosque of the medina" },
+      "introduction": {
+        "es": "La mezquita aljama organizaba el corazón religioso de la medina en el solar transformado hoy por el Sagrario y la Catedral.",
+        "en": "The congregational mosque structured the religious heart of the medina on the site now transformed by the Sagrario and Cathedral."
+      },
+      "arrival_cue": {
+        "es": "Entorno de la iglesia del Sagrario y el conjunto catedralicio.",
+        "en": "The Sagrario church and Cathedral precinct."
+      }
+    }
+  ]
+}

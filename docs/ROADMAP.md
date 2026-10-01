@@ -155,19 +155,36 @@ This is a collaboration roadmap rather than committed v0.1 scope.
 
 ### M7 — Place-based public access pilot
 
-1. Define durable place URLs and a QR resolver so a public marker can open the
+Preview implementation:
+
+1. [x] Define durable route and place URLs so a public marker can open the
    relevant map position and historical feature without requiring an app.
-2. Add an opt-in, client-side `where am I?` mode; do not transmit or retain a
-   visitor's coordinates by default.
-3. Design a focused mobile place view for use while standing in the city.
-4. Add Spanish/English interface and content-routing foundations.
-5. Develop a signage and maintenance proposal with the Ayuntamiento or another
-   institutional partner, beginning with a small, evaluated pilot.
+2. [x] Add a one-shot, opt-in, client-side `where am I?` mode that does not
+   transmit, persist, or continuously track a visitor's coordinates.
+3. [x] Add a focused desktop side panel and mobile place sheet for the five-stop
+   Bibarrambla route, with numbered map stops and feature drill-down.
+4. [x] Add Spanish/English interface and content-routing foundations plus full
+   English records for the six pilot-related entities.
+5. [x] Generate five stable high-error-correction SVG QR codes, a bilingual test
+   sheet, and a signage/maintenance proposal.
+6. [x] Add route, language, location, privacy, build-entry, and QR validation
+   coverage, including deployment smoke checks.
+7. [ ] Complete historical/editorial and native-English review.
+8. [ ] Field-check anchor placement, the accessible pedestrian progression, and
+   representative iOS/Android QR scans.
+9. [ ] Complete participant and accessibility testing; resolve all critical
+   findings and name maintenance ownership.
+10. [ ] Change the pilot from `preview` to `active`, expose it in navigation,
+    and publish v0.1.1 after partner approval.
 
 Candidate demonstration: a QR marker in or near Plaza de Bib-Rambla opens the
 historical position of Bab al-Ramla, relates it to the wall, Alcaicería, Zacatín,
 Madraza, and Mezquita Mayor, and distinguishes the original site from the
 surviving reconstructed fabric in the Alhambra woods.
+
+The implemented sequence is Bibarrambla → Zacatín → Alcaicería → Madraza →
+Mezquita Mayor. Preview URLs remain directly available with `noindex`, but the
+route is hidden from the main map navigation until the activation gates pass.
 
 Exit gate: a visitor can move from a physical place to its sourced historical
 context in one scan, with no installation and a clear privacy explanation.

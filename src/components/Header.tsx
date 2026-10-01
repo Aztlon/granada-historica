@@ -1,10 +1,13 @@
 import { SearchBox } from './SearchBox'
 import type { HistoricalFeature } from '../data/schema'
+import type { Messages } from '../i18n/messages'
 
 interface HeaderProps {
   features: readonly HistoricalFeature[]
   onSelectFeature: (featureId: string) => void
   onOpenInfo: () => void
+  onToggleLocale: () => void
+  text: Messages
 }
 
 function PomegranateMark() {
@@ -35,28 +38,37 @@ function PomegranateMark() {
   )
 }
 
-export function Header({ features, onSelectFeature, onOpenInfo }: HeaderProps) {
+export function Header({ features, onSelectFeature, onOpenInfo, onToggleLocale, text }: HeaderProps) {
   return (
     <header className="site-header">
       <div className="brand-lockup" aria-label="Granada Histórica">
         <PomegranateMark />
         <div>
-          <p className="brand-kicker">Un atlas de la ciudad bajo la ciudad</p>
+          <p className="brand-kicker">{text.brandKicker}</p>
           <h1>Granada Histórica</h1>
         </div>
       </div>
 
       <div className="header-actions">
-        <SearchBox features={features} onSelectFeature={onSelectFeature} />
+        <SearchBox features={features} onSelectFeature={onSelectFeature} text={text} />
+
+        <button
+          className="text-button language-button"
+          type="button"
+          aria-label={text.languageLabel}
+          onClick={onToggleLocale}
+        >
+          {text.language}
+        </button>
 
         <button
           className="text-button"
           type="button"
-          aria-label="Acerca del mapa"
+          aria-label={text.about}
           onClick={onOpenInfo}
         >
-          <span className="about-label--desktop">Acerca del mapa</span>
-          <span className="about-label--mobile">Acerca</span>
+          <span className="about-label--desktop">{text.about}</span>
+          <span className="about-label--mobile">{text.aboutShort}</span>
         </button>
       </div>
     </header>

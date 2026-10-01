@@ -1,14 +1,15 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
-import { CATEGORY_CONFIG } from '../data/categories'
 import { searchHistoricalFeatures } from '../data/search'
 import type { HistoricalFeature } from '../data/schema'
+import type { Messages } from '../i18n/messages'
 
 interface SearchBoxProps {
   features: readonly HistoricalFeature[]
   onSelectFeature: (featureId: string) => void
+  text: Messages
 }
 
-export function SearchBox({ features, onSelectFeature }: SearchBoxProps) {
+export function SearchBox({ features, onSelectFeature, text }: SearchBoxProps) {
   const inputId = useId()
   const listboxId = useId()
   const rootRef = useRef<HTMLDivElement>(null)
@@ -57,7 +58,7 @@ export function SearchBox({ features, onSelectFeature }: SearchBoxProps) {
       <button
         className="mobile-search-button"
         type="button"
-        aria-label="Buscar en la Granada histórica"
+        aria-label={text.searchLabel}
         aria-expanded={isMobileOpen}
         aria-controls={`${inputId}-shell`}
         onClick={openMobileSearch}
@@ -68,14 +69,14 @@ export function SearchBox({ features, onSelectFeature }: SearchBoxProps) {
       <div id={`${inputId}-shell`} className="search-popover">
         <label className="search-shell" htmlFor={inputId}>
           <SearchIcon />
-          <span className="sr-only">Buscar en la Granada histórica</span>
+          <span className="sr-only">{text.searchLabel}</span>
           <input
             ref={inputRef}
             id={inputId}
             type="search"
             role="combobox"
             autoComplete="off"
-            placeholder="Buscar lugares, nombres o calles"
+            placeholder={text.searchPlaceholder}
             value={query}
             aria-autocomplete="list"
             aria-expanded={showResults}
@@ -111,7 +112,7 @@ export function SearchBox({ features, onSelectFeature }: SearchBoxProps) {
         </label>
 
         {showResults && (
-          <div className="search-results" role="listbox" id={listboxId} aria-label="Resultados de búsqueda">
+          <div className="search-results" role="listbox" id={listboxId} aria-label={text.searchResults}>
             {results.length > 0 ? (
               results.map(({ feature, matchedOn }, index) => (
                 <button
@@ -126,21 +127,21 @@ export function SearchBox({ features, onSelectFeature }: SearchBoxProps) {
                 >
                   <span className="search-result__main">
                     <strong>{feature.properties.name}</strong>
-                    <small>{CATEGORY_CONFIG[feature.properties.category].label}</small>
+                    <small>{text.categoryLabels[feature.properties.category]}</small>
                   </span>
-                  {matchedOn && <span className="search-result__match">Coincide: {matchedOn}</span>}
+                  {matchedOn && <span className="search-result__match">{text.match}: {matchedOn}</span>}
                 </button>
               ))
             ) : (
               <p className="search-empty" role="status">
-                No hay coincidencias. Prueba un nombre histórico, una calle o un lugar actual.
+                {text.noSearchResults}
               </p>
             )}
           </div>
         )}
 
         <span className="sr-only" role="status" aria-live="polite">
-          {query.trim() ? `${results.length} resultados encontrados` : ''}
+          {query.trim() ? text.resultsFound(results.length) : ''}
         </span>
       </div>
     </div>

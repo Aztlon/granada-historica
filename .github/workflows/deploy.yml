@@ -54,3 +54,24 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+      - name: Smoke test durable M7 paths
+        shell: bash
+        run: |
+          base="${{ steps.deployment.outputs.page_url }}"
+          for path in \
+            "" \
+            "route/bib-rambla/" \
+            "place/bib-rambla/" \
+            "place/zacatin/" \
+            "place/alcaiceria/" \
+            "place/madraza/" \
+            "place/mezquita-mayor/" \
+            "pilot/qr/bib-rambla.svg" \
+            "pilot/qr/zacatin.svg" \
+            "pilot/qr/alcaiceria.svg" \
+            "pilot/qr/madraza.svg" \
+            "pilot/qr/mezquita-mayor.svg"
+          do
+            curl --fail --location --retry 5 --retry-delay 5 "${base}${path}"
+          done
+          curl --fail --location --retry 5 --retry-delay 5 "${base}place/bib-rambla/?lang=en"

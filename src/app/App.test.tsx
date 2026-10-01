@@ -18,16 +18,16 @@ vi.mock('../map/MapView', () => ({
 
 describe('App', () => {
   beforeEach(() => {
-    window.history.replaceState({}, '', '/')
+    window.history.replaceState({}, '', '/?lang=es')
   })
 
-  it('identifica el mapa y el periodo histórico', () => {
+  it('identifica el mapa y el periodo histórico', async () => {
     render(<App />)
 
     expect(screen.getByRole('heading', { name: 'Granada Histórica' })).toBeVisible()
     expect(screen.getByText('Granada, c. 1492')).toBeVisible()
     expect(
-      screen.getByLabelText('Mapa moderno interactivo del centro de Granada'),
+      await screen.findByLabelText('Mapa moderno interactivo del centro de Granada'),
     ).toBeVisible()
   })
 
@@ -74,9 +74,7 @@ describe('App', () => {
     ).toBeVisible()
 
     await user.click(screen.getByRole('button', { name: 'Cerrar el panel informativo' }))
-    expect(
-      screen.getByRole('dialog', { hidden: true }),
-    ).toHaveAttribute('aria-hidden', 'true')
+    expect(document.querySelector('.feature-drawer')).toHaveAttribute('aria-hidden', 'true')
   })
 
   it('abre la ficha histórica al seleccionar una entidad del mapa', async () => {
@@ -111,7 +109,7 @@ describe('App', () => {
   })
 
   it('restaura una selección válida desde la URL y responde al historial', async () => {
-    window.history.replaceState({}, '', '/?feature=gate.elvira')
+    window.history.replaceState({}, '', '/?feature=gate.elvira&lang=es')
     render(<App />)
 
     expect(screen.getByRole('heading', { name: 'Puerta de Elvira' })).toBeVisible()
@@ -121,6 +119,46 @@ describe('App', () => {
 
     await waitFor(() => {
       expect(screen.getByRole('heading', { name: 'Río Darro' })).toBeVisible()
+    })
+  })
+
+  it('abre una parada M7 desde su URL durable y conserva la ruta al abrir la ficha', async () => {
+    const user = userEvent.setup()
+    window.history.replaceState({}, '', '/granada-historica/place/bib-rambla/?lang=es')
+    render(<App />)
+
+    expect(screen.getByRole('heading', { name: 'Puerta de Bibarrambla' })).toBeVisible()
+    expect(screen.getByText('Parada 1 de 5')).toBeVisible()
+    await user.click(screen.getByRole('button', { name: 'Abrir la ficha histórica completa' }))
+    expect(screen.getByRole('heading', { name: 'Puerta de Bibarrambla' })).toBeVisible()
+    expect(window.location.pathname).toBe('/granada-historica/place/bib-rambla/')
+    expect(new URL(window.location.href).searchParams.get('feature')).toBe('gate.bib-rambla')
+
+    await user.click(screen.getByRole('button', { name: 'Cerrar el panel informativo' }))
+    expect(screen.getByText('Parada 1 de 5')).toBeVisible()
+    expect(new URL(window.location.href).searchParams.has('feature')).toBe(false)
+  })
+
+  it('muestra la traducción inglesa del piloto', () => {
+    window.history.replaceState({}, '', '/granada-historica/place/mezquita-mayor/?lang=en')
+    render(<App />)
+    expect(screen.getByRole('heading', { name: 'Great Mosque of the medina' })).toBeVisible()
+    expect(screen.getByText('Stop 5 of 5')).toBeVisible()
+  })
+
+  it('restaura el idioma elegido mediante el historial', async () => {
+    const user = userEvent.setup()
+    window.history.replaceState({}, '', '/granada-historica/place/bib-rambla/?lang=es')
+    render(<App />)
+
+    await user.click(screen.getByRole('button', { name: 'Cambiar idioma a inglés' }))
+    expect(screen.getByRole('heading', { name: 'Bibarrambla Gate' })).toBeVisible()
+    expect(new URL(window.location.href).searchParams.get('lang')).toBe('en')
+
+    window.history.back()
+    window.dispatchEvent(new PopStateEvent('popstate'))
+    await waitFor(() => {
+      expect(screen.getByRole('heading', { name: 'Puerta de Bibarrambla' })).toBeVisible()
     })
   })
 })

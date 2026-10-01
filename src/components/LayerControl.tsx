@@ -1,6 +1,7 @@
 import { useEffect, useRef, type CSSProperties } from 'react'
-import { CATEGORY_CONFIG, CONFIDENCE_LABELS } from '../data/categories'
+import { CATEGORY_CONFIG } from '../data/categories'
 import type { Confidence, FeatureCategory } from '../data/schema'
+import type { Messages } from '../i18n/messages'
 
 interface LayerControlProps {
   isOpen: boolean
@@ -19,6 +20,7 @@ interface LayerControlProps {
   onToggleCategory: (category: FeatureCategory) => void
   onShowAllCategories: () => void
   onHideAllCategories: () => void
+  text: Messages
 }
 
 const confidenceOrder: Confidence[] = [
@@ -45,6 +47,7 @@ export function LayerControl({
   onToggleCategory,
   onShowAllCategories,
   onHideAllCategories,
+  text,
 }: LayerControlProps) {
   const toggleRef = useRef<HTMLButtonElement>(null)
   const closeRef = useRef<HTMLButtonElement>(null)
@@ -81,21 +84,21 @@ export function LayerControl({
         <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
           <path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5" />
         </svg>
-        <span>Capas</span>
+        <span>{text.layers}</span>
       </button>
 
       {isOpen && (
         <section id="layer-panel" className="layer-panel" aria-labelledby="layers-title">
           <div className="layer-panel__heading">
             <div>
-              <p className="panel-kicker">Vista del mapa</p>
-              <h2 id="layers-title">Capas</h2>
+              <p className="panel-kicker">{text.mapView}</p>
+              <h2 id="layers-title">{text.layers}</h2>
             </div>
             <button
               ref={closeRef}
               className="icon-button"
               type="button"
-              aria-label="Cerrar el panel de capas"
+              aria-label={text.closeLayers}
               onClick={onClose}
             >
               <span aria-hidden="true">×</span>
@@ -104,20 +107,20 @@ export function LayerControl({
 
           <label className="layer-row">
             <span>
-              <strong>Contexto actual</strong>
-              <small>Referencia de OpenStreetMap</small>
+              <strong>{text.modernContext}</strong>
+              <small>{text.osmReference}</small>
             </span>
             <input
               type="checkbox"
               checked={modernVisible}
-              aria-label="Contexto actual"
+              aria-label={text.modernContext}
               onChange={onToggleModern}
             />
           </label>
 
           <label className={`opacity-control ${!modernVisible ? 'opacity-control--disabled' : ''}`}>
             <span>
-              <strong>Intensidad del contexto actual</strong>
+              <strong>{text.modernStrength}</strong>
               <output>{Math.round(modernStrength * 100)}%</output>
             </span>
             <input
@@ -127,27 +130,27 @@ export function LayerControl({
               step="0.05"
               value={modernStrength}
               disabled={!modernVisible}
-              aria-label="Intensidad del contexto actual"
+              aria-label={text.modernStrength}
               onChange={(event) => onChangeModernStrength(Number(event.target.value))}
             />
           </label>
 
           <label className="layer-row">
             <span>
-              <strong>Superposición histórica</strong>
-              <small>{historicalVisible ? 'Visible' : 'Oculta'}</small>
+              <strong>{text.historicalOverlay}</strong>
+              <small>{historicalVisible ? text.visible : text.hidden}</small>
             </span>
             <input
               type="checkbox"
               checked={historicalVisible}
-              aria-label="Superposición histórica"
+              aria-label={text.historicalOverlay}
               onChange={onToggleHistorical}
             />
           </label>
 
           <label className={`opacity-control ${!historicalVisible ? 'opacity-control--disabled' : ''}`}>
             <span>
-              <strong>Opacidad histórica</strong>
+              <strong>{text.historicalOpacity}</strong>
               <output>{Math.round(historicalOpacity * 100)}%</output>
             </span>
             <input
@@ -157,18 +160,18 @@ export function LayerControl({
               step="0.05"
               value={historicalOpacity}
               disabled={!historicalVisible}
-              aria-label="Opacidad de la superposición histórica"
+              aria-label={text.historicalOpacityInput}
               onChange={(event) => onChangeHistoricalOpacity(Number(event.target.value))}
             />
           </label>
 
           <fieldset className="category-filters" disabled={!historicalVisible}>
-            <legend className="sr-only">Categorías históricas</legend>
+            <legend className="sr-only">{text.categories}</legend>
             <div className="category-filters__heading">
-              <span>Categorías</span>
+              <span>{text.categories}</span>
               <span>
-                <button type="button" onClick={onShowAllCategories}>Todas</button>
-                <button type="button" onClick={onHideAllCategories}>Ninguna</button>
+                <button type="button" onClick={onShowAllCategories}>{text.all}</button>
+                <button type="button" onClick={onHideAllCategories}>{text.none}</button>
               </span>
             </div>
             {(Object.entries(CATEGORY_CONFIG) as [
@@ -186,15 +189,15 @@ export function LayerControl({
                     style={{ '--category-color': config.color } as CSSProperties}
                     aria-hidden="true"
                   />
-                  <span className="category-row__label">{config.shortLabel}</span>
-                  <span className="category-count" aria-label={`${count} elementos`}>
+                  <span className="category-row__label">{text.categoryLabels[category]}</span>
+                  <span className="category-count" aria-label={text.elements(count)}>
                     {count}
                   </span>
                   <input
                     type="checkbox"
                     checked={visibleCategories.has(category)}
                     disabled={count === 0}
-                    aria-label={config.label}
+                    aria-label={text.categoryLabels[category]}
                     onChange={() => onToggleCategory(category)}
                   />
                 </label>
@@ -203,12 +206,12 @@ export function LayerControl({
           </fieldset>
 
           <div className="confidence-legend">
-            <p>Certeza de localización</p>
+            <p>{text.locationConfidence}</p>
             <div className="confidence-legend__items">
               {confidenceOrder.map((confidence) => (
                 <span key={confidence}>
                   <i className={`confidence-mark confidence-mark--${confidence}`} />
-                  {CONFIDENCE_LABELS[confidence]}
+                  {text.confidenceLabels[confidence]}
                 </span>
               ))}
             </div>

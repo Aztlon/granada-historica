@@ -26,11 +26,13 @@ controles de comparación, filtrado y selección mediante URL, y muestra en la
 ficha de cada elemento su contexto histórico, procedencia, testimonios del
 nombre, estado de conservación y citas.
 
-La siguiente etapa propuesta convierte este núcleo en infraestructura histórica
-pública: enlaces duraderos y códigos QR desde lugares de la ciudad, localización
-opcional procesada en el dispositivo, reconstrucciones visuales revisadas y una
-prueba de realidad aumentada en un número reducido de emplazamientos. El mapa,
-la explicación de la incertidumbre y las fuentes seguirán funcionando sin AR.
+M7 dispone ya de una implementación de previsualización: una ruta bilingüe de
+cinco paradas entre Bibarrambla y la antigua Mezquita Mayor, enlaces duraderos,
+códigos QR, fichas de lugar y localización puntual procesada en el dispositivo.
+Permanece oculta de la navegación principal y marcada `noindex` hasta completar
+la revisión histórica e inglesa, la comprobación de campo, la accesibilidad y el
+acuerdo de mantenimiento. Las reconstrucciones visuales y la realidad aumentada
+siguen fuera de este piloto.
 Consulte la [hoja de ruta](docs/ROADMAP.md) y la [especificación](docs/SPEC.md).
 
 El conjunto de datos de trabajo contiene 58 elementos citados y publicables y

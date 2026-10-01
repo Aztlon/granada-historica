@@ -8,6 +8,7 @@ import {
   sourceRegistrySchema,
   type HistoricalFeature,
 } from '../src/data/schema'
+import { featureTranslationsSchema, pilotRouteSchema } from '../src/data/pilotSchema'
 
 import { auditSpatialRelationships } from '../src/data/spatialAudit'
 
@@ -65,9 +66,11 @@ async function validate() {
   }
 
   const featureIds = new Set<string>()
+  const featureById = new Map<string, HistoricalFeature>()
   for (const feature of features) {
     if (featureIds.has(feature.id)) errors.push(`  - Entidad duplicada: ${feature.id}`)
     featureIds.add(feature.id)
+    featureById.set(feature.id, feature)
 
     const referencedSources = [
       ...feature.properties.geometry_source_refs,
@@ -77,6 +80,72 @@ async function validate() {
       if (!sourceIds.has(sourceId)) {
         errors.push(`  - ${feature.id} referencia una fuente inexistente: ${sourceId}`)
       }
+    }
+  }
+
+  const pilotResult = pilotRouteSchema.safeParse(await readJson('data/pilot-route.json'))
+  if (!pilotResult.success) {
+    errors.push(formatIssues('data/pilot-route.json', pilotResult.error.issues))
+  } else {
+    const slugs = new Set<string>()
+    const orders = new Set<number>()
+    const placeIds = new Set<string>()
+    for (const stop of pilotResult.data.stops) {
+      if (slugs.has(stop.slug)) errors.push(`  - Slug de parada duplicado: ${stop.slug}`)
+      if (orders.has(stop.order)) errors.push(`  - Orden de parada duplicado: ${stop.order}`)
+      if (placeIds.has(stop.id)) errors.push(`  - ID de parada duplicado: ${stop.id}`)
+      slugs.add(stop.slug)
+      orders.add(stop.order)
+      placeIds.add(stop.id)
+      for (const featureId of [stop.primary_feature_id, ...stop.related_feature_ids]) {
+        const feature = featureById.get(featureId)
+        if (!feature) errors.push(`  - ${stop.id} referencia una entidad inexistente: ${featureId}`)
+        else if (feature.properties.publication_status !== 'publishable') {
+          errors.push(`  - ${stop.id} referencia una entidad no publicable: ${featureId}`)
+        }
+      }
+    }
+    const sortedOrders = [...orders].sort((left, right) => left - right)
+    if (sortedOrders.some((order, index) => order !== index + 1)) {
+      errors.push('  - Las paradas del piloto deben tener un orden continuo desde 1.')
+    }
+    const expectedSequence = [
+      'gate.bib-rambla',
+      'route.zacatin-axis',
+      'commerce.alcaiceria',
+      'religious.madraza-yusufiyya',
+      'religious.medina-great-mosque',
+    ]
+    const actualSequence = [...pilotResult.data.stops]
+      .sort((left, right) => left.order - right.order)
+      .map((stop) => stop.primary_feature_id)
+    if (actualSequence.join('|') !== expectedSequence.join('|')) {
+      errors.push('  - El orden del piloto M7 no coincide con la secuencia editorial aprobada.')
+    }
+  }
+
+  const translationsResult = featureTranslationsSchema.safeParse(await readJson('data/translations/en.json'))
+  if (!translationsResult.success) {
+    errors.push(formatIssues('data/translations/en.json', translationsResult.error.issues))
+  } else {
+    const requiredTranslationIds = new Set([
+      'gate.bib-rambla',
+      'route.zacatin-axis',
+      'commerce.alcaiceria',
+      'religious.madraza-yusufiyya',
+      'religious.medina-great-mosque',
+      'walls.medina-lower',
+    ])
+    for (const featureId of requiredTranslationIds) {
+      const translation = translationsResult.data.features[featureId]
+      const feature = featureById.get(featureId)
+      if (!translation) errors.push(`  - Falta la traducción inglesa completa de ${featureId}`)
+      else if (feature && translation.citation_supports.length !== feature.properties.citations.length) {
+        errors.push(`  - ${featureId} debe traducir exactamente ${feature.properties.citations.length} apoyos de cita.`)
+      }
+    }
+    for (const featureId of Object.keys(translationsResult.data.features)) {
+      if (!featureIds.has(featureId)) errors.push(`  - Traducción de una entidad inexistente: ${featureId}`)
     }
   }
 

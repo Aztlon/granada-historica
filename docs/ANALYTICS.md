@@ -39,10 +39,18 @@ El panel ofrece evolución temporal, visitas y páginas vistas, país aproximado
 referrer y ruta. “Visitas” no equivale a una cifra fiable de personas únicas, y
 el producto no muestra marcas de tiempo de sesiones individuales. El beacon
 reconoce cambios de ruta mediante la History API, por
-lo que no necesita código adicional para una SPA. Esta aplicación actualmente
-permanece en una sola ruta y expresa la selección del mapa con `?feature=...`;
-Cloudflare omite deliberadamente las query strings, de modo que una selección de
-elemento no se convierte en una página distinta en los informes.
+lo que no necesita código adicional para una SPA. El piloto M7 usa rutas
+agregables y estables (`/route/bib-rambla/` y `/place/<slug>/`) para comparar el
+tráfico de entrada de cada parada sin parámetros de seguimiento. La selección
+detallada del mapa sigue expresándose con `?feature=...`; Cloudflare omite las
+query strings, de modo que una selección de elemento o el idioma `?lang=en` no se
+convierten en páginas distintas en los informes.
+
+La localización M7 no forma parte de la analítica. Las coordenadas obtenidas con
+permiso explícito se mantienen únicamente en memoria de React: no se escriben en
+la URL ni en almacenamiento, no se registran en consola y no se incluyen en
+peticiones de aplicación o eventos personalizados. Las teselas visibles del mapa
+continúan procediendo del proveedor externo configurado.
 
 Cloudflare Web Analytics no ofrece ubicación por ciudad en este producto. Tampoco
 permite identificar a una persona concreta, confirmar que una visita procede de

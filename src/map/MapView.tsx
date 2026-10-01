@@ -4,6 +4,7 @@ import {
   NavigationControl,
   ScaleControl,
   setWorkerUrl,
+  type GeoJSONSource,
   type MapLayerMouseEvent,
 } from 'maplibre-gl'
 import type {
@@ -17,6 +18,8 @@ import type {
   FeatureCategory,
   HistoricalFeatureCollection,
 } from '../data/schema'
+import type { LocationFix, PlaceStop } from '../data/pilotSchema'
+import type { Messages } from '../i18n/messages'
 
 const GRANADA_CENTER: [number, number] = [-3.5986, 37.1773]
 const DEFAULT_STYLE = 'https://tiles.openfreemap.org/styles/liberty'
@@ -24,6 +27,8 @@ const SOURCE_ID = 'historical-features'
 const AREA_LABEL_SOURCE_ID = 'historical-area-labels'
 const BASEMAP_VEIL_SOURCE_ID = 'basemap-veil-source'
 const BASEMAP_VEIL_LAYER_ID = 'basemap-veil'
+const PILOT_PLACES_SOURCE_ID = 'pilot-places'
+const VISITOR_LOCATION_SOURCE_ID = 'visitor-location'
 const BUSINESS_POI_MIN_ZOOM = 16
 
 const HISTORICAL_LAYER_IDS = [
@@ -72,7 +77,7 @@ const INTERACTIVE_LAYER_IDS = [
   'historical-label-gates',
 ] as const
 
-const MAP_LOCALE = {
+const SPANISH_MAP_LOCALE = {
   'AttributionControl.ToggleAttribution': 'Mostrar u ocultar la atribución',
   'AttributionControl.MapFeedback': 'Enviar comentarios sobre el mapa',
   'FullscreenControl.Enter': 'Ver a pantalla completa',
@@ -101,6 +106,17 @@ const MAP_LOCALE = {
   'CooperativeGesturesHandler.MacHelpText':
     'Usa ⌘ y la rueda del ratón para acercar o alejar el mapa',
   'CooperativeGesturesHandler.MobileHelpText': 'Usa dos dedos para mover el mapa',
+}
+
+const ENGLISH_MAP_LOCALE = {
+  ...SPANISH_MAP_LOCALE,
+  'AttributionControl.ToggleAttribution': 'Toggle attribution',
+  'GeolocateControl.FindMyLocation': 'Show my location',
+  'GeolocateControl.LocationNotAvailable': 'Location unavailable',
+  'Map.Title': 'Map',
+  'Marker.Title': 'Map marker',
+  'NavigationControl.ZoomIn': 'Zoom in',
+  'NavigationControl.ZoomOut': 'Zoom out',
 }
 
 const CATEGORY_COLOR: ExpressionSpecification = [
@@ -158,7 +174,13 @@ interface MapViewProps {
   modernStrength: number
   selectedFeatureId: string | null
   visibleCategories: readonly FeatureCategory[]
+  pilotPlaces: readonly PlaceStop[]
+  activePlaceId: string | null
+  visitorLocation: LocationFix | null
+  nearestPlaceFocus: readonly [number, number] | null
   onSelectFeature: (featureId: string) => void
+  onSelectPlace: (placeId: string) => void
+  text: Messages
 }
 
 setWorkerUrl(workerUrl)
@@ -171,7 +193,13 @@ export function MapView({
   modernStrength,
   selectedFeatureId,
   visibleCategories,
+  pilotPlaces,
+  activePlaceId,
+  visitorLocation,
+  nearestPlaceFocus,
   onSelectFeature,
+  onSelectPlace,
+  text,
 }: MapViewProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<Map | null>(null)
@@ -222,7 +250,7 @@ export function MapView({
       minZoom: 10,
       maxZoom: 19,
       cooperativeGestures: false,
-      locale: MAP_LOCALE,
+      locale: text.locale === 'en' ? ENGLISH_MAP_LOCALE : SPANISH_MAP_LOCALE,
     })
     mapRef.current = map
 
@@ -249,10 +277,19 @@ export function MapView({
         type: 'geojson',
         data: areaLabelData,
       })
+      map.addSource(PILOT_PLACES_SOURCE_ID, {
+        type: 'geojson',
+        data: buildPilotPlaceCollection(pilotPlaces),
+      })
+      map.addSource(VISITOR_LOCATION_SOURCE_ID, {
+        type: 'geojson',
+        data: buildVisitorLocationCollection(null),
+      })
 
       addBasemapVeil(map)
 
       addHistoricalLayers(map)
+      addPilotLayers(map)
       const current = renderedStateRef.current
       applyMapState(
         map,
@@ -287,11 +324,18 @@ export function MapView({
     map.on('mouseenter', [...INTERACTIVE_LAYER_IDS], showPointer)
     map.on('mouseleave', [...INTERACTIVE_LAYER_IDS], hidePointer)
 
+    map.on('click', 'pilot-place-points', (event) => {
+      const placeId = event.features?.[0]?.properties?.id
+      if (typeof placeId === 'string') onSelectPlace(placeId)
+    })
+    map.on('mouseenter', 'pilot-place-points', showPointer)
+    map.on('mouseleave', 'pilot-place-points', hidePointer)
+
     return () => {
       mapRef.current = null
       map.remove()
     }
-  }, [featureCollection, onSelectFeature])
+  }, [featureCollection, onSelectFeature, onSelectPlace, pilotPlaces, text.locale])
 
   useEffect(() => {
     const map = mapRef.current
@@ -314,6 +358,31 @@ export function MapView({
     focusFeature(map, featureCollection, selectedFeatureId)
   }, [featureCollection, selectedFeatureId])
 
+  useEffect(() => {
+    const map = mapRef.current
+    const source = map?.getSource(PILOT_PLACES_SOURCE_ID) as GeoJSONSource | undefined
+    if (!map || !source) return
+    source.setData(buildPilotPlaceCollection(pilotPlaces, activePlaceId))
+    if (!activePlaceId) return
+    const place = pilotPlaces.find((candidate) => candidate.id === activePlaceId)
+    if (place) map.easeTo({ center: place.focus, zoom: Math.max(map.getZoom(), 16), duration: 650 })
+  }, [activePlaceId, pilotPlaces, status])
+
+  useEffect(() => {
+    const map = mapRef.current
+    const source = map?.getSource(VISITOR_LOCATION_SOURCE_ID) as GeoJSONSource | undefined
+    if (!map || !source) return
+    source.setData(buildVisitorLocationCollection(visitorLocation))
+    if (!visitorLocation || !nearestPlaceFocus) return
+    map.fitBounds(
+      [
+        [Math.min(visitorLocation.longitude, nearestPlaceFocus[0]), Math.min(visitorLocation.latitude, nearestPlaceFocus[1])],
+        [Math.max(visitorLocation.longitude, nearestPlaceFocus[0]), Math.max(visitorLocation.latitude, nearestPlaceFocus[1])],
+      ],
+      { padding: 90, maxZoom: 17, duration: 650 },
+    )
+  }, [nearestPlaceFocus, status, visitorLocation])
+
   return (
     <div className="map-frame">
       <div
@@ -321,30 +390,100 @@ export function MapView({
         id="map-canvas"
         className="map-canvas"
         role="region"
-        aria-label="Mapa moderno interactivo del centro de Granada con elementos históricos"
+        aria-label={text.mapLabel}
         aria-describedby="map-keyboard-help"
         tabIndex={0}
       />
       <p id="map-keyboard-help" className="sr-only">
-        Usa las teclas de flecha para desplazarte y las teclas más y menos para cambiar el zoom.
-        Busca un lugar para centrarlo y abrir su ficha histórica.
+        {text.mapHelp}
       </p>
 
       {status === 'loading' && (
         <div className="map-status" role="status">
           <span className="map-status__spinner" aria-hidden="true" />
-          Cargando Granada…
+          {text.loadingMap}
         </div>
       )}
 
       {status === 'error' && (
         <div className="map-status map-status--error" role="alert">
-          <strong>No se ha podido cargar el mapa base.</strong>
-          <span>Comprueba la URL del estilo o la conexión a internet.</span>
+          <strong>{text.mapErrorTitle}</strong>
+          <span>{text.mapErrorBody}</span>
         </div>
       )}
     </div>
   )
+}
+
+function addPilotLayers(map: Map) {
+  map.addLayer({
+    id: 'pilot-place-points',
+    type: 'circle',
+    source: PILOT_PLACES_SOURCE_ID,
+    paint: {
+      'circle-radius': ['case', ['get', 'active'], 12, 10],
+      'circle-color': '#18362d',
+      'circle-stroke-color': ['case', ['get', 'active'], '#d7b96c', '#f7f3ea'],
+      'circle-stroke-width': ['case', ['get', 'active'], 4, 2],
+    },
+  })
+  map.addLayer({
+    id: 'pilot-place-labels',
+    type: 'symbol',
+    source: PILOT_PLACES_SOURCE_ID,
+    layout: {
+      'text-field': ['to-string', ['get', 'order']],
+      'text-size': 12,
+      'text-font': ['Noto Sans Bold'],
+      'text-allow-overlap': true,
+    },
+    paint: { 'text-color': '#f7f3ea' },
+  })
+  map.addLayer({
+    id: 'visitor-location-halo',
+    type: 'circle',
+    source: VISITOR_LOCATION_SOURCE_ID,
+    paint: {
+      'circle-radius': 14,
+      'circle-color': 'rgba(36, 125, 145, 0.2)',
+      'circle-stroke-color': '#247d91',
+      'circle-stroke-width': 2,
+    },
+  })
+  map.addLayer({
+    id: 'visitor-location-point',
+    type: 'circle',
+    source: VISITOR_LOCATION_SOURCE_ID,
+    paint: {
+      'circle-radius': 5,
+      'circle-color': '#247d91',
+      'circle-stroke-color': '#ffffff',
+      'circle-stroke-width': 2,
+    },
+  })
+}
+
+function buildPilotPlaceCollection(places: readonly PlaceStop[], activePlaceId: string | null = null): FeatureCollection<Point> {
+  return {
+    type: 'FeatureCollection',
+    features: places.map((place) => ({
+      type: 'Feature',
+      id: place.id,
+      properties: { id: place.id, order: place.order, active: place.id === activePlaceId },
+      geometry: { type: 'Point', coordinates: place.focus },
+    })),
+  }
+}
+
+function buildVisitorLocationCollection(location: LocationFix | null): FeatureCollection<Point> {
+  return {
+    type: 'FeatureCollection',
+    features: location ? [{
+      type: 'Feature',
+      properties: { accuracy: location.accuracy },
+      geometry: { type: 'Point', coordinates: [location.longitude, location.latitude] },
+    }] : [],
+  }
 }
 
 function styleBasemap(map: Map) {
