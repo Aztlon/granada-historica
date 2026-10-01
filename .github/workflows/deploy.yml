@@ -66,6 +66,14 @@ jobs:
             "place/alcaiceria/" \
             "place/madraza/" \
             "place/mezquita-mayor/" \
+            "pilot/review/" \
+            "pilot/test-sheet.html" \
+            "pilot/field-checklist.html" \
+            "pilot/cards/bib-rambla.html" \
+            "pilot/cards/zacatin.html" \
+            "pilot/cards/alcaiceria.html" \
+            "pilot/cards/madraza.html" \
+            "pilot/cards/mezquita-mayor.html" \
             "pilot/qr/bib-rambla.svg" \
             "pilot/qr/zacatin.svg" \
             "pilot/qr/alcaiceria.svg" \

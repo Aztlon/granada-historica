@@ -50,8 +50,16 @@ street before any permanent sign is proposed.
 - If a stop becomes unsafe or inaccessible, retain the stable URL, explain the
   suspension there and remove or cover the physical marker until replacement.
 
-The printable temporary sheet is served at `/pilot/test-sheet.html`; individual
-SVG assets are under `/pilot/qr/`.
+The generated review materials are all bilingual and marked `noindex`:
+
+- `/pilot/review/`: partner-facing review hub with scope, limitations and links.
+- `/pilot/test-sheet.html`: printable sheet containing all five QR codes.
+- `/pilot/cards/<slug>.html`: an A6 printable card for each individual stop.
+- `/pilot/field-checklist.html`: printable per-stop field and accessibility log.
+- `/pilot/qr/<slug>.svg`: the high-error-correction QR source assets.
+
+These files are generated from `data/pilot-route.json`, so a slug or title change
+updates the QR, fallback URL, card, checklist and review hub together.
 
 ## Privacy and measurement
 

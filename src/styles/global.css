@@ -8,6 +8,7 @@
   --green: #18362d;
   --green-soft: #315348;
   --terracotta: #b94f35;
+  --terracotta-dark: #8f3f2b;
   --terracotta-bright: #d76847;
   --gold: #d7b96c;
   --paper: #f7f3ea;
@@ -451,8 +452,9 @@ a:focus-visible,
 }
 
 .layer-panel .panel-kicker,
-.feature-drawer .panel-kicker {
-  color: var(--terracotta);
+.feature-drawer .panel-kicker,
+.place-panel .panel-kicker {
+  color: var(--terracotta-dark);
 }
 
 .layer-panel h2 {
