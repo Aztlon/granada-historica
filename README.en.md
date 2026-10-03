@@ -25,11 +25,55 @@ survival status, and citations in each feature card.
 
 M7 now has a preview implementation: a bilingual five-stop route from
 Bibarrambla to the former Great Mosque, durable links, QR codes, focused place
-views, and one-shot location processed on the device. It remains hidden from the
+views, and continuously updating in-page location processed on the device. It remains hidden from the
 main navigation and marked `noindex` until historical and native-English review,
 field checks, accessibility testing, and maintenance approval are complete.
 Visual reconstruction and augmented reality remain outside this pilot.
 See the [roadmap](docs/ROADMAP.md) and [specification](docs/SPEC.md).
+
+The second temporal state is now committed: **Granada, c. 1550 — The Morisco
+and Renaissance city**. It will use an approximate 1540–1560 evidence window
+and show Christian and imperial transformation without erasing the continuity
+of the Morisco city before 1568. The decision, scope, and data-model
+consequences are recorded in
+[ADR 0002](docs/decisions/0002-second-period-c1550.md). Research and
+implementation belong to M10 and are not yet part of the public c. 1492
+dataset.
+
+M10 preparation now includes a validated
+[research inventory](docs/C1550-RESEARCH.md): it covers all 58 current features,
+registers 23 new candidates, and keeps every c. 1550 hypothesis outside the
+public application. The [temporal migration design](docs/C1550-ARCHITECTURE.md)
+separates stable entities, period states, and date-specific audited geometry.
+M10.1 now reproduces c. 1492 in parallel as 70 stable entities, 58 geographic
+states, and 58 period-keyed audits, with exact parity tests and no change to the
+public application.
+M10.2 adds a [private c. 1550 GIS package](docs/C1550-GIS.md), expanded by M10.3
+to 17 geometries. The
+[eight-entity vertical slice](docs/M10-3-REVIEW.md) now has bilingual content,
+cited claims, explicit relationships, and an accountable approval gate; none
+is imported by the public application or marked verified.
+M10.5 now combines 39 geometries into a
+[coherent internal candidate](docs/M10-5-CANDIDATE.md), classifies all 78
+priority inventory records, and keeps unsupported urban and demographic
+polygons deferred. Its six specialist reviews remain pending.
+These are review functions that may be fulfilled within the project, not a
+dependency on institutional partners; historical review is owner-led by the
+project historian.
+The first [additional source tranche](docs/M10-5-SOURCE-TRANCHE-1.md)
+develops ten more entities with bilingual cited content while adding no
+speculative geometry. The
+[second tranche](docs/M10-5-SOURCE-TRANCHE-2.md) does the same for ten inherited
+gates, walls, water systems, and routes. The
+[third tranche](docs/M10-5-SOURCE-TRANCHE-3.md) adds ten connected Generalife,
+Alhambra-access, bridge, bath, river, and canal records; 30 records now have
+review-ready content. The
+[first low-risk geometry wave](docs/M10-5-GEOMETRY-WAVE-1.md) promotes 16 of
+them to private `in_review` geometry: six site points, four gates, two monument
+envelopes, and four inherited axes. A
+[second controlled wave](docs/M10-5-GEOMETRY-WAVE-2.md) adds Fajalauza and five
+principal canal axes with explicit controls and exclusions; eight of the
+original 14 deferrals remain geometry-free.
 
 The working dataset contains 58 cited and publishable features and a 70-entry
 historical gazetteer. None is assumed spatially correct:
@@ -82,6 +126,16 @@ See:
 - [Product specification](docs/SPEC.md)
 - [Implementation roadmap](docs/ROADMAP.md)
 - [Licensing decision](docs/decisions/0001-project-licensing.md)
+- [Granada c. 1550 decision](docs/decisions/0002-second-period-c1550.md)
+- [c. 1550 research inventory](docs/C1550-RESEARCH.md)
+- [Multi-period architecture](docs/C1550-ARCHITECTURE.md)
+- [c. 1550 review governance](docs/C1550-REVIEW-GOVERNANCE.md)
+- [Private c. 1550 GIS package](docs/C1550-GIS.md)
+- [M10.5 internal candidate](docs/M10-5-CANDIDATE.md)
+- [M10.5 source-review tranche 1](docs/M10-5-SOURCE-TRANCHE-1.md)
+- [M10.5 source-review tranche 2](docs/M10-5-SOURCE-TRANCHE-2.md)
+- [M10.5 source-review tranche 3](docs/M10-5-SOURCE-TRANCHE-3.md)
+- [M10.5 source-review tranche 4](docs/M10-5-SOURCE-TRANCHE-4.md)
 - [Data workspace](data/README.md)
 - [GIS workflow](gis/README.md)
 
@@ -118,6 +172,20 @@ npm run dev
 
 Vite serves the project at
 `http://localhost:5173/granada-historica/` by default.
+
+The internal comparison between 1492 and the c. 1550 M10.5 candidate is disabled in
+public mode, and its private data is excluded from the public build. To open or
+verify that internal surface only:
+
+```sh
+npm run dev:internal
+npm run build:internal
+npm run test:e2e:internal
+```
+
+The internal output is written to `dist-internal/`, applies `noindex,nofollow`
+at runtime, and must not be deployed. See
+[docs/M10-4-INTERNAL-COMPARISON.md](docs/M10-4-INTERNAL-COMPARISON.md).
 
 Before submitting changes, run the same checks used by CI:
 

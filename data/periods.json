@@ -1,0 +1,46 @@
+{
+  "periods": [
+    {
+      "id": "c1492",
+      "representative_year": 1492,
+      "evidence_window": {
+        "from_year": 1482,
+        "to_year": 1492
+      },
+      "status": "published",
+      "label": {
+        "es": "Granada, c. 1492",
+        "en": "Granada, c. 1492"
+      },
+      "short_label": {
+        "es": "c. 1492",
+        "en": "c. 1492"
+      },
+      "interpretation": {
+        "es": "La ciudad nazarí tardía durante la última década del reino de Granada.",
+        "en": "The late Nasrid city during the final decade of the kingdom of Granada."
+      }
+    },
+    {
+      "id": "c1550",
+      "representative_year": 1550,
+      "evidence_window": {
+        "from_year": 1540,
+        "to_year": 1560
+      },
+      "status": "research",
+      "label": {
+        "es": "Granada, c. 1550 — La ciudad morisca y renacentista",
+        "en": "Granada, c. 1550 — The Morisco and Renaissance city"
+      },
+      "short_label": {
+        "es": "c. 1550",
+        "en": "c. 1550"
+      },
+      "interpretation": {
+        "es": "La transformación cristiana e imperial de la ciudad heredada mientras la Granada morisca seguía siendo una realidad urbana esencial.",
+        "en": "The Christian and imperial transformation of the inherited city while Morisco Granada remained an essential urban reality."
+      }
+    }
+  ]
+}

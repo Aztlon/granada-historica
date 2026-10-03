@@ -1,0 +1,939 @@
+{
+  "schema_version": 1,
+  "milestone": "M10.5",
+  "tranche": "source-review-3",
+  "period_id": "c1550",
+  "status": "ready_for_content_review",
+  "public_application_import": false,
+  "updated_on": "2026-10-02",
+  "scope_note": "Tercer tramo de diez entidades del Generalife, la Alhambra y los sistemas hidráulicos urbanos preparado para revisión histórica sin crear geometría c. 1550.",
+  "feature_ids": [
+    "royal.generalife",
+    "water.banuelo",
+    "gate.alhambra-arms",
+    "gate.alhambra-arrabal",
+    "gate.alhambra-seven-floors",
+    "bridge.cadi",
+    "bridge.carbon",
+    "water.genil",
+    "water.acequia-cadi",
+    "water.acequia-romayla"
+  ],
+  "items": [
+    {
+      "feature_id": "royal.generalife",
+      "cluster": "imperial_alhambra",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "altered",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Generalife",
+          "function": "Almunia real, palacio, huertas y sistema productivo bajo alcaidía cristiana",
+          "summary": "Hacia 1550 el Generalife continuaba como conjunto palatino y agrícola, administrado por sus alcaides tras la apropiación cristiana y sostenido mediante reparaciones y trabajo especializado.",
+          "evidence_note": "La continuidad institucional y material está documentada, pero los jardines y límites actuales reúnen fases medievales, modernas y contemporáneas que no equivalen a una planta de 1550.",
+          "change_note": "La almunia nazarí fue retenida y transformada dentro de un nuevo régimen de propiedad y administración, sin perder su dependencia hidráulica ni su carácter productivo."
+        },
+        "en": {
+          "name": "Generalife",
+          "function": "Royal estate, palace, orchards and productive system under Christian wardenship",
+          "summary": "Around 1550 the Generalife continued as a palatial and agricultural complex, administered by its wardens after Christian appropriation and sustained through repairs and specialised labour.",
+          "evidence_note": "Institutional and material continuity is documented, but today’s gardens and boundaries combine medieval, early modern and contemporary phases and do not equal a 1550 plan.",
+          "change_note": "The Nasrid estate was retained and transformed under a new property and administrative regime without losing its hydraulic dependence or productive character."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.generalife-christian-wardenship",
+          "topic": "transformation",
+          "text": {
+            "es": "Tras 1492 el Generalife fue administrado por alcaides cristianos y los Granada Venegas obtuvieron la alcaidía perpetua con obligación anual de reparar el palacio.",
+            "en": "After 1492 the Generalife was administered by Christian wardens, and the Granada Venegas obtained perpetual wardenship with an annual obligation to repair the palace."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-generalife-christian-2017",
+              "locator": "pp. 44-47, primeros años del Generalife cristiano",
+              "supports": "Documenta administración, obras y obligación de reparación hasta 1537."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.generalife-medieval-landscape-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "La identificación de ámbitos medievales no autoriza a copiar como estado de 1550 la totalidad de jardines, huertas y límites visibles hoy.",
+            "en": "Identifying medieval areas does not authorise copying all gardens, orchards and boundaries visible today as the 1550 state."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-plan-director-landscape",
+              "locator": "Tomo 2, plano de fases históricas, p. 357",
+              "supports": "Distingue ámbitos y fases del paisaje cultural del Generalife."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "near",
+          "target_id": "royal.alhambra",
+          "note": {
+            "es": "La almunia se situaba fuera del recinto de la Alhambra, vinculada a él política, funcional e hidráulicamente.",
+            "en": "The estate stood outside the Alhambra enclosure while remaining politically, functionally and hydraulically linked to it."
+          }
+        },
+        {
+          "relation": "retains",
+          "target_id": "water.acequia-real-alhambra",
+          "note": {
+            "es": "El funcionamiento del conjunto dependía de la Acequia Real, cuya continuidad y alteraciones deben auditarse aparte.",
+            "en": "The complex depended on the Royal Canal, whose continuity and alterations require a separate audit."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "El área c. 1492 es una envolvente del conjunto heredado, no una delimitación de las fases, huertas y jardines activos en 1550.",
+          "en": "The c. 1492 area is an envelope of the inherited complex, not a boundary of the phases, orchards and gardens active in 1550."
+        },
+        "release_condition": {
+          "es": "Separar palacio, patios, huertas, acequia y obras cristianas mediante planimetría de fases antes de crear la variante temporal.",
+          "en": "Separate palace, courts, orchards, canal and Christian works through phase plans before creating the temporal variant."
+        },
+        "source_refs": [
+          "source.ugr-generalife-christian-2017",
+          "source.alhambra-generalife",
+          "source.alhambra-plan-director-landscape"
+        ]
+      }
+    },
+    {
+      "feature_id": "water.banuelo",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "probable",
+        "change_from_1492": "retained",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Baño del Nogal (Bañuelo)",
+          "function": "Baño público heredado en el corredor del Darro",
+          "summary": "El Baño del Nogal estaba documentado y fue reparado después de la conquista; la investigación considera probable que siguiera funcionando como baño en época morisca y, por tanto, hacia 1550.",
+          "evidence_note": "La reparación de 1509 y la continuidad probable hasta 1567 sostienen la presencia, pero no permiten afirmar con certeza su régimen diario, usuarios o propiedad exacta en el año representativo.",
+          "change_note": "El hammam mantuvo probablemente su función bajo condiciones sociales y administrativas cristianas antes de la prohibición de costumbres moriscas de 1567."
+        },
+        "en": {
+          "name": "Bath of the Walnut (Bañuelo)",
+          "function": "Inherited public bath in the Darro corridor",
+          "summary": "The Bath of the Walnut was documented and repaired after the conquest; research considers it likely to have continued operating as a bath in the Morisco period and therefore around 1550.",
+          "evidence_note": "The 1509 repair and probable continuity until 1567 support its presence but do not securely establish its daily regime, users or exact ownership in the representative year.",
+          "change_note": "The hammam probably retained its function under Christian social and administrative conditions before the 1567 prohibition of Morisco customs."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.banuelo-repair-1509",
+          "topic": "chronology",
+          "text": {
+            "es": "El Baño del Nogal aparece con ese nombre en 1494 y fue objeto de una reparación documentada en 1509 cuando lo regentaba Sebastián de Palacios.",
+            "en": "The Bath of the Walnut is recorded under that name in 1494 and underwent a documented repair in 1509 while managed by Sebastián de Palacios."
+          },
+          "citations": [
+            {
+              "source_id": "source.csic-banuelo-2021",
+              "locator": "Fuentes documentales e investigación histórica",
+              "supports": "Aporta denominación, regencia y reparación posteriores a la conquista."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.banuelo-probable-use-to-1567",
+          "topic": "function",
+          "text": {
+            "es": "La continuidad como baño durante la época morisca hasta 1567 es probable, no una certeza documental específica para 1550.",
+            "en": "Continued use as a bath during the Morisco period until 1567 is probable rather than a documentary certainty specific to 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.csic-banuelo-2021",
+              "locator": "Fuentes documentales; continuidad funcional probable",
+              "supports": "Formula explícitamente la continuidad como posibilidad y fija el límite de confianza."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "adjacent_to",
+          "target_id": "water.darro",
+          "note": {
+            "es": "El baño se emplazaba junto al Darro y dependía de la infraestructura hidráulica del corredor.",
+            "en": "The bath stood beside the Darro and depended on the corridor’s hydraulic infrastructure."
+          }
+        },
+        {
+          "relation": "near",
+          "target_id": "bridge.cadi",
+          "note": {
+            "es": "El edificio se situaba frente a Bab al-Difaf/Puerta de los Tableros, tradicionalmente llamada Puente del Cadí.",
+            "en": "The building stood opposite Bab al-Difaf/Gate of the Boards, traditionally called the Qadi Bridge."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La huella pública representa el monumento conservado, cuya lectura incorpora pérdidas, añadidos y restauraciones posteriores.",
+          "en": "The public footprint represents the surviving monument, whose reading includes later losses, additions and restorations."
+        },
+        "release_condition": {
+          "es": "Completar una lectura de fases que separe fábrica andalusí, reparación moderna temprana y restauraciones de los siglos XX y XXI.",
+          "en": "Complete a phase reading separating Andalusi fabric, early-modern repair and twentieth- and twenty-first-century restoration."
+        },
+        "source_refs": [
+          "source.csic-banuelo-2021",
+          "source.alhambra-banuelo"
+        ]
+      }
+    },
+    {
+      "feature_id": "gate.alhambra-arms",
+      "cluster": "imperial_alhambra",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "altered",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Puerta de las Armas",
+          "function": "Acceso septentrional heredado entre la ciudad y la Alcazaba de la Alhambra",
+          "summary": "La Puerta de las Armas seguía formando parte del recinto hacia 1550, aunque ya no conservaba la primacía que había tenido como acceso habitual desde Granada a la corte nazarí.",
+          "evidence_note": "La fábrica y el itinerario histórico son seguros; la pérdida de jerarquía se infiere del nuevo sistema cristiano de accesos y no debe representarse como cierre físico.",
+          "change_note": "El acceso fue retenido pero su papel urbano y ceremonial cambió al consolidarse recorridos occidentales asociados a la Puerta de las Granadas."
+        },
+        "en": {
+          "name": "Gate of Arms",
+          "function": "Inherited northern entrance between the city and the Alhambra citadel",
+          "summary": "The Gate of Arms remained part of the enclosure around 1550, although it no longer held the primacy it had enjoyed as the customary route from Granada to the Nasrid court.",
+          "evidence_note": "Its fabric and historical route are secure; reduced hierarchy is inferred from the new Christian access system and must not be represented as physical closure.",
+          "change_note": "The entrance was retained, but its urban and ceremonial role changed as western routes associated with the Gate of the Pomegranates became established."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.arms-gate-nasrid-primary-route",
+          "topic": "function",
+          "text": {
+            "es": "Hasta el siglo XV la Puerta de las Armas fue el acceso habitual desde Granada a la sede administrativa de la corte nazarí.",
+            "en": "Until the fifteenth century the Gate of Arms was the customary entrance from Granada to the administrative seat of the Nasrid court."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-arms-gate",
+              "locator": "Función y camino histórico entre Alhambra y Granada",
+              "supports": "Establece la jerarquía anterior que cambió tras la conquista."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.arms-gate-four-outer-gates",
+          "topic": "geometry",
+          "text": {
+            "es": "La puerta era una de las cuatro grandes entradas exteriores insertas en la muralla de la Alhambra.",
+            "en": "The gate was one of four major external entrances set into the Alhambra wall."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-gates",
+              "locator": "Síntesis de las cuatro puertas exteriores",
+              "supports": "Confirma su pertenencia material al sistema amurallado."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "contained_by",
+          "target_id": "royal.alhambra",
+          "note": {
+            "es": "La puerta formaba parte del perímetro fortificado de la Alhambra.",
+            "en": "The gate formed part of the fortified perimeter of the Alhambra."
+          }
+        },
+        {
+          "relation": "part_of_program_with",
+          "target_id": "gate.puerta-granadas",
+          "note": {
+            "es": "La jerarquía de las Armas debe leerse frente al nuevo acceso imperial occidental, sin afirmar que quedó clausurada.",
+            "en": "The hierarchy of the Gate of Arms must be read against the new western imperial approach without claiming it was closed."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "El punto heredado localiza la puerta conservada pero no expresa su fábrica, el camino de subida ni cambios de uso.",
+          "en": "The inherited point locates the surviving gate but does not express its fabric, approach route or changes in use."
+        },
+        "release_condition": {
+          "es": "Auditar el punto contra la puerta conservada y documentar por separado recorrido, estado material y jerarquía funcional en 1550.",
+          "en": "Audit the point against the surviving gate and document route, material state and functional hierarchy separately for 1550."
+        },
+        "source_refs": [
+          "source.alhambra-arms-gate",
+          "source.alhambra-gates"
+        ]
+      }
+    },
+    {
+      "feature_id": "gate.alhambra-arrabal",
+      "cluster": "imperial_alhambra",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "altered",
+        "physical_state": "partially_in_use"
+      },
+      "content": {
+        "es": {
+          "name": "Puerta del Arrabal / Bāb al-Faraŷ",
+          "function": "Acceso oriental entre la medina de la Alhambra, el Generalife y los caminos exteriores",
+          "summary": "La puerta nazarí estaba todavía documentada en 1526, pero hacia 1550 su conjunto había sido transformado por un baluarte, caballerizas y la Puerta de Hierro cristiana.",
+          "evidence_note": "Las fuentes permiten asegurar la presencia de la puerta y la reordenación posterior a la conquista; el funcionamiento exacto de cada paso en 1550 requiere una lectura de fases.",
+          "change_note": "El acceso heredado no desapareció sin más: quedó subordinado y parcialmente sustituido por una nueva obra defensiva y de control."
+        },
+        "en": {
+          "name": "Gate of the Arrabal / Bāb al-Faraŷ",
+          "function": "Eastern entrance between the Alhambra medina, Generalife and outer routes",
+          "summary": "The Nasrid gate was still documented in 1526, but by around 1550 its ensemble had been transformed by a bastion, stables and the Christian Iron Gate.",
+          "evidence_note": "Sources securely establish the gate and the post-conquest reorganisation; the precise operation of each passage in 1550 requires a phase reading.",
+          "change_note": "The inherited entrance did not simply disappear: it became subordinate and was partly replaced by a new defensive and access-control work."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.arrabal-gate-1526",
+          "topic": "chronology",
+          "text": {
+            "es": "Andrea Navagero mencionó la Puerta del Arrabal durante su estancia granadina de 1526.",
+            "en": "Andrea Navagero mentioned the Gate of the Arrabal during his stay in Granada in 1526."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-arrabal-study-2022",
+              "locator": "pp. 139-158, documentación moderna temprana",
+              "supports": "Aporta una atestación próxima al periodo representado."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.arrabal-christian-bastion",
+          "topic": "transformation",
+          "text": {
+            "es": "Tras la conquista el Conde de Tendilla añadió un baluarte con caballerizas y la Puerta de Hierro sustituyó a la puerta nazarí como entrada operativa.",
+            "en": "After the conquest the Count of Tendilla added a bastion with stables, and the Iron Gate replaced the Nasrid gate as the operational entrance."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-gates",
+              "locator": "Puerta del Arrabal y obras posteriores a la conquista",
+              "supports": "Distingue el acceso nazarí de la reorganización cristiana."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "routes_toward",
+          "target_id": "royal.generalife",
+          "note": {
+            "es": "El paso oriental comunicaba la medina palatina con el Generalife.",
+            "en": "The eastern passage connected the palatine medina with the Generalife."
+          }
+        },
+        {
+          "relation": "contained_by",
+          "target_id": "royal.alhambra",
+          "note": {
+            "es": "La puerta y sus añadidos pertenecían al sistema oriental del recinto.",
+            "en": "The gate and its additions belonged to the eastern enclosure system."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "Un único punto no distingue Bāb al-Faraŷ, el baluarte, las caballerizas y la Puerta de Hierro.",
+          "en": "A single point does not distinguish Bāb al-Faraŷ, the bastion, stables and Iron Gate."
+        },
+        "release_condition": {
+          "es": "Registrar cada componente y su fase antes de decidir si la variante usa un punto compuesto o elementos separados.",
+          "en": "Register every component and phase before deciding whether the variant uses one compound point or separate elements."
+        },
+        "source_refs": [
+          "source.alhambra-arrabal-study-2022",
+          "source.alhambra-gates"
+        ]
+      }
+    },
+    {
+      "feature_id": "gate.alhambra-seven-floors",
+      "cluster": "imperial_alhambra",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "altered",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Puerta de los Siete Suelos / Bāb al-Gudur",
+          "function": "Acceso meridional monumental de la medina de la Alhambra",
+          "summary": "La puerta nazarí seguía formando parte de la muralla hacia 1550 y había recibido un baluarte artillero cristiano tras la conquista.",
+          "evidence_note": "La puerta y el añadido defensivo son identificables, pero deben separarse cronológica y geométricamente antes de representar su estado moderno temprano.",
+          "change_note": "El acceso medieval fue retenido y adaptado a nuevas necesidades de artillería, no simplemente conservado sin cambios."
+        },
+        "en": {
+          "name": "Gate of the Seven Floors / Bāb al-Gudur",
+          "function": "Monumental southern entrance to the Alhambra medina",
+          "summary": "The Nasrid gate remained part of the wall around 1550 and had received a Christian artillery bastion after the conquest.",
+          "evidence_note": "The gate and defensive addition can be identified, but they must be separated chronologically and geometrically before representing their early-modern state.",
+          "change_note": "The medieval entrance was retained and adapted to new artillery requirements rather than simply preserved unchanged."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.seven-floors-fourteenth-century-gate",
+          "topic": "chronology",
+          "text": {
+            "es": "La configuración monumental conservada de Bāb al-Gudur se atribuye probablemente a mediados del siglo XIV.",
+            "en": "The surviving monumental configuration of Bāb al-Gudur is probably dated to the mid-fourteenth century."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-gates",
+              "locator": "Puerta de los Siete Suelos, cronología y disposición",
+              "supports": "Establece la fábrica heredada anterior al periodo c. 1550."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.seven-floors-artillery-bastion",
+          "topic": "transformation",
+          "text": {
+            "es": "Un baluarte de artillería fue añadido e integrado en el acceso después de la conquista cristiana.",
+            "en": "An artillery bastion was added and integrated into the entrance after the Christian conquest."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-gates",
+              "locator": "Puerta de los Siete Suelos, baluarte posterior a la conquista",
+              "supports": "Documenta la alteración defensiva relevante para 1550."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "contained_by",
+          "target_id": "royal.alhambra",
+          "note": {
+            "es": "La puerta formaba parte del flanco sur del recinto de la Alhambra.",
+            "en": "The gate formed part of the southern side of the Alhambra enclosure."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "El punto heredado no distingue la puerta nazarí del baluarte cristiano ni documenta su estado exacto en 1550.",
+          "en": "The inherited point does not distinguish the Nasrid gate from the Christian bastion or document its exact state in 1550."
+        },
+        "release_condition": {
+          "es": "Auditar por componentes y vincular cada fábrica a su fase antes de crear la variante.",
+          "en": "Audit by component and link every fabric to its phase before creating the variant."
+        },
+        "source_refs": [
+          "source.alhambra-gates",
+          "source.alhambra-fortified-city-guide"
+        ]
+      }
+    },
+    {
+      "feature_id": "bridge.cadi",
+      "cluster": "civic_centre",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "unknown",
+        "temporal_confidence": "probable",
+        "change_from_1492": "unknown",
+        "physical_state": "unknown"
+      },
+      "content": {
+        "es": {
+          "name": "Puerta de los Tableros / tradicionalmente «Puente del Cadí»",
+          "function": "Puerta-coracha sobre el Darro y problema de identificación histórica",
+          "summary": "Los restos conservados pertenecen a Bab al-Difaf o Puerta de los Tableros, una estructura militar e hidráulica distinta del puente del Cadí propiamente dicho, situado aguas abajo.",
+          "evidence_note": "La estructura heredada y su emplazamiento son seguros, pero la supervivencia del paso completo y su función hacia 1550 no están demostradas con precisión suficiente.",
+          "change_note": "La ficha corrige una identificación historiográfica: no debe transformar automáticamente los restos de la puerta-coracha en un puente completo de 1550."
+        },
+        "en": {
+          "name": "Gate of the Boards / traditionally “Qadi Bridge”",
+          "function": "Gate-coracha across the Darro and a historical identification problem",
+          "summary": "The surviving remains belong to Bab al-Difaf or the Gate of the Boards, a military and hydraulic structure distinct from the Qadi Bridge proper, which stood downstream.",
+          "evidence_note": "The inherited structure and location are secure, but survival of the complete passage and its function around 1550 are not demonstrated with sufficient precision.",
+          "change_note": "The record corrects a historiographic identification: it must not automatically turn the remains of the gate-coracha into a complete 1550 bridge."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.cadi-tableros-identification",
+          "topic": "interpretation",
+          "text": {
+            "es": "Los restos conocidos tradicionalmente como Puente del Cadí corresponden a Bab al-Difaf o Puerta de los Tableros, no al puente del Cadí propiamente dicho.",
+            "en": "The remains traditionally known as the Qadi Bridge belong to Bab al-Difaf or the Gate of the Boards, not to the Qadi Bridge proper."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-tableros-cadi",
+              "locator": "Descripción e identificación del monumento",
+              "supports": "Distingue la estructura conservada de la denominación tradicional."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.cadi-water-defence-function",
+          "topic": "function",
+          "text": {
+            "es": "Bab al-Difaf enlazaba dispositivos de coracha y combinaba paso militar con control del agua del Darro.",
+            "en": "Bab al-Difaf linked coracha structures and combined military passage with control of the Darro’s water."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-tableros-cadi",
+              "locator": "Función militar e hidráulica",
+              "supports": "Documenta el sistema medieval sin probar su integridad en 1550."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "adjacent_to",
+          "target_id": "water.darro",
+          "note": {
+            "es": "La estructura cruzaba y controlaba el cauce del Darro.",
+            "en": "The structure crossed and controlled the Darro channel."
+          }
+        },
+        {
+          "relation": "near",
+          "target_id": "water.banuelo",
+          "note": {
+            "es": "Los restos se conservan frente al Baño del Nogal.",
+            "en": "The remains survive opposite the Bath of the Walnut."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "no_geometry_until_chronology_resolved",
+        "rationale": {
+          "es": "La línea pública perpetúa una denominación compuesta y puede implicar un puente completo cuya forma y supervivencia hacia 1550 no están resueltas.",
+          "en": "The public line perpetuates a compound name and may imply a complete bridge whose form and survival around 1550 remain unresolved."
+        },
+        "release_condition": {
+          "es": "Resolver identidad, cronología de pérdida del arco y alcance material mediante documentación y arqueología antes de crear geometría.",
+          "en": "Resolve identity, chronology of arch loss and material extent through documents and archaeology before creating geometry."
+        },
+        "source_refs": [
+          "source.granada-tableros-cadi",
+          "source.alhambra-banuelo"
+        ]
+      }
+    },
+    {
+      "feature_id": "bridge.carbon",
+      "cluster": "civic_centre",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "retained",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Puente del Carbón",
+          "function": "Paso sobre el Darro entre la alhóndiga y el centro comercial",
+          "summary": "El Puente del Carbón continuaba como referencia urbana en el siglo XVI y articulaba un entorno de tenerías activo junto al Corral del Carbón.",
+          "evidence_note": "La documentación nombra propiedades debajo del puente y la arqueología registra un estribo y ocupación cristiana temprana; la luz exacta y el tablero de 1550 no están restituidos.",
+          "change_note": "El puente medieval fue retenido dentro de un corredor artesanal y mercantil que continuó después de la conquista."
+        },
+        "en": {
+          "name": "Coal Bridge",
+          "function": "Crossing over the Darro between the funduq and commercial centre",
+          "summary": "The Coal Bridge continued as an urban reference in the sixteenth century and structured an active tannery district beside the Corral del Carbón.",
+          "evidence_note": "Documents name properties beneath the bridge, and archaeology records an abutment and early Christian occupation; the precise span and deck of 1550 have not been reconstructed.",
+          "change_note": "The medieval bridge was retained within an artisanal and mercantile corridor that continued after the conquest."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.carbon-bridge-sixteenth-century-name",
+          "topic": "chronology",
+          "text": {
+            "es": "Un inventario de bienes habices del siglo XVI menciona una curtiduría situada debajo del Puente del Carbón.",
+            "en": "A sixteenth-century habices inventory mentions a tannery located beneath the Coal Bridge."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-puente-carbon",
+              "locator": "Contexto histórico; inventario de bienes habices",
+              "supports": "Atestigua directamente el puente y su topónimo en el siglo XVI."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.carbon-bridge-archaeology",
+          "topic": "geometry",
+          "text": {
+            "es": "La excavación junto al Corral del Carbón documentó un estribo del puente y materiales de fases nazarí y cristiana temprana.",
+            "en": "Excavation beside the Corral del Carbón documented a bridge abutment and material from Nasrid and early Christian phases."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-puente-carbon",
+              "locator": "Excavación de 1992 y estudio cerámico",
+              "supports": "Aporta continuidad material sin restituir la totalidad del puente."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "near",
+          "target_id": "commerce.corral-carbon",
+          "note": {
+            "es": "El puente comunicaba el entorno de la alhóndiga con la orilla central de la medina.",
+            "en": "The bridge connected the funduq area with the central bank of the medina."
+          }
+        },
+        {
+          "relation": "adjacent_to",
+          "target_id": "water.darro",
+          "note": {
+            "es": "El paso y las tenerías dependían físicamente del corredor del Darro.",
+            "en": "The crossing and tanneries physically depended on the Darro corridor."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La línea heredada es una reconstrucción breve entre orillas modernas y no una planta arqueológica completa.",
+          "en": "The inherited line is a short reconstruction between modern banks, not a complete archaeological plan."
+        },
+        "release_condition": {
+          "es": "Vincular los extremos al estribo excavado y a evidencias de la margen opuesta, declarando anchura y tolerancia, antes de reutilizarla.",
+          "en": "Tie the ends to the excavated abutment and evidence on the opposite bank, declaring width and tolerance, before reuse."
+        },
+        "source_refs": [
+          "source.ugr-puente-carbon",
+          "source.alhambra-corral-carbon"
+        ]
+      }
+    },
+    {
+      "feature_id": "water.genil",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "retained",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Río Genil",
+          "function": "Cauce meridional y origen de sistemas de riego urbanos y periurbanos",
+          "summary": "El Genil constituía hacia 1550 el gran control natural meridional y alimentaba redes como la Acequia Gorda y sus derivaciones hacia la ciudad, el Realejo y la Vega.",
+          "evidence_note": "Su presencia y función hidráulica son seguras; la línea moderna requiere auditoría de meandros, riberas, cruces y rectificaciones por segmentos.",
+          "change_note": "El cauce fue retenido como infraestructura natural, pero sus usos, puentes y relación con la expansión urbana evolucionaron."
+        },
+        "en": {
+          "name": "River Genil",
+          "function": "Southern channel and source of urban and peri-urban irrigation systems",
+          "summary": "Around 1550 the Genil was the major southern natural control and fed networks such as the Acequia Gorda and its branches toward the city, Realejo and Vega.",
+          "evidence_note": "Its presence and hydraulic role are secure; the modern line requires a segment-level audit of meanders, banks, crossings and realignments.",
+          "change_note": "The channel was retained as natural infrastructure while its uses, bridges and relationship with urban expansion evolved."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.genil-sixteenth-century-system",
+          "topic": "function",
+          "text": {
+            "es": "Las ordenanzas de aguas de la primera mitad del siglo XVI regulan el sistema del Genil y las acequias que de él derivaban.",
+            "en": "Water ordinances from the first half of the sixteenth century regulate the Genil system and the canals derived from it."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Sistema del Genil y Acequia Gorda",
+              "supports": "Documenta captación, distribución, mantenimiento y administración."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.genil-cadi-source",
+          "topic": "function",
+          "text": {
+            "es": "La Acequia del Cadí formaba parte de la explotación agrícola alimentada desde el sistema del Genil en 1531–1533.",
+            "en": "The Cadí Canal formed part of agricultural exploitation supplied from the Genil system in 1531–1533."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-cadi-ordinances-2025",
+              "locator": "Ordenanzas de 1531 y arrendamiento de 1533",
+              "supports": "Vincula el cauce natural con una derivación documentada próxima a 1550."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "retains",
+          "target_id": "water.acequia-gorda",
+          "note": {
+            "es": "El Genil alimentaba el sistema de la Acequia Gorda y sus derivaciones.",
+            "en": "The Genil supplied the Acequia Gorda system and its branches."
+          }
+        },
+        {
+          "relation": "retains",
+          "target_id": "water.acequia-cadi",
+          "note": {
+            "es": "El cauce abastecía la Acequia del Cadí y sus pagos agrícolas.",
+            "en": "The river supplied the Cadí Canal and its agricultural districts."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "El eje c. 1492 sigue el cauce actual y no distingue meandros o rectificaciones posteriores.",
+          "en": "The c. 1492 axis follows the present channel and does not distinguish later meanders or realignments."
+        },
+        "release_condition": {
+          "es": "Comparar cartografía histórica, parcelario y cruces documentados por tramos antes de crear la línea c. 1550.",
+          "en": "Compare historical maps, parcels and documented crossings by segment before creating the c. 1550 line."
+        },
+        "source_refs": [
+          "source.ugr-water-ordinances-2022",
+          "source.ujaen-water-route-2025"
+        ]
+      }
+    },
+    {
+      "feature_id": "water.acequia-cadi",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "retained",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Acequia del Cadí",
+          "function": "Canal de riego del sistema del Genil y los pagos meridionales",
+          "summary": "La Acequia del Cadí estaba activa y regulada en 1531–1533, con usos agrícolas y arrendamientos documentados que la sitúan firmemente dentro del sistema hidráulico de c. 1550.",
+          "evidence_note": "La presencia y administración son seguras; las ordenanzas no proporcionan por sí solas un eje cartográfico continuo para todos los tramos urbanos y rurales.",
+          "change_note": "La infraestructura andalusí continuó bajo una regulación municipal cristiana formalizada, con continuidad material y cambio administrativo."
+        },
+        "en": {
+          "name": "Cadí Canal",
+          "function": "Irrigation canal of the Genil system and southern agricultural districts",
+          "summary": "The Cadí Canal was active and regulated in 1531–1533, with documented agricultural uses and leases that place it firmly within the hydraulic system around 1550.",
+          "evidence_note": "Its presence and administration are secure; the ordinances alone do not provide a continuous mapped axis for every urban and rural section.",
+          "change_note": "The Andalusi infrastructure continued under formalised Christian municipal regulation, combining material continuity with administrative change."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.cadi-canal-ordinances-1531",
+          "topic": "chronology",
+          "text": {
+            "es": "Unas ordenanzas específicas regularon la Acequia del Cadí en 1531.",
+            "en": "Specific ordinances regulated the Cadí Canal in 1531."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-cadi-ordinances-2025",
+              "locator": "Ordenanzas de la acequia del Cadí de 1531",
+              "supports": "Atestigua directamente su funcionamiento próximo al año representativo."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.cadi-canal-lease-1533",
+          "topic": "function",
+          "text": {
+            "es": "Un arrendamiento de 1533 documenta el uso agrícola de su agua en el pago de Daralgazi o Casa de las Gallinas.",
+            "en": "A 1533 lease documents agricultural use of its water in the district of Daralgazi or Casa de las Gallinas."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-cadi-ordinances-2025",
+              "locator": "Arrendamiento de agua de 1533",
+              "supports": "Aporta usuario, territorio y administración sin definir todo el trazado."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "retains",
+          "target_id": "water.genil",
+          "note": {
+            "es": "La acequia derivaba del sistema del Genil y distribuía sus aguas hacia pagos agrícolas.",
+            "en": "The canal derived from the Genil system and distributed its water toward agricultural districts."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La línea c. 1492 generaliza un corredor histórico y no demuestra todas las tomas, bifurcaciones y pérdidas de 1550.",
+          "en": "The c. 1492 line generalises a historical corridor and does not demonstrate every intake, bifurcation and loss in 1550."
+        },
+        "release_condition": {
+          "es": "Georreferenciar los pagos y referencias de 1531–1533 y auditar cada segmento antes de reutilizar la línea.",
+          "en": "Georeference the districts and references of 1531–1533 and audit every segment before reusing the line."
+        },
+        "source_refs": [
+          "source.ugr-cadi-ordinances-2025",
+          "source.ujaen-water-route-2025"
+        ]
+      }
+    },
+    {
+      "feature_id": "water.acequia-romayla",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "retained",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Acequia de Romayla",
+          "function": "Canal derivado del Darro para riego, abastecimiento y usos urbanos",
+          "summary": "La Acequia de Romayla estaba activa en la primera mitad del siglo XVI y distribuía agua por ramales que alcanzaban Bibalmazda, Zacatín, Bib-Rambla, San Francisco y la Alhóndiga del Carbón.",
+          "evidence_note": "Las ordenanzas documentan funcionamiento, limpieza y destinos, pero no convierten automáticamente cada descripción itineraria en una polilínea métrica.",
+          "change_note": "La acequia heredada continuó bajo administración cristiana y sostuvo una red urbana transformada de instituciones, comercio y manufactura."
+        },
+        "en": {
+          "name": "Romayla Canal",
+          "function": "Darro-derived canal for irrigation, supply and urban uses",
+          "summary": "The Romayla Canal was active in the first half of the sixteenth century and distributed water through branches reaching Bibalmazda, Zacatín, Bib-Rambla, San Francisco and the Corral del Carbón.",
+          "evidence_note": "The ordinances document operation, cleaning and destinations, but do not automatically turn each itinerary description into a metric polyline.",
+          "change_note": "The inherited canal continued under Christian administration and sustained a transformed urban network of institutions, commerce and manufacture."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.romayla-ordinances-1538",
+          "topic": "chronology",
+          "text": {
+            "es": "Las ordenanzas de 1538 regulaban la limpieza y vigilancia de la Acequia de Romayla desde su presa hasta los adarves.",
+            "en": "The 1538 ordinances regulated cleaning and inspection of the Romayla Canal from its weir to the city walls."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Apartado sobre Romayla, Axares y Darrillo",
+              "supports": "Atestigua continuidad operativa y mantenimiento institucional."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.romayla-urban-branches",
+          "topic": "function",
+          "text": {
+            "es": "Sus ramales abastecían destinos urbanos como Zacatín, Bib-Rambla, San Francisco y la Alhóndiga del Carbón.",
+            "en": "Its branches supplied urban destinations including Zacatín, Bib-Rambla, San Francisco and the Corral del Carbón."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Apartado 2.1, ramales de Romayla",
+              "supports": "Documenta alcance funcional sin fijar por sí solo todos los ejes."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "retains",
+          "target_id": "water.darro",
+          "note": {
+            "es": "La acequia derivaba del Darro y formaba parte de su red arterial.",
+            "en": "The canal derived from the Darro and formed part of its arterial network."
+          }
+        },
+        {
+          "relation": "routes_toward",
+          "target_id": "commerce.corral-carbon",
+          "note": {
+            "es": "Uno de los ramales documentados alcanzaba la Alhóndiga del Carbón.",
+            "en": "One documented branch reached the Corral del Carbón."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La línea heredada combina el cauce principal y una interpretación moderna sin individualizar todos los ramales descritos en 1538.",
+          "en": "The inherited line combines the main channel and a modern interpretation without identifying every branch described in 1538."
+        },
+        "release_condition": {
+          "es": "Separar cauce principal y ramales, asignar evidencia y tolerancia por segmento y no interpolar entre topónimos sin controles.",
+          "en": "Separate main channel and branches, assign evidence and tolerance by segment, and do not interpolate between place names without controls."
+        },
+        "source_refs": [
+          "source.ugr-water-ordinances-2022",
+          "source.ujaen-water-route-2025"
+        ]
+      }
+    }
+  ]
+}

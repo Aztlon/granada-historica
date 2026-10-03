@@ -1,0 +1,1283 @@
+{
+  "schema_version": 1,
+  "milestone": "M10.5",
+  "wave": "geometry-wave-1",
+  "period_id": "c1550",
+  "status": "ready_for_specialist_review",
+  "public_application_import": false,
+  "updated_on": "2026-10-02",
+  "scope_note": "Primera ola geométrica de bajo riesgo: seis puntos de sitio, cuatro puntos de puertas conservadas, dos envolventes monumentales y cuatro ejes heredados; todo permanece privado y en revisión.",
+  "source_review_paths": [
+    "data/research/c1550/m10.5-source-review.json",
+    "data/research/c1550/m10.5-source-review-2.json",
+    "data/research/c1550/m10.5-source-review-3.json"
+  ],
+  "feature_ids": [
+    "religious.santa-cruz-real",
+    "religious.san-jeronimo",
+    "religious.san-jose",
+    "religious.san-juan-reyes",
+    "religious.san-matias",
+    "religious.san-luis",
+    "gate.elvira",
+    "gate.monaita",
+    "gate.alhambra-arms",
+    "gate.alhambra-seven-floors",
+    "commerce.corral-carbon",
+    "water.banuelo",
+    "water.darro",
+    "water.genil",
+    "route.elvira-axis",
+    "bridge.carbon"
+  ],
+  "items": [
+    {
+      "feature_id": "religious.santa-cruz-real",
+      "cluster": "parish_city",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Convento de Santa Cruz la Real",
+          "function": "Fundación dominica en las antiguas huertas de la Almanjarra",
+          "summary": "La fundación de los Reyes Católicos ocupaba hacia 1550 las huertas de la Almanjarra, pero las numerosas reformas del conjunto impiden atribuir al corte una planta acabada.",
+          "evidence_note": "La fundación y el sitio son seguros; la fuente institucional combina fases góticas, renacentistas y barrocas que deben separarse antes de cartografiar.",
+          "change_note": "El nuevo convento implantó una gran institución cristiana en un paisaje de huertas heredado, sin que pueda asumirse la forma del complejo actual."
+        },
+        "en": {
+          "name": "Convent of Santa Cruz la Real",
+          "function": "Dominican foundation on the former Almanjarra orchards",
+          "summary": "The Catholic Monarchs’ foundation occupied the Almanjarra orchards around 1550, but the complex’s many alterations prevent attribution of a finished plan to the snapshot.",
+          "evidence_note": "The foundation and site are secure; the institutional source combines Gothic, Renaissance and Baroque phases that must be separated before mapping.",
+          "change_note": "The new convent inserted a major Christian institution into an inherited orchard landscape, without licensing use of the present complex’s form."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.santa-cruz-foundation-site",
+          "topic": "function",
+          "text": {
+            "es": "Santa Cruz la Real fue fundado por los Reyes Católicos sobre las huertas de la Almanjarra Alta y Baja.",
+            "en": "Santa Cruz la Real was founded by the Catholic Monarchs on the Upper and Lower Almanjarra orchards."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-santa-cruz-real",
+              "locator": "Fundación y emplazamiento",
+              "supports": "Fundación real y ocupación de las huertas de la Almanjarra."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.santa-cruz-phase-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "Las reformas acumuladas del complejo impiden usar su planta actual como geometría de 1550.",
+            "en": "Accumulated alterations to the complex prevent use of its present plan as 1550 geometry."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-santa-cruz-real",
+              "locator": "Descripción de reformas y estilos",
+              "supports": "La mezcla de fases exige una lectura constructiva previa."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "near",
+          "target_id": "urban.campo-principe",
+          "note": {
+            "es": "La fundación participó en la reorganización cristiana del Realejo, pero no define por sí sola los límites del barrio.",
+            "en": "The foundation participated in the Christian reorganisation of the Realejo but does not itself define the quarter’s boundaries."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "reference_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se incorpora un punto del sitio moderno para hacer visible la entidad sin dibujar una planta arquitectónica no demostrada para 1550.",
+          "en": "A modern site point is added to make the entity visible without drawing an architectural plan not demonstrated for 1550."
+        },
+        "overlap_resolution": {
+          "es": "El punto identifica el conjunto y no resuelve iglesia, claustros, dependencias, parcela histórica ni contactos con edificios vecinos.",
+          "en": "The point identifies the complex and does not resolve church, cloisters, dependencies, historical parcel or contacts with neighbouring buildings."
+        }
+      }
+    },
+    {
+      "feature_id": "religious.san-jeronimo",
+      "cluster": "parish_city",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Monasterio de San Jerónimo",
+          "function": "Monasterio jerónimo y panteón nobiliario del Gran Capitán",
+          "summary": "La fundación real estaba presente y el complejo se vinculaba al programa religioso y nobiliario de la Granada cristiana, pero su fase material exacta en 1550 no está resuelta por las fuentes actuales.",
+          "evidence_note": "La fundación, la iglesia y el monasterio están documentados; se necesita una cronología constructiva especializada para separar el conjunto renacentista visible en 1550.",
+          "change_note": "El monasterio añadió un gran polo religioso extramuros y una memoria dinástica cristiana a la ciudad transformada."
+        },
+        "en": {
+          "name": "Monastery of San Jerónimo",
+          "function": "Hieronymite monastery and noble pantheon of the Great Captain",
+          "summary": "The royal foundation was present and the complex belonged to Christian Granada’s religious and noble programme, but its exact material phase in 1550 is unresolved by the current sources.",
+          "evidence_note": "The foundation, church and monastery are documented; a specialist building chronology is needed to separate the Renaissance complex visible in 1550.",
+          "change_note": "The monastery added a major extramural religious centre and a Christian dynastic memorial to the transformed city."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.san-jeronimo-royal-foundation",
+          "topic": "function",
+          "text": {
+            "es": "San Jerónimo fue una fundación de los Reyes Católicos formada por iglesia y monasterio.",
+            "en": "San Jerónimo was a foundation of the Catholic Monarchs comprising a church and monastery."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-san-jeronimo",
+              "locator": "Fundación y composición del conjunto",
+              "supports": "Fundación real y existencia del monasterio y la iglesia."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.san-jeronimo-phase-unknown",
+          "topic": "geometry",
+          "text": {
+            "es": "La descripción general del conjunto no permite delimitar qué fábrica estaba terminada exactamente en 1550.",
+            "en": "The general description of the complex does not delimit which fabric was complete precisely in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-san-jeronimo",
+              "locator": "Descripción arquitectónica general",
+              "supports": "La fuente no ofrece una planta de fases fechada hacia 1550."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "near",
+          "target_id": "gate.elvira",
+          "note": {
+            "es": "El nuevo polo monástico se situaba fuera del núcleo heredado y se relacionaba con la expansión cristiana más allá de la puerta de Elvira.",
+            "en": "The new monastic centre stood outside the inherited core and related to Christian expansion beyond the Elvira gate."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "reference_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se incorpora un punto del sitio moderno para hacer visible la entidad sin dibujar una planta arquitectónica no demostrada para 1550.",
+          "en": "A modern site point is added to make the entity visible without drawing an architectural plan not demonstrated for 1550."
+        },
+        "overlap_resolution": {
+          "es": "El punto identifica el conjunto y no resuelve iglesia, claustros, dependencias, parcela histórica ni contactos con edificios vecinos.",
+          "en": "The point identifies the complex and does not resolve church, cloisters, dependencies, historical parcel or contacts with neighbouring buildings."
+        }
+      }
+    },
+    {
+      "feature_id": "religious.san-jose",
+      "cluster": "parish_city",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Iglesia de San José",
+          "function": "Iglesia parroquial mudéjar sobre la mezquita al-Murabitin",
+          "summary": "La iglesia construida en 1525 reemplazaba la mezquita al-Murabitin y constituía una de las primeras parroquias mudéjares del Albaicín.",
+          "evidence_note": "La fecha, el solar y la tipología general son seguros; la portada neoclásica y otras fases posteriores deben excluirse de cualquier representación de 1550.",
+          "change_note": "La sustitución cambió institución y fábrica, aunque el registro debe mantener visible el sitio islámico precedente."
+        },
+        "en": {
+          "name": "Church of San José",
+          "function": "Mudéjar parish church on the al-Murabitin mosque site",
+          "summary": "The church built in 1525 replaced the al-Murabitin mosque and formed one of the earliest Mudéjar parishes in the Albaicín.",
+          "evidence_note": "The date, site and general type are secure; the Neoclassical portal and other later phases must be excluded from any 1550 representation.",
+          "change_note": "Replacement changed both institution and fabric, although the record must keep the preceding Islamic site visible."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.san-jose-built-1525",
+          "topic": "chronology",
+          "text": {
+            "es": "La iglesia de San José fue construida en 1525 sobre la mezquita al-Murabitin.",
+            "en": "The church of San José was built in 1525 on the al-Murabitin mosque."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-san-jose",
+              "locator": "Cronología y solar",
+              "supports": "Construcción en 1525 sobre la mezquita precedente."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.san-jose-later-portal",
+          "topic": "geometry",
+          "text": {
+            "es": "La portada neoclásica visible hoy no pertenece al estado de 1550.",
+            "en": "The Neoclassical portal visible today does not belong to the 1550 state."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-san-jose",
+              "locator": "Descripción exterior",
+              "supports": "Identificación de una fase neoclásica posterior."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "contained_by",
+          "target_id": "urban.albaicin",
+          "note": {
+            "es": "La nueva parroquia formaba parte de la reorganización cristiana del Albaicín, sin definir por sí sola un límite parroquial.",
+            "en": "The new parish belonged to the Christian reorganisation of the Albaicín without itself defining a parish boundary."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "reference_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se incorpora un punto del sitio moderno para hacer visible la entidad sin dibujar una planta arquitectónica no demostrada para 1550.",
+          "en": "A modern site point is added to make the entity visible without drawing an architectural plan not demonstrated for 1550."
+        },
+        "overlap_resolution": {
+          "es": "El punto identifica el conjunto y no resuelve iglesia, claustros, dependencias, parcela histórica ni contactos con edificios vecinos.",
+          "en": "The point identifies the complex and does not resolve church, cloisters, dependencies, historical parcel or contacts with neighbouring buildings."
+        }
+      }
+    },
+    {
+      "feature_id": "religious.san-juan-reyes",
+      "cluster": "parish_city",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Iglesia de San Juan de los Reyes",
+          "function": "Iglesia parroquial mudéjar con alminar islámico conservado",
+          "summary": "La mezquita consagrada tras la conquista fue demolida en 1520 para levantar una iglesia de tres naves, conservando su alminar como torre adosada.",
+          "evidence_note": "La secuencia de sustitución y el alminar son seguros; parte del muro actual fue rehecha en el siglo XIX y no pertenece al estado de 1550.",
+          "change_note": "La entidad combina sustitución del templo y continuidad selectiva de una pieza islámica, que debe conservar identidad material propia."
+        },
+        "en": {
+          "name": "Church of San Juan de los Reyes",
+          "function": "Mudéjar parish church with a retained Islamic minaret",
+          "summary": "The mosque consecrated after the conquest was demolished in 1520 for a three-aisled church, while its minaret survived as an attached tower.",
+          "evidence_note": "The replacement sequence and minaret are secure; part of the present wall was rebuilt in the nineteenth century and does not belong to the 1550 state.",
+          "change_note": "The entity combines replacement of the temple with selective continuity of an Islamic element that must retain its own material identity."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.san-juan-replacement-1520",
+          "topic": "transformation",
+          "text": {
+            "es": "La mezquita fue demolida en 1520 para levantar la iglesia de San Juan de los Reyes.",
+            "en": "The mosque was demolished in 1520 to build the church of San Juan de los Reyes."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-san-juan-reyes",
+              "locator": "Secuencia de consagración y demolición",
+              "supports": "Demolición de la mezquita y construcción del nuevo templo."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.san-juan-minaret-retained",
+          "topic": "transformation",
+          "text": {
+            "es": "El alminar de la mezquita fue conservado y adosado a la cabecera de la iglesia.",
+            "en": "The mosque minaret was retained and attached to the church’s east end."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-san-juan-reyes",
+              "locator": "Descripción del alminar",
+              "supports": "Conservación material del alminar como elemento del conjunto cristiano."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "contained_by",
+          "target_id": "urban.albaicin",
+          "note": {
+            "es": "La iglesia y el alminar conservado hacen visible la transformación religiosa del Albaicín sin convertirla en un reemplazo material total.",
+            "en": "The church and retained minaret make the Albaicín’s religious transformation visible without treating it as total material replacement."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "reference_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se incorpora un punto del sitio moderno para hacer visible la entidad sin dibujar una planta arquitectónica no demostrada para 1550.",
+          "en": "A modern site point is added to make the entity visible without drawing an architectural plan not demonstrated for 1550."
+        },
+        "overlap_resolution": {
+          "es": "El punto identifica el conjunto y no resuelve iglesia, claustros, dependencias, parcela histórica ni contactos con edificios vecinos.",
+          "en": "The point identifies the complex and does not resolve church, cloisters, dependencies, historical parcel or contacts with neighbouring buildings."
+        }
+      }
+    },
+    {
+      "feature_id": "religious.san-matias",
+      "cluster": "parish_city",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Iglesia imperial de San Matías",
+          "function": "Iglesia parroquial mudéjar y renacentista trasladada por voluntad imperial",
+          "summary": "La parroquia se trasladó a su emplazamiento actual por orden de Carlos V y la iglesia, levantada sobre una mezquita, recibió sus capillas laterales entre 1533 y 1541.",
+          "evidence_note": "La cronología principal precede a 1550; la cubierta de estuco de 1775 y otras transformaciones posteriores no pueden incorporarse al estado histórico.",
+          "change_note": "La ficha se corrige de simple nueva construcción a sustitución, porque la fuente identifica expresamente una mezquita anterior en el solar."
+        },
+        "en": {
+          "name": "Imperial church of San Matías",
+          "function": "Mudéjar and Renaissance parish church relocated by imperial order",
+          "summary": "The parish moved to its present site by order of Charles V, and the church built over a mosque received its side chapels between 1533 and 1541.",
+          "evidence_note": "The principal chronology precedes 1550; the 1775 stucco ceiling and other later transformations cannot enter the historical state.",
+          "change_note": "The record is corrected from simple new construction to replacement because the source explicitly identifies an earlier mosque on the site."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.san-matias-chapels-1541",
+          "topic": "chronology",
+          "text": {
+            "es": "Las capillas laterales de San Matías fueron añadidas entre 1533 y 1541.",
+            "en": "The side chapels of San Matías were added between 1533 and 1541."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-san-matias",
+              "locator": "Cronología de las capillas laterales",
+              "supports": "Fase principal documentada antes del corte de 1550."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.san-matias-mosque-site",
+          "topic": "transformation",
+          "text": {
+            "es": "La iglesia fue fundada sobre una mezquita y la parroquia fue trasladada al sitio por orden imperial.",
+            "en": "The church was founded over a mosque and the parish was moved to the site by imperial order."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-san-matias",
+              "locator": "Fundación y traslado",
+              "supports": "Predecesor islámico y traslado de la parroquia al emplazamiento actual."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "near",
+          "target_id": "quarter.garnata-al-yahud",
+          "note": {
+            "es": "La parroquia imperial participó en la reorganización cristiana del área del Realejo próxima al antiguo barrio judío.",
+            "en": "The imperial parish participated in the Christian reorganisation of the Realejo area near the former Jewish quarter."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "reference_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se incorpora un punto del sitio moderno para hacer visible la entidad sin dibujar una planta arquitectónica no demostrada para 1550.",
+          "en": "A modern site point is added to make the entity visible without drawing an architectural plan not demonstrated for 1550."
+        },
+        "overlap_resolution": {
+          "es": "El punto identifica el conjunto y no resuelve iglesia, claustros, dependencias, parcela histórica ni contactos con edificios vecinos.",
+          "en": "The point identifies the complex and does not resolve church, cloisters, dependencies, historical parcel or contacts with neighbouring buildings."
+        }
+      }
+    },
+    {
+      "feature_id": "religious.san-luis",
+      "cluster": "parish_city",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Iglesia de San Luis",
+          "function": "Iglesia parroquial mudéjar sobre la mezquita de la Pureza",
+          "summary": "La iglesia de cajón terminada en 1526 ocupaba el solar de la mezquita de la Pureza y era una presencia parroquial segura en el Albaicín de 1550.",
+          "evidence_note": "La fecha y la tipología original están documentadas; incendios, ruina y restauraciones posteriores obligan a no copiar automáticamente la geometría actual.",
+          "change_note": "El nuevo templo reemplazó la mezquita en el mismo solar, combinando ruptura institucional y continuidad del lugar religioso."
+        },
+        "en": {
+          "name": "Church of San Luis",
+          "function": "Mudéjar parish church on the Mosque of Purity site",
+          "summary": "The box-plan church completed in 1526 occupied the Mosque of Purity site and was a secure parish presence in the Albaicín of 1550.",
+          "evidence_note": "Its date and original type are documented; later fire, ruin and restoration mean the present geometry cannot be copied automatically.",
+          "change_note": "The new church replaced the mosque on the same site, combining institutional rupture with continuity of the religious place."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.san-luis-complete-1526",
+          "topic": "chronology",
+          "text": {
+            "es": "La construcción de San Luis finalizó en 1526 siguiendo una tipología mudéjar de iglesia de cajón.",
+            "en": "Construction of San Luis was completed in 1526 using a Mudéjar box-church type."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-san-luis",
+              "locator": "Ficha Iglesia de San Luis",
+              "supports": "Finalización en 1526 y tipología arquitectónica original."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.san-luis-mosque-site",
+          "topic": "transformation",
+          "text": {
+            "es": "San Luis se levantó sobre el solar de la mezquita de la Pureza, Masŷd al-Ṣafā.",
+            "en": "San Luis was built on the site of the Mosque of Purity, Masjid al-Safa."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-san-luis",
+              "locator": "Ficha Iglesia de San Luis",
+              "supports": "Identificación del solar de la mezquita precedente."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "contained_by",
+          "target_id": "urban.albaicin",
+          "note": {
+            "es": "La iglesia formaba parte del nuevo sistema parroquial del Albaicín, aunque su posición no define una jurisdicción territorial.",
+            "en": "The church belonged to the Albaicín’s new parish system, although its position does not define a territorial jurisdiction."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "reference_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se incorpora un punto del sitio moderno para hacer visible la entidad sin dibujar una planta arquitectónica no demostrada para 1550.",
+          "en": "A modern site point is added to make the entity visible without drawing an architectural plan not demonstrated for 1550."
+        },
+        "overlap_resolution": {
+          "es": "El punto identifica el conjunto y no resuelve iglesia, claustros, dependencias, parcela histórica ni contactos con edificios vecinos.",
+          "en": "The point identifies the complex and does not resolve church, cloisters, dependencies, historical parcel or contacts with neighbouring buildings."
+        }
+      }
+    },
+    {
+      "feature_id": "gate.elvira",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Puerta de Elvira",
+          "function": "Acceso noroccidental, control urbano y enlace con la calle Elvira",
+          "summary": "La puerta-fortaleza seguía siendo una entrada principal hacia 1550 y conservaba un dispositivo mucho mayor que el arco actual, conectado con la calle Elvira y las cercas del Albaicín.",
+          "evidence_note": "La ficha municipal documenta el complejo y fecha en 1612 la demolición de sus tres barbacanas; esto sostiene su presencia anterior, pero no una planta precisa para 1550.",
+          "change_note": "El acceso islámico continuó dentro de la ciudad cristiana con funciones y símbolos transformados, antes de las grandes demoliciones modernas."
+        },
+        "en": {
+          "name": "Elvira Gate",
+          "function": "North-western entrance, urban control point and link to Elvira Street",
+          "summary": "The fortified gate remained a principal entrance around 1550 and retained a complex far larger than the present arch, connected to Elvira Street and the Albaicín enclosures.",
+          "evidence_note": "The municipal record documents the complex and dates demolition of its three barbicans to 1612; this supports earlier presence but not a precise 1550 plan.",
+          "change_note": "The Islamic entrance continued within the Christian city with transformed functions and symbols before the major modern demolitions."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.elvira-complex-before-1612",
+          "topic": "chronology",
+          "text": {
+            "es": "Las tres barbacanas de Puerta Elvira no fueron demolidas hasta 1612, por lo que el complejo anterior seguía materialmente presente hacia 1550.",
+            "en": "Elvira Gate’s three barbicans were not demolished until 1612, so the earlier complex remained materially present around 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-elvira-gate",
+              "locator": "Ficha 22, historia y transformaciones",
+              "supports": "Fecha la demolición principal y documenta la extensión histórica del acceso."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.elvira-point-not-complex",
+          "topic": "geometry",
+          "text": {
+            "es": "El arco conservado y el punto c. 1492 no representan la extensión completa de la puerta-fortaleza de 1550.",
+            "en": "The surviving arch and c. 1492 point do not represent the full extent of the fortified gate in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-elvira-gate",
+              "locator": "Ficha 22, descripción del dispositivo defensivo",
+              "supports": "Distingue el resto visible del complejo de torres, puertas y barbacanas."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "routes_toward",
+          "target_id": "route.elvira-axis",
+          "note": {
+            "es": "El acceso desembocaba en la calle Elvira y articulaba la llegada a la medina baja.",
+            "en": "The entrance opened onto Elvira Street and structured arrival into the lower medina."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_site_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se conserva el punto heredado como localizador del acceso superviviente, no como restitución del complejo fortificado hacia 1550.",
+          "en": "The inherited point is retained as a locator for the surviving entrance, not as a reconstruction of the fortified complex around 1550."
+        },
+        "overlap_resolution": {
+          "es": "El punto no afirma la extensión de torres, patios, barbacanas, ramales de muralla ni fases posteriores hoy perdidas o alteradas.",
+          "en": "The point does not assert the extent of towers, courts, barbicans, wall branches or later phases now lost or altered."
+        }
+      }
+    },
+    {
+      "feature_id": "gate.monaita",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Puerta Monaita",
+          "function": "Acceso heredado de la Alcazaba Qadima dentro del Albaicín",
+          "summary": "Monaita seguía materialmente presente hacia 1550 como puerta del antiguo recinto zirí, aunque su función cotidiana dentro del Albaicín cristiano y morisco no está aún documentada con precisión.",
+          "evidence_note": "La fábrica conservada y la destrucción tardía de defensas del entorno sostienen presencia; las fuentes actuales no prueban intensidad de paso ni estado completo.",
+          "change_note": "La puerta fue retenida como elemento material de un recinto interior cuya función defensiva y urbana se transformó después de la conquista."
+        },
+        "en": {
+          "name": "Monaita Gate",
+          "function": "Inherited entrance to the Qadima Citadel within the Albaicín",
+          "summary": "Monaita remained materially present around 1550 as a gate of the former Zirid enclosure, although its everyday role within the Christian and Morisco Albaicín is not yet precisely documented.",
+          "evidence_note": "Surviving fabric and the late destruction of surrounding defences support presence; current sources do not establish traffic intensity or complete condition.",
+          "change_note": "The gate was retained as a material element of an inner enclosure whose defensive and urban role changed after the conquest."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.monaita-present-before-nineteenth",
+          "topic": "chronology",
+          "text": {
+            "es": "La puerta sobrevivió hasta las campañas demolicionistas del siglo XIX y, por tanto, estaba materialmente presente en 1550.",
+            "en": "The gate survived until nineteenth-century demolition campaigns and was therefore materially present in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-monaita",
+              "locator": "Historia y conservación de la puerta",
+              "supports": "Sitúa el riesgo de desaparición en el siglo XIX y documenta la fábrica heredada."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.monaita-function-unresolved",
+          "topic": "interpretation",
+          "text": {
+            "es": "La presencia de la puerta no demuestra que mantuviera en 1550 la misma función defensiva o intensidad de paso que en época islámica.",
+            "en": "Presence of the gate does not establish that it retained the same defensive role or traffic intensity in 1550 as in the Islamic period."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-monaita-wall-2000",
+              "locator": "Lectura arqueológica de puerta y lienzos asociados",
+              "supports": "Distingue conservación material y reconstrucción del funcionamiento histórico."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "attached_to",
+          "target_id": "walls.alcazaba-qadima-inner",
+          "note": {
+            "es": "Monaita pertenecía al recinto interior de la Alcazaba Qadima, no a la cerca exterior tardonazarí.",
+            "en": "Monaita belonged to the Qadima Citadel’s inner enclosure rather than the late Nasrid outer wall."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_site_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se conserva el punto heredado como localizador del acceso superviviente, no como restitución del complejo fortificado hacia 1550.",
+          "en": "The inherited point is retained as a locator for the surviving entrance, not as a reconstruction of the fortified complex around 1550."
+        },
+        "overlap_resolution": {
+          "es": "El punto no afirma la extensión de torres, patios, barbacanas, ramales de muralla ni fases posteriores hoy perdidas o alteradas.",
+          "en": "The point does not assert the extent of towers, courts, barbicans, wall branches or later phases now lost or altered."
+        }
+      }
+    },
+    {
+      "feature_id": "gate.alhambra-arms",
+      "cluster": "imperial_alhambra",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Puerta de las Armas",
+          "function": "Acceso septentrional heredado entre la ciudad y la Alcazaba de la Alhambra",
+          "summary": "La Puerta de las Armas seguía formando parte del recinto hacia 1550, aunque ya no conservaba la primacía que había tenido como acceso habitual desde Granada a la corte nazarí.",
+          "evidence_note": "La fábrica y el itinerario histórico son seguros; la pérdida de jerarquía se infiere del nuevo sistema cristiano de accesos y no debe representarse como cierre físico.",
+          "change_note": "El acceso fue retenido pero su papel urbano y ceremonial cambió al consolidarse recorridos occidentales asociados a la Puerta de las Granadas."
+        },
+        "en": {
+          "name": "Gate of Arms",
+          "function": "Inherited northern entrance between the city and the Alhambra citadel",
+          "summary": "The Gate of Arms remained part of the enclosure around 1550, although it no longer held the primacy it had enjoyed as the customary route from Granada to the Nasrid court.",
+          "evidence_note": "Its fabric and historical route are secure; reduced hierarchy is inferred from the new Christian access system and must not be represented as physical closure.",
+          "change_note": "The entrance was retained, but its urban and ceremonial role changed as western routes associated with the Gate of the Pomegranates became established."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.arms-gate-nasrid-primary-route",
+          "topic": "function",
+          "text": {
+            "es": "Hasta el siglo XV la Puerta de las Armas fue el acceso habitual desde Granada a la sede administrativa de la corte nazarí.",
+            "en": "Until the fifteenth century the Gate of Arms was the customary entrance from Granada to the administrative seat of the Nasrid court."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-arms-gate",
+              "locator": "Función y camino histórico entre Alhambra y Granada",
+              "supports": "Establece la jerarquía anterior que cambió tras la conquista."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.arms-gate-four-outer-gates",
+          "topic": "geometry",
+          "text": {
+            "es": "La puerta era una de las cuatro grandes entradas exteriores insertas en la muralla de la Alhambra.",
+            "en": "The gate was one of four major external entrances set into the Alhambra wall."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-gates",
+              "locator": "Síntesis de las cuatro puertas exteriores",
+              "supports": "Confirma su pertenencia material al sistema amurallado."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "contained_by",
+          "target_id": "royal.alhambra",
+          "note": {
+            "es": "La puerta formaba parte del perímetro fortificado de la Alhambra.",
+            "en": "The gate formed part of the fortified perimeter of the Alhambra."
+          }
+        },
+        {
+          "relation": "part_of_program_with",
+          "target_id": "gate.puerta-granadas",
+          "note": {
+            "es": "La jerarquía de las Armas debe leerse frente al nuevo acceso imperial occidental, sin afirmar que quedó clausurada.",
+            "en": "The hierarchy of the Gate of Arms must be read against the new western imperial approach without claiming it was closed."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_site_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se conserva el punto heredado como localizador del acceso superviviente, no como restitución del complejo fortificado hacia 1550.",
+          "en": "The inherited point is retained as a locator for the surviving entrance, not as a reconstruction of the fortified complex around 1550."
+        },
+        "overlap_resolution": {
+          "es": "El punto no afirma la extensión de torres, patios, barbacanas, ramales de muralla ni fases posteriores hoy perdidas o alteradas.",
+          "en": "The point does not assert the extent of towers, courts, barbicans, wall branches or later phases now lost or altered."
+        }
+      }
+    },
+    {
+      "feature_id": "gate.alhambra-seven-floors",
+      "cluster": "imperial_alhambra",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Puerta de los Siete Suelos / Bāb al-Gudur",
+          "function": "Acceso meridional monumental de la medina de la Alhambra",
+          "summary": "La puerta nazarí seguía formando parte de la muralla hacia 1550 y había recibido un baluarte artillero cristiano tras la conquista.",
+          "evidence_note": "La puerta y el añadido defensivo son identificables, pero deben separarse cronológica y geométricamente antes de representar su estado moderno temprano.",
+          "change_note": "El acceso medieval fue retenido y adaptado a nuevas necesidades de artillería, no simplemente conservado sin cambios."
+        },
+        "en": {
+          "name": "Gate of the Seven Floors / Bāb al-Gudur",
+          "function": "Monumental southern entrance to the Alhambra medina",
+          "summary": "The Nasrid gate remained part of the wall around 1550 and had received a Christian artillery bastion after the conquest.",
+          "evidence_note": "The gate and defensive addition can be identified, but they must be separated chronologically and geometrically before representing their early-modern state.",
+          "change_note": "The medieval entrance was retained and adapted to new artillery requirements rather than simply preserved unchanged."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.seven-floors-fourteenth-century-gate",
+          "topic": "chronology",
+          "text": {
+            "es": "La configuración monumental conservada de Bāb al-Gudur se atribuye probablemente a mediados del siglo XIV.",
+            "en": "The surviving monumental configuration of Bāb al-Gudur is probably dated to the mid-fourteenth century."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-gates",
+              "locator": "Puerta de los Siete Suelos, cronología y disposición",
+              "supports": "Establece la fábrica heredada anterior al periodo c. 1550."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.seven-floors-artillery-bastion",
+          "topic": "transformation",
+          "text": {
+            "es": "Un baluarte de artillería fue añadido e integrado en el acceso después de la conquista cristiana.",
+            "en": "An artillery bastion was added and integrated into the entrance after the Christian conquest."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-gates",
+              "locator": "Puerta de los Siete Suelos, baluarte posterior a la conquista",
+              "supports": "Documenta la alteración defensiva relevante para 1550."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "contained_by",
+          "target_id": "royal.alhambra",
+          "note": {
+            "es": "La puerta formaba parte del flanco sur del recinto de la Alhambra.",
+            "en": "The gate formed part of the southern side of the Alhambra enclosure."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_site_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se conserva el punto heredado como localizador del acceso superviviente, no como restitución del complejo fortificado hacia 1550.",
+          "en": "The inherited point is retained as a locator for the surviving entrance, not as a reconstruction of the fortified complex around 1550."
+        },
+        "overlap_resolution": {
+          "es": "El punto no afirma la extensión de torres, patios, barbacanas, ramales de muralla ni fases posteriores hoy perdidas o alteradas.",
+          "en": "The point does not assert the extent of towers, courts, barbicans, wall branches or later phases now lost or altered."
+        }
+      }
+    },
+    {
+      "feature_id": "commerce.corral-carbon",
+      "cluster": "civic_centre",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Corral de comedias (antigua Alhóndiga Nueva)",
+          "function": "Corral de comedias dentro de un funduq nazarí reutilizado",
+          "summary": "El antiguo funduq seguía materialmente presente, pero tras la subasta de 1531 pasó a funcionar como corral de comedias, mostrando una conversión de uso sin demolición del edificio.",
+          "evidence_note": "La secuencia de propiedad y uso está documentada; la distribución teatral hacia 1550 y las adaptaciones materiales concretas aún no justifican una nueva planta.",
+          "change_note": "Desde 1492 el alojamiento y comercio del funduq cedieron ante usos cristianos y teatrales, conservándose la estructura principal heredada."
+        },
+        "en": {
+          "name": "Playhouse (former New Corn Exchange)",
+          "function": "Playhouse inside a reused Nasrid funduq",
+          "summary": "The former funduq remained materially present, but after the 1531 auction it became a playhouse, demonstrating conversion of use without demolition of the building.",
+          "evidence_note": "The ownership and use sequence is documented; the theatrical arrangement around 1550 and its specific material adaptations do not yet support a new plan.",
+          "change_note": "After 1492 the funduq’s lodging and commercial roles gave way to Christian and theatrical uses while its main inherited structure survived."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.corral-carbon-theatre-1531",
+          "topic": "transformation",
+          "text": {
+            "es": "Tras la subasta de 1531 la antigua alhóndiga pasó a ser corral de comedias.",
+            "en": "After the 1531 auction the former corn exchange became a playhouse."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-corral-carbon",
+              "locator": "Transformaciones tras la conquista y subasta de 1531",
+              "supports": "Venta y conversión posterior en corral de comedias."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.corral-carbon-fabric-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "La conservación del edificio nazarí no demuestra por sí sola la organización de sus usos teatrales en 1550.",
+            "en": "Survival of the Nasrid building does not by itself establish the arrangement of its theatrical uses in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-corral-carbon",
+              "locator": "Descripción del edificio y cambios de uso",
+              "supports": "Distingue continuidad de la fábrica y transformación funcional."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "near",
+          "target_id": "commerce.alcaiceria",
+          "note": {
+            "es": "El edificio heredado permanecía en el centro mercantil transformado, próximo a la Alcaicería.",
+            "en": "The inherited building remained in the transformed commercial centre near the Alcaicería."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_area",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se retiene la envolvente del monumento conservado como referencia de sitio auditable, sin equipararla automáticamente con su fábrica exacta en 1550.",
+          "en": "The surviving monument envelope is retained as an auditable site reference without automatically equating it with its exact fabric in 1550."
+        },
+        "overlap_resolution": {
+          "es": "La envolvente incluye transformaciones y restauraciones posteriores; las fases internas permanecen sin segmentar hasta una lectura arquitectónica específica.",
+          "en": "The envelope includes later transformations and restorations; internal phases remain unsegmented pending a specific architectural reading."
+        }
+      }
+    },
+    {
+      "feature_id": "water.banuelo",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Baño del Nogal (Bañuelo)",
+          "function": "Baño público heredado en el corredor del Darro",
+          "summary": "El Baño del Nogal estaba documentado y fue reparado después de la conquista; la investigación considera probable que siguiera funcionando como baño en época morisca y, por tanto, hacia 1550.",
+          "evidence_note": "La reparación de 1509 y la continuidad probable hasta 1567 sostienen la presencia, pero no permiten afirmar con certeza su régimen diario, usuarios o propiedad exacta en el año representativo.",
+          "change_note": "El hammam mantuvo probablemente su función bajo condiciones sociales y administrativas cristianas antes de la prohibición de costumbres moriscas de 1567."
+        },
+        "en": {
+          "name": "Bath of the Walnut (Bañuelo)",
+          "function": "Inherited public bath in the Darro corridor",
+          "summary": "The Bath of the Walnut was documented and repaired after the conquest; research considers it likely to have continued operating as a bath in the Morisco period and therefore around 1550.",
+          "evidence_note": "The 1509 repair and probable continuity until 1567 support its presence but do not securely establish its daily regime, users or exact ownership in the representative year.",
+          "change_note": "The hammam probably retained its function under Christian social and administrative conditions before the 1567 prohibition of Morisco customs."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.banuelo-repair-1509",
+          "topic": "chronology",
+          "text": {
+            "es": "El Baño del Nogal aparece con ese nombre en 1494 y fue objeto de una reparación documentada en 1509 cuando lo regentaba Sebastián de Palacios.",
+            "en": "The Bath of the Walnut is recorded under that name in 1494 and underwent a documented repair in 1509 while managed by Sebastián de Palacios."
+          },
+          "citations": [
+            {
+              "source_id": "source.csic-banuelo-2021",
+              "locator": "Fuentes documentales e investigación histórica",
+              "supports": "Aporta denominación, regencia y reparación posteriores a la conquista."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.banuelo-probable-use-to-1567",
+          "topic": "function",
+          "text": {
+            "es": "La continuidad como baño durante la época morisca hasta 1567 es probable, no una certeza documental específica para 1550.",
+            "en": "Continued use as a bath during the Morisco period until 1567 is probable rather than a documentary certainty specific to 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.csic-banuelo-2021",
+              "locator": "Fuentes documentales; continuidad funcional probable",
+              "supports": "Formula explícitamente la continuidad como posibilidad y fija el límite de confianza."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "adjacent_to",
+          "target_id": "water.darro",
+          "note": {
+            "es": "El baño se emplazaba junto al Darro y dependía de la infraestructura hidráulica del corredor.",
+            "en": "The bath stood beside the Darro and depended on the corridor’s hydraulic infrastructure."
+          }
+        },
+        {
+          "relation": "near",
+          "target_id": "bridge.cadi",
+          "note": {
+            "es": "El edificio se situaba frente a Bab al-Difaf/Puerta de los Tableros, tradicionalmente llamada Puente del Cadí.",
+            "en": "The building stood opposite Bab al-Difaf/Gate of the Boards, traditionally called the Qadi Bridge."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_area",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se retiene la envolvente del monumento conservado como referencia de sitio auditable, sin equipararla automáticamente con su fábrica exacta en 1550.",
+          "en": "The surviving monument envelope is retained as an auditable site reference without automatically equating it with its exact fabric in 1550."
+        },
+        "overlap_resolution": {
+          "es": "La envolvente incluye transformaciones y restauraciones posteriores; las fases internas permanecen sin segmentar hasta una lectura arquitectónica específica.",
+          "en": "The envelope includes later transformations and restorations; internal phases remain unsegmented pending a specific architectural reading."
+        }
+      }
+    },
+    {
+      "feature_id": "water.darro",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Río Darro",
+          "function": "Cauce urbano, fuente de acequias y receptor de desagües",
+          "summary": "El Darro continuaba atravesando Granada y alimentando una red de acequias en la primera mitad del siglo XVI, mientras las obras de Plaza Nueva modificaban localmente su relación con la ciudad.",
+          "evidence_note": "La presencia y función hidráulica son seguras; el eje moderno bajo Reyes Católicos corresponde al gran embovedado del siglo XIX y no debe proyectarse sin auditoría.",
+          "change_note": "El río conservó su papel estructural, aunque puentes, plataformas, vertidos y cubrimientos parciales transformaron segmentos urbanos concretos."
+        },
+        "en": {
+          "name": "River Darro",
+          "function": "Urban channel, source of canals and recipient of drainage",
+          "summary": "The Darro continued through Granada and fed a canal network in the first half of the sixteenth century while Plaza Nueva works locally changed its relationship with the city.",
+          "evidence_note": "Its presence and hydraulic role are secure; the modern axis beneath Reyes Católicos belongs to the major nineteenth-century vault and must not be projected without audit.",
+          "change_note": "The river retained its structural role while bridges, platforms, waste and partial coverings transformed particular urban segments."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.darro-sixteenth-century-network",
+          "topic": "function",
+          "text": {
+            "es": "En la primera mitad del siglo XVI el Darro atravesaba la ciudad y alimentaba varias acequias y ramales de abastecimiento y desagüe.",
+            "en": "In the first half of the sixteenth century the Darro crossed the city and fed several supply and drainage canals and branches."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Apartados 2.1 y 3, acequias del Darro y desagüe",
+              "supports": "Documenta el río y la red regulada dependiente de sus aguas."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.darro-modern-vault-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "El embovedado continuo bajo Reyes Católicos es principalmente una obra de 1854–1884 y no representa automáticamente el cauce de 1550.",
+            "en": "The continuous vault beneath Reyes Católicos is chiefly a work of 1854–1884 and does not automatically represent the 1550 channel."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-darro-reyes-catolicos",
+              "locator": "Intervención y contextualización del embovedado de 1858",
+              "supports": "Fecha la gran transformación moderna y sus muros laterales."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "adjacent_to",
+          "target_id": "route.darro-axis",
+          "note": {
+            "es": "La Carrera y el eje del Darro compartían el corredor oriental, pero no deben confundirse cauce, ribera y calle.",
+            "en": "The Carrera and Darro axis shared the eastern corridor, but channel, riverbank and street must not be conflated."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_line",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se importa el eje heredado como hipótesis de trazado revisable porque las fuentes sostienen la continuidad del elemento, no cada vértice de la línea.",
+          "en": "The inherited axis is imported as a reviewable alignment hypothesis because the sources support continuity of the element, not every line vertex."
+        },
+        "overlap_resolution": {
+          "es": "La línea no afirma anchura, márgenes, tablero, cubrimientos ni rectificaciones exactas hacia 1550 y conserva esas cuestiones para revisión geométrica.",
+          "en": "The line does not assert exact width, banks, deck, vaulting or realignments around 1550 and leaves those questions for geometric review."
+        }
+      }
+    },
+    {
+      "feature_id": "water.genil",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Río Genil",
+          "function": "Cauce meridional y origen de sistemas de riego urbanos y periurbanos",
+          "summary": "El Genil constituía hacia 1550 el gran control natural meridional y alimentaba redes como la Acequia Gorda y sus derivaciones hacia la ciudad, el Realejo y la Vega.",
+          "evidence_note": "Su presencia y función hidráulica son seguras; la línea moderna requiere auditoría de meandros, riberas, cruces y rectificaciones por segmentos.",
+          "change_note": "El cauce fue retenido como infraestructura natural, pero sus usos, puentes y relación con la expansión urbana evolucionaron."
+        },
+        "en": {
+          "name": "River Genil",
+          "function": "Southern channel and source of urban and peri-urban irrigation systems",
+          "summary": "Around 1550 the Genil was the major southern natural control and fed networks such as the Acequia Gorda and its branches toward the city, Realejo and Vega.",
+          "evidence_note": "Its presence and hydraulic role are secure; the modern line requires a segment-level audit of meanders, banks, crossings and realignments.",
+          "change_note": "The channel was retained as natural infrastructure while its uses, bridges and relationship with urban expansion evolved."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.genil-sixteenth-century-system",
+          "topic": "function",
+          "text": {
+            "es": "Las ordenanzas de aguas de la primera mitad del siglo XVI regulan el sistema del Genil y las acequias que de él derivaban.",
+            "en": "Water ordinances from the first half of the sixteenth century regulate the Genil system and the canals derived from it."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Sistema del Genil y Acequia Gorda",
+              "supports": "Documenta captación, distribución, mantenimiento y administración."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.genil-cadi-source",
+          "topic": "function",
+          "text": {
+            "es": "La Acequia del Cadí formaba parte de la explotación agrícola alimentada desde el sistema del Genil en 1531–1533.",
+            "en": "The Cadí Canal formed part of agricultural exploitation supplied from the Genil system in 1531–1533."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-cadi-ordinances-2025",
+              "locator": "Ordenanzas de 1531 y arrendamiento de 1533",
+              "supports": "Vincula el cauce natural con una derivación documentada próxima a 1550."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "retains",
+          "target_id": "water.acequia-gorda",
+          "note": {
+            "es": "El Genil alimentaba el sistema de la Acequia Gorda y sus derivaciones.",
+            "en": "The Genil supplied the Acequia Gorda system and its branches."
+          }
+        },
+        {
+          "relation": "retains",
+          "target_id": "water.acequia-cadi",
+          "note": {
+            "es": "El cauce abastecía la Acequia del Cadí y sus pagos agrícolas.",
+            "en": "The river supplied the Cadí Canal and its agricultural districts."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_line",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se importa el eje heredado como hipótesis de trazado revisable porque las fuentes sostienen la continuidad del elemento, no cada vértice de la línea.",
+          "en": "The inherited axis is imported as a reviewable alignment hypothesis because the sources support continuity of the element, not every line vertex."
+        },
+        "overlap_resolution": {
+          "es": "La línea no afirma anchura, márgenes, tablero, cubrimientos ni rectificaciones exactas hacia 1550 y conserva esas cuestiones para revisión geométrica.",
+          "en": "The line does not assert exact width, banks, deck, vaulting or realignments around 1550 and leaves those questions for geometric review."
+        }
+      }
+    },
+    {
+      "feature_id": "route.elvira-axis",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Eje de Elvira",
+          "function": "Corredor histórico entre Puerta Elvira y el centro urbano",
+          "summary": "La calle Elvira conservaba hacia 1550 el corredor que enlazaba la puerta noroccidental con el corazón de la ciudad, aunque sus extremos y frentes se adaptaban a la nueva organización cristiana.",
+          "evidence_note": "La continuidad del eje está respaldada por la puerta, la morfología y la cartografía temprana; anchura y alineaciones exactas requieren regresión documental.",
+          "change_note": "El eje islámico fue retenido como calle urbana y comercial, con transformaciones locales que no justifican una línea idéntica a la actual."
+        },
+        "en": {
+          "name": "Elvira axis",
+          "function": "Historical corridor between Elvira Gate and the urban centre",
+          "summary": "Around 1550 Elvira Street retained the corridor linking the north-western gate with the heart of the city, although its ends and frontages adapted to the new Christian organisation.",
+          "evidence_note": "Continuity of the axis is supported by the gate, morphology and early mapping; exact width and alignments require documentary regression.",
+          "change_note": "The Islamic axis was retained as an urban and commercial street, with local changes that do not justify a line identical to today’s."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.elvira-axis-historic-corridor",
+          "topic": "function",
+          "text": {
+            "es": "La calle Elvira fue uno de los ejes históricos principales y conectaba el centro urbano con Puerta Elvira.",
+            "en": "Elvira Street was one of the principal historical axes and connected the urban centre with Elvira Gate."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-calle-elvira",
+              "locator": "Descripción histórica y función comercial",
+              "supports": "Identifica el corredor y su papel dentro de la estructura urbana histórica."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.elvira-axis-alignment-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "La continuidad del corredor no demuestra que anchura, frentes y extremos fueran idénticos a los actuales en 1550.",
+            "en": "Continuity of the corridor does not show that its width, frontages and ends were identical to those of today in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-vico-2023",
+              "locator": "Análisis urbanístico de la Plataforma",
+              "supports": "Proporciona un control temprano posterior, no una alineación métrica de 1550."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "routes_toward",
+          "target_id": "gate.elvira",
+          "note": {
+            "es": "El corredor desembocaba en Puerta Elvira y vinculaba la medina con las salidas noroccidentales.",
+            "en": "The corridor reached Elvira Gate and linked the medina with the north-western approaches."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_line",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se importa el eje heredado como hipótesis de trazado revisable porque las fuentes sostienen la continuidad del elemento, no cada vértice de la línea.",
+          "en": "The inherited axis is imported as a reviewable alignment hypothesis because the sources support continuity of the element, not every line vertex."
+        },
+        "overlap_resolution": {
+          "es": "La línea no afirma anchura, márgenes, tablero, cubrimientos ni rectificaciones exactas hacia 1550 y conserva esas cuestiones para revisión geométrica.",
+          "en": "The line does not assert exact width, banks, deck, vaulting or realignments around 1550 and leaves those questions for geometric review."
+        }
+      }
+    },
+    {
+      "feature_id": "bridge.carbon",
+      "cluster": "civic_centre",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Puente del Carbón",
+          "function": "Paso sobre el Darro entre la alhóndiga y el centro comercial",
+          "summary": "El Puente del Carbón continuaba como referencia urbana en el siglo XVI y articulaba un entorno de tenerías activo junto al Corral del Carbón.",
+          "evidence_note": "La documentación nombra propiedades debajo del puente y la arqueología registra un estribo y ocupación cristiana temprana; la luz exacta y el tablero de 1550 no están restituidos.",
+          "change_note": "El puente medieval fue retenido dentro de un corredor artesanal y mercantil que continuó después de la conquista."
+        },
+        "en": {
+          "name": "Coal Bridge",
+          "function": "Crossing over the Darro between the funduq and commercial centre",
+          "summary": "The Coal Bridge continued as an urban reference in the sixteenth century and structured an active tannery district beside the Corral del Carbón.",
+          "evidence_note": "Documents name properties beneath the bridge, and archaeology records an abutment and early Christian occupation; the precise span and deck of 1550 have not been reconstructed.",
+          "change_note": "The medieval bridge was retained within an artisanal and mercantile corridor that continued after the conquest."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.carbon-bridge-sixteenth-century-name",
+          "topic": "chronology",
+          "text": {
+            "es": "Un inventario de bienes habices del siglo XVI menciona una curtiduría situada debajo del Puente del Carbón.",
+            "en": "A sixteenth-century habices inventory mentions a tannery located beneath the Coal Bridge."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-puente-carbon",
+              "locator": "Contexto histórico; inventario de bienes habices",
+              "supports": "Atestigua directamente el puente y su topónimo en el siglo XVI."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.carbon-bridge-archaeology",
+          "topic": "geometry",
+          "text": {
+            "es": "La excavación junto al Corral del Carbón documentó un estribo del puente y materiales de fases nazarí y cristiana temprana.",
+            "en": "Excavation beside the Corral del Carbón documented a bridge abutment and material from Nasrid and early Christian phases."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-puente-carbon",
+              "locator": "Excavación de 1992 y estudio cerámico",
+              "supports": "Aporta continuidad material sin restituir la totalidad del puente."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "near",
+          "target_id": "commerce.corral-carbon",
+          "note": {
+            "es": "El puente comunicaba el entorno de la alhóndiga con la orilla central de la medina.",
+            "en": "The bridge connected the funduq area with the central bank of the medina."
+          }
+        },
+        {
+          "relation": "adjacent_to",
+          "target_id": "water.darro",
+          "note": {
+            "es": "El paso y las tenerías dependían físicamente del corredor del Darro.",
+            "en": "The crossing and tanneries physically depended on the Darro corridor."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_line",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se importa el eje heredado como hipótesis de trazado revisable porque las fuentes sostienen la continuidad del elemento, no cada vértice de la línea.",
+          "en": "The inherited axis is imported as a reviewable alignment hypothesis because the sources support continuity of the element, not every line vertex."
+        },
+        "overlap_resolution": {
+          "es": "La línea no afirma anchura, márgenes, tablero, cubrimientos ni rectificaciones exactas hacia 1550 y conserva esas cuestiones para revisión geométrica.",
+          "en": "The line does not assert exact width, banks, deck, vaulting or realignments around 1550 and leaves those questions for geometric review."
+        }
+      }
+    }
+  ],
+  "deferred_feature_ids": [
+    "water.acequia-real-alhambra",
+    "royal.casa-castril",
+    "royal.casa-tiros",
+    "gate.fajalauza",
+    "gate.mawrur",
+    "walls.albaicin-north",
+    "walls.medina-lower",
+    "water.acequia-aynadamar",
+    "water.acequia-gorda",
+    "royal.generalife",
+    "gate.alhambra-arrabal",
+    "bridge.cadi",
+    "water.acequia-cadi",
+    "water.acequia-romayla"
+  ]
+}

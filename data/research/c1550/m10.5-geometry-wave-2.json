@@ -1,0 +1,975 @@
+{
+  "schema_version": 1,
+  "milestone": "M10.5",
+  "wave": "geometry-wave-2",
+  "period_id": "c1550",
+  "status": "ready_for_specialist_review",
+  "public_application_import": false,
+  "updated_on": "2026-10-02",
+  "scope_note": "Segunda ola geométrica conservadora: Fajalauza y cinco ejes principales de acequias se incorporan como hipótesis privadas in_review con controles y exclusiones explícitos; ocho entidades complejas permanecen aplazadas.",
+  "source_wave_path": "data/research/c1550/m10.5-geometry-wave-1.json",
+  "source_review_paths": [
+    "data/research/c1550/m10.5-source-review.json",
+    "data/research/c1550/m10.5-source-review-2.json",
+    "data/research/c1550/m10.5-source-review-3.json"
+  ],
+  "feature_ids": [
+    "gate.fajalauza",
+    "water.acequia-real-alhambra",
+    "water.acequia-aynadamar",
+    "water.acequia-gorda",
+    "water.acequia-cadi",
+    "water.acequia-romayla"
+  ],
+  "deferred_feature_ids": [
+    "royal.casa-castril",
+    "royal.casa-tiros",
+    "gate.mawrur",
+    "walls.albaicin-north",
+    "walls.medina-lower",
+    "royal.generalife",
+    "gate.alhambra-arrabal",
+    "bridge.cadi"
+  ],
+  "items": [
+    {
+      "feature_id": "gate.fajalauza",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Puerta de Fajalauza",
+          "function": "Acceso alto del Albaicín hacia Haza Grande y el camino de Guadix",
+          "summary": "La puerta nazarí continuaba probablemente como paso del recinto en torno a 1550, vinculada al borde del Albaicín y al ámbito alfarero extramuros.",
+          "evidence_note": "La fábrica conservada, el contexto arqueológico moderno y su representación cartográfica posterior sostienen continuidad, pero no resuelven cada reforma del pasadizo.",
+          "change_note": "El paso mantuvo la relación entre el barrio alto y su exterior, mientras su entorno productivo y su fábrica experimentaban cambios."
+        },
+        "en": {
+          "name": "Fajalauza Gate",
+          "function": "Upper Albaicín entrance towards Haza Grande and the Guadix road",
+          "summary": "The Nasrid gate probably continued as an enclosure passage around 1550, linked to the Albaicín edge and the extramural pottery area.",
+          "evidence_note": "The surviving fabric, early-modern archaeological context and later cartographic representation support continuity but do not resolve every alteration to the passage.",
+          "change_note": "The passage retained the relationship between the upper quarter and its exterior while its productive setting and fabric changed."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.fajalauza-continuity-probable",
+          "topic": "interpretation",
+          "text": {
+            "es": "La combinación de fábrica conservada, contexto de época moderna y cartografía de comienzos del XVII hace probable la continuidad de Fajalauza hacia 1550.",
+            "en": "The combination of surviving fabric, early-modern context and early seventeenth-century mapping makes Fajalauza’s continuity around 1550 probable."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-fajalauza-2008",
+              "locator": "Contextualización histórico-arqueológica del área",
+              "supports": "Relaciona la puerta, la cerca, el arrabal y la ocupación moderna del entorno."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.fajalauza-fabric-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "El pasadizo conservado contiene transformaciones y no puede asumirse íntegramente como estado de 1550.",
+            "en": "The surviving passage contains transformations and cannot be assumed wholesale as its 1550 state."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-fajalauza",
+              "locator": "Descripción institucional de la puerta",
+              "supports": "Describe fábrica y localización sin ofrecer una secuencia constructiva fechada."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "attached_to",
+          "target_id": "walls.albaicin-north",
+          "note": {
+            "es": "Fajalauza formaba uno de los accesos de la cerca exterior septentrional del Albaicín.",
+            "en": "Fajalauza formed one of the entrances through the Albaicín’s northern outer enclosure."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_site_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se conserva un punto sobre la puerta superviviente como referencia de sitio, no como planta del complejo defensivo.",
+          "en": "A point on the surviving gate is retained as a site reference, not as a plan of the defensive complex."
+        },
+        "overlap_resolution": {
+          "es": "El punto no representa torres, patio, lienzos conectados ni fases de reparación.",
+          "en": "The point does not represent towers, court, connected wall sections or repair phases."
+        }
+      }
+    },
+    {
+      "feature_id": "water.acequia-real-alhambra",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Acequia Real de la Alhambra",
+          "function": "Conducción principal de abastecimiento de Generalife y Alhambra",
+          "summary": "La Acequia Real continuaba haciendo posible el abastecimiento del Generalife y la Alhambra, pero la regulación cristiana y sustituciones del cauce impiden tratarla como una línea inalterada desde 1492.",
+          "evidence_note": "La continuidad funcional está bien documentada; el trazado conservado es discontinuo y la fase inmediatamente posterior a la conquista necesita una auditoría por tramos.",
+          "change_note": "El sistema heredado permaneció esencial, aunque cambió su gestión y partes de su materialidad después de la conquista."
+        },
+        "en": {
+          "name": "Royal Canal of the Alhambra",
+          "function": "Main water conduit supplying the Generalife and Alhambra",
+          "summary": "The Royal Canal continued to sustain the Generalife and Alhambra, but Christian regulation and channel replacements prevent treating it as an unchanged line from 1492.",
+          "evidence_note": "Functional continuity is well documented; the surviving course is discontinuous and the phase immediately after the conquest requires segment-by-segment audit.",
+          "change_note": "The inherited system remained essential, although its management and parts of its material fabric changed after the conquest."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.acequia-real-continuity",
+          "topic": "function",
+          "text": {
+            "es": "La Acequia Real siguió abasteciendo el Generalife, las huertas y la ciudad palatina durante la época cristiana.",
+            "en": "The Royal Canal continued to supply the Generalife, its orchards and the palatine city during the Christian period."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-real-acequia-2023",
+              "locator": "Resumen histórico y continuidad de la infraestructura",
+              "supports": "Continuidad prolongada de la conducción después de 1492."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.acequia-real-altered",
+          "topic": "transformation",
+          "text": {
+            "es": "Tras 1492 la conducción fue regulada y algunos sectores del cauce medieval fueron alterados o sustituidos.",
+            "en": "After 1492 the conduit was regulated and some stretches of the medieval channel were altered or replaced."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-real-acequia-2023",
+              "locator": "Evolución histórica tras la conquista",
+              "supports": "Alteración del sistema durante la época cristiana."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "routes_toward",
+          "target_id": "royal.alhambra",
+          "note": {
+            "es": "La acequia llevaba agua desde el Darro, atravesaba el Generalife y entraba en la Alhambra para alimentar su red secundaria.",
+            "en": "The canal carried water from the Darro through the Generalife and into the Alhambra to feed its secondary network."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_line",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se conserva el eje heredado como hipótesis revisable limitada por el registro de controles y exclusiones de la segunda ola.",
+          "en": "The inherited axis is retained as a reviewable hypothesis limited by the wave-two register of controls and exclusions."
+        },
+        "overlap_resolution": {
+          "es": "La línea no representa anchura, caja, ramales excluidos, tomas, repartidores ni pérdidas no georreferenciadas.",
+          "en": "The line does not represent width, channel structure, excluded branches, intakes, distributors or ungeoreferenced losses."
+        }
+      }
+    },
+    {
+      "feature_id": "water.acequia-aynadamar",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Acequia de Aynadamar",
+          "function": "Abastecimiento regulado del Albaicín y la Alcazaba",
+          "summary": "Aynadamar continuaba activa en la primera mitad del siglo XVI, llevando agua a aljibes, casas, huertas y grandes propiedades del Albaicín y la Alcazaba bajo un reparto municipal detallado.",
+          "evidence_note": "Las Ordenanzas confirman función y usuarios; el trazado publicado combina reconstrucción medieval, restos y controles posteriores y necesita auditoría por ramal.",
+          "change_note": "El sistema hidráulico heredado mantuvo su función esencial mientras su administración y algunos componentes se adaptaban al gobierno cristiano."
+        },
+        "en": {
+          "name": "Aynadamar Canal",
+          "function": "Regulated supply for the Albaicín and the Citadel",
+          "summary": "Aynadamar remained active in the first half of the sixteenth century, carrying water to cisterns, houses, orchards and major properties in the Albaicín and the Citadel under detailed municipal allocation.",
+          "evidence_note": "The Ordinances confirm function and users; the published route combines medieval reconstruction, remains and later controls and needs branch-by-branch audit.",
+          "change_note": "The inherited hydraulic system retained its essential role while its administration and some components adapted to Christian government."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.aynadamar-1538-supply",
+          "topic": "function",
+          "text": {
+            "es": "Las Ordenanzas de las Aguas documentan que Aynadamar abastecía aljibes, viviendas, huertas y propiedades del Albaicín y la Alcazaba.",
+            "en": "The Water Ordinances document that Aynadamar supplied cisterns, houses, orchards and properties in the Albaicín and the Citadel."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Apartado 2.2, acequia de Aynadamar o de Alfacar",
+              "supports": "Documenta usos, beneficiarios y distribución del agua en la primera mitad del XVI."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.aynadamar-route-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "La continuidad funcional no demuestra que todos los ramales representados para 1492 conservaran idéntico trazado en 1550.",
+            "en": "Functional continuity does not show that every branch represented for 1492 retained an identical course in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-fajalauza-2008",
+              "locator": "Resultados y contexto hidráulico de Cruz de Piedra",
+              "supports": "Aporta un control arqueológico puntual de un ramal, no una red urbana completa."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "routes_toward",
+          "target_id": "urban.albaicin",
+          "note": {
+            "es": "La conducción entraba en la ciudad alta y distribuía agua entre el Albaicín y la Alcazaba.",
+            "en": "The conduit entered the upper city and distributed water across the Albaicín and the Citadel."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_line",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se conserva el eje heredado como hipótesis revisable limitada por el registro de controles y exclusiones de la segunda ola.",
+          "en": "The inherited axis is retained as a reviewable hypothesis limited by the wave-two register of controls and exclusions."
+        },
+        "overlap_resolution": {
+          "es": "La línea no representa anchura, caja, ramales excluidos, tomas, repartidores ni pérdidas no georreferenciadas.",
+          "en": "The line does not represent width, channel structure, excluded branches, intakes, distributors or ungeoreferenced losses."
+        }
+      }
+    },
+    {
+      "feature_id": "water.acequia-gorda",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Acequia Gorda",
+          "function": "Sistema de riego, molinos y abastecimiento meridional",
+          "summary": "El sistema derivado del Genil seguía activo en la primera mitad del siglo XVI; su ramal del Realejo abastecía el barrio y movía numerosos molinos antes de reincorporarse a la red.",
+          "evidence_note": "La regulación documenta función y organización, pero el corredor c. 1492 sintetiza un cauce principal y derivaciones que deben distinguirse temporalmente.",
+          "change_note": "La infraestructura medieval fue retenida por su valor productivo y urbano, aunque reparto, administración y ramales evolucionaron."
+        },
+        "en": {
+          "name": "Acequia Gorda",
+          "function": "Irrigation, mills and southern urban supply system",
+          "summary": "The Genil-derived system remained active in the first half of the sixteenth century; its Realejo branch supplied the quarter and powered numerous mills before rejoining the network.",
+          "evidence_note": "The regulations document function and organisation, but the c. 1492 corridor synthesises a main channel and branches that must be distinguished temporally.",
+          "change_note": "The medieval infrastructure was retained for its productive and urban value, although allocation, administration and branches evolved."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.gorda-realejo-branch-1538",
+          "topic": "function",
+          "text": {
+            "es": "Las Ordenanzas describen la acequia del Realejo como ramal de la Acequia Gorda del Genil, asociado al abastecimiento y a molinos.",
+            "en": "The Ordinances describe the Realejo canal as a branch of the Genil’s Acequia Gorda, associated with supply and mills."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Apartado 2.1 y nota 36, ramal del Realejo",
+              "supports": "Relaciona el ramal urbano con el sistema de Gorda y su función productiva."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.gorda-network-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "El funcionamiento del sistema no autoriza a copiar como una sola línea todos los repartidores y derivaciones reconstruidos para 1492.",
+            "en": "Operation of the system does not authorise copying all distributors and reconstructed 1492 branches as a single line."
+          },
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5 y síntesis de Gorda y sus derivaciones",
+              "supports": "Distingue cauce principal y repartimientos dentro de una reconstrucción histórica amplia."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "part_of_program_with",
+          "target_id": "water.acequia-realejo",
+          "note": {
+            "es": "El ramal del Realejo formaba parte del sistema derivado de Gorda y debe conservarse como entidad relacionada, no fusionada.",
+            "en": "The Realejo branch formed part of the Gorda-derived system and should remain a related, not merged, entity."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_line",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se conserva el eje heredado como hipótesis revisable limitada por el registro de controles y exclusiones de la segunda ola.",
+          "en": "The inherited axis is retained as a reviewable hypothesis limited by the wave-two register of controls and exclusions."
+        },
+        "overlap_resolution": {
+          "es": "La línea no representa anchura, caja, ramales excluidos, tomas, repartidores ni pérdidas no georreferenciadas.",
+          "en": "The line does not represent width, channel structure, excluded branches, intakes, distributors or ungeoreferenced losses."
+        }
+      }
+    },
+    {
+      "feature_id": "water.acequia-cadi",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Acequia del Cadí",
+          "function": "Canal de riego del sistema del Genil y los pagos meridionales",
+          "summary": "La Acequia del Cadí estaba activa y regulada en 1531–1533, con usos agrícolas y arrendamientos documentados que la sitúan firmemente dentro del sistema hidráulico de c. 1550.",
+          "evidence_note": "La presencia y administración son seguras; las ordenanzas no proporcionan por sí solas un eje cartográfico continuo para todos los tramos urbanos y rurales.",
+          "change_note": "La infraestructura andalusí continuó bajo una regulación municipal cristiana formalizada, con continuidad material y cambio administrativo."
+        },
+        "en": {
+          "name": "Cadí Canal",
+          "function": "Irrigation canal of the Genil system and southern agricultural districts",
+          "summary": "The Cadí Canal was active and regulated in 1531–1533, with documented agricultural uses and leases that place it firmly within the hydraulic system around 1550.",
+          "evidence_note": "Its presence and administration are secure; the ordinances alone do not provide a continuous mapped axis for every urban and rural section.",
+          "change_note": "The Andalusi infrastructure continued under formalised Christian municipal regulation, combining material continuity with administrative change."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.cadi-canal-ordinances-1531",
+          "topic": "chronology",
+          "text": {
+            "es": "Unas ordenanzas específicas regularon la Acequia del Cadí en 1531.",
+            "en": "Specific ordinances regulated the Cadí Canal in 1531."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-cadi-ordinances-2025",
+              "locator": "Ordenanzas de la acequia del Cadí de 1531",
+              "supports": "Atestigua directamente su funcionamiento próximo al año representativo."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.cadi-canal-lease-1533",
+          "topic": "function",
+          "text": {
+            "es": "Un arrendamiento de 1533 documenta el uso agrícola de su agua en el pago de Daralgazi o Casa de las Gallinas.",
+            "en": "A 1533 lease documents agricultural use of its water in the district of Daralgazi or Casa de las Gallinas."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-cadi-ordinances-2025",
+              "locator": "Arrendamiento de agua de 1533",
+              "supports": "Aporta usuario, territorio y administración sin definir todo el trazado."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "retains",
+          "target_id": "water.genil",
+          "note": {
+            "es": "La acequia derivaba del sistema del Genil y distribuía sus aguas hacia pagos agrícolas.",
+            "en": "The canal derived from the Genil system and distributed its water toward agricultural districts."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_line",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se conserva el eje heredado como hipótesis revisable limitada por el registro de controles y exclusiones de la segunda ola.",
+          "en": "The inherited axis is retained as a reviewable hypothesis limited by the wave-two register of controls and exclusions."
+        },
+        "overlap_resolution": {
+          "es": "La línea no representa anchura, caja, ramales excluidos, tomas, repartidores ni pérdidas no georreferenciadas.",
+          "en": "The line does not represent width, channel structure, excluded branches, intakes, distributors or ungeoreferenced losses."
+        }
+      }
+    },
+    {
+      "feature_id": "water.acequia-romayla",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Acequia de Romayla",
+          "function": "Canal derivado del Darro para riego, abastecimiento y usos urbanos",
+          "summary": "La Acequia de Romayla estaba activa en la primera mitad del siglo XVI y distribuía agua por ramales que alcanzaban Bibalmazda, Zacatín, Bib-Rambla, San Francisco y la Alhóndiga del Carbón.",
+          "evidence_note": "Las ordenanzas documentan funcionamiento, limpieza y destinos, pero no convierten automáticamente cada descripción itineraria en una polilínea métrica.",
+          "change_note": "La acequia heredada continuó bajo administración cristiana y sostuvo una red urbana transformada de instituciones, comercio y manufactura."
+        },
+        "en": {
+          "name": "Romayla Canal",
+          "function": "Darro-derived canal for irrigation, supply and urban uses",
+          "summary": "The Romayla Canal was active in the first half of the sixteenth century and distributed water through branches reaching Bibalmazda, Zacatín, Bib-Rambla, San Francisco and the Corral del Carbón.",
+          "evidence_note": "The ordinances document operation, cleaning and destinations, but do not automatically turn each itinerary description into a metric polyline.",
+          "change_note": "The inherited canal continued under Christian administration and sustained a transformed urban network of institutions, commerce and manufacture."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.romayla-ordinances-1538",
+          "topic": "chronology",
+          "text": {
+            "es": "Las ordenanzas de 1538 regulaban la limpieza y vigilancia de la Acequia de Romayla desde su presa hasta los adarves.",
+            "en": "The 1538 ordinances regulated cleaning and inspection of the Romayla Canal from its weir to the city walls."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Apartado sobre Romayla, Axares y Darrillo",
+              "supports": "Atestigua continuidad operativa y mantenimiento institucional."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.romayla-urban-branches",
+          "topic": "function",
+          "text": {
+            "es": "Sus ramales abastecían destinos urbanos como Zacatín, Bib-Rambla, San Francisco y la Alhóndiga del Carbón.",
+            "en": "Its branches supplied urban destinations including Zacatín, Bib-Rambla, San Francisco and the Corral del Carbón."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Apartado 2.1, ramales de Romayla",
+              "supports": "Documenta alcance funcional sin fijar por sí solo todos los ejes."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "retains",
+          "target_id": "water.darro",
+          "note": {
+            "es": "La acequia derivaba del Darro y formaba parte de su red arterial.",
+            "en": "The canal derived from the Darro and formed part of its arterial network."
+          }
+        },
+        {
+          "relation": "routes_toward",
+          "target_id": "commerce.corral-carbon",
+          "note": {
+            "es": "Uno de los ramales documentados alcanzaba la Alhóndiga del Carbón.",
+            "en": "One documented branch reached the Corral del Carbón."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_line",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se conserva el eje heredado como hipótesis revisable limitada por el registro de controles y exclusiones de la segunda ola.",
+          "en": "The inherited axis is retained as a reviewable hypothesis limited by the wave-two register of controls and exclusions."
+        },
+        "overlap_resolution": {
+          "es": "La línea no representa anchura, caja, ramales excluidos, tomas, repartidores ni pérdidas no georreferenciadas.",
+          "en": "The line does not represent width, channel structure, excluded branches, intakes, distributors or ungeoreferenced losses."
+        }
+      }
+    }
+  ],
+  "selection_decisions": [
+    {
+      "feature_id": "gate.fajalauza",
+      "decision": "promote_in_review",
+      "rationale": {
+        "es": "La fábrica conservada, el contexto arqueológico y la cartografía histórica permiten un punto de sitio revisable.",
+        "en": "Surviving fabric, archaeological context and historical mapping support a reviewable site point."
+      },
+      "next_requirement": {
+        "es": "Mantener el punto en revisión y no ampliarlo a una huella defensiva sin lectura arquitectónica por fases.",
+        "en": "Keep the point in review and do not expand it into a defensive footprint without phased architectural analysis."
+      },
+      "source_refs": [
+        "source.granada-fajalauza",
+        "source.junta-fajalauza-2008",
+        "source.ugr-vico-2023"
+      ]
+    },
+    {
+      "feature_id": "water.acequia-real-alhambra",
+      "decision": "promote_in_review",
+      "rationale": {
+        "es": "Los pasos por Generalife y Torre del Agua controlan el eje principal; ramales y reparaciones quedan excluidos.",
+        "en": "The Generalife and Water Tower passages control the main axis; branches and repairs remain excluded."
+      },
+      "next_requirement": {
+        "es": "Revisar por fases los componentes excluidos antes de ampliar la geometría.",
+        "en": "Review excluded components by phase before expanding the geometry."
+      },
+      "source_refs": [
+        "source.alhambra-real-acequia",
+        "source.alhambra-torre-agua",
+        "source.alhambra-real-acequia-2023"
+      ]
+    },
+    {
+      "feature_id": "water.acequia-aynadamar",
+      "decision": "promote_in_review",
+      "rationale": {
+        "es": "La regulación de 1538 y los controles publicados sostienen la red principal como hipótesis aproximada.",
+        "en": "The 1538 regulation and published controls support the principal network as an approximate hypothesis."
+      },
+      "next_requirement": {
+        "es": "No añadir ramales o acometidas sin un control documental y espacial individual.",
+        "en": "Do not add branches or service connections without an individual documentary and spatial control."
+      },
+      "source_refs": [
+        "source.ugr-water-ordinances-2022",
+        "source.ujaen-water-route-2025",
+        "source.granada-pepri-islamic-city"
+      ]
+    },
+    {
+      "feature_id": "water.acequia-gorda",
+      "decision": "promote_in_review",
+      "rationale": {
+        "es": "El cauce principal se separa expresamente de sus ramales y cuenta con controles documentales y topográficos.",
+        "en": "The main channel is explicitly separated from its branches and has documentary and topographic controls."
+      },
+      "next_requirement": {
+        "es": "Mantener repartidores y ramales como entidades independientes hasta su propia auditoría.",
+        "en": "Keep distributors and branches as separate entities until independently audited."
+      },
+      "source_refs": [
+        "source.ugr-water-ordinances-2022",
+        "source.ujaen-water-route-2025",
+        "source.dera-hydrology"
+      ]
+    },
+    {
+      "feature_id": "water.acequia-cadi",
+      "decision": "promote_in_review",
+      "rationale": {
+        "es": "Las ordenanzas de 1531 y el arrendamiento de 1533 aseguran funcionamiento; el eje se limita al corredor urbano generalizado.",
+        "en": "The 1531 ordinances and 1533 lease establish operation; the axis is limited to the generalised urban corridor."
+      },
+      "next_requirement": {
+        "es": "Georreferenciar por separado pagos, tomas y bifurcaciones antes de incorporarlos.",
+        "en": "Georeference districts, intakes and bifurcations separately before incorporating them."
+      },
+      "source_refs": [
+        "source.ugr-cadi-ordinances-2025",
+        "source.ujaen-water-route-2025",
+        "source.junta-camino-cementerio-2014"
+      ]
+    },
+    {
+      "feature_id": "water.acequia-romayla",
+      "decision": "promote_in_review",
+      "rationale": {
+        "es": "El eje principal queda separado de los ramales documentados y de la conexión disputada con el Sagrario.",
+        "en": "The main axis is separated from documented branches and the disputed connection to the Sagrario."
+      },
+      "next_requirement": {
+        "es": "Derivar cada ramal urbano como geometría independiente solo cuando tenga controles suficientes.",
+        "en": "Derive each urban branch as separate geometry only when sufficient controls exist."
+      },
+      "source_refs": [
+        "source.ugr-water-ordinances-2022",
+        "source.ujaen-water-route-2025",
+        "source.granada-pepri-islamic-city"
+      ]
+    },
+    {
+      "feature_id": "royal.casa-castril",
+      "decision": "remain_deferred",
+      "rationale": {
+        "es": "La presencia y fase anterior a 1560 siguen sin demostrarse.",
+        "en": "Presence and a pre-1560 phase remain unproven."
+      },
+      "next_requirement": {
+        "es": "Obtener datación constructiva y lectura de fases.",
+        "en": "Obtain construction dating and phase analysis."
+      },
+      "source_refs": [
+        "source.granada-casa-castril"
+      ]
+    },
+    {
+      "feature_id": "royal.casa-tiros",
+      "decision": "remain_deferred",
+      "rationale": {
+        "es": "La cronología de la fábrica dentro de 1540–1560 sigue sin resolver.",
+        "en": "The fabric chronology within 1540–1560 remains unresolved."
+      },
+      "next_requirement": {
+        "es": "Obtener datación de obra y separar fases anteriores y posteriores.",
+        "en": "Obtain construction dating and separate earlier and later phases."
+      },
+      "source_refs": [
+        "source.granada-casa-tiros"
+      ]
+    },
+    {
+      "feature_id": "gate.mawrur",
+      "decision": "remain_deferred",
+      "rationale": {
+        "es": "No se ha demostrado la presencia del paso hacia 1550.",
+        "en": "The passage has not been shown to survive around 1550."
+      },
+      "next_requirement": {
+        "es": "Localizar una descripción o representación fechada del siglo XVI.",
+        "en": "Locate a dated sixteenth-century description or depiction."
+      },
+      "source_refs": [
+        "source.granada-mauror-gate",
+        "source.junta-aguado-2009"
+      ]
+    },
+    {
+      "feature_id": "walls.albaicin-north",
+      "decision": "remain_deferred",
+      "rationale": {
+        "es": "La línea mezcla fábrica conservada, huecos y conexiones aproximadas.",
+        "en": "The line mixes surviving fabric, gaps and approximate connections."
+      },
+      "next_requirement": {
+        "es": "Completar una matriz de supervivencia y cronología por segmentos.",
+        "en": "Complete a segment-by-segment survival and chronology matrix."
+      },
+      "source_refs": [
+        "source.granada-albaicin-nasrid-wall",
+        "source.ugr-vico-2023"
+      ]
+    },
+    {
+      "feature_id": "walls.medina-lower",
+      "decision": "remain_deferred",
+      "rationale": {
+        "es": "El perímetro sintetiza muchos tramos con estados materiales desiguales.",
+        "en": "The perimeter synthesises many sections with unequal material states."
+      },
+      "next_requirement": {
+        "es": "Completar una matriz por segmentos y conservar los huecos reales.",
+        "en": "Complete a segment matrix and preserve genuine gaps."
+      },
+      "source_refs": [
+        "source.granada-centre-plan",
+        "source.junta-western-wall-2006",
+        "source.ugr-vico-2023"
+      ]
+    },
+    {
+      "feature_id": "royal.generalife",
+      "decision": "remain_deferred",
+      "rationale": {
+        "es": "La envolvente no separa palacio, patios, huertas, acequia y obras cristianas.",
+        "en": "The envelope does not separate palace, courts, orchards, canal and Christian works."
+      },
+      "next_requirement": {
+        "es": "Obtener y georreferenciar planimetría de fases.",
+        "en": "Obtain and georeference phase plans."
+      },
+      "source_refs": [
+        "source.ugr-generalife-christian-2017",
+        "source.alhambra-plan-director-landscape"
+      ]
+    },
+    {
+      "feature_id": "gate.alhambra-arrabal",
+      "decision": "remain_deferred",
+      "rationale": {
+        "es": "Un punto único confundiría la puerta nazarí con baluarte, caballerizas y Puerta de Hierro.",
+        "en": "One point would conflate the Nasrid gate, bastion, stables and Iron Gate."
+      },
+      "next_requirement": {
+        "es": "Registrar por separado componentes y fases.",
+        "en": "Register components and phases separately."
+      },
+      "source_refs": [
+        "source.alhambra-arrabal-study-2022",
+        "source.alhambra-gates"
+      ]
+    },
+    {
+      "feature_id": "bridge.cadi",
+      "decision": "remain_deferred",
+      "rationale": {
+        "es": "Identidad, forma y supervivencia del supuesto puente siguen sin resolver.",
+        "en": "The supposed bridge’s identity, form and survival remain unresolved."
+      },
+      "next_requirement": {
+        "es": "Resolver la cronología del arco y el alcance material mediante documentación y arqueología.",
+        "en": "Resolve arch chronology and material extent through documents and archaeology."
+      },
+      "source_refs": [
+        "source.granada-tableros-cadi",
+        "source.alhambra-banuelo"
+      ]
+    }
+  ],
+  "control_registers": [
+    {
+      "feature_id": "gate.fajalauza",
+      "representation": "retained_site_point",
+      "inherited_geometry_variant_id": "c1492.gate.fajalauza",
+      "audit_status": "in_review",
+      "controls": [
+        {
+          "control_id": "control.fajalauza-surviving-gate",
+          "kind": "surviving_fabric",
+          "applies_to": "Punto del acceso conservado",
+          "confidence": "secure",
+          "source_refs": [
+            "source.granada-fajalauza",
+            "source.junta-fajalauza-2008"
+          ],
+          "note": {
+            "es": "La fábrica conservada fija el sitio del acceso, sin convertir el punto en una planta del complejo.",
+            "en": "Surviving fabric fixes the entrance site without turning the point into a plan of the complex."
+          }
+        },
+        {
+          "control_id": "control.fajalauza-vico-wall-connection",
+          "kind": "historical_cartography",
+          "applies_to": "Relación con la cerca hacia finales del siglo XVI",
+          "confidence": "probable",
+          "source_refs": [
+            "source.ugr-vico-2023",
+            "source.granada-albaicin-wall-route"
+          ],
+          "note": {
+            "es": "La vista histórica y el recorrido de la cerca sostienen la continuidad del acceso y su conexión general, no cada fase constructiva.",
+            "en": "The historic view and wall route support continuity of the entrance and its general connection, not every construction phase."
+          }
+        }
+      ],
+      "excluded_components": [
+        {
+          "es": "No se reconstruyen torres, patio, ramales de muralla ni reparaciones posteriores.",
+          "en": "Towers, court, wall branches and later repairs are not reconstructed."
+        }
+      ]
+    },
+    {
+      "feature_id": "water.acequia-real-alhambra",
+      "representation": "retained_line",
+      "inherited_geometry_variant_id": "c1492.water.acequia-real-alhambra",
+      "audit_status": "in_review",
+      "controls": [
+        {
+          "control_id": "control.real-generalife-water-route",
+          "kind": "surviving_fabric",
+          "applies_to": "Paso por Generalife y acceso a la Alhambra",
+          "confidence": "secure",
+          "source_refs": [
+            "source.alhambra-real-acequia",
+            "source.alhambra-torre-agua"
+          ],
+          "note": {
+            "es": "El Patio de la Acequia y el acueducto junto a la Torre del Agua controlan el corredor principal representado.",
+            "en": "The Court of the Canal and aqueduct beside the Water Tower control the represented main corridor."
+          }
+        },
+        {
+          "control_id": "control.real-sixteenth-century-continuity",
+          "kind": "near_period_documentary",
+          "applies_to": "Continuidad y reparación bajo administración cristiana",
+          "confidence": "secure",
+          "source_refs": [
+            "source.ugr-generalife-christian-2017",
+            "source.alhambra-real-acequia-2023"
+          ],
+          "note": {
+            "es": "La documentación sostiene el funcionamiento del sistema, pero no fecha de forma uniforme cada fábrica visible.",
+            "en": "Documentation supports operation of the system but does not uniformly date every visible structure."
+          }
+        }
+      ],
+      "excluded_components": [
+        {
+          "es": "Quedan fuera la toma del Darro, ramales secundarios, depósitos y reparaciones sin fase individual.",
+          "en": "The Darro intake, secondary branches, reservoirs and repairs without individual phasing remain excluded."
+        }
+      ]
+    },
+    {
+      "feature_id": "water.acequia-aynadamar",
+      "representation": "retained_line",
+      "inherited_geometry_variant_id": "c1492.water.acequia-aynadamar",
+      "audit_status": "in_review",
+      "controls": [
+        {
+          "control_id": "control.aynadamar-ordinances-1538",
+          "kind": "near_period_documentary",
+          "applies_to": "Sistema y usuarios regulados en 1538",
+          "confidence": "secure",
+          "source_refs": [
+            "source.ugr-water-ordinances-2022"
+          ],
+          "note": {
+            "es": "Las ordenanzas acreditan continuidad operativa y destinos en Albaicín y Alcazaba.",
+            "en": "The ordinances establish operational continuity and destinations in the Albaicín and Alcazaba."
+          }
+        },
+        {
+          "control_id": "control.aynadamar-urban-branches",
+          "kind": "topographic_alignment",
+          "applies_to": "Cinco ramales urbanos generalizados",
+          "confidence": "approximate",
+          "source_refs": [
+            "source.ujaen-water-route-2025",
+            "source.granada-pepri-islamic-city"
+          ],
+          "note": {
+            "es": "Los ramales siguen controles publicados y topografía urbana; sus extremos no representan acometidas excavadas.",
+            "en": "Branches follow published controls and urban topography; their endpoints do not represent excavated service connections."
+          }
+        }
+      ],
+      "excluded_components": [
+        {
+          "es": "No se incluye la captación rural completa ni se infieren derivaciones entre topónimos no controlados.",
+          "en": "The complete rural intake is not included, and branches between uncontrolled place names are not inferred."
+        }
+      ]
+    },
+    {
+      "feature_id": "water.acequia-gorda",
+      "representation": "retained_line",
+      "inherited_geometry_variant_id": "c1492.water.acequia-gorda",
+      "audit_status": "in_review",
+      "controls": [
+        {
+          "control_id": "control.gorda-ordinances-1538",
+          "kind": "near_period_documentary",
+          "applies_to": "Cauce principal y reparto regulados en 1538",
+          "confidence": "secure",
+          "source_refs": [
+            "source.ugr-water-ordinances-2022"
+          ],
+          "note": {
+            "es": "La regulación confirma el sistema activo en la primera mitad del siglo XVI.",
+            "en": "Regulation confirms the system was active in the first half of the sixteenth century."
+          }
+        },
+        {
+          "control_id": "control.gorda-main-corridor",
+          "kind": "topographic_alignment",
+          "applies_to": "Eje principal urbano y periurbano",
+          "confidence": "approximate",
+          "source_refs": [
+            "source.ujaen-water-route-2025",
+            "source.dera-hydrology"
+          ],
+          "note": {
+            "es": "El eje retiene solo el corredor principal contrastado con cauces; los repartidores se tratan como entidades separadas.",
+            "en": "The axis retains only the main corridor checked against watercourses; distributors are treated as separate entities."
+          }
+        }
+      ],
+      "excluded_components": [
+        {
+          "es": "Se excluyen el ramal del Realejo, otros repartidores, anchura de caja y obras posteriores.",
+          "en": "The Realejo branch, other distributors, channel width and later works are excluded."
+        }
+      ]
+    },
+    {
+      "feature_id": "water.acequia-cadi",
+      "representation": "retained_line",
+      "inherited_geometry_variant_id": "c1492.water.acequia-cadi",
+      "audit_status": "in_review",
+      "controls": [
+        {
+          "control_id": "control.cadi-ordinances-1531",
+          "kind": "near_period_documentary",
+          "applies_to": "Ordenanzas de 1531 y arrendamiento de 1533",
+          "confidence": "secure",
+          "source_refs": [
+            "source.ugr-cadi-ordinances-2025"
+          ],
+          "note": {
+            "es": "La evidencia fecha funcionamiento, administración y uso agrícola muy cerca del corte representado.",
+            "en": "The evidence dates operation, administration and agricultural use very close to the represented slice."
+          }
+        },
+        {
+          "control_id": "control.cadi-southern-corridor",
+          "kind": "topographic_alignment",
+          "applies_to": "Corredor alto hacia Mártires, Antequeruela y Mauror",
+          "confidence": "approximate",
+          "source_refs": [
+            "source.ujaen-water-route-2025",
+            "source.junta-camino-cementerio-2014"
+          ],
+          "note": {
+            "es": "La línea expresa el corredor topográfico publicado y no cada toma o pago mencionado por las ordenanzas.",
+            "en": "The line expresses the published topographic corridor and not every intake or district named in the ordinances."
+          }
+        }
+      ],
+      "excluded_components": [
+        {
+          "es": "Quedan fuera la captación de Aguas Blancas, pagos exteriores, tomas, bifurcaciones y pérdidas no georreferenciadas.",
+          "en": "The Aguas Blancas intake, outer districts, intakes, bifurcations and ungeoreferenced losses remain excluded."
+        }
+      ]
+    },
+    {
+      "feature_id": "water.acequia-romayla",
+      "representation": "retained_line",
+      "inherited_geometry_variant_id": "c1492.water.acequia-romayla",
+      "audit_status": "in_review",
+      "controls": [
+        {
+          "control_id": "control.romayla-ordinances-1538",
+          "kind": "near_period_documentary",
+          "applies_to": "Limpieza, vigilancia y destinos regulados en 1538",
+          "confidence": "secure",
+          "source_refs": [
+            "source.ugr-water-ordinances-2022"
+          ],
+          "note": {
+            "es": "Las ordenanzas acreditan el cauce activo y una red de ramales urbanos.",
+            "en": "The ordinances establish an active main channel and a network of urban branches."
+          }
+        },
+        {
+          "control_id": "control.romayla-main-axis",
+          "kind": "topographic_alignment",
+          "applies_to": "Cauce principal por Avellano y ladera de la Sabika",
+          "confidence": "approximate",
+          "source_refs": [
+            "source.ujaen-water-route-2025",
+            "source.granada-pepri-islamic-city"
+          ],
+          "note": {
+            "es": "La variante conserva solo el eje principal del mapa publicado y no fuerza un enlace directo al Sagrario.",
+            "en": "The variant retains only the main axis from the published map and does not force a direct link to the Sagrario."
+          }
+        }
+      ],
+      "excluded_components": [
+        {
+          "es": "Los ramales hacia Zacatín, Bib-Rambla, San Francisco y Corral del Carbón permanecen sin geometría.",
+          "en": "Branches toward Zacatín, Bib-Rambla, San Francisco and Corral del Carbón remain without geometry."
+        }
+      ]
+    }
+  ]
+}

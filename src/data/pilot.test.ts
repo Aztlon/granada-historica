@@ -19,6 +19,18 @@ describe('M7 pilot route', () => {
     ])
   })
 
+  it('separates the modern Madraza place from its historical feature', () => {
+    const stop = pilotRoute.stops.find((candidate) => candidate.slug === 'madraza')
+
+    expect(stop?.id).toBe('place.madraza-yusufiyya')
+    expect(stop?.title).toEqual({
+      es: 'Palacio de la Madraza',
+      en: 'Palacio de la Madraza',
+    })
+    expect(stop?.primary_feature_id).toBe('religious.madraza-yusufiyya')
+    expect(englishFeatureTranslations['religious.madraza-yusufiyya'].name).toBe('Yusufiyya Madrasa')
+  })
+
   it('parses durable route and place paths', () => {
     expect(parseAppRoute('/granada-historica/route/bib-rambla/').kind).toBe('route')
     expect(parseAppRoute('/granada-historica/place/zacatin/').place?.id).toBe('place.zacatin')

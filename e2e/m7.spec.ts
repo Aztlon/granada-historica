@@ -5,7 +5,7 @@ const stops = [
   ['bib-rambla', 'Puerta de Bibarrambla'],
   ['zacatin', 'Zacatín'],
   ['alcaiceria', 'Alcaicería'],
-  ['madraza', 'Madraza Yusufiyya'],
+  ['madraza', 'Palacio de la Madraza'],
   ['mezquita-mayor', 'Mezquita Mayor de la medina'],
 ] as const
 
@@ -60,7 +60,18 @@ test('switches to complete English pilot content', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'How do we know?' })).toBeVisible()
 })
 
-test('does not request location before the second opt-in step', async ({ page, context }) => {
+test('keeps the Madraza place name distinct from the historical institution', async ({ page }) => {
+  await page.goto('place/madraza/?lang=es')
+  await expect(page.getByRole('heading', { name: 'Palacio de la Madraza' })).toBeVisible()
+  await page.getByRole('button', { name: 'Abrir la ficha histórica completa' }).click()
+  await expect(page.getByRole('heading', { name: 'Madraza Yusufiyya' })).toBeVisible()
+
+  await page.goto('place/madraza/?lang=en&feature=religious.madraza-yusufiyya')
+  await expect(page.getByRole('heading', { name: 'Yusufiyya Madrasa' })).toBeVisible()
+  await expect(page.getByText('Palacio de la Madraza', { exact: true }).first()).toBeVisible()
+})
+
+test('tracks location privately and supports passive pan and recenter', async ({ page }, testInfo) => {
   const applicationRequests: string[] = []
   const consoleMessages: string[] = []
   page.on('request', (request) => {
@@ -68,14 +79,63 @@ test('does not request location before the second opt-in step', async ({ page, c
     if (url.origin === 'http://127.0.0.1:4173') applicationRequests.push(url.href)
   })
   page.on('console', (message) => consoleMessages.push(message.text()))
-  await context.grantPermissions(['geolocation'])
-  await context.setGeolocation({ longitude: -3.59975, latitude: 37.17464 })
+  await page.addInitScript(() => {
+    let update: PositionCallback | null = null
+    const position = (longitude: number, latitude: number): GeolocationPosition => ({
+      coords: { latitude, longitude, accuracy: 18, altitude: null, altitudeAccuracy: null, heading: null, speed: null },
+      timestamp: Date.now(),
+      toJSON: () => ({}),
+    })
+    Object.defineProperty(navigator, 'geolocation', {
+      configurable: true,
+      value: {
+        watchPosition(success: PositionCallback) {
+          update = success
+          queueMicrotask(() => success(position(-3.59975, 37.17464)))
+          return 1
+        },
+        clearWatch() { update = null },
+      },
+    })
+    Object.defineProperty(window, '__setTestGeolocation', {
+      value: (longitude: number, latitude: number) => update?.(position(longitude, latitude)),
+    })
+  })
   await page.goto('place/bib-rambla/?lang=en')
   await page.getByRole('button', { name: 'Use my location' }).click()
-  await expect(page.getByText(/used once on this device/)).toBeVisible()
-  expect(page.url()).not.toContain('latitude')
-  await page.getByRole('button', { name: 'Continue' }).click()
   await expect(page.getByText(/Nearest stop: Bibarrambla Gate/)).toBeVisible()
+  await expect(page.getByText(/updates while this page is open/)).toBeVisible()
+  await page.evaluate(() => {
+    (window as typeof window & { __setTestGeolocation: (longitude: number, latitude: number) => void })
+      .__setTestGeolocation(-3.5982757, 37.176086)
+  })
+  await expect(page.getByText(/Nearest stop: Palacio de la Madraza/)).toBeVisible()
+  await page.getByRole('button', { name: 'Show the full map' }).click()
+  const recenter = page.getByRole('button', { name: 'Recenter on my location' })
+  await expect(recenter).toHaveAttribute('aria-pressed', 'true')
+  if (testInfo.project.name === 'chromium-desktop') {
+    await page.waitForTimeout(800)
+    const map = page.locator('#map-canvas')
+    const dragPoint = await map.evaluate((container) => {
+      const bounds = container.getBoundingClientRect()
+      for (let y = bounds.top + 30; y < bounds.bottom - 30; y += 30) {
+        for (let x = bounds.left + 30; x < bounds.right - 30; x += 30) {
+          const target = document.elementFromPoint(x, y)
+          if (target && container.contains(target) && target.tagName === 'CANVAS') return { x, y }
+        }
+      }
+      return null
+    })
+    if (!dragPoint) throw new Error('An unobscured map point was unavailable')
+    const { x: dragX, y: dragY } = dragPoint
+    await page.mouse.move(dragX, dragY)
+    await page.mouse.down()
+    await page.mouse.move(dragX + 80, dragY, { steps: 4 })
+    await page.mouse.up()
+    await expect(recenter).toHaveAttribute('aria-pressed', 'false')
+    await recenter.click()
+    await expect(recenter).toHaveAttribute('aria-pressed', 'true')
+  }
   expect(page.url()).not.toMatch(/-?\d+\.\d{4}/)
   expect(await page.evaluate(() => [localStorage.length, sessionStorage.length])).toEqual([0, 0])
   expect(applicationRequests.join('\n')).not.toMatch(/37\.17464|-3\.59975/)
@@ -88,7 +148,7 @@ test('handles denied and low-accuracy location without blocking the route', asyn
     Object.defineProperty(navigator, 'geolocation', {
       configurable: true,
       value: {
-        getCurrentPosition(success: PositionCallback, failure: PositionErrorCallback) {
+        watchPosition(success: PositionCallback, failure: PositionErrorCallback) {
           calls += 1
           if (calls === 1) {
             failure({ code: 1, message: 'denied', PERMISSION_DENIED: 1, POSITION_UNAVAILABLE: 2, TIMEOUT: 3 } as GeolocationPositionError)
@@ -99,16 +159,16 @@ test('handles denied and low-accuracy location without blocking the route', asyn
               toJSON: () => ({}),
             })
           }
+          return calls
         },
+        clearWatch() {},
       },
     })
   })
   await page.goto('place/bib-rambla/?lang=en')
   await page.getByRole('button', { name: 'Use my location' }).click()
-  await page.getByRole('button', { name: 'Continue' }).click()
   await expect(page.getByText(/Location permission was denied/)).toBeVisible()
   await page.getByRole('button', { name: 'Try again' }).click()
-  await page.getByRole('button', { name: 'Continue' }).click()
   await expect(page.getByText(/low-accuracy fix/)).toBeVisible()
   await page.getByRole('button', { name: 'Stop using my location' }).click()
   await expect(page.getByRole('button', { name: 'Use my location' })).toBeVisible()
@@ -130,15 +190,16 @@ for (const [code, expected] of [
       Object.defineProperty(navigator, 'geolocation', {
         configurable: true,
         value: {
-          getCurrentPosition(_success: PositionCallback, failure: PositionErrorCallback) {
+          watchPosition(_success: PositionCallback, failure: PositionErrorCallback) {
             failure({ code: errorCode, message: 'test error', PERMISSION_DENIED: 1, POSITION_UNAVAILABLE: 2, TIMEOUT: 3 } as GeolocationPositionError)
+            return 1
           },
+          clearWatch() {},
         },
       })
     }, code)
     await page.goto('place/bib-rambla/?lang=en')
     await page.getByRole('button', { name: 'Use my location' }).click()
-    await page.getByRole('button', { name: 'Continue' }).click()
     await expect(page.getByText(new RegExp(expected))).toBeVisible()
     await expect(page.getByRole('button', { name: 'Try again' })).toBeVisible()
   })
@@ -150,7 +211,6 @@ test('handles an unsupported browser', async ({ page }) => {
   })
   await page.goto('place/bib-rambla/?lang=en')
   await page.getByRole('button', { name: 'Use my location' }).click()
-  await page.getByRole('button', { name: 'Continue' }).click()
   await expect(page.getByText('Location is unavailable on this device.')).toBeVisible()
 })
 
@@ -159,7 +219,6 @@ test('reports an outside-pilot fix without leaving the route', async ({ page, co
   await context.setGeolocation({ longitude: -3.7038, latitude: 40.4168 })
   await page.goto('place/bib-rambla/?lang=en')
   await page.getByRole('button', { name: 'Use my location' }).click()
-  await page.getByRole('button', { name: 'Continue' }).click()
   await expect(page.getByText(/outside the 2 km pilot area/)).toBeVisible()
   await expect(page.getByRole('heading', { name: 'Bibarrambla Gate' })).toBeVisible()
 })

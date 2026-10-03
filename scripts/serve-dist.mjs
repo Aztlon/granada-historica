@@ -2,7 +2,7 @@ import { createReadStream, existsSync, statSync } from 'node:fs'
 import { createServer } from 'node:http'
 import { extname, resolve, sep } from 'node:path'
 
-const dist = resolve('dist')
+const dist = resolve(process.env.E2E_DIST_DIR ?? 'dist')
 const base = '/granada-historica/'
 const mimeTypes = {
   '.css': 'text/css; charset=utf-8',

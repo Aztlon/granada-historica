@@ -1,0 +1,5074 @@
+{
+  "type": "FeatureCollection",
+  "period_id": "c1492",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "royal.alhambra",
+      "properties": {
+        "id": "royal.alhambra",
+        "name": "Alhambra",
+        "historical_name": null,
+        "modern_name": "Conjunto Monumental de la Alhambra y el Generalife",
+        "aliases": [
+          "Ciudad palatina de la Alhambra",
+          "Ciudadela de la Alhambra"
+        ],
+        "modern_search_terms": [
+          "Palacios Nazaríes",
+          "Alcazaba",
+          "Sabika"
+        ],
+        "category": "royal_elite",
+        "subtype": "palatine_city",
+        "period": {
+          "from_year": 1238,
+          "to_year": null,
+          "from_precision": "year",
+          "to_precision": "unknown",
+          "note": "La ciudad palatina fue fundada en época nazarí y continuó transformándose después de 1492. El área representa de forma generalizada su configuración en torno a esa fecha, no todas sus dependencias históricas ni el conjunto protegido actual."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Ciudad palatina, fortaleza y sede de la corte nazarí sobre la colina de la Sabika.",
+        "context_1492": "La Alhambra reunía palacios, espacios administrativos, viviendas, talleres, mezquita, baños, sistemas de agua y una alcazaba militar. Su estructura respondía al servicio de la corte y había evolucionado durante más de dos siglos antes de la conquista.",
+        "after_1492": "Tras la conquista quedó establecida como Casa Real cristiana. Las reparaciones de los Reyes Católicos y, más tarde, la construcción del palacio de Carlos V y otros cambios alteraron partes del conjunto sin borrar su extensa fábrica nazarí.",
+        "today": "Es un conjunto monumental gestionado por el Patronato de la Alhambra y Generalife. El área de este mapa representa el espacio encerrado por la muralla exterior conservada, no el conjunto protegido actual ni todas las dependencias históricas de la Alhambra.",
+        "evidence_note": "La localización y la existencia en 1492 son seguras por la arquitectura conservada, la arqueología y la documentación. El polígono se deriva de la fábrica exterior cartografiada y contrastada con ortofoto; no diferencia fases ni recintos interiores.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.alhambra-fortified-city-guide",
+          "source.alhambra-history",
+          "source.alhambra-urban-structure"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-history",
+            "locator": "Apartado «Siglo XIII-XV»",
+            "supports": "Cronología, funciones palatinas y evolución hasta la conquista de finales del siglo XV."
+          },
+          {
+            "source_id": "source.alhambra-urban-structure",
+            "locator": "Introducción y descripción de la Alcazaba y el área palacial",
+            "supports": "Carácter de ciudad palatina y organización urbana al servicio de la corte."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "probable",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Alhambra",
+          "function": "palatine_city",
+          "summary": "La Alhambra reunía palacios, espacios administrativos, viviendas, talleres, mezquita, baños, sistemas de agua y una alcazaba militar. Su estructura respondía al servicio de la corte y había evolucionado durante más de dos siglos antes de la conquista.",
+          "evidence_note": "La localización y la existencia en 1492 son seguras por la arquitectura conservada, la arqueología y la documentación. El polígono se deriva de la fábrica exterior cartografiada y contrastada con ortofoto; no diferencia fases ni recintos interiores.",
+          "geometry_variant_id": "c1492.royal.alhambra",
+          "citations": [
+            {
+              "source_id": "source.alhambra-history",
+              "locator": "Apartado «Siglo XIII-XV»",
+              "supports": "Cronología, funciones palatinas y evolución hasta la conquista de finales del siglo XV."
+            },
+            {
+              "source_id": "source.alhambra-urban-structure",
+              "locator": "Introducción y descripción de la Alcazaba y el área palacial",
+              "supports": "Carácter de ciudad palatina y organización urbana al servicio de la corte."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5904008,
+              37.1762034
+            ],
+            [
+              -3.5904632,
+              37.1760845
+            ],
+            [
+              -3.5903181,
+              37.1760362
+            ],
+            [
+              -3.5902421,
+              37.1761837
+            ],
+            [
+              -3.5898379,
+              37.1760016
+            ],
+            [
+              -3.5898207,
+              37.1760299
+            ],
+            [
+              -3.5893598,
+              37.1759021
+            ],
+            [
+              -3.5888185,
+              37.175696
+            ],
+            [
+              -3.58824,
+              37.1753493
+            ],
+            [
+              -3.5884215,
+              37.1751752
+            ],
+            [
+              -3.588307,
+              37.175092
+            ],
+            [
+              -3.588113,
+              37.1752738
+            ],
+            [
+              -3.5877169,
+              37.175031
+            ],
+            [
+              -3.587757,
+              37.1749793
+            ],
+            [
+              -3.5876955,
+              37.174949
+            ],
+            [
+              -3.5876555,
+              37.1750008
+            ],
+            [
+              -3.587296,
+              37.1748742
+            ],
+            [
+              -3.5873264,
+              37.1748148
+            ],
+            [
+              -3.5872563,
+              37.1747902
+            ],
+            [
+              -3.5872203,
+              37.1748496
+            ],
+            [
+              -3.5868464,
+              37.1747795
+            ],
+            [
+              -3.5868569,
+              37.1745239
+            ],
+            [
+              -3.5867888,
+              37.1744557
+            ],
+            [
+              -3.5866438,
+              37.1744889
+            ],
+            [
+              -3.5866362,
+              37.174769
+            ],
+            [
+              -3.5860332,
+              37.1747367
+            ],
+            [
+              -3.5860382,
+              37.1746621
+            ],
+            [
+              -3.5859778,
+              37.1746595
+            ],
+            [
+              -3.5859727,
+              37.1747341
+            ],
+            [
+              -3.5856612,
+              37.1747092
+            ],
+            [
+              -3.5856229,
+              37.1746328
+            ],
+            [
+              -3.5855575,
+              37.1746537
+            ],
+            [
+              -3.5855962,
+              37.174731
+            ],
+            [
+              -3.5853783,
+              37.1748143
+            ],
+            [
+              -3.5851333,
+              37.1747984
+            ],
+            [
+              -3.5851283,
+              37.1748943
+            ],
+            [
+              -3.5851749,
+              37.1749141
+            ],
+            [
+              -3.5851523,
+              37.175106
+            ],
+            [
+              -3.5851054,
+              37.1752708
+            ],
+            [
+              -3.5850124,
+              37.1752835
+            ],
+            [
+              -3.5850174,
+              37.1753266
+            ],
+            [
+              -3.5851426,
+              37.1753323
+            ],
+            [
+              -3.5857955,
+              37.1756592
+            ],
+            [
+              -3.585736,
+              37.1757398
+            ],
+            [
+              -3.5858321,
+              37.1757848
+            ],
+            [
+              -3.5858867,
+              37.1757109
+            ],
+            [
+              -3.5860817,
+              37.1758411
+            ],
+            [
+              -3.5863404,
+              37.1761548
+            ],
+            [
+              -3.5862042,
+              37.1762143
+            ],
+            [
+              -3.5862482,
+              37.1762782
+            ],
+            [
+              -3.5863844,
+              37.1762187
+            ],
+            [
+              -3.586602,
+              37.1763751
+            ],
+            [
+              -3.5867935,
+              37.1766103
+            ],
+            [
+              -3.5867189,
+              37.1766663
+            ],
+            [
+              -3.5867603,
+              37.1767014
+            ],
+            [
+              -3.586835,
+              37.1766454
+            ],
+            [
+              -3.5872402,
+              37.1768709
+            ],
+            [
+              -3.5871387,
+              37.176937
+            ],
+            [
+              -3.5871925,
+              37.1770251
+            ],
+            [
+              -3.5871071,
+              37.1770715
+            ],
+            [
+              -3.5871513,
+              37.1771175
+            ],
+            [
+              -3.5870855,
+              37.1771584
+            ],
+            [
+              -3.5871434,
+              37.1772187
+            ],
+            [
+              -3.587341,
+              37.1771162
+            ],
+            [
+              -3.5874662,
+              37.1772301
+            ],
+            [
+              -3.5875589,
+              37.1771667
+            ],
+            [
+              -3.5879109,
+              37.1771306
+            ],
+            [
+              -3.5882113,
+              37.177264
+            ],
+            [
+              -3.5884071,
+              37.1773826
+            ],
+            [
+              -3.5884087,
+              37.1774272
+            ],
+            [
+              -3.5884797,
+              37.1774256
+            ],
+            [
+              -3.5884806,
+              37.1774789
+            ],
+            [
+              -3.5885558,
+              37.177478
+            ],
+            [
+              -3.5885548,
+              37.1774248
+            ],
+            [
+              -3.5888708,
+              37.1774184
+            ],
+            [
+              -3.589209,
+              37.1776591
+            ],
+            [
+              -3.5892664,
+              37.1776483
+            ],
+            [
+              -3.5892533,
+              37.1776041
+            ],
+            [
+              -3.5895935,
+              37.1775553
+            ],
+            [
+              -3.5895922,
+              37.1776325
+            ],
+            [
+              -3.5897694,
+              37.1776344
+            ],
+            [
+              -3.5897718,
+              37.1774932
+            ],
+            [
+              -3.5901561,
+              37.1775157
+            ],
+            [
+              -3.5901551,
+              37.177547
+            ],
+            [
+              -3.5905371,
+              37.1775102
+            ],
+            [
+              -3.5905348,
+              37.1775486
+            ],
+            [
+              -3.5908728,
+              37.1775293
+            ],
+            [
+              -3.5910547,
+              37.1775787
+            ],
+            [
+              -3.5913596,
+              37.1775878
+            ],
+            [
+              -3.5918529,
+              37.1773218
+            ],
+            [
+              -3.5919636,
+              37.1773102
+            ],
+            [
+              -3.5919805,
+              37.1773929
+            ],
+            [
+              -3.59209,
+              37.1773788
+            ],
+            [
+              -3.5920724,
+              37.1772921
+            ],
+            [
+              -3.5925184,
+              37.1772352
+            ],
+            [
+              -3.5929544,
+              37.1771175
+            ],
+            [
+              -3.5929711,
+              37.1771469
+            ],
+            [
+              -3.593067,
+              37.1770697
+            ],
+            [
+              -3.5930402,
+              37.176965
+            ],
+            [
+              -3.5927612,
+              37.1767876
+            ],
+            [
+              -3.5927532,
+              37.1768282
+            ],
+            [
+              -3.592331,
+              37.1768173
+            ],
+            [
+              -3.5923204,
+              37.1767407
+            ],
+            [
+              -3.5921224,
+              37.1767265
+            ],
+            [
+              -3.5921146,
+              37.1768227
+            ],
+            [
+              -3.5912123,
+              37.1767793
+            ],
+            [
+              -3.5909558,
+              37.1765922
+            ],
+            [
+              -3.5910053,
+              37.1765267
+            ],
+            [
+              -3.590914,
+              37.1763735
+            ],
+            [
+              -3.5904008,
+              37.1762034
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "royal.generalife",
+      "properties": {
+        "id": "royal.generalife",
+        "name": "Generalife",
+        "historical_name": null,
+        "modern_name": "Palacio y jardines del Generalife",
+        "aliases": [
+          "Yannat al-Arif",
+          "Jannat al-Arif"
+        ],
+        "modern_search_terms": [
+          "Cerro del Sol",
+          "Patio de la Acequia",
+          "Cuesta de los Chinos"
+        ],
+        "category": "royal_elite",
+        "subtype": "palatine_estate",
+        "period": {
+          "from_year": 1273,
+          "to_year": null,
+          "from_precision": "circa",
+          "to_precision": "unknown",
+          "note": "La finca palatina se desarrolló durante la etapa nazarí y recibió reformas posteriores; se representan por separado el núcleo y las huertas clasificadas como medievales."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Finca palatina, agrícola y de recreo situada fuera de la muralla oriental de la Alhambra.",
+        "context_1492": "El Generalife formaba un paisaje de palacio, huertas, jardines y agua ligado a la corte nazarí, pero separado físicamente del recinto amurallado de la Alhambra por el barranco y sus defensas.",
+        "after_1492": "La finca continuó transformándose y conservó su carácter ajardinado. Las intervenciones posteriores modificaron accesos, jardines y edificios sin borrar la organización histórica esencial.",
+        "today": "El palacio y las huertas históricas forman parte del Conjunto Monumental de la Alhambra y el Generalife. Las manchas corresponden al núcleo y a las huertas Colorada, Grande, de la Mercería y de Fuente Peña; no forman un límite administrativo actual.",
+        "evidence_note": "El Plan Director identifica estos ámbitos como medievales islámicos. Sus bordes se apoyan en las parcelas y recintos actuales de OpenStreetMap, por lo que expresan permanencias del paisaje y no un deslinde exacto de 1492.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.alhambra-generalife",
+          "source.alhambra-fortified-city-guide",
+          "source.alhambra-plan-director-landscape",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-generalife",
+            "locator": "Descripción general del Generalife",
+            "supports": "Carácter de finca de recreo nazarí y posición exterior al este de la Alhambra."
+          },
+          {
+            "source_id": "source.alhambra-fortified-city-guide",
+            "locator": "pp. 25-30, acceso medieval al Generalife",
+            "supports": "Separación defensiva y conexión por la Puerta del Arrabal y la Cuesta de los Chinos."
+          },
+          {
+            "source_id": "source.alhambra-plan-director-landscape",
+            "locator": "p. 357, «Clasificación por épocas históricas. Detalle del Generalife»",
+            "supports": "Identificación del núcleo, jardines y huertas clasificados como medievales islámicos."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "probable",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Generalife",
+          "function": "palatine_estate",
+          "summary": "El Generalife formaba un paisaje de palacio, huertas, jardines y agua ligado a la corte nazarí, pero separado físicamente del recinto amurallado de la Alhambra por el barranco y sus defensas.",
+          "evidence_note": "El Plan Director identifica estos ámbitos como medievales islámicos. Sus bordes se apoyan en las parcelas y recintos actuales de OpenStreetMap, por lo que expresan permanencias del paisaje y no un deslinde exacto de 1492.",
+          "geometry_variant_id": "c1492.royal.generalife",
+          "citations": [
+            {
+              "source_id": "source.alhambra-generalife",
+              "locator": "Descripción general del Generalife",
+              "supports": "Carácter de finca de recreo nazarí y posición exterior al este de la Alhambra."
+            },
+            {
+              "source_id": "source.alhambra-fortified-city-guide",
+              "locator": "pp. 25-30, acceso medieval al Generalife",
+              "supports": "Separación defensiva y conexión por la Puerta del Arrabal y la Cuesta de los Chinos."
+            },
+            {
+              "source_id": "source.alhambra-plan-director-landscape",
+              "locator": "p. 357, «Clasificación por épocas históricas. Detalle del Generalife»",
+              "supports": "Identificación del núcleo, jardines y huertas clasificados como medievales islámicos."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -3.5846125,
+                37.1745397
+              ],
+              [
+                -3.5847354,
+                37.1747011
+              ],
+              [
+                -3.5847891,
+                37.1748555
+              ],
+              [
+                -3.5847861,
+                37.1749659
+              ],
+              [
+                -3.5847539,
+                37.1750711
+              ],
+              [
+                -3.5847006,
+                37.1751639
+              ],
+              [
+                -3.5841781,
+                37.1757685
+              ],
+              [
+                -3.5840327,
+                37.1758167
+              ],
+              [
+                -3.5836502,
+                37.1752886
+              ],
+              [
+                -3.583626,
+                37.1751722
+              ],
+              [
+                -3.5840421,
+                37.174804
+              ],
+              [
+                -3.584121,
+                37.1747414
+              ],
+              [
+                -3.5841354,
+                37.174743
+              ],
+              [
+                -3.5841497,
+                37.1747408
+              ],
+              [
+                -3.5841623,
+                37.1747351
+              ],
+              [
+                -3.584172,
+                37.1747265
+              ],
+              [
+                -3.5841778,
+                37.1747159
+              ],
+              [
+                -3.584179,
+                37.1747044
+              ],
+              [
+                -3.5841755,
+                37.1746931
+              ],
+              [
+                -3.5844295,
+                37.1744838
+              ],
+              [
+                -3.5844897,
+                37.1744581
+              ],
+              [
+                -3.5845577,
+                37.1744821
+              ],
+              [
+                -3.5846125,
+                37.1745397
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -3.5849914,
+                37.1751747
+              ],
+              [
+                -3.5849656,
+                37.1752831
+              ],
+              [
+                -3.5850309,
+                37.1753937
+              ],
+              [
+                -3.5853138,
+                37.1755649
+              ],
+              [
+                -3.5856716,
+                37.1758066
+              ],
+              [
+                -3.5859246,
+                37.1760126
+              ],
+              [
+                -3.5861871,
+                37.1763659
+              ],
+              [
+                -3.5865857,
+                37.1767117
+              ],
+              [
+                -3.5865605,
+                37.1768018
+              ],
+              [
+                -3.5863939,
+                37.1770661
+              ],
+              [
+                -3.5863667,
+                37.1770184
+              ],
+              [
+                -3.586198,
+                37.1773035
+              ],
+              [
+                -3.5862223,
+                37.1773376
+              ],
+              [
+                -3.5862552,
+                37.1773837
+              ],
+              [
+                -3.5859776,
+                37.1775322
+              ],
+              [
+                -3.5859015,
+                37.1774032
+              ],
+              [
+                -3.5858321,
+                37.1773685
+              ],
+              [
+                -3.5857477,
+                37.1773729
+              ],
+              [
+                -3.5847942,
+                37.1753633
+              ],
+              [
+                -3.5848418,
+                37.1753547
+              ],
+              [
+                -3.5848853,
+                37.1752018
+              ],
+              [
+                -3.5849098,
+                37.1751661
+              ],
+              [
+                -3.5849914,
+                37.1751747
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -3.5850932,
+                37.1776223
+              ],
+              [
+                -3.5851723,
+                37.1775543
+              ],
+              [
+                -3.5847236,
+                37.1765999
+              ],
+              [
+                -3.5842742,
+                37.1762413
+              ],
+              [
+                -3.5840886,
+                37.1759998
+              ],
+              [
+                -3.5847633,
+                37.1753452
+              ],
+              [
+                -3.5857393,
+                37.1773933
+              ],
+              [
+                -3.5858296,
+                37.1773861
+              ],
+              [
+                -3.5858923,
+                37.1774229
+              ],
+              [
+                -3.5859828,
+                37.1775681
+              ],
+              [
+                -3.5858966,
+                37.1776453
+              ],
+              [
+                -3.5856202,
+                37.1778232
+              ],
+              [
+                -3.5859294,
+                37.1781404
+              ],
+              [
+                -3.5859634,
+                37.1781759
+              ],
+              [
+                -3.5860568,
+                37.1782717
+              ],
+              [
+                -3.5859625,
+                37.1783301
+              ],
+              [
+                -3.5860011,
+                37.17837
+              ],
+              [
+                -3.5858753,
+                37.1784473
+              ],
+              [
+                -3.5858047,
+                37.1783743
+              ],
+              [
+                -3.5855551,
+                37.1785026
+              ],
+              [
+                -3.585136,
+                37.1785452
+              ],
+              [
+                -3.5850148,
+                37.1784141
+              ],
+              [
+                -3.5850316,
+                37.1783631
+              ],
+              [
+                -3.5849688,
+                37.1782515
+              ],
+              [
+                -3.5848795,
+                37.1781934
+              ],
+              [
+                -3.5849136,
+                37.1781602
+              ],
+              [
+                -3.5849503,
+                37.1781212
+              ],
+              [
+                -3.5849596,
+                37.1780851
+              ],
+              [
+                -3.5849914,
+                37.1779729
+              ],
+              [
+                -3.5849973,
+                37.1779557
+              ],
+              [
+                -3.5848121,
+                37.1779269
+              ],
+              [
+                -3.5846934,
+                37.1774978
+              ],
+              [
+                -3.584466,
+                37.177141
+              ],
+              [
+                -3.5840458,
+                37.1769159
+              ],
+              [
+                -3.5841404,
+                37.1767614
+              ],
+              [
+                -3.5847575,
+                37.1770978
+              ],
+              [
+                -3.5850183,
+                37.1776365
+              ],
+              [
+                -3.5850494,
+                37.1778025
+              ],
+              [
+                -3.585083,
+                37.1777039
+              ],
+              [
+                -3.5850932,
+                37.1776223
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -3.5875216,
+                37.1778758
+              ],
+              [
+                -3.5875434,
+                37.1779744
+              ],
+              [
+                -3.587674,
+                37.1781294
+              ],
+              [
+                -3.5876944,
+                37.178163
+              ],
+              [
+                -3.5876699,
+                37.1781988
+              ],
+              [
+                -3.5874386,
+                37.1781727
+              ],
+              [
+                -3.5869122,
+                37.1781717
+              ],
+              [
+                -3.5868564,
+                37.1781001
+              ],
+              [
+                -3.5866701,
+                37.1781597
+              ],
+              [
+                -3.5860552,
+                37.1782443
+              ],
+              [
+                -3.5856457,
+                37.1778237
+              ],
+              [
+                -3.5859015,
+                37.177659
+              ],
+              [
+                -3.5860024,
+                37.1775699
+              ],
+              [
+                -3.5863218,
+                37.1773772
+              ],
+              [
+                -3.5862812,
+                37.1773137
+              ],
+              [
+                -3.586561,
+                37.1768606
+              ],
+              [
+                -3.5866048,
+                37.1768829
+              ],
+              [
+                -3.5866524,
+                37.1768645
+              ],
+              [
+                -3.5869122,
+                37.1770878
+              ],
+              [
+                -3.5871326,
+                37.1774379
+              ],
+              [
+                -3.5876019,
+                37.1777045
+              ],
+              [
+                -3.5875216,
+                37.1778758
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urban.albaicin",
+      "properties": {
+        "id": "urban.albaicin",
+        "name": "Albaicín nazarí",
+        "historical_name": null,
+        "modern_name": "Albaicín",
+        "aliases": [
+          "Albayzín",
+          "Rabad al-Bayyazin"
+        ],
+        "modern_search_terms": [
+          "Cuesta de la Alhacaba",
+          "San Cristóbal",
+          "Sacromonte"
+        ],
+        "category": "urban_structure",
+        "subtype": "urban_sector",
+        "period": {
+          "from_year": 1200,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "El sector integra recintos y arrabales formados en distintas etapas; no se propone una fecha única para toda el área."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "historical_cartography",
+          "toponymy",
+          "parcel_morphology",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Gran sector urbano de la ladera norte del Darro, compuesto por recintos y barrios de formación sucesiva.",
+        "context_1492": "En época nazarí la ladera del Albaicín estaba densamente articulada por cercas, puertas, ejes radiales y una red secundaria de adarves. No constituía un barrio de límites simples ni idénticos a los actuales.",
+        "after_1492": "La población, los usos religiosos y la trama construida cambiaron profundamente, aunque numerosos recorridos, parcelas, aljibes y lienzos defensivos conservaron parte de la estructura heredada.",
+        "today": "Unión de las envolventes de la Alcazaba Vieja, Axares y el arrabal de al-Bayyazin. La calle Elvira atraviesa la medina y deja de emplearse como frontera artificial de estos recintos.",
+        "evidence_note": "Derivación geométrica de tres recintos contiguos. El borde exterior conserva la cerca nazarí auditada y los interiores se contrastan con el Mapa 5 y el PEPRI. No equivale al barrio administrativo actual.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.granada-pepri-islamic-city",
+          "source.granada-albaicin-wall-route",
+          "source.openstreetmap",
+          "source.dera-hydrology"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, pp. 88-90 y plano «La ciudad nazarí en el ámbito del PEPRI»",
+            "supports": "Organización del Albaicín nazarí mediante cercas, puertas, ejes radiales y adarves."
+          },
+          {
+            "source_id": "source.alhambra-fortified-city-guide",
+            "locator": "p. 7, «Los barrios de Granada y sus murallas»",
+            "supports": "Relación espacial entre el Albaicín, la medina y la Alhambra."
+          },
+          {
+            "source_id": "source.granada-albaicin-wall-route",
+            "locator": "Recorrido de la muralla del Albayzín",
+            "supports": "Trazado de la cerca desde la Puerta de Guadix, al final del Paseo de los Tristes, por San Miguel Alto y Fajalauza hasta la Puerta de Elvira."
+          },
+          {
+            "source_id": "source.dera-hydrology",
+            "locator": "Eje hidrográfico del río Darro",
+            "supports": "Eje moderno empleado como referencia reproducible para el límite meridional."
+          },
+          {
+            "source_id": "source.granada-elvira-gate",
+            "locator": "Emplazamiento del Castillo de la Puerta de Elvira",
+            "supports": "Extremo occidental común de la cerca exterior y de la calle Elvira."
+          },
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+            "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Albaicín nazarí",
+          "function": "urban_sector",
+          "summary": "En época nazarí la ladera del Albaicín estaba densamente articulada por cercas, puertas, ejes radiales y una red secundaria de adarves. No constituía un barrio de límites simples ni idénticos a los actuales.",
+          "evidence_note": "Derivación geométrica de tres recintos contiguos. El borde exterior conserva la cerca nazarí auditada y los interiores se contrastan con el Mapa 5 y el PEPRI. No equivale al barrio administrativo actual.",
+          "geometry_variant_id": "c1492.urban.albaicin",
+          "citations": [
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Anexo V, Memoria urbana, pp. 88-90 y plano «La ciudad nazarí en el ámbito del PEPRI»",
+              "supports": "Organización del Albaicín nazarí mediante cercas, puertas, ejes radiales y adarves."
+            },
+            {
+              "source_id": "source.alhambra-fortified-city-guide",
+              "locator": "p. 7, «Los barrios de Granada y sus murallas»",
+              "supports": "Relación espacial entre el Albaicín, la medina y la Alhambra."
+            },
+            {
+              "source_id": "source.granada-albaicin-wall-route",
+              "locator": "Recorrido de la muralla del Albayzín",
+              "supports": "Trazado de la cerca desde la Puerta de Guadix, al final del Paseo de los Tristes, por San Miguel Alto y Fajalauza hasta la Puerta de Elvira."
+            },
+            {
+              "source_id": "source.dera-hydrology",
+              "locator": "Eje hidrográfico del río Darro",
+              "supports": "Eje moderno empleado como referencia reproducible para el límite meridional."
+            },
+            {
+              "source_id": "source.granada-elvira-gate",
+              "locator": "Emplazamiento del Castillo de la Puerta de Elvira",
+              "supports": "Extremo occidental común de la cerca exterior y de la calle Elvira."
+            },
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+              "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5906595,
+              37.1785531
+            ],
+            [
+              -3.5914125,
+              37.178261
+            ],
+            [
+              -3.5923349,
+              37.1784844
+            ],
+            [
+              -3.5927468,
+              37.1783326
+            ],
+            [
+              -3.5932689,
+              37.1791099
+            ],
+            [
+              -3.5940354,
+              37.178816
+            ],
+            [
+              -3.5947454,
+              37.1784574
+            ],
+            [
+              -3.5956711,
+              37.178137
+            ],
+            [
+              -3.5962925,
+              37.1782738
+            ],
+            [
+              -3.5970345,
+              37.1787728
+            ],
+            [
+              -3.5974805,
+              37.1792352
+            ],
+            [
+              -3.5977196,
+              37.1798952
+            ],
+            [
+              -3.5978224,
+              37.1804939
+            ],
+            [
+              -3.5976883,
+              37.1812049
+            ],
+            [
+              -3.5975658,
+              37.1820543
+            ],
+            [
+              -3.5994918,
+              37.1821936
+            ],
+            [
+              -3.5978093,
+              37.1848455
+            ],
+            [
+              -3.5972537,
+              37.1846439
+            ],
+            [
+              -3.596339,
+              37.1846974
+            ],
+            [
+              -3.5954314,
+              37.1845066
+            ],
+            [
+              -3.5949473,
+              37.1851205
+            ],
+            [
+              -3.5945015,
+              37.1855218
+            ],
+            [
+              -3.5937863,
+              37.185882
+            ],
+            [
+              -3.5931119,
+              37.1859342
+            ],
+            [
+              -3.592966,
+              37.1859777
+            ],
+            [
+              -3.5925442,
+              37.1860617
+            ],
+            [
+              -3.5915528,
+              37.186192
+            ],
+            [
+              -3.5914719,
+              37.1861891
+            ],
+            [
+              -3.5909078,
+              37.1861248
+            ],
+            [
+              -3.5904947,
+              37.1858184
+            ],
+            [
+              -3.5898731,
+              37.1854364
+            ],
+            [
+              -3.5891889,
+              37.1852347
+            ],
+            [
+              -3.5887198,
+              37.1851044
+            ],
+            [
+              -3.5879719,
+              37.1848548
+            ],
+            [
+              -3.5877155,
+              37.1846022
+            ],
+            [
+              -3.5873192,
+              37.183715
+            ],
+            [
+              -3.5872183,
+              37.1826812
+            ],
+            [
+              -3.5872614,
+              37.1816785
+            ],
+            [
+              -3.58833,
+              37.17924
+            ],
+            [
+              -3.5882703,
+              37.179097
+            ],
+            [
+              -3.5894253,
+              37.1786145
+            ],
+            [
+              -3.5906595,
+              37.1785531
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urban.lower-medina",
+      "properties": {
+        "id": "urban.lower-medina",
+        "name": "Medina baja",
+        "historical_name": "Madinat Garnata",
+        "modern_name": "Centro, Realejo y laderas occidentales de la Alhambra",
+        "aliases": [
+          "Medina de Granada",
+          "Ciudad baja"
+        ],
+        "modern_search_terms": [
+          "Catedral",
+          "Alcaicería",
+          "Bib-Rambla",
+          "Calle Elvira",
+          "Centro",
+          "Realejo",
+          "Campo del Príncipe",
+          "Vistillas de los Ángeles"
+        ],
+        "category": "urban_structure",
+        "subtype": "urban_sector",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "La medina se desarrolló desde época zirí y cambió de extensión y organización durante los siglos posteriores."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "parcel_morphology",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Ciudad baja intramuros, donde se concentraban el principal centro religioso y comercial y varios arrabales de la Granada nazarí.",
+        "context_1492": "La ciudad baja reunía la mezquita aljama, la Alcaicería, la Madraza, mercados, alhóndigas y los antiguos arrabales incorporados del Campillo, al-Fajjarin y al-Nayd. La calle Elvira estructuraba su borde septentrional; la cerca de Poniente y la cerca Sur encerraban el llano, el Realejo, la Antequeruela y las laderas hasta la muralla de la Alhambra.",
+        "after_1492": "La instalación de instituciones cristianas, la transformación de la mezquita mayor y las grandes reformas viarias alteraron el centro. Parte de la trama menor y varios edificios andalusíes sobrevivieron de forma fragmentaria.",
+        "today": "Envolvente de la ciudad baja y sus ampliaciones meridionales. Al norte enlaza con la Alcazaba Vieja y Axares por sus cercas; incluye el sector de la medina a ambos lados de calle Elvira.",
+        "evidence_note": "El borde norte se revisa junto con los recintos del Albaicín, sustituyendo el cierre artificial por calle Elvira. El perímetro exterior meridional conserva la reconstrucción arqueológica previa. Esta entidad agrega la medina y sus arrabales incorporados; no afirma que todos fueran un único barrio.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-pepri-islamic-city",
+          "source.granada-centre-plan",
+          "source.junta-western-wall-2006",
+          "source.junta-gran-capitan-2015",
+          "source.granada-elvira-gate",
+          "source.alhambra-bib-rambla-gate",
+          "source.granada-puerta-granadas",
+          "source.alhambra-arms-gate",
+          "source.junta-aguado-2009",
+          "source.junta-hoteles-belen-2020",
+          "source.junta-porteria-santo-domingo-2012",
+          "source.openstreetmap",
+          "source.dera-hydrology",
+          "source.ujaen-water-route-2025"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, pp. 88-90",
+            "supports": "Estructura de la medina, eje de Elvira y localización del centro religioso y comercial."
+          },
+          {
+            "source_id": "source.granada-elvira-gate",
+            "locator": "Ficha 22, descripción histórica",
+            "supports": "Relación de la Puerta de Elvira con la calle del mismo nombre y la cerca de la medina."
+          },
+          {
+            "source_id": "source.junta-western-wall-2006",
+            "locator": "pp. 1830-1831, descripción de la cerca de Poniente",
+            "supports": "Perímetro occidental y meridional de la ciudad baja hasta Torres Bermejas."
+          },
+          {
+            "source_id": "source.granada-puerta-granadas",
+            "locator": "Descripción histórica del lienzo defensivo",
+            "supports": "Conexión amurallada entre Torres Bermejas y la Alcazaba de la Alhambra."
+          },
+          {
+            "source_id": "source.alhambra-arms-gate",
+            "locator": "Camino histórico entre la Alhambra y Granada",
+            "supports": "Relación entre la Puerta de las Armas, el Darro y la ciudad baja."
+          },
+          {
+            "source_id": "source.junta-aguado-2009",
+            "locator": "Contexto histórico-arqueológico y figura 1",
+            "supports": "Recorrido de la cerca Sur que incorporó Alfareros, Nayd y Antequeruela al recinto urbano y ascendía hacia la Alhambra."
+          },
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+            "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Medina baja",
+          "function": "urban_sector",
+          "summary": "La ciudad baja reunía la mezquita aljama, la Alcaicería, la Madraza, mercados, alhóndigas y los antiguos arrabales incorporados del Campillo, al-Fajjarin y al-Nayd. La calle Elvira estructuraba su borde septentrional; la cerca de Poniente y la cerca Sur encerraban el llano, el Realejo, la Antequeruela y las laderas hasta la muralla de la Alhambra.",
+          "evidence_note": "El borde norte se revisa junto con los recintos del Albaicín, sustituyendo el cierre artificial por calle Elvira. El perímetro exterior meridional conserva la reconstrucción arqueológica previa. Esta entidad agrega la medina y sus arrabales incorporados; no afirma que todos fueran un único barrio.",
+          "geometry_variant_id": "c1492.urban.lower-medina",
+          "citations": [
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Anexo V, Memoria urbana, pp. 88-90",
+              "supports": "Estructura de la medina, eje de Elvira y localización del centro religioso y comercial."
+            },
+            {
+              "source_id": "source.granada-elvira-gate",
+              "locator": "Ficha 22, descripción histórica",
+              "supports": "Relación de la Puerta de Elvira con la calle del mismo nombre y la cerca de la medina."
+            },
+            {
+              "source_id": "source.junta-western-wall-2006",
+              "locator": "pp. 1830-1831, descripción de la cerca de Poniente",
+              "supports": "Perímetro occidental y meridional de la ciudad baja hasta Torres Bermejas."
+            },
+            {
+              "source_id": "source.granada-puerta-granadas",
+              "locator": "Descripción histórica del lienzo defensivo",
+              "supports": "Conexión amurallada entre Torres Bermejas y la Alcazaba de la Alhambra."
+            },
+            {
+              "source_id": "source.alhambra-arms-gate",
+              "locator": "Camino histórico entre la Alhambra y Granada",
+              "supports": "Relación entre la Puerta de las Armas, el Darro y la ciudad baja."
+            },
+            {
+              "source_id": "source.junta-aguado-2009",
+              "locator": "Contexto histórico-arqueológico y figura 1",
+              "supports": "Recorrido de la cerca Sur que incorporó Alfareros, Nayd y Antequeruela al recinto urbano y ascendía hacia la Alhambra."
+            },
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+              "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5994918,
+              37.1821936
+            ],
+            [
+              -3.6001521,
+              37.1822519
+            ],
+            [
+              -3.6005481,
+              37.1819064
+            ],
+            [
+              -3.6006899,
+              37.1817828
+            ],
+            [
+              -3.6007874,
+              37.1817066
+            ],
+            [
+              -3.6009366,
+              37.1815775
+            ],
+            [
+              -3.6011053,
+              37.1814234
+            ],
+            [
+              -3.6011493,
+              37.181385
+            ],
+            [
+              -3.6011086,
+              37.1813649
+            ],
+            [
+              -3.6010755,
+              37.1813485
+            ],
+            [
+              -3.6009324,
+              37.1812295
+            ],
+            [
+              -3.6006563,
+              37.180978
+            ],
+            [
+              -3.6006345,
+              37.1809511
+            ],
+            [
+              -3.6006231,
+              37.1809308
+            ],
+            [
+              -3.6004758,
+              37.1806624
+            ],
+            [
+              -3.6004628,
+              37.1805931
+            ],
+            [
+              -3.6005746,
+              37.1805774
+            ],
+            [
+              -3.6005985,
+              37.180524
+            ],
+            [
+              -3.600982,
+              37.1802819
+            ],
+            [
+              -3.6011014,
+              37.1803856
+            ],
+            [
+              -3.6013084,
+              37.1805458
+            ],
+            [
+              -3.6017334,
+              37.1785613
+            ],
+            [
+              -3.601775,
+              37.1780521
+            ],
+            [
+              -3.6017812,
+              37.1775243
+            ],
+            [
+              -3.6012183,
+              37.1762951
+            ],
+            [
+              -3.599744,
+              37.1746364
+            ],
+            [
+              -3.5996842,
+              37.1745626
+            ],
+            [
+              -3.599474,
+              37.1743273
+            ],
+            [
+              -3.5992923,
+              37.1741297
+            ],
+            [
+              -3.5992398,
+              37.1740862
+            ],
+            [
+              -3.5980542,
+              37.1721727
+            ],
+            [
+              -3.5971375,
+              37.1722659
+            ],
+            [
+              -3.5949269,
+              37.171666
+            ],
+            [
+              -3.5938441,
+              37.1706222
+            ],
+            [
+              -3.5937585,
+              37.1705355
+            ],
+            [
+              -3.59295,
+              37.1703
+            ],
+            [
+              -3.59195,
+              37.16995
+            ],
+            [
+              -3.59085,
+              37.16965
+            ],
+            [
+              -3.58975,
+              37.16935
+            ],
+            [
+              -3.588662,
+              37.169046
+            ],
+            [
+              -3.58815,
+              37.16885
+            ],
+            [
+              -3.5877,
+              37.16955
+            ],
+            [
+              -3.58725,
+              37.17035
+            ],
+            [
+              -3.58695,
+              37.1713
+            ],
+            [
+              -3.58675,
+              37.17225
+            ],
+            [
+              -3.58665,
+              37.1733
+            ],
+            [
+              -3.5867888,
+              37.1744557
+            ],
+            [
+              -3.5868569,
+              37.1745239
+            ],
+            [
+              -3.5868464,
+              37.1747795
+            ],
+            [
+              -3.5872203,
+              37.1748496
+            ],
+            [
+              -3.5872563,
+              37.1747902
+            ],
+            [
+              -3.5873264,
+              37.1748148
+            ],
+            [
+              -3.587296,
+              37.1748742
+            ],
+            [
+              -3.5876555,
+              37.1750008
+            ],
+            [
+              -3.5876955,
+              37.174949
+            ],
+            [
+              -3.587757,
+              37.1749793
+            ],
+            [
+              -3.5877169,
+              37.175031
+            ],
+            [
+              -3.588113,
+              37.1752738
+            ],
+            [
+              -3.588307,
+              37.175092
+            ],
+            [
+              -3.5884215,
+              37.1751752
+            ],
+            [
+              -3.58824,
+              37.1753493
+            ],
+            [
+              -3.5888185,
+              37.175696
+            ],
+            [
+              -3.5893598,
+              37.1759021
+            ],
+            [
+              -3.5898207,
+              37.1760299
+            ],
+            [
+              -3.5898379,
+              37.1760016
+            ],
+            [
+              -3.5902421,
+              37.1761837
+            ],
+            [
+              -3.5903181,
+              37.1760362
+            ],
+            [
+              -3.5904632,
+              37.1760845
+            ],
+            [
+              -3.5904008,
+              37.1762034
+            ],
+            [
+              -3.590914,
+              37.1763735
+            ],
+            [
+              -3.5910053,
+              37.1765267
+            ],
+            [
+              -3.5909558,
+              37.1765922
+            ],
+            [
+              -3.5912123,
+              37.1767793
+            ],
+            [
+              -3.5921146,
+              37.1768227
+            ],
+            [
+              -3.5921224,
+              37.1767265
+            ],
+            [
+              -3.5923204,
+              37.1767407
+            ],
+            [
+              -3.592331,
+              37.1768173
+            ],
+            [
+              -3.5927532,
+              37.1768282
+            ],
+            [
+              -3.5927612,
+              37.1767876
+            ],
+            [
+              -3.5930402,
+              37.176965
+            ],
+            [
+              -3.593067,
+              37.1770697
+            ],
+            [
+              -3.5929544,
+              37.1771175
+            ],
+            [
+              -3.5925184,
+              37.1772352
+            ],
+            [
+              -3.5919919,
+              37.1771498
+            ],
+            [
+              -3.59203,
+              37.1773
+            ],
+            [
+              -3.59215,
+              37.17746
+            ],
+            [
+              -3.5923,
+              37.17767
+            ],
+            [
+              -3.59245,
+              37.17788
+            ],
+            [
+              -3.59258,
+              37.17807
+            ],
+            [
+              -3.592682,
+              37.1782206
+            ],
+            [
+              -3.592746806758957,
+              37.17833262311191
+            ],
+            [
+              -3.5932689,
+              37.1791099
+            ],
+            [
+              -3.5940354,
+              37.178816
+            ],
+            [
+              -3.5947454,
+              37.1784574
+            ],
+            [
+              -3.5956711,
+              37.178137
+            ],
+            [
+              -3.5962925,
+              37.1782738
+            ],
+            [
+              -3.5970345,
+              37.1787728
+            ],
+            [
+              -3.5974805,
+              37.1792352
+            ],
+            [
+              -3.5977196,
+              37.1798952
+            ],
+            [
+              -3.5978224,
+              37.1804939
+            ],
+            [
+              -3.5976883,
+              37.1812049
+            ],
+            [
+              -3.5975658,
+              37.1820543
+            ],
+            [
+              -3.5994918,
+              37.1821936
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urban.late-nasrid-extent",
+      "properties": {
+        "id": "urban.late-nasrid-extent",
+        "name": "Extensión urbana tardonazarí",
+        "historical_name": null,
+        "modern_name": null,
+        "aliases": [
+          "Granada nazarí hacia 1492"
+        ],
+        "modern_search_terms": [
+          "Granada histórica",
+          "Ciudad nazarí"
+        ],
+        "category": "urban_structure",
+        "subtype": "late_nasrid_extent",
+        "period": {
+          "from_year": 1400,
+          "to_year": 1492,
+          "from_precision": "century",
+          "to_precision": "year",
+          "note": "Síntesis visual de la extensión urbana al final del periodo nazarí; no representa una ocupación homogénea ni una única cerca."
+        },
+        "present_c1492": "probable",
+        "confidence": {
+          "location": "approximate",
+          "time": "probable"
+        },
+        "evidence_basis": [
+          "historical_cartography",
+          "documentary",
+          "archaeology",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Síntesis cartográfica de los tres grandes recintos urbanos revisados: Albaicín, ciudad baja y Alhambra.",
+        "context_1492": "Granada era una ciudad formada por recintos, arrabales, espacios agrícolas y corredores fluviales, con el Albaicín y la medina en torno al Darro y la ciudad palatina de la Alhambra sobre la Sabika.",
+        "after_1492": "La ciudad se expandió y reformó fuera y dentro de sus antiguas cercas. Las demoliciones, nuevos ejes y cambios de uso hicieron menos legible la continuidad del perímetro medieval.",
+        "today": "Unión reproducible del Albaicín, la ciudad baja, la Alhambra y el Arenal. El Generalife permanece como almunia separada. La envolvente expresa extensión urbana y espacios interiores, no densidad edificada uniforme.",
+        "evidence_note": "Se recalcula después de corregir los recintos compartidos y añadir el Arenal exterior a la medina. No se suavizan ni rellenan automáticamente los huecos históricos; se conserva la incertidumbre de los bordes reconstruidos.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-pepri-islamic-city",
+          "source.granada-centre-plan",
+          "source.junta-western-wall-2006",
+          "source.alhambra-fortified-city-guide",
+          "source.granada-albaicin-wall-route",
+          "source.ugr-abbas-defences",
+          "source.junta-aguado-2009",
+          "source.junta-hoteles-belen-2020",
+          "source.openstreetmap",
+          "source.dera-hydrology",
+          "source.ujaen-water-route-2025"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, p. 88 y cartografía asociada",
+            "supports": "Desarrollo máximo de la Granada nazarí, sectores, cercas, ejes y ríos."
+          },
+          {
+            "source_id": "source.alhambra-fortified-city-guide",
+            "locator": "pp. 7-9",
+            "supports": "Lectura conjunta de los barrios amurallados, la Alhambra y su posición topográfica."
+          },
+          {
+            "source_id": "source.ugr-abbas-defences",
+            "locator": "Capítulos dedicados a Granada",
+            "supports": "Contraste académico del sistema defensivo nazarí y sus distintos recintos."
+          },
+          {
+            "source_id": "source.junta-aguado-2009",
+            "locator": "Contexto histórico-arqueológico y figura 1",
+            "supports": "Extensión del recinto tardonazarí por la cerca Sur alrededor de Alfareros, Nayd y Antequeruela."
+          },
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+            "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "probable",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Extensión urbana tardonazarí",
+          "function": "late_nasrid_extent",
+          "summary": "Granada era una ciudad formada por recintos, arrabales, espacios agrícolas y corredores fluviales, con el Albaicín y la medina en torno al Darro y la ciudad palatina de la Alhambra sobre la Sabika.",
+          "evidence_note": "Se recalcula después de corregir los recintos compartidos y añadir el Arenal exterior a la medina. No se suavizan ni rellenan automáticamente los huecos históricos; se conserva la incertidumbre de los bordes reconstruidos.",
+          "geometry_variant_id": "c1492.urban.late-nasrid-extent",
+          "citations": [
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Anexo V, Memoria urbana, p. 88 y cartografía asociada",
+              "supports": "Desarrollo máximo de la Granada nazarí, sectores, cercas, ejes y ríos."
+            },
+            {
+              "source_id": "source.alhambra-fortified-city-guide",
+              "locator": "pp. 7-9",
+              "supports": "Lectura conjunta de los barrios amurallados, la Alhambra y su posición topográfica."
+            },
+            {
+              "source_id": "source.ugr-abbas-defences",
+              "locator": "Capítulos dedicados a Granada",
+              "supports": "Contraste académico del sistema defensivo nazarí y sus distintos recintos."
+            },
+            {
+              "source_id": "source.junta-aguado-2009",
+              "locator": "Contexto histórico-arqueológico y figura 1",
+              "supports": "Extensión del recinto tardonazarí por la cerca Sur alrededor de Alfareros, Nayd y Antequeruela."
+            },
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+              "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -3.6001742,
+                37.1731902
+              ],
+              [
+                -3.6005853,
+                37.1734388
+              ],
+              [
+                -3.6011513,
+                37.174242
+              ],
+              [
+                -3.6016677,
+                37.1751535
+              ],
+              [
+                -3.6022061,
+                37.1759358
+              ],
+              [
+                -3.6014078,
+                37.1760818
+              ],
+              [
+                -3.5993709,
+                37.1739157
+              ],
+              [
+                -3.5995746,
+                37.1736323
+              ],
+              [
+                -3.6001742,
+                37.1731902
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -3.592682,
+                37.1782206
+              ],
+              [
+                -3.59258,
+                37.17807
+              ],
+              [
+                -3.59245,
+                37.17788
+              ],
+              [
+                -3.5923,
+                37.17767
+              ],
+              [
+                -3.59215,
+                37.17746
+              ],
+              [
+                -3.5920892,
+                37.1773789
+              ],
+              [
+                -3.5919805,
+                37.1773929
+              ],
+              [
+                -3.5919636,
+                37.1773102
+              ],
+              [
+                -3.5918529,
+                37.1773218
+              ],
+              [
+                -3.5913596,
+                37.1775878
+              ],
+              [
+                -3.5910547,
+                37.1775787
+              ],
+              [
+                -3.5908728,
+                37.1775293
+              ],
+              [
+                -3.5905348,
+                37.1775486
+              ],
+              [
+                -3.5905371,
+                37.1775102
+              ],
+              [
+                -3.5901551,
+                37.177547
+              ],
+              [
+                -3.5901561,
+                37.1775157
+              ],
+              [
+                -3.5897718,
+                37.1774932
+              ],
+              [
+                -3.5897694,
+                37.1776344
+              ],
+              [
+                -3.5895922,
+                37.1776325
+              ],
+              [
+                -3.5895935,
+                37.1775553
+              ],
+              [
+                -3.5892533,
+                37.1776041
+              ],
+              [
+                -3.5892664,
+                37.1776483
+              ],
+              [
+                -3.589209,
+                37.1776591
+              ],
+              [
+                -3.5888708,
+                37.1774184
+              ],
+              [
+                -3.5885548,
+                37.1774248
+              ],
+              [
+                -3.5885558,
+                37.177478
+              ],
+              [
+                -3.5884806,
+                37.1774789
+              ],
+              [
+                -3.5884797,
+                37.1774256
+              ],
+              [
+                -3.5884087,
+                37.1774272
+              ],
+              [
+                -3.5884071,
+                37.1773826
+              ],
+              [
+                -3.5882113,
+                37.177264
+              ],
+              [
+                -3.5879109,
+                37.1771306
+              ],
+              [
+                -3.5875589,
+                37.1771667
+              ],
+              [
+                -3.5874662,
+                37.1772301
+              ],
+              [
+                -3.587341,
+                37.1771162
+              ],
+              [
+                -3.5871434,
+                37.1772187
+              ],
+              [
+                -3.5870855,
+                37.1771584
+              ],
+              [
+                -3.5871513,
+                37.1771175
+              ],
+              [
+                -3.5871071,
+                37.1770715
+              ],
+              [
+                -3.5871925,
+                37.1770251
+              ],
+              [
+                -3.5871387,
+                37.176937
+              ],
+              [
+                -3.5872402,
+                37.1768709
+              ],
+              [
+                -3.586835,
+                37.1766454
+              ],
+              [
+                -3.5867603,
+                37.1767014
+              ],
+              [
+                -3.5867189,
+                37.1766663
+              ],
+              [
+                -3.5867935,
+                37.1766103
+              ],
+              [
+                -3.586602,
+                37.1763751
+              ],
+              [
+                -3.5863844,
+                37.1762187
+              ],
+              [
+                -3.5862482,
+                37.1762782
+              ],
+              [
+                -3.5862042,
+                37.1762143
+              ],
+              [
+                -3.5863404,
+                37.1761548
+              ],
+              [
+                -3.5860817,
+                37.1758411
+              ],
+              [
+                -3.5858867,
+                37.1757109
+              ],
+              [
+                -3.5858321,
+                37.1757848
+              ],
+              [
+                -3.585736,
+                37.1757398
+              ],
+              [
+                -3.5857955,
+                37.1756592
+              ],
+              [
+                -3.5851426,
+                37.1753323
+              ],
+              [
+                -3.5850174,
+                37.1753266
+              ],
+              [
+                -3.5850124,
+                37.1752835
+              ],
+              [
+                -3.5851054,
+                37.1752708
+              ],
+              [
+                -3.5851523,
+                37.175106
+              ],
+              [
+                -3.5851749,
+                37.1749141
+              ],
+              [
+                -3.5851283,
+                37.1748943
+              ],
+              [
+                -3.5851333,
+                37.1747984
+              ],
+              [
+                -3.5853783,
+                37.1748143
+              ],
+              [
+                -3.5855962,
+                37.174731
+              ],
+              [
+                -3.5855575,
+                37.1746537
+              ],
+              [
+                -3.5856229,
+                37.1746328
+              ],
+              [
+                -3.5856612,
+                37.1747092
+              ],
+              [
+                -3.5859727,
+                37.1747341
+              ],
+              [
+                -3.5859778,
+                37.1746595
+              ],
+              [
+                -3.5860382,
+                37.1746621
+              ],
+              [
+                -3.5860332,
+                37.1747367
+              ],
+              [
+                -3.5866362,
+                37.174769
+              ],
+              [
+                -3.5866438,
+                37.1744889
+              ],
+              [
+                -3.5867888,
+                37.1744557
+              ],
+              [
+                -3.58665,
+                37.1733
+              ],
+              [
+                -3.58675,
+                37.17225
+              ],
+              [
+                -3.58695,
+                37.1713
+              ],
+              [
+                -3.58725,
+                37.17035
+              ],
+              [
+                -3.5877,
+                37.16955
+              ],
+              [
+                -3.58815,
+                37.16885
+              ],
+              [
+                -3.588662,
+                37.169046
+              ],
+              [
+                -3.58975,
+                37.16935
+              ],
+              [
+                -3.59085,
+                37.16965
+              ],
+              [
+                -3.59195,
+                37.16995
+              ],
+              [
+                -3.59295,
+                37.1703
+              ],
+              [
+                -3.5937585,
+                37.1705355
+              ],
+              [
+                -3.5938441,
+                37.1706222
+              ],
+              [
+                -3.5949269,
+                37.171666
+              ],
+              [
+                -3.5971375,
+                37.1722659
+              ],
+              [
+                -3.5980542,
+                37.1721727
+              ],
+              [
+                -3.5992398,
+                37.1740862
+              ],
+              [
+                -3.5992923,
+                37.1741297
+              ],
+              [
+                -3.599474,
+                37.1743273
+              ],
+              [
+                -3.5996842,
+                37.1745626
+              ],
+              [
+                -3.599744,
+                37.1746364
+              ],
+              [
+                -3.6012183,
+                37.1762951
+              ],
+              [
+                -3.6017812,
+                37.1775243
+              ],
+              [
+                -3.601775,
+                37.1780521
+              ],
+              [
+                -3.6017334,
+                37.1785613
+              ],
+              [
+                -3.6013084,
+                37.1805458
+              ],
+              [
+                -3.6011014,
+                37.1803856
+              ],
+              [
+                -3.600982,
+                37.1802819
+              ],
+              [
+                -3.6005985,
+                37.180524
+              ],
+              [
+                -3.6005746,
+                37.1805774
+              ],
+              [
+                -3.6004628,
+                37.1805931
+              ],
+              [
+                -3.6004758,
+                37.1806624
+              ],
+              [
+                -3.6006231,
+                37.1809308
+              ],
+              [
+                -3.6006345,
+                37.1809511
+              ],
+              [
+                -3.6006563,
+                37.180978
+              ],
+              [
+                -3.6009324,
+                37.1812295
+              ],
+              [
+                -3.6010755,
+                37.1813485
+              ],
+              [
+                -3.6011086,
+                37.1813649
+              ],
+              [
+                -3.6011493,
+                37.181385
+              ],
+              [
+                -3.6011053,
+                37.1814234
+              ],
+              [
+                -3.6009366,
+                37.1815775
+              ],
+              [
+                -3.6007874,
+                37.1817066
+              ],
+              [
+                -3.6006899,
+                37.1817828
+              ],
+              [
+                -3.6005481,
+                37.1819064
+              ],
+              [
+                -3.6001521,
+                37.1822519
+              ],
+              [
+                -3.5994918,
+                37.1821936
+              ],
+              [
+                -3.5978093,
+                37.1848455
+              ],
+              [
+                -3.5972537,
+                37.1846439
+              ],
+              [
+                -3.596339,
+                37.1846974
+              ],
+              [
+                -3.5954314,
+                37.1845066
+              ],
+              [
+                -3.5949473,
+                37.1851205
+              ],
+              [
+                -3.5945015,
+                37.1855218
+              ],
+              [
+                -3.5937863,
+                37.185882
+              ],
+              [
+                -3.5931119,
+                37.1859342
+              ],
+              [
+                -3.592966,
+                37.1859777
+              ],
+              [
+                -3.5925442,
+                37.1860617
+              ],
+              [
+                -3.5915528,
+                37.186192
+              ],
+              [
+                -3.5914719,
+                37.1861891
+              ],
+              [
+                -3.5909078,
+                37.1861248
+              ],
+              [
+                -3.5904947,
+                37.1858184
+              ],
+              [
+                -3.5898731,
+                37.1854364
+              ],
+              [
+                -3.5891889,
+                37.1852347
+              ],
+              [
+                -3.5887198,
+                37.1851044
+              ],
+              [
+                -3.5879719,
+                37.1848548
+              ],
+              [
+                -3.5877155,
+                37.1846022
+              ],
+              [
+                -3.5873192,
+                37.183715
+              ],
+              [
+                -3.5872183,
+                37.1826812
+              ],
+              [
+                -3.5872614,
+                37.1816785
+              ],
+              [
+                -3.58833,
+                37.17924
+              ],
+              [
+                -3.5882703,
+                37.179097
+              ],
+              [
+                -3.5894253,
+                37.1786145
+              ],
+              [
+                -3.5906595,
+                37.1785531
+              ],
+              [
+                -3.5914125,
+                37.178261
+              ],
+              [
+                -3.5923349,
+                37.1784844
+              ],
+              [
+                -3.5927468,
+                37.1783326
+              ],
+              [
+                -3.592682,
+                37.1782206
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "commerce.alcaiceria",
+      "properties": {
+        "id": "commerce.alcaiceria",
+        "name": "Alcaicería",
+        "historical_name": "Al-Qaysariyya",
+        "modern_name": "Recinto de la Alcaicería",
+        "aliases": [
+          "Mercado de la seda",
+          "Zoco de la Alcaicería"
+        ],
+        "modern_search_terms": [
+          "Alcaicería",
+          "Placeta de la Seda",
+          "Calle Paños",
+          "Calle Ermita",
+          "Catedral",
+          "Plaza Bib-Rambla"
+        ],
+        "category": "commerce_civic",
+        "subtype": "silk_market",
+        "period": {
+          "from_year": null,
+          "to_year": 1843,
+          "from_precision": "unknown",
+          "to_precision": "year",
+          "note": "El recinto mercantil era una pieza central de la medina nazarí; el incendio de 1843 destruyó casi por completo el conjunto histórico."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "parcel_morphology",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Recinto cerrado de calles mercantiles dedicado especialmente a la fabricación y venta de seda en el centro de la medina.",
+        "context_1492": "La Alcaicería formaba, junto con la Mezquita Mayor, la Madraza y el Zacatín, el núcleo religioso y comercial de Granada. Sus accesos controlaban un tejido denso de tiendas, talleres y alojamientos.",
+        "after_1492": "La actividad sedera continuó bajo nuevas instituciones hasta que el incendio de 1843 arrasó casi todo el conjunto. La reconstrucción regularizó y redujo el tejido, y en el siglo XX se reforzó su imagen de bazar artesanal.",
+        "today": "El recinto visitable conserva los nombres de Alcaicería, Paños, Ermita y Placeta de la Seda, pero su arquitectura es principalmente posterior a 1843. El polígono marca el núcleo reconocible, no toda la extensión histórica descrita por las fuentes.",
+        "evidence_note": "Las fuentes sitúan con seguridad la Alcaicería en este sector y describen un ámbito mayor entre los espacios centrales de la medina. Como no se dispone de un deslinde parcelario completo de 1492, la envolvente se publica como aproximada.",
+        "geometry_method": "approximate_area",
+        "geometry_source_refs": [
+          "source.granada-alcaiceria",
+          "source.granada-centre-plan",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-alcaiceria",
+            "locator": "Descripción del recinto histórico",
+            "supports": "Función como mercado de la seda, carácter de entramado cerrado y continuidad del lugar."
+          },
+          {
+            "source_id": "source.granada-centre-plan",
+            "locator": "Memoria histórica del ámbito del Sagrario y catálogo de espacios públicos",
+            "supports": "Relación espacial con la Mezquita Mayor y el Zacatín, e incendio y reconstrucción de 1843."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Alcaicería",
+          "function": "silk_market",
+          "summary": "La Alcaicería formaba, junto con la Mezquita Mayor, la Madraza y el Zacatín, el núcleo religioso y comercial de Granada. Sus accesos controlaban un tejido denso de tiendas, talleres y alojamientos.",
+          "evidence_note": "Las fuentes sitúan con seguridad la Alcaicería en este sector y describen un ámbito mayor entre los espacios centrales de la medina. Como no se dispone de un deslinde parcelario completo de 1492, la envolvente se publica como aproximada.",
+          "geometry_variant_id": "c1492.commerce.alcaiceria",
+          "citations": [
+            {
+              "source_id": "source.granada-alcaiceria",
+              "locator": "Descripción del recinto histórico",
+              "supports": "Función como mercado de la seda, carácter de entramado cerrado y continuidad del lugar."
+            },
+            {
+              "source_id": "source.granada-centre-plan",
+              "locator": "Memoria histórica del ámbito del Sagrario y catálogo de espacios públicos",
+              "supports": "Relación espacial con la Mezquita Mayor y el Zacatín, e incendio y reconstrucción de 1843."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.59956,
+              37.17574
+            ],
+            [
+              -3.59875,
+              37.17592
+            ],
+            [
+              -3.59842,
+              37.17556
+            ],
+            [
+              -3.59875,
+              37.17531
+            ],
+            [
+              -3.59918,
+              37.17502
+            ],
+            [
+              -3.59953,
+              37.17518
+            ],
+            [
+              -3.59956,
+              37.17574
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "commerce.corral-carbon",
+      "properties": {
+        "id": "commerce.corral-carbon",
+        "name": "Corral del Carbón",
+        "historical_name": "Al-Funduq al-Yadida",
+        "modern_name": "Corral del Carbón",
+        "aliases": [
+          "Alhóndiga Nueva",
+          "Funduq al-Yadida"
+        ],
+        "modern_search_terms": [
+          "Calle Mariana Pineda",
+          "Corral del Carbón",
+          "Plaza Isabel la Católica"
+        ],
+        "category": "commerce_civic",
+        "subtype": "funduq",
+        "period": {
+          "from_year": 1300,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Fue construido en la primera mitad del siglo XIV y conserva su estructura fundamental pese a los cambios de uso."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology"
+        ],
+        "summary": "Alhóndiga nazarí que almacenaba y vendía trigo y daba alojamiento seguro a los mercaderes y sus mercancías.",
+        "context_1492": "El funduq funcionaba como una pieza de la infraestructura comercial de la medina: su patio organizaba depósitos y aposentos, y la puerta se cerraba al anochecer para proteger bienes y viajeros.",
+        "after_1492": "Pasó a propiedad cristiana, fue corral de comedias y de vecinos y terminó asociado al almacenamiento de carbón. Torres Balbás lo adquirió y restauró entre 1929 y 1931.",
+        "today": "El edificio se conserva en la calle Mariana Pineda y puede visitarse. La geometría sigue la huella moderna del monumento, incluido su patio central.",
+        "evidence_note": "La fábrica conservada permite una delimitación segura del inmueble actual. La geometría no separa las fases nazaríes de las restauraciones y transformaciones posteriores.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.alhambra-corral-carbon",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-corral-carbon",
+            "locator": "Descripción histórica y localización del monumento",
+            "supports": "Cronología, funciones nazaríes, cambios posteriores, restauración y conservación del edificio."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "secure",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Corral del Carbón",
+          "function": "funduq",
+          "summary": "El funduq funcionaba como una pieza de la infraestructura comercial de la medina: su patio organizaba depósitos y aposentos, y la puerta se cerraba al anochecer para proteger bienes y viajeros.",
+          "evidence_note": "La fábrica conservada permite una delimitación segura del inmueble actual. La geometría no separa las fases nazaríes de las restauraciones y transformaciones posteriores.",
+          "geometry_variant_id": "c1492.commerce.corral-carbon",
+          "citations": [
+            {
+              "source_id": "source.alhambra-corral-carbon",
+              "locator": "Descripción histórica y localización del monumento",
+              "supports": "Cronología, funciones nazaríes, cambios posteriores, restauración y conservación del edificio."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5982412,
+              37.1749135
+            ],
+            [
+              -3.5980958,
+              37.1748399
+            ],
+            [
+              -3.5980796,
+              37.1748317
+            ],
+            [
+              -3.598111,
+              37.1747953
+            ],
+            [
+              -3.5980267,
+              37.1747572
+            ],
+            [
+              -3.5979644,
+              37.1747294
+            ],
+            [
+              -3.5979442,
+              37.1747499
+            ],
+            [
+              -3.5979105,
+              37.1747349
+            ],
+            [
+              -3.5978745,
+              37.1747188
+            ],
+            [
+              -3.5977736,
+              37.1748515
+            ],
+            [
+              -3.5978484,
+              37.1748885
+            ],
+            [
+              -3.5978034,
+              37.1749476
+            ],
+            [
+              -3.5977945,
+              37.1749594
+            ],
+            [
+              -3.5980847,
+              37.1751053
+            ],
+            [
+              -3.5981466,
+              37.1750279
+            ],
+            [
+              -3.5981713,
+              37.1750398
+            ],
+            [
+              -3.5982001,
+              37.1750048
+            ],
+            [
+              -3.5982278,
+              37.1749711
+            ],
+            [
+              -3.5982052,
+              37.1749602
+            ],
+            [
+              -3.5982354,
+              37.174921
+            ],
+            [
+              -3.5982412,
+              37.1749135
+            ]
+          ],
+          [
+            [
+              -3.5981463,
+              37.1748983
+            ],
+            [
+              -3.5980615,
+              37.1750111
+            ],
+            [
+              -3.5979069,
+              37.1749297
+            ],
+            [
+              -3.5979948,
+              37.1748237
+            ],
+            [
+              -3.5981463,
+              37.1748983
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "civic.maristan",
+      "properties": {
+        "id": "civic.maristan",
+        "name": "Maristán",
+        "historical_name": "Maristán de Granada",
+        "modern_name": "Restos arqueológicos del Maristán",
+        "aliases": [
+          "Hospital de Muhammad V",
+          "Casa de la Moneda"
+        ],
+        "modern_search_terms": [
+          "Calle Concepción de Zafra",
+          "Carrera del Darro",
+          "El Bañuelo"
+        ],
+        "category": "commerce_civic",
+        "subtype": "hospital",
+        "period": {
+          "from_year": 1365,
+          "to_year": 1494,
+          "from_precision": "year",
+          "to_precision": "year",
+          "note": "Fundado por Muhammad V, se construyó entre 1365 y 1367 y mantuvo su función asistencial hasta 1494."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary"
+        ],
+        "summary": "Hospital fundado por Muhammad V en el barrio de Axares y organizado en torno a un patio porticado con alberca.",
+        "context_1492": "El Maristán seguía prestando asistencia en un edificio rectangular de cuatro crujías y dos alturas. Su fundación regia lo convertía en una institución singular de la Granada nazarí.",
+        "after_1492": "Desde 1497 albergó la Real Casa de la Moneda. Fue parcialmente demolido y reconstruido en 1843, y nuevas amenazas de derribo en el siglo XX impulsaron su investigación y protección.",
+        "today": "Se conservan el pórtico sur, la nave oriental y restos arqueológicos del subsuelo. El Patronato consolidó y restauró el pórtico entre 2017 y 2022.",
+        "evidence_note": "La parcela y los restos se conocen con seguridad, pero la huella cartografiada representa el recinto arqueológico actual y no diferencia cada muro original de las reconstrucciones posteriores.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.alhambra-maristan",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-maristan",
+            "locator": "Historia, descripción arquitectónica y restauración del Maristán",
+            "supports": "Fundación, fechas, función, planta general, cambios de uso, restos conservados y restauración."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "secure",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Maristán",
+          "function": "hospital",
+          "summary": "El Maristán seguía prestando asistencia en un edificio rectangular de cuatro crujías y dos alturas. Su fundación regia lo convertía en una institución singular de la Granada nazarí.",
+          "evidence_note": "La parcela y los restos se conocen con seguridad, pero la huella cartografiada representa el recinto arqueológico actual y no diferencia cada muro original de las reconstrucciones posteriores.",
+          "geometry_variant_id": "c1492.civic.maristan",
+          "citations": [
+            {
+              "source_id": "source.alhambra-maristan",
+              "locator": "Historia, descripción arquitectónica y restauración del Maristán",
+              "supports": "Fundación, fechas, función, planta general, cambios de uso, restos conservados y restauración."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5930735,
+              37.1788179
+            ],
+            [
+              -3.5929157,
+              37.1785712
+            ],
+            [
+              -3.5928782,
+              37.1785099
+            ],
+            [
+              -3.5927946,
+              37.1785465
+            ],
+            [
+              -3.5926944,
+              37.1785904
+            ],
+            [
+              -3.592614,
+              37.1786236
+            ],
+            [
+              -3.5926545,
+              37.1786819
+            ],
+            [
+              -3.5926682,
+              37.1787014
+            ],
+            [
+              -3.592684,
+              37.1787211
+            ],
+            [
+              -3.5926881,
+              37.1787193
+            ],
+            [
+              -3.5927596,
+              37.17882
+            ],
+            [
+              -3.5928266,
+              37.1789205
+            ],
+            [
+              -3.5930735,
+              37.1788179
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.banuelo",
+      "properties": {
+        "id": "water.banuelo",
+        "name": "El Bañuelo",
+        "historical_name": "Hammam al-Yawza",
+        "modern_name": "El Bañuelo",
+        "aliases": [
+          "Baño del Nogal",
+          "Baño de la Puerta de Guadix"
+        ],
+        "modern_search_terms": [
+          "Carrera del Darro 31",
+          "Calle Bañuelo",
+          "Puente de Espinosa"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "hammam",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "circa",
+          "to_precision": "unknown",
+          "note": "Su datación se discute entre una construcción zirí del siglo XI y una propuesta del siglo XII; estaba plenamente integrado en la ciudad medieval antes de 1492."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "secure",
+          "time": "disputed"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Baño público andalusí junto al Darro, uno de los hammames medievales mejor conservados de la península.",
+        "context_1492": "El baño atendía a un sector densamente poblado junto a una vía principal y la Bab al-Difaf. Sus salas articulaban el ritual de limpieza física y espiritual propio del hammam urbano.",
+        "after_1492": "El edificio sobrevivió a las prohibiciones y transformaciones que hicieron desaparecer muchos baños públicos. Las restauraciones contemporáneas consolidaron una fábrica excepcional, aunque su fecha exacta sigue debatida.",
+        "today": "El Bañuelo se conserva y visita en Carrera del Darro 31. La geometría sigue la huella actual del edificio, que incorpora restauraciones y no equivale a una lectura fase por fase.",
+        "evidence_note": "La localización y la fábrica son seguras. Se marca como controvertida la cronología porque la propia síntesis del Patronato recoge propuestas del siglo XI y del XII.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.alhambra-banuelo",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-banuelo",
+            "locator": "Historia, datación y contexto urbano de El Bañuelo",
+            "supports": "Nombres históricos, debate cronológico, relación con Bab al-Difaf, función y conservación."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "secure",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "El Bañuelo",
+          "function": "hammam",
+          "summary": "El baño atendía a un sector densamente poblado junto a una vía principal y la Bab al-Difaf. Sus salas articulaban el ritual de limpieza física y espiritual propio del hammam urbano.",
+          "evidence_note": "La localización y la fábrica son seguras. Se marca como controvertida la cronología porque la propia síntesis del Patronato recoge propuestas del siglo XI y del XII.",
+          "geometry_variant_id": "c1492.water.banuelo",
+          "citations": [
+            {
+              "source_id": "source.alhambra-banuelo",
+              "locator": "Historia, datación y contexto urbano de El Bañuelo",
+              "supports": "Nombres históricos, debate cronológico, relación con Bab al-Difaf, función y conservación."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5931302,
+              37.1785458
+            ],
+            [
+              -3.5930437,
+              37.1784292
+            ],
+            [
+              -3.5930302,
+              37.1784091
+            ],
+            [
+              -3.5929784,
+              37.1783325
+            ],
+            [
+              -3.5929567,
+              37.1783007
+            ],
+            [
+              -3.5928509,
+              37.178349
+            ],
+            [
+              -3.5928567,
+              37.1783581
+            ],
+            [
+              -3.5928622,
+              37.1783667
+            ],
+            [
+              -3.5928686,
+              37.1783767
+            ],
+            [
+              -3.5929317,
+              37.1783514
+            ],
+            [
+              -3.5929741,
+              37.178415
+            ],
+            [
+              -3.5929098,
+              37.1784413
+            ],
+            [
+              -3.5929114,
+              37.1784439
+            ],
+            [
+              -3.5929072,
+              37.1784449
+            ],
+            [
+              -3.5929139,
+              37.1784564
+            ],
+            [
+              -3.5929928,
+              37.1785886
+            ],
+            [
+              -3.592998,
+              37.1785862
+            ],
+            [
+              -3.5930092,
+              37.1785809
+            ],
+            [
+              -3.5930146,
+              37.1785896
+            ],
+            [
+              -3.5931302,
+              37.1785458
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.alcazaba-qadima",
+      "properties": {
+        "id": "quarter.alcazaba-qadima",
+        "name": "Alcazaba Qadima",
+        "historical_name": "Al-Qasaba al-Qadima",
+        "modern_name": "Entorno de San Nicolás y la Casa de la Lona",
+        "aliases": [
+          "Alcazaba Vieja",
+          "Alcazaba Cadima",
+          "Al-Qasaba al-Qadima"
+        ],
+        "modern_search_terms": [
+          "San Nicolás",
+          "Casa de la Lona",
+          "Puerta de las Pesas",
+          "Puerta Monaita",
+          "Albaicín"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Núcleo político y defensivo zirí del siglo XI que siguió integrado en la ciudad durante el periodo nazarí, aunque perdió centralidad frente a la Alhambra."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Antigua ciudadela zirí del Albaicín y uno de los núcleos fundacionales de la Granada islámica.",
+        "context_1492": "La Alcazaba Qadima conservaba su identidad defensiva y urbana dentro del Albaicín, articulada por puertas como Monaita y las Pesas. Ya no era la principal sede regia, trasladada a la Alhambra, pero seguía siendo un recinto densamente habitado.",
+        "after_1492": "El sector perdió población y funciones, incorporó parroquias y conventos y desarrolló progresivamente la tipología residencial del carmen. Restos de muralla y puertas mantuvieron visible parte de su estructura.",
+        "today": "El recinto se extiende desde Monaita y las Pesas hasta las Tomasas y San Juan de los Reyes, incluyendo la ampliación zirí hacia San Miguel Bajo, San José y la Casa de la Lona.",
+        "evidence_note": "Se sustituye el pequeño polígono aislado por la envolvente de la Alcazaba Vieja desarrollada: Mapa 5 registrado y recorrido descrito en el PEPRI, pp. 63-64. Se distinguen así el núcleo primitivo y el recinto zirí ampliado, sin atribuir todo el perímetro a una sola fase. Comparte límites con Axares y al-Bayyazin.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.granada-pepri-islamic-city",
+          "source.junta-monaita-wall-2000",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Memoria urbana, pp. 63-64 (PDF 65-66)",
+            "supports": "Itinerario Monaita–Pesas–Tomasas–San Juan de los Reyes–Lona, con sus ampliaciones."
+          },
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5",
+            "supports": "Forma del recinto y contacto con Axares y el arrabal septentrional."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Alcazaba Qadima",
+          "function": "historical_quarter",
+          "summary": "La Alcazaba Qadima conservaba su identidad defensiva y urbana dentro del Albaicín, articulada por puertas como Monaita y las Pesas. Ya no era la principal sede regia, trasladada a la Alhambra, pero seguía siendo un recinto densamente habitado.",
+          "evidence_note": "Se sustituye el pequeño polígono aislado por la envolvente de la Alcazaba Vieja desarrollada: Mapa 5 registrado y recorrido descrito en el PEPRI, pp. 63-64. Se distinguen así el núcleo primitivo y el recinto zirí ampliado, sin atribuir todo el perímetro a una sola fase. Comparte límites con Axares y al-Bayyazin.",
+          "geometry_variant_id": "c1492.quarter.alcazaba-qadima",
+          "citations": [
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Memoria urbana, pp. 63-64 (PDF 65-66)",
+              "supports": "Itinerario Monaita–Pesas–Tomasas–San Juan de los Reyes–Lona, con sus ampliaciones."
+            },
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5",
+              "supports": "Forma del recinto y contacto con Axares y el arrabal septentrional."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5975658,
+              37.1820543
+            ],
+            [
+              -3.5968809,
+              37.1818231
+            ],
+            [
+              -3.595999,
+              37.1818851
+            ],
+            [
+              -3.5947285,
+              37.1822987
+            ],
+            [
+              -3.5937726,
+              37.1824667
+            ],
+            [
+              -3.593282,
+              37.1823085
+            ],
+            [
+              -3.5923621,
+              37.1820708
+            ],
+            [
+              -3.5914334,
+              37.1815973
+            ],
+            [
+              -3.5917215,
+              37.1814194
+            ],
+            [
+              -3.5916571,
+              37.1804123
+            ],
+            [
+              -3.5921901,
+              37.1803364
+            ],
+            [
+              -3.5921748,
+              37.179929
+            ],
+            [
+              -3.5927062,
+              37.1798103
+            ],
+            [
+              -3.5932689,
+              37.1791099
+            ],
+            [
+              -3.5940354,
+              37.178816
+            ],
+            [
+              -3.5947454,
+              37.1784574
+            ],
+            [
+              -3.5956711,
+              37.178137
+            ],
+            [
+              -3.5962925,
+              37.1782738
+            ],
+            [
+              -3.5970345,
+              37.1787728
+            ],
+            [
+              -3.5974805,
+              37.1792352
+            ],
+            [
+              -3.5977196,
+              37.1798952
+            ],
+            [
+              -3.5978224,
+              37.1804939
+            ],
+            [
+              -3.5976883,
+              37.1812049
+            ],
+            [
+              -3.5975658,
+              37.1820543
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.axares",
+      "properties": {
+        "id": "quarter.axares",
+        "name": "Axares",
+        "historical_name": "Rabad al-Ajsaris",
+        "modern_name": "Ladera baja oriental del Albaicín",
+        "aliases": [
+          "Arrabal del Deleite",
+          "Arrabal de la Recreación",
+          "Ajsaris",
+          "Haxarris"
+        ],
+        "modern_search_terms": [
+          "Casa de Zafra",
+          "Carrera del Darro",
+          "Paseo de los Tristes",
+          "San Nicolás",
+          "Cuesta del Chapiz"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Arrabal formado desde el siglo XI como ensanche de la Alcazaba Qadima y consolidado en las etapas posteriores."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Arrabal de la ladera baja del Albaicín que extendió la ciudad antigua hasta la orilla derecha del Darro.",
+        "context_1492": "Axares era un sector urbano denso y apreciado, organizado entre la Alcazaba Qadima y el Darro. En él se encontraban residencias destacadas, baños, instituciones y accesos vinculados al río.",
+        "after_1492": "El barrio atrajo a familias de la nobleza castellana y recibió fundaciones conventuales. Parte de las viviendas nazaríes quedó incorporada a edificios posteriores, como ocurrió en el entorno de la Casa de Zafra.",
+        "today": "Sector entre el recinto de la Alcazaba Vieja, las laderas de la Victoria y el Darro. Su borde occidental se relaciona con la coracha de Bab al-Difaf.",
+        "evidence_note": "El contorno se reconstruye conjuntamente con la Alcazaba y al-Bayyazin. Su frente fluvial reutiliza el Darro; la línea común con la Alcazaba se digitaliza una sola vez. Se eliminan solapes y bordes inconexos, pero los tramos desaparecidos conservan confianza aproximada.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.granada-pepri-islamic-city",
+          "source.alhambra-banuelo",
+          "source.dera-hydrology",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapas 4 y 5",
+            "supports": "Relación de Axares con la Alcazaba, la coracha y el Darro."
+          },
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Memoria urbana, pp. 63-65 y 88",
+            "supports": "Recintos sucesivos del Albaicín y extensión hacia Axares."
+          },
+          {
+            "source_id": "source.alhambra-banuelo",
+            "locator": "Contexto de Bab al-Difaf y Axares",
+            "supports": "Coracha y relación con los accesos de la Victoria."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Axares",
+          "function": "historical_quarter",
+          "summary": "Axares era un sector urbano denso y apreciado, organizado entre la Alcazaba Qadima y el Darro. En él se encontraban residencias destacadas, baños, instituciones y accesos vinculados al río.",
+          "evidence_note": "El contorno se reconstruye conjuntamente con la Alcazaba y al-Bayyazin. Su frente fluvial reutiliza el Darro; la línea común con la Alcazaba se digitaliza una sola vez. Se eliminan solapes y bordes inconexos, pero los tramos desaparecidos conservan confianza aproximada.",
+          "geometry_variant_id": "c1492.quarter.axares",
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapas 4 y 5",
+              "supports": "Relación de Axares con la Alcazaba, la coracha y el Darro."
+            },
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Memoria urbana, pp. 63-65 y 88",
+              "supports": "Recintos sucesivos del Albaicín y extensión hacia Axares."
+            },
+            {
+              "source_id": "source.alhambra-banuelo",
+              "locator": "Contexto de Bab al-Difaf y Axares",
+              "supports": "Coracha y relación con los accesos de la Victoria."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5932689,
+              37.1791099
+            ],
+            [
+              -3.5927062,
+              37.1798103
+            ],
+            [
+              -3.5921748,
+              37.179929
+            ],
+            [
+              -3.5921901,
+              37.1803364
+            ],
+            [
+              -3.5916571,
+              37.1804123
+            ],
+            [
+              -3.5917215,
+              37.1814194
+            ],
+            [
+              -3.5914334,
+              37.1815973
+            ],
+            [
+              -3.5912161,
+              37.1815161
+            ],
+            [
+              -3.5904681,
+              37.1815752
+            ],
+            [
+              -3.590192,
+              37.1820746
+            ],
+            [
+              -3.589406,
+              37.1818341
+            ],
+            [
+              -3.5890703,
+              37.1814551
+            ],
+            [
+              -3.5887874,
+              37.1810534
+            ],
+            [
+              -3.5884673,
+              37.1803737
+            ],
+            [
+              -3.58865,
+              37.17965
+            ],
+            [
+              -3.5894253,
+              37.1786145
+            ],
+            [
+              -3.5906595,
+              37.1785531
+            ],
+            [
+              -3.5914125,
+              37.178261
+            ],
+            [
+              -3.5923349,
+              37.1784844
+            ],
+            [
+              -3.592746806758957,
+              37.17833262311191
+            ],
+            [
+              -3.5932689,
+              37.1791099
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.garnata-al-yahud",
+      "properties": {
+        "id": "quarter.garnata-al-yahud",
+        "name": "Garnata al-Yahud",
+        "historical_name": "Garnatat al-Yahud",
+        "modern_name": "Entorno del Mauror y el Realejo alto",
+        "aliases": [
+          "Granada de los judíos",
+          "Garnata Alyahud",
+          "Judería de Granada"
+        ],
+        "modern_search_terms": [
+          "Realejo",
+          "Mauror",
+          "Torres Bermejas",
+          "Cuesta del Realejo",
+          "Plaza Fortuny"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": null,
+          "to_year": 1492,
+          "from_precision": "unknown",
+          "to_precision": "year",
+          "note": "El topónimo designa uno de los núcleos antiguos de Granada y su asociación con la población judía; su continuidad espacial exacta hasta 1492 no puede darse por uniforme."
+        },
+        "present_c1492": "probable",
+        "confidence": {
+          "location": "approximate",
+          "time": "probable"
+        },
+        "evidence_basis": [
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Núcleo asociado históricamente a la población judía de Granada, situado al pie del Mauror y relacionado con el actual Realejo.",
+        "context_1492": "La comunidad judía formaba parte de la Granada tardomedieval, pero el nombre Garnata al-Yahud procede de una historia urbana más larga y no demuestra por sí solo que todo el ámbito fuera una judería homogénea en 1492.",
+        "after_1492": "La expulsión de 1492 y la cristianización alteraron radicalmente la población, los usos y la identidad del sector. El área quedó integrada en el Realejo y en los barrios parroquiales de la ciudad cristiana.",
+        "today": "El polígono se concentra en el Mauror y el Realejo alto, entre el pie de la Alhambra, Torres Bermejas y Plaza Fortuny. No equipara todo el Realejo contemporáneo con la judería medieval.",
+        "evidence_note": "Las fuentes municipales coinciden en situar Garnata al-Yahud en la margen izquierda del Darro y al pie del Mauror, pero ofrecen generalizaciones distintas de su extensión. Se publica una envolvente prudente y explícitamente aproximada.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-centre-plan",
+          "source.granada-pgom-urban-history",
+          "source.granada-realejo-jewish",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-centre-plan",
+            "locator": "Memoria, p. 22, apartado «La ciudad islámica»",
+            "supports": "Identificación del asentamiento judío en la margen izquierda del Darro y fusión con el crecimiento urbano posterior."
+          },
+          {
+            "source_id": "source.granada-pgom-urban-history",
+            "locator": "Memoria de información, pp. 126-127 y plano de crecimiento urbano",
+            "supports": "Relación de Garnata al-Yahud con uno de los núcleos primitivos y su posición general respecto a la Alhambra y la medina."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "probable",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Garnata al-Yahud",
+          "function": "historical_quarter",
+          "summary": "La comunidad judía formaba parte de la Granada tardomedieval, pero el nombre Garnata al-Yahud procede de una historia urbana más larga y no demuestra por sí solo que todo el ámbito fuera una judería homogénea en 1492.",
+          "evidence_note": "Las fuentes municipales coinciden en situar Garnata al-Yahud en la margen izquierda del Darro y al pie del Mauror, pero ofrecen generalizaciones distintas de su extensión. Se publica una envolvente prudente y explícitamente aproximada.",
+          "geometry_variant_id": "c1492.quarter.garnata-al-yahud",
+          "citations": [
+            {
+              "source_id": "source.granada-centre-plan",
+              "locator": "Memoria, p. 22, apartado «La ciudad islámica»",
+              "supports": "Identificación del asentamiento judío en la margen izquierda del Darro y fusión con el crecimiento urbano posterior."
+            },
+            {
+              "source_id": "source.granada-pgom-urban-history",
+              "locator": "Memoria de información, pp. 126-127 y plano de crecimiento urbano",
+              "supports": "Relación de Garnata al-Yahud con uno de los núcleos primitivos y su posición general respecto a la Alhambra y la medina."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5963981,
+              37.1764805
+            ],
+            [
+              -3.5949065,
+              37.1773663
+            ],
+            [
+              -3.5935049,
+              37.1779769
+            ],
+            [
+              -3.5929,
+              37.17695
+            ],
+            [
+              -3.5934157,
+              37.1754807
+            ],
+            [
+              -3.5946522,
+              37.1752534
+            ],
+            [
+              -3.5945139,
+              37.1737452
+            ],
+            [
+              -3.5961,
+              37.17375
+            ],
+            [
+              -3.59715,
+              37.17445
+            ],
+            [
+              -3.5963981,
+              37.1764805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.ramla",
+      "properties": {
+        "id": "quarter.ramla",
+        "name": "Arrabal del Arenal / la Rambla",
+        "historical_name": "Rabad al-Ramla",
+        "modern_name": "Bib-Rambla, Mesones y entorno de la Magdalena",
+        "aliases": [
+          "Arrabal del Arenal",
+          "Rabad Arrambla",
+          "Al-Ramla"
+        ],
+        "modern_search_terms": [
+          "Plaza Bib-Rambla",
+          "Calle Mesones",
+          "Plaza de la Trinidad",
+          "Barrio de la Magdalena"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": 1100,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "El arrabal se desarrolló desde el siglo XII y alcanzó una intensa ocupación comercial y residencial en época nazarí."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Arrabal comercial desarrollado junto a Bib-Rambla y la calle Mesones, asociado posteriormente al barrio de la Magdalena.",
+        "context_1492": "Al-Ramla ocupaba el borde meridional del principal centro comercial y recibía población, mercancías y recursos de la vega. La arqueología documenta edificios nazaríes del siglo XIV bajo la trama de Mesones.",
+        "after_1492": "El sector quedó integrado en la organización cristiana de la Magdalena y conservó una marcada función comercial, aunque plazas, calles y edificios fueron profundamente reformados.",
+        "today": "Franja alargada al exterior occidental de la medina, relacionada con Mesones y Bibarrambla. El contorno no delimita todo el posterior barrio de la Magdalena.",
+        "evidence_note": "El Mapa 5 registrado y el esquema de Isac en el PEPRI, p. 88, muestran una franja aproximadamente rectangular y oblicua adosada al recinto. Se sustituye el anterior hexágono y se recorta el encuentro con la cerca de la medina; los bordes exteriores siguen siendo aproximados.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.granada-pepri-islamic-city",
+          "source.granada-centre-plan",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5, «Arrabal del Arenal»",
+            "supports": "Forma alargada junto al límite occidental de la medina."
+          },
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Memoria urbana, p. 88, plano de Isac",
+            "supports": "Contraste de la posición y forma del Arenal en la ciudad nazarí."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Arrabal del Arenal / la Rambla",
+          "function": "historical_quarter",
+          "summary": "Al-Ramla ocupaba el borde meridional del principal centro comercial y recibía población, mercancías y recursos de la vega. La arqueología documenta edificios nazaríes del siglo XIV bajo la trama de Mesones.",
+          "evidence_note": "El Mapa 5 registrado y el esquema de Isac en el PEPRI, p. 88, muestran una franja aproximadamente rectangular y oblicua adosada al recinto. Se sustituye el anterior hexágono y se recorta el encuentro con la cerca de la medina; los bordes exteriores siguen siendo aproximados.",
+          "geometry_variant_id": "c1492.quarter.ramla",
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5, «Arrabal del Arenal»",
+              "supports": "Forma alargada junto al límite occidental de la medina."
+            },
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Memoria urbana, p. 88, plano de Isac",
+              "supports": "Contraste de la posición y forma del Arenal en la ciudad nazarí."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5993709,
+              37.1739157
+            ],
+            [
+              -3.5995746,
+              37.1736323
+            ],
+            [
+              -3.6001742,
+              37.1731902
+            ],
+            [
+              -3.6005853,
+              37.1734388
+            ],
+            [
+              -3.6011513,
+              37.174242
+            ],
+            [
+              -3.6016677,
+              37.1751535
+            ],
+            [
+              -3.6022061,
+              37.1759358
+            ],
+            [
+              -3.6014078,
+              37.1760818
+            ],
+            [
+              -3.5993709,
+              37.1739157
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.albayyazin",
+      "properties": {
+        "id": "quarter.albayyazin",
+        "name": "Arrabal del Albaicín / al-Bayyazin",
+        "historical_name": "Rabad al-Bayyazin",
+        "modern_name": "Albaicín alto y entorno de San Miguel",
+        "aliases": [
+          "Albayzín",
+          "Rabad al-Bayyazin",
+          "Los Alconeros",
+          "Barrio de los Alconeros"
+        ],
+        "modern_search_terms": [
+          "San Miguel Alto",
+          "San Nicolás",
+          "San Buenaventura",
+          "Albaicín"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": 1200,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "El arrabal se consolidó y quedó articulado por la nueva cerca entre finales del siglo XIII y comienzos del XIV."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Gran arrabal septentrional que, junto con Axares y la Alcazaba Qadima, formaba el complejo urbano del Albaicín tardonazarí.",
+        "context_1492": "Al-Bayyazin era un núcleo urbano diferenciado pero integrado en el amplio recinto del Albaicín. Su expansión quedó ordenada por la cerca nazarí y por los caminos y puertas de la ladera alta.",
+        "after_1492": "Las parroquias, conventos y transformaciones residenciales cristianas y moriscas alteraron sus subdivisiones, mientras Albaicín pasó a designar un ámbito histórico mucho más amplio.",
+        "today": "El arrabal ocupa el espacio comprendido entre la cerca exterior nazarí y los recintos anteriores de la Alcazaba Vieja y Axares. La denominación «Los Alconeros» se recoge como rótulo del Mapa 5, no como etimología demostrada.",
+        "evidence_note": "El borde exterior mantiene los lienzos conservados y anclajes ya contrastados con OSM y el PEPRI. Los bordes interiores son compartidos con Qadima y Axares. Así se sustituyen las manchas separadas por recintos contiguos; no se reconstruyen límites de cada barrio menor ni una ocupación edificada homogénea.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.granada-pepri-islamic-city",
+          "source.granada-albaicin-wall-route",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5, rótulo «Barrio de los Alconeros / Rabat Al-bayyazin»",
+            "supports": "Identificación del arrabal septentrional y contacto con los recintos anteriores."
+          },
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Memoria urbana, p. 88 y plano del Albaicín nazarí",
+            "supports": "Envolvente tardonazarí contrastada con los lienzos conservados."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Arrabal del Albaicín / al-Bayyazin",
+          "function": "historical_quarter",
+          "summary": "Al-Bayyazin era un núcleo urbano diferenciado pero integrado en el amplio recinto del Albaicín. Su expansión quedó ordenada por la cerca nazarí y por los caminos y puertas de la ladera alta.",
+          "evidence_note": "El borde exterior mantiene los lienzos conservados y anclajes ya contrastados con OSM y el PEPRI. Los bordes interiores son compartidos con Qadima y Axares. Así se sustituyen las manchas separadas por recintos contiguos; no se reconstruyen límites de cada barrio menor ni una ocupación edificada homogénea.",
+          "geometry_variant_id": "c1492.quarter.albayyazin",
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5, rótulo «Barrio de los Alconeros / Rabat Al-bayyazin»",
+              "supports": "Identificación del arrabal septentrional y contacto con los recintos anteriores."
+            },
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Memoria urbana, p. 88 y plano del Albaicín nazarí",
+              "supports": "Envolvente tardonazarí contrastada con los lienzos conservados."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5994918,
+              37.1821936
+            ],
+            [
+              -3.5978093,
+              37.1848455
+            ],
+            [
+              -3.5972537,
+              37.1846439
+            ],
+            [
+              -3.596339,
+              37.1846974
+            ],
+            [
+              -3.5954314,
+              37.1845066
+            ],
+            [
+              -3.5949473,
+              37.1851205
+            ],
+            [
+              -3.5945015,
+              37.1855218
+            ],
+            [
+              -3.5937863,
+              37.185882
+            ],
+            [
+              -3.5931119,
+              37.1859342
+            ],
+            [
+              -3.592966,
+              37.1859777
+            ],
+            [
+              -3.5925442,
+              37.1860617
+            ],
+            [
+              -3.5915528,
+              37.186192
+            ],
+            [
+              -3.5914719,
+              37.1861891
+            ],
+            [
+              -3.5909078,
+              37.1861248
+            ],
+            [
+              -3.5904947,
+              37.1858184
+            ],
+            [
+              -3.5898731,
+              37.1854364
+            ],
+            [
+              -3.5891889,
+              37.1852347
+            ],
+            [
+              -3.5887198,
+              37.1851044
+            ],
+            [
+              -3.5879719,
+              37.1848548
+            ],
+            [
+              -3.5877155,
+              37.1846022
+            ],
+            [
+              -3.5873192,
+              37.183715
+            ],
+            [
+              -3.5872183,
+              37.1826812
+            ],
+            [
+              -3.5872614,
+              37.1816785
+            ],
+            [
+              -3.58833,
+              37.17924
+            ],
+            [
+              -3.588270268325397,
+              37.17909701626978
+            ],
+            [
+              -3.5894253,
+              37.1786145
+            ],
+            [
+              -3.58865,
+              37.17965
+            ],
+            [
+              -3.5884673,
+              37.1803737
+            ],
+            [
+              -3.5887874,
+              37.1810534
+            ],
+            [
+              -3.5890703,
+              37.1814551
+            ],
+            [
+              -3.589406,
+              37.1818341
+            ],
+            [
+              -3.590192,
+              37.1820746
+            ],
+            [
+              -3.5904681,
+              37.1815752
+            ],
+            [
+              -3.5912161,
+              37.1815161
+            ],
+            [
+              -3.5914334,
+              37.1815973
+            ],
+            [
+              -3.5923621,
+              37.1820708
+            ],
+            [
+              -3.593282,
+              37.1823085
+            ],
+            [
+              -3.5937726,
+              37.1824667
+            ],
+            [
+              -3.5947285,
+              37.1822987
+            ],
+            [
+              -3.595999,
+              37.1818851
+            ],
+            [
+              -3.5968809,
+              37.1818231
+            ],
+            [
+              -3.5975658,
+              37.1820543
+            ],
+            [
+              -3.5994918,
+              37.1821936
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.alfajjarin",
+      "properties": {
+        "id": "quarter.alfajjarin",
+        "name": "Arrabal de los Alfareros",
+        "historical_name": "Rabad al-Fajjarin",
+        "modern_name": "Realejo: Santo Domingo, Santiago, Jarrería y Cuarto Real",
+        "aliases": [
+          "Rabad al-Fajjarin",
+          "Rabad Alfajjarin",
+          "Barrio de los Alfareros"
+        ],
+        "modern_search_terms": [
+          "Plaza Fortuny",
+          "Santo Domingo",
+          "Cuarto Real de Santo Domingo",
+          "Plaza de los Campos",
+          "Calle Belén"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": null,
+          "to_year": null,
+          "from_precision": "unknown",
+          "to_precision": "unknown",
+          "note": "Arrabal medieval especializado en la producción cerámica y plenamente incorporado a la ciudad antes del final del periodo nazarí."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Arrabal meridional vinculado a la producción cerámica, contiguo a al-Nayd y encerrado con él dentro de las ampliaciones defensivas nazaríes.",
+        "context_1492": "Arrabal con alfares, viviendas, huertas, cementerios y almunias. La arqueología sitúa talleres bajomedievales en Santo Domingo, Santiago, Jarrería y Molinos; los primeros alfares de Casa de los Tiros son anteriores y no fijan por sí solos el arrabal de 1492. Su límite con al-Nayd no está identificado.",
+        "after_1492": "El establecimiento de Santo Domingo y las transformaciones del Realejo alteraron la estructura productiva y residencial. El Cuarto Real y evidencias arqueológicas conservaron testimonios del paisaje nazarí.",
+        "today": "Envolvente aproximada del Realejo documentado por excavaciones, desde Plaza Fortuny y la vertiente sur del Mauror hasta Santo Domingo, Santiago y el Cuarto Real. No representa parcelas medievales ni edificación continua.",
+        "evidence_note": "Se retira la extensión no respaldada bajo la Alhambra y se recupera el sector Santo Domingo–Santiago–Cuarto Real. Garrido López (2024, pp. 663–679) permite situar el arrabal, no trazar su frontera exacta con La Loma. El espacio entre envolventes expresa incertidumbre, no un barrio intermedio ni una franja vacía. Vértices editoriales, no levantamiento arqueológico.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.garrido-alfareros-2024",
+          "source.junta-cuesta-realejo-2004",
+          "source.granada-pepri-islamic-city",
+          "source.granada-centre-plan",
+          "source.junta-porteria-santo-domingo-2012",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-centre-plan",
+            "locator": "Memoria, p. 22, apartado «La ciudad islámica»",
+            "supports": "Nombre, actividad alfarera y relación con Garnata al-Yahud y los barrios meridionales."
+          },
+          {
+            "source_id": "source.junta-belen-2008",
+            "locator": "Descripción del sector y excavación de la maqbara de Bab al-Fajjarin",
+            "supports": "Anclaje arqueológico de la Puerta de los Alfareros, su necrópolis y el contexto del arrabal."
+          },
+          {
+            "source_id": "source.junta-cuesta-pescado-2023",
+            "locator": "Contexto histórico y arqueológico de los arrabales meridionales",
+            "supports": "Contigüidad de al-Fajjarin y al-Nayd, incorporación conjunta al recinto y localización de la necrópolis oriental en Campo del Príncipe."
+          },
+          {
+            "source_id": "source.garrido-alfareros-2024",
+            "locator": "pp. 663–679, figuras 1, 5 y 6",
+            "supports": "Situación del arrabal, cerca occidental y cronología de alfares; límite con al-Nayd no identificado."
+          },
+          {
+            "source_id": "source.junta-cuesta-realejo-2004",
+            "locator": "pp. 470–472: contexto histórico",
+            "supports": "Alfareros en Realejo Alto; puertas, Santo Domingo, Santiago y Cuarto Real."
+          },
+          {
+            "source_id": "source.patronato-gomerez-2022",
+            "locator": "Uso militar medieval y reforestación posterior",
+            "supports": "El bosque actual no prueba el uso del suelo de 1492, ni documenta aquí el arrabal."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Arrabal de los Alfareros",
+          "function": "historical_quarter",
+          "summary": "Arrabal con alfares, viviendas, huertas, cementerios y almunias. La arqueología sitúa talleres bajomedievales en Santo Domingo, Santiago, Jarrería y Molinos; los primeros alfares de Casa de los Tiros son anteriores y no fijan por sí solos el arrabal de 1492. Su límite con al-Nayd no está identificado.",
+          "evidence_note": "Se retira la extensión no respaldada bajo la Alhambra y se recupera el sector Santo Domingo–Santiago–Cuarto Real. Garrido López (2024, pp. 663–679) permite situar el arrabal, no trazar su frontera exacta con La Loma. El espacio entre envolventes expresa incertidumbre, no un barrio intermedio ni una franja vacía. Vértices editoriales, no levantamiento arqueológico.",
+          "geometry_variant_id": "c1492.quarter.alfajjarin",
+          "citations": [
+            {
+              "source_id": "source.granada-centre-plan",
+              "locator": "Memoria, p. 22, apartado «La ciudad islámica»",
+              "supports": "Nombre, actividad alfarera y relación con Garnata al-Yahud y los barrios meridionales."
+            },
+            {
+              "source_id": "source.junta-belen-2008",
+              "locator": "Descripción del sector y excavación de la maqbara de Bab al-Fajjarin",
+              "supports": "Anclaje arqueológico de la Puerta de los Alfareros, su necrópolis y el contexto del arrabal."
+            },
+            {
+              "source_id": "source.junta-cuesta-pescado-2023",
+              "locator": "Contexto histórico y arqueológico de los arrabales meridionales",
+              "supports": "Contigüidad de al-Fajjarin y al-Nayd, incorporación conjunta al recinto y localización de la necrópolis oriental en Campo del Príncipe."
+            },
+            {
+              "source_id": "source.garrido-alfareros-2024",
+              "locator": "pp. 663–679, figuras 1, 5 y 6",
+              "supports": "Situación del arrabal, cerca occidental y cronología de alfares; límite con al-Nayd no identificado."
+            },
+            {
+              "source_id": "source.junta-cuesta-realejo-2004",
+              "locator": "pp. 470–472: contexto histórico",
+              "supports": "Alfareros en Realejo Alto; puertas, Santo Domingo, Santiago y Cuarto Real."
+            },
+            {
+              "source_id": "source.patronato-gomerez-2022",
+              "locator": "Uso militar medieval y reforestación posterior",
+              "supports": "El bosque actual no prueba el uso del suelo de 1492, ni documenta aquí el arrabal."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5961247,
+              37.1723578
+            ],
+            [
+              -3.59584,
+              37.1726
+            ],
+            [
+              -3.59551,
+              37.1728
+            ],
+            [
+              -3.5952,
+              37.1731
+            ],
+            [
+              -3.59491,
+              37.17344
+            ],
+            [
+              -3.59449,
+              37.17375
+            ],
+            [
+              -3.59446,
+              37.1744
+            ],
+            [
+              -3.5937,
+              37.17455
+            ],
+            [
+              -3.5928,
+              37.1745
+            ],
+            [
+              -3.5918,
+              37.17448
+            ],
+            [
+              -3.5911,
+              37.1743
+            ],
+            [
+              -3.5913,
+              37.1739
+            ],
+            [
+              -3.5916,
+              37.1734
+            ],
+            [
+              -3.5918,
+              37.17285
+            ],
+            [
+              -3.5915,
+              37.1722
+            ],
+            [
+              -3.59105,
+              37.1715
+            ],
+            [
+              -3.5915,
+              37.1708
+            ],
+            [
+              -3.5924,
+              37.1709
+            ],
+            [
+              -3.5934,
+              37.1711
+            ],
+            [
+              -3.5942,
+              37.1716
+            ],
+            [
+              -3.5949,
+              37.17195
+            ],
+            [
+              -3.5955,
+              37.17178
+            ],
+            [
+              -3.5958,
+              37.17205
+            ],
+            [
+              -3.5961247,
+              37.1723578
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "burial.fajjarin-assal",
+      "properties": {
+        "id": "burial.fajjarin-assal",
+        "name": "Necrópolis de Bab al-Fajjarin y al-Assal",
+        "historical_name": "Maqbarat Bab al-Fajjarin / Maqbarat al-Assal",
+        "modern_name": "Campo del Príncipe y calles próximas",
+        "aliases": [
+          "Cementerio de la Puerta de los Alfareros",
+          "Cementerio del Melero",
+          "Necrópolis de Albunest"
+        ],
+        "modern_search_terms": [
+          "Campo del Príncipe",
+          "Calle Molinos",
+          "Calle Damasqueros",
+          "Calle Cocheras de San Cecilio",
+          "Calle Plegadero"
+        ],
+        "category": "burial_other",
+        "subtype": "cemetery",
+        "period": {
+          "from_year": 1100,
+          "to_year": 1501,
+          "from_precision": "century",
+          "to_precision": "circa",
+          "note": "Los primeros enterramientos se remontan al periodo almohade y el uso funerario continuó hasta poco después de la conquista."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Amplio paisaje funerario que ocupaba Campo del Príncipe y explicaba la transición abierta entre al-Fajjarin y al-Nayd.",
+        "context_1492": "Las maqbaras de Bab al-Fajjarin y al-Assal se habían aproximado o fusionado en el sector oriental de los Alfareros y el contacto con La Loma. Quedaron dentro de las ampliaciones amuralladas, aunque su origen había sido extramuros.",
+        "after_1492": "Los enterramientos islámicos fueron prohibidos desde 1501 y el terreno se allanó y urbanizó progresivamente como Campo del Príncipe y calles adyacentes.",
+        "today": "La envolvente reúne hallazgos y referencias en Campo del Príncipe, Damasqueros, Cocheras de San Cecilio y calles próximas. No afirma que toda la superficie estuviera ocupada simultáneamente por tumbas.",
+        "evidence_note": "Las excavaciones confirman enterramientos en varios puntos, pero la continuidad y los límites entre las maqbaras son reconstruidos. Se representa como una franja funeraria superpuesta a los arrabales, no como un barrio separado.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.junta-belen-2008",
+          "source.junta-porteria-santo-domingo-2012",
+          "source.junta-cuesta-pescado-2023",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.junta-porteria-santo-domingo-2012",
+            "locator": "pp. 4-6, áreas cementeriales del Realejo",
+            "supports": "Localización de al-Assal en Campo del Príncipe, a levante de la Acequia de las Tinajas, y su fusión con Bab al-Fajjarin."
+          },
+          {
+            "source_id": "source.junta-cuesta-pescado-2023",
+            "locator": "Contexto histórico de al-Fajjarin y al-Nayd",
+            "supports": "Extensión de la gran necrópolis oriental de Alfareros y su incorporación posterior al recinto amurallado."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Necrópolis de Bab al-Fajjarin y al-Assal",
+          "function": "cemetery",
+          "summary": "Las maqbaras de Bab al-Fajjarin y al-Assal se habían aproximado o fusionado en el sector oriental de los Alfareros y el contacto con La Loma. Quedaron dentro de las ampliaciones amuralladas, aunque su origen había sido extramuros.",
+          "evidence_note": "Las excavaciones confirman enterramientos en varios puntos, pero la continuidad y los límites entre las maqbaras son reconstruidos. Se representa como una franja funeraria superpuesta a los arrabales, no como un barrio separado.",
+          "geometry_variant_id": "c1492.burial.fajjarin-assal",
+          "citations": [
+            {
+              "source_id": "source.junta-porteria-santo-domingo-2012",
+              "locator": "pp. 4-6, áreas cementeriales del Realejo",
+              "supports": "Localización de al-Assal en Campo del Príncipe, a levante de la Acequia de las Tinajas, y su fusión con Bab al-Fajjarin."
+            },
+            {
+              "source_id": "source.junta-cuesta-pescado-2023",
+              "locator": "Contexto histórico de al-Fajjarin y al-Nayd",
+              "supports": "Extensión de la gran necrópolis oriental de Alfareros y su incorporación posterior al recinto amurallado."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.59365,
+              37.17385
+            ],
+            [
+              -3.5922,
+              37.17405
+            ],
+            [
+              -3.59135,
+              37.17355
+            ],
+            [
+              -3.59085,
+              37.17275
+            ],
+            [
+              -3.59125,
+              37.1717
+            ],
+            [
+              -3.5927,
+              37.17115
+            ],
+            [
+              -3.59355,
+              37.1721
+            ],
+            [
+              -3.59365,
+              37.17385
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.antequeruela",
+      "properties": {
+        "id": "quarter.antequeruela",
+        "name": "Antequeruela",
+        "historical_name": null,
+        "modern_name": "Antequeruela Alta y Baja, junto a San Cecilio y Los Mártires",
+        "aliases": [
+          "Barrio de la Antequeruela",
+          "Antequeruela de Granada"
+        ],
+        "modern_search_terms": [
+          "Antequeruela Alta",
+          "Antequeruela Baja",
+          "San Cecilio",
+          "Carril de San Cecilio",
+          "Cuesta del Caidero",
+          "Carmen de los Mártires"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": 1410,
+          "to_year": null,
+          "from_precision": "year",
+          "to_precision": "unknown",
+          "note": "El barrio se asocia a la llegada de población musulmana refugiada tras la conquista castellana de Antequera en 1410."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Expansión tardonazarí del sector meridional, asociada a refugiados procedentes de Antequera desde 1410.",
+        "context_1492": "La Antequeruela era un barrio reciente dentro del arrabal de la Loma o Nayd. Su núcleo se sitúa en la ladera entre San Cecilio y Los Mártires, en el entorno conservado por los topónimos Antequeruela Alta y Antequeruela Baja.",
+        "after_1492": "La red parroquial cristiana, la reforma de Campo del Príncipe y nuevas construcciones transformaron el barrio, aunque su nombre y parte de su trama sobrevivieron.",
+        "today": "La geometría se concentra en las calles Antequeruela Alta y Baja, desde el Carril de San Cecilio hacia Los Mártires, e incluye el cruce con Cuesta del Caidero y Camino Nuevo del Cementerio. No equivale a un límite administrativo actual.",
+        "evidence_note": "Las fuentes localizan con claridad el núcleo de la Antequeruela, pero no conservan un perímetro parcelario de 1492. La envolvente sigue los topónimos y ejes documentados y se mantiene deliberadamente aproximada; la Plataforma de Vico aporta corroboración posterior, no un deslinde nazarí exacto.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.junta-honda-realejo-2004",
+          "source.junta-camino-cementerio-2014",
+          "source.ugr-vico-2023",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-centre-plan",
+            "locator": "Memoria, p. 22, apartado «La ciudad islámica»",
+            "supports": "Formación de la Antequeruela en 1410 como ampliación del sector meridional."
+          },
+          {
+            "source_id": "source.junta-honda-realejo-2004",
+            "locator": "Contextualización histórica, descripción de Antequeruela Alta y Baja",
+            "supports": "Sitúa Antequeruela Baja entre el Carril de San Cecilio y Los Mártires y describe Antequeruela Alta como un ramal sin salida accesible desde la Baja."
+          },
+          {
+            "source_id": "source.junta-camino-cementerio-2014",
+            "locator": "pp. 1246-1247, localización y estudio histórico-arqueológico",
+            "supports": "Identifica como Antequeruela el cruce de Antequeruela Baja, Carril de San Cecilio, Cuesta del Caidero y Camino Nuevo del Cementerio, junto a Los Mártires."
+          },
+          {
+            "source_id": "source.ugr-vico-2023",
+            "locator": "Análisis de la Plataforma de Vico y representación del sector de la Antequeruela",
+            "supports": "Corrobora la posición del topónimo en la ladera de Los Mártires, al este de Campo del Príncipe, a comienzos del siglo XVII."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Antequeruela",
+          "function": "historical_quarter",
+          "summary": "La Antequeruela era un barrio reciente dentro del arrabal de la Loma o Nayd. Su núcleo se sitúa en la ladera entre San Cecilio y Los Mártires, en el entorno conservado por los topónimos Antequeruela Alta y Antequeruela Baja.",
+          "evidence_note": "Las fuentes localizan con claridad el núcleo de la Antequeruela, pero no conservan un perímetro parcelario de 1492. La envolvente sigue los topónimos y ejes documentados y se mantiene deliberadamente aproximada; la Plataforma de Vico aporta corroboración posterior, no un deslinde nazarí exacto.",
+          "geometry_variant_id": "c1492.quarter.antequeruela",
+          "citations": [
+            {
+              "source_id": "source.granada-centre-plan",
+              "locator": "Memoria, p. 22, apartado «La ciudad islámica»",
+              "supports": "Formación de la Antequeruela en 1410 como ampliación del sector meridional."
+            },
+            {
+              "source_id": "source.junta-honda-realejo-2004",
+              "locator": "Contextualización histórica, descripción de Antequeruela Alta y Baja",
+              "supports": "Sitúa Antequeruela Baja entre el Carril de San Cecilio y Los Mártires y describe Antequeruela Alta como un ramal sin salida accesible desde la Baja."
+            },
+            {
+              "source_id": "source.junta-camino-cementerio-2014",
+              "locator": "pp. 1246-1247, localización y estudio histórico-arqueológico",
+              "supports": "Identifica como Antequeruela el cruce de Antequeruela Baja, Carril de San Cecilio, Cuesta del Caidero y Camino Nuevo del Cementerio, junto a Los Mártires."
+            },
+            {
+              "source_id": "source.ugr-vico-2023",
+              "locator": "Análisis de la Plataforma de Vico y representación del sector de la Antequeruela",
+              "supports": "Corrobora la posición del topónimo en la ladera de Los Mártires, al este de Campo del Príncipe, a comienzos del siglo XVII."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.59055,
+              37.1732
+            ],
+            [
+              -3.59005,
+              37.1743
+            ],
+            [
+              -3.58915,
+              37.17445
+            ],
+            [
+              -3.5885,
+              37.1737
+            ],
+            [
+              -3.58855,
+              37.1726
+            ],
+            [
+              -3.5891,
+              37.1725
+            ],
+            [
+              -3.59055,
+              37.1732
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quarter.loma",
+      "properties": {
+        "id": "quarter.loma",
+        "name": "Arrabal de la Loma",
+        "historical_name": "Rabad al-Nayd",
+        "modern_name": "Calle Molinos y Vistillas de los Ángeles",
+        "aliases": [
+          "Rabad El Neched",
+          "Rabad el-Necued",
+          "Barrio de la Loma"
+        ],
+        "modern_search_terms": [
+          "Calle Molinos",
+          "Vistillas de los Ángeles",
+          "San Cecilio",
+          "Campo de los Mártires",
+          "Puerta de los Molinos"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_quarter",
+        "period": {
+          "from_year": null,
+          "to_year": null,
+          "from_precision": "unknown",
+          "to_precision": "unknown",
+          "note": "Arrabal medieval considerado expansión del barrio de los Alfareros y vinculado a la Puerta de los Molinos."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Arrabal contiguo a los Alfareros que ocupaba la ladera meridional hasta la Puerta de la Loma, las huertas y la cerca exterior tardonazarí.",
+        "context_1492": "La Loma ocupaba el extremo sudoriental intramuros. Su territorio enlazaba con al-Fajjarin en torno al Campo del Príncipe y reunía tejido residencial, alfares dispersos, cementerios, almunias y huertas articuladas por la Acequia Gorda. La Puerta de la Loma o de los Molinos lo comunicaba con el Genil y los caminos de la sierra.",
+        "after_1492": "La reorganización parroquial, los cambios de propiedad y la transformación de las huertas modificaron el sector. Parte de su identidad quedó absorbida por el Realejo, San Cecilio y la Antequeruela.",
+        "today": "Envolvente aproximada del sector sudoriental de Molinos, San Cecilio y Vistillas. La transición occidental hacia Alfareros no tiene una línea histórica identificada.",
+        "evidence_note": "Se retira la partición forzada que asignaba Santo Domingo y Santiago a La Loma. Garrido López (2024, p. 663) declara no identificado el límite entre los arrabales. Las envolventes dejan una transición sin asignar, no una discontinuidad de población ni una muralla entre barrios.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.garrido-alfareros-2024",
+          "source.junta-cuesta-realejo-2004",
+          "source.granada-pepri-islamic-city",
+          "source.granada-centre-plan",
+          "source.junta-porteria-santo-domingo-2012",
+          "source.junta-hoteles-belen-2020",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-centre-plan",
+            "locator": "Memoria, p. 22, apartado «La ciudad islámica»",
+            "supports": "Identificación de la Loma como expansión de los Alfareros y relación con Bib Neched o Puerta de los Molinos."
+          },
+          {
+            "source_id": "source.junta-belen-2008",
+            "locator": "Contexto histórico del Realejo medieval y trazado de la cerca sur",
+            "supports": "Relación espacial entre la Loma, la Antequeruela, San Cecilio, Molinos y Vistillas de los Ángeles."
+          },
+          {
+            "source_id": "source.junta-porteria-santo-domingo-2012",
+            "locator": "pp. 4-6, formación, cerca y usos del arrabal de al-Nayd",
+            "supports": "Contigüidad con al-Fajjarin, puertas exteriores, huertas, alfares y necrópolis incorporados al recinto."
+          },
+          {
+            "source_id": "source.junta-hoteles-belen-2020",
+            "locator": "Resumen y contexto histórico-arqueológico",
+            "supports": "Borde meridional agrícola y funerario de La Loma y relación con la cerca hasta Puerta de los Molinos."
+          },
+          {
+            "source_id": "source.garrido-alfareros-2024",
+            "locator": "pp. 663–679, figuras 1, 5 y 6",
+            "supports": "Situación del arrabal, cerca occidental y cronología de alfares; límite con al-Nayd no identificado."
+          },
+          {
+            "source_id": "source.junta-cuesta-realejo-2004",
+            "locator": "pp. 470–472: contexto histórico",
+            "supports": "Alfareros en Realejo Alto; puertas, Santo Domingo, Santiago y Cuarto Real."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Arrabal de la Loma",
+          "function": "historical_quarter",
+          "summary": "La Loma ocupaba el extremo sudoriental intramuros. Su territorio enlazaba con al-Fajjarin en torno al Campo del Príncipe y reunía tejido residencial, alfares dispersos, cementerios, almunias y huertas articuladas por la Acequia Gorda. La Puerta de la Loma o de los Molinos lo comunicaba con el Genil y los caminos de la sierra.",
+          "evidence_note": "Se retira la partición forzada que asignaba Santo Domingo y Santiago a La Loma. Garrido López (2024, p. 663) declara no identificado el límite entre los arrabales. Las envolventes dejan una transición sin asignar, no una discontinuidad de población ni una muralla entre barrios.",
+          "geometry_variant_id": "c1492.quarter.loma",
+          "citations": [
+            {
+              "source_id": "source.granada-centre-plan",
+              "locator": "Memoria, p. 22, apartado «La ciudad islámica»",
+              "supports": "Identificación de la Loma como expansión de los Alfareros y relación con Bib Neched o Puerta de los Molinos."
+            },
+            {
+              "source_id": "source.junta-belen-2008",
+              "locator": "Contexto histórico del Realejo medieval y trazado de la cerca sur",
+              "supports": "Relación espacial entre la Loma, la Antequeruela, San Cecilio, Molinos y Vistillas de los Ángeles."
+            },
+            {
+              "source_id": "source.junta-porteria-santo-domingo-2012",
+              "locator": "pp. 4-6, formación, cerca y usos del arrabal de al-Nayd",
+              "supports": "Contigüidad con al-Fajjarin, puertas exteriores, huertas, alfares y necrópolis incorporados al recinto."
+            },
+            {
+              "source_id": "source.junta-hoteles-belen-2020",
+              "locator": "Resumen y contexto histórico-arqueológico",
+              "supports": "Borde meridional agrícola y funerario de La Loma y relación con la cerca hasta Puerta de los Molinos."
+            },
+            {
+              "source_id": "source.garrido-alfareros-2024",
+              "locator": "pp. 663–679, figuras 1, 5 y 6",
+              "supports": "Situación del arrabal, cerca occidental y cronología de alfares; límite con al-Nayd no identificado."
+            },
+            {
+              "source_id": "source.junta-cuesta-realejo-2004",
+              "locator": "pp. 470–472: contexto histórico",
+              "supports": "Alfareros en Realejo Alto; puertas, Santo Domingo, Santiago y Cuarto Real."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.59125,
+              37.17345
+            ],
+            [
+              -3.59059,
+              37.17352
+            ],
+            [
+              -3.58845,
+              37.17385
+            ],
+            [
+              -3.5867,
+              37.1737
+            ],
+            [
+              -3.58665,
+              37.1733
+            ],
+            [
+              -3.58675,
+              37.17225
+            ],
+            [
+              -3.58695,
+              37.1713
+            ],
+            [
+              -3.58725,
+              37.17035
+            ],
+            [
+              -3.5877,
+              37.16955
+            ],
+            [
+              -3.58815,
+              37.16885
+            ],
+            [
+              -3.588662,
+              37.169046
+            ],
+            [
+              -3.58975,
+              37.16935
+            ],
+            [
+              -3.59085,
+              37.16965
+            ],
+            [
+              -3.59195,
+              37.16995
+            ],
+            [
+              -3.5925,
+              37.17015
+            ],
+            [
+              -3.5922,
+              37.17055
+            ],
+            [
+              -3.5913,
+              37.1705
+            ],
+            [
+              -3.5907,
+              37.17145
+            ],
+            [
+              -3.5911,
+              37.1722
+            ],
+            [
+              -3.59145,
+              37.17285
+            ],
+            [
+              -3.59125,
+              37.17345
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -2,8 +2,14 @@ import { spawn } from 'node:child_process'
 import { resolve } from 'node:path'
 
 const origin = 'http://127.0.0.1:4173/granada-historica/'
+const testArguments = process.argv.slice(2)
+const useInternalBuild = testArguments.some((argument) => argument.includes('m10-4'))
 const server = spawn(process.execPath, [resolve('scripts/serve-dist.mjs')], {
   stdio: 'inherit',
+  env: {
+    ...process.env,
+    E2E_DIST_DIR: useInternalBuild ? 'dist-internal' : 'dist',
+  },
 })
 
 let exitCode = 1
@@ -11,8 +17,14 @@ try {
   await waitForServer(origin)
   const runner = spawn(
     process.execPath,
-    [resolve('node_modules/@playwright/test/cli.js'), 'test', ...process.argv.slice(2)],
-    { stdio: 'inherit' },
+    [resolve('node_modules/@playwright/test/cli.js'), 'test', ...testArguments],
+    {
+      stdio: 'inherit',
+      env: {
+        ...process.env,
+        M10_INTERNAL_E2E: useInternalBuild ? '1' : '0',
+      },
+    },
   )
   exitCode = await childExitCode(runner)
 } finally {

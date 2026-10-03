@@ -391,6 +391,95 @@ a:focus-visible,
   font-weight: 600;
 }
 
+.period-selector {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  z-index: 5;
+  width: min(330px, calc(100vw - 110px));
+  padding: 12px 14px;
+  color: var(--paper);
+  background: rgba(24, 54, 45, 0.97);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-left: 4px solid var(--terracotta-bright);
+  border-radius: 4px 10px 10px 4px;
+  box-shadow: 0 8px 28px rgba(20, 34, 29, 0.24);
+  backdrop-filter: blur(8px);
+}
+
+.period-selector__status {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #f2c879;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.period-selector__status span {
+  width: 7px;
+  height: 7px;
+  background: #e5a63b;
+  border-radius: 50%;
+}
+
+.period-selector fieldset {
+  display: flex;
+  gap: 7px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.period-selector legend {
+  width: 100%;
+  margin-bottom: 5px;
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.period-selector label {
+  display: flex;
+  flex: 1;
+  gap: 7px;
+  align-items: center;
+  min-height: 36px;
+  padding: 7px 9px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.period-selector label:has(input:checked) {
+  color: var(--green);
+  background: var(--paper);
+  border-color: var(--paper);
+}
+
+.period-selector label:has(input:disabled) {
+  cursor: wait;
+  opacity: 0.68;
+}
+
+.period-selector input {
+  margin: 0;
+  accent-color: var(--terracotta);
+}
+
+.period-selector p {
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.63rem;
+  line-height: 1.35;
+}
+
 .layer-control {
   position: absolute;
   top: 22px;
@@ -1005,6 +1094,34 @@ a:focus-visible,
   padding: 24px;
 }
 
+.drawer-period-switch {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
+  color: #e9f0ec;
+  background: var(--green);
+  font-size: 0.72rem;
+}
+
+.drawer-period-switch button {
+  min-height: 36px;
+  padding: 7px 10px;
+  color: var(--green);
+  background: var(--paper);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 7px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+.drawer-period-switch button:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
 .feature-meta {
   display: flex;
   flex-wrap: wrap;
@@ -1090,6 +1207,65 @@ a:focus-visible,
   background: #e8ede7;
   border: 1px solid rgba(24, 54, 45, 0.13);
   border-radius: 12px;
+}
+
+.internal-review-note {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 14px;
+  margin: 0 0 20px;
+  color: #5d3e24;
+  background: #fbecd2;
+  border: 1px solid #dfbd82;
+  border-radius: 10px;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.internal-review-note strong {
+  color: #673c1f;
+}
+
+.internal-review-note--compact {
+  display: block;
+  padding: 8px 11px;
+  margin-bottom: 16px;
+  border-radius: 7px;
+  font-size: 0.7rem;
+  line-height: 1.35;
+}
+
+.ambiguity-note {
+  padding-left: 12px;
+  margin-top: 10px !important;
+  border-left: 3px solid var(--terracotta);
+}
+
+.unavailable-period .drawer-lede {
+  margin-top: 24px;
+}
+
+.period-switch-button {
+  min-height: 44px;
+  padding: 10px 15px;
+  color: var(--paper);
+  background: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.period-switch-button:hover {
+  background: #244a3e;
+}
+
+.period-switch-button:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
 }
 
 .gazetteer-panel {
@@ -1257,6 +1433,49 @@ a:focus-visible,
   height: 36px;
 }
 
+.map-location-control {
+  position: absolute;
+  top: 138px;
+  left: 22px;
+  z-index: 5;
+  margin: 0;
+}
+
+.map-location-button {
+  display: grid;
+  padding: 7px;
+  color: #40504a;
+  background: #fff;
+  border: 0;
+  cursor: pointer;
+  place-items: center;
+}
+
+.map-location-button:hover,
+.map-location-button:focus-visible {
+  color: var(--green);
+  background: #f3f5f2;
+}
+
+.map-location-button--active {
+  color: #247d91;
+  background: #e7f2f4;
+}
+
+.map-location-button svg {
+  width: 22px;
+  height: 22px;
+  overflow: visible;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 1.8;
+}
+
+.map-location-button svg circle:last-child {
+  fill: none;
+}
+
 .maplibregl-ctrl-attrib {
   font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 10px;
@@ -1370,6 +1589,37 @@ a:focus-visible,
     padding: 9px 12px 10px;
   }
 
+  .period-selector {
+    top: 14px;
+    left: 14px;
+    width: min(286px, calc(100vw - 82px));
+    padding: 9px 10px;
+  }
+
+  .period-selector__status {
+    margin-bottom: 5px;
+    font-size: 0.54rem;
+  }
+
+  .period-selector legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  .period-selector label {
+    min-height: 34px;
+    padding: 6px 8px;
+    font-size: 0.7rem;
+  }
+
+  .period-selector p {
+    margin-top: 5px;
+    font-size: 0.57rem;
+  }
+
   .route-reopen-button {
     top: 74px;
     left: 14px;
@@ -1419,6 +1669,12 @@ a:focus-visible,
   .maplibregl-ctrl-bottom-right {
     right: 10px;
     bottom: 62px;
+  }
+
+  .map-location-control {
+    top: 14px;
+    right: 68px;
+    left: auto;
   }
 
   .maplibregl-ctrl-bottom-left {
@@ -1477,6 +1733,10 @@ a:focus-visible,
 
   .drawer-content {
     padding: 19px 18px 26px;
+  }
+
+  .drawer-period-switch {
+    padding: 9px 18px;
   }
 }
 

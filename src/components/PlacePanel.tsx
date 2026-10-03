@@ -13,8 +13,6 @@ interface PlacePanelProps {
   onClose: () => void
   onSelectPlace: (place: PlaceStop) => void
   onSelectFeature: (featureId: string) => void
-  onExplainLocation: () => void
-  onCancelLocation: () => void
   onLocate: () => void
   onClearLocation: () => void
 }
@@ -28,8 +26,6 @@ export function PlacePanel({
   onClose,
   onSelectPlace,
   onSelectFeature,
-  onExplainLocation,
-  onCancelLocation,
   onLocate,
   onClearLocation,
 }: PlacePanelProps) {
@@ -149,8 +145,6 @@ export function PlacePanel({
         <LocationSection
           locale={locale}
           state={locationState}
-          onExplain={onExplainLocation}
-          onCancel={onCancelLocation}
           onLocate={onLocate}
           onClear={onClearLocation}
           onSelectPlace={onSelectPlace}
@@ -163,16 +157,12 @@ export function PlacePanel({
 function LocationSection({
   locale,
   state,
-  onExplain,
-  onCancel,
   onLocate,
   onClear,
   onSelectPlace,
 }: {
   locale: Locale
   state: VisitorLocationState
-  onExplain: () => void
-  onCancel: () => void
   onLocate: () => void
   onClear: () => void
   onSelectPlace: (place: PlaceStop) => void
@@ -185,18 +175,7 @@ function LocationSection({
   return (
     <section className="location-section" aria-labelledby="location-title">
       <h3 id="location-title">{en ? 'Where am I?' : '¿Dónde estoy?'}</h3>
-      {state.status === 'idle' && <button type="button" onClick={onExplain}>{en ? 'Use my location' : 'Usar mi ubicación'}</button>}
-      {state.status === 'explaining' && (
-        <div className="privacy-explanation" role="note">
-          <p>{en
-            ? 'Your position is used once on this device and is not stored, added to the URL or sent to Granada Histórica. The visible map still loads third-party map tiles.'
-            : 'Tu posición se usa una sola vez en este dispositivo y no se guarda, añade a la URL ni se envía a Granada Histórica. El mapa visible sigue cargando teselas de un proveedor externo.'}</p>
-          <div>
-            <button className="primary-action" type="button" onClick={onLocate}>{en ? 'Continue' : 'Continuar'}</button>
-            <button type="button" onClick={onCancel}>{en ? 'Cancel' : 'Cancelar'}</button>
-          </div>
-        </div>
-      )}
+      {state.status === 'idle' && <button type="button" onClick={onLocate}>{en ? 'Use my location' : 'Usar mi ubicación'}</button>}
       {state.status === 'loading' && <p role="status">{en ? 'Finding your location…' : 'Buscando tu ubicación…'}</p>}
       {state.status === 'located' && nearest && (
         <div role="status">
@@ -212,6 +191,9 @@ function LocationSection({
               ? 'This is a low-accuracy fix; use the named street or landmark to confirm the stop.'
               : 'La precisión es baja; confirma la parada con la calle o el hito indicado.'}</p>
           )}
+          <p className="location-tracking-note">{en
+            ? 'Your location updates while this page is open. It stays on this device and is not stored or added to analytics.'
+            : 'Tu ubicación se actualiza mientras esta página está abierta. Permanece en este dispositivo y no se guarda ni se añade a la analítica.'}</p>
           <div className="location-actions">
             {state.distance <= 2_000 && <button type="button" onClick={() => onSelectPlace(nearest)}>{en ? 'Open nearest stop' : 'Abrir la parada más cercana'}</button>}
             <button type="button" onClick={onClear}>{en ? 'Stop using my location' : 'Dejar de usar mi ubicación'}</button>
@@ -221,7 +203,7 @@ function LocationSection({
       {state.status === 'denied' && <p role="alert">{en ? 'Location permission was denied. You can continue using every stop manually.' : 'Se ha denegado el permiso de ubicación. Puedes seguir usando todas las paradas manualmente.'}</p>}
       {state.status === 'timeout' && <p role="alert">{en ? 'Location timed out. Try again when the device has a clearer signal.' : 'La ubicación ha agotado el tiempo de espera. Inténtalo de nuevo con mejor señal.'}</p>}
       {state.status === 'unavailable' && <p role="alert">{en ? 'Location is unavailable on this device.' : 'La ubicación no está disponible en este dispositivo.'}</p>}
-      {['denied', 'timeout', 'unavailable'].includes(state.status) && <button type="button" onClick={onExplain}>{en ? 'Try again' : 'Intentar de nuevo'}</button>}
+      {['denied', 'timeout', 'unavailable'].includes(state.status) && <button type="button" onClick={onLocate}>{en ? 'Try again' : 'Intentar de nuevo'}</button>}
     </section>
   )
 }

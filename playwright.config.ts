@@ -2,6 +2,7 @@ import { defineConfig, devices } from '@playwright/test'
 
 export default defineConfig({
   testDir: './e2e',
+  testIgnore: process.env.M10_INTERNAL_E2E === '1' ? [] : ['**/m10-4.spec.ts'],
   fullyParallel: true,
   reporter: 'list',
   use: {

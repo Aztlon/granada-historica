@@ -20,8 +20,8 @@
       "related_feature_ids": ["walls.medina-lower", "route.zacatin-axis", "commerce.alcaiceria"],
       "title": { "es": "Puerta de Bibarrambla", "en": "Bibarrambla Gate" },
       "introduction": {
-        "es": "Aquí se abría Bab al-Ramla, la puerta que conectaba el arenal y la plaza con el recinto de la medina.",
-        "en": "Bab al-Ramla opened here, connecting the sandy open ground and square with the walled medina."
+        "es": "Aquí se abría Bab al-Ramla, la puerta que conectaba el arenal de Bib-Rambla con el recinto de la medina.",
+        "en": "Bab al-Ramla opened here, connecting the open ground of Bib-Rambla with the walled medina."
       },
       "arrival_cue": {
         "es": "Punto provisional en la confluencia de Arco de las Orejas y Salamanca.",
@@ -37,8 +37,8 @@
       "related_feature_ids": ["gate.bib-rambla", "commerce.alcaiceria", "religious.medina-great-mosque"],
       "title": { "es": "Zacatín", "en": "Zacatín" },
       "introduction": {
-        "es": "El corredor de los ropavejeros enlazaba Bib-Rambla con el núcleo religioso y mercantil de la ciudad baja.",
-        "en": "The clothes-dealers' corridor linked Bib-Rambla with the religious and commercial core of the lower city."
+        "es": "El eje comercial del Zacatín enlazaba Bib-Rambla con el núcleo religioso y mercantil de la ciudad baja.",
+        "en": "The commercial axis of Zacatín linked Bib-Rambla with the religious and mercantile core of the lower city."
       },
       "arrival_cue": {
         "es": "Anclaje provisional en el acceso meridional de la calle Zacatín.",
@@ -69,10 +69,10 @@
       "focus": [-3.5982757, 37.176086],
       "primary_feature_id": "religious.madraza-yusufiyya",
       "related_feature_ids": ["religious.medina-great-mosque", "commerce.alcaiceria", "route.zacatin-axis"],
-      "title": { "es": "Madraza Yusufiyya", "en": "Yusufiyya Madrasa" },
+      "title": { "es": "Palacio de la Madraza", "en": "Palacio de la Madraza" },
       "introduction": {
-        "es": "La institución fundada por Yusuf I formaba a juristas y estudiosos junto al principal centro religioso de la medina.",
-        "en": "The institution founded by Yusuf I educated jurists and scholars beside the medina's principal religious centre."
+        "es": "Aquí estuvo la Madraza Yusufiyya, institución fundada por Yusuf I para formar a juristas y estudiosos junto al principal centro religioso de la medina.",
+        "en": "The Nasrid Yusufiyya madrasa stood here, founded by Yusuf I to educate jurists and scholars beside the medina's principal religious centre."
       },
       "arrival_cue": {
         "es": "Palacio de la Madraza, en la calle Oficios.",

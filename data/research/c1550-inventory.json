@@ -1,0 +1,1212 @@
+{
+  "period_id": "c1550",
+  "status": "research",
+  "updated_on": "2026-10-01",
+  "scope_note": "Inventario inicial de investigación. No constituye una capa pública ni autoriza a representar geometrías o estados sin revisión histórica y cartográfica.",
+  "change_themes": [
+    {
+      "id": "theme.religious-conversion",
+      "title": {
+        "es": "De mezquitas a parroquias e iglesias",
+        "en": "From mosques to parishes and churches"
+      },
+      "summary": "La red parroquial cristiana reutilizó, sustituyó y reordenó edificios religiosos islámicos, especialmente en el Albaicín.",
+      "source_refs": [
+        "source.ugr-urban-transformation",
+        "source.granada-pgom-urban-history",
+        "source.granada-salvador"
+      ]
+    },
+    {
+      "id": "theme.christian-civic-centre",
+      "title": {
+        "es": "Nuevo centro religioso, mercantil y administrativo",
+        "en": "A new religious, commercial and administrative centre"
+      },
+      "summary": "Catedral, Capilla Real, Lonja, Cabildo, Universidad y Chancillería monumentalizaron la antigua medina sin eliminar su centralidad comercial.",
+      "source_refs": [
+        "source.granada-centre-plan",
+        "source.granada-cathedral",
+        "source.granada-chancilleria",
+        "source.ugr-history-timeline"
+      ]
+    },
+    {
+      "id": "theme.imperial-alhambra",
+      "title": {
+        "es": "La Alhambra como Casa Real e imagen imperial",
+        "en": "The Alhambra as Royal House and imperial image"
+      },
+      "summary": "La conservación y reutilización de los palacios nazaríes convivió con un nuevo palacio, accesos y emblemas imperiales todavía en obras hacia 1550.",
+      "source_refs": [
+        "source.alhambra-history",
+        "source.alhambra-charles-v-palace",
+        "source.alhambra-puerta-granadas-study"
+      ]
+    },
+    {
+      "id": "theme.public-space",
+      "title": {
+        "es": "Plazas, ceremonias y ejes urbanos",
+        "en": "Squares, ceremony and urban routes"
+      },
+      "summary": "Bib-Rambla, Campo del Príncipe y Plaza Nueva expresaron usos públicos castellanos mediante ampliaciones, regularización y nuevos frentes monumentales.",
+      "source_refs": [
+        "source.granada-bib-rambla-square",
+        "source.granada-campo-principe",
+        "source.granada-pgom-urban-history"
+      ]
+    },
+    {
+      "id": "theme.population-geography",
+      "title": {
+        "es": "Geografía morisca y cristiana",
+        "en": "Morisco and Christian population geography"
+      },
+      "summary": "La población y las instituciones cristianas se concentraron crecientemente en la ciudad baja mientras el Albaicín conservaba una presencia morisca esencial.",
+      "source_refs": [
+        "source.ugr-urban-transformation",
+        "source.granada-pgom-urban-history"
+      ]
+    },
+    {
+      "id": "theme.inherited-systems",
+      "title": {
+        "es": "Continuidad y adaptación de sistemas heredados",
+        "en": "Continuity and adaptation of inherited systems"
+      },
+      "summary": "Acequias, mercados, calles, murallas y edificios nazaríes siguieron estructurando la ciudad, aunque sus funciones y nombres pudieron cambiar.",
+      "source_refs": [
+        "source.granada-pgom-urban-history",
+        "source.ugr-urban-transformation"
+      ]
+    }
+  ],
+  "existing_entity_triage": [
+    {
+      "feature_id": "religious.madraza-yusufiyya",
+      "priority": "anchor",
+      "research_status": "ready_for_review",
+      "expected_change": "converted",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.ugr-madraza"
+      ],
+      "notes": "En 1500 pasó a Casa del Cabildo; hay que separar el edificio heredado de su función municipal y de reformas posteriores."
+    },
+    {
+      "feature_id": "gate.elvira",
+      "priority": "high",
+      "research_status": "ready_for_review",
+      "expected_change": "altered",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.granada-elvira-gate",
+        "source.ugr-vico-2023"
+      ],
+      "notes": "La puerta-fortaleza y sus accesos seguían presentes antes de la demolición de las barbacanas en 1612; el punto c. 1492 no expresa la extensión del complejo de 1550."
+    },
+    {
+      "feature_id": "gate.monaita",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "reuse_then_verify",
+      "source_refs": [
+        "source.granada-monaita",
+        "source.junta-monaita-wall-2000"
+      ],
+      "notes": "La fábrica conservada y su historia de pérdida tardía sostienen presencia material; la función efectiva del paso y su entorno hacia 1550 siguen pendientes."
+    },
+    {
+      "feature_id": "gate.fajalauza",
+      "priority": "high",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "reuse_then_verify",
+      "source_refs": [
+        "source.granada-fajalauza",
+        "source.junta-fajalauza-2008",
+        "source.ugr-vico-2023"
+      ],
+      "notes": "La puerta conservada y la cartografía temprana sostienen continuidad probable; una lectura de fábrica debe separar transformaciones modernas antes de reutilizar el punto."
+    },
+    {
+      "feature_id": "gate.bib-rambla",
+      "priority": "anchor",
+      "research_status": "initial_sources",
+      "expected_change": "altered",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.granada-bib-rambla-square"
+      ],
+      "notes": "La puerta continuó junto a una plaza ampliada y ceremonial; revisar nombre, fábrica y relación espacial con la plaza de 1550."
+    },
+    {
+      "feature_id": "gate.alhambra-arms",
+      "priority": "high",
+      "research_status": "ready_for_review",
+      "expected_change": "altered",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.alhambra-gates",
+        "source.alhambra-arms-gate"
+      ],
+      "notes": "La puerta permanecía en el recinto, pero perdió la primacía del acceso urbano nazarí frente a los nuevos recorridos cristianos; auditar la fábrica y el itinerario sin equiparar menor centralidad con cierre."
+    },
+    {
+      "feature_id": "gate.alhambra-justice",
+      "priority": "high",
+      "research_status": "initial_sources",
+      "expected_change": "retained",
+      "geometry_action": "reuse_then_verify",
+      "source_refs": [
+        "source.alhambra-puerta-granadas-study"
+      ],
+      "notes": "Conservada, pero integrada en un nuevo recorrido monumental con el Pilar de Carlos V y la Puerta de las Granadas."
+    },
+    {
+      "feature_id": "gate.alhambra-seven-floors",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "altered",
+      "geometry_action": "reuse_then_verify",
+      "source_refs": [
+        "source.alhambra-gates",
+        "source.alhambra-fortified-city-guide"
+      ],
+      "notes": "La puerta nazarí seguía presente, pero el baluarte artillero añadido tras la conquista obliga a representar por separado la puerta y la adaptación defensiva cristiana."
+    },
+    {
+      "feature_id": "gate.alhambra-arrabal",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "altered",
+      "geometry_action": "reuse_then_verify",
+      "source_refs": [
+        "source.alhambra-gates",
+        "source.alhambra-arrabal-study-2022"
+      ],
+      "notes": "La puerta nazarí está documentada en 1526, pero el baluarte, las caballerizas y la Puerta de Hierro cristiana cambiaron su acceso y función; no tratarlas como una sola fase."
+    },
+    {
+      "feature_id": "gate.guadix",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.granada-albaicin-wall-route",
+        "source.ugr-vico-2023"
+      ],
+      "notes": "La continuidad del acceso oriental hacia 1550 es probable por su pertenencia al sistema aún legible, pero no se ha localizado una atestación puntual del vano para ese año; el punto queda aplazado."
+    },
+    {
+      "feature_id": "religious.medina-great-mosque",
+      "priority": "anchor",
+      "research_status": "ready_for_review",
+      "expected_change": "converted",
+      "geometry_action": "reuse_then_verify",
+      "source_refs": [
+        "source.granada-cathedral",
+        "source.junta-granada-tourism-plan",
+        "source.granada-sagrario",
+        "source.ugr-aljama-mosque-2004"
+      ],
+      "notes": "La fábrica convertida seguía como Sagrario catedralicio en 1550 mientras avanzaba la Catedral nueva; conservar el punto hasta georreferenciar la restitución académica."
+    },
+    {
+      "feature_id": "gate.alfajjarin",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "altered",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.junta-aguado-2009",
+        "source.junta-cuesta-pescado-2023",
+        "source.alhambra-casa-girones-2018"
+      ],
+      "notes": "El paso interior seguía estructurando el Realejo probablemente, pero su forma y uso exactos hacia 1550 no están documentados; la transformación del entorno inmediato sí está atestiguada."
+    },
+    {
+      "feature_id": "gate.mawrur",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "unknown",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.granada-mauror-gate",
+        "source.junta-aguado-2009",
+        "source.junta-porteria-santo-domingo-2012"
+      ],
+      "notes": "El ámbito y los alias están establecidos, pero la presencia y la forma exactas en 1550 siguen sin una datación suficiente; no se reutiliza todavía el punto."
+    },
+    {
+      "feature_id": "gate.pescado",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.junta-cuesta-pescado-2023",
+        "source.junta-aguado-2009"
+      ],
+      "notes": "La puerta exterior continuó como acceso meridional bajo denominación cristiana y sobrevivió mucho después de 1550; su planta exacta sigue sin control arqueológico suficiente."
+    },
+    {
+      "feature_id": "gate.molinos",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.junta-hoteles-belen-2020",
+        "source.junta-aguado-2009"
+      ],
+      "notes": "La Puerta de la Loma continuó como Puerta de los Molinos o de Güéjar y mantuvo la salida hacia el Genil; la posición métrica y la forma del vano siguen siendo aproximadas."
+    },
+    {
+      "feature_id": "religious.albaicin-great-mosque",
+      "priority": "anchor",
+      "research_status": "initial_sources",
+      "expected_change": "converted",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [
+        "source.granada-salvador"
+      ],
+      "notes": "La colegiata del Salvador se fundó en 1527; distinguir la institución cristiana, el uso de la mezquita y la fábrica eclesial posterior."
+    },
+    {
+      "feature_id": "water.darro",
+      "priority": "high",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "reuse_then_verify",
+      "source_refs": [
+        "source.ugr-water-ordinances-2022",
+        "source.granada-carrera-darro",
+        "source.junta-darro-reyes-catolicos"
+      ],
+      "notes": "El cauce y su función hidráulica son seguros; deben separarse el tramo parcialmente cubierto junto a Plaza Nueva y el embovedado masivo del siglo XIX."
+    },
+    {
+      "feature_id": "water.genil",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "reuse_then_verify",
+      "source_refs": [
+        "source.ugr-water-ordinances-2022",
+        "source.ujaen-water-route-2025"
+      ],
+      "notes": "El cauce es un control natural seguro y origen del sistema Gorda/Cadí; la línea candidata debe auditar meandros, riberas y cruces sin proyectar rectificaciones modernas."
+    },
+    {
+      "feature_id": "walls.albaicin-north",
+      "priority": "high",
+      "research_status": "ready_for_review",
+      "expected_change": "altered",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.granada-albaicin-nasrid-wall",
+        "source.granada-albaicin-wall-route",
+        "source.junta-fajalauza-2008",
+        "source.ugr-vico-2023"
+      ],
+      "notes": "La cerca permanecía como límite reconocible, pero la documentación describe desmantelamiento progresivo tras la conquista; la línea c. 1492 requiere auditoría por tramos."
+    },
+    {
+      "feature_id": "walls.medina-lower",
+      "priority": "high",
+      "research_status": "ready_for_review",
+      "expected_change": "altered",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.granada-centre-plan",
+        "source.junta-western-wall-2006",
+        "source.junta-aguado-2009",
+        "source.ugr-vico-2023"
+      ],
+      "notes": "La cerca compuesta seguía legible a finales del siglo XVI, pero ya combinaba pérdidas, absorciones y tramos activos; no se hereda como línea uniforme."
+    },
+    {
+      "feature_id": "walls.mauror-realejo-inner",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "altered",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.junta-aguado-2009",
+        "source.junta-porteria-santo-domingo-2012",
+        "source.garrido-alfareros-2024"
+      ],
+      "notes": "La cerca interior persistía de forma fragmentaria y como soporte del parcelario, pero había perdido su papel de perímetro urbano; no se reutiliza la línea completa sin auditoría por tramos."
+    },
+    {
+      "feature_id": "walls.alhambra-perimeter",
+      "priority": "high",
+      "research_status": "initial_sources",
+      "expected_change": "altered",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.alhambra-history"
+      ],
+      "notes": "El perímetro se conservó como parte de la Casa Real con reparaciones y nuevas obras defensivas y representativas."
+    },
+    {
+      "feature_id": "route.elvira-axis",
+      "priority": "high",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.granada-calle-elvira",
+        "source.granada-elvira-gate",
+        "source.ugr-vico-2023"
+      ],
+      "notes": "El corredor y su conexión con Puerta Elvira son seguros; anchura, alineaciones y frentes de 1550 requieren regresión cartográfica antes de reutilizar la línea."
+    },
+    {
+      "feature_id": "route.alhambra-arms-access",
+      "priority": "high",
+      "research_status": "initial_sources",
+      "expected_change": "altered",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [
+        "source.alhambra-puerta-granadas-study"
+      ],
+      "notes": "El nuevo acceso imperial por Gomérez cambió la jerarquía del antiguo corredor hacia la Puerta de las Armas."
+    },
+    {
+      "feature_id": "route.zacatin-axis",
+      "priority": "anchor",
+      "research_status": "initial_sources",
+      "expected_change": "retained",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.granada-centre-plan"
+      ],
+      "notes": "Conservó centralidad comercial, pero sus frentes y conexiones cambiaron con el complejo catedralicio y el Cabildo."
+    },
+    {
+      "feature_id": "water.acequia-aynadamar",
+      "priority": "high",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.ugr-water-ordinances-2022",
+        "source.ujaen-water-route-2025",
+        "source.junta-fajalauza-2008"
+      ],
+      "notes": "Las Ordenanzas de 1538 sostienen continuidad funcional y reparto en Albaicín y Alcazaba; los ramales y transformaciones físicas deben auditarse por separado."
+    },
+    {
+      "feature_id": "water.acequia-axares",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.ugr-water-ordinances-2022",
+        "source.ujaen-water-route-2025",
+        "source.granada-pepri-islamic-city"
+      ],
+      "notes": "Las ordenanzas de 1538 documentan la Acequia de Axares o de San Juan y sus ramales; la continuidad funcional es segura, pero el eje y las acometidas deben auditarse por segmentos."
+    },
+    {
+      "feature_id": "water.acequia-romayla",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.ugr-water-ordinances-2022",
+        "source.ujaen-water-route-2025"
+      ],
+      "notes": "Las ordenanzas de 1538 documentan su funcionamiento, limpieza y ramales urbanos; el trazado debe separar el cauce principal de derivaciones hacia Zacatín, Bib-Rambla, San Francisco y la Alhóndiga del Carbón."
+    },
+    {
+      "feature_id": "water.acequia-cadi",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.ugr-cadi-ordinances-2025",
+        "source.ujaen-water-route-2025"
+      ],
+      "notes": "Las ordenanzas de 1531 y el arrendamiento de 1533 confirman uso y administración; la geometría de 1492 no debe trasladarse sin reconstruir tomas, pagos y ramales del siglo XVI."
+    },
+    {
+      "feature_id": "water.acequia-gorda",
+      "priority": "high",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.ugr-water-ordinances-2022",
+        "source.ujaen-water-route-2025"
+      ],
+      "notes": "El sistema del Genil y su ramal del Realejo están documentados en la regulación de 1538; la línea candidata necesita separar cauce principal, repartidores y derivaciones."
+    },
+    {
+      "feature_id": "water.acequia-realejo",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "altered",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.ugr-water-ordinances-2022",
+        "source.ujaen-water-route-2025",
+        "source.junta-aguado-2009"
+      ],
+      "notes": "El ramal del Realejo continuó abasteciendo el barrio y sus molinos bajo regulación cristiana; su red cambió con nuevas instituciones y usos, y no puede heredarse como una única línea."
+    },
+    {
+      "feature_id": "water.acequia-tarramonta",
+      "priority": "defer",
+      "research_status": "not_started",
+      "expected_change": "unknown",
+      "geometry_action": "review_existing",
+      "source_refs": [],
+      "notes": "Mantener fuera de la primera ola hasta localizar repartimientos del siglo XVI."
+    },
+    {
+      "feature_id": "water.acequia-arabuleila",
+      "priority": "defer",
+      "research_status": "not_started",
+      "expected_change": "unknown",
+      "geometry_action": "review_existing",
+      "source_refs": [],
+      "notes": "Mantener fuera de la primera ola hasta localizar repartimientos del siglo XVI."
+    },
+    {
+      "feature_id": "water.acequia-real-alhambra",
+      "priority": "high",
+      "research_status": "ready_for_review",
+      "expected_change": "altered",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.alhambra-real-acequia",
+        "source.alhambra-real-acequia-2023"
+      ],
+      "notes": "Esencial para la continuidad funcional de Alhambra y Generalife bajo administración cristiana."
+    },
+    {
+      "feature_id": "bridge.cadi",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "unknown",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.granada-tableros-cadi",
+        "source.alhambra-banuelo"
+      ],
+      "notes": "La entidad exige corregir la identificación tradicional: los restos son Bab al-Difaf/Puerta de los Tableros, no el puente del Cadí propiamente dicho. La supervivencia del paso completo hacia 1550 sigue sin resolverse."
+    },
+    {
+      "feature_id": "route.darro-axis",
+      "priority": "high",
+      "research_status": "not_started",
+      "expected_change": "altered",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [],
+      "notes": "Estudiar nuevos edificios, puentes y Plaza Nueva manteniendo visible el cauce abierto."
+    },
+    {
+      "feature_id": "route.molinos-sierra-axis",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.junta-hoteles-belen-2020",
+        "source.junta-aguado-2009",
+        "source.ugr-water-ordinances-2022"
+      ],
+      "notes": "La permanencia de la Puerta de los Molinos y del sistema productivo del Genil sostiene el corredor funcional; el eje exterior sigue siendo interpretativo y no una calzada levantada."
+    },
+    {
+      "feature_id": "walls.alcazaba-qadima-inner",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "altered",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.junta-monaita-wall-2000",
+        "source.junta-placeta-escuelas-2011",
+        "source.granada-pepri-islamic-city"
+      ],
+      "notes": "Lienzos y torres de la cerca zirí persistieron incorporados a casas y al tejido parroquial; la continuidad material no equivale a un circuito defensivo íntegro en 1550."
+    },
+    {
+      "feature_id": "walls.axares-inner",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "altered",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.junta-carmen-negro-2005",
+        "source.granada-pepri-islamic-city",
+        "source.ujaen-water-route-2025"
+      ],
+      "notes": "La cerca de Axares seguía condicionando el tejido, pero su integridad y papel militar eran parciales; se mantiene como hipótesis fragmentaria pendiente de auditoría."
+    },
+    {
+      "feature_id": "bridge.carbon",
+      "priority": "medium",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.ugr-puente-carbon",
+        "source.alhambra-corral-carbon"
+      ],
+      "notes": "La denominación y las tenerías situadas bajo el puente aparecen en documentación del siglo XVI y la excavación registra fases nazarí y cristiana; falta auditar el vano y los estribos exactos."
+    },
+    {
+      "feature_id": "royal.alhambra",
+      "priority": "anchor",
+      "research_status": "initial_sources",
+      "expected_change": "altered",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [
+        "source.alhambra-history",
+        "source.alhambra-charles-v-palace"
+      ],
+      "notes": "Modelar el recinto nazarí reutilizado como Casa Real junto con el palacio imperial en construcción y nuevos accesos."
+    },
+    {
+      "feature_id": "royal.generalife",
+      "priority": "high",
+      "research_status": "ready_for_review",
+      "expected_change": "altered",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.ugr-generalife-christian-2017",
+        "source.alhambra-generalife",
+        "source.alhambra-plan-director-landscape"
+      ],
+      "notes": "La almunia continuó bajo alcaides cristianos y los Granada Venegas con obligación de reparación; separar la base nazarí, las obras cristianas y los jardines posteriores antes de reutilizar el área."
+    },
+    {
+      "feature_id": "urban.albaicin",
+      "priority": "anchor",
+      "research_status": "initial_sources",
+      "expected_change": "altered",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [
+        "source.ugr-urban-transformation",
+        "source.granada-pgom-urban-history"
+      ],
+      "notes": "Representar continuidad morisca, red parroquial y sustituciones arquitectónicas sin proyectar la despoblación posterior a 1571."
+    },
+    {
+      "feature_id": "urban.lower-medina",
+      "priority": "anchor",
+      "research_status": "initial_sources",
+      "expected_change": "altered",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [
+        "source.granada-centre-plan",
+        "source.granada-pgom-urban-history"
+      ],
+      "notes": "Revisar centralidad cristiana, comercial y administrativa, cambios de plazas y nuevas fundaciones."
+    },
+    {
+      "feature_id": "urban.late-nasrid-extent",
+      "priority": "defer",
+      "research_status": "not_started",
+      "expected_change": "not_applicable",
+      "geometry_action": "none",
+      "source_refs": [],
+      "notes": "Es una interpretación específica de 1492; c. 1550 necesitará su propia extensión urbana derivada y no una mutación de esta entidad."
+    },
+    {
+      "feature_id": "commerce.alcaiceria",
+      "priority": "anchor",
+      "research_status": "initial_sources",
+      "expected_change": "altered",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.granada-centre-plan"
+      ],
+      "notes": "La función sedera continuó bajo nuevas instituciones; revisar puertas, administración y cambios de la huella comercial."
+    },
+    {
+      "feature_id": "commerce.corral-carbon",
+      "priority": "high",
+      "research_status": "ready_for_review",
+      "expected_change": "converted",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.alhambra-corral-carbon"
+      ],
+      "notes": "El edificio fue adaptado por los cristianos; falta fechar con precisión sus usos mercantiles y teatrales hacia 1550."
+    },
+    {
+      "feature_id": "civic.maristan",
+      "priority": "anchor",
+      "research_status": "ready_for_review",
+      "expected_change": "converted",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [
+        "source.alhambra-maristan",
+        "source.alhambra-maristan-mint-2023"
+      ],
+      "notes": "Desde 1497 era Real Casa de la Moneda; la arqueología permite estudiar su adaptación fabril y no solo un cambio de etiqueta."
+    },
+    {
+      "feature_id": "water.banuelo",
+      "priority": "high",
+      "research_status": "ready_for_review",
+      "expected_change": "retained",
+      "geometry_action": "review_existing",
+      "source_refs": [
+        "source.csic-banuelo-2021",
+        "source.alhambra-banuelo"
+      ],
+      "notes": "El Baño del Nogal está documentado en 1494, fue reparado en 1509 y probablemente siguió funcionando en época morisca hasta 1567; la función en 1550 es probable, no segura, y la huella actual incluye restauraciones."
+    },
+    {
+      "feature_id": "quarter.alcazaba-qadima",
+      "priority": "medium",
+      "research_status": "not_started",
+      "expected_change": "altered",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [],
+      "notes": "Traducir el antiguo recinto a la organización parroquial y residencial de 1550."
+    },
+    {
+      "feature_id": "quarter.axares",
+      "priority": "medium",
+      "research_status": "not_started",
+      "expected_change": "altered",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [],
+      "notes": "Revisar topónimo, límites y persistencia como unidad reconocible en la ciudad morisca."
+    },
+    {
+      "feature_id": "quarter.garnata-al-yahud",
+      "priority": "high",
+      "research_status": "not_started",
+      "expected_change": "replaced",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [],
+      "notes": "La expulsión judía hace inadecuado conservar la identidad funcional de 1492; estudiar parcelario, nuevos pobladores y relación con el Realejo."
+    },
+    {
+      "feature_id": "quarter.ramla",
+      "priority": "anchor",
+      "research_status": "initial_sources",
+      "expected_change": "altered",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [
+        "source.granada-bib-rambla-square"
+      ],
+      "notes": "La plaza ampliada y los usos ceremoniales cristianos requieren un estado geométrico propio."
+    },
+    {
+      "feature_id": "quarter.albayyazin",
+      "priority": "high",
+      "research_status": "initial_sources",
+      "expected_change": "altered",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [
+        "source.ugr-urban-transformation"
+      ],
+      "notes": "Revisar su relación con parroquias, población morisca y el concepto posterior de Albaicín."
+    },
+    {
+      "feature_id": "quarter.alfajjarin",
+      "priority": "high",
+      "research_status": "initial_sources",
+      "expected_change": "altered",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [
+        "source.garrido-alfareros-2024"
+      ],
+      "notes": "El estudio alcanza el siglo XVI; revisar continuidad y desplazamiento de los talleres y cambios residenciales."
+    },
+    {
+      "feature_id": "burial.fajjarin-assal",
+      "priority": "medium",
+      "research_status": "not_started",
+      "expected_change": "demolished",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [],
+      "notes": "Hipótesis de cese y ocupación cristiana que requiere fuentes arqueológicas específicas antes de publicarse."
+    },
+    {
+      "feature_id": "quarter.antequeruela",
+      "priority": "high",
+      "research_status": "not_started",
+      "expected_change": "altered",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [],
+      "notes": "El topónimo se documenta mejor en época moderna temprana; revisar población y límites con prioridad."
+    },
+    {
+      "feature_id": "quarter.loma",
+      "priority": "anchor",
+      "research_status": "initial_sources",
+      "expected_change": "altered",
+      "geometry_action": "reconstruct_variant",
+      "source_refs": [
+        "source.granada-campo-principe"
+      ],
+      "notes": "El Campo de la Loma fue transformado en Campo del Príncipe y espacio ceremonial castellano."
+    }
+  ],
+  "candidate_entities": [
+    {
+      "proposed_id": "religious.cathedral-granada",
+      "canonical_name": "Catedral de Granada",
+      "entity_type": "building",
+      "category": "religion_learning",
+      "subtype": "cathedral",
+      "priority": "anchor",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "newly_built",
+      "physical_state": "under_construction",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "El gran templo renacentista ocupaba el antiguo centro religioso de la medina, pero hacia 1550 seguía en una fase constructiva que debe representarse.",
+      "evidence_note": "Las fuentes institucionales coinciden en el proyecto imperial y su construcción durante el segundo cuarto del siglo XVI; falta fijar la planta material exacta de 1550.",
+      "source_refs": [
+        "source.granada-cathedral",
+        "source.junta-granada-tourism-plan",
+        "source.ugr-renaissance-architecture",
+        "source.granada-archive-cathedral-1521"
+      ]
+    },
+    {
+      "proposed_id": "religious.royal-chapel",
+      "canonical_name": "Capilla Real",
+      "entity_type": "building",
+      "category": "religion_learning",
+      "subtype": "royal_funeral_chapel",
+      "priority": "anchor",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "newly_built",
+      "physical_state": "complete",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "El panteón de los Reyes Católicos estaba terminado y en uso, unido espacial y simbólicamente al complejo catedralicio.",
+      "evidence_note": "La cronología institucional 1504–1521 es segura; la geometría debe distinguir la capilla histórica del conjunto actual acumulado.",
+      "source_refs": [
+        "source.junta-granada-tourism-plan",
+        "source.royal-chapel-history"
+      ]
+    },
+    {
+      "proposed_id": "civic.lonja-mercaderes",
+      "canonical_name": "Lonja de Mercaderes",
+      "entity_type": "building",
+      "category": "commerce_civic",
+      "subtype": "merchant_exchange",
+      "priority": "anchor",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "newly_built",
+      "physical_state": "complete",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "El edificio mercantil promovido desde 1518 articulaba usos comerciales en planta baja y dependencias vinculadas a la Capilla Real arriba.",
+      "evidence_note": "La presencia y función general están documentadas; revisar fases menores y huella antes de publicar geometría.",
+      "source_refs": [
+        "source.granada-lonja-mercaderes"
+      ]
+    },
+    {
+      "proposed_id": "civic.real-chancilleria",
+      "canonical_name": "Real Chancillería",
+      "entity_type": "building",
+      "category": "commerce_civic",
+      "subtype": "high_court",
+      "priority": "anchor",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "newly_built",
+      "physical_state": "partially_in_use",
+      "research_status": "initial_sources",
+      "geometry_action": "create_new",
+      "summary": "La institución operaba desde 1505 y su sede monumental ya contaba hacia 1540 con el patio clasicista, aunque la fachada actual es posterior.",
+      "evidence_note": "La reconstrucción de 1550 debe excluir la fachada de 1587 y verificar qué crujías estaban terminadas o en uso.",
+      "source_refs": [
+        "source.granada-chancilleria"
+      ]
+    },
+    {
+      "proposed_id": "civic.hospital-real",
+      "canonical_name": "Hospital Real",
+      "entity_type": "building",
+      "category": "commerce_civic",
+      "subtype": "royal_hospital",
+      "priority": "high",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "newly_built",
+      "physical_state": "under_construction",
+      "research_status": "initial_sources",
+      "geometry_action": "create_new",
+      "summary": "El hospital iniciado en 1511 materializaba el programa asistencial y estatal de la Corona en el borde septentrional de la ciudad.",
+      "evidence_note": "El comienzo de obra está documentado, pero debe investigarse qué partes estaban construidas y operativas hacia 1550.",
+      "source_refs": [
+        "source.granada-hospital-real"
+      ]
+    },
+    {
+      "proposed_id": "royal.palace-charles-v",
+      "canonical_name": "Palacio de Carlos V",
+      "entity_type": "building",
+      "category": "royal_elite",
+      "subtype": "imperial_palace",
+      "priority": "anchor",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "newly_built",
+      "physical_state": "under_construction",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "El palacio imperial alteraba el tejido de la Alhambra y en 1550 había alcanzado el segundo piso, sin corresponder todavía al edificio acabado actual.",
+      "evidence_note": "La secuencia de obra está fechada por el Patronato; la geometría deberá reconstruir la fase de 1550, no reutilizar sin más la huella o volumetría presente.",
+      "source_refs": [
+        "source.alhambra-charles-v-palace",
+        "source.alhambra-machuca-imperial-works"
+      ]
+    },
+    {
+      "proposed_id": "gate.puerta-granadas",
+      "canonical_name": "Puerta de las Granadas",
+      "entity_type": "gate",
+      "category": "walls_gates",
+      "subtype": "imperial_gate",
+      "priority": "anchor",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "newly_built",
+      "physical_state": "under_construction",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "La nueva puerta monumental reorientaba la subida a la Alhambra, pero en 1550 no tenía todavía la terminación que alcanzaría en la década de 1590.",
+      "evidence_note": "La traza y cimentación se fechan en 1545–1548 y el escudo en 1552; representar 1550 exige una fase incompleta explícita.",
+      "source_refs": [
+        "source.alhambra-puerta-granadas-study"
+      ]
+    },
+    {
+      "proposed_id": "water.pilar-carlos-v",
+      "canonical_name": "Pilar de Carlos V",
+      "entity_type": "building",
+      "category": "water_infrastructure",
+      "subtype": "monumental_fountain",
+      "priority": "high",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "newly_built",
+      "physical_state": "complete",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "El pilar formaba parte del nuevo recorrido imperial ante la Puerta de la Justicia, combinando abastecimiento, mitología y representación monárquica.",
+      "evidence_note": "El Patronato fecha la ejecución del pilar en 1545, por lo que su presencia hacia 1550 es segura; la geometría inicial seguirá siendo un punto de referencia hasta revisar su fábrica.",
+      "source_refs": [
+        "source.alhambra-puerta-granadas-study",
+        "source.alhambra-machuca-imperial-works"
+      ]
+    },
+    {
+      "proposed_id": "religious.san-jeronimo",
+      "canonical_name": "Monasterio de San Jerónimo",
+      "entity_type": "building",
+      "category": "religion_learning",
+      "subtype": "monastery",
+      "priority": "high",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "newly_built",
+      "physical_state": "unknown",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "La gran fundación jerónima extramuros participaba en la nueva imagen religiosa y nobiliaria de la Granada renacentista.",
+      "evidence_note": "La fundación y el complejo son seguros; falta una cronología de obra suficientemente precisa para fijar la fase visible en 1550.",
+      "source_refs": [
+        "source.granada-san-jeronimo",
+        "source.ugr-urban-transformation"
+      ]
+    },
+    {
+      "proposed_id": "religious.santa-cruz-real",
+      "canonical_name": "Convento de Santa Cruz la Real",
+      "entity_type": "building",
+      "category": "religion_learning",
+      "subtype": "convent",
+      "priority": "high",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "newly_built",
+      "physical_state": "unknown",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "La fundación dominica ocupó las huertas de la Almanjarra y se convirtió en un polo religioso del Realejo cristiano.",
+      "evidence_note": "El emplazamiento y la fundación son seguros, pero las fases del conjunto conservado deben separarse antes de dibujar 1550.",
+      "source_refs": [
+        "source.granada-santa-cruz-real",
+        "source.ugr-urban-transformation"
+      ]
+    },
+    {
+      "proposed_id": "religious.san-juan-reyes",
+      "canonical_name": "Iglesia de San Juan de los Reyes",
+      "entity_type": "building",
+      "category": "religion_learning",
+      "subtype": "parish_church",
+      "priority": "high",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "replaced",
+      "physical_state": "complete",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "La mezquita consagrada tras la conquista fue demolida en 1520 para levantar una iglesia mudéjar que conservó su antiguo alminar como torre.",
+      "evidence_note": "La secuencia básica está documentada; revisar la fecha de terminación y las partes rehechas en siglos posteriores.",
+      "source_refs": [
+        "source.granada-san-juan-reyes"
+      ]
+    },
+    {
+      "proposed_id": "religious.san-jose",
+      "canonical_name": "Iglesia de San José",
+      "entity_type": "building",
+      "category": "religion_learning",
+      "subtype": "parish_church",
+      "priority": "high",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "replaced",
+      "physical_state": "complete",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "La parroquia construida en 1525 sustituyó a la mezquita al-Murabitin y expresa la primera arquitectura mudéjar cristiana del Albaicín.",
+      "evidence_note": "La fecha y el solar están documentados; la geometría debe descontar añadidos posteriores y estudiar la posible pervivencia del alminar.",
+      "source_refs": [
+        "source.granada-san-jose"
+      ]
+    },
+    {
+      "proposed_id": "religious.san-cristobal",
+      "canonical_name": "Iglesia de San Cristóbal",
+      "entity_type": "building",
+      "category": "religion_learning",
+      "subtype": "parish_church",
+      "priority": "high",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "replaced",
+      "physical_state": "under_construction",
+      "research_status": "initial_sources",
+      "geometry_action": "create_new",
+      "summary": "La iglesia había sustituido a una mezquita y se encontraba dentro de una ampliación documentada entre 1540 y 1559.",
+      "evidence_note": "Es un caso idóneo para probar estados constructivos: deben diferenciarse el primer templo, la ampliación activa y reformas posteriores.",
+      "source_refs": [
+        "source.granada-san-cristobal"
+      ]
+    },
+    {
+      "proposed_id": "religious.san-miguel-bajo",
+      "canonical_name": "Iglesia de San Miguel Bajo",
+      "entity_type": "building",
+      "category": "religion_learning",
+      "subtype": "parish_church",
+      "priority": "high",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "replaced",
+      "physical_state": "partially_in_use",
+      "research_status": "initial_sources",
+      "geometry_action": "create_new",
+      "summary": "La primera mitad de la iglesia estaba construida desde 1528–1539 y la segunda fase no comenzó hasta 1551, junto al aljibe heredado de la mezquita.",
+      "evidence_note": "El corte de 1550 permite representar con precisión una iglesia incompleta; deben verificarse uso litúrgico y huella de la primera fase.",
+      "source_refs": [
+        "source.granada-san-miguel-bajo"
+      ]
+    },
+    {
+      "proposed_id": "religious.san-matias",
+      "canonical_name": "Iglesia de San Matías",
+      "entity_type": "building",
+      "category": "religion_learning",
+      "subtype": "parish_church",
+      "priority": "high",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "replaced",
+      "physical_state": "complete",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "La parroquia fue trasladada por voluntad imperial y el edificio recibió sus capillas laterales entre 1533 y 1541, consolidando el nuevo barrio cristiano.",
+      "evidence_note": "La cronología principal precede a 1550; revisar qué añadidos y acabados actuales son posteriores.",
+      "source_refs": [
+        "source.granada-san-matias"
+      ]
+    },
+    {
+      "proposed_id": "religious.san-luis",
+      "canonical_name": "Iglesia de San Luis",
+      "entity_type": "building",
+      "category": "religion_learning",
+      "subtype": "parish_church",
+      "priority": "medium",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "replaced",
+      "physical_state": "complete",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "La iglesia mudéjar terminada en 1526 ocupaba el solar de la mezquita de la Pureza en el corazón del Albaicín.",
+      "evidence_note": "La fecha de terminación está publicada por el Ayuntamiento; la planta de 1550 debe excluir capillas y cambios posteriores.",
+      "source_refs": [
+        "source.granada-san-luis"
+      ]
+    },
+    {
+      "proposed_id": "religious.salvador-collegiate",
+      "canonical_name": "Colegiata del Salvador",
+      "entity_type": "building",
+      "category": "religion_learning",
+      "subtype": "collegiate_church",
+      "priority": "anchor",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "converted",
+      "physical_state": "partially_in_use",
+      "research_status": "initial_sources",
+      "geometry_action": "reconstruct_variant",
+      "summary": "La colegiata fundada en 1527 para el adoctrinamiento morisco ocupaba el ámbito de la antigua Mezquita Mayor del Albaicín.",
+      "evidence_note": "Debe separarse la existencia institucional y el uso cristiano del solar de la cronología del edificio que hoy se reconoce como iglesia del Salvador.",
+      "source_refs": [
+        "source.granada-salvador"
+      ]
+    },
+    {
+      "proposed_id": "urban.plaza-bib-rambla",
+      "canonical_name": "Plaza de Bib-Rambla",
+      "entity_type": "sector",
+      "category": "commerce_civic",
+      "subtype": "civic_square",
+      "priority": "anchor",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "altered",
+      "physical_state": "complete",
+      "research_status": "initial_sources",
+      "geometry_action": "create_new",
+      "summary": "La antigua rambla había sido ampliada y adaptada como escenario castellano de comercio, fiestas, justicia y celebraciones del Corpus.",
+      "evidence_note": "La función y la ampliación están documentadas; la geometría exacta hacia 1550 requiere cartografía regresiva y fuentes de archivo.",
+      "source_refs": [
+        "source.granada-bib-rambla-square",
+        "source.granada-centre-plan"
+      ]
+    },
+    {
+      "proposed_id": "urban.campo-principe",
+      "canonical_name": "Campo del Príncipe",
+      "entity_type": "sector",
+      "category": "commerce_civic",
+      "subtype": "civic_square",
+      "priority": "high",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "altered",
+      "physical_state": "complete",
+      "research_status": "initial_sources",
+      "geometry_action": "create_new",
+      "summary": "El antiguo Campo de la Loma había sido acondicionado como gran plaza pública castellana para mercado, juegos y ceremonias.",
+      "evidence_note": "Las intervenciones de 1497 y 1513 son seguras; la envolvente de 1550 no debe copiar automáticamente la plaza actual.",
+      "source_refs": [
+        "source.granada-campo-principe"
+      ]
+    },
+    {
+      "proposed_id": "urban.plaza-nueva",
+      "canonical_name": "Plaza Nueva",
+      "entity_type": "sector",
+      "category": "commerce_civic",
+      "subtype": "civic_square",
+      "priority": "anchor",
+      "presence": "present",
+      "temporal_confidence": "probable",
+      "change_from_1492": "newly_built",
+      "physical_state": "complete",
+      "research_status": "initial_sources",
+      "geometry_action": "create_new",
+      "summary": "La nueva plaza sobre el corredor del Darro concentró representación judicial y conectó la ciudad baja con el nuevo acceso de la Alhambra.",
+      "evidence_note": "La transformación urbana está establecida, pero faltan fuentes específicas para fechar y dibujar las sucesivas plataformas y cubrimientos del siglo XVI.",
+      "source_refs": [
+        "source.granada-pgom-urban-history",
+        "source.granada-chancilleria"
+      ]
+    },
+    {
+      "proposed_id": "civic.university-curia",
+      "canonical_name": "Universidad y Colegio Real de Santa Cruz de la Fe (actual Curia)",
+      "entity_type": "building",
+      "category": "religion_learning",
+      "subtype": "university_college",
+      "priority": "high",
+      "presence": "present",
+      "temporal_confidence": "secure",
+      "change_from_1492": "newly_built",
+      "physical_state": "complete",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "La Universidad fundada en 1531 ocupaba desde 1538 el edificio hoy llamado Curia eclesiástica, junto al nuevo centro catedralicio.",
+      "evidence_note": "La institución, el traslado y la arquitectura están documentados; Curia es solo una referencia moderna y no la función del inmueble en 1550.",
+      "source_refs": [
+        "source.ugr-history-timeline",
+        "source.ugr-old-university-building-1975"
+      ]
+    },
+    {
+      "proposed_id": "royal.casa-castril",
+      "canonical_name": "Casa de Castril",
+      "entity_type": "building",
+      "category": "royal_elite",
+      "subtype": "elite_residence",
+      "priority": "medium",
+      "presence": "unknown",
+      "temporal_confidence": "probable",
+      "change_from_1492": "newly_built",
+      "physical_state": "unknown",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "La casa señorial renacentista en la Carrera del Darro ilustra la implantación residencial de las élites cristianas en el tejido heredado.",
+      "evidence_note": "La fuente institucional solo asegura una cronología general del siglo XVI; hace falta una fecha constructiva y análisis de fases para 1550.",
+      "source_refs": [
+        "source.granada-casa-castril"
+      ]
+    },
+    {
+      "proposed_id": "royal.casa-tiros",
+      "canonical_name": "Casa de los Tiros",
+      "entity_type": "building",
+      "category": "royal_elite",
+      "subtype": "elite_residence",
+      "priority": "medium",
+      "presence": "unknown",
+      "temporal_confidence": "probable",
+      "change_from_1492": "newly_built",
+      "physical_state": "unknown",
+      "research_status": "ready_for_review",
+      "geometry_action": "create_new",
+      "summary": "La residencia fortificada y renacentista del Realejo puede mostrar la nueva arquitectura nobiliaria junto a la continuidad de técnicas mudéjares.",
+      "evidence_note": "La adscripción al siglo XVI es insuficiente para afirmar su estado en 1550; requiere cronología constructiva y lectura de fábrica.",
+      "source_refs": [
+        "source.granada-casa-tiros"
+      ]
+    }
+  ]
+}

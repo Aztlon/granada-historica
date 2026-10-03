@@ -1,0 +1,888 @@
+{
+  "schema_version": 1,
+  "milestone": "M10.5",
+  "period_id": "c1550",
+  "updated_on": "2026-10-02",
+  "feature_ids": [
+    "civic.real-chancilleria",
+    "civic.hospital-real",
+    "water.pilar-carlos-v",
+    "religious.san-miguel-bajo",
+    "religious.san-cristobal",
+    "gate.alhambra-justice",
+    "walls.alhambra-perimeter",
+    "royal.alhambra",
+    "civic.maristan"
+  ],
+  "items": [
+    {
+      "feature_id": "civic.real-chancilleria",
+      "cluster": "civic_centre",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Real Chancillería",
+          "function": "Tribunal superior de la Corona para la mitad meridional de la península",
+          "summary": "La Chancillería funcionaba en Plaza Nueva y contaba hacia 1540 con el patio clasicista, pero no con la fachada manierista trazada en 1587.",
+          "evidence_note": "La institución, el emplazamiento y la cronología general están documentados; no se conoce todavía qué crujías pueden delimitarse con seguridad para 1550.",
+          "change_note": "La nueva sede judicial consolidó un centro administrativo cristiano junto al Darro sin justificar la proyección retrospectiva del edificio terminado."
+        },
+        "en": {
+          "name": "Royal Chancery",
+          "function": "The Crown’s high court for the southern half of the Iberian Peninsula",
+          "summary": "The Chancery operated at Plaza Nueva and had its classicising courtyard by about 1540, but not the Mannerist façade designed in 1587.",
+          "evidence_note": "The institution, site and broad chronology are documented; the ranges that can safely be delimited for 1550 have not yet been established.",
+          "change_note": "The new court consolidated a Christian administrative centre beside the Darro without licensing a retrospective use of the completed building."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.chancery-phase-1550",
+          "topic": "chronology",
+          "text": {
+            "es": "La Chancillería estaba establecida desde 1505 y el patio se fecha hacia 1540, mientras la fachada actual corresponde a 1587.",
+            "en": "The Chancery was established in 1505 and the courtyard dates to about 1540, while the present façade belongs to 1587."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-chancilleria",
+              "locator": "Historia del edificio, patio y fachada",
+              "supports": "Institución desde 1505, patio hacia 1540 y fachada posterior de 1587."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.chancery-point-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "El punto identifica la sede; no atribuye a 1550 la huella ni la fachada del edificio terminado.",
+            "en": "The point identifies the seat; it does not attribute the completed building footprint or façade to 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-chancilleria",
+              "locator": "Dirección y secuencia constructiva",
+              "supports": "Distingue el solar de Plaza Nueva y las fases anterior y posterior a 1550."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "adjacent_to",
+          "target_id": "urban.plaza-nueva",
+          "note": {
+            "es": "La institución y la plaza formaban un nuevo frente cívico, pero la geometría histórica de la plaza sigue aplazada.",
+            "en": "The institution and square formed a new civic frontage, but the square’s historical geometry remains deferred."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "reference_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se mantiene un punto representativo hasta disponer de una planta de fases que excluya la fachada de 1587.",
+          "en": "A representative point is retained until a phased plan can exclude the façade of 1587."
+        },
+        "overlap_resolution": {
+          "es": "La relación con Plaza Nueva se expresa como vínculo, no mediante un polígono moderno de la plaza o del edificio.",
+          "en": "The relationship to Plaza Nueva is expressed as a link, not through a modern polygon of the square or building."
+        }
+      }
+    },
+    {
+      "feature_id": "civic.hospital-real",
+      "cluster": "civic_centre",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Hospital Real",
+          "function": "Equipamiento asistencial promovido por la Corona",
+          "summary": "El Hospital Real, iniciado en 1511, formaba parte del programa de equipamientos públicos de la Corona y continuaba siendo una realidad constructiva compleja hacia 1550.",
+          "evidence_note": "El inicio, el solar y el programa están documentados; la fuente general no permite asignar a 1550 toda la planta, los cuatro pisos ni la portada de 1632.",
+          "change_note": "Era una fundación nueva fuera del paisaje institucional de 1492, pero no debe mostrarse como el edificio actual ya terminado."
+        },
+        "en": {
+          "name": "Royal Hospital",
+          "function": "A Crown-sponsored institution for care and assistance",
+          "summary": "The Royal Hospital, begun in 1511, belonged to the Crown’s programme of public institutions and remained a complex building project around 1550.",
+          "evidence_note": "The start date, site and programme are documented; the general source does not allow the whole plan, four storeys or the 1632 portal to be assigned to 1550.",
+          "change_note": "It was a new foundation absent from the institutional landscape of 1492, but it must not be shown as today’s completed building."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.hospital-real-foundation",
+          "topic": "chronology",
+          "text": {
+            "es": "Las obras comenzaron en 1511 por orden real dentro de un programa de equipamientos públicos.",
+            "en": "Work began in 1511 by royal order as part of a programme of public institutions."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-hospital-real",
+              "locator": "Historia, autores y programa asistencial",
+              "supports": "Inicio de obras en 1511 y promoción regia del hospital."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.hospital-real-phase-limit",
+          "topic": "interpretation",
+          "text": {
+            "es": "La portada de 1632 y la configuración terminada no pueden trasladarse al corte de 1550.",
+            "en": "The portal of 1632 and the completed configuration cannot be carried back into the 1550 snapshot."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-hospital-real",
+              "locator": "Descripción de la planta y fecha de la portada",
+              "supports": "La fuente identifica expresamente la portada como obra posterior de 1632."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "part_of_program_with",
+          "target_id": "civic.real-chancilleria",
+          "note": {
+            "es": "Hospital y Chancillería materializan programas regios distintos; la relación no implica proximidad ni una única campaña.",
+            "en": "Hospital and Chancery materialise distinct royal programmes; the relationship implies neither proximity nor a single campaign."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "reference_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se conserva un punto del solar y se rechaza la huella actual hasta identificar las campañas anteriores a 1550.",
+          "en": "A site point is retained and the present footprint rejected until the pre-1550 building campaigns are identified."
+        },
+        "overlap_resolution": {
+          "es": "No se deriva ningún volumen ni planta desde la geometría moderna; el estado de obra queda en texto y metadatos.",
+          "en": "No volume or plan is derived from modern geometry; the building state remains in text and metadata."
+        }
+      }
+    },
+    {
+      "feature_id": "water.pilar-carlos-v",
+      "cluster": "imperial_alhambra",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Pilar de Carlos V",
+          "function": "Fuente monumental y pieza representativa del acceso imperial",
+          "summary": "El pilar diseñado por Pedro Machuca y ejecutado en 1545 por Nicolás de Corte combinaba abastecimiento, iconografía y representación imperial bajo la Puerta de la Justicia.",
+          "evidence_note": "La fecha, autoría y localización del elemento conservado están documentadas; la referencia puntual no sustituye una medición de la fábrica de 1545.",
+          "change_note": "La fuente añadió una pieza renacentista al acceso nazarí retenido y debe leerse junto a la Puerta de la Justicia, no como su sustitución."
+        },
+        "en": {
+          "name": "Pillar of Charles V",
+          "function": "Monumental fountain and representational element of the imperial approach",
+          "summary": "The fountain designed by Pedro Machuca and executed in 1545 by Nicolás de Corte combined water supply, iconography and imperial display below the Gate of Justice.",
+          "evidence_note": "The date, authorship and location of the surviving element are documented; the reference point does not replace a measured survey of its 1545 fabric.",
+          "change_note": "The fountain added a Renaissance element to the retained Nasrid approach and should be read with the Gate of Justice, not as its replacement."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.pillar-charles-v-1545",
+          "topic": "chronology",
+          "text": {
+            "es": "Pedro Machuca diseñó el pilar y Nicolás de Corte lo ejecutó en 1545.",
+            "en": "Pedro Machuca designed the fountain and Nicolás de Corte executed it in 1545."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-machuca-imperial-works",
+              "locator": "Obras de Machuca en la Alhambra",
+              "supports": "Diseño, autor de la ejecución y fecha de 1545."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.pillar-imperial-access",
+          "topic": "interpretation",
+          "text": {
+            "es": "El pilar pertenecía al programa renacentista que reorganizaba simbólicamente el acceso a la Casa Real.",
+            "en": "The fountain belonged to the Renaissance programme that symbolically reorganised access to the Royal House."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-puerta-granadas-study",
+              "locator": "Programa imperial de acceso",
+              "supports": "Contextualiza las nuevas obras en la transformación visual y simbólica del recorrido."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "part_of_program_with",
+          "target_id": "gate.puerta-granadas",
+          "note": {
+            "es": "Pilar y puerta pertenecían al programa imperial, aunque tenían cronologías, funciones y emplazamientos distintos.",
+            "en": "Fountain and gate belonged to the imperial programme, although they had distinct chronologies, functions and sites."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "reference_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "El punto fija el elemento conservado; una huella requerirá levantamiento y lectura de la fábrica atribuible a 1545.",
+          "en": "The point fixes the surviving element; a footprint requires survey and analysis of the fabric attributable to 1545."
+        },
+        "overlap_resolution": {
+          "es": "Se conserva separado de la muralla y de la Puerta de la Justicia para evitar fusionar tres elementos históricos distintos.",
+          "en": "It remains separate from the wall and Gate of Justice to avoid merging three distinct historical elements."
+        }
+      }
+    },
+    {
+      "feature_id": "religious.san-miguel-bajo",
+      "cluster": "parish_city",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Iglesia de San Miguel Bajo",
+          "function": "Parroquia cristiana construida sobre una mezquita del Albaicín",
+          "summary": "Hacia 1550 estaba construida la mitad correspondiente a la campaña de 1528–1539, mientras la segunda intervención documentada entre 1551 y 1556 aún no había comenzado.",
+          "evidence_note": "La secuencia sitúa el corte entre dos campañas, pero no ofrece una planta georreferenciable de la mitad ya construida; el aljibe islámico conservado debe tratarse aparte.",
+          "change_note": "La sustitución institucional y arquitectónica no borró toda la infraestructura de la mezquita, como demuestra la permanencia del aljibe."
+        },
+        "en": {
+          "name": "Church of San Miguel Bajo",
+          "function": "Christian parish church built over an Albaicín mosque",
+          "summary": "Around 1550 the half belonging to the 1528–1539 campaign had been built, while the second documented intervention of 1551–1556 had not yet begun.",
+          "evidence_note": "The sequence places the snapshot between two campaigns but provides no georeferenceable plan of the completed half; the surviving Islamic cistern must be treated separately.",
+          "change_note": "Institutional and architectural replacement did not erase all mosque infrastructure, as the surviving cistern demonstrates."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.san-miguel-between-campaigns",
+          "topic": "chronology",
+          "text": {
+            "es": "El corte de 1550 queda entre las campañas de 1528–1539 y 1551–1556.",
+            "en": "The 1550 snapshot falls between the campaigns of 1528–1539 and 1551–1556."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-san-miguel-bajo",
+              "locator": "Secuencia de obras y aljibe",
+              "supports": "Fechas de ambas campañas y conservación del aljibe de la mezquita."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.san-miguel-partial-footprint",
+          "topic": "geometry",
+          "text": {
+            "es": "La iglesia completa no puede usarse como huella de 1550 porque la segunda mitad pertenece a la campaña iniciada en 1551.",
+            "en": "The complete church cannot serve as the 1550 footprint because its second half belongs to the campaign begun in 1551."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-san-miguel-bajo",
+              "locator": "Fases de 1528–1539 y 1551–1556",
+              "supports": "La separación cronológica obliga a representar una fase incompleta."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "part_of_program_with",
+          "target_id": "religious.san-cristobal",
+          "note": {
+            "es": "Ambas parroquias muestran sustituciones de mezquitas con fases distintas; no autorizan un único modelo de conversión urbana.",
+            "en": "Both parishes show mosque replacement through different phases; they do not license a single model of urban conversion."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "reference_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se conserva el punto y se aplaza el polígono hasta aislar espacialmente la campaña terminada en 1539.",
+          "en": "The point is retained and a polygon deferred until the campaign completed in 1539 can be isolated spatially."
+        },
+        "overlap_resolution": {
+          "es": "El aljibe se menciona como continuidad material, sin incorporarlo a una huella eclesiástica inventada.",
+          "en": "The cistern is noted as material continuity without incorporating it into an invented church footprint."
+        }
+      }
+    },
+    {
+      "feature_id": "religious.san-cristobal",
+      "cluster": "parish_city",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Iglesia de San Cristóbal",
+          "function": "Parroquia cristiana levantada en sustitución de una mezquita",
+          "summary": "San Cristóbal se encontraba dentro de una ampliación fechada entre 1540 y 1559, de modo que el edificio actual no puede presentarse como completamente existente en 1550.",
+          "evidence_note": "El emplazamiento, la sustitución y el intervalo de ampliación están documentados, pero no el avance exacto de los muros y armaduras en el año representativo.",
+          "change_note": "La iglesia materializa la sustitución de una mezquita, pero su propia fábrica seguía cambiando durante el corte temporal."
+        },
+        "en": {
+          "name": "Church of San Cristóbal",
+          "function": "Christian parish church erected in replacement of a mosque",
+          "summary": "San Cristóbal was within an enlargement campaign dated 1540–1559, so the present building cannot be presented as fully existing in 1550.",
+          "evidence_note": "The site, replacement and enlargement interval are documented, but not the exact progress of walls and timber roofs in the representative year.",
+          "change_note": "The church materialises the replacement of a mosque, but its own fabric was still changing during the temporal snapshot."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.san-cristobal-replacement",
+          "topic": "transformation",
+          "text": {
+            "es": "San Cristóbal fue levantada en sustitución de una mezquita.",
+            "en": "San Cristóbal was erected in replacement of a mosque."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-san-cristobal",
+              "locator": "Descripción histórica del templo",
+              "supports": "Identifica la mezquita precedente y la construcción cristiana."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.san-cristobal-active-campaign",
+          "topic": "chronology",
+          "text": {
+            "es": "La ampliación con armaduras de madera se desarrolló entre 1540 y 1559 y estaba activa alrededor de 1550.",
+            "en": "The enlargement with timber roofs ran from 1540 to 1559 and was active around 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-san-cristobal",
+              "locator": "Ampliación de 1540–1559",
+              "supports": "Intervalo constructivo que contiene el año representativo."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "part_of_program_with",
+          "target_id": "religious.san-miguel-bajo",
+          "note": {
+            "es": "La comparación entre ambas iglesias expone ritmos de obra distintos dentro de la parroquialización del Albaicín.",
+            "en": "Comparison with San Miguel Bajo exposes different building rhythms within the parish reorganisation of the Albaicín."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "reference_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "El punto evita atribuir al corte de 1550 el edificio actual o una fracción no documentada de la campaña 1540–1559.",
+          "en": "The point avoids assigning the present building or an undocumented fraction of the 1540–1559 campaign to the 1550 snapshot."
+        },
+        "overlap_resolution": {
+          "es": "La mezquita precedente se expresa como transformación histórica, no como una segunda huella coincidente sin planta propia.",
+          "en": "The preceding mosque is expressed as historical transformation, not as a second coincident footprint without its own plan."
+        }
+      }
+    },
+    {
+      "feature_id": "gate.alhambra-justice",
+      "cluster": "imperial_alhambra",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Puerta de la Justicia",
+          "function": "Acceso nazarí de la Casa Real bajo administración cristiana",
+          "summary": "La Puerta de la Justicia seguía articulando el frente meridional de la Alhambra mientras el nuevo pilar y la Puerta de las Granadas reorganizaban el recorrido representativo.",
+          "evidence_note": "La fábrica conservada fija el lugar con seguridad; la continuidad funcional se documenta como una afirmación temporal separada de su presencia en 1492.",
+          "change_note": "El acceso nazarí fue retenido e integrado en un programa imperial nuevo, no demolido ni sustituido por la puerta renacentista situada más abajo."
+        },
+        "en": {
+          "name": "Gate of Justice",
+          "function": "Nasrid entrance to the Royal House under Christian administration",
+          "summary": "The Gate of Justice continued to articulate the Alhambra’s southern front while the new fountain and Gate of the Pomegranates reorganised the representational route.",
+          "evidence_note": "The surviving fabric securely fixes the site; functional continuity is documented as a temporal claim separate from its presence in 1492.",
+          "change_note": "The Nasrid entrance was retained and integrated into a new imperial programme, not demolished or replaced by the Renaissance gate farther downhill."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.justice-gate-retained",
+          "topic": "transformation",
+          "text": {
+            "es": "La puerta nazarí permaneció dentro de la Casa Real y del recorrido imperial reorganizado.",
+            "en": "The Nasrid gate remained within the Royal House and the reorganised imperial route."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-history",
+              "locator": "Alhambra como Casa Real después de 1492",
+              "supports": "Continuidad del recinto bajo administración cristiana."
+            },
+            {
+              "source_id": "source.alhambra-puerta-granadas-study",
+              "locator": "Replanteamiento imperial de los accesos",
+              "supports": "Integración de la ciudad palatina en el nuevo recorrido representativo."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.justice-gate-separate",
+          "topic": "geometry",
+          "text": {
+            "es": "La Puerta de la Justicia y la Puerta de las Granadas son elementos distintos del mismo recorrido.",
+            "en": "The Gate of Justice and Gate of the Pomegranates are distinct elements of the same route."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-puerta-granadas-study",
+              "locator": "Situación y programa de la Puerta de las Granadas",
+              "supports": "Localiza la puerta nueva como primer punto de un recorrido hacia el recinto."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "routes_toward",
+          "target_id": "gate.puerta-granadas",
+          "note": {
+            "es": "La puerta renacentista replanteó el acceso hacia las puertas nazaríes retenidas sin ocupar su mismo emplazamiento.",
+            "en": "The Renaissance gate recast the approach toward retained Nasrid gates without occupying the same site."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_site_point",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se reutiliza el punto de la puerta conservada con una auditoría temporal c. 1550 independiente.",
+          "en": "The point of the surviving gate is reused with a separate c. 1550 temporal audit."
+        },
+        "overlap_resolution": {
+          "es": "Los tres elementos del acceso imperial permanecen separados y relacionados, evitando una única geometría compuesta.",
+          "en": "The three elements of the imperial approach remain separate and related, avoiding a single composite geometry."
+        }
+      }
+    },
+    {
+      "feature_id": "walls.alhambra-perimeter",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Muralla de la Alhambra",
+          "function": "Recinto palatino, militar y representativo bajo administración cristiana",
+          "summary": "La muralla nazarí seguía definiendo la Casa Real de la Alhambra, con reparaciones y obras imperiales que modificaron puntos concretos sin borrar el perímetro general.",
+          "evidence_note": "La alineación conservada es una base provisional; cada tramo exige comprobar persistencia, reparación o pérdida durante el siglo XVI antes de su verificación.",
+          "change_note": "La continuidad del sistema defensivo coexistió con cambios de administración, reparación y representación, por lo que retenido no significa inalterado."
+        },
+        "en": {
+          "name": "Alhambra wall",
+          "function": "Palatine, military and representational enclosure under Christian administration",
+          "summary": "The Nasrid wall continued to define the Alhambra Royal House, with repairs and imperial works altering particular points without erasing the general perimeter.",
+          "evidence_note": "The surviving alignment is a provisional basis; each stretch requires evidence of persistence, repair or loss during the sixteenth century before verification.",
+          "change_note": "Continuity of the defensive system coexisted with administrative, repair and representational changes, so retained does not mean unaltered."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.alhambra-wall-continuity",
+          "topic": "function",
+          "text": {
+            "es": "El recinto nazarí siguió delimitando la Casa Real cristiana después de 1492.",
+            "en": "The Nasrid enclosure continued to delimit the Christian Royal House after 1492."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-history",
+              "locator": "Siglos XVI–XVIII",
+              "supports": "Casa Real, jurisdicción y reparaciones posteriores a 1492."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.alhambra-wall-segment-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "La alineación general no demuestra que todos los tramos tuvieran idéntico estado material en 1550.",
+            "en": "The general alignment does not demonstrate that every stretch had the same material condition in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-history",
+              "locator": "Reparaciones de la Casa Real",
+              "supports": "La existencia de reparaciones obliga a revisar la continuidad por tramos."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "retains",
+          "target_id": "gate.alhambra-justice",
+          "note": {
+            "es": "El recinto mantiene la puerta como componente propio, aunque ambos necesitan auditorías temporales independientes.",
+            "en": "The enclosure retains the gate as a component, although both require independent temporal audits."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_line",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "La línea c. 1492 se reutiliza provisionalmente y queda sometida a revisión tramo por tramo para 1550.",
+          "en": "The c. 1492 line is provisionally reused and remains subject to stretch-by-stretch review for 1550."
+        },
+        "overlap_resolution": {
+          "es": "La línea delimita el recinto general; las puertas y obras imperiales se conservan como entidades relacionadas y no se absorben.",
+          "en": "The line delimits the general enclosure; gates and imperial works remain related entities and are not absorbed into it."
+        }
+      }
+    },
+    {
+      "feature_id": "royal.alhambra",
+      "cluster": "imperial_alhambra",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Alhambra y Casa Real",
+          "function": "Complejo palatino reutilizado, reparado y transformado por la monarquía",
+          "summary": "La ciudad palatina nazarí seguía constituyendo la Casa Real mientras reparaciones y nuevas obras, incluido el palacio de Carlos V, transformaban sectores concretos.",
+          "evidence_note": "El área expresa el recinto general, no la supervivencia uniforme de cada dependencia ni la huella construida de las obras nuevas en 1550.",
+          "change_note": "El cambio de administración y las inserciones imperiales alteraron el conjunto sin convertirlo en una creación enteramente nueva."
+        },
+        "en": {
+          "name": "Alhambra and Royal House",
+          "function": "Palatine complex reused, repaired and transformed by the monarchy",
+          "summary": "The Nasrid palatine city continued as the Royal House while repairs and new works, including the Palace of Charles V, transformed particular sectors.",
+          "evidence_note": "The area expresses the general enclosure, not uniform survival of every dependency or the built footprint of new works in 1550.",
+          "change_note": "The change of administration and imperial insertions altered the complex without turning it into an entirely new creation."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.alhambra-royal-house",
+          "topic": "function",
+          "text": {
+            "es": "Después de 1492 la Alhambra quedó establecida como Casa Real con jurisdicción propia.",
+            "en": "After 1492 the Alhambra was established as a Royal House with its own jurisdiction."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-history",
+              "locator": "Siglos XVI–XVIII",
+              "supports": "Conversión institucional en Casa Real y reparaciones ordenadas por la Corona."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.alhambra-imperial-insertion",
+          "topic": "transformation",
+          "text": {
+            "es": "El programa de Carlos V insertó arquitectura renacentista dentro del complejo palatino heredado.",
+            "en": "Charles V’s programme inserted Renaissance architecture within the inherited palatine complex."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-charles-v-palace",
+              "locator": "Historia y secuencia de la obra",
+              "supports": "Nueva residencia imperial dentro de la Alhambra."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "overlaps",
+          "target_id": "royal.palace-charles-v",
+          "note": {
+            "es": "El palacio nuevo se inserta dentro del área del conjunto; el solape no significa que ambas entidades compartan cronología o estado físico.",
+            "en": "The new palace is inserted within the complex area; overlap does not mean both entities share chronology or physical state."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_area",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "El polígono representa el recinto general heredado y no se interpreta como inventario de edificios conservados en 1550.",
+          "en": "The polygon represents the inherited general enclosure and is not interpreted as an inventory of buildings surviving in 1550."
+        },
+        "overlap_resolution": {
+          "es": "Las obras imperiales mantienen geometrías propias superpuestas para hacer visible la inserción y su distinto estado constructivo.",
+          "en": "Imperial works retain their own overlapping geometries to make their insertion and different building states visible."
+        }
+      }
+    },
+    {
+      "feature_id": "civic.maristan",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_specialist_review",
+      "content": {
+        "es": {
+          "name": "Real Casa de la Moneda (antiguo Maristán)",
+          "function": "Ceca y complejo fabril de la monarquía",
+          "summary": "El antiguo hospital nazarí funcionaba desde 1497 como Real Casa de la Moneda, con adaptaciones fabriles documentadas arqueológicamente dentro del edificio heredado.",
+          "evidence_note": "La conversión y la envolvente arqueológica están sustentadas; la distribución exacta de talleres, tesoro y fundición para 1550 no debe inventarse.",
+          "change_note": "El mismo edificio cambió de hospital a ceca mediante adaptaciones materiales; conversión no equivale a demolición ni a continuidad funcional."
+        },
+        "en": {
+          "name": "Royal Mint (former Maristán)",
+          "function": "Royal mint and manufacturing complex",
+          "summary": "The former Nasrid hospital had functioned as the Royal Mint since 1497, with archaeologically documented industrial adaptations inside the inherited building.",
+          "evidence_note": "The conversion and archaeological envelope are supported; the exact 1550 distribution of workshops, treasury and foundry must not be invented.",
+          "change_note": "The same building changed from hospital to mint through material adaptation; conversion means neither demolition nor functional continuity."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.maristan-mint-1497",
+          "topic": "transformation",
+          "text": {
+            "es": "El Maristán fue convertido en Real Casa de la Moneda desde 1497 y adaptado a usos fabriles.",
+            "en": "The Maristán was converted into the Royal Mint from 1497 and adapted to manufacturing uses."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-maristan-mint-2023",
+              "locator": "Resumen y estudio arqueológico, pp. 139–155",
+              "supports": "Conversión desde 1497 y transformaciones materiales vinculadas a la ceca."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.maristan-workshop-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "La envolvente conocida no permite asignar sin más cada espacio fabril documentado al año 1550.",
+            "en": "The known envelope does not by itself allow every documented manufacturing space to be assigned to 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-maristan-mint-2023",
+              "locator": "Secuencia arqueológica de la Casa de la Moneda",
+              "supports": "La larga secuencia de adaptación exige separar fases dentro de la envolvente."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "near",
+          "target_id": "water.darro",
+          "note": {
+            "es": "El edificio heredado se sitúa junto al Darro; esta proximidad no demuestra por sí sola cómo funcionaba cada instalación hidráulica de la ceca.",
+            "en": "The inherited building stands beside the Darro; proximity alone does not establish how each hydraulic installation of the mint worked."
+          }
+        }
+      ],
+      "geometry_review": {
+        "representation": "retained_area",
+        "audit_status": "in_review",
+        "decision": {
+          "es": "Se mantiene la envolvente arqueológica como área del sitio y no como plano completo de los talleres de 1550.",
+          "en": "The archaeological envelope is retained as the site area, not as a complete plan of the workshops in 1550."
+        },
+        "overlap_resolution": {
+          "es": "Una sola entidad estable conserva la continuidad material; el cambio de función se expresa en su estado temporal y no duplicando la huella.",
+          "en": "One stable entity preserves material continuity; the functional change is expressed in its temporal state rather than by duplicating the footprint."
+        }
+      }
+    }
+  ],
+  "themes": [
+    {
+      "theme_id": "parish_city",
+      "status": "mapped_candidate",
+      "title": { "es": "Ciudad parroquial y conversiones", "en": "Parish city and conversions" },
+      "summary": {
+        "es": "San Miguel Bajo y San Cristóbal permiten mostrar dos ritmos de sustitución de mezquitas sin convertir toda parroquialización en un proceso uniforme.",
+        "en": "San Miguel Bajo and San Cristóbal show two rhythms of mosque replacement without turning parish reorganisation into a uniform process."
+      },
+      "caveat": {
+        "es": "No se dibujan límites parroquiales ni se atribuye una planta terminada a campañas que seguían activas.",
+        "en": "No parish boundaries are drawn, and no completed plan is attributed to campaigns still under way."
+      },
+      "feature_ids": ["religious.san-miguel-bajo", "religious.san-cristobal"],
+      "source_refs": ["source.granada-san-miguel-bajo", "source.granada-san-cristobal", "source.granada-salvador"]
+    },
+    {
+      "theme_id": "civic_centre",
+      "status": "mapped_candidate",
+      "title": { "es": "Centro cívico y religioso cristiano", "en": "Christian civic and religious centre" },
+      "summary": {
+        "es": "El entorno catedralicio, la Universidad, la Chancillería y el Hospital documentan instituciones nuevas con estados constructivos diferentes.",
+        "en": "The cathedral precinct, University, Chancery and Hospital document new institutions with different building states."
+      },
+      "caveat": {
+        "es": "Los puntos de obra no autorizan huellas terminadas ni una reconstrucción completa de Plaza Nueva o del conjunto catedralicio.",
+        "en": "Building-site points do not license completed footprints or a full reconstruction of Plaza Nueva or the cathedral precinct."
+      },
+      "feature_ids": ["religious.medina-great-mosque", "religious.cathedral-granada", "religious.royal-chapel", "civic.lonja-mercaderes", "religious.madraza-yusufiyya", "civic.university-curia", "civic.real-chancilleria", "civic.hospital-real"],
+      "source_refs": ["source.granada-cathedral", "source.granada-chancilleria", "source.granada-hospital-real", "source.ugr-history-timeline"]
+    },
+    {
+      "theme_id": "imperial_alhambra",
+      "status": "mapped_candidate",
+      "title": { "es": "Alhambra imperial", "en": "Imperial Alhambra" },
+      "summary": {
+        "es": "La Casa Real nazarí retenida coexistía con reparaciones, un palacio en construcción, una fuente terminada y un nuevo acceso todavía incompleto.",
+        "en": "The retained Nasrid Royal House coexisted with repairs, a palace under construction, a completed fountain and an unfinished new approach."
+      },
+      "caveat": {
+        "es": "El área del recinto no implica supervivencia uniforme y los elementos imperiales mantienen geometrías y cronologías separadas.",
+        "en": "The enclosure area does not imply uniform survival, and imperial elements retain separate geometries and chronologies."
+      },
+      "feature_ids": ["royal.alhambra", "royal.palace-charles-v", "gate.puerta-granadas", "gate.alhambra-justice", "water.pilar-carlos-v"],
+      "source_refs": ["source.alhambra-history", "source.alhambra-charles-v-palace", "source.alhambra-puerta-granadas-study", "source.alhambra-machuca-imperial-works"]
+    },
+    {
+      "theme_id": "public_spaces",
+      "status": "deferred",
+      "title": { "es": "Espacios públicos y jerarquía urbana", "en": "Public spaces and urban hierarchy" },
+      "summary": {
+        "es": "Bib-Rambla, Campo del Príncipe y Plaza Nueva tienen cambios funcionales documentados, pero sus envolventes de 1550 no se derivan de las plazas actuales.",
+        "en": "Bib-Rambla, Campo del Príncipe and Plaza Nueva have documented functional changes, but their 1550 envelopes cannot be derived from the present squares."
+      },
+      "caveat": {
+        "es": "El tema permanece como contexto no cartografiado hasta reconstruir alineaciones y frentes mediante evidencia regresiva.",
+        "en": "The theme remains unmapped context until alignments and frontages can be reconstructed through regressive evidence."
+      },
+      "feature_ids": [],
+      "source_refs": ["source.granada-bib-rambla-square", "source.granada-campo-principe", "source.granada-pgom-urban-history"]
+    },
+    {
+      "theme_id": "inherited_systems",
+      "status": "mapped_candidate",
+      "title": { "es": "Sistemas y edificios heredados", "en": "Inherited systems and buildings" },
+      "summary": {
+        "es": "La muralla de la Alhambra, sus accesos y el Maristán convertido en ceca demuestran continuidades materiales con funciones y reparaciones nuevas.",
+        "en": "The Alhambra wall, its entrances and the Maristán converted into a mint demonstrate material continuity with new functions and repairs."
+      },
+      "caveat": {
+        "es": "La conservación actual no basta para afirmar el uso o estado de cada tramo, canal, puerta o espacio interior en 1550.",
+        "en": "Present survival is insufficient to establish the use or condition of every stretch, channel, gate or interior space in 1550."
+      },
+      "feature_ids": ["walls.alhambra-perimeter", "gate.alhambra-justice", "civic.maristan"],
+      "source_refs": ["source.alhambra-history", "source.alhambra-maristan-mint-2023", "source.alhambra-puerta-granadas-study"]
+    },
+    {
+      "theme_id": "quarters",
+      "status": "context_only",
+      "title": { "es": "Barrios y continuidad de la trama", "en": "Quarters and continuity of the urban fabric" },
+      "summary": {
+        "es": "La transformación institucional no eliminó de inmediato la trama heredada, pero los nombres y límites de barrios necesitan documentación específica cercana a 1550.",
+        "en": "Institutional transformation did not immediately erase inherited urban fabric, but quarter names and boundaries need evidence specific to around 1550."
+      },
+      "caveat": {
+        "es": "No se reutilizan automáticamente los polígonos de 1492 ni se presentan límites sociales como si fueran límites físicos estables.",
+        "en": "The 1492 polygons are not automatically reused, and social boundaries are not presented as stable physical limits."
+      },
+      "feature_ids": [],
+      "source_refs": ["source.ugr-urban-transformation", "source.granada-pgom-urban-history", "source.granada-centre-plan"]
+    },
+    {
+      "theme_id": "population_geography",
+      "status": "deferred",
+      "title": { "es": "Geografía de la población morisca y cristiana", "en": "Morisco and Christian population geography" },
+      "summary": {
+        "es": "La presencia morisca seguía siendo esencial alrededor de 1550 y no puede reducirse a un reemplazo binario ni confundirse con las consecuencias posteriores a 1568.",
+        "en": "Morisco presence remained essential around 1550 and cannot be reduced to binary replacement or conflated with the consequences after 1568."
+      },
+      "caveat": {
+        "es": "No se dibuja ninguna zona demográfica sin una metodología revisada basada en hogares, fiscalidad, habices y propiedad.",
+        "en": "No demographic area is drawn without a reviewed method based on households, taxation, habices and property evidence."
+      },
+      "feature_ids": [],
+      "source_refs": ["source.ugr-urban-transformation", "source.granada-pgom-urban-history"]
+    }
+  ],
+  "analytical_layers": [
+    {
+      "layer_id": "analysis.public-squares",
+      "evidence_preparation_ref": "evidence.public-spaces",
+      "status": "deferred",
+      "theme_id": "public_spaces",
+      "affected_feature_ids": ["urban.plaza-bib-rambla", "urban.campo-principe", "urban.plaza-nueva"],
+      "proposed_method": {
+        "es": "Combinar alineaciones documentadas, cartografía histórica georreferenciada, arqueología y morfología parcelaria en una derivación versionada.",
+        "en": "Combine documented alignments, georeferenced historical mapping, archaeology and parcel morphology in a versioned derivation."
+      },
+      "blocker": {
+        "es": "Las fuentes actuales documentan función y cronología, pero no una envolvente reproducible de cada plaza hacia 1550.",
+        "en": "Current sources document function and chronology but not a reproducible envelope for each square around 1550."
+      },
+      "release_condition": {
+        "es": "Publicar entradas, parámetros, tolerancias, resultado y revisión geométrica especialista de cada plaza.",
+        "en": "Publish inputs, parameters, tolerances, output and specialist geometry review for each square."
+      },
+      "source_refs": ["source.granada-bib-rambla-square", "source.granada-campo-principe", "source.granada-pgom-urban-history"]
+    },
+    {
+      "layer_id": "analysis.parish-boundaries",
+      "evidence_preparation_ref": "evidence.parish-jurisdictions",
+      "status": "deferred",
+      "theme_id": "parish_city",
+      "affected_feature_ids": ["religious.salvador-collegiate", "religious.albaicin-great-mosque", "religious.san-miguel-bajo", "religious.san-cristobal", "religious.san-jose", "religious.san-juan-reyes", "religious.san-matias", "religious.san-luis"],
+      "proposed_method": {
+        "es": "Reconstruir jurisdicciones desde documentación parroquial, habices, calles y propiedades, conservando bandas de incertidumbre en los bordes.",
+        "en": "Reconstruct jurisdictions from parish records, habices, streets and properties while retaining uncertainty bands at boundaries."
+      },
+      "blocker": {
+        "es": "La fundación de una parroquia o la localización de su iglesia no establece por sí sola el límite territorial de 1550.",
+        "en": "The foundation of a parish or location of its church does not by itself establish its territorial boundary in 1550."
+      },
+      "release_condition": {
+        "es": "Aportar una serie documental suficiente, una regla explícita de agregación y revisión histórica de las zonas resultantes.",
+        "en": "Provide a sufficient documentary series, an explicit aggregation rule and historical review of the resulting areas."
+      },
+      "source_refs": ["source.granada-salvador", "source.ugr-urban-transformation"]
+    },
+    {
+      "layer_id": "analysis.population-geography",
+      "evidence_preparation_ref": "evidence.population-corpus",
+      "status": "deferred",
+      "theme_id": "population_geography",
+      "affected_feature_ids": ["urban.albaicin", "urban.lower-medina", "quarter.albayyazin", "quarter.ramla"],
+      "proposed_method": {
+        "es": "Vincular registros de hogares, fiscalidad, propiedad y habices a unidades espaciales auditables y agregar solo a escalas compatibles con la evidencia.",
+        "en": "Link household, fiscal, property and habices records to auditable spatial units and aggregate only at scales compatible with the evidence."
+      },
+      "blocker": {
+        "es": "No existe todavía un corpus normalizado ni una revisión ética e histórica suficiente para dibujar áreas moriscas o cristianas.",
+        "en": "No normalised corpus or sufficient ethical and historical review yet exists for drawing Morisco or Christian areas."
+      },
+      "release_condition": {
+        "es": "Completar el corpus, documentar sesgos y ausencias y obtener aprobación de historia morisca y geografía de población.",
+        "en": "Complete the corpus, document biases and absences, and obtain Morisco-history and population-geography approval."
+      },
+      "source_refs": ["source.ugr-urban-transformation", "source.granada-pgom-urban-history"]
+    },
+    {
+      "layer_id": "analysis.citywide-extent",
+      "evidence_preparation_ref": "evidence.citywide-extent",
+      "status": "deferred",
+      "theme_id": "quarters",
+      "affected_feature_ids": ["urban.late-nasrid-extent", "urban.albaicin", "urban.lower-medina"],
+      "proposed_method": {
+        "es": "Derivar una envolvente analítica solo desde componentes c. 1550 revisados y registrar por separado bordes físicos, administrativos y sociales.",
+        "en": "Derive an analytical envelope only from reviewed c. 1550 components and record physical, administrative and social edges separately."
+      },
+      "blocker": {
+        "es": "Los componentes disponibles son demasiado parciales para sostener una envolvente urbana o social coherente de toda la ciudad.",
+        "en": "Available components are too partial to support a coherent citywide urban or social envelope."
+      },
+      "release_condition": {
+        "es": "Alcanzar cobertura revisada de barrios, cercas, espacios públicos e infraestructura y publicar el procedimiento de derivación.",
+        "en": "Reach reviewed coverage of quarters, walls, public spaces and infrastructure and publish the derivation procedure."
+      },
+      "source_refs": ["source.ugr-urban-transformation", "source.granada-pgom-urban-history", "source.granada-centre-plan"]
+    }
+  ]
+}

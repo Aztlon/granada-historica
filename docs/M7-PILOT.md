@@ -11,7 +11,7 @@ The approved order is:
 1. Puerta de Bibarrambla / Bab al-Ramla
 2. Zacatín
 3. Alcaicería
-4. Madraza Yusufiyya
+4. Palacio de la Madraza (historical feature: Madraza Yusufiyya)
 5. Mezquita Mayor de la medina / Sagrario–Catedral
 
 The Zacatín and Alcaicería anchors are interpretive viewpoints, not new
@@ -61,12 +61,20 @@ The generated review materials are all bilingual and marked `noindex`:
 These files are generated from `data/pilot-route.json`, so a slug or title change
 updates the QR, fallback URL, card, checklist and review hub together.
 
+The place-facing label is **Palacio de la Madraza**, with the short slug
+`/place/madraza/`. The canonical c. 1492 historical entity remains
+`religious.madraza-yusufiyya`. This keeps the durable place URL suitable for
+future periods without erasing the historically specific institution shown in
+the current layer. See [the editorial review record](M7-EDITORIAL-REVIEW.md).
+
 ## Privacy and measurement
 
-Location is requested only after an in-product explanation and uses a single
-browser fix. Coordinates remain in memory and are not written to URLs, storage,
-analytics or application requests. The visible map still loads third-party map
-tiles for its viewport, which the explanation states explicitly.
+Location is requested only after the visitor presses the location button and
+grants the browser permission. It updates while the page is open, follows the
+visitor by default, becomes camera-passive after a manual map movement, and can
+be recentered with the map location control. Coordinates remain in memory and
+are not written to URLs, storage, analytics or application requests. The
+visible map still loads third-party map tiles for its viewport.
 
 Cloudflare Web Analytics may report aggregate page paths for each stop. It must
 not be extended with coordinates, persistent identifiers or custom location

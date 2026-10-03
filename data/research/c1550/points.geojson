@@ -1,0 +1,1487 @@
+{
+  "type": "FeatureCollection",
+  "period_id": "c1550",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "religious.madraza-yusufiyya",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "converted",
+        "physical_state": "complete",
+        "name": "Casa del Cabildo (antigua Madraza Yusufiyya)",
+        "function": "Sede municipal adaptada dentro de un edificio nazarí",
+        "summary": "La antigua institución docente se había convertido en Casa del Cabildo, conservando y transformando fábrica nazarí dentro del nuevo centro cristiano.",
+        "evidence_note": "La UGR fecha la cesión al Cabildo en 1501 y la primera reforma entre 1501 y 1513. La remodelación barroca pertenece a una fase posterior.",
+        "geometry_variant_id": "c1550.religious.madraza-yusufiyya",
+        "citations": [
+          {
+            "source_id": "source.ugr-madraza",
+            "locator": "Etapas constructivas",
+            "supports": "Cesión de 1501 y reforma de 1501–1513 sin alterar la estructura general."
+          },
+          {
+            "source_id": "source.ugr-madraza",
+            "locator": "Reformas posteriores",
+            "supports": "Barroquización fechada entre 1722 y 1729."
+          }
+        ],
+        "id": "religious.madraza-yusufiyya",
+        "aliases": [
+          "Madraza",
+          "Cabildo Viejo",
+          "Palacio de la Madraza"
+        ],
+        "modern_search_terms": [
+          "Calle Oficios",
+          "Capilla Real",
+          "Catedral"
+        ],
+        "category": "commerce_civic",
+        "subtype": "municipal_council",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology"
+        ],
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.ugr-madraza"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5982757,
+          37.176086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "religious.cathedral-granada",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "newly_built",
+        "physical_state": "under_construction",
+        "name": "Catedral de Granada",
+        "function": "Nueva iglesia catedralicia y proyecto imperial activo",
+        "summary": "La Catedral iniciada formalmente en 1523 y rediseñada por Diego de Siloé desde 1528 seguía siendo una gran obra en curso hacia 1550.",
+        "evidence_note": "La Real Cédula de 1521 documenta la preparación hidráulica y urbana del solar. La huella actual no permite aislar por sí sola la fábrica terminada a mediados de siglo.",
+        "geometry_variant_id": "c1550.religious.cathedral-granada",
+        "citations": [
+          {
+            "source_id": "source.granada-archive-cathedral-1521",
+            "locator": "Comentario a la Real Cédula",
+            "supports": "Preparación del solar, expropiaciones y primera piedra de 1523."
+          },
+          {
+            "source_id": "source.granada-cathedral",
+            "locator": "Historia institucional",
+            "supports": "Proyecto catedralicio e imperial sobre el centro religioso anterior."
+          },
+          {
+            "source_id": "source.granada-archive-cathedral-1521",
+            "locator": "Orden de desvío de la acequia",
+            "supports": "La obra exigía transformar infraestructuras y solares antes de levantar el edificio."
+          }
+        ],
+        "id": "religious.cathedral-granada",
+        "aliases": [
+          "Santa Iglesia Catedral Metropolitana",
+          "Catedral de la Encarnación"
+        ],
+        "modern_search_terms": [
+          "Plaza de las Pasiegas",
+          "Sagrario",
+          "Gran Vía"
+        ],
+        "category": "religion_learning",
+        "subtype": "cathedral",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "later_description"
+        ],
+        "geometry_method": "representative_point",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.granada-cathedral"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5992136,
+          37.1764598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "religious.royal-chapel",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "newly_built",
+        "physical_state": "complete",
+        "name": "Capilla Real",
+        "function": "Panteón dinástico e institución religiosa regia",
+        "summary": "La capilla gótica estaba terminada, equipada y en uso como panteón real mucho antes del corte de 1550.",
+        "evidence_note": "La institución fecha la construcción entre 1505 y 1517 y el traslado de los restos regios en 1521. Sus contactos con edificios vecinos requieren una lectura de fases.",
+        "geometry_variant_id": "c1550.religious.royal-chapel",
+        "citations": [
+          {
+            "source_id": "source.royal-chapel-history",
+            "locator": "Quinientos años de historia",
+            "supports": "Construcción entre 1505 y 1517 y plenitud en el siglo XVI."
+          },
+          {
+            "source_id": "source.junta-granada-tourism-plan",
+            "locator": "Ficha de la Capilla Real",
+            "supports": "Cronología 1504–1521 y terminación del edificio."
+          },
+          {
+            "source_id": "source.junta-granada-tourism-plan",
+            "locator": "Descripción exterior",
+            "supports": "Tres lados adosados a Catedral, Sagrario y Lonja."
+          }
+        ],
+        "id": "religious.royal-chapel",
+        "aliases": [
+          "Capilla de los Reyes Católicos",
+          "Panteón de los Reyes Católicos"
+        ],
+        "modern_search_terms": [
+          "Calle Oficios",
+          "Catedral",
+          "Lonja"
+        ],
+        "category": "religion_learning",
+        "subtype": "royal_funeral_chapel",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary"
+        ],
+        "geometry_method": "representative_point",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.junta-granada-tourism-plan"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5985655,
+          37.1762964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "civic.lonja-mercaderes",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "probable",
+        "change_from_previous": "newly_built",
+        "physical_state": "complete",
+        "name": "Lonja de Mercaderes",
+        "function": "Intercambio mercantil en planta baja y dependencias de la Capilla Real arriba",
+        "summary": "La Lonja construida en 1518 combinaba actividad comercial y financiera con espacios capitulares ligados a la Capilla Real.",
+        "evidence_note": "La cronología y el reparto vertical de usos están documentados por el Ayuntamiento; queda pendiente revisar una huella histórica independiente.",
+        "geometry_variant_id": "c1550.civic.lonja-mercaderes",
+        "citations": [
+          {
+            "source_id": "source.granada-lonja-mercaderes",
+            "locator": "Descripción del edificio",
+            "supports": "Construcción en 1518 y división de usos entre plantas."
+          },
+          {
+            "source_id": "source.granada-lonja-mercaderes",
+            "locator": "Dirección y descripción",
+            "supports": "Localización institucional y relación con la Capilla Real."
+          }
+        ],
+        "id": "civic.lonja-mercaderes",
+        "aliases": [
+          "Lonja",
+          "Lonja de los Mercaderes"
+        ],
+        "modern_search_terms": [
+          "Calle Oficios",
+          "Capilla Real",
+          "Madraza"
+        ],
+        "category": "commerce_civic",
+        "subtype": "merchant_exchange",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary"
+        ],
+        "geometry_method": "representative_point",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.granada-lonja-mercaderes"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5986111,
+          37.1758333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "civic.real-chancilleria",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "newly_built",
+        "physical_state": "partially_in_use",
+        "name": "Real Chancillería",
+        "function": "Tribunal superior de la Corona",
+        "summary": "La Chancillería funcionaba en Plaza Nueva y contaba con su patio clasicista hacia 1540, aunque la fachada monumental actual de 1587 aún no existía.",
+        "evidence_note": "La institución, el solar y el patio son seguros; se usa un punto para impedir que la fachada y huella terminadas se lean como estado íntegro de 1550.",
+        "geometry_variant_id": "c1550.civic.real-chancilleria",
+        "citations": [
+          {
+            "source_id": "source.granada-chancilleria",
+            "locator": "Historia, patio y fachada",
+            "supports": "Institución desde 1505, patio hacia 1540 y fachada posterior de 1587."
+          }
+        ],
+        "id": "civic.real-chancilleria",
+        "aliases": [
+          "Real Audiencia y Chancillería",
+          "Palacio de la Chancillería"
+        ],
+        "modern_search_terms": [
+          "Plaza Nueva",
+          "Cuesta de Gomérez",
+          "Tribunal Superior de Justicia"
+        ],
+        "category": "commerce_civic",
+        "subtype": "high_court",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary"
+        ],
+        "geometry_method": "representative_point",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.granada-chancilleria"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.59565,
+          37.1773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "civic.hospital-real",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "newly_built",
+        "physical_state": "under_construction",
+        "name": "Hospital Real",
+        "function": "Equipamiento asistencial de la Corona",
+        "summary": "El Hospital Real, iniciado en 1511, formaba parte del programa estatal de asistencia y monumentalizaba el borde septentrional de la ciudad.",
+        "evidence_note": "El solar y el inicio de obra están documentados; el punto mantiene abierta la investigación sobre las partes construidas y operativas hacia 1550.",
+        "geometry_variant_id": "c1550.civic.hospital-real",
+        "citations": [
+          {
+            "source_id": "source.granada-hospital-real",
+            "locator": "Historia, autores y descripción de la planta",
+            "supports": "Inicio de obras en 1511 y función asistencial dentro del programa de la Corona."
+          }
+        ],
+        "id": "civic.hospital-real",
+        "aliases": [
+          "Hospital de los Reyes Católicos"
+        ],
+        "modern_search_terms": [
+          "Cuesta del Hospicio",
+          "Rectorado UGR",
+          "Triunfo"
+        ],
+        "category": "commerce_civic",
+        "subtype": "royal_hospital",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary"
+        ],
+        "geometry_method": "representative_point",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.granada-hospital-real"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6010507,
+          37.1849363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "royal.palace-charles-v",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "newly_built",
+        "physical_state": "under_construction",
+        "name": "Palacio de Carlos V",
+        "function": "Nueva residencia imperial dentro de la Casa Real de la Alhambra",
+        "summary": "La obra iniciada en 1533 había alcanzado el segundo piso en 1550, pero el palacio estaba lejos de corresponder al edificio terminado que hoy se reconoce.",
+        "evidence_note": "El Patronato documenta la cimentación del patio en 1540, la cripta de la capilla en 1542 y el segundo piso en 1550. Falta una planta de fase georreferenciada.",
+        "geometry_variant_id": "c1550.royal.palace-charles-v",
+        "citations": [
+          {
+            "source_id": "source.alhambra-charles-v-palace",
+            "locator": "Secuencia de obra 1533–1550",
+            "supports": "Inicio, patio, cripta y segundo piso levantado en 1550."
+          },
+          {
+            "source_id": "source.alhambra-machuca-imperial-works",
+            "locator": "Programa imperial de Machuca",
+            "supports": "Relación entre el nuevo palacio, el pilar y el programa imperial de la Alhambra."
+          }
+        ],
+        "id": "royal.palace-charles-v",
+        "aliases": [
+          "Casa Real Nueva",
+          "Palacio imperial"
+        ],
+        "modern_search_terms": [
+          "Alhambra",
+          "Palacios Nazaríes",
+          "Pedro Machuca"
+        ],
+        "category": "royal_elite",
+        "subtype": "imperial_palace",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary"
+        ],
+        "geometry_method": "representative_point",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.alhambra-charles-v-palace"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5902023,
+          37.1767679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.puerta-granadas",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "newly_built",
+        "physical_state": "under_construction",
+        "name": "Puerta de las Granadas",
+        "function": "Nuevo umbral monumental del acceso imperial a la Alhambra",
+        "summary": "La puerta trazada y cimentada entre 1545 y 1548 ya transformaba el acceso, pero en 1550 aún no tenía el escudo de 1552 ni su terminación de la década de 1590.",
+        "evidence_note": "La intervención arquitectónica permite fechar con precisión las campañas. El punto fija el emplazamiento, no la altura ni la decoración alcanzadas en el corte temporal.",
+        "geometry_variant_id": "c1550.gate.puerta-granadas",
+        "citations": [
+          {
+            "source_id": "source.alhambra-puerta-granadas-study",
+            "locator": "Resultados de la intervención",
+            "supports": "Traza y cimentación, escudo de 1552 y terminación en la década de 1590."
+          },
+          {
+            "source_id": "source.alhambra-puerta-granadas-study",
+            "locator": "Programa simbólico y acceso",
+            "supports": "Función monumental de la puerta dentro del programa imperial."
+          }
+        ],
+        "id": "gate.puerta-granadas",
+        "aliases": [
+          "Puerta de los Gómerez",
+          "Puerta Imperial"
+        ],
+        "modern_search_terms": [
+          "Cuesta de Gomérez",
+          "Bosque de la Alhambra"
+        ],
+        "category": "walls_gates",
+        "subtype": "imperial_gate",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology"
+        ],
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.alhambra-puerta-granadas-study"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5930761,
+          37.1760317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.pilar-carlos-v",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "newly_built",
+        "physical_state": "complete",
+        "name": "Pilar de Carlos V",
+        "function": "Fuente monumental del nuevo acceso imperial",
+        "summary": "El pilar ejecutado en 1545 combinaba abastecimiento, representación imperial y mitología junto a la Puerta de la Justicia.",
+        "evidence_note": "La fecha de ejecución y el elemento conservado permiten afirmar su presencia; se mantiene como punto hasta auditar dimensionalmente la fábrica de 1545.",
+        "geometry_variant_id": "c1550.water.pilar-carlos-v",
+        "citations": [
+          {
+            "source_id": "source.alhambra-machuca-imperial-works",
+            "locator": "Obras de Pedro Machuca en la Alhambra",
+            "supports": "Diseño de Machuca y ejecución del Pilar de Carlos V por Nicolás de Corte en 1545."
+          }
+        ],
+        "id": "water.pilar-carlos-v",
+        "aliases": [
+          "Fuente de Carlos V"
+        ],
+        "modern_search_terms": [
+          "Puerta de la Justicia",
+          "Alhambra",
+          "Plaza de la Explanada"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "monumental_fountain",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary"
+        ],
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.alhambra-machuca-imperial-works"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5900663,
+          37.1758643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "religious.san-miguel-bajo",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "replaced",
+        "physical_state": "partially_in_use",
+        "name": "Iglesia de San Miguel Bajo",
+        "function": "Parroquia cristiana sobre una antigua mezquita",
+        "summary": "En 1550 estaba construida la primera mitad de la iglesia, mientras la segunda campaña documentada entre 1551 y 1556 aún no había comenzado.",
+        "evidence_note": "El corte temporal es excepcionalmente claro, pero se representa con un punto porque todavía no se ha aislado la huella exacta de la primera campaña.",
+        "geometry_variant_id": "c1550.religious.san-miguel-bajo",
+        "citations": [
+          {
+            "source_id": "source.granada-san-miguel-bajo",
+            "locator": "Fases de 1528–1539 y 1551–1556",
+            "supports": "Primera mitad construida antes de 1550 y segunda campaña iniciada al año siguiente."
+          }
+        ],
+        "id": "religious.san-miguel-bajo",
+        "aliases": [
+          "San Miguel Bajo"
+        ],
+        "modern_search_terms": [
+          "Placeta de San Miguel Bajo",
+          "Aljibe de San Miguel"
+        ],
+        "category": "religion_learning",
+        "subtype": "parish_church",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary"
+        ],
+        "geometry_method": "representative_point",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.granada-san-miguel-bajo"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5966982,
+          37.1806794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "religious.san-cristobal",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "replaced",
+        "physical_state": "under_construction",
+        "name": "Iglesia de San Cristóbal",
+        "function": "Parroquia cristiana sobre una antigua mezquita",
+        "summary": "San Cristóbal se encontraba dentro de la campaña de ampliación de 1540–1559, por lo que el edificio actual no puede presentarse como completamente existente en 1550.",
+        "evidence_note": "El emplazamiento y la campaña son seguros; el punto evita inventar el avance concreto de la ampliación a mitad de la obra.",
+        "geometry_variant_id": "c1550.religious.san-cristobal",
+        "citations": [
+          {
+            "source_id": "source.granada-san-cristobal",
+            "locator": "Descripción arquitectónica y ampliación de 1540–1559",
+            "supports": "Sustitución de una mezquita y campaña activa alrededor de 1550."
+          }
+        ],
+        "id": "religious.san-cristobal",
+        "aliases": [
+          "San Cristóbal"
+        ],
+        "modern_search_terms": [
+          "Carretera de Murcia",
+          "Mirador de San Cristóbal"
+        ],
+        "category": "religion_learning",
+        "subtype": "parish_church",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary"
+        ],
+        "geometry_method": "representative_point",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.granada-san-cristobal"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5964447,
+          37.1835775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.alhambra-justice",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "retained",
+        "physical_state": "complete",
+        "name": "Puerta de la Justicia",
+        "function": "Acceso nazarí retenido dentro del nuevo recorrido imperial",
+        "summary": "La puerta nazarí seguía controlando el frente meridional de la Alhambra y quedó integrada en el recorrido monumental articulado por el nuevo pilar y la Puerta Imperial.",
+        "evidence_note": "La fábrica y localización son seguras; este estado registra su continuidad funcional sin confundirla con los elementos imperiales vecinos.",
+        "geometry_variant_id": "c1550.gate.alhambra-justice",
+        "citations": [
+          {
+            "source_id": "source.alhambra-puerta-granadas-study",
+            "locator": "Programa imperial de accesos a la Alhambra",
+            "supports": "Integración de accesos heredados y nuevos en la transformación simbólica del recinto."
+          }
+        ],
+        "id": "gate.alhambra-justice",
+        "aliases": [
+          "Bab al-Sharia",
+          "Puerta de la Explanada"
+        ],
+        "modern_search_terms": [
+          "Alhambra",
+          "Pilar de Carlos V",
+          "Puerta de las Granadas"
+        ],
+        "category": "walls_gates",
+        "subtype": "palatine_gate",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology"
+        ],
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.alhambra-puerta-granadas-study"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5903595,
+          37.1761198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "religious.medina-great-mosque",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "converted",
+        "physical_state": "complete",
+        "name": "Sagrario catedralicio (antigua Mezquita Mayor)",
+        "function": "Templo convertido al culto cristiano y vinculado a la Catedral",
+        "summary": "Hacia 1550 la antigua mezquita no había desaparecido: su fábrica convertida seguía sirviendo al culto cristiano mientras la nueva Catedral crecía junto a ella.",
+        "evidence_note": "La recepción imperial de 1526 se produjo en la Catedral instalada en la antigua mezquita. El estudio de su planta utiliza testimonios hasta 1705, cuando comenzó su sustitución por el Sagrario barroco.",
+        "geometry_variant_id": "c1550.religious.medina-great-mosque",
+        "citations": [
+          {
+            "source_id": "source.granada-sagrario",
+            "locator": "Descripción histórica",
+            "supports": "Uso catedralicio documentado en 1526."
+          },
+          {
+            "source_id": "source.ugr-aljama-mosque-2004",
+            "locator": "Resumen y plano de 1705",
+            "supports": "Pervivencia del edificio convertido hasta comienzos del siglo XVIII."
+          },
+          {
+            "source_id": "source.ugr-aljama-mosque-2004",
+            "locator": "Metodología de restitución",
+            "supports": "Existencia de una restitución planimétrica que requiere georreferenciación separada."
+          }
+        ],
+        "id": "religious.medina-great-mosque",
+        "aliases": [
+          "Mezquita aljama",
+          "Sagrario antiguo",
+          "Iglesia Mayor vieja"
+        ],
+        "modern_search_terms": [
+          "Iglesia del Sagrario",
+          "Catedral de Granada",
+          "Plaza Alonso Cano"
+        ],
+        "category": "religion_learning",
+        "subtype": "converted_congregational_mosque",
+        "evidence_basis": [
+          "documentary",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.granada-sagrario",
+          "source.ugr-aljama-mosque-2004",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5990298,
+          37.1759292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "civic.university-curia",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "probable",
+        "change_from_previous": "newly_built",
+        "physical_state": "complete",
+        "name": "Universidad y Colegio Real de Santa Cruz de la Fe",
+        "function": "Sede universitaria y colegial del programa imperial y eclesiástico",
+        "summary": "La Universidad fundada en 1531 funcionaba desde 1538 en el edificio hoy denominado Curia eclesiástica, frente al conjunto catedralicio.",
+        "evidence_note": "La cronología institucional y el edificio están documentados. En 1550 no era todavía la Curia: esa denominación se usa únicamente como referencia moderna.",
+        "geometry_variant_id": "c1550.civic.university-curia",
+        "citations": [
+          {
+            "source_id": "source.ugr-history-timeline",
+            "locator": "Cronología 1525–1538",
+            "supports": "Fundación, primeros actos y traslado de 1538."
+          },
+          {
+            "source_id": "source.ugr-old-university-building-1975",
+            "locator": "Fundación, emplazamiento y fábrica",
+            "supports": "Emplazamiento, construcción e intervenciones arquitectónicas del edificio universitario."
+          }
+        ],
+        "id": "civic.university-curia",
+        "aliases": [
+          "Antigua Universidad",
+          "Colegio Real de Santa Cruz de la Fe",
+          "Actual Curia eclesiástica"
+        ],
+        "modern_search_terms": [
+          "Plaza Alonso Cano",
+          "Curia Metropolitana",
+          "Palacio Arzobispal"
+        ],
+        "category": "religion_learning",
+        "subtype": "university_college",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "scholarly_reconstruction"
+        ],
+        "geometry_method": "representative_point",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.ugr-history-timeline",
+          "source.ugr-old-university-building-1975"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5997,
+          37.1757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "religious.santa-cruz-real",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "newly_built",
+        "physical_state": "unknown",
+        "name": "Convento de Santa Cruz la Real",
+        "function": "Fundación dominica en las antiguas huertas de la Almanjarra",
+        "summary": "La fundación de los Reyes Católicos ocupaba hacia 1550 las huertas de la Almanjarra, pero las numerosas reformas del conjunto impiden atribuir al corte una planta acabada.",
+        "evidence_note": "La fundación y el sitio son seguros; la fuente institucional combina fases góticas, renacentistas y barrocas que deben separarse antes de cartografiar.",
+        "geometry_variant_id": "c1550.religious.santa-cruz-real",
+        "citations": [
+          {
+            "source_id": "source.granada-santa-cruz-real",
+            "locator": "Fundación y emplazamiento",
+            "supports": "Fundación real y ocupación de las huertas de la Almanjarra."
+          },
+          {
+            "source_id": "source.granada-santa-cruz-real",
+            "locator": "Descripción de reformas y estilos",
+            "supports": "La mezcla de fases exige una lectura constructiva previa."
+          }
+        ],
+        "id": "religious.santa-cruz-real",
+        "aliases": [
+          "Convento de Santa Cruz la Real",
+          "Iglesia de Santo Domingo"
+        ],
+        "modern_search_terms": [
+          "Plaza de Santo Domingo",
+          "Realejo",
+          "Santo Domingo Granada"
+        ],
+        "category": "religion_learning",
+        "subtype": "convent",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary"
+        ],
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.granada-santa-cruz-real",
+          "source.ugr-urban-transformation",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5945504,
+          37.1730264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "religious.san-jeronimo",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "newly_built",
+        "physical_state": "unknown",
+        "name": "Monasterio de San Jerónimo",
+        "function": "Monasterio jerónimo y panteón nobiliario del Gran Capitán",
+        "summary": "La fundación real estaba presente y el complejo se vinculaba al programa religioso y nobiliario de la Granada cristiana, pero su fase material exacta en 1550 no está resuelta por las fuentes actuales.",
+        "evidence_note": "La fundación, la iglesia y el monasterio están documentados; se necesita una cronología constructiva especializada para separar el conjunto renacentista visible en 1550.",
+        "geometry_variant_id": "c1550.religious.san-jeronimo",
+        "citations": [
+          {
+            "source_id": "source.granada-san-jeronimo",
+            "locator": "Fundación y composición del conjunto",
+            "supports": "Fundación real y existencia del monasterio y la iglesia."
+          },
+          {
+            "source_id": "source.granada-san-jeronimo",
+            "locator": "Descripción arquitectónica general",
+            "supports": "La fuente no ofrece una planta de fases fechada hacia 1550."
+          }
+        ],
+        "id": "religious.san-jeronimo",
+        "aliases": [
+          "Monasterio de San Jerónimo",
+          "San Jerónimo"
+        ],
+        "modern_search_terms": [
+          "Calle Rector López Argüeta",
+          "Monasterio de San Jerónimo Granada"
+        ],
+        "category": "religion_learning",
+        "subtype": "monastery",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary"
+        ],
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.granada-san-jeronimo",
+          "source.ugr-urban-transformation",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.604424,
+          37.179128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "religious.san-jose",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "replaced",
+        "physical_state": "complete",
+        "name": "Iglesia de San José",
+        "function": "Iglesia parroquial mudéjar sobre la mezquita al-Murabitin",
+        "summary": "La iglesia construida en 1525 reemplazaba la mezquita al-Murabitin y constituía una de las primeras parroquias mudéjares del Albaicín.",
+        "evidence_note": "La fecha, el solar y la tipología general son seguros; la portada neoclásica y otras fases posteriores deben excluirse de cualquier representación de 1550.",
+        "geometry_variant_id": "c1550.religious.san-jose",
+        "citations": [
+          {
+            "source_id": "source.granada-san-jose",
+            "locator": "Cronología y solar",
+            "supports": "Construcción en 1525 sobre la mezquita precedente."
+          },
+          {
+            "source_id": "source.granada-san-jose",
+            "locator": "Descripción exterior",
+            "supports": "Identificación de una fase neoclásica posterior."
+          }
+        ],
+        "id": "religious.san-jose",
+        "aliases": [
+          "Iglesia de San José",
+          "Antigua mezquita de al-Murabitin"
+        ],
+        "modern_search_terms": [
+          "Calle San José",
+          "Placeta de San José",
+          "Albaicín"
+        ],
+        "category": "religion_learning",
+        "subtype": "parish_church",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary"
+        ],
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.granada-san-jose",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.59618,
+          37.17863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "religious.san-juan-reyes",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "replaced",
+        "physical_state": "complete",
+        "name": "Iglesia de San Juan de los Reyes",
+        "function": "Iglesia parroquial mudéjar con alminar islámico conservado",
+        "summary": "La mezquita consagrada tras la conquista fue demolida en 1520 para levantar una iglesia de tres naves, conservando su alminar como torre adosada.",
+        "evidence_note": "La secuencia de sustitución y el alminar son seguros; parte del muro actual fue rehecha en el siglo XIX y no pertenece al estado de 1550.",
+        "geometry_variant_id": "c1550.religious.san-juan-reyes",
+        "citations": [
+          {
+            "source_id": "source.granada-san-juan-reyes",
+            "locator": "Secuencia de consagración y demolición",
+            "supports": "Demolición de la mezquita y construcción del nuevo templo."
+          },
+          {
+            "source_id": "source.granada-san-juan-reyes",
+            "locator": "Descripción del alminar",
+            "supports": "Conservación material del alminar como elemento del conjunto cristiano."
+          }
+        ],
+        "id": "religious.san-juan-reyes",
+        "aliases": [
+          "Iglesia de San Juan de los Reyes",
+          "Mezquita de los Conversos"
+        ],
+        "modern_search_terms": [
+          "Calle San Juan de los Reyes",
+          "Albaicín"
+        ],
+        "category": "religion_learning",
+        "subtype": "parish_church",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary"
+        ],
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.granada-san-juan-reyes",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.59185,
+          37.1799194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "religious.san-matias",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "replaced",
+        "physical_state": "complete",
+        "name": "Iglesia imperial de San Matías",
+        "function": "Iglesia parroquial mudéjar y renacentista trasladada por voluntad imperial",
+        "summary": "La parroquia se trasladó a su emplazamiento actual por orden de Carlos V y la iglesia, levantada sobre una mezquita, recibió sus capillas laterales entre 1533 y 1541.",
+        "evidence_note": "La cronología principal precede a 1550; la cubierta de estuco de 1775 y otras transformaciones posteriores no pueden incorporarse al estado histórico.",
+        "geometry_variant_id": "c1550.religious.san-matias",
+        "citations": [
+          {
+            "source_id": "source.granada-san-matias",
+            "locator": "Cronología de las capillas laterales",
+            "supports": "Fase principal documentada antes del corte de 1550."
+          },
+          {
+            "source_id": "source.granada-san-matias",
+            "locator": "Fundación y traslado",
+            "supports": "Predecesor islámico y traslado de la parroquia al emplazamiento actual."
+          }
+        ],
+        "id": "religious.san-matias",
+        "aliases": [
+          "Iglesia Imperial de San Matías",
+          "Parroquia de San Matías"
+        ],
+        "modern_search_terms": [
+          "Calle San Matías",
+          "Calle Coches de San Matías",
+          "Realejo"
+        ],
+        "category": "religion_learning",
+        "subtype": "parish_church",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary"
+        ],
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.granada-san-matias",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5965717,
+          37.173676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "religious.san-luis",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "replaced",
+        "physical_state": "complete",
+        "name": "Iglesia de San Luis",
+        "function": "Iglesia parroquial mudéjar sobre la mezquita de la Pureza",
+        "summary": "La iglesia de cajón terminada en 1526 ocupaba el solar de la mezquita de la Pureza y era una presencia parroquial segura en el Albaicín de 1550.",
+        "evidence_note": "La fecha y la tipología original están documentadas; incendios, ruina y restauraciones posteriores obligan a no copiar automáticamente la geometría actual.",
+        "geometry_variant_id": "c1550.religious.san-luis",
+        "citations": [
+          {
+            "source_id": "source.granada-san-luis",
+            "locator": "Ficha Iglesia de San Luis",
+            "supports": "Finalización en 1526 y tipología arquitectónica original."
+          },
+          {
+            "source_id": "source.granada-san-luis",
+            "locator": "Ficha Iglesia de San Luis",
+            "supports": "Identificación del solar de la mezquita precedente."
+          }
+        ],
+        "id": "religious.san-luis",
+        "aliases": [
+          "Iglesia de San Luis",
+          "Parroquia de San Luis"
+        ],
+        "modern_search_terms": [
+          "Calle San Luis",
+          "Albaicín",
+          "Iglesia de San Luis Granada"
+        ],
+        "category": "religion_learning",
+        "subtype": "parish_church",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary"
+        ],
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.granada-san-luis",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.591322,
+          37.185087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.elvira",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "altered",
+        "physical_state": "complete",
+        "name": "Puerta de Elvira",
+        "function": "Acceso noroccidental, control urbano y enlace con la calle Elvira",
+        "summary": "La puerta-fortaleza seguía siendo una entrada principal hacia 1550 y conservaba un dispositivo mucho mayor que el arco actual, conectado con la calle Elvira y las cercas del Albaicín.",
+        "evidence_note": "La ficha municipal documenta el complejo y fecha en 1612 la demolición de sus tres barbacanas; esto sostiene su presencia anterior, pero no una planta precisa para 1550.",
+        "geometry_variant_id": "c1550.gate.elvira",
+        "citations": [
+          {
+            "source_id": "source.granada-elvira-gate",
+            "locator": "Ficha 22, historia y transformaciones",
+            "supports": "Fecha la demolición principal y documenta la extensión histórica del acceso."
+          },
+          {
+            "source_id": "source.granada-elvira-gate",
+            "locator": "Ficha 22, descripción del dispositivo defensivo",
+            "supports": "Distingue el resto visible del complejo de torres, puertas y barbacanas."
+          }
+        ],
+        "id": "gate.elvira",
+        "aliases": [
+          "Bab Ilbira",
+          "Puerta de Ilbira"
+        ],
+        "modern_search_terms": [
+          "Plaza de San Gil",
+          "Calle Elvira",
+          "Cuesta de la Alhacaba"
+        ],
+        "category": "walls_gates",
+        "subtype": "city_gate",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology",
+          "historical_cartography"
+        ],
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.dera-protected-heritage",
+          "source.granada-elvira-gate",
+          "source.granada-pepri-islamic-city",
+          "source.ugr-vico-2023"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5994918,
+          37.1821936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.monaita",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "retained",
+        "physical_state": "unknown",
+        "name": "Puerta Monaita",
+        "function": "Acceso heredado de la Alcazaba Qadima dentro del Albaicín",
+        "summary": "Monaita seguía materialmente presente hacia 1550 como puerta del antiguo recinto zirí, aunque su función cotidiana dentro del Albaicín cristiano y morisco no está aún documentada con precisión.",
+        "evidence_note": "La fábrica conservada y la destrucción tardía de defensas del entorno sostienen presencia; las fuentes actuales no prueban intensidad de paso ni estado completo.",
+        "geometry_variant_id": "c1550.gate.monaita",
+        "citations": [
+          {
+            "source_id": "source.granada-monaita",
+            "locator": "Historia y conservación de la puerta",
+            "supports": "Sitúa el riesgo de desaparición en el siglo XIX y documenta la fábrica heredada."
+          },
+          {
+            "source_id": "source.junta-monaita-wall-2000",
+            "locator": "Lectura arqueológica de puerta y lienzos asociados",
+            "supports": "Distingue conservación material y reconstrucción del funcionamiento histórico."
+          }
+        ],
+        "id": "gate.monaita",
+        "aliases": [
+          "Bib-Albunaida",
+          "Puerta de la Erilla"
+        ],
+        "modern_search_terms": [
+          "Carril de la Lona",
+          "Cuesta de la Alhacaba",
+          "Albaicín"
+        ],
+        "category": "walls_gates",
+        "subtype": "city_gate",
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.dera-protected-heritage",
+          "source.granada-pepri-islamic-city",
+          "source.granada-ziri-wall",
+          "source.granada-monaita",
+          "source.junta-monaita-wall-2000"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5975658,
+          37.1820543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.alhambra-arms",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "altered",
+        "physical_state": "complete",
+        "name": "Puerta de las Armas",
+        "function": "Acceso septentrional heredado entre la ciudad y la Alcazaba de la Alhambra",
+        "summary": "La Puerta de las Armas seguía formando parte del recinto hacia 1550, aunque ya no conservaba la primacía que había tenido como acceso habitual desde Granada a la corte nazarí.",
+        "evidence_note": "La fábrica y el itinerario histórico son seguros; la pérdida de jerarquía se infiere del nuevo sistema cristiano de accesos y no debe representarse como cierre físico.",
+        "geometry_variant_id": "c1550.gate.alhambra-arms",
+        "citations": [
+          {
+            "source_id": "source.alhambra-arms-gate",
+            "locator": "Función y camino histórico entre Alhambra y Granada",
+            "supports": "Establece la jerarquía anterior que cambió tras la conquista."
+          },
+          {
+            "source_id": "source.alhambra-gates",
+            "locator": "Síntesis de las cuatro puertas exteriores",
+            "supports": "Confirma su pertenencia material al sistema amurallado."
+          }
+        ],
+        "id": "gate.alhambra-arms",
+        "aliases": [
+          "Bab al-Silah"
+        ],
+        "modern_search_terms": [
+          "Alcazaba",
+          "Torre de las Armas",
+          "Darro"
+        ],
+        "category": "walls_gates",
+        "subtype": "palatine_gate",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology"
+        ],
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.alhambra-arms-gate",
+          "source.alhambra-fortified-city-guide",
+          "source.alhambra-gates"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5919919,
+          37.1771498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.alhambra-seven-floors",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "altered",
+        "physical_state": "complete",
+        "name": "Puerta de los Siete Suelos / Bāb al-Gudur",
+        "function": "Acceso meridional monumental de la medina de la Alhambra",
+        "summary": "La puerta nazarí seguía formando parte de la muralla hacia 1550 y había recibido un baluarte artillero cristiano tras la conquista.",
+        "evidence_note": "La puerta y el añadido defensivo son identificables, pero deben separarse cronológica y geométricamente antes de representar su estado moderno temprano.",
+        "geometry_variant_id": "c1550.gate.alhambra-seven-floors",
+        "citations": [
+          {
+            "source_id": "source.alhambra-gates",
+            "locator": "Puerta de los Siete Suelos, cronología y disposición",
+            "supports": "Establece la fábrica heredada anterior al periodo c. 1550."
+          },
+          {
+            "source_id": "source.alhambra-gates",
+            "locator": "Puerta de los Siete Suelos, baluarte posterior a la conquista",
+            "supports": "Documenta la alteración defensiva relevante para 1550."
+          }
+        ],
+        "id": "gate.alhambra-seven-floors",
+        "aliases": [
+          "Bab al-Gudur"
+        ],
+        "modern_search_terms": [
+          "Alhambra",
+          "Medina de la Alhambra",
+          "Secano"
+        ],
+        "category": "walls_gates",
+        "subtype": "palatine_gate",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "historical_cartography",
+          "archaeology"
+        ],
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.alhambra-gates",
+          "source.alhambra-fortified-city-guide"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5867353,
+          37.1747742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gate.fajalauza",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "probable",
+        "spatial_confidence": "secure",
+        "change_from_previous": "retained",
+        "physical_state": "complete",
+        "name": "Puerta de Fajalauza",
+        "function": "Acceso alto del Albaicín hacia Haza Grande y el camino de Guadix",
+        "summary": "La puerta nazarí continuaba probablemente como paso del recinto en torno a 1550, vinculada al borde del Albaicín y al ámbito alfarero extramuros.",
+        "evidence_note": "La fábrica conservada, el contexto arqueológico moderno y su representación cartográfica posterior sostienen continuidad, pero no resuelven cada reforma del pasadizo.",
+        "geometry_variant_id": "c1550.gate.fajalauza",
+        "citations": [
+          {
+            "source_id": "source.junta-fajalauza-2008",
+            "locator": "Contextualización histórico-arqueológica del área",
+            "supports": "Relaciona la puerta, la cerca, el arrabal y la ocupación moderna del entorno."
+          },
+          {
+            "source_id": "source.granada-fajalauza",
+            "locator": "Descripción institucional de la puerta",
+            "supports": "Describe fábrica y localización sin ofrecer una secuencia constructiva fechada."
+          }
+        ],
+        "id": "gate.fajalauza",
+        "aliases": [
+          "Puerta del Collado de los Almendros"
+        ],
+        "modern_search_terms": [
+          "Carretera de Murcia",
+          "Albaicín",
+          "San Miguel"
+        ],
+        "category": "walls_gates",
+        "subtype": "city_gate",
+        "evidence_basis": [
+          "surviving_fabric",
+          "historical_cartography",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.granada-pepri-islamic-city",
+          "source.ugr-abbas-defences",
+          "source.granada-fajalauza",
+          "source.junta-fajalauza-2008",
+          "source.ugr-vico-2023",
+          "source.granada-albaicin-wall-route"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5915098,
+          37.1862322
+        ]
+      }
+    }
+  ]
+}

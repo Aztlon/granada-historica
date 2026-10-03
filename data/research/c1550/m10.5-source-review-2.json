@@ -1,0 +1,883 @@
+{
+  "schema_version": 1,
+  "milestone": "M10.5",
+  "tranche": "source-review-2",
+  "period_id": "c1550",
+  "status": "ready_for_content_review",
+  "public_application_import": false,
+  "updated_on": "2026-10-02",
+  "scope_note": "Diez sistemas heredados de puertas, murallas, agua y circulación preparados para revisión bilingüe; se documenta continuidad desigual sin crear geometría c. 1550.",
+  "feature_ids": [
+    "gate.elvira",
+    "gate.fajalauza",
+    "gate.monaita",
+    "gate.mawrur",
+    "walls.albaicin-north",
+    "walls.medina-lower",
+    "water.acequia-aynadamar",
+    "water.acequia-gorda",
+    "water.darro",
+    "route.elvira-axis"
+  ],
+  "items": [
+    {
+      "feature_id": "gate.elvira",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "altered",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Puerta de Elvira",
+          "function": "Acceso noroccidental, control urbano y enlace con la calle Elvira",
+          "summary": "La puerta-fortaleza seguía siendo una entrada principal hacia 1550 y conservaba un dispositivo mucho mayor que el arco actual, conectado con la calle Elvira y las cercas del Albaicín.",
+          "evidence_note": "La ficha municipal documenta el complejo y fecha en 1612 la demolición de sus tres barbacanas; esto sostiene su presencia anterior, pero no una planta precisa para 1550.",
+          "change_note": "El acceso islámico continuó dentro de la ciudad cristiana con funciones y símbolos transformados, antes de las grandes demoliciones modernas."
+        },
+        "en": {
+          "name": "Elvira Gate",
+          "function": "North-western entrance, urban control point and link to Elvira Street",
+          "summary": "The fortified gate remained a principal entrance around 1550 and retained a complex far larger than the present arch, connected to Elvira Street and the Albaicín enclosures.",
+          "evidence_note": "The municipal record documents the complex and dates demolition of its three barbicans to 1612; this supports earlier presence but not a precise 1550 plan.",
+          "change_note": "The Islamic entrance continued within the Christian city with transformed functions and symbols before the major modern demolitions."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.elvira-complex-before-1612",
+          "topic": "chronology",
+          "text": {
+            "es": "Las tres barbacanas de Puerta Elvira no fueron demolidas hasta 1612, por lo que el complejo anterior seguía materialmente presente hacia 1550.",
+            "en": "Elvira Gate’s three barbicans were not demolished until 1612, so the earlier complex remained materially present around 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-elvira-gate",
+              "locator": "Ficha 22, historia y transformaciones",
+              "supports": "Fecha la demolición principal y documenta la extensión histórica del acceso."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.elvira-point-not-complex",
+          "topic": "geometry",
+          "text": {
+            "es": "El arco conservado y el punto c. 1492 no representan la extensión completa de la puerta-fortaleza de 1550.",
+            "en": "The surviving arch and c. 1492 point do not represent the full extent of the fortified gate in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-elvira-gate",
+              "locator": "Ficha 22, descripción del dispositivo defensivo",
+              "supports": "Distingue el resto visible del complejo de torres, puertas y barbacanas."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "routes_toward",
+          "target_id": "route.elvira-axis",
+          "note": {
+            "es": "El acceso desembocaba en la calle Elvira y articulaba la llegada a la medina baja.",
+            "en": "The entrance opened onto Elvira Street and structured arrival into the lower medina."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "El punto heredado localiza el acceso, pero oculta el tamaño y la configuración del complejo anterior a 1612.",
+          "en": "The inherited point locates the entrance but conceals the size and configuration of the pre-1612 complex."
+        },
+        "release_condition": {
+          "es": "Contrastar la Plataforma de Vico con la ficha monumental y decidir si c. 1550 requiere punto de sitio o envolvente arqueológica independiente.",
+          "en": "Compare the Vico platform with the monument record and decide whether c. 1550 needs a site point or a separate archaeological envelope."
+        },
+        "source_refs": [
+          "source.granada-elvira-gate",
+          "source.ugr-vico-2023"
+        ]
+      }
+    },
+    {
+      "feature_id": "gate.fajalauza",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "probable",
+        "change_from_1492": "retained",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Puerta de Fajalauza",
+          "function": "Acceso alto del Albaicín hacia Haza Grande y el camino de Guadix",
+          "summary": "La puerta nazarí continuaba probablemente como paso del recinto en torno a 1550, vinculada al borde del Albaicín y al ámbito alfarero extramuros.",
+          "evidence_note": "La fábrica conservada, el contexto arqueológico moderno y su representación cartográfica posterior sostienen continuidad, pero no resuelven cada reforma del pasadizo.",
+          "change_note": "El paso mantuvo la relación entre el barrio alto y su exterior, mientras su entorno productivo y su fábrica experimentaban cambios."
+        },
+        "en": {
+          "name": "Fajalauza Gate",
+          "function": "Upper Albaicín entrance towards Haza Grande and the Guadix road",
+          "summary": "The Nasrid gate probably continued as an enclosure passage around 1550, linked to the Albaicín edge and the extramural pottery area.",
+          "evidence_note": "The surviving fabric, early-modern archaeological context and later cartographic representation support continuity but do not resolve every alteration to the passage.",
+          "change_note": "The passage retained the relationship between the upper quarter and its exterior while its productive setting and fabric changed."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.fajalauza-continuity-probable",
+          "topic": "interpretation",
+          "text": {
+            "es": "La combinación de fábrica conservada, contexto de época moderna y cartografía de comienzos del XVII hace probable la continuidad de Fajalauza hacia 1550.",
+            "en": "The combination of surviving fabric, early-modern context and early seventeenth-century mapping makes Fajalauza’s continuity around 1550 probable."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-fajalauza-2008",
+              "locator": "Contextualización histórico-arqueológica del área",
+              "supports": "Relaciona la puerta, la cerca, el arrabal y la ocupación moderna del entorno."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.fajalauza-fabric-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "El pasadizo conservado contiene transformaciones y no puede asumirse íntegramente como estado de 1550.",
+            "en": "The surviving passage contains transformations and cannot be assumed wholesale as its 1550 state."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-fajalauza",
+              "locator": "Descripción institucional de la puerta",
+              "supports": "Describe fábrica y localización sin ofrecer una secuencia constructiva fechada."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "attached_to",
+          "target_id": "walls.albaicin-north",
+          "note": {
+            "es": "Fajalauza formaba uno de los accesos de la cerca exterior septentrional del Albaicín.",
+            "en": "Fajalauza formed one of the entrances through the Albaicín’s northern outer enclosure."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "El punto c. 1492 es una buena referencia de sitio, pero todavía no está auditado como variante temporal de 1550.",
+          "en": "The c. 1492 point is a useful site reference but has not yet been audited as a 1550 temporal variant."
+        },
+        "release_condition": {
+          "es": "Revisar la fábrica por fases, la conexión con los lienzos y la representación de Vico antes de reutilizar el punto.",
+          "en": "Review fabric phases, wall connections and the Vico representation before reusing the point."
+        },
+        "source_refs": [
+          "source.granada-fajalauza",
+          "source.junta-fajalauza-2008",
+          "source.ugr-vico-2023"
+        ]
+      }
+    },
+    {
+      "feature_id": "gate.monaita",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "retained",
+        "physical_state": "unknown"
+      },
+      "content": {
+        "es": {
+          "name": "Puerta Monaita",
+          "function": "Acceso heredado de la Alcazaba Qadima dentro del Albaicín",
+          "summary": "Monaita seguía materialmente presente hacia 1550 como puerta del antiguo recinto zirí, aunque su función cotidiana dentro del Albaicín cristiano y morisco no está aún documentada con precisión.",
+          "evidence_note": "La fábrica conservada y la destrucción tardía de defensas del entorno sostienen presencia; las fuentes actuales no prueban intensidad de paso ni estado completo.",
+          "change_note": "La puerta fue retenida como elemento material de un recinto interior cuya función defensiva y urbana se transformó después de la conquista."
+        },
+        "en": {
+          "name": "Monaita Gate",
+          "function": "Inherited entrance to the Qadima Citadel within the Albaicín",
+          "summary": "Monaita remained materially present around 1550 as a gate of the former Zirid enclosure, although its everyday role within the Christian and Morisco Albaicín is not yet precisely documented.",
+          "evidence_note": "Surviving fabric and the late destruction of surrounding defences support presence; current sources do not establish traffic intensity or complete condition.",
+          "change_note": "The gate was retained as a material element of an inner enclosure whose defensive and urban role changed after the conquest."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.monaita-present-before-nineteenth",
+          "topic": "chronology",
+          "text": {
+            "es": "La puerta sobrevivió hasta las campañas demolicionistas del siglo XIX y, por tanto, estaba materialmente presente en 1550.",
+            "en": "The gate survived until nineteenth-century demolition campaigns and was therefore materially present in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-monaita",
+              "locator": "Historia y conservación de la puerta",
+              "supports": "Sitúa el riesgo de desaparición en el siglo XIX y documenta la fábrica heredada."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.monaita-function-unresolved",
+          "topic": "interpretation",
+          "text": {
+            "es": "La presencia de la puerta no demuestra que mantuviera en 1550 la misma función defensiva o intensidad de paso que en época islámica.",
+            "en": "Presence of the gate does not establish that it retained the same defensive role or traffic intensity in 1550 as in the Islamic period."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-monaita-wall-2000",
+              "locator": "Lectura arqueológica de puerta y lienzos asociados",
+              "supports": "Distingue conservación material y reconstrucción del funcionamiento histórico."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "attached_to",
+          "target_id": "walls.alcazaba-qadima-inner",
+          "note": {
+            "es": "Monaita pertenecía al recinto interior de la Alcazaba Qadima, no a la cerca exterior tardonazarí.",
+            "en": "Monaita belonged to the Qadima Citadel’s inner enclosure rather than the late Nasrid outer wall."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "El marcador heredado localiza una fábrica conservada, pero necesita una auditoría temporal separada para 1550.",
+          "en": "The inherited marker locates surviving fabric but needs a separate temporal audit for 1550."
+        },
+        "release_condition": {
+          "es": "Confirmar el centro del paso histórico y documentar los lienzos presentes, perdidos y rehechos antes de crear la variante.",
+          "en": "Confirm the historical passage centre and document surviving, lost and rebuilt wall sections before creating the variant."
+        },
+        "source_refs": [
+          "source.granada-monaita",
+          "source.junta-monaita-wall-2000"
+        ]
+      }
+    },
+    {
+      "feature_id": "gate.mawrur",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "unknown",
+        "temporal_confidence": "probable",
+        "change_from_1492": "unknown",
+        "physical_state": "unknown"
+      },
+      "content": {
+        "es": {
+          "name": "Puerta del Mauror — estado c. 1550 no resuelto",
+          "function": "Paso desaparecido del recinto interior del Realejo",
+          "summary": "La Puerta del Sol, de Oriente o del Mauror se sitúa con seguridad en el ámbito de la placeta homónima, pero las fuentes reunidas no prueban todavía su presencia material ni su configuración exacta en 1550.",
+          "evidence_note": "La toponimia y los estudios de las cercas meridionales fijan el contexto; falta una fuente fechada próxima al corte que describa el vano o su desaparición.",
+          "change_note": "El registro conserva la memoria de un paso islámico dentro del Realejo transformado, sin convertir continuidad toponímica en supervivencia material."
+        },
+        "en": {
+          "name": "Mauror Gate — unresolved c. 1550 state",
+          "function": "Lost passage through the Realejo’s inner enclosure",
+          "summary": "The Gate of the Sun, Gate of the East or Mauror Gate is securely placed near the eponymous square, but the assembled sources do not yet prove its material presence or exact configuration in 1550.",
+          "evidence_note": "Toponymy and studies of the southern enclosures establish the context; a source close to the snapshot describing the opening or its disappearance is still missing.",
+          "change_note": "The record preserves memory of an Islamic passage within the transformed Realejo without turning toponymic continuity into material survival."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.mawrur-place-aliases",
+          "topic": "function",
+          "text": {
+            "es": "La placeta de la Puerta del Sol conserva la referencia a la Puerta del Sol, de Oriente o del Mauror.",
+            "en": "The Puerta del Sol square preserves reference to the Gate of the Sun, Gate of the East or Mauror Gate."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-mauror-gate",
+              "locator": "Localización histórica junto al lavadero",
+              "supports": "Relaciona el lugar actual con los tres nombres del paso desaparecido."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.mawrur-1550-unresolved",
+          "topic": "interpretation",
+          "text": {
+            "es": "La identificación del sitio no basta para afirmar que el vano seguía en pie o funcionaba en 1550.",
+            "en": "Identification of the site is insufficient to assert that the opening remained standing or operational in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-aguado-2009",
+              "locator": "Síntesis de las cercas interiores y exteriores del Realejo",
+              "supports": "El contexto de recinto no aporta una datación suficiente del estado del vano."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "attached_to",
+          "target_id": "walls.mauror-realejo-inner",
+          "note": {
+            "es": "La puerta se asocia a la cerca interior Mauror-Realejo, cuya secuencia debe mantenerse separada del perímetro exterior.",
+            "en": "The gate is associated with the Mauror-Realejo inner enclosure, whose sequence must remain separate from the outer perimeter."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "no_geometry_until_chronology_resolved",
+        "rationale": {
+          "es": "El punto c. 1492 expresa una localización histórica aproximada, no presencia demostrada en 1550.",
+          "en": "The c. 1492 point expresses an approximate historical location, not demonstrated presence in 1550."
+        },
+        "release_condition": {
+          "es": "Localizar una representación o descripción fechada del paso entre 1540 y comienzos del XVII antes de crear geometría.",
+          "en": "Locate a dated depiction or description of the passage between 1540 and the early seventeenth century before creating geometry."
+        },
+        "source_refs": [
+          "source.granada-mauror-gate",
+          "source.junta-aguado-2009",
+          "source.junta-porteria-santo-domingo-2012"
+        ]
+      }
+    },
+    {
+      "feature_id": "walls.albaicin-north",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "altered",
+        "physical_state": "partially_in_use"
+      },
+      "content": {
+        "es": {
+          "name": "Cerca septentrional del Albaicín",
+          "function": "Límite heredado, discontinuo y progresivamente transformado",
+          "summary": "La cerca exterior del Albaicín seguía siendo un límite urbano reconocible hacia 1550, con puertas y lienzos presentes, aunque el desmantelamiento posterior a la conquista ya impedía tratarla como un sistema intacto.",
+          "evidence_note": "Los restos, el recorrido municipal, la arqueología de Fajalauza y la Plataforma de Vico sostienen continuidad desigual; no datan cada segmento.",
+          "change_note": "El recinto pasó de defensa exterior nazarí a borde parcialmente conservado dentro de una ciudad cristiana en transformación."
+        },
+        "en": {
+          "name": "Northern Albaicín enclosure",
+          "function": "Inherited boundary, discontinuous and progressively transformed",
+          "summary": "The Albaicín outer enclosure remained a recognisable urban boundary around 1550, with gates and wall sections present, although post-conquest dismantling already prevents treating it as an intact system.",
+          "evidence_note": "Remains, the municipal route, Fajalauza archaeology and the Vico platform support uneven continuity but do not date every segment.",
+          "change_note": "The enclosure shifted from a Nasrid outer defence to a partly surviving edge within a changing Christian city."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.albaicin-wall-early-modern-continuity",
+          "topic": "interpretation",
+          "text": {
+            "es": "La combinación de lienzos conservados, accesos y representación de comienzos del XVII sostiene que amplios sectores de la cerca seguían reconocibles hacia 1550.",
+            "en": "The combination of surviving stretches, entrances and early seventeenth-century depiction supports that large parts of the enclosure remained recognisable around 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-vico-2023",
+              "locator": "Análisis de la Plataforma y estructura urbana",
+              "supports": "Aporta un control cartográfico temprano posterior para el recinto urbano."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.albaicin-wall-not-uniform",
+          "topic": "geometry",
+          "text": {
+            "es": "La línea c. 1492 no puede reutilizarse como una cerca continua y homogénea de 1550 sin revisar pérdidas, absorciones y reparaciones por tramo.",
+            "en": "The c. 1492 line cannot be reused as a continuous, uniform 1550 enclosure without reviewing loss, absorption and repair by segment."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-albaicin-wall-route",
+              "locator": "Recorrido y conservación de la muralla nazarí",
+              "supports": "Distingue sectores conservados y trazado histórico de conexiones perdidas."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "attached_to",
+          "target_id": "gate.fajalauza",
+          "note": {
+            "es": "La puerta de Fajalauza constituye uno de los controles materiales principales de la cerca septentrional.",
+            "en": "Fajalauza Gate forms one of the northern enclosure’s principal material controls."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La línea heredada mezcla fábrica conservada, conexiones aproximadas y segmentos sin control temporal independiente.",
+          "en": "The inherited line mixes surviving fabric, approximate connections and segments without independent temporal control."
+        },
+        "release_condition": {
+          "es": "Clasificar cada tramo como presente, perdido antes del corte, probable o desconocido y conservar huecos reales.",
+          "en": "Classify each segment as present, lost before the snapshot, probable or unknown and preserve genuine gaps."
+        },
+        "source_refs": [
+          "source.granada-albaicin-nasrid-wall",
+          "source.granada-albaicin-wall-route",
+          "source.junta-fajalauza-2008",
+          "source.ugr-vico-2023"
+        ]
+      }
+    },
+    {
+      "feature_id": "walls.medina-lower",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "altered",
+        "physical_state": "partially_in_use"
+      },
+      "content": {
+        "es": {
+          "name": "Cerca exterior de la ciudad baja",
+          "function": "Perímetro compuesto con tramos activos, absorbidos y perdidos",
+          "summary": "El perímetro tardonazarí seguía estructurando partes de la ciudad baja hacia 1550, pero las expansiones, nuevas instituciones y reformas viarias habían comenzado a absorber o eliminar sectores.",
+          "evidence_note": "La arqueología y la cartografía temprana confirman el sistema general con conservación desigual; la fecha de cada tramo meridional no está resuelta.",
+          "change_note": "La cerca dejó de ser un borde defensivo uniforme y pasó a convivir con la expansión cristiana y la reutilización parcelaria."
+        },
+        "en": {
+          "name": "Outer enclosure of the lower city",
+          "function": "Composite perimeter with active, absorbed and lost stretches",
+          "summary": "The late Nasrid perimeter still structured parts of the lower city around 1550, but expansion, new institutions and street reforms had begun to absorb or remove sections.",
+          "evidence_note": "Archaeology and early mapping confirm the general system with uneven survival; the date of each southern stretch remains unresolved.",
+          "change_note": "The wall ceased to be a uniform defensive edge and coexisted with Christian expansion and parcel reuse."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.lower-wall-composite-presence",
+          "topic": "interpretation",
+          "text": {
+            "es": "La cartografía temprana y los anclajes arqueológicos sostienen la presencia de un perímetro compuesto, no la continuidad de todos sus segmentos en 1550.",
+            "en": "Early mapping and archaeological anchors support presence of a composite perimeter, not continuity of every segment in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-centre-plan",
+              "locator": "Memoria histórica y restos del recinto de la medina",
+              "supports": "Identifica anclajes y pérdidas dentro del perímetro urbano histórico."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.lower-wall-segment-audit",
+          "topic": "geometry",
+          "text": {
+            "es": "Los tramos occidentales y meridionales requieren datación individual antes de trasladar la línea c. 1492 al nuevo periodo.",
+            "en": "Western and southern stretches require individual dating before transferring the c. 1492 line into the new period."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-aguado-2009",
+              "locator": "Distinción de cercas interiores y exterior meridional",
+              "supports": "Muestra que el perímetro publicado integra recintos y reconstrucciones diferentes."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "attached_to",
+          "target_id": "gate.elvira",
+          "note": {
+            "es": "Puerta Elvira es uno de los anclajes seguros del perímetro noroccidental de la ciudad baja.",
+            "en": "Elvira Gate is one of the secure anchors for the lower city’s north-western perimeter."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La línea c. 1492 sintetiza un perímetro útil, pero no distingue la supervivencia temporal de cada segmento hacia 1550.",
+          "en": "The c. 1492 line synthesises a useful perimeter but does not distinguish each segment’s survival around 1550."
+        },
+        "release_condition": {
+          "es": "Crear una matriz por segmentos con fuente, intervalo, estado, confianza y relación con nuevas obras antes de derivar la variante.",
+          "en": "Create a segment matrix with source, date range, state, confidence and relationship to new works before deriving the variant."
+        },
+        "source_refs": [
+          "source.granada-centre-plan",
+          "source.junta-western-wall-2006",
+          "source.junta-aguado-2009",
+          "source.ugr-vico-2023"
+        ]
+      }
+    },
+    {
+      "feature_id": "water.acequia-aynadamar",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "retained",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Acequia de Aynadamar en la Granada de 1538",
+          "function": "Abastecimiento regulado del Albaicín y la Alcazaba",
+          "summary": "Aynadamar continuaba activa en la primera mitad del siglo XVI, llevando agua a aljibes, casas, huertas y grandes propiedades del Albaicín y la Alcazaba bajo un reparto municipal detallado.",
+          "evidence_note": "Las Ordenanzas confirman función y usuarios; el trazado publicado combina reconstrucción medieval, restos y controles posteriores y necesita auditoría por ramal.",
+          "change_note": "El sistema hidráulico heredado mantuvo su función esencial mientras su administración y algunos componentes se adaptaban al gobierno cristiano."
+        },
+        "en": {
+          "name": "Aynadamar Canal in the Granada of 1538",
+          "function": "Regulated supply for the Albaicín and the Citadel",
+          "summary": "Aynadamar remained active in the first half of the sixteenth century, carrying water to cisterns, houses, orchards and major properties in the Albaicín and the Citadel under detailed municipal allocation.",
+          "evidence_note": "The Ordinances confirm function and users; the published route combines medieval reconstruction, remains and later controls and needs branch-by-branch audit.",
+          "change_note": "The inherited hydraulic system retained its essential role while its administration and some components adapted to Christian government."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.aynadamar-1538-supply",
+          "topic": "function",
+          "text": {
+            "es": "Las Ordenanzas de las Aguas documentan que Aynadamar abastecía aljibes, viviendas, huertas y propiedades del Albaicín y la Alcazaba.",
+            "en": "The Water Ordinances document that Aynadamar supplied cisterns, houses, orchards and properties in the Albaicín and the Citadel."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Apartado 2.2, acequia de Aynadamar o de Alfacar",
+              "supports": "Documenta usos, beneficiarios y distribución del agua en la primera mitad del XVI."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.aynadamar-route-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "La continuidad funcional no demuestra que todos los ramales representados para 1492 conservaran idéntico trazado en 1550.",
+            "en": "Functional continuity does not show that every branch represented for 1492 retained an identical course in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-fajalauza-2008",
+              "locator": "Resultados y contexto hidráulico de Cruz de Piedra",
+              "supports": "Aporta un control arqueológico puntual de un ramal, no una red urbana completa."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "routes_toward",
+          "target_id": "urban.albaicin",
+          "note": {
+            "es": "La conducción entraba en la ciudad alta y distribuía agua entre el Albaicín y la Alcazaba.",
+            "en": "The conduit entered the upper city and distributed water across the Albaicín and the Citadel."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La línea c. 1492 identifica el sistema, pero no separa ramales confirmados por las Ordenanzas de los inferidos desde cartografía posterior.",
+          "en": "The c. 1492 line identifies the system but does not separate branches confirmed by the Ordinances from those inferred from later mapping."
+        },
+        "release_condition": {
+          "es": "Relacionar cada topónimo y usuario de 1538 con ramales auditables y marcar finales, derivaciones y tramos subterráneos desconocidos.",
+          "en": "Relate each 1538 place and user to auditable branches and mark unknown endpoints, diversions and underground stretches."
+        },
+        "source_refs": [
+          "source.ugr-water-ordinances-2022",
+          "source.ujaen-water-route-2025",
+          "source.junta-fajalauza-2008"
+        ]
+      }
+    },
+    {
+      "feature_id": "water.acequia-gorda",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "retained",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Acequia Gorda y derivaciones del Genil",
+          "function": "Sistema de riego, molinos y abastecimiento meridional",
+          "summary": "El sistema derivado del Genil seguía activo en la primera mitad del siglo XVI; su ramal del Realejo abastecía el barrio y movía numerosos molinos antes de reincorporarse a la red.",
+          "evidence_note": "La regulación documenta función y organización, pero el corredor c. 1492 sintetiza un cauce principal y derivaciones que deben distinguirse temporalmente.",
+          "change_note": "La infraestructura medieval fue retenida por su valor productivo y urbano, aunque reparto, administración y ramales evolucionaron."
+        },
+        "en": {
+          "name": "Acequia Gorda and the Genil branches",
+          "function": "Irrigation, mills and southern urban supply system",
+          "summary": "The Genil-derived system remained active in the first half of the sixteenth century; its Realejo branch supplied the quarter and powered numerous mills before rejoining the network.",
+          "evidence_note": "The regulations document function and organisation, but the c. 1492 corridor synthesises a main channel and branches that must be distinguished temporally.",
+          "change_note": "The medieval infrastructure was retained for its productive and urban value, although allocation, administration and branches evolved."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.gorda-realejo-branch-1538",
+          "topic": "function",
+          "text": {
+            "es": "Las Ordenanzas describen la acequia del Realejo como ramal de la Acequia Gorda del Genil, asociado al abastecimiento y a molinos.",
+            "en": "The Ordinances describe the Realejo canal as a branch of the Genil’s Acequia Gorda, associated with supply and mills."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Apartado 2.1 y nota 36, ramal del Realejo",
+              "supports": "Relaciona el ramal urbano con el sistema de Gorda y su función productiva."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.gorda-network-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "El funcionamiento del sistema no autoriza a copiar como una sola línea todos los repartidores y derivaciones reconstruidos para 1492.",
+            "en": "Operation of the system does not authorise copying all distributors and reconstructed 1492 branches as a single line."
+          },
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5 y síntesis de Gorda y sus derivaciones",
+              "supports": "Distingue cauce principal y repartimientos dentro de una reconstrucción histórica amplia."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "part_of_program_with",
+          "target_id": "water.acequia-realejo",
+          "note": {
+            "es": "El ramal del Realejo formaba parte del sistema derivado de Gorda y debe conservarse como entidad relacionada, no fusionada.",
+            "en": "The Realejo branch formed part of the Gorda-derived system and should remain a related, not merged, entity."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La línea heredada ofrece el corredor general, pero no acredita por separado estado, ancho, derivaciones y repartidores en 1550.",
+          "en": "The inherited line provides the general corridor but does not separately establish state, width, branches and distributors in 1550."
+        },
+        "release_condition": {
+          "es": "Separar cauce principal, Realejo y demás derivaciones y vincular cada segmento a la ordenanza o evidencia cartográfica correspondiente.",
+          "en": "Separate the main channel, Realejo and other branches and link each segment to the corresponding ordinance or cartographic evidence."
+        },
+        "source_refs": [
+          "source.ugr-water-ordinances-2022",
+          "source.ujaen-water-route-2025"
+        ]
+      }
+    },
+    {
+      "feature_id": "water.darro",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "retained",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Río Darro",
+          "function": "Cauce urbano, fuente de acequias y receptor de desagües",
+          "summary": "El Darro continuaba atravesando Granada y alimentando una red de acequias en la primera mitad del siglo XVI, mientras las obras de Plaza Nueva modificaban localmente su relación con la ciudad.",
+          "evidence_note": "La presencia y función hidráulica son seguras; el eje moderno bajo Reyes Católicos corresponde al gran embovedado del siglo XIX y no debe proyectarse sin auditoría.",
+          "change_note": "El río conservó su papel estructural, aunque puentes, plataformas, vertidos y cubrimientos parciales transformaron segmentos urbanos concretos."
+        },
+        "en": {
+          "name": "River Darro",
+          "function": "Urban channel, source of canals and recipient of drainage",
+          "summary": "The Darro continued through Granada and fed a canal network in the first half of the sixteenth century while Plaza Nueva works locally changed its relationship with the city.",
+          "evidence_note": "Its presence and hydraulic role are secure; the modern axis beneath Reyes Católicos belongs to the major nineteenth-century vault and must not be projected without audit.",
+          "change_note": "The river retained its structural role while bridges, platforms, waste and partial coverings transformed particular urban segments."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.darro-sixteenth-century-network",
+          "topic": "function",
+          "text": {
+            "es": "En la primera mitad del siglo XVI el Darro atravesaba la ciudad y alimentaba varias acequias y ramales de abastecimiento y desagüe.",
+            "en": "In the first half of the sixteenth century the Darro crossed the city and fed several supply and drainage canals and branches."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Apartados 2.1 y 3, acequias del Darro y desagüe",
+              "supports": "Documenta el río y la red regulada dependiente de sus aguas."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.darro-modern-vault-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "El embovedado continuo bajo Reyes Católicos es principalmente una obra de 1854–1884 y no representa automáticamente el cauce de 1550.",
+            "en": "The continuous vault beneath Reyes Católicos is chiefly a work of 1854–1884 and does not automatically represent the 1550 channel."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-darro-reyes-catolicos",
+              "locator": "Intervención y contextualización del embovedado de 1858",
+              "supports": "Fecha la gran transformación moderna y sus muros laterales."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "adjacent_to",
+          "target_id": "route.darro-axis",
+          "note": {
+            "es": "La Carrera y el eje del Darro compartían el corredor oriental, pero no deben confundirse cauce, ribera y calle.",
+            "en": "The Carrera and Darro axis shared the eastern corridor, but channel, riverbank and street must not be conflated."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La línea c. 1492 combina eje natural visible y referencia moderna del tramo cubierto, con posibles rectificaciones locales.",
+          "en": "The c. 1492 line combines the visible natural axis and a modern reference for the covered stretch, with possible local realignments."
+        },
+        "release_condition": {
+          "es": "Separar cauce visible, cubrimiento de Plaza Nueva y tramos posteriormente embovedados, documentando puentes y tolerancia por segmento.",
+          "en": "Separate visible channel, Plaza Nueva covering and later vaulted stretches, documenting bridges and segment-level tolerance."
+        },
+        "source_refs": [
+          "source.ugr-water-ordinances-2022",
+          "source.granada-carrera-darro",
+          "source.junta-darro-reyes-catolicos"
+        ]
+      }
+    },
+    {
+      "feature_id": "route.elvira-axis",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "retained",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Eje de Elvira",
+          "function": "Corredor histórico entre Puerta Elvira y el centro urbano",
+          "summary": "La calle Elvira conservaba hacia 1550 el corredor que enlazaba la puerta noroccidental con el corazón de la ciudad, aunque sus extremos y frentes se adaptaban a la nueva organización cristiana.",
+          "evidence_note": "La continuidad del eje está respaldada por la puerta, la morfología y la cartografía temprana; anchura y alineaciones exactas requieren regresión documental.",
+          "change_note": "El eje islámico fue retenido como calle urbana y comercial, con transformaciones locales que no justifican una línea idéntica a la actual."
+        },
+        "en": {
+          "name": "Elvira axis",
+          "function": "Historical corridor between Elvira Gate and the urban centre",
+          "summary": "Around 1550 Elvira Street retained the corridor linking the north-western gate with the heart of the city, although its ends and frontages adapted to the new Christian organisation.",
+          "evidence_note": "Continuity of the axis is supported by the gate, morphology and early mapping; exact width and alignments require documentary regression.",
+          "change_note": "The Islamic axis was retained as an urban and commercial street, with local changes that do not justify a line identical to today’s."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.elvira-axis-historic-corridor",
+          "topic": "function",
+          "text": {
+            "es": "La calle Elvira fue uno de los ejes históricos principales y conectaba el centro urbano con Puerta Elvira.",
+            "en": "Elvira Street was one of the principal historical axes and connected the urban centre with Elvira Gate."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-calle-elvira",
+              "locator": "Descripción histórica y función comercial",
+              "supports": "Identifica el corredor y su papel dentro de la estructura urbana histórica."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.elvira-axis-alignment-limit",
+          "topic": "geometry",
+          "text": {
+            "es": "La continuidad del corredor no demuestra que anchura, frentes y extremos fueran idénticos a los actuales en 1550.",
+            "en": "Continuity of the corridor does not show that its width, frontages and ends were identical to those of today in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-vico-2023",
+              "locator": "Análisis urbanístico de la Plataforma",
+              "supports": "Proporciona un control temprano posterior, no una alineación métrica de 1550."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "routes_toward",
+          "target_id": "gate.elvira",
+          "note": {
+            "es": "El corredor desembocaba en Puerta Elvira y vinculaba la medina con las salidas noroccidentales.",
+            "en": "The corridor reached Elvira Gate and linked the medina with the north-western approaches."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La línea c. 1492 generaliza el eje sobre la calle moderna y no representa cambios de anchura, frentes o conexiones.",
+          "en": "The c. 1492 line generalises the axis over the modern street and does not represent changes in width, frontages or connections."
+        },
+        "release_condition": {
+          "es": "Comparar la Plataforma, parcelario y obras documentadas por segmentos antes de crear una línea temporal c. 1550.",
+          "en": "Compare the Platform, parcels and documented works by segment before creating a c. 1550 temporal line."
+        },
+        "source_refs": [
+          "source.granada-calle-elvira",
+          "source.granada-elvira-gate",
+          "source.ugr-vico-2023"
+        ]
+      }
+    }
+  ]
+}

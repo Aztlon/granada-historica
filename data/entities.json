@@ -1,0 +1,2075 @@
+{
+  "schema_version": 1,
+  "generated_from": "data/gazetteer.json",
+  "entities": [
+    {
+      "id": "bridge.cadi",
+      "gazetteer_id": "gaz.bridge.cadi",
+      "feature_id": "bridge.cadi",
+      "canonical_name": "Puerta de los Tableros / Puente del Cadí",
+      "entity_type": "bridge",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Bab al-Difaf",
+        "date_note": "Nombre transmitido por la historiografía árabe y moderna",
+        "note": "La equivalencia entre la puerta fluvial y el llamado Puente del Cadí requiere distinguir estructura, función y restos.",
+        "source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.alhambra-banuelo"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Se conserva el estribo meridional; el vano y el encuentro septentrional han desaparecido."
+      },
+      "parent_ids": [],
+      "related_ids": [
+        "interpretation.cadi-bridge"
+      ],
+      "source_refs": [
+        "source.ujaen-water-route-2025",
+        "source.alhambra-banuelo"
+      ],
+      "notes": "La geometría lineal reconstruye el cruce; no convierte el vano perdido en fábrica conservada."
+    },
+    {
+      "id": "bridge.carbon",
+      "gazetteer_id": "gaz.bridge.carbon",
+      "feature_id": "bridge.carbon",
+      "canonical_name": "Puente del Carbón",
+      "entity_type": "bridge",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Al-qantara al-yadida",
+        "date_note": "Topónimo medieval transmitido en fuentes y estudios posteriores",
+        "note": "Puente Nuevo y Puente del Carbón designan el paso junto al funduq.",
+        "source_refs": [
+          "source.ugr-puente-carbon"
+        ]
+      },
+      "survival": {
+        "status": "buried",
+        "note": "Desaparecido en superficie; existen testimonios arqueológicos del frente del puente."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.ugr-puente-carbon"
+      ],
+      "notes": "Se retira el punto erróneo al noroeste de Bibarrambla. El eje de la calle conservada se prolonga sobre el cauce cubierto y se contrasta con la excavación del estribo de 1992. La reconstrucción del vano sigue siendo probable."
+    },
+    {
+      "id": "burial.fajjarin-assal",
+      "gazetteer_id": "gaz.burial.fajjarin-assal",
+      "feature_id": "burial.fajjarin-assal",
+      "canonical_name": "Necrópolis de Bab al-Fajjarin y al-Assal",
+      "entity_type": "cemetery",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Maqbarat Bab al-Fajjarin / Maqbarat al-Assal",
+        "date_note": "Topónimos medievales reconstruidos desde documentación y arqueología",
+        "note": "La capa puede reunir más de un ámbito funerario de límites cambiantes.",
+        "source_refs": [
+          "source.junta-cuesta-pescado-2023"
+        ]
+      },
+      "survival": {
+        "status": "buried",
+        "note": "Restos funerarios bajo la ciudad actual; no existe recinto visible continuo."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.junta-cuesta-pescado-2023"
+      ],
+      "notes": "Inventario territorial, no parcela funeraria sincrónica."
+    },
+    {
+      "id": "civic.maristan",
+      "gazetteer_id": "gaz.civic.maristan",
+      "feature_id": "civic.maristan",
+      "canonical_name": "Maristán",
+      "entity_type": "building",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "contemporary_documentary",
+        "attested_name": "Maristán de Granada",
+        "date_note": "Fundación nazarí documentada",
+        "note": "Nombre funcional e institucional bien establecido.",
+        "source_refs": [
+          "source.alhambra-maristan"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Conserva restos y una parcela arqueológica, con reconstrucciones posteriores."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.alhambra-maristan"
+      ],
+      "notes": "Edificio asistencial cartografiado."
+    },
+    {
+      "id": "commerce.alcaiceria",
+      "gazetteer_id": "gaz.commerce.alcaiceria",
+      "feature_id": "commerce.alcaiceria",
+      "canonical_name": "Alcaicería",
+      "entity_type": "sector",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Al-Qaysariyya",
+        "date_note": "Topónimo medieval de larga continuidad",
+        "note": "El nombre sobrevive, pero la extensión actual no reproduce por completo el recinto nazarí.",
+        "source_refs": [
+          "source.granada-alcaiceria"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "Persisten el topónimo y la función comercial; la fábrica fue profundamente rehecha."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-alcaiceria"
+      ],
+      "notes": "Recinto mercantil aproximado."
+    },
+    {
+      "id": "commerce.corral-carbon",
+      "gazetteer_id": "gaz.commerce.corral-carbon",
+      "feature_id": "commerce.corral-carbon",
+      "canonical_name": "Corral del Carbón",
+      "entity_type": "building",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Al-Funduq al-Yadida",
+        "date_note": "Nombre árabe transmitido por la historiografía",
+        "note": "El nombre actual es posterior; la identidad como funduq nazarí es segura.",
+        "source_refs": [
+          "source.alhambra-corral-carbon"
+        ]
+      },
+      "survival": {
+        "status": "surviving",
+        "note": "Edificio conservado con restauraciones y transformaciones."
+      },
+      "parent_ids": [],
+      "related_ids": [
+        "bridge.carbon"
+      ],
+      "source_refs": [
+        "source.alhambra-corral-carbon"
+      ],
+      "notes": "Monumento conservado."
+    },
+    {
+      "id": "gate.alfajjarin",
+      "gazetteer_id": "gaz.gate.alfajjarin",
+      "feature_id": "gate.alfajjarin",
+      "canonical_name": "Puerta de los Alfareros",
+      "entity_type": "gate",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Bab al-Fajjarin",
+        "date_note": "Nombre árabe transmitido por fuentes e historiografía",
+        "note": "Identificación estable; umbral exacto no conservado.",
+        "source_refs": [
+          "source.junta-porteria-santo-domingo-2012"
+        ]
+      },
+      "survival": {
+        "status": "lost",
+        "note": "Puerta desaparecida."
+      },
+      "parent_ids": [
+        "walls.mauror-realejo-inner"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.junta-porteria-santo-domingo-2012"
+      ],
+      "notes": "Acceso interior meridional."
+    },
+    {
+      "id": "gate.alhambra-arms",
+      "gazetteer_id": "gaz.gate.alhambra-arms",
+      "feature_id": "gate.alhambra-arms",
+      "canonical_name": "Puerta de las Armas",
+      "entity_type": "gate",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Bab al-Silah",
+        "date_note": "Denominación medieval transmitida",
+        "note": "Identificación monumental consolidada.",
+        "source_refs": [
+          "source.alhambra-arms-gate"
+        ]
+      },
+      "survival": {
+        "status": "surviving",
+        "note": "Puerta palatina conservada."
+      },
+      "parent_ids": [
+        "walls.alhambra-perimeter"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.alhambra-arms-gate"
+      ],
+      "notes": "Acceso septentrional de la ciudad palatina."
+    },
+    {
+      "id": "gate.alhambra-arrabal",
+      "gazetteer_id": "gaz.gate.alhambra-arrabal",
+      "feature_id": "gate.alhambra-arrabal",
+      "canonical_name": "Puerta del Arrabal",
+      "entity_type": "gate",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Puerta del Arrabal",
+        "date_note": "Nombre tradicional posterior aplicado al acceso nazarí",
+        "note": "La denominación árabe exacta no se da por segura.",
+        "source_refs": [
+          "source.alhambra-fortified-city-guide"
+        ]
+      },
+      "survival": {
+        "status": "surviving",
+        "note": "Puerta conservada en el recinto de la Alhambra."
+      },
+      "parent_ids": [
+        "walls.alhambra-perimeter"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.alhambra-fortified-city-guide"
+      ],
+      "notes": "Acceso palatino cartografiado."
+    },
+    {
+      "id": "gate.alhambra-justice",
+      "gazetteer_id": "gaz.gate.alhambra-justice",
+      "feature_id": "gate.alhambra-justice",
+      "canonical_name": "Puerta de la Justicia",
+      "entity_type": "gate",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "contemporary_documentary",
+        "attested_name": "Bab al-Sharia",
+        "date_note": "Inscripción y tradición nazarí del siglo XIV",
+        "note": "Nombre e identificación monumental seguros.",
+        "source_refs": [
+          "source.alhambra-fortified-city-guide"
+        ]
+      },
+      "survival": {
+        "status": "surviving",
+        "note": "Puerta monumental conservada."
+      },
+      "parent_ids": [
+        "walls.alhambra-perimeter"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.alhambra-fortified-city-guide"
+      ],
+      "notes": "Acceso principal conservado."
+    },
+    {
+      "id": "gate.alhambra-seven-floors",
+      "gazetteer_id": "gaz.gate.alhambra-seven-floors",
+      "feature_id": "gate.alhambra-seven-floors",
+      "canonical_name": "Puerta de los Siete Suelos",
+      "entity_type": "gate",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Bab al-Gudur",
+        "date_note": "Denominación medieval transmitida",
+        "note": "Identificación generalmente aceptada.",
+        "source_refs": [
+          "source.alhambra-fortified-city-guide"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Puerta conservada y restaurada, con daños históricos."
+      },
+      "parent_ids": [
+        "walls.alhambra-perimeter"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.alhambra-fortified-city-guide"
+      ],
+      "notes": "Acceso meridional palatino."
+    },
+    {
+      "id": "gate.bib-rambla",
+      "gazetteer_id": "gaz.gate.bib-rambla",
+      "feature_id": "gate.bib-rambla",
+      "canonical_name": "Puerta de Bibarrambla",
+      "entity_type": "gate",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Bab al-Ramla",
+        "date_note": "Topónimo medieval de larga continuidad",
+        "note": "Nombre y entorno seguros; planta desplazada y desmontada.",
+        "source_refs": [
+          "source.alhambra-bib-rambla-gate"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Arco desmontado y reconstruido fuera de su ubicación original."
+      },
+      "parent_ids": [
+        "walls.medina-lower"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.alhambra-bib-rambla-gate"
+      ],
+      "notes": "El punto del mapa marca el emplazamiento histórico, no el actual."
+    },
+    {
+      "id": "gate.elvira",
+      "gazetteer_id": "gaz.gate.elvira",
+      "feature_id": "gate.elvira",
+      "canonical_name": "Puerta de Elvira",
+      "entity_type": "gate",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Bab Ilbira",
+        "date_note": "Nombre medieval transmitido por fuentes árabes y cristianas",
+        "note": "Identificación y continuidad toponímica seguras.",
+        "source_refs": [
+          "source.granada-elvira-gate"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Se conserva el arco principal, no todo el complejo defensivo."
+      },
+      "parent_ids": [
+        "walls.medina-lower",
+        "walls.albaicin-north"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-elvira-gate"
+      ],
+      "notes": "Nodo entre recintos y eje urbano."
+    },
+    {
+      "id": "gate.fajalauza",
+      "gazetteer_id": "gaz.gate.fajalauza",
+      "feature_id": "gate.fajalauza",
+      "canonical_name": "Puerta de Fajalauza",
+      "entity_type": "gate",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Bab Fayy al-Lawza",
+        "date_note": "Etimología medieval reconstruida",
+        "note": "La puerta y el topónimo están bien establecidos.",
+        "source_refs": [
+          "source.granada-albaicin-wall-route"
+        ]
+      },
+      "survival": {
+        "status": "surviving",
+        "note": "Puerta conservada con transformaciones."
+      },
+      "parent_ids": [
+        "walls.albaicin-north"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-albaicin-wall-route"
+      ],
+      "notes": "Acceso septentrional del Albaicín."
+    },
+    {
+      "id": "gate.guadix",
+      "gazetteer_id": "gaz.gate.guadix",
+      "feature_id": "gate.guadix",
+      "canonical_name": "Puerta de Guadix",
+      "entity_type": "gate",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Puerta de Guadix",
+        "date_note": "Denominación funcional transmitida por fuentes posteriores",
+        "note": "La puerta se sitúa por el corredor oriental; el nombre árabe exacto queda abierto.",
+        "source_refs": [
+          "source.granada-albaicin-wall-route"
+        ]
+      },
+      "survival": {
+        "status": "lost",
+        "note": "Puerta desaparecida."
+      },
+      "parent_ids": [
+        "walls.axares-inner"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-albaicin-wall-route"
+      ],
+      "notes": "Localización aproximada al final del Paseo de los Tristes."
+    },
+    {
+      "id": "gate.mawrur",
+      "gazetteer_id": "gaz.gate.mawrur",
+      "feature_id": "gate.mawrur",
+      "canonical_name": "Puerta del Mauror",
+      "entity_type": "gate",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Bab Mawrur",
+        "date_note": "Topónimo medieval transmitido",
+        "note": "Identificación estable con la Placeta de la Puerta del Sol.",
+        "source_refs": [
+          "source.junta-aguado-2009"
+        ]
+      },
+      "survival": {
+        "status": "lost",
+        "note": "Puerta desaparecida; subsiste el lugar de referencia."
+      },
+      "parent_ids": [
+        "walls.mauror-realejo-inner"
+      ],
+      "related_ids": [
+        "quarter.mawrur"
+      ],
+      "source_refs": [
+        "source.junta-aguado-2009"
+      ],
+      "notes": "Acceso del cierre interior meridional."
+    },
+    {
+      "id": "gate.molinos",
+      "gazetteer_id": "gaz.gate.molinos",
+      "feature_id": "gate.molinos",
+      "canonical_name": "Puerta de la Loma o de los Molinos",
+      "entity_type": "gate",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Bab al-Nayd",
+        "date_note": "Nombre árabe reconstruido y denominaciones cristianas documentadas",
+        "note": "La confluencia viaria es estable; el umbral exacto varía entre reconstrucciones.",
+        "source_refs": [
+          "source.junta-hoteles-belen-2020"
+        ]
+      },
+      "survival": {
+        "status": "lost",
+        "note": "Demolida definitivamente en el siglo XIX."
+      },
+      "parent_ids": [
+        "walls.medina-lower"
+      ],
+      "related_ids": [
+        "quarter.loma"
+      ],
+      "source_refs": [
+        "source.junta-hoteles-belen-2020"
+      ],
+      "notes": "Puerta exterior de la cerca tardonazarí meridional."
+    },
+    {
+      "id": "gate.monaita",
+      "gazetteer_id": "gaz.gate.monaita",
+      "feature_id": "gate.monaita",
+      "canonical_name": "Puerta Monaita",
+      "entity_type": "gate",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Bab al-Unaydar",
+        "date_note": "Topónimo medieval transmitido",
+        "note": "Puerta zirí de identificación segura.",
+        "source_refs": [
+          "source.junta-monaita-wall-2000"
+        ]
+      },
+      "survival": {
+        "status": "surviving",
+        "note": "Puerta y lienzos asociados conservados parcialmente."
+      },
+      "parent_ids": [
+        "walls.alcazaba-qadima-inner"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.junta-monaita-wall-2000"
+      ],
+      "notes": "Acceso del recinto zirí interior."
+    },
+    {
+      "id": "gate.pescado",
+      "gazetteer_id": "gaz.gate.pescado",
+      "feature_id": "gate.pescado",
+      "canonical_name": "Puerta del Pescado",
+      "entity_type": "gate",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Bab al-Hayar",
+        "date_note": "Nombre árabe reconstruido; denominación moderna persistente",
+        "note": "El ámbito es estable, la planta no se conserva.",
+        "source_refs": [
+          "source.junta-cuesta-pescado-2023"
+        ]
+      },
+      "survival": {
+        "status": "lost",
+        "note": "Puerta desaparecida."
+      },
+      "parent_ids": [
+        "walls.medina-lower"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.junta-cuesta-pescado-2023"
+      ],
+      "notes": "Quiebro de la cerca Sur exterior."
+    },
+    {
+      "id": "quarter.albayyazin",
+      "gazetteer_id": "gaz.quarter.albayyazin",
+      "feature_id": "quarter.albayyazin",
+      "canonical_name": "Arrabal del Albaicín / al-Bayyazin",
+      "entity_type": "quarter",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Rabad al-Bayyazin",
+        "date_note": "Topónimo medieval transmitido y de larga continuidad",
+        "note": "No debe confundirse automáticamente con todo el Albaicín moderno. «Los Alconeros» se incorpora como rótulo del Mapa 5, no como etimología probada.",
+        "source_refs": [
+          "source.junta-san-miguel-alto-2005"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "Perviven topónimo, trama y fragmentos, no un límite medieval exacto."
+      },
+      "parent_ids": [
+        "urban.albaicin"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.junta-san-miguel-alto-2005",
+        "source.ujaen-water-route-2025",
+        "source.granada-pepri-islamic-city",
+        "source.granada-albaicin-wall-route",
+        "source.openstreetmap"
+      ],
+      "notes": "El borde exterior mantiene los lienzos conservados y anclajes ya contrastados con OSM y el PEPRI. Los bordes interiores son compartidos con Qadima y Axares. Así se sustituyen las manchas separadas por recintos contiguos; no se reconstruyen límites de cada barrio menor ni una ocupación edificada homogénea."
+    },
+    {
+      "id": "quarter.alcazaba-qadima",
+      "gazetteer_id": "gaz.quarter.alcazaba-qadima",
+      "feature_id": "quarter.alcazaba-qadima",
+      "canonical_name": "Alcazaba Qadima",
+      "entity_type": "quarter",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Al-Qasaba al-Qadima",
+        "date_note": "Denominación medieval de larga tradición historiográfica",
+        "note": "Identifica el núcleo zirí, no una unidad administrativa fija en todas las fases.",
+        "source_refs": [
+          "source.granada-pgom-urban-history"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "Perviven puertas, murallas y trama urbana fragmentaria."
+      },
+      "parent_ids": [
+        "urban.albaicin"
+      ],
+      "related_ids": [
+        "walls.alcazaba-qadima-inner"
+      ],
+      "source_refs": [
+        "source.granada-pgom-urban-history",
+        "source.ujaen-water-route-2025",
+        "source.granada-pepri-islamic-city",
+        "source.junta-monaita-wall-2000",
+        "source.openstreetmap"
+      ],
+      "notes": "Se sustituye el pequeño polígono aislado por la envolvente de la Alcazaba Vieja desarrollada: Mapa 5 registrado y recorrido descrito en el PEPRI, pp. 63-64. Se distinguen así el núcleo primitivo y el recinto zirí ampliado, sin atribuir todo el perímetro a una sola fase. Comparte límites con Axares y al-Bayyazin."
+    },
+    {
+      "id": "quarter.alfajjarin",
+      "gazetteer_id": "gaz.quarter.alfajjarin",
+      "feature_id": "quarter.alfajjarin",
+      "canonical_name": "Arrabal de los Alfareros",
+      "entity_type": "quarter",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Rabad al-Fajjarin",
+        "date_note": "Topónimo de oficio transmitido",
+        "note": "El ámbito incluye usos residenciales, productivos y funerarios.",
+        "source_refs": [
+          "source.junta-porteria-santo-domingo-2012"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "Persisten referencias urbanas y arqueológicas dispersas; el límite se ha perdido."
+      },
+      "parent_ids": [
+        "urban.lower-medina"
+      ],
+      "related_ids": [
+        "quarter.loma"
+      ],
+      "source_refs": [
+        "source.junta-porteria-santo-domingo-2012",
+        "source.ujaen-water-route-2025",
+        "source.granada-pepri-islamic-city",
+        "source.granada-centre-plan",
+        "source.openstreetmap",
+        "source.garrido-alfareros-2024",
+        "source.junta-cuesta-realejo-2004"
+      ],
+      "notes": "Se retira la extensión no respaldada bajo la Alhambra y se recupera el sector Santo Domingo–Santiago–Cuarto Real. Garrido López (2024, pp. 663–679) permite situar el arrabal, no trazar su frontera exacta con La Loma. El espacio entre envolventes expresa incertidumbre, no un barrio intermedio ni una franja vacía. Vértices editoriales, no levantamiento arqueológico."
+    },
+    {
+      "id": "quarter.antequeruela",
+      "gazetteer_id": "gaz.quarter.antequeruela",
+      "feature_id": "quarter.antequeruela",
+      "canonical_name": "Antequeruela",
+      "entity_type": "quarter",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Antequeruela",
+        "date_note": "Topónimo documentado con claridad en época moderna temprana",
+        "note": "La continuidad retrospectiva hasta 1492 es probable, no documentalmente absoluta.",
+        "source_refs": [
+          "source.ugr-vico-2023"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "Pervive el topónimo en las calles Alta y Baja y en el pequeño ámbito de ladera."
+      },
+      "parent_ids": [
+        "quarter.loma"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.ugr-vico-2023"
+      ],
+      "notes": "Subámbito compacto, corregido frente a una envolvente anterior excesiva."
+    },
+    {
+      "id": "quarter.axares",
+      "gazetteer_id": "gaz.quarter.axares",
+      "feature_id": "quarter.axares",
+      "canonical_name": "Axares",
+      "entity_type": "quarter",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Rabad al-Ajsaris",
+        "date_note": "Topónimo medieval transmitido con variantes",
+        "note": "La forma árabe y los límites admiten variantes historiográficas.",
+        "source_refs": [
+          "source.granada-casa-zafra"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "Perviven trama, monumentos y relación con el Darro; no la cerca completa."
+      },
+      "parent_ids": [
+        "urban.albaicin"
+      ],
+      "related_ids": [
+        "walls.axares-inner"
+      ],
+      "source_refs": [
+        "source.granada-casa-zafra",
+        "source.ujaen-water-route-2025",
+        "source.granada-pepri-islamic-city",
+        "source.alhambra-banuelo",
+        "source.dera-hydrology",
+        "source.openstreetmap"
+      ],
+      "notes": "El contorno se reconstruye conjuntamente con la Alcazaba y al-Bayyazin. Su frente fluvial reutiliza el Darro; la línea común con la Alcazaba se digitaliza una sola vez. Se eliminan solapes y bordes inconexos, pero los tramos desaparecidos conservan confianza aproximada."
+    },
+    {
+      "id": "quarter.garnata-al-yahud",
+      "gazetteer_id": "gaz.quarter.garnata-al-yahud",
+      "feature_id": "quarter.garnata-al-yahud",
+      "canonical_name": "Garnata al-Yahud",
+      "entity_type": "quarter",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Garnatat al-Yahud",
+        "date_note": "Topónimo medieval transmitido por fuentes posteriores",
+        "note": "No autoriza a identificar todo el Realejo moderno como judería homogénea.",
+        "source_refs": [
+          "source.granada-realejo-jewish"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "Pervive la asociación territorial, no un recinto judío delimitado y continuo."
+      },
+      "parent_ids": [
+        "urban.lower-medina"
+      ],
+      "related_ids": [
+        "interpretation.realejo-jewish",
+        "quarter.mawrur"
+      ],
+      "source_refs": [
+        "source.granada-realejo-jewish"
+      ],
+      "notes": "Ámbito prudente y controvertido en extensión."
+    },
+    {
+      "id": "quarter.loma",
+      "gazetteer_id": "gaz.quarter.loma",
+      "feature_id": "quarter.loma",
+      "canonical_name": "Arrabal de la Loma",
+      "entity_type": "quarter",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Rabad al-Nayd",
+        "date_note": "Topónimo medieval reconstruido en documentación arqueológica",
+        "note": "El término designa un territorio amplio y heterogéneo, no solo edificación continua.",
+        "source_refs": [
+          "source.junta-porteria-santo-domingo-2012"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "El nombre histórico se perdió, pero subsisten calles, laderas y evidencias arqueológicas."
+      },
+      "parent_ids": [
+        "urban.lower-medina"
+      ],
+      "related_ids": [
+        "quarter.alfajjarin",
+        "quarter.antequeruela"
+      ],
+      "source_refs": [
+        "source.junta-porteria-santo-domingo-2012",
+        "source.ujaen-water-route-2025",
+        "source.granada-pepri-islamic-city",
+        "source.granada-centre-plan",
+        "source.junta-hoteles-belen-2020",
+        "source.openstreetmap",
+        "source.garrido-alfareros-2024",
+        "source.junta-cuesta-realejo-2004"
+      ],
+      "notes": "Se retira la partición forzada que asignaba Santo Domingo y Santiago a La Loma. Garrido López (2024, p. 663) declara no identificado el límite entre los arrabales. Las envolventes dejan una transición sin asignar, no una discontinuidad de población ni una muralla entre barrios."
+    },
+    {
+      "id": "quarter.ramla",
+      "gazetteer_id": "gaz.quarter.ramla",
+      "feature_id": "quarter.ramla",
+      "canonical_name": "Arrabal del Arenal / la Rambla",
+      "entity_type": "quarter",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Rabad al-Ramla",
+        "date_note": "Topónimo medieval transmitido",
+        "note": "No equivale sin más a una collación cristiana posterior.",
+        "source_refs": [
+          "source.junta-mesones-2010"
+        ]
+      },
+      "survival": {
+        "status": "buried",
+        "note": "La trama y la edificación moderna cubren la mayor parte de sus testimonios arqueológicos."
+      },
+      "parent_ids": [
+        "urban.lower-medina"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.junta-mesones-2010",
+        "source.ujaen-water-route-2025",
+        "source.granada-pepri-islamic-city",
+        "source.granada-centre-plan",
+        "source.openstreetmap"
+      ],
+      "notes": "El Mapa 5 registrado y el esquema de Isac en el PEPRI, p. 88, muestran una franja aproximadamente rectangular y oblicua adosada al recinto. Se sustituye el anterior hexágono y se recorta el encuentro con la cerca de la medina; los bordes exteriores siguen siendo aproximados."
+    },
+    {
+      "id": "religious.albaicin-great-mosque",
+      "gazetteer_id": "gaz.religious.albaicin-great-mosque",
+      "feature_id": "religious.albaicin-great-mosque",
+      "canonical_name": "Mezquita Mayor del Albaicín",
+      "entity_type": "building",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Mezquita aljama del Albaicín",
+        "date_note": "Función documentada antes y después de 1492",
+        "note": "El nombre descriptivo es seguro aunque no se conserva una denominación árabe singular.",
+        "source_refs": [
+          "source.granada-salvador"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "La iglesia del Salvador ocupa el solar y conserva parte del patio."
+      },
+      "parent_ids": [
+        "quarter.albayyazin"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-salvador"
+      ],
+      "notes": "Referencia segura al solar, no planta islámica completa."
+    },
+    {
+      "id": "religious.madraza-yusufiyya",
+      "gazetteer_id": "gaz.religious.madraza-yusufiyya",
+      "feature_id": "religious.madraza-yusufiyya",
+      "canonical_name": "Madraza Yusufiyya",
+      "entity_type": "building",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "contemporary_documentary",
+        "attested_name": "Madrasa Yusufiyya",
+        "date_note": "Fundación de Yusuf I documentada e inscrita",
+        "note": "Nombre dinástico e institución seguros.",
+        "source_refs": [
+          "source.ugr-madraza"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "El edificio fue muy transformado; quedan elementos y memoria del solar."
+      },
+      "parent_ids": [
+        "urban.lower-medina"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.ugr-madraza"
+      ],
+      "notes": "Centro de enseñanza superior nazarí."
+    },
+    {
+      "id": "religious.medina-great-mosque",
+      "gazetteer_id": "gaz.religious.medina-great-mosque",
+      "feature_id": "religious.medina-great-mosque",
+      "canonical_name": "Mezquita Mayor de la medina",
+      "entity_type": "building",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Mezquita aljama",
+        "date_note": "Función y solar documentados en la transición cristiana",
+        "note": "La designación es funcional; no se afirma un nombre propio árabe adicional.",
+        "source_refs": [
+          "source.granada-sagrario"
+        ]
+      },
+      "survival": {
+        "status": "buried",
+        "note": "La iglesia del Sagrario ocupa el solar; la mezquita no se conserva como edificio."
+      },
+      "parent_ids": [
+        "urban.lower-medina"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-sagrario"
+      ],
+      "notes": "Punto de referencia del solar histórico."
+    },
+    {
+      "id": "route.alhambra-arms-access",
+      "gazetteer_id": "gaz.route.alhambra-arms-access",
+      "feature_id": "route.alhambra-arms-access",
+      "canonical_name": "Acceso urbano a la Puerta de las Armas",
+      "entity_type": "route",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "reconstructed",
+        "attested_name": null,
+        "date_note": "Corredor funcional reconstruido para época nazarí",
+        "note": "No se conoce un topónimo único aplicable a toda la línea.",
+        "source_refs": [
+          "source.alhambra-arms-gate"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "Subsisten extremos y relaciones topográficas; no una ruta continua intacta."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.alhambra-arms-gate"
+      ],
+      "notes": "Corredor interpretativo."
+    },
+    {
+      "id": "route.darro-axis",
+      "gazetteer_id": "gaz.route.darro-axis",
+      "feature_id": "route.darro-axis",
+      "canonical_name": "Eje urbano del Darro",
+      "entity_type": "route",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "reconstructed",
+        "attested_name": null,
+        "date_note": "Síntesis moderna de varios tramos medievales",
+        "note": "La etiqueta describe una continuidad funcional, no un nombre de calle medieval único.",
+        "source_refs": [
+          "source.granada-carrera-darro"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "Carrera del Darro y Paseo de los Tristes conservan el corredor general."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-carrera-darro"
+      ],
+      "notes": "Eje de movilidad principal."
+    },
+    {
+      "id": "route.elvira-axis",
+      "gazetteer_id": "gaz.route.elvira-axis",
+      "feature_id": "route.elvira-axis",
+      "canonical_name": "Eje de Elvira",
+      "entity_type": "route",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "reconstructed",
+        "attested_name": null,
+        "date_note": "Corredor histórico descrito mediante el topónimo Elvira",
+        "note": "La etiqueta moderna resume la calle y su función.",
+        "source_refs": [
+          "source.granada-pepri-islamic-city"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "La calle Elvira mantiene dirección y nombre con transformaciones."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-pepri-islamic-city"
+      ],
+      "notes": "Eje urbano principal."
+    },
+    {
+      "id": "route.molinos-sierra-axis",
+      "gazetteer_id": "gaz.route.molinos-sierra-axis",
+      "feature_id": "route.molinos-sierra-axis",
+      "canonical_name": "Camino de los Molinos y la sierra",
+      "entity_type": "route",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "reconstructed",
+        "attested_name": null,
+        "date_note": "Corredor funcional reconstruido desde la puerta y los destinos",
+        "note": "No se atribuye un único nombre medieval al recorrido.",
+        "source_refs": [
+          "source.junta-hoteles-belen-2020"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "Persisten la dirección de salida y topónimos modernos relacionados."
+      },
+      "parent_ids": [],
+      "related_ids": [
+        "gate.molinos"
+      ],
+      "source_refs": [
+        "source.junta-hoteles-belen-2020"
+      ],
+      "notes": "Eje meridional aproximado."
+    },
+    {
+      "id": "route.zacatin-axis",
+      "gazetteer_id": "gaz.route.zacatin-axis",
+      "feature_id": "route.zacatin-axis",
+      "canonical_name": "Eje del Zacatín",
+      "entity_type": "route",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Al-Saqqatin",
+        "date_note": "Topónimo medieval de oficio y continuidad urbana",
+        "note": "La alineación moderna no reproduce todas las anchuras medievales.",
+        "source_refs": [
+          "source.granada-centre-plan"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "Perviven calle, nombre y función comercial."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-centre-plan"
+      ],
+      "notes": "Eje comercial central."
+    },
+    {
+      "id": "royal.alhambra",
+      "gazetteer_id": "gaz.royal.alhambra",
+      "feature_id": "royal.alhambra",
+      "canonical_name": "Alhambra",
+      "entity_type": "sector",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "contemporary_documentary",
+        "attested_name": "Al-Hamra",
+        "date_note": "Nombre palatino medieval ampliamente documentado",
+        "note": "La entidad cartográfica representa la ciudad palatina intramuros.",
+        "source_refs": [
+          "source.alhambra-fortified-city-guide"
+        ]
+      },
+      "survival": {
+        "status": "surviving",
+        "note": "Recinto, arquitectura y paisaje conservados con múltiples fases."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.alhambra-fortified-city-guide"
+      ],
+      "notes": "Ciudad palatina."
+    },
+    {
+      "id": "royal.generalife",
+      "gazetteer_id": "gaz.royal.generalife",
+      "feature_id": "royal.generalife",
+      "canonical_name": "Generalife",
+      "entity_type": "sector",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Yannat al-Arif",
+        "date_note": "Etimología y denominación medieval transmitidas",
+        "note": "La forma histórica exacta presenta variantes.",
+        "source_refs": [
+          "source.alhambra-generalife"
+        ]
+      },
+      "survival": {
+        "status": "surviving",
+        "note": "Palacio, huertas y sistema hidráulico conservados con transformaciones."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.alhambra-generalife"
+      ],
+      "notes": "Finca palatina."
+    },
+    {
+      "id": "urban.albaicin",
+      "gazetteer_id": "gaz.urban.albaicin",
+      "feature_id": "urban.albaicin",
+      "canonical_name": "Albaicín nazarí",
+      "entity_type": "sector",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "modern_conventional",
+        "attested_name": "Albaicín",
+        "date_note": "Nombre histórico de larga continuidad aplicado aquí al gran sector urbano",
+        "note": "Agrupa varios núcleos y arrabales, no una sola unidad homogénea.",
+        "source_refs": [
+          "source.granada-pepri-islamic-city"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "Conserva topografía, trama y numerosos elementos, con transformaciones."
+      },
+      "parent_ids": [
+        "urban.late-nasrid-extent"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-pepri-islamic-city",
+        "source.ujaen-water-route-2025",
+        "source.granada-albaicin-wall-route",
+        "source.openstreetmap",
+        "source.dera-hydrology"
+      ],
+      "notes": "Derivación geométrica de tres recintos contiguos. El borde exterior conserva la cerca nazarí auditada y los interiores se contrastan con el Mapa 5 y el PEPRI. No equivale al barrio administrativo actual."
+    },
+    {
+      "id": "urban.late-nasrid-extent",
+      "gazetteer_id": "gaz.urban.late-nasrid-extent",
+      "feature_id": "urban.late-nasrid-extent",
+      "canonical_name": "Extensión urbana tardonazarí",
+      "entity_type": "sector",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "reconstructed",
+        "attested_name": null,
+        "date_note": "Categoría analítica moderna para la ciudad hacia 1492",
+        "note": "No fue un topónimo histórico ni implica ocupación uniforme.",
+        "source_refs": [
+          "source.granada-pgom-urban-history"
+        ]
+      },
+      "survival": {
+        "status": "not_applicable",
+        "note": "Es una envolvente interpretativa, no una entidad material única."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-pgom-urban-history"
+      ],
+      "notes": "Se recalcula después de corregir los recintos compartidos y añadir el Arenal exterior a la medina. No se suavizan ni rellenan automáticamente los huecos históricos; se conserva la incertidumbre de los bordes reconstruidos."
+    },
+    {
+      "id": "urban.lower-medina",
+      "gazetteer_id": "gaz.urban.lower-medina",
+      "feature_id": "urban.lower-medina",
+      "canonical_name": "Medina baja",
+      "entity_type": "sector",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "reconstructed",
+        "attested_name": "Madinat Garnata",
+        "date_note": "Categoría moderna basada en la medina histórica",
+        "note": "El calificativo baja es analítico; el recinto tardío incluye arrabales incorporados.",
+        "source_refs": [
+          "source.granada-centre-plan"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "Perviven calles, solares y monumentos, pero la cerca está muy fragmentada."
+      },
+      "parent_ids": [
+        "urban.late-nasrid-extent"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-centre-plan"
+      ],
+      "notes": "El borde norte se revisa junto con los recintos del Albaicín, sustituyendo el cierre artificial por calle Elvira. El perímetro exterior meridional conserva la reconstrucción arqueológica previa. Esta entidad agrega la medina y sus arrabales incorporados; no afirma que todos fueran un único barrio."
+    },
+    {
+      "id": "walls.albaicin-north",
+      "gazetteer_id": "gaz.walls.albaicin-north",
+      "feature_id": "walls.albaicin-north",
+      "canonical_name": "Cerca septentrional del Albaicín",
+      "entity_type": "wall",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "modern_conventional",
+        "attested_name": null,
+        "date_note": "Nombre descriptivo moderno del recinto nazarí",
+        "note": "No se le atribuye una denominación histórica única.",
+        "source_refs": [
+          "source.granada-albaicin-nasrid-wall"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Amplios tramos y puertas sobreviven, con interrupciones."
+      },
+      "parent_ids": [
+        "urban.albaicin"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-albaicin-nasrid-wall"
+      ],
+      "notes": "Recinto exterior tardío."
+    },
+    {
+      "id": "walls.alcazaba-qadima-inner",
+      "gazetteer_id": "gaz.walls.alcazaba-qadima-inner",
+      "feature_id": "walls.alcazaba-qadima-inner",
+      "canonical_name": "Cerca interior de la Alcazaba Qadima",
+      "entity_type": "wall",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "modern_conventional",
+        "attested_name": null,
+        "date_note": "Nombre descriptivo moderno para el recinto zirí",
+        "note": "La línea combina fábrica conservada y enlaces reconstruidos.",
+        "source_refs": [
+          "source.junta-monaita-wall-2000"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Puertas y lienzos sobreviven de forma fragmentaria."
+      },
+      "parent_ids": [
+        "urban.albaicin"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.junta-monaita-wall-2000",
+        "source.ujaen-water-route-2025",
+        "source.granada-pepri-islamic-city",
+        "source.openstreetmap"
+      ],
+      "notes": "La línea y el polígono se reconstruyen juntos conforme al Mapa 5 y al itinerario del PEPRI, pp. 63-64. La coincidencia geométrica expresa una sola hipótesis editorial; no demuestra que todo el circuito sea conservado, coetáneo o igualmente seguro."
+    },
+    {
+      "id": "walls.alhambra-perimeter",
+      "gazetteer_id": "gaz.walls.alhambra-perimeter",
+      "feature_id": "walls.alhambra-perimeter",
+      "canonical_name": "Muralla de la Alhambra",
+      "entity_type": "wall",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "modern_conventional",
+        "attested_name": null,
+        "date_note": "Nombre descriptivo moderno del recinto palatino",
+        "note": "La muralla contiene múltiples fases y reparaciones.",
+        "source_refs": [
+          "source.alhambra-fortified-city-guide"
+        ]
+      },
+      "survival": {
+        "status": "surviving",
+        "note": "Perímetro ampliamente conservado."
+      },
+      "parent_ids": [
+        "royal.alhambra"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.alhambra-fortified-city-guide"
+      ],
+      "notes": "Recinto palatino."
+    },
+    {
+      "id": "walls.axares-inner",
+      "gazetteer_id": "gaz.walls.axares-inner",
+      "feature_id": "walls.axares-inner",
+      "canonical_name": "Cerca interior de Axares",
+      "entity_type": "wall",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "modern_conventional",
+        "attested_name": null,
+        "date_note": "Nombre descriptivo moderno para un recinto medieval",
+        "note": "Las puertas y el recorrido exacto siguen parcialmente discutidos.",
+        "source_refs": [
+          "source.junta-carmen-negro-2005"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Restos aislados y trazas incorporadas al tejido urbano."
+      },
+      "parent_ids": [
+        "urban.albaicin"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.junta-carmen-negro-2005",
+        "source.ujaen-water-route-2025",
+        "source.granada-pepri-islamic-city",
+        "source.alhambra-banuelo",
+        "source.dera-hydrology",
+        "source.openstreetmap"
+      ],
+      "notes": "Circuito interpretativo reconstruido con el barrio, compartiendo el tramo de contacto con Qadima y el frente del Darro. La correspondencia entre cerca y envolvente territorial es aproximada; el río se usa como eje de referencia del frente, no como huella de cimentación."
+    },
+    {
+      "id": "walls.mauror-realejo-inner",
+      "gazetteer_id": "gaz.walls.mauror-realejo-inner",
+      "feature_id": "walls.mauror-realejo-inner",
+      "canonical_name": "Cerca interior del Mauror y el Realejo",
+      "entity_type": "wall",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "modern_conventional",
+        "attested_name": null,
+        "date_note": "Nombre analítico moderno",
+        "note": "Agrupa un cierre anterior a la cerca Sur exterior.",
+        "source_refs": [
+          "source.junta-aguado-2009"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Trazas y anclajes aislados; la mayor parte no es visible."
+      },
+      "parent_ids": [
+        "urban.lower-medina"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.junta-aguado-2009",
+        "source.garrido-alfareros-2024",
+        "source.junta-cuesta-realejo-2004"
+      ],
+      "notes": "Se corrige el tramo casi vertical anterior: desde Bab al-Fajjarin la cerca continuaba al suroeste junto a Santo Domingo, hacia Campos–Cuesta del Progreso. Garrido López (2024, p. 663 y figs. 5–6) y Cuesta del Realejo 26 respaldan el corredor, no cada vértice. No es la cerca exterior tardonazarí."
+    },
+    {
+      "id": "walls.medina-lower",
+      "gazetteer_id": "gaz.walls.medina-lower",
+      "feature_id": "walls.medina-lower",
+      "canonical_name": "Cerca exterior de la ciudad baja",
+      "entity_type": "wall",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "modern_conventional",
+        "attested_name": null,
+        "date_note": "Nombre analítico moderno del perímetro compuesto",
+        "note": "Integra tramos de cronología distinta que funcionaban como borde exterior tardío.",
+        "source_refs": [
+          "source.junta-aguado-2009"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Conservación desigual, con muchos tramos perdidos o enterrados."
+      },
+      "parent_ids": [
+        "urban.lower-medina"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.junta-aguado-2009"
+      ],
+      "notes": "Perímetro exterior hacia 1492."
+    },
+    {
+      "id": "water.acequia-aynadamar",
+      "gazetteer_id": "gaz.water.acequia-aynadamar",
+      "feature_id": "water.acequia-aynadamar",
+      "canonical_name": "Acequia de Aynadamar",
+      "entity_type": "waterway",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Ayn al-Dam'",
+        "date_note": "Topónimo medieval transmitido con variantes",
+        "note": "La forma actual Aynadamar tiene larga continuidad.",
+        "source_refs": [
+          "source.ujaen-water-route-2025"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Sistema aún reconocible, con tramos transformados, enterrados o fuera del ámbito mostrado."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.ujaen-water-route-2025",
+        "source.granada-pepri-islamic-city",
+        "source.openstreetmap"
+      ],
+      "notes": "Se elimina la prolongación sin fundamento hasta el Sagrario. El Mapa 5 se registra mediante cinco controles; el PEPRI, pp. 69-70, distingue la red alta de Aynadamar del abastecimiento de la mezquita mayor por Axares. Los símbolos de las mezquitas de la colina no son las dos aljamas modernas del inventario."
+    },
+    {
+      "id": "water.acequia-axares",
+      "gazetteer_id": "gaz.water.acequia-axares",
+      "feature_id": "water.acequia-axares",
+      "canonical_name": "Acequia de Axares",
+      "entity_type": "waterway",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Acequia de Axares",
+        "date_note": "Nombre medieval; renombrada acequia de San Juan después de la conquista",
+        "note": "Axares y San Juan designan fases nominales de la misma conducción.",
+        "source_refs": [
+          "source.ujaen-water-route-2025"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Trazado urbano parcialmente oculto y transformado."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.ujaen-water-route-2025",
+        "source.granada-pepri-islamic-city",
+        "source.openstreetmap"
+      ],
+      "notes": "El Mapa 5 y el PEPRI, pp. 69-70, respaldan este destino. Se conserva como alias San Juan, denominación posterior. La geometría procede del registro afín y permanece aproximada a escala de calle."
+    },
+    {
+      "id": "water.acequia-cadi",
+      "gazetteer_id": "gaz.water.acequia-cadi",
+      "feature_id": "water.acequia-cadi",
+      "canonical_name": "Acequia del Cadí",
+      "entity_type": "waterway",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Acequia del Cadí",
+        "date_note": "Topónimo histórico conservado",
+        "note": "No debe confundirse con el Puente del Cadí.",
+        "source_refs": [
+          "source.ujaen-water-route-2025"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Subsisten tramos y memoria hidráulica, con transformaciones."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.ujaen-water-route-2025",
+        "source.junta-camino-cementerio-2014",
+        "source.openstreetmap"
+      ],
+      "notes": "El corredor se revisa mediante el registro del Mapa 5 y la secuencia topográfica descrita en p. 139. La figura no rotula todos los tramos: la adscripción de este corredor alto se apoya también en el texto y se conserva como aproximada."
+    },
+    {
+      "id": "water.acequia-gorda",
+      "gazetteer_id": "gaz.water.acequia-gorda",
+      "feature_id": "water.acequia-gorda",
+      "canonical_name": "Acequia Gorda",
+      "entity_type": "waterway",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Acequia Gorda",
+        "date_note": "Denominación histórica de larga continuidad",
+        "note": "El nombre engloba un sistema con múltiples ramales.",
+        "source_refs": [
+          "source.ujaen-water-route-2025"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Infraestructura histórica aún activa en sectores, muy transformada en otros."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.ujaen-water-route-2025",
+        "source.dera-hydrology",
+        "source.openstreetmap"
+      ],
+      "notes": "Se sustituye el dibujo manual anterior por el corredor registrado del Mapa 5. La topología comprobada incluye el cruce del Darro, la ausencia de cruces del Genil y los repartimientos orientales. Los cauces actuales sirven de control, con posibles diferencias respecto de 1492."
+    },
+    {
+      "id": "water.acequia-real-alhambra",
+      "gazetteer_id": "gaz.water.acequia-real-alhambra",
+      "feature_id": "water.acequia-real-alhambra",
+      "canonical_name": "Acequia Real de la Alhambra",
+      "entity_type": "waterway",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Acequia del Sultán",
+        "date_note": "Denominaciones históricas transmitidas",
+        "note": "Acequia Real, del Rey y del Sultán se relacionan con el mismo sistema principal.",
+        "source_refs": [
+          "source.alhambra-real-acequia"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Numerosos tramos y funciones hidráulicas sobreviven."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.alhambra-real-acequia",
+        "source.alhambra-torre-agua",
+        "source.openstreetmap"
+      ],
+      "notes": "Se corrige el atajo anterior que no pasaba por el Generalife ni por el acueducto de entrada. Los tramos visibles y sus extremos se apoyan en OSM; los enlaces y la distribución interior se generalizan conforme al Patronato. No se afirma que la línea empiece en la toma del Darro."
+    },
+    {
+      "id": "water.acequia-realejo",
+      "gazetteer_id": "gaz.water.acequia-realejo",
+      "feature_id": "water.acequia-realejo",
+      "canonical_name": "Ramal del Realejo",
+      "entity_type": "waterway",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "reconstructed",
+        "attested_name": null,
+        "date_note": "Etiqueta moderna para un ramal histórico descrito por su destino",
+        "note": "No se afirma un nombre medieval propio.",
+        "source_refs": [
+          "source.ujaen-water-route-2025"
+        ]
+      },
+      "survival": {
+        "status": "unknown",
+        "note": "El grado de conservación del recorrido sintetizado no está inventariado tramo a tramo."
+      },
+      "parent_ids": [
+        "water.acequia-gorda"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.ujaen-water-route-2025",
+        "source.openstreetmap"
+      ],
+      "notes": "Se elimina el ramal corto trazado desde la confluencia hacia el norte. La nueva secuencia se contrasta con el Mapa 5 y la referencia textual a Santiago; la identificación de pequeños repartimientos sigue siendo aproximada."
+    },
+    {
+      "id": "water.acequia-tarramonta",
+      "gazetteer_id": "gaz.water.acequia-tarramonta",
+      "feature_id": "water.acequia-tarramonta",
+      "canonical_name": "Acequia Tarramonta",
+      "entity_type": "waterway",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Acequia Tarramonta",
+        "date_note": "Derivación histórica enumerada en el reparto de Gorda",
+        "note": "Se mantiene separada para no confundir su cruce del Genil con el cauce principal de Gorda.",
+        "source_refs": [
+          "source.ujaen-water-route-2025"
+        ]
+      },
+      "survival": {
+        "status": "unknown",
+        "note": "La conservación del corredor representado no está evaluada tramo a tramo."
+      },
+      "parent_ids": [
+        "water.acequia-gorda"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.ujaen-water-route-2025",
+        "source.dera-hydrology"
+      ],
+      "notes": "El trazado anterior cruzaba el Genil aguas abajo, al oeste, con orientación incorrecta. La revisión digitaliza el ramal rotulado Tarramonta en el Mapa 5 y comprueba el cruce oriental respecto de la confluencia. El punto exacto del paso medieval permanece aproximado."
+    },
+    {
+      "id": "water.acequia-arabuleila",
+      "gazetteer_id": "gaz.water.acequia-arabuleila",
+      "feature_id": "water.acequia-arabuleila",
+      "canonical_name": "Acequia Arabuleila",
+      "entity_type": "waterway",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Darabuleila",
+        "date_note": "Nombre medieval transmitido; Arabuleila es la forma moderna",
+        "note": "La fuente también la denomina Güe Mayor.",
+        "source_refs": [
+          "source.ujaen-water-route-2025"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Sistema histórico de riego de larga continuidad, con transformaciones."
+      },
+      "parent_ids": [
+        "water.acequia-gorda"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.ujaen-water-route-2025",
+        "source.dera-hydrology"
+      ],
+      "notes": "Se sigue el ramal meridional rotulado Arabuleila en el Mapa 5. Se corrige la anterior diagonal que atravesaba la confluencia sin reproducir su derivación ni su cruce oriental. Solo se cartografía el tramo incluido en la figura."
+    },
+    {
+      "id": "water.acequia-romayla",
+      "gazetteer_id": "gaz.water.acequia-romayla",
+      "feature_id": "water.acequia-romayla",
+      "canonical_name": "Acequia de Romayla",
+      "entity_type": "waterway",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Acequia de Romayla",
+        "date_note": "Nombre medieval transmitido; Santa Ana es denominación posterior",
+        "note": "La equivalencia general es aceptada, con recorrido transformado.",
+        "source_refs": [
+          "source.ujaen-water-route-2025"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Trazado muy alterado por la transformación del Darro y del centro."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.ujaen-water-route-2025",
+        "source.granada-pepri-islamic-city",
+        "source.openstreetmap"
+      ],
+      "notes": "Existe una discrepancia: el texto de 2025, p. 137, atribuye a Romayla un retorno a la zona de la mezquita, mientras el Mapa 5 y el PEPRI asignan a Axares su abastecimiento principal. Se retira el enlace directo especulativo al Sagrario y se conserva explícita la discrepancia. No se fuerzan dos cruces dentro de este recorte urbano."
+    },
+    {
+      "id": "water.banuelo",
+      "gazetteer_id": "gaz.water.banuelo",
+      "feature_id": "water.banuelo",
+      "canonical_name": "El Bañuelo",
+      "entity_type": "building",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Hammam al-Yawza",
+        "date_note": "Denominación árabe transmitida con debate cronológico",
+        "note": "La identidad como hammam medieval es segura.",
+        "source_refs": [
+          "source.alhambra-banuelo"
+        ]
+      },
+      "survival": {
+        "status": "surviving",
+        "note": "Baño medieval conservado con restauraciones."
+      },
+      "parent_ids": [
+        "quarter.axares"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.alhambra-banuelo"
+      ],
+      "notes": "Edificio hidráulico conservado."
+    },
+    {
+      "id": "water.darro",
+      "gazetteer_id": "gaz.water.darro",
+      "feature_id": "water.darro",
+      "canonical_name": "Río Darro",
+      "entity_type": "waterway",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Darro",
+        "date_note": "Hidrónimo histórico de larga continuidad",
+        "note": "La etimología y formas medievales no se reducen a una única lectura.",
+        "source_refs": [
+          "source.granada-water-culture"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "Visible en el valle oriental y cubierto bajo el centro moderno."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-water-culture"
+      ],
+      "notes": "Eje fluvial principal."
+    },
+    {
+      "id": "water.genil",
+      "gazetteer_id": "gaz.water.genil",
+      "feature_id": "water.genil",
+      "canonical_name": "Río Genil",
+      "entity_type": "waterway",
+      "inventory_status": "mapped",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Genil",
+        "date_note": "Hidrónimo histórico de larga continuidad",
+        "note": "Se conserva el nombre con variaciones históricas.",
+        "source_refs": [
+          "source.granada-water-culture"
+        ]
+      },
+      "survival": {
+        "status": "surviving",
+        "note": "Curso fluvial visible y activo, regulado y transformado."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-water-culture"
+      ],
+      "notes": "Límite y recurso meridional."
+    },
+    {
+      "id": "gate.pesas",
+      "gazetteer_id": "gaz.gate.pesas",
+      "feature_id": null,
+      "canonical_name": "Puerta de las Pesas",
+      "entity_type": "gate",
+      "inventory_status": "candidate",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Bab al-Ziyada",
+        "date_note": "Identificación histórica ampliamente aceptada",
+        "note": "Falta incorporarla como geometría pública revisada, no demostrar su existencia.",
+        "source_refs": [
+          "source.granada-pepri-islamic-city"
+        ]
+      },
+      "survival": {
+        "status": "surviving",
+        "note": "Puerta conservada."
+      },
+      "parent_ids": [
+        "walls.alcazaba-qadima-inner"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-pepri-islamic-city"
+      ],
+      "notes": "Candidata prioritaria para la siguiente ampliación cartográfica."
+    },
+    {
+      "id": "gate.puerta-nueva",
+      "gazetteer_id": "gaz.gate.puerta-nueva",
+      "feature_id": null,
+      "canonical_name": "Puerta Nueva",
+      "entity_type": "gate",
+      "inventory_status": "candidate",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Bab al-Bunud",
+        "date_note": "Identificación propuesta en estudios arqueológicos",
+        "note": "La relación entre nombres y fases debe revisarse antes de publicar una coordenada.",
+        "source_refs": [
+          "source.junta-monaita-wall-2000"
+        ]
+      },
+      "survival": {
+        "status": "partial",
+        "note": "El acceso se reconoce mediante restos y lecturas arqueológicas fragmentarias."
+      },
+      "parent_ids": [
+        "walls.alcazaba-qadima-inner"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.junta-monaita-wall-2000"
+      ],
+      "notes": "Pendiente de ficha geométrica."
+    },
+    {
+      "id": "gate.hernan-roman",
+      "gazetteer_id": "gaz.gate.hernan-roman",
+      "feature_id": null,
+      "canonical_name": "Puerta de Hernán Román",
+      "entity_type": "gate",
+      "inventory_status": "candidate",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Bab Qastar",
+        "date_note": "Equivalencia historiográfica probable",
+        "note": "La puerta pertenece al sistema zirí, pero la exactitud nominal y métrica requiere revisión.",
+        "source_refs": [
+          "source.junta-monaita-wall-2000"
+        ]
+      },
+      "survival": {
+        "status": "lost",
+        "note": "No se conserva como puerta monumental completa."
+      },
+      "parent_ids": [
+        "walls.alcazaba-qadima-inner"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.junta-monaita-wall-2000"
+      ],
+      "notes": "Candidata de localización aproximada."
+    },
+    {
+      "id": "gate.postigo-san-lorenzo",
+      "gazetteer_id": "gaz.gate.postigo-san-lorenzo",
+      "feature_id": null,
+      "canonical_name": "Postigo de San Lorenzo",
+      "entity_type": "gate",
+      "inventory_status": "candidate",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Postigo de San Lorenzo",
+        "date_note": "Nombre cristiano posterior aplicado a un paso de la cerca",
+        "note": "La existencia del paso es más clara que su denominación en 1492.",
+        "source_refs": [
+          "source.granada-pepri-islamic-city"
+        ]
+      },
+      "survival": {
+        "status": "lost",
+        "note": "Acceso desaparecido."
+      },
+      "parent_ids": [
+        "walls.medina-lower"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-pepri-islamic-city"
+      ],
+      "notes": "Pendiente de revisión de fase y emplazamiento."
+    },
+    {
+      "id": "gate.curtidores",
+      "gazetteer_id": "gaz.gate.curtidores",
+      "feature_id": null,
+      "canonical_name": "Puerta de los Curtidores",
+      "entity_type": "gate",
+      "inventory_status": "unlocated",
+      "name_attestation": {
+        "status": "uncertain",
+        "attested_name": "Bab al-Dabbagin",
+        "date_note": "Nombre transmitido con propuestas de localización divergentes",
+        "note": "No existe todavía una correspondencia espacial suficientemente estable para publicarla.",
+        "source_refs": [
+          "source.granada-pepri-islamic-city"
+        ]
+      },
+      "survival": {
+        "status": "lost",
+        "note": "Puerta desaparecida."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.granada-pepri-islamic-city"
+      ],
+      "notes": "Conservar en inventario sin punto evita convertir una hipótesis en certeza."
+    },
+    {
+      "id": "gate.bab-al-asad",
+      "gazetteer_id": "gaz.gate.bab-al-asad",
+      "feature_id": null,
+      "canonical_name": "Bab al-Asad",
+      "entity_type": "gate",
+      "inventory_status": "unlocated",
+      "name_attestation": {
+        "status": "uncertain",
+        "attested_name": "Bab al-Asad",
+        "date_note": "Topónimo medieval transmitido",
+        "note": "Su identificación con accesos posteriores y su posición concreta siguen debatidas.",
+        "source_refs": [
+          "source.junta-monaita-wall-2000"
+        ]
+      },
+      "survival": {
+        "status": "lost",
+        "note": "No se conserva una puerta identificable con seguridad."
+      },
+      "parent_ids": [],
+      "related_ids": [],
+      "source_refs": [
+        "source.junta-monaita-wall-2000"
+      ],
+      "notes": "Inventario de nombre sin geometría."
+    },
+    {
+      "id": "quarter.arrabal-blanco",
+      "gazetteer_id": "gaz.quarter.arrabal-blanco",
+      "feature_id": null,
+      "canonical_name": "Arrabal Blanco",
+      "entity_type": "quarter",
+      "inventory_status": "unlocated",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Arrabal Blanco",
+        "date_note": "Topónimo discutido en relación con el entorno oriental del Albaicín",
+        "note": "La existencia nominal no proporciona un perímetro publicable.",
+        "source_refs": [
+          "source.junta-carmen-negro-2005"
+        ]
+      },
+      "survival": {
+        "status": "unknown",
+        "note": "No puede evaluarse sin una identificación territorial estable."
+      },
+      "parent_ids": [
+        "urban.albaicin"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.junta-carmen-negro-2005"
+      ],
+      "notes": "Mantener sin mapa hasta resolver su relación con Guadix y los recintos orientales."
+    },
+    {
+      "id": "quarter.mawrur",
+      "gazetteer_id": "gaz.quarter.mawrur",
+      "feature_id": null,
+      "canonical_name": "Mauror",
+      "entity_type": "quarter",
+      "inventory_status": "candidate",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Mawrur",
+        "date_note": "Topónimo medieval de larga continuidad",
+        "note": "Está representado indirectamente dentro de Garnata al-Yahud, pero merece entidad separada.",
+        "source_refs": [
+          "source.granada-realejo-jewish"
+        ]
+      },
+      "survival": {
+        "status": "landscape_continuity",
+        "note": "El topónimo Mauror y el sector urbano persisten."
+      },
+      "parent_ids": [
+        "urban.lower-medina"
+      ],
+      "related_ids": [
+        "quarter.garnata-al-yahud"
+      ],
+      "source_refs": [
+        "source.granada-realejo-jewish"
+      ],
+      "notes": "Candidato a polígono propio tras revisar límites y relación con la población judía."
+    },
+    {
+      "id": "water.acequia-jaque",
+      "gazetteer_id": "gaz.water.acequia-jaque",
+      "feature_id": null,
+      "canonical_name": "Acequia del Jaque",
+      "entity_type": "waterway",
+      "inventory_status": "unlocated",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Acequia del Jaque",
+        "date_note": "Derivación enumerada en el reparto histórico de Gorda",
+        "note": "La fuente consultada no proporciona dentro del mapa urbano un recorrido suficiente para publicar geometría.",
+        "source_refs": [
+          "source.ujaen-water-route-2025"
+        ]
+      },
+      "survival": {
+        "status": "unknown",
+        "note": "Pendiente de inventario específico."
+      },
+      "parent_ids": [
+        "water.acequia-gorda"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.ujaen-water-route-2025"
+      ],
+      "notes": "Se conserva en el nomenclátor sin línea inventada."
+    },
+    {
+      "id": "water.acequia-santa-fe",
+      "gazetteer_id": "gaz.water.acequia-santa-fe",
+      "feature_id": null,
+      "canonical_name": "Acequia de Santa Fe",
+      "entity_type": "waterway",
+      "inventory_status": "unlocated",
+      "name_attestation": {
+        "status": "later_documentary",
+        "attested_name": "Acequia de Santa Fe",
+        "date_note": "Derivación enumerada en el reparto histórico de Gorda",
+        "note": "Su recorrido queda fuera del detalle urbano útil del Mapa 5.",
+        "source_refs": [
+          "source.ujaen-water-route-2025"
+        ]
+      },
+      "survival": {
+        "status": "unknown",
+        "note": "Pendiente de inventario específico."
+      },
+      "parent_ids": [
+        "water.acequia-gorda"
+      ],
+      "related_ids": [],
+      "source_refs": [
+        "source.ujaen-water-route-2025"
+      ],
+      "notes": "Se conserva en el nomenclátor sin geometría urbana."
+    },
+    {
+      "id": "interpretation.realejo-jewish",
+      "gazetteer_id": "gaz.interpretation.realejo-jewish",
+      "feature_id": null,
+      "canonical_name": "Equivalencia entre todo el Realejo y Garnata al-Yahud",
+      "entity_type": "interpretation",
+      "inventory_status": "rejected",
+      "name_attestation": {
+        "status": "modern_conventional",
+        "attested_name": null,
+        "date_note": "Simplificación moderna frecuente",
+        "note": "El topónimo histórico no justifica una judería homogénea con los límites del barrio actual.",
+        "source_refs": [
+          "source.granada-realejo-jewish"
+        ]
+      },
+      "survival": {
+        "status": "not_applicable",
+        "note": "Es una interpretación, no una entidad material."
+      },
+      "parent_ids": [],
+      "related_ids": [
+        "quarter.garnata-al-yahud",
+        "quarter.mawrur"
+      ],
+      "source_refs": [
+        "source.granada-realejo-jewish"
+      ],
+      "notes": "Hipótesis explícitamente rechazada para evitar su reintroducción futura."
+    },
+    {
+      "id": "interpretation.cadi-bridge",
+      "gazetteer_id": "gaz.interpretation.cadi-bridge",
+      "feature_id": null,
+      "canonical_name": "Identidad total entre Bab al-Difaf y el llamado Puente del Cadí",
+      "entity_type": "interpretation",
+      "inventory_status": "disputed",
+      "name_attestation": {
+        "status": "uncertain",
+        "attested_name": null,
+        "date_note": "Equivalencia historiográfica discutida",
+        "note": "Los restos visibles, la puerta-puente y las denominaciones posteriores no deben colapsarse sin matices.",
+        "source_refs": [
+          "source.granada-tableros-cadi"
+        ]
+      },
+      "survival": {
+        "status": "not_applicable",
+        "note": "Es un problema de identificación."
+      },
+      "parent_ids": [],
+      "related_ids": [
+        "bridge.cadi"
+      ],
+      "source_refs": [
+        "source.granada-tableros-cadi"
+      ],
+      "notes": "Registra la controversia en vez de ocultarla."
+    }
+  ]
+}

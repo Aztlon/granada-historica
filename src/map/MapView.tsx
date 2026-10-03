@@ -177,7 +177,7 @@ interface MapViewProps {
   pilotPlaces: readonly PlaceStop[]
   activePlaceId: string | null
   visitorLocation: LocationFix | null
-  nearestPlaceFocus: readonly [number, number] | null
+  visitorLocationTrackingId: number | null
   onSelectFeature: (featureId: string) => void
   onSelectPlace: (placeId: string) => void
   text: Messages
@@ -196,13 +196,16 @@ export function MapView({
   pilotPlaces,
   activePlaceId,
   visitorLocation,
-  nearestPlaceFocus,
+  visitorLocationTrackingId,
   onSelectFeature,
   onSelectPlace,
   text,
 }: MapViewProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<Map | null>(null)
+  const latestVisitorLocationRef = useRef(visitorLocation)
+  const latestVisitorTrackingIdRef = useRef(visitorLocationTrackingId)
+  const hasCenteredLocationRef = useRef(false)
   const basemapVisibilityRef = useRef(
     new globalThis.Map<string, 'visible' | 'none'>(),
   )
@@ -215,6 +218,14 @@ export function MapView({
     visibleCategories,
   })
   const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading')
+  const [pausedTrackingId, setPausedTrackingId] = useState<number | null>(null)
+  const isFollowingLocation = visitorLocationTrackingId !== null
+    && pausedTrackingId !== visitorLocationTrackingId
+
+  useEffect(() => {
+    latestVisitorLocationRef.current = visitorLocation
+    latestVisitorTrackingIdRef.current = visitorLocationTrackingId
+  }, [visitorLocation, visitorLocationTrackingId])
 
   useEffect(() => {
     renderedStateRef.current = {
@@ -330,6 +341,11 @@ export function MapView({
     })
     map.on('mouseenter', 'pilot-place-points', showPointer)
     map.on('mouseleave', 'pilot-place-points', hidePointer)
+    map.on('movestart', (event) => {
+      const fromLocationFollow = 'locationFollowSource' in event && event.locationFollowSource
+      if (fromLocationFollow || !latestVisitorLocationRef.current || map.isZooming()) return
+      setPausedTrackingId(latestVisitorTrackingIdRef.current)
+    })
 
     return () => {
       mapRef.current = null
@@ -373,15 +389,22 @@ export function MapView({
     const source = map?.getSource(VISITOR_LOCATION_SOURCE_ID) as GeoJSONSource | undefined
     if (!map || !source) return
     source.setData(buildVisitorLocationCollection(visitorLocation))
-    if (!visitorLocation || !nearestPlaceFocus) return
-    map.fitBounds(
-      [
-        [Math.min(visitorLocation.longitude, nearestPlaceFocus[0]), Math.min(visitorLocation.latitude, nearestPlaceFocus[1])],
-        [Math.max(visitorLocation.longitude, nearestPlaceFocus[0]), Math.max(visitorLocation.latitude, nearestPlaceFocus[1])],
-      ],
-      { padding: 90, maxZoom: 17, duration: 650 },
-    )
-  }, [nearestPlaceFocus, status, visitorLocation])
+    if (!visitorLocation) {
+      hasCenteredLocationRef.current = false
+      return
+    }
+    if (!isFollowingLocation) return
+    centerOnVisitor(map, visitorLocation, !hasCenteredLocationRef.current)
+    hasCenteredLocationRef.current = true
+  }, [isFollowingLocation, status, visitorLocation])
+
+  const recenterVisitor = () => {
+    const map = mapRef.current
+    if (!map || !visitorLocation) return
+    setPausedTrackingId(null)
+    centerOnVisitor(map, visitorLocation, true)
+    hasCenteredLocationRef.current = true
+  }
 
   return (
     <div className="map-frame">
@@ -397,6 +420,25 @@ export function MapView({
       <p id="map-keyboard-help" className="sr-only">
         {text.mapHelp}
       </p>
+
+      {visitorLocation && (
+        <div className="map-location-control maplibregl-ctrl maplibregl-ctrl-group">
+          <button
+            type="button"
+            className={isFollowingLocation ? 'map-location-button map-location-button--active' : 'map-location-button'}
+            aria-label={text.locale === 'en' ? 'Recenter on my location' : 'Centrar en mi ubicación'}
+            aria-pressed={isFollowingLocation}
+            title={text.locale === 'en' ? 'Recenter on my location' : 'Centrar en mi ubicación'}
+            onClick={recenterVisitor}
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+              <circle cx="12" cy="12" r="8" />
+            </svg>
+          </button>
+        </div>
+      )}
 
       {status === 'loading' && (
         <div className="map-status" role="status">
@@ -440,9 +482,21 @@ function addPilotLayers(map: Map) {
     paint: { 'text-color': '#f7f3ea' },
   })
   map.addLayer({
+    id: 'visitor-location-accuracy',
+    type: 'fill',
+    source: VISITOR_LOCATION_SOURCE_ID,
+    filter: ['==', ['geometry-type'], 'Polygon'],
+    paint: {
+      'fill-color': '#247d91',
+      'fill-opacity': 0.14,
+      'fill-outline-color': '#247d91',
+    },
+  })
+  map.addLayer({
     id: 'visitor-location-halo',
     type: 'circle',
     source: VISITOR_LOCATION_SOURCE_ID,
+    filter: ['==', ['geometry-type'], 'Point'],
     paint: {
       'circle-radius': 14,
       'circle-color': 'rgba(36, 125, 145, 0.2)',
@@ -454,6 +508,7 @@ function addPilotLayers(map: Map) {
     id: 'visitor-location-point',
     type: 'circle',
     source: VISITOR_LOCATION_SOURCE_ID,
+    filter: ['==', ['geometry-type'], 'Point'],
     paint: {
       'circle-radius': 5,
       'circle-color': '#247d91',
@@ -475,15 +530,54 @@ function buildPilotPlaceCollection(places: readonly PlaceStop[], activePlaceId: 
   }
 }
 
-function buildVisitorLocationCollection(location: LocationFix | null): FeatureCollection<Point> {
+function buildVisitorLocationCollection(location: LocationFix | null): FeatureCollection<Point | Polygon> {
   return {
     type: 'FeatureCollection',
-    features: location ? [{
-      type: 'Feature',
-      properties: { accuracy: location.accuracy },
-      geometry: { type: 'Point', coordinates: [location.longitude, location.latitude] },
-    }] : [],
+    features: location ? [
+      {
+        type: 'Feature',
+        properties: { accuracy: location.accuracy, kind: 'accuracy' },
+        geometry: buildAccuracyCircle(location),
+      },
+      {
+        type: 'Feature',
+        properties: { accuracy: location.accuracy, kind: 'position' },
+        geometry: { type: 'Point', coordinates: [location.longitude, location.latitude] },
+      },
+    ] : [],
   }
+}
+
+function buildAccuracyCircle(location: LocationFix): Polygon {
+  const radius = Math.max(location.accuracy, 1)
+  const latitudeRadians = location.latitude * Math.PI / 180
+  const latitudeDegrees = radius / 111_320
+  const longitudeDegrees = radius / (111_320 * Math.max(Math.cos(latitudeRadians), 0.01))
+  const coordinates: Position[] = []
+  for (let index = 0; index <= 48; index += 1) {
+    const angle = index / 48 * Math.PI * 2
+    coordinates.push([
+      location.longitude + Math.cos(angle) * longitudeDegrees,
+      location.latitude + Math.sin(angle) * latitudeDegrees,
+    ])
+  }
+  return { type: 'Polygon', coordinates: [coordinates] }
+}
+
+function centerOnVisitor(map: Map, location: LocationFix, forceZoom: boolean) {
+  const accuracyZoom = location.accuracy <= 25 ? 18
+    : location.accuracy <= 100 ? 17
+      : location.accuracy <= 500 ? 15
+        : 13.5
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  map.easeTo(
+    {
+      center: [location.longitude, location.latitude],
+      zoom: forceZoom ? Math.max(map.getZoom(), accuracyZoom) : map.getZoom(),
+      duration: reducedMotion ? 0 : forceZoom ? 650 : 450,
+    },
+    { locationFollowSource: true },
+  )
 }
 
 function styleBasemap(map: Map) {

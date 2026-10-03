@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "period_id": "c1550",
+  "status": "research",
+  "public_application_import": false,
+  "updated_on": "2026-10-02",
+  "crs": "EPSG:4326",
+  "scope_note": "Paquete GIS privado M10.5 ampliado por dos olas geométricas conservadoras. Sus 39 geometrías son candidatas internas in_review y ninguna se considera verificada o publicable.",
+  "layers": [
+    {
+      "geometry_type": "point",
+      "path": "data/research/c1550/points.geojson",
+      "feature_count": 25
+    },
+    {
+      "geometry_type": "line",
+      "path": "data/research/c1550/lines.geojson",
+      "feature_count": 10
+    },
+    {
+      "geometry_type": "area",
+      "path": "data/research/c1550/areas.geojson",
+      "feature_count": 4
+    }
+  ],
+  "audit_path": "data/research/c1550/geometry-audit.json",
+  "review_path": "data/research/c1550/m10.3-review.json",
+  "candidate_path": "data/research/c1550/m10.5-candidate.json",
+  "source_review_path": "data/research/c1550/m10.5-source-review.json",
+  "source_review_2_path": "data/research/c1550/m10.5-source-review-2.json",
+  "source_review_3_path": "data/research/c1550/m10.5-source-review-3.json",
+  "source_review_4_path": "data/research/c1550/m10.5-source-review-4.json",
+  "geometry_wave_1_path": "data/research/c1550/m10.5-geometry-wave-1.json",
+  "geometry_wave_2_path": "data/research/c1550/m10.5-geometry-wave-2.json",
+  "evidence_preparation_path": "data/research/c1550/m10.5-evidence-preparation.json",
+  "included_feature_ids": [
+    "religious.madraza-yusufiyya",
+    "religious.cathedral-granada",
+    "religious.royal-chapel",
+    "civic.lonja-mercaderes",
+    "civic.real-chancilleria",
+    "civic.hospital-real",
+    "royal.palace-charles-v",
+    "gate.puerta-granadas",
+    "water.pilar-carlos-v",
+    "religious.san-miguel-bajo",
+    "religious.san-cristobal",
+    "gate.alhambra-justice",
+    "religious.medina-great-mosque",
+    "civic.university-curia",
+    "religious.santa-cruz-real",
+    "religious.san-jeronimo",
+    "religious.san-jose",
+    "religious.san-juan-reyes",
+    "religious.san-matias",
+    "religious.san-luis",
+    "gate.elvira",
+    "gate.monaita",
+    "gate.alhambra-arms",
+    "gate.alhambra-seven-floors",
+    "gate.fajalauza",
+    "walls.alhambra-perimeter",
+    "water.darro",
+    "water.genil",
+    "route.elvira-axis",
+    "bridge.carbon",
+    "water.acequia-real-alhambra",
+    "water.acequia-aynadamar",
+    "water.acequia-gorda",
+    "water.acequia-cadi",
+    "water.acequia-romayla",
+    "royal.alhambra",
+    "civic.maristan",
+    "commerce.corral-carbon",
+    "water.banuelo"
+  ],
+  "geometry_rules": [
+    "Una referencia moderna localiza un sitio; nunca demuestra por sí sola su huella o estado construido en 1550.",
+    "La reutilización de una geometría c. 1492 exige una auditoría c. 1550 independiente y una fuente que sostenga la persistencia.",
+    "Los edificios en construcción permanecen como puntos hasta que una planta de fases permita delimitar su fábrica hacia 1550.",
+    "Ninguna geometría con estado de investigación se importa en la aplicación pública ni se sirve como dato publicado."
+  ],
+  "deferred_geometry": [
+    {
+      "scope_id": "defer.active-building-footprints",
+      "affected_feature_ids": [
+        "religious.cathedral-granada",
+        "civic.real-chancilleria",
+        "civic.hospital-real",
+        "royal.palace-charles-v",
+        "gate.puerta-granadas",
+        "religious.san-miguel-bajo",
+        "religious.san-cristobal"
+      ],
+      "reason": "La huella actual no expresa qué partes estaban levantadas, en uso o decoradas exactamente hacia 1550.",
+      "release_condition": "Incorporar plantas de fases georreferenciables y una revisión arquitectónica que separe campañas anteriores y posteriores."
+    },
+    {
+      "scope_id": "defer.completed-centre-footprints",
+      "affected_feature_ids": [
+        "religious.royal-chapel",
+        "civic.lonja-mercaderes",
+        "religious.madraza-yusufiyya",
+        "religious.medina-great-mosque",
+        "civic.university-curia"
+      ],
+      "reason": "El conjunto combina fábricas convertidas, edificios adosados y una sede universitaria alterada posteriormente; los puntos revisables son más honestos que polígonos modernos independientes.",
+      "release_condition": "Georreferenciar las plantas históricas publicadas, separar las campañas anteriores y posteriores a 1550 y obtener aprobación arquitectónica de contactos y solapes."
+    },
+    {
+      "scope_id": "defer.public-squares",
+      "affected_feature_ids": [
+        "urban.plaza-bib-rambla",
+        "urban.campo-principe",
+        "urban.plaza-nueva"
+      ],
+      "reason": "Las funciones y transformaciones están documentadas, pero las envolventes de 1550 no pueden copiarse de las plazas actuales.",
+      "release_condition": "Aportar cartografía regresiva, documentación de alineaciones y una reconstrucción parcelaria reproducible."
+    },
+    {
+      "scope_id": "defer.citywide-population",
+      "affected_feature_ids": [
+        "urban.albaicin",
+        "urban.lower-medina",
+        "urban.late-nasrid-extent"
+      ],
+      "reason": "No existe todavía evidencia espacial suficiente para límites urbanos o de población morisca y cristiana con precisión poligonal.",
+      "release_condition": "Definir una metodología demográfica y territorial revisada por especialistas, con fuentes espaciales explícitas y bordes inciertos."
+    },
+    {
+      "scope_id": "defer.parish-boundaries",
+      "affected_feature_ids": [
+        "religious.salvador-collegiate",
+        "religious.albaicin-great-mosque"
+      ],
+      "reason": "La existencia institucional no proporciona por sí sola límites parroquiales ni una planta segura de la transición mezquita-colegiata.",
+      "release_condition": "Localizar fuentes de fábrica y jurisdicción suficientemente cercanas al corte 1540–1560 y separar entidad, uso y edificio."
+    },
+    {
+      "scope_id": "defer.infrastructure-change",
+      "affected_feature_ids": [
+        "water.acequia-aynadamar",
+        "water.acequia-gorda",
+        "route.darro-axis"
+      ],
+      "reason": "La continuidad general de acequias y calles no demuestra ramales, cruces, cubrimientos o alineaciones concretas de 1550.",
+      "release_condition": "Reunir repartimientos, obras y cartografía histórica que permitan reconstruir variantes y no solo reutilizar c. 1492."
+    }
+  ]
+}

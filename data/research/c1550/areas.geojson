@@ -1,0 +1,923 @@
+{
+  "type": "FeatureCollection",
+  "period_id": "c1550",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "royal.alhambra",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "probable",
+        "change_from_previous": "altered",
+        "physical_state": "complete",
+        "name": "Alhambra y Casa Real",
+        "function": "Recinto palatino reutilizado y transformado por la monarquía",
+        "summary": "La ciudad palatina nazarí seguía constituyendo la Casa Real, mientras nuevas obras como el palacio de Carlos V alteraban sectores concretos del conjunto.",
+        "evidence_note": "El área conserva provisionalmente el recinto amurallado general; no supone que todas las dependencias nazaríes permanecieran intactas ni incluye la fase construida del nuevo palacio.",
+        "geometry_variant_id": "c1550.royal.alhambra",
+        "citations": [
+          {
+            "source_id": "source.alhambra-history",
+            "locator": "Historia posterior a 1492",
+            "supports": "Conversión de la Alhambra en Casa Real y continuidad del conjunto."
+          },
+          {
+            "source_id": "source.alhambra-charles-v-palace",
+            "locator": "Secuencia de obras 1533–1550",
+            "supports": "Inserción de la obra imperial dentro del recinto heredado."
+          }
+        ],
+        "id": "royal.alhambra",
+        "aliases": [
+          "Casa Real de la Alhambra",
+          "Alhambra cristiana"
+        ],
+        "modern_search_terms": [
+          "Palacios Nazaríes",
+          "Alcazaba",
+          "Palacio de Carlos V"
+        ],
+        "category": "royal_elite",
+        "subtype": "royal_complex",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology"
+        ],
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.alhambra-fortified-city-guide",
+          "source.alhambra-history"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5904008,
+              37.1762034
+            ],
+            [
+              -3.5904632,
+              37.1760845
+            ],
+            [
+              -3.5903181,
+              37.1760362
+            ],
+            [
+              -3.5902421,
+              37.1761837
+            ],
+            [
+              -3.5898379,
+              37.1760016
+            ],
+            [
+              -3.5898207,
+              37.1760299
+            ],
+            [
+              -3.5893598,
+              37.1759021
+            ],
+            [
+              -3.5888185,
+              37.175696
+            ],
+            [
+              -3.58824,
+              37.1753493
+            ],
+            [
+              -3.5884215,
+              37.1751752
+            ],
+            [
+              -3.588307,
+              37.175092
+            ],
+            [
+              -3.588113,
+              37.1752738
+            ],
+            [
+              -3.5877169,
+              37.175031
+            ],
+            [
+              -3.587757,
+              37.1749793
+            ],
+            [
+              -3.5876955,
+              37.174949
+            ],
+            [
+              -3.5876555,
+              37.1750008
+            ],
+            [
+              -3.587296,
+              37.1748742
+            ],
+            [
+              -3.5873264,
+              37.1748148
+            ],
+            [
+              -3.5872563,
+              37.1747902
+            ],
+            [
+              -3.5872203,
+              37.1748496
+            ],
+            [
+              -3.5868464,
+              37.1747795
+            ],
+            [
+              -3.5868569,
+              37.1745239
+            ],
+            [
+              -3.5867888,
+              37.1744557
+            ],
+            [
+              -3.5866438,
+              37.1744889
+            ],
+            [
+              -3.5866362,
+              37.174769
+            ],
+            [
+              -3.5860332,
+              37.1747367
+            ],
+            [
+              -3.5860382,
+              37.1746621
+            ],
+            [
+              -3.5859778,
+              37.1746595
+            ],
+            [
+              -3.5859727,
+              37.1747341
+            ],
+            [
+              -3.5856612,
+              37.1747092
+            ],
+            [
+              -3.5856229,
+              37.1746328
+            ],
+            [
+              -3.5855575,
+              37.1746537
+            ],
+            [
+              -3.5855962,
+              37.174731
+            ],
+            [
+              -3.5853783,
+              37.1748143
+            ],
+            [
+              -3.5851333,
+              37.1747984
+            ],
+            [
+              -3.5851283,
+              37.1748943
+            ],
+            [
+              -3.5851749,
+              37.1749141
+            ],
+            [
+              -3.5851523,
+              37.175106
+            ],
+            [
+              -3.5851054,
+              37.1752708
+            ],
+            [
+              -3.5850124,
+              37.1752835
+            ],
+            [
+              -3.5850174,
+              37.1753266
+            ],
+            [
+              -3.5851426,
+              37.1753323
+            ],
+            [
+              -3.5857955,
+              37.1756592
+            ],
+            [
+              -3.585736,
+              37.1757398
+            ],
+            [
+              -3.5858321,
+              37.1757848
+            ],
+            [
+              -3.5858867,
+              37.1757109
+            ],
+            [
+              -3.5860817,
+              37.1758411
+            ],
+            [
+              -3.5863404,
+              37.1761548
+            ],
+            [
+              -3.5862042,
+              37.1762143
+            ],
+            [
+              -3.5862482,
+              37.1762782
+            ],
+            [
+              -3.5863844,
+              37.1762187
+            ],
+            [
+              -3.586602,
+              37.1763751
+            ],
+            [
+              -3.5867935,
+              37.1766103
+            ],
+            [
+              -3.5867189,
+              37.1766663
+            ],
+            [
+              -3.5867603,
+              37.1767014
+            ],
+            [
+              -3.586835,
+              37.1766454
+            ],
+            [
+              -3.5872402,
+              37.1768709
+            ],
+            [
+              -3.5871387,
+              37.176937
+            ],
+            [
+              -3.5871925,
+              37.1770251
+            ],
+            [
+              -3.5871071,
+              37.1770715
+            ],
+            [
+              -3.5871513,
+              37.1771175
+            ],
+            [
+              -3.5870855,
+              37.1771584
+            ],
+            [
+              -3.5871434,
+              37.1772187
+            ],
+            [
+              -3.587341,
+              37.1771162
+            ],
+            [
+              -3.5874662,
+              37.1772301
+            ],
+            [
+              -3.5875589,
+              37.1771667
+            ],
+            [
+              -3.5879109,
+              37.1771306
+            ],
+            [
+              -3.5882113,
+              37.177264
+            ],
+            [
+              -3.5884071,
+              37.1773826
+            ],
+            [
+              -3.5884087,
+              37.1774272
+            ],
+            [
+              -3.5884797,
+              37.1774256
+            ],
+            [
+              -3.5884806,
+              37.1774789
+            ],
+            [
+              -3.5885558,
+              37.177478
+            ],
+            [
+              -3.5885548,
+              37.1774248
+            ],
+            [
+              -3.5888708,
+              37.1774184
+            ],
+            [
+              -3.589209,
+              37.1776591
+            ],
+            [
+              -3.5892664,
+              37.1776483
+            ],
+            [
+              -3.5892533,
+              37.1776041
+            ],
+            [
+              -3.5895935,
+              37.1775553
+            ],
+            [
+              -3.5895922,
+              37.1776325
+            ],
+            [
+              -3.5897694,
+              37.1776344
+            ],
+            [
+              -3.5897718,
+              37.1774932
+            ],
+            [
+              -3.5901561,
+              37.1775157
+            ],
+            [
+              -3.5901551,
+              37.177547
+            ],
+            [
+              -3.5905371,
+              37.1775102
+            ],
+            [
+              -3.5905348,
+              37.1775486
+            ],
+            [
+              -3.5908728,
+              37.1775293
+            ],
+            [
+              -3.5910547,
+              37.1775787
+            ],
+            [
+              -3.5913596,
+              37.1775878
+            ],
+            [
+              -3.5918529,
+              37.1773218
+            ],
+            [
+              -3.5919636,
+              37.1773102
+            ],
+            [
+              -3.5919805,
+              37.1773929
+            ],
+            [
+              -3.59209,
+              37.1773788
+            ],
+            [
+              -3.5920724,
+              37.1772921
+            ],
+            [
+              -3.5925184,
+              37.1772352
+            ],
+            [
+              -3.5929544,
+              37.1771175
+            ],
+            [
+              -3.5929711,
+              37.1771469
+            ],
+            [
+              -3.593067,
+              37.1770697
+            ],
+            [
+              -3.5930402,
+              37.176965
+            ],
+            [
+              -3.5927612,
+              37.1767876
+            ],
+            [
+              -3.5927532,
+              37.1768282
+            ],
+            [
+              -3.592331,
+              37.1768173
+            ],
+            [
+              -3.5923204,
+              37.1767407
+            ],
+            [
+              -3.5921224,
+              37.1767265
+            ],
+            [
+              -3.5921146,
+              37.1768227
+            ],
+            [
+              -3.5912123,
+              37.1767793
+            ],
+            [
+              -3.5909558,
+              37.1765922
+            ],
+            [
+              -3.5910053,
+              37.1765267
+            ],
+            [
+              -3.590914,
+              37.1763735
+            ],
+            [
+              -3.5904008,
+              37.1762034
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "civic.maristan",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "probable",
+        "change_from_previous": "converted",
+        "physical_state": "complete",
+        "name": "Real Casa de la Moneda (antiguo Maristán)",
+        "function": "Ceca y espacio fabril de la monarquía",
+        "summary": "El antiguo hospital nazarí funcionaba como Real Casa de la Moneda, con celdas reorganizadas, sala del Tesoro y espacios vinculados a la fundición.",
+        "evidence_note": "La arqueología confirma la conversión desde 1497; se mantiene la envolvente arqueológica conocida sin inventar la distribución completa de talleres en 1550.",
+        "geometry_variant_id": "c1550.civic.maristan",
+        "citations": [
+          {
+            "source_id": "source.alhambra-maristan-mint-2023",
+            "locator": "Resumen y estudio de la adaptación fabril, pp. 139–155",
+            "supports": "Conversión del Maristán en Casa de la Moneda desde 1497 y transformaciones materiales hasta 1685."
+          }
+        ],
+        "id": "civic.maristan",
+        "aliases": [
+          "Casa de la Moneda",
+          "Ceca de Granada",
+          "Antiguo Maristán"
+        ],
+        "modern_search_terms": [
+          "Calle Concepción de Zafra",
+          "Carrera del Darro"
+        ],
+        "category": "commerce_civic",
+        "subtype": "mint",
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary"
+        ],
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.alhambra-maristan",
+          "source.alhambra-maristan-mint-2023"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5930735,
+              37.1788179
+            ],
+            [
+              -3.5929157,
+              37.1785712
+            ],
+            [
+              -3.5928782,
+              37.1785099
+            ],
+            [
+              -3.5927946,
+              37.1785465
+            ],
+            [
+              -3.5926944,
+              37.1785904
+            ],
+            [
+              -3.592614,
+              37.1786236
+            ],
+            [
+              -3.5926545,
+              37.1786819
+            ],
+            [
+              -3.5926682,
+              37.1787014
+            ],
+            [
+              -3.592684,
+              37.1787211
+            ],
+            [
+              -3.5926881,
+              37.1787193
+            ],
+            [
+              -3.5927596,
+              37.17882
+            ],
+            [
+              -3.5928266,
+              37.1789205
+            ],
+            [
+              -3.5930735,
+              37.1788179
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "commerce.corral-carbon",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "spatial_confidence": "secure",
+        "change_from_previous": "converted",
+        "physical_state": "complete",
+        "name": "Corral de comedias (antigua Alhóndiga Nueva)",
+        "function": "Corral de comedias dentro de un funduq nazarí reutilizado",
+        "summary": "El antiguo funduq seguía materialmente presente, pero tras la subasta de 1531 pasó a funcionar como corral de comedias, mostrando una conversión de uso sin demolición del edificio.",
+        "evidence_note": "La secuencia de propiedad y uso está documentada; la distribución teatral hacia 1550 y las adaptaciones materiales concretas aún no justifican una nueva planta.",
+        "geometry_variant_id": "c1550.commerce.corral-carbon",
+        "citations": [
+          {
+            "source_id": "source.alhambra-corral-carbon",
+            "locator": "Transformaciones tras la conquista y subasta de 1531",
+            "supports": "Venta y conversión posterior en corral de comedias."
+          },
+          {
+            "source_id": "source.alhambra-corral-carbon",
+            "locator": "Descripción del edificio y cambios de uso",
+            "supports": "Distingue continuidad de la fábrica y transformación funcional."
+          }
+        ],
+        "id": "commerce.corral-carbon",
+        "aliases": [
+          "Alhóndiga Nueva",
+          "Funduq al-Yadida"
+        ],
+        "modern_search_terms": [
+          "Calle Mariana Pineda",
+          "Corral del Carbón",
+          "Plaza Isabel la Católica"
+        ],
+        "category": "commerce_civic",
+        "subtype": "funduq",
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology"
+        ],
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.alhambra-corral-carbon",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5982412,
+              37.1749135
+            ],
+            [
+              -3.5980958,
+              37.1748399
+            ],
+            [
+              -3.5980796,
+              37.1748317
+            ],
+            [
+              -3.598111,
+              37.1747953
+            ],
+            [
+              -3.5980267,
+              37.1747572
+            ],
+            [
+              -3.5979644,
+              37.1747294
+            ],
+            [
+              -3.5979442,
+              37.1747499
+            ],
+            [
+              -3.5979105,
+              37.1747349
+            ],
+            [
+              -3.5978745,
+              37.1747188
+            ],
+            [
+              -3.5977736,
+              37.1748515
+            ],
+            [
+              -3.5978484,
+              37.1748885
+            ],
+            [
+              -3.5978034,
+              37.1749476
+            ],
+            [
+              -3.5977945,
+              37.1749594
+            ],
+            [
+              -3.5980847,
+              37.1751053
+            ],
+            [
+              -3.5981466,
+              37.1750279
+            ],
+            [
+              -3.5981713,
+              37.1750398
+            ],
+            [
+              -3.5982001,
+              37.1750048
+            ],
+            [
+              -3.5982278,
+              37.1749711
+            ],
+            [
+              -3.5982052,
+              37.1749602
+            ],
+            [
+              -3.5982354,
+              37.174921
+            ],
+            [
+              -3.5982412,
+              37.1749135
+            ]
+          ],
+          [
+            [
+              -3.5981463,
+              37.1748983
+            ],
+            [
+              -3.5980615,
+              37.1750111
+            ],
+            [
+              -3.5979069,
+              37.1749297
+            ],
+            [
+              -3.5979948,
+              37.1748237
+            ],
+            [
+              -3.5981463,
+              37.1748983
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.banuelo",
+      "properties": {
+        "period_id": "c1550",
+        "presence": "present",
+        "temporal_confidence": "probable",
+        "spatial_confidence": "secure",
+        "change_from_previous": "retained",
+        "physical_state": "complete",
+        "name": "Baño del Nogal (Bañuelo)",
+        "function": "Baño público heredado en el corredor del Darro",
+        "summary": "El Baño del Nogal estaba documentado y fue reparado después de la conquista; la investigación considera probable que siguiera funcionando como baño en época morisca y, por tanto, hacia 1550.",
+        "evidence_note": "La reparación de 1509 y la continuidad probable hasta 1567 sostienen la presencia, pero no permiten afirmar con certeza su régimen diario, usuarios o propiedad exacta en el año representativo.",
+        "geometry_variant_id": "c1550.water.banuelo",
+        "citations": [
+          {
+            "source_id": "source.csic-banuelo-2021",
+            "locator": "Fuentes documentales e investigación histórica",
+            "supports": "Aporta denominación, regencia y reparación posteriores a la conquista."
+          },
+          {
+            "source_id": "source.csic-banuelo-2021",
+            "locator": "Fuentes documentales; continuidad funcional probable",
+            "supports": "Formula explícitamente la continuidad como posibilidad y fija el límite de confianza."
+          }
+        ],
+        "id": "water.banuelo",
+        "aliases": [
+          "Baño del Nogal",
+          "Baño de la Puerta de Guadix"
+        ],
+        "modern_search_terms": [
+          "Carrera del Darro 31",
+          "Calle Bañuelo",
+          "Puente de Espinosa"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "hammam",
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary",
+          "scholarly_reconstruction"
+        ],
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.alhambra-banuelo",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.csic-banuelo-2021"
+        ],
+        "publication_status": "research"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5931302,
+              37.1785458
+            ],
+            [
+              -3.5930437,
+              37.1784292
+            ],
+            [
+              -3.5930302,
+              37.1784091
+            ],
+            [
+              -3.5929784,
+              37.1783325
+            ],
+            [
+              -3.5929567,
+              37.1783007
+            ],
+            [
+              -3.5928509,
+              37.178349
+            ],
+            [
+              -3.5928567,
+              37.1783581
+            ],
+            [
+              -3.5928622,
+              37.1783667
+            ],
+            [
+              -3.5928686,
+              37.1783767
+            ],
+            [
+              -3.5929317,
+              37.1783514
+            ],
+            [
+              -3.5929741,
+              37.178415
+            ],
+            [
+              -3.5929098,
+              37.1784413
+            ],
+            [
+              -3.5929114,
+              37.1784439
+            ],
+            [
+              -3.5929072,
+              37.1784449
+            ],
+            [
+              -3.5929139,
+              37.1784564
+            ],
+            [
+              -3.5929928,
+              37.1785886
+            ],
+            [
+              -3.592998,
+              37.1785862
+            ],
+            [
+              -3.5930092,
+              37.1785809
+            ],
+            [
+              -3.5930146,
+              37.1785896
+            ],
+            [
+              -3.5931302,
+              37.1785458
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

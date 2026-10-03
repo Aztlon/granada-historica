@@ -287,7 +287,9 @@ A successful v0.1 should feel narrow but trustworthy.
 
 This section is part of the product specification, not merely research notes. Historical uncertainty affects rendering and UI.
 
-### 6.1 Target period
+### 6.1 Target periods
+
+#### v0.1 — Late Nasrid city
 
 Public label:
 
@@ -302,6 +304,26 @@ If the only evidence is significantly earlier or later, the feature must either:
 - remain excluded;
 - be explicitly marked as inferred/probable; or
 - appear only in a future period layer.
+
+#### v0.2 — Morisco and Renaissance city
+
+The committed second temporal state is:
+
+> **Granada, c. 1550 — La ciudad morisca y renacentista**
+
+Use 1550 as the representative date for an evidence window of approximately
+1540–1560, not as a claim that every mapped condition existed in precisely that
+calendar year. This state should reveal the transformation of the inherited
+Nasrid city while the Morisco Albaicín and other continuities remained legible.
+
+Priority comparisons are mosque-to-parish or church transformations, the
+Cathedral and Christian civic centre, the imperial programme in the Alhambra,
+and changing population geography between the Albaicín, lower city, and
+Realejo. Buildings under construction must appear in their evidenced phase,
+not in a completed later form.
+
+The scope, rationale, research boundary, and data-model consequences are fixed
+in [ADR 0002](decisions/0002-second-period-c1550.md).
 
 ### 6.2 Separate spatial certainty from temporal certainty
 
@@ -1429,16 +1451,21 @@ The collaboration model is intentionally multidisciplinary:
 - the Ayuntamiento, Granada 2031, and heritage institutions can support public
   integration, signage, data access, stewardship, and cultural programming.
 
-### v0.2 — Late medieval / early Christian transition
+### v0.2 — Granada c. 1550: Morisco and Renaissance city
 
-Add an early 16th-century state that demonstrates:
+Add the committed c. 1550 state, using an evidence window of approximately
+1540–1560, that demonstrates:
 
 - mosque-to-church conversions;
 - Cathedral construction;
 - civic and ecclesiastical changes;
 - changing population geography.
 
-This is the most natural second period because it directly explains the transformation that users can still see today.
+This is the most natural second period because it directly explains the
+transformation that users can still see today without skipping the Morisco city
+that remained before the revolt of 1568 and subsequent expulsions. Treat
+unfinished buildings and converted or reused sites as explicit historical
+states. See [ADR 0002](decisions/0002-second-period-c1550.md).
 
 ### v0.3 — Historical cartography comparison
 
@@ -1465,7 +1492,7 @@ Do not implement the slider until there are at least two historically defensible
 
 ### Later possibilities
 
-- 1492 / 1600 / 1800 / 1900 / present presets;
+- 1492 / 1550 / 1600 / 1800 / 1900 / present presets;
 - public QR routes with durable place links;
 - opt-in, client-side visitor location;
 - reviewed 2D and 3D reconstruction assets;

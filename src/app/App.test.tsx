@@ -1,7 +1,10 @@
-import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { act, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { vi } from 'vitest'
+import { internalComparisonDataset } from '../data/internalComparisonData'
 import { App } from './App'
+
+const loadInternalComparison = async () => internalComparisonDataset
 
 vi.mock('../map/MapView', () => ({
   MapView: ({ onSelectFeature }: { onSelectFeature: (featureId: string) => void }) => (
@@ -29,6 +32,7 @@ describe('App', () => {
     expect(
       await screen.findByLabelText('Mapa moderno interactivo del centro de Granada'),
     ).toBeVisible()
+    expect(screen.queryByTestId('internal-period-selector')).not.toBeInTheDocument()
   })
 
   it('abre y cierra el panel de capas', async () => {
@@ -90,6 +94,7 @@ describe('App', () => {
     expect(screen.getByRole('heading', { name: 'Fuentes' })).toBeVisible()
     expect(screen.getByRole('link', { name: 'Castillo de la Puerta de Elvira' })).toBeVisible()
     expect(new URL(window.location.href).searchParams.get('feature')).toBe('gate.elvira')
+    expect(new URL(window.location.href).searchParams.get('period')).toBe('c1492')
   })
 
   it('busca sin distinguir acentos y permite seleccionar con el teclado', async () => {
@@ -114,8 +119,10 @@ describe('App', () => {
 
     expect(screen.getByRole('heading', { name: 'Puerta de Elvira' })).toBeVisible()
 
-    window.history.pushState({}, '', '/?feature=water.darro')
-    window.dispatchEvent(new PopStateEvent('popstate'))
+    act(() => {
+      window.history.pushState({}, '', '/?feature=water.darro')
+      window.dispatchEvent(new PopStateEvent('popstate'))
+    })
 
     await waitFor(() => {
       expect(screen.getByRole('heading', { name: 'Río Darro' })).toBeVisible()
@@ -155,10 +162,123 @@ describe('App', () => {
     expect(screen.getByRole('heading', { name: 'Bibarrambla Gate' })).toBeVisible()
     expect(new URL(window.location.href).searchParams.get('lang')).toBe('en')
 
-    window.history.back()
-    window.dispatchEvent(new PopStateEvent('popstate'))
+    act(() => {
+      window.history.back()
+      window.dispatchEvent(new PopStateEvent('popstate'))
+    })
     await waitFor(() => {
       expect(screen.getByRole('heading', { name: 'Puerta de Bibarrambla' })).toBeVisible()
     })
+  })
+
+  it('carga el corte interno solo con el flag y conserva periodo y entidad en la URL', async () => {
+    const user = userEvent.setup()
+    window.history.replaceState(
+      {},
+      '',
+      '/granada-historica/?period=c1550&feature=royal.palace-charles-v&lang=es',
+    )
+    render(<App internalComparisonLoader={loadInternalComparison} />)
+
+    expect(await screen.findByRole('heading', { name: 'Palacio de Carlos V' })).toBeVisible()
+    expect(screen.getByRole('radio', { name: 'c. 1550' })).toBeChecked()
+    expect(screen.getByText('Nueva construcción')).toBeVisible()
+    expect(screen.getByText('En construcción')).toBeVisible()
+    expect(screen.getByRole('heading', { name: 'Fuentes' })).toBeVisible()
+    expect(screen.getByText('Estado de investigación — no aprobado para publicación')).toBeVisible()
+    expect(screen.getByText(/6 de 6 aprobaciones pendientes/)).toBeVisible()
+    expect(document.querySelector('meta[name="robots"]')).toHaveAttribute('content', 'noindex,nofollow')
+
+    await user.click(screen.getByRole('radio', { name: 'c. 1492' }))
+    expect(screen.getByRole('heading', { name: 'Palacio de Carlos V' })).toBeVisible()
+    expect(screen.getByText('Aún no presente hacia 1492')).toBeVisible()
+    expect(screen.getByText('Sigues viendo c. 1492.')).toBeVisible()
+    expect(new URL(window.location.href).searchParams.get('period')).toBe('c1492')
+    expect(new URL(window.location.href).searchParams.get('feature')).toBe('royal.palace-charles-v')
+
+    await user.click(screen.getByRole('button', { name: 'Ver en c. 1550' }))
+    expect(await screen.findByText('En construcción')).toBeVisible()
+    expect(new URL(window.location.href).searchParams.get('period')).toBe('c1550')
+  })
+
+  it('muestra Fajalauza como punto de sitio privado y en revisión en c. 1550', async () => {
+    const user = userEvent.setup()
+    window.history.replaceState(
+      {},
+      '',
+      '/granada-historica/?period=c1492&feature=gate.fajalauza&lang=en',
+    )
+    render(<App internalComparisonLoader={loadInternalComparison} />)
+
+    await user.click(await screen.findByRole('radio', { name: 'c. 1550' }))
+    expect(screen.getByRole('heading', { name: 'Fajalauza Gate' })).toBeVisible()
+    expect(screen.getByText('Research state — not approved for publication')).toBeVisible()
+    expect(screen.getByText(/probably continued as an enclosure passage around 1550/)).toBeVisible()
+    expect(screen.queryByText('Not represented in this review slice')).not.toBeInTheDocument()
+    expect(screen.getByRole('radio', { name: 'c. 1550' })).toBeChecked()
+  })
+
+  it('restaura periodo y entidad internos mediante el historial', async () => {
+    window.history.replaceState({}, '', '/granada-historica/?period=c1492&lang=es')
+    render(<App internalComparisonLoader={loadInternalComparison} />)
+    await screen.findByRole('radio', { name: 'c. 1550' })
+
+    act(() => {
+      window.history.pushState(
+        {},
+        '',
+        '/granada-historica/?period=c1550&feature=gate.puerta-granadas&lang=es',
+      )
+      window.dispatchEvent(new PopStateEvent('popstate'))
+    })
+
+    expect(await screen.findByRole('heading', { name: 'Puerta de las Granadas' })).toBeVisible()
+    expect(screen.getByRole('radio', { name: 'c. 1550' })).toBeChecked()
+  })
+
+  it('ignora c1550 en el modo público y no expone su selector', () => {
+    window.history.replaceState(
+      {},
+      '',
+      '/granada-historica/?period=c1550&feature=gate.elvira&lang=es',
+    )
+    render(<App />)
+
+    expect(screen.getByRole('heading', { name: 'Puerta de Elvira' })).toBeVisible()
+    expect(screen.getByText('Granada, c. 1492')).toBeVisible()
+    expect(screen.queryByTestId('internal-period-selector')).not.toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /Comparar en c\. 1550/ })).not.toBeInTheDocument()
+  })
+
+  it('presenta una conversión como cambio material y funcional, no como demolición', async () => {
+    window.history.replaceState(
+      {},
+      '',
+      '/granada-historica/?period=c1550&feature=religious.madraza-yusufiyya&lang=es',
+    )
+    render(<App internalComparisonLoader={loadInternalComparison} />)
+
+    expect(await screen.findByRole('heading', { name: 'Casa del Cabildo (antigua Madraza Yusufiyya)' })).toBeVisible()
+    expect(screen.getByText('Convertido')).toBeVisible()
+    expect(screen.getByText('Completo')).toBeVisible()
+    expect(screen.getByText(/El mismo edificio cambió de institución/)).toBeVisible()
+  })
+
+  it('separa la identidad estable del relato de periodo en el Eje de Elvira', async () => {
+    window.history.replaceState(
+      {},
+      '',
+      '/granada-historica/?period=c1550&feature=route.elvira-axis&lang=es',
+    )
+    render(<App internalComparisonLoader={loadInternalComparison} />)
+
+    expect(await screen.findByRole('heading', { name: 'Eje de Elvira' })).toBeVisible()
+    expect(screen.getByText(
+      'Corredor histórico de la ciudad entre el centro urbano y la Puerta de Elvira.',
+    )).toHaveClass('drawer-lede')
+    const periodSection = screen.getByRole('heading', { name: '¿Qué había aquí hacia 1550?' })
+      .closest('section')
+    expect(periodSection).toHaveTextContent('La calle Elvira conservaba hacia 1550')
+    expect(screen.getByRole('heading', { name: '¿Qué función cumplía hacia 1550?' })).toBeVisible()
   })
 })

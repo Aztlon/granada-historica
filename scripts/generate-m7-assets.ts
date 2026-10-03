@@ -75,9 +75,8 @@ function cardHtml(stop: PlaceStop) {
     `<main>
       <p class="brand">Granada Histórica</p>
       <p class="number">${stop.order} / ${route.stops.length}</p>
-      <h1>${escapeHtml(stop.title.es)}</h1>
-      <p class="english">${escapeHtml(stop.title.en)}</p>
-      <img src="../qr/${stop.slug}.svg" alt="QR: ${escapeHtml(stop.title.es)} / ${escapeHtml(stop.title.en)}" />
+      <h1>${escapeHtml(stop.title.es)}</h1>${secondaryTitle(stop, '\n      <p class="english">', '</p>')}
+      <img src="../qr/${stop.slug}.svg" alt="QR: ${escapeHtml(localizedName(stop))}" />
       <p class="action">Escanea para descubrir qué había aquí hacia 1492.<br /><span>Scan to discover what stood here around 1492.</span></p>
       <code>${escapeHtml(url)}</code>
       <p class="notice">Tarjeta temporal de prueba · Temporary test card</p>
@@ -103,8 +102,8 @@ function cardHtml(stop: PlaceStop) {
 
 function testSheetHtml() {
   const cards = route.stops.map((stop) => `<li>
-        <strong>${stop.order} · ${escapeHtml(stop.title.es)} <span>${escapeHtml(stop.title.en)}</span></strong>
-        <img src="qr/${stop.slug}.svg" alt="QR de ${escapeHtml(stop.title.es)} / ${escapeHtml(stop.title.en)}" />
+        <strong>${stop.order} · ${escapeHtml(stop.title.es)}${secondaryTitle(stop, ' <span>', '</span>')}</strong>
+        <img src="qr/${stop.slug}.svg" alt="QR de ${escapeHtml(localizedName(stop))}" />
         <code>${escapeHtml(placeUrl(stop))}</code>
       </li>`).join('\n      ')
   return documentShell(
@@ -130,7 +129,7 @@ function testSheetHtml() {
 
 function fieldChecklistHtml() {
   const stopSections = route.stops.map((stop) => `<section>
-        <h2>${stop.order}. ${escapeHtml(stop.title.es)} <span>${escapeHtml(stop.title.en)}</span></h2>
+        <h2>${stop.order}. ${escapeHtml(stop.title.es)}${secondaryTitle(stop, ' <span>', '</span>')}</h2>
         <p>${escapeHtml(stop.arrival_cue.es)}<br /><em>${escapeHtml(stop.arrival_cue.en)}</em></p>
         ${checklist([
           'El anclaje coincide con el punto interpretable / Anchor matches the interpretable viewpoint',
@@ -181,7 +180,7 @@ function fieldChecklistHtml() {
 }
 
 function reviewHubHtml() {
-  const stops = route.stops.map((stop) => `<li><span>${stop.order}</span><div><strong>${escapeHtml(stop.title.es)}</strong><small>${escapeHtml(stop.title.en)}</small><a href="../../place/${stop.slug}/">Abrir parada / Open stop</a> · <a href="../cards/${stop.slug}.html">Tarjeta / Card</a></div></li>`).join('\n')
+  const stops = route.stops.map((stop) => `<li><span>${stop.order}</span><div><strong>${escapeHtml(stop.title.es)}</strong>${secondaryTitle(stop, '<small>', '</small>')}<a href="../../place/${stop.slug}/">Abrir parada / Open stop</a> · <a href="../cards/${stop.slug}.html">Tarjeta / Card</a></div></li>`).join('\n')
   return documentShell(
     'Granada Histórica · revisión del piloto M7',
     `<main>
@@ -190,8 +189,8 @@ function reviewHubHtml() {
       <section><h2>Paradas / Stops</h2><ol class="stops">${stops}</ol></section>
       <section><h2>Materiales de prueba / Test materials</h2><div class="links"><a href="../test-sheet.html">Hoja con los cinco QR<br /><span>Five-QR test sheet</span></a><a href="../field-checklist.html">Lista de comprobación<br /><span>Field checklist</span></a></div></section>
       <section><h2>Documentación / Documentation</h2><p><a href="https://github.com/Aztlon/granada-historica/blob/main/docs/M7-PILOT.md">Protocolo y activación M7 / M7 protocol and activation</a><br /><a href="https://github.com/Aztlon/granada-historica/blob/main/docs/SPEC.md">Especificación y metodología histórica / Product and historical methodology</a><br /><a href="https://github.com/Aztlon/granada-historica">Código y datos abiertos / Open code and data</a></p></section>
-      <section class="grid"><div><h2>Qué está listo / Ready</h2>${list(['Rutas estables y fichas bilingües / Stable routes and bilingual records','Códigos QR sin seguimiento / Tracking-free QR codes','Ubicación puntual y privada / One-shot private location','Pruebas automatizadas de rutas, privacidad y accesibilidad / Automated route, privacy and accessibility tests'])}</div><div><h2>Qué no se afirma / Not yet claimed</h2>${list(['Anclajes físicos definitivos / Final physical anchors','Itinerario peatonal validado / Validated walking directions','Permiso para señalización / Signage permission','Aprobación histórica, inglesa o institucional final / Final historical, English or institutional approval'])}</div></section>
-      <section><h2>Privacidad / Privacy</h2><p>La ubicación solo se solicita tras una explicación, se usa una vez y permanece en memoria. No se incorpora a URL, almacenamiento ni analítica. Las teselas visibles proceden del proveedor cartográfico externo.</p><p lang="en">Location is requested only after an explanation, used once and kept in memory. It is not added to URLs, storage or analytics. Visible map tiles still come from the external map provider.</p></section>
+      <section class="grid"><div><h2>Qué está listo / Ready</h2>${list(['Rutas estables y fichas bilingües / Stable routes and bilingual records','Códigos QR sin seguimiento / Tracking-free QR codes','Ubicación privada que se actualiza en la página / Private location that updates in-page','Pruebas automatizadas de rutas, privacidad y accesibilidad / Automated route, privacy and accessibility tests'])}</div><div><h2>Qué no se afirma / Not yet claimed</h2>${list(['Anclajes físicos definitivos / Final physical anchors','Itinerario peatonal validado / Validated walking directions','Permiso para señalización / Signage permission','Aprobación histórica, inglesa o institucional final / Final historical, English or institutional approval'])}</div></section>
+      <section><h2>Privacidad / Privacy</h2><p>La ubicación se solicita al pulsar el control y conceder el permiso del navegador. Se actualiza mientras la página permanece abierta y solo se conserva en memoria. No se incorpora a URL, almacenamiento ni analítica. Las teselas visibles proceden del proveedor cartográfico externo.</p><p lang="en">Location is requested when the visitor presses the control and grants browser permission. It updates while the page remains open and is kept only in memory. It is not added to URLs, storage or analytics. Visible map tiles still come from the external map provider.</p></section>
       <section><h2>Decisión de activación / Activation decision</h2><p>La ruta seguirá oculta de la navegación y marcada <code>noindex</code> hasta completar la revisión editorial, el trabajo de campo, las pruebas de accesibilidad y el acuerdo de mantenimiento.</p><p lang="en">The route remains hidden from navigation and marked <code>noindex</code> until editorial review, fieldwork, accessibility testing and maintenance ownership are complete.</p></section>
     </main>`,
     `
@@ -221,6 +220,16 @@ function checklist(items: string[]) {
 
 function list(items: string[]) {
   return `<ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`
+}
+
+function secondaryTitle(stop: PlaceStop, before: string, after: string) {
+  return stop.title.en === stop.title.es ? '' : `${before}${escapeHtml(stop.title.en)}${after}`
+}
+
+function localizedName(stop: PlaceStop) {
+  return stop.title.en === stop.title.es
+    ? stop.title.es
+    : `${stop.title.es} / ${stop.title.en}`
 }
 
 function escapeHtml(value: string) {

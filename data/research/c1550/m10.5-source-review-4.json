@@ -1,0 +1,953 @@
+{
+  "schema_version": 1,
+  "milestone": "M10.5",
+  "tranche": "source-review-4",
+  "period_id": "c1550",
+  "status": "ready_for_content_review",
+  "public_application_import": false,
+  "updated_on": "2026-10-02",
+  "scope_note": "Cuarto tramo de diez puertas, cercas interiores, acequias y rutas heredadas preparado para revisión histórica sin crear geometría c. 1550.",
+  "feature_ids": [
+    "gate.alfajjarin",
+    "gate.guadix",
+    "gate.molinos",
+    "gate.pescado",
+    "walls.alcazaba-qadima-inner",
+    "walls.axares-inner",
+    "walls.mauror-realejo-inner",
+    "water.acequia-axares",
+    "water.acequia-realejo",
+    "route.molinos-sierra-axis"
+  ],
+  "items": [
+    {
+      "feature_id": "gate.alfajjarin",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "probable",
+        "change_from_1492": "altered",
+        "physical_state": "partially_in_use"
+      },
+      "content": {
+        "es": {
+          "name": "Puerta de los Alfareros",
+          "function": "Paso interior entre la ciudad baja y el Realejo",
+          "summary": "Hacia 1550 la antigua Bab al-Fajjarin probablemente seguía organizando el paso por Plaza Fortuny, aunque el entorno artesanal y residencial había sido reordenado bajo instituciones cristianas.",
+          "evidence_note": "La cerca y el ámbito de la puerta están bien localizados, y la Casa de los Girones ofrece un control contextual de 1554; ninguna de esas evidencias demuestra por sí sola la forma o apertura exacta del vano en 1550.",
+          "change_note": "La puerta dejó de ser un acceso hacia un arrabal exterior y pasó a funcionar, si continuaba abierta, como umbral interior de un barrio integrado y transformado."
+        },
+        "en": {
+          "name": "Potters’ Gate",
+          "function": "Internal passage between the lower city and Realejo",
+          "summary": "Around 1550 the former Bab al-Fajjarin probably continued to organise passage through Plaza Fortuny, although its artisanal and residential surroundings had been reordered under Christian institutions.",
+          "evidence_note": "The wall and gate area are well located, and the Casa de los Girones provides a contextual control from 1554; neither body of evidence by itself establishes the exact form or openness of the passage in 1550.",
+          "change_note": "The gate ceased to be an entrance to an outer suburb and, if still open, functioned as an internal threshold within an integrated and transformed district."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.alfajjarin-gate-wall-context",
+          "topic": "geometry",
+          "text": {
+            "es": "La puerta de los Alfareros se abría en la cerca que descendía desde Torres Bermejas y separaba el Mauror del Realejo.",
+            "en": "The Potters’ Gate opened in the wall descending from Torres Bermejas and separating Mauror from Realejo."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-aguado-2009",
+              "locator": "Contexto histórico-arqueológico, cerca interior y puertas",
+              "supports": "Fija el sistema defensivo y el ámbito de la puerta sin ofrecer una planta de 1550."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.alfajjarin-girones-1554-context",
+          "topic": "transformation",
+          "text": {
+            "es": "La cercana Casa de los Girones, junto a la muralla y próxima a Bab al-Fajjarin, cambió de propiedad en 1554 después de haber pertenecido a la Inquisición.",
+            "en": "The nearby Casa de los Girones, beside the wall and close to Bab al-Fajjarin, changed ownership in 1554 after having belonged to the Inquisition."
+          },
+          "citations": [
+            {
+              "source_id": "source.alhambra-casa-girones-2018",
+              "locator": "Historia de la casa y adquisición de 1554",
+              "supports": "Aporta un control fechado de transformación del entorno, no una atestación directa del vano."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "attached_to",
+          "target_id": "walls.mauror-realejo-inner",
+          "note": {
+            "es": "La puerta pertenecía a la cerca interior del Mauror y el Realejo.",
+            "en": "The gate belonged to the inner wall of Mauror and Realejo."
+          }
+        },
+        {
+          "relation": "near",
+          "target_id": "religious.santa-cruz-real",
+          "note": {
+            "es": "El convento dominico transformó el entorno de Santo Domingo y Plaza Fortuny.",
+            "en": "The Dominican convent transformed the Santo Domingo and Plaza Fortuny area."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "no_geometry_until_chronology_resolved",
+        "rationale": {
+          "es": "El punto c. 1492 representa el ámbito historiográfico de Plaza Fortuny, no un umbral excavado ni una prueba de que el vano permaneciera abierto en 1550.",
+          "en": "The c. 1492 point represents the historiographical Plaza Fortuny area, not an excavated threshold or proof that the passage remained open in 1550."
+        },
+        "release_condition": {
+          "es": "Localizar una atestación documental o estratigráfica de la puerta en el siglo XVI y separar puerta, cerca y reordenación conventual.",
+          "en": "Locate documentary or stratigraphic evidence for the gate in the sixteenth century and separate gate, wall and convent-related reordering."
+        },
+        "source_refs": [
+          "source.junta-aguado-2009",
+          "source.junta-cuesta-pescado-2023",
+          "source.alhambra-casa-girones-2018"
+        ]
+      }
+    },
+    {
+      "feature_id": "gate.guadix",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "probable",
+        "change_from_1492": "retained",
+        "physical_state": "unknown"
+      },
+      "content": {
+        "es": {
+          "name": "Puerta de Guadix",
+          "function": "Acceso oriental del Albaicín hacia el valle del Darro",
+          "summary": "La Puerta de Guadix probablemente continuaba hacia 1550 como salida oriental del Albaicín, conectando el final del corredor del Darro con los caminos exteriores.",
+          "evidence_note": "La pertenencia al sistema amurallado y la localización general son sólidas, pero no se ha identificado una atestación puntual que describa el vano, su nombre o su estado material dentro de la ventana 1540–1560.",
+          "change_note": "El acceso heredado conservó probablemente su función viaria mientras el borde oriental del Albaicín y el corredor del Darro cambiaban de uso y jerarquía."
+        },
+        "en": {
+          "name": "Guadix Gate",
+          "function": "Eastern Albaicín entrance toward the Darro valley",
+          "summary": "The Guadix Gate probably continued around 1550 as the eastern exit from the Albaicín, linking the end of the Darro corridor with outward routes.",
+          "evidence_note": "Its place in the wall system and general location are well established, but no specific attestation has been identified describing the passage, its name or its material condition within the 1540–1560 window.",
+          "change_note": "The inherited entrance probably retained its route function while the eastern edge of the Albaicín and the Darro corridor changed in use and hierarchy."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.guadix-gate-eastern-location",
+          "topic": "function",
+          "text": {
+            "es": "La puerta se situaba al final del actual Paseo de los Tristes y enlazaba la cerca nazarí del Albaicín con el corredor oriental.",
+            "en": "The gate stood at the end of today’s Paseo de los Tristes and linked the Nasrid Albaicín wall with the eastern corridor."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-albaicin-wall-route",
+              "locator": "Recorrido de la muralla del Albayzín",
+              "supports": "Establece localización y relación funcional, pero no una planta del vano."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.guadix-gate-period-limit",
+          "topic": "interpretation",
+          "text": {
+            "es": "La iconografía tardía del siglo XVI permite contrastar la legibilidad general del borde urbano, pero no convierte una vista panorámica en prueba directa del estado de la puerta en 1550.",
+            "en": "Late-sixteenth-century iconography can test the general legibility of the urban edge but does not turn a panoramic view into direct evidence for the gate’s condition in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-vico-2023",
+              "locator": "Análisis urbano e iconográfico de la Plataforma de Vico",
+              "supports": "Define el valor y los límites de la fuente visual cercana al periodo."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "attached_to",
+          "target_id": "walls.albaicin-north",
+          "note": {
+            "es": "La puerta marcaba el extremo oriental del recinto ampliado del Albaicín.",
+            "en": "The gate marked the eastern end of the enlarged Albaicín enclosure."
+          }
+        },
+        {
+          "relation": "near",
+          "target_id": "water.darro",
+          "note": {
+            "es": "El acceso se situaba junto al corredor del Darro y sus caminos de ribera.",
+            "en": "The entrance stood beside the Darro corridor and its riverside routes."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "no_geometry_until_chronology_resolved",
+        "rationale": {
+          "es": "El punto heredado localiza un cruce moderno de referencia y no una puerta excavada o representada con precisión métrica.",
+          "en": "The inherited point locates a modern reference junction, not an excavated gate or a metrically precise depiction."
+        },
+        "release_condition": {
+          "es": "Encontrar documentación del acceso durante el siglo XVI o evidencia arqueológica del umbral antes de crear una variante c. 1550.",
+          "en": "Find sixteenth-century documentation of the entrance or archaeological evidence of the threshold before creating a c. 1550 variant."
+        },
+        "source_refs": [
+          "source.granada-albaicin-wall-route",
+          "source.ugr-vico-2023"
+        ]
+      }
+    },
+    {
+      "feature_id": "gate.molinos",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "retained",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Puerta de los Molinos",
+          "function": "Salida meridional hacia los molinos del Genil y los caminos de la sierra",
+          "summary": "Hacia 1550 la antigua Puerta de la Loma seguía en pie y era conocida por su relación con los molinos y el camino de Güéjar, manteniendo la salida meridional desde el Realejo alto.",
+          "evidence_note": "La continuidad hasta su demolición en 1833 sostiene su presencia, pero las reconstrucciones discrepan en la posición métrica y no ofrecen una planta segura del recodo en 1550.",
+          "change_note": "El acceso nazarí fue retenido con denominaciones cristianas ligadas a los usos productivos y territoriales que articulaba."
+        },
+        "en": {
+          "name": "Mills Gate",
+          "function": "Southern exit toward the Genil mills and mountain routes",
+          "summary": "Around 1550 the former Gate of the Hill remained standing and was known through its connection with the mills and the road to Güéjar, maintaining the southern exit from upper Realejo.",
+          "evidence_note": "Its survival until demolition in 1833 supports its presence, but reconstructions disagree on the metric position and provide no secure plan of the bent entrance in 1550.",
+          "change_note": "The Nasrid entrance was retained under Christian names tied to the productive and territorial uses it served."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.molinos-gate-survival",
+          "topic": "chronology",
+          "text": {
+            "es": "La Puerta de la Loma, conocida después como Puerta de los Molinos o de Güéjar, sobrevivió hasta su demolición definitiva en 1833.",
+            "en": "The Gate of the Hill, later known as the Mills or Güéjar Gate, survived until its final demolition in 1833."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-hoteles-belen-2020",
+              "locator": "Contexto histórico-arqueológico general",
+              "supports": "La fecha de demolición asegura que la puerta existía en 1550."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.molinos-gate-southern-route",
+          "topic": "function",
+          "text": {
+            "es": "La puerta se integraba en la cerca sur y comunicaba La Loma con el Genil, los molinos y los caminos meridionales.",
+            "en": "The gate formed part of the southern wall and linked La Loma with the Genil, the mills and southern routes."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-aguado-2009",
+              "locator": "Descripción de la cerca sur, Puerta de la Loma y Cuesta de los Molinos",
+              "supports": "Sostiene la función territorial sin fijar el eje exterior completo."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "near",
+          "target_id": "urban.campo-principe",
+          "note": {
+            "es": "La puerta se situaba al sureste del espacio que se consolidó como Campo del Príncipe.",
+            "en": "The gate stood southeast of the space consolidated as Campo del Príncipe."
+          }
+        },
+        {
+          "relation": "routes_toward",
+          "target_id": "route.molinos-sierra-axis",
+          "note": {
+            "es": "El acceso daba paso al corredor de los molinos y la sierra.",
+            "en": "The entrance opened onto the mills and mountain corridor."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "El punto c. 1492 aproxima una confluencia viaria moderna y no distingue la puerta, el recodo ni los lienzos adyacentes.",
+          "en": "The c. 1492 point approximates a modern road junction and does not distinguish the gate, bent passage or adjacent wall sections."
+        },
+        "release_condition": {
+          "es": "Contrastar planos anteriores a 1833, parcelario y evidencia de subsuelo antes de reutilizar el punto para 1550.",
+          "en": "Compare pre-1833 plans, parcels and subsurface evidence before reusing the point for 1550."
+        },
+        "source_refs": [
+          "source.junta-hoteles-belen-2020",
+          "source.junta-aguado-2009"
+        ]
+      }
+    },
+    {
+      "feature_id": "gate.pescado",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "retained",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Puerta del Pescado",
+          "function": "Acceso meridional del Realejo hacia el Genil y los caminos de la costa",
+          "summary": "La Puerta del Pescado seguía activa hacia 1550 como acceso exterior de los barrios meridionales y recibió su nombre cristiano por el tránsito de pescado procedente de la costa.",
+          "evidence_note": "La continuidad material posterior sostiene su presencia, pero el punto actual solo aproxima el ámbito y no representa los tres arcos ni el pasadizo documentados antes de su demolición.",
+          "change_note": "El acceso nazarí fue retenido y renombrado según un flujo comercial cristiano, sin que ello implique que su fábrica permaneciera inalterada."
+        },
+        "en": {
+          "name": "Fish Gate",
+          "function": "Southern Realejo entrance toward the Genil and coastal routes",
+          "summary": "The Fish Gate remained active around 1550 as an outer entrance to the southern districts and received its Christian name from fish traffic arriving from the coast.",
+          "evidence_note": "Later material continuity supports its presence, but the present point only approximates the area and does not represent the three arches and passage documented before demolition.",
+          "change_note": "The Nasrid entrance was retained and renamed after a Christian commercial flow, without implying that its fabric remained unchanged."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.pescado-gate-southern-enclosure",
+          "topic": "function",
+          "text": {
+            "es": "La puerta formaba parte de la cerca exterior que protegía los arrabales de los Alfareros y la Antequeruela y comunicaba con los caminos meridionales.",
+            "en": "The gate formed part of the outer wall protecting the Potters’ suburb and Antequeruela and communicated with southern routes."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-cuesta-pescado-2023",
+              "locator": "Contexto histórico de los arrabales meridionales",
+              "supports": "Establece el sistema, el ámbito y la función del acceso."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.pescado-gate-christian-name",
+          "topic": "transformation",
+          "text": {
+            "es": "La denominación Puerta del Pescado se vinculó al paso de vendedores que entraban desde la costa, mostrando una resignificación cristiana del acceso heredado.",
+            "en": "The name Fish Gate was linked to vendors entering from the coast, showing a Christian re-signification of the inherited entrance."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-aguado-2009",
+              "locator": "Contexto histórico y toponimia de las puertas meridionales",
+              "supports": "Sostiene la continuidad funcional y el cambio de nombre."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "near",
+          "target_id": "religious.santa-cruz-real",
+          "note": {
+            "es": "El acceso se situaba en el corredor meridional próximo al Cuarto Real de Santo Domingo.",
+            "en": "The entrance stood in the southern corridor near the Cuarto Real de Santo Domingo."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "El punto heredado expresa un emplazamiento aproximado junto a la cuesta homónima, no la huella arquitectónica del acceso.",
+          "en": "The inherited point expresses an approximate location beside the namesake slope, not the architectural footprint of the entrance."
+        },
+        "release_condition": {
+          "es": "Cruzar cartografía anterior a la demolición, descripción arquitectónica y controles arqueológicos antes de fijar la variante c. 1550.",
+          "en": "Cross-reference pre-demolition mapping, architectural description and archaeological controls before fixing the c. 1550 variant."
+        },
+        "source_refs": [
+          "source.junta-cuesta-pescado-2023",
+          "source.junta-aguado-2009"
+        ]
+      }
+    },
+    {
+      "feature_id": "walls.alcazaba-qadima-inner",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "altered",
+        "physical_state": "partially_in_use"
+      },
+      "content": {
+        "es": {
+          "name": "Cerca interior de la Alcazaba Qadima",
+          "function": "Recinto zirí heredado, integrado parcialmente en el caserío del Albaicín",
+          "summary": "Hacia 1550 la cerca de la Alcazaba Qadima persistía mediante puertas, torres y lienzos incorporados al tejido doméstico y parroquial, ya sin funcionar como un circuito defensivo íntegro.",
+          "evidence_note": "La arqueología demuestra conservación y reutilización en puntos concretos; la línea completa combina tramos de distinta fecha, supervivencia y precisión y no puede trasladarse uniformemente al corte de 1550.",
+          "change_note": "El antiguo recinto interior perdió unidad militar y fue absorbido por edificios y parcelas, aunque siguió condicionando recorridos y límites locales."
+        },
+        "en": {
+          "name": "Inner wall of the Alcazaba Qadima",
+          "function": "Inherited Zirid enclosure partly incorporated into the Albaicín building fabric",
+          "summary": "Around 1550 the Alcazaba Qadima wall persisted through gates, towers and sections incorporated into domestic and parish fabric, no longer operating as a complete defensive circuit.",
+          "evidence_note": "Archaeology demonstrates survival and reuse at specific points; the complete line combines sections of different dates, survival and precision and cannot be transferred uniformly to the 1550 slice.",
+          "change_note": "The former inner enclosure lost military unity and was absorbed by buildings and parcels while continuing to condition local routes and boundaries."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.qadima-wall-reused-in-buildings",
+          "topic": "transformation",
+          "text": {
+            "es": "En la Placeta de las Escuelas se documentaron un lienzo y un torreón zirí reutilizados por edificaciones posteriores.",
+            "en": "At Placeta de las Escuelas a Zirid wall section and tower were documented as reused by later buildings."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-placeta-escuelas-2011",
+              "locator": "Resultados arqueológicos y análisis de estructuras emergentes",
+              "supports": "Prueba supervivencia material localizada y absorción en el caserío."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.qadima-wall-monaita-segment",
+          "topic": "geometry",
+          "text": {
+            "es": "La investigación en torno a Puerta Monaita documenta fábrica conservada y relaciones estratigráficas del recinto de la Alcazaba Qadima.",
+            "en": "Research around Monaita Gate documents surviving fabric and stratigraphic relationships in the Alcazaba Qadima enclosure."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-monaita-wall-2000",
+              "locator": "Estudio histórico y resultados arqueológicos",
+              "supports": "Aporta controles físicos parciales, no una fecha uniforme para todo el circuito."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "attached_to",
+          "target_id": "gate.monaita",
+          "note": {
+            "es": "Puerta Monaita era uno de los principales accesos conservados del recinto.",
+            "en": "Monaita Gate was one of the enclosure’s principal surviving entrances."
+          }
+        },
+        {
+          "relation": "contained_by",
+          "target_id": "urban.albaicin",
+          "note": {
+            "es": "La antigua cerca había quedado integrada dentro del conjunto urbano del Albaicín.",
+            "en": "The former wall had become integrated within the Albaicín urban fabric."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La línea c. 1492 presenta una hipótesis continua aunque la evidencia de 1550 corresponde a restos, reutilizaciones y desapariciones desiguales.",
+          "en": "The c. 1492 line presents a continuous hypothesis although the 1550 evidence consists of uneven remains, reuse and loss."
+        },
+        "release_condition": {
+          "es": "Dividir el circuito en segmentos con estado material, cronología, evidencia y tolerancia propios antes de crear una línea temporal.",
+          "en": "Divide the circuit into segments with their own material state, chronology, evidence and tolerance before creating a temporal line."
+        },
+        "source_refs": [
+          "source.junta-monaita-wall-2000",
+          "source.junta-placeta-escuelas-2011",
+          "source.granada-pepri-islamic-city"
+        ]
+      }
+    },
+    {
+      "feature_id": "walls.axares-inner",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "probable",
+        "change_from_1492": "altered",
+        "physical_state": "partially_in_use"
+      },
+      "content": {
+        "es": {
+          "name": "Cerca interior de Axares",
+          "function": "Límite heredado del barrio de Axares dentro del Albaicín",
+          "summary": "La cerca de Axares probablemente seguía siendo legible de forma fragmentaria hacia 1550, absorbida por el caserío y subordinada al recinto exterior del Albaicín.",
+          "evidence_note": "Las fuentes permiten reconstruir el barrio y algunos contactos, pero no demuestran que todo el circuito interpretativo permaneciera en pie ni conservase función defensiva en el periodo.",
+          "change_note": "El antiguo límite barrial pasó de defensa urbana a condicionante parcelario y topográfico, con pérdidas y reutilizaciones desiguales."
+        },
+        "en": {
+          "name": "Inner wall of Axares",
+          "function": "Inherited boundary of the Axares district within the Albaicín",
+          "summary": "The Axares wall probably remained fragmentarily legible around 1550, absorbed by the building fabric and subordinate to the outer Albaicín enclosure.",
+          "evidence_note": "Sources allow reconstruction of the district and some contacts but do not show that the entire interpreted circuit remained standing or retained a defensive function in the period.",
+          "change_note": "The former district boundary shifted from urban defence to a parcel and topographic constraint, with uneven loss and reuse."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.axares-wall-medieval-enclosure",
+          "topic": "chronology",
+          "text": {
+            "es": "El barrio de Axares quedó cercado entre la Alcazaba Qadima, la Cuesta del Chapiz, el Darro y la coracha antes de la gran ampliación nazarí.",
+            "en": "The Axares district was enclosed between the Alcazaba Qadima, Cuesta del Chapiz, the Darro and the coracha before the major Nasrid expansion."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-carmen-negro-2005",
+              "locator": "Contexto urbano medieval",
+              "supports": "Establece el sistema heredado cuya supervivencia debe evaluarse por tramos."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.axares-wall-sixteenth-century-limit",
+          "topic": "interpretation",
+          "text": {
+            "es": "La reconstrucción urbana permite reconocer la cerca como límite interior, pero no asignar continuidad material homogénea a todos sus lados en 1550.",
+            "en": "Urban reconstruction allows the wall to be recognised as an inner boundary but does not assign homogeneous material continuity to every side in 1550."
+          },
+          "citations": [
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Memoria urbana, evolución del recinto islámico",
+              "supports": "Sostiene la lectura territorial y obliga a separar hipótesis de fábrica conservada."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "near",
+          "target_id": "walls.alcazaba-qadima-inner",
+          "note": {
+            "es": "La cerca de Axares se adosaba y relacionaba con el recinto anterior de la Alcazaba Qadima.",
+            "en": "The Axares wall adjoined and related to the earlier Alcazaba Qadima enclosure."
+          }
+        },
+        {
+          "relation": "near",
+          "target_id": "water.darro",
+          "note": {
+            "es": "El frente meridional del barrio se organizaba sobre el corredor del Darro.",
+            "en": "The district’s southern front was organised along the Darro corridor."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "no_geometry_until_chronology_resolved",
+        "rationale": {
+          "es": "La línea heredada cierra una envolvente territorial interpretativa y usa referencias modernas donde no existe fábrica continua comprobada.",
+          "en": "The inherited line closes an interpretative territorial envelope and uses modern references where no continuous verified fabric survives."
+        },
+        "release_condition": {
+          "es": "Inventariar por segmentos la evidencia arqueológica y la absorción parcelaria antes de dibujar un estado c. 1550.",
+          "en": "Inventory archaeological evidence and parcel absorption by segment before drawing a c. 1550 state."
+        },
+        "source_refs": [
+          "source.junta-carmen-negro-2005",
+          "source.granada-pepri-islamic-city",
+          "source.ujaen-water-route-2025"
+        ]
+      }
+    },
+    {
+      "feature_id": "walls.mauror-realejo-inner",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "probable",
+        "change_from_1492": "altered",
+        "physical_state": "partially_in_use"
+      },
+      "content": {
+        "es": {
+          "name": "Cerca interior del Mauror y el Realejo",
+          "function": "Límite urbano heredado entre la ciudad anterior, el Mauror y los arrabales meridionales",
+          "summary": "Hacia 1550 la cerca interior entre Torres Bermejas, Alfareros y Santo Domingo persistía probablemente en fragmentos, incorporada a parcelas y edificios de un Realejo ya integrado.",
+          "evidence_note": "La arqueología y la topografía sostienen el corredor general, pero no una línea continua ni un estado material uniforme dentro de la ventana documental.",
+          "change_note": "La cerca perdió su función como borde total de la ciudad y quedó convertida en límite interior, soporte edificatorio y condicionante del viario."
+        },
+        "en": {
+          "name": "Inner wall of Mauror and Realejo",
+          "function": "Inherited urban boundary between the earlier city, Mauror and the southern suburbs",
+          "summary": "Around 1550 the inner wall between Torres Bermejas, the Potters’ Gate and Santo Domingo probably persisted in fragments, incorporated into parcels and buildings of an integrated Realejo.",
+          "evidence_note": "Archaeology and topography support the general corridor but not a continuous line or uniform material state within the documentary window.",
+          "change_note": "The wall lost its role as the city’s overall edge and became an inner boundary, building support and constraint on the street network."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.mauror-inner-wall-course",
+          "topic": "geometry",
+          "text": {
+            "es": "La cerca descendía desde Torres Bermejas hacia el Cuarto Real y abría pasos como Bab al-Fajjarin y Bab Mauror.",
+            "en": "The wall descended from Torres Bermejas toward the Cuarto Real and opened passages including Bab al-Fajjarin and Bab Mauror."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-aguado-2009",
+              "locator": "Contexto histórico-arqueológico de la cerca interior",
+              "supports": "Define el corredor histórico sin fijar cada tramo para 1550."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.mauror-inner-wall-urban-integration",
+          "topic": "transformation",
+          "text": {
+            "es": "La ampliación exterior nazarí dejó esta cerca dentro del recinto urbano, donde la transformación posterior favoreció su absorción y fragmentación.",
+            "en": "The later Nasrid outer expansion left this wall within the urban enclosure, where subsequent transformation encouraged absorption and fragmentation."
+          },
+          "citations": [
+            {
+              "source_id": "source.garrido-alfareros-2024",
+              "locator": "pp. 663–679, configuración del arrabal y sus cercas",
+              "supports": "Explica el cambio de jerarquía del límite y la evolución del entorno artesanal."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "attached_to",
+          "target_id": "gate.alfajjarin",
+          "note": {
+            "es": "Bab al-Fajjarin articulaba uno de los pasos principales de la cerca.",
+            "en": "Bab al-Fajjarin organised one of the wall’s principal passages."
+          }
+        },
+        {
+          "relation": "attached_to",
+          "target_id": "gate.mawrur",
+          "note": {
+            "es": "Bab Mauror conectaba el sector alto con el barrio interior.",
+            "en": "Bab Mauror linked the upper sector with the inner district."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La línea pública es una síntesis del corredor y no distingue restos comprobados, tramos absorbidos y enlaces hipotéticos.",
+          "en": "The public line is a corridor synthesis and does not distinguish verified remains, absorbed sections and hypothetical links."
+        },
+        "release_condition": {
+          "es": "Clasificar cada segmento por supervivencia y fuente, y resolver la cronología de los contactos con Santo Domingo y Torres Bermejas.",
+          "en": "Classify every segment by survival and source, and resolve the chronology of the contacts with Santo Domingo and Torres Bermejas."
+        },
+        "source_refs": [
+          "source.junta-aguado-2009",
+          "source.junta-porteria-santo-domingo-2012",
+          "source.garrido-alfareros-2024"
+        ]
+      }
+    },
+    {
+      "feature_id": "water.acequia-axares",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "retained",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Acequia de Axares o de San Juan",
+          "function": "Canal derivado del Darro para abastecimiento urbano del Albaicín y la ciudad baja",
+          "summary": "La Acequia de Axares, llamada también de San Juan, estaba activa y regulada en 1538, con ramales que abastecían el corredor de San Juan de los Reyes y destinos urbanos heredados.",
+          "evidence_note": "Las ordenanzas aseguran operación, limpieza y destinos, pero no proporcionan un levantamiento métrico continuo ni prueban que todas las acometidas medievales siguieran iguales en 1550.",
+          "change_note": "La infraestructura continuó bajo administración cristiana y una nueva toponimia, mientras cambiaban instituciones receptoras y ramales locales."
+        },
+        "en": {
+          "name": "Axares or San Juan Canal",
+          "function": "Darro-derived canal supplying the Albaicín and lower city",
+          "summary": "The Axares Canal, also called San Juan, was active and regulated in 1538, with branches supplying the San Juan de los Reyes corridor and inherited urban destinations.",
+          "evidence_note": "The ordinances establish operation, cleaning and destinations but provide no continuous metric survey and do not show that every medieval service branch remained unchanged in 1550.",
+          "change_note": "The infrastructure continued under Christian administration and new naming while recipient institutions and local branches changed."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.axares-canal-ordinances-1538",
+          "topic": "chronology",
+          "text": {
+            "es": "Las ordenanzas de 1538 regulaban la limpieza y vigilancia de la Acequia de Axares, identificada también con San Juan.",
+            "en": "The 1538 ordinances regulated cleaning and inspection of the Axares Canal, also identified with San Juan."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Apartado sobre Romayla, Axares y Darrillo",
+              "supports": "Atestigua directamente el funcionamiento del canal próximo al periodo."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.axares-canal-urban-destinations",
+          "topic": "function",
+          "text": {
+            "es": "La red de Axares abastecía el corredor de San Juan y se relacionaba con depósitos y edificios de la ciudad baja.",
+            "en": "The Axares network supplied the San Juan corridor and related to reservoirs and buildings in the lower city."
+          },
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5 y discusión de la Acequia de Axares/San Juan",
+              "supports": "Sostiene el corredor y los destinos generales sin fijar cada ramal."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "retains",
+          "target_id": "water.darro",
+          "note": {
+            "es": "La acequia derivaba del sistema del Darro.",
+            "en": "The canal derived from the Darro system."
+          }
+        },
+        {
+          "relation": "routes_toward",
+          "target_id": "religious.medina-great-mosque",
+          "note": {
+            "es": "La red heredada alcanzaba el centro urbano y su gran aljibe, aunque las acometidas cambiaron tras la conversión.",
+            "en": "The inherited network reached the urban centre and its great cistern, although service branches changed after conversion."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La línea c. 1492 generaliza el cauce principal y una llegada al centro sin separar ramales, tramos cubiertos y acometidas alteradas.",
+          "en": "The c. 1492 line generalises the main channel and an approach to the centre without separating branches, covered sections and altered service connections."
+        },
+        "release_condition": {
+          "es": "Convertir las descripciones de 1538 en controles por segmento y documentar cada bifurcación antes de crear la línea c. 1550.",
+          "en": "Turn the 1538 descriptions into segment controls and document each bifurcation before creating the c. 1550 line."
+        },
+        "source_refs": [
+          "source.ugr-water-ordinances-2022",
+          "source.ujaen-water-route-2025",
+          "source.granada-pepri-islamic-city"
+        ]
+      }
+    },
+    {
+      "feature_id": "water.acequia-realejo",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "secure",
+        "change_from_1492": "altered",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Ramal del Realejo",
+          "function": "Ramal de la Acequia Gorda para abastecimiento, riego y fuerza motriz",
+          "summary": "El ramal del Realejo estaba activo en la primera mitad del siglo XVI, abastecía el barrio y contribuía a mover molinos antes de devolver o distribuir el agua hacia la Vega.",
+          "evidence_note": "La regulación hidráulica demuestra continuidad funcional, pero el ramal reconstruido combina cauce principal, repartidores y salidas cuya posición y fase deben verificarse separadamente.",
+          "change_note": "La red medieval continuó bajo regulación cristiana y se adaptó a conventos, residencias, espacios públicos y usos productivos nuevos o reorganizados."
+        },
+        "en": {
+          "name": "Realejo branch",
+          "function": "Branch of the Acequia Gorda for supply, irrigation and motive power",
+          "summary": "The Realejo branch was active in the first half of the sixteenth century, supplying the district and helping power mills before returning or distributing water toward the Vega.",
+          "evidence_note": "Hydraulic regulation demonstrates functional continuity, but the reconstructed branch combines main channel, distributors and outlets whose position and phase require separate verification.",
+          "change_note": "The medieval network continued under Christian regulation and adapted to convents, residences, public spaces and new or reorganised productive uses."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.realejo-branch-sixteenth-century-network",
+          "topic": "chronology",
+          "text": {
+            "es": "Las ordenanzas de aguas de 1538 describen la red de la Acequia Gorda y sus ramales urbanos durante la primera mitad del siglo XVI.",
+            "en": "The 1538 water ordinances describe the Acequia Gorda network and its urban branches during the first half of the sixteenth century."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Sistema del Genil, Acequia Gorda y ramales del Realejo",
+              "supports": "Atestigua la operación institucional próxima a 1550."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.realejo-branch-mills",
+          "topic": "function",
+          "text": {
+            "es": "El ramal del Realejo abastecía el barrio y se asociaba a una secuencia de molinos antes de continuar hacia la Vega.",
+            "en": "The Realejo branch supplied the district and was associated with a sequence of mills before continuing toward the Vega."
+          },
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Apartado sobre la Acequia Gorda y el ramal del Realejo",
+              "supports": "Establece función y corredor general, no la posición de cada derivación."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "retains",
+          "target_id": "water.acequia-gorda",
+          "note": {
+            "es": "El ramal formaba parte del sistema de la Acequia Gorda derivado del Genil.",
+            "en": "The branch formed part of the Genil-derived Acequia Gorda system."
+          }
+        },
+        {
+          "relation": "routes_toward",
+          "target_id": "urban.campo-principe",
+          "note": {
+            "es": "La distribución atravesaba el Realejo, cuyo nuevo espacio público y edificios alteraron los repartos locales.",
+            "en": "Distribution crossed Realejo, where the new public space and buildings altered local allocation."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La geometría heredada reúne un corredor principal y una salida interpretativa sin distinguir repartidores, molinos y modificaciones del siglo XVI.",
+          "en": "The inherited geometry combines a main corridor and an interpreted outlet without distinguishing distributors, mills and sixteenth-century modifications."
+        },
+        "release_condition": {
+          "es": "Georreferenciar molinos, repartimientos y destinos documentados, asignando fuente y tolerancia a cada tramo antes de reutilizar la red.",
+          "en": "Georeference documented mills, allocations and destinations, assigning source and tolerance to each segment before reusing the network."
+        },
+        "source_refs": [
+          "source.ugr-water-ordinances-2022",
+          "source.ujaen-water-route-2025",
+          "source.junta-aguado-2009"
+        ]
+      }
+    },
+    {
+      "feature_id": "route.molinos-sierra-axis",
+      "cluster": "inherited_systems",
+      "readiness": "ready_for_content_review",
+      "period_assessment": {
+        "presence": "present",
+        "temporal_confidence": "probable",
+        "change_from_1492": "retained",
+        "physical_state": "complete"
+      },
+      "content": {
+        "es": {
+          "name": "Camino de los Molinos y la sierra",
+          "function": "Corredor meridional entre el Realejo, el Genil, los molinos y Güéjar",
+          "summary": "Hacia 1550 el corredor de la Puerta de los Molinos probablemente mantenía el acceso desde el Realejo hacia las instalaciones hidráulicas del Genil, las huertas y los caminos de la sierra.",
+          "evidence_note": "La puerta y la actividad molinera sostienen la continuidad funcional, pero el eje publicado fuera del recinto es interpretativo y no corresponde a una calzada documentada metro a metro.",
+          "change_note": "La ruta heredada mantuvo su papel productivo y territorial mientras cambiaban el Campo del Príncipe, el borde urbano y los puntos de distribución del agua."
+        },
+        "en": {
+          "name": "Mills and mountain route",
+          "function": "Southern corridor between Realejo, the Genil, mills and Güéjar",
+          "summary": "Around 1550 the corridor through the Mills Gate probably maintained access from Realejo to Genil hydraulic installations, orchards and mountain routes.",
+          "evidence_note": "The gate and milling activity support functional continuity, but the published axis outside the enclosure is interpretative and not a road documented metre by metre.",
+          "change_note": "The inherited route retained its productive and territorial role while Campo del Príncipe, the urban edge and water-distribution points changed."
+        }
+      },
+      "claims": [
+        {
+          "claim_id": "claim.molinos-route-gate-continuity",
+          "topic": "chronology",
+          "text": {
+            "es": "La supervivencia de la Puerta de los Molinos hasta 1833 confirma la continuidad del punto de salida, aunque no del trazado exterior exacto.",
+            "en": "The survival of the Mills Gate until 1833 confirms continuity of the exit point, though not of the exact outer route."
+          },
+          "citations": [
+            {
+              "source_id": "source.junta-hoteles-belen-2020",
+              "locator": "Contexto histórico-arqueológico general",
+              "supports": "Aporta un anclaje cronológico y espacial para el corredor."
+            }
+          ]
+        },
+        {
+          "claim_id": "claim.molinos-route-productive-system",
+          "topic": "function",
+          "text": {
+            "es": "La red hidráulica del Genil y el Realejo sostenía molinos y usos agrícolas que daban función al corredor meridional en la primera mitad del siglo XVI.",
+            "en": "The Genil and Realejo water network supported mills and agricultural uses that gave the southern corridor its function in the first half of the sixteenth century."
+          },
+          "citations": [
+            {
+              "source_id": "source.ugr-water-ordinances-2022",
+              "locator": "Sistema del Genil, Acequia Gorda y ramales meridionales",
+              "supports": "Documenta el sistema productivo, no la huella exacta del camino."
+            }
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "relation": "routes_toward",
+          "target_id": "gate.molinos",
+          "note": {
+            "es": "La puerta era el anclaje urbano del camino.",
+            "en": "The gate was the urban anchor of the route."
+          }
+        },
+        {
+          "relation": "near",
+          "target_id": "water.genil",
+          "note": {
+            "es": "El corredor descendía hacia los molinos y huertas alimentados por el Genil.",
+            "en": "The corridor descended toward mills and orchards supplied by the Genil."
+          }
+        }
+      ],
+      "geometry_decision": {
+        "status": "deferred",
+        "action": "retain_existing_only_after_audit",
+        "rationale": {
+          "es": "La línea c. 1492 prolonga una dirección funcional sobre vías modernas y no demuestra anchura, bifurcaciones ni continuidad de firme en 1550.",
+          "en": "The c. 1492 line extends a functional direction over modern roads and does not establish width, branches or surface continuity in 1550."
+        },
+        "release_condition": {
+          "es": "Reunir referencias de caminos, molinos, puentes y propiedades, y fijar controles espaciales antes de crear una variante temporal.",
+          "en": "Gather references to roads, mills, bridges and properties and establish spatial controls before creating a temporal variant."
+        },
+        "source_refs": [
+          "source.junta-hoteles-belen-2020",
+          "source.junta-aguado-2009",
+          "source.ugr-water-ordinances-2022"
+        ]
+      }
+    }
+  ]
+}

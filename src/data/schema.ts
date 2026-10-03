@@ -39,7 +39,7 @@ export const GEOMETRY_METHOD_VALUES = [
   'modern_reference_location',
 ] as const
 
-const featureIdSchema = z
+export const featureIdSchema = z
   .string()
   .min(3)
   .regex(/^[a-z][a-z0-9-]*\.[a-z0-9-]+$/, 'Debe ser un identificador permanente con prefijo.')
@@ -78,7 +78,7 @@ export const geometrySchema = z.discriminatedUnion('type', [
   }),
 ])
 
-const precisionSchema = z.enum(['exact', 'year', 'decade', 'century', 'circa', 'unknown'])
+export const precisionSchema = z.enum(['exact', 'year', 'decade', 'century', 'circa', 'unknown'])
 
 export const citationSchema = z.object({
   source_id: z.string().min(1),

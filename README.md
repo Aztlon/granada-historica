@@ -28,12 +28,61 @@ nombre, estado de conservación y citas.
 
 M7 dispone ya de una implementación de previsualización: una ruta bilingüe de
 cinco paradas entre Bibarrambla y la antigua Mezquita Mayor, enlaces duraderos,
-códigos QR, fichas de lugar y localización puntual procesada en el dispositivo.
+códigos QR, fichas de lugar y localización actualizada en la página y procesada en el dispositivo.
 Permanece oculta de la navegación principal y marcada `noindex` hasta completar
 la revisión histórica e inglesa, la comprobación de campo, la accesibilidad y el
 acuerdo de mantenimiento. Las reconstrucciones visuales y la realidad aumentada
 siguen fuera de este piloto.
 Consulte la [hoja de ruta](docs/ROADMAP.md) y la [especificación](docs/SPEC.md).
+
+El segundo estado temporal ya está acordado: **Granada, c. 1550 — La ciudad
+morisca y renacentista**. Se interpretará mediante una ventana documental
+aproximada de 1540–1560 y mostrará la transformación cristiana e imperial sin
+borrar la continuidad de la ciudad morisca anterior a 1568. La decisión, su
+alcance y las consecuencias para el modelo de datos se documentan en
+[ADR 0002](docs/decisions/0002-second-period-c1550.md). Su investigación e
+implementación pertenecen a M10; no forman parte todavía del conjunto público
+c. 1492.
+
+La preparación de M10 ya cuenta con un
+[inventario de investigación](docs/C1550-RESEARCH.md) validado: cubre los 58
+elementos actuales, registra 23 candidatos nuevos y mantiene todas las
+hipótesis de c. 1550 fuera de la aplicación pública. El
+[diseño de la migración temporal](docs/C1550-ARCHITECTURE.md) separa entidades
+estables, estados por periodo y geometrías auditadas por fecha.
+M10.1 ya reproduce c. 1492 en paralelo como 70 entidades estables, 58 estados
+geográficos y 58 auditorías identificadas por periodo, con pruebas de paridad
+exacta y sin cambiar la aplicación pública.
+M10.2 añade un [paquete GIS privado c. 1550](docs/C1550-GIS.md), ampliado por
+M10.3 a 17 geometrías. El
+[corte vertical de ocho entidades](docs/M10-3-REVIEW.md) ya tiene contenido
+bilingüe, afirmaciones citadas, relaciones y un control de aprobación
+responsable; ninguna geometría se importa en la aplicación pública ni está
+todavía verificada.
+M10.5 reúne ahora 39 geometrías en un
+[candidato interno coherente](docs/M10-5-CANDIDATE.md), clasifica los 78 registros
+prioritarios del inventario y mantiene aplazados los polígonos urbanos y
+demográficos no sustentados. Sus seis revisiones especialistas siguen pendientes.
+Son funciones de revisión que pueden cubrirse dentro del proyecto, no una
+dependencia de socios institucionales; la revisión histórica corresponde al
+historiador responsable del proyecto.
+El primer [tramo adicional de fuentes](docs/M10-5-SOURCE-TRANCHE-1.md)
+desarrolla otras diez entidades con contenido bilingüe y citado sin añadir
+geometrías especulativas. El
+[segundo tramo](docs/M10-5-SOURCE-TRANCHE-2.md) hace lo mismo para diez puertas,
+murallas, sistemas de agua y ejes heredados; el total content-ready asciende a
+20. El [tercer tramo](docs/M10-5-SOURCE-TRANCHE-3.md) incorpora otras diez
+entidades conectadas del Generalife, la Alhambra y la red hidráulica: ya hay 30
+registros con contenido preparado. El
+[cuarto tramo](docs/M10-5-SOURCE-TRANCHE-4.md) completa los diez registros
+prioritarios antes intactos —puertas, cercas interiores, acequias y el eje de
+los Molinos— y eleva el total a 40. La
+[primera ola geométrica de bajo riesgo](docs/M10-5-GEOMETRY-WAVE-1.md) promueve
+16 de esos registros a geometrías privadas `in_review`: seis puntos de sitio,
+cuatro puertas, dos envolventes monumentales y cuatro ejes. La
+[segunda ola controlada](docs/M10-5-GEOMETRY-WAVE-2.md) añade Fajalauza y cinco
+ejes principales de acequia con controles y exclusiones explícitos; 18
+registros content-ready permanecen deliberadamente sin geometría.
 
 El conjunto de datos de trabajo contiene 58 elementos citados y publicables y
 un nomenclátor histórico con 70 entradas. No se presupone que ninguno sea
@@ -93,6 +142,15 @@ Véase:
 - [Especificación del producto](docs/SPEC.md)
 - [Hoja de ruta de implementación](docs/ROADMAP.md)
 - [Decisión sobre licencias](docs/decisions/0001-project-licensing.md)
+- [Decisión sobre Granada c. 1550](docs/decisions/0002-second-period-c1550.md)
+- [Inventario de investigación c. 1550](docs/C1550-RESEARCH.md)
+- [Arquitectura multiperiodo](docs/C1550-ARCHITECTURE.md)
+- [Gobernanza de revisión c. 1550](docs/C1550-REVIEW-GOVERNANCE.md)
+- [Paquete GIS privado c. 1550](docs/C1550-GIS.md)
+- [Candidato interno M10.5](docs/M10-5-CANDIDATE.md)
+- [Primer tramo de fuentes M10.5](docs/M10-5-SOURCE-TRANCHE-1.md)
+- [Segundo tramo de fuentes M10.5](docs/M10-5-SOURCE-TRANCHE-2.md)
+- [Tercer tramo de fuentes M10.5](docs/M10-5-SOURCE-TRANCHE-3.md)
 - [Área de trabajo de datos](data/README.md)
 - [Flujo de trabajo SIG](gis/README.md)
 
@@ -129,6 +187,20 @@ npm run dev
 
 De forma predeterminada, Vite sirve el proyecto en
 `http://localhost:5173/granada-historica/`.
+
+La comparación interna entre 1492 y el candidato M10.5 de c. 1550 está desactivada
+en el modo público, y sus datos privados quedan excluidos de la compilación
+pública. Para abrir o comprobar exclusivamente esa superficie interna:
+
+```sh
+npm run dev:internal
+npm run build:internal
+npm run test:e2e:internal
+```
+
+La salida interna se escribe en `dist-internal/`, incluye `noindex,nofollow` en
+tiempo de ejecución y no debe desplegarse. Consulte
+[docs/M10-4-INTERNAL-COMPARISON.md](docs/M10-4-INTERNAL-COMPARISON.md).
 
 Antes de enviar cambios, ejecute las mismas comprobaciones que utiliza la
 integración continua:

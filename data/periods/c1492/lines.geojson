@@ -1,0 +1,5049 @@
+{
+  "type": "FeatureCollection",
+  "period_id": "c1492",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "water.darro",
+      "properties": {
+        "id": "water.darro",
+        "name": "Río Darro",
+        "historical_name": null,
+        "modern_name": "Río Darro",
+        "aliases": [
+          "Darro"
+        ],
+        "modern_search_terms": [
+          "Carrera del Darro",
+          "Paseo de los Tristes",
+          "Plaza Nueva",
+          "Reyes Católicos",
+          "Acera del Darro",
+          "Puerta Real"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "river",
+        "period": {
+          "from_year": null,
+          "to_year": null,
+          "from_precision": "unknown",
+          "to_precision": "unknown",
+          "note": "Curso natural anterior a la ciudad; se representa por su importancia en la Granada medieval y nazarí."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "later_description"
+        ],
+        "summary": "Eje fluvial de la ciudad histórica y una de las bases de su abastecimiento y paisaje urbano.",
+        "context_1492": "El Darro articulaba el valle entre la Alhambra y el Albaicín. Junto con el Genil y el Beiro, abastecía la ciudad y alimentaba un sistema de acequias e infraestructuras hidráulicas ampliado durante los periodos zirí y nazarí.",
+        "after_1492": "La relación urbana con el río fue transformándose y parte de su recorrido central quedó cubierta. El tramo junto a la Carrera del Darro mantuvo su presencia visible y la conexión entre ambas laderas mediante puentes.",
+        "today": "El río sigue visible entre el Paseo de los Tristes y la Carrera del Darro. Desde Plaza Nueva discurre soterrado bajo Reyes Católicos, Puerta Real y Acera del Darro hasta desembocar en el Genil.",
+        "evidence_note": "El tramo visible sigue el eje DERA. El tramo cubierto utiliza el eje del conducto cartografiado en OpenStreetMap y está contrastado con fuentes municipales y arqueológicas. Es la mejor referencia disponible para el corredor de 1492, pero la bóveda moderna pudo rectificar localmente el lecho.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.dera-hydrology",
+          "source.granada-water-culture",
+          "source.granada-carrera-darro",
+          "source.granada-darro-vault",
+          "source.junta-darro-reyes-catolicos",
+          "source.granada-pepri-islamic-city",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-water-culture",
+            "locator": "Apartado 5.2, «Red hidráulica medieval»",
+            "supports": "Función del Darro en el abastecimiento y relación con la red hidráulica medieval."
+          },
+          {
+            "source_id": "source.granada-carrera-darro",
+            "locator": "Descripción de la Carrera del Darro",
+            "supports": "Curso visible actual, puentes y relación espacial entre la Alhambra y el Albaicín."
+          },
+          {
+            "source_id": "source.granada-darro-vault",
+            "locator": "Apartado «Embovedado del río Darro»",
+            "supports": "Continuidad del cauce cubierto desde Plaza Nueva hasta su desembocadura en el Genil."
+          },
+          {
+            "source_id": "source.junta-darro-reyes-catolicos",
+            "locator": "Resumen y resultados de la intervención",
+            "supports": "Paso del cauce y de la bóveda bajo la alineación de Reyes Católicos."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "probable",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Río Darro",
+          "function": "river",
+          "summary": "El Darro articulaba el valle entre la Alhambra y el Albaicín. Junto con el Genil y el Beiro, abastecía la ciudad y alimentaba un sistema de acequias e infraestructuras hidráulicas ampliado durante los periodos zirí y nazarí.",
+          "evidence_note": "El tramo visible sigue el eje DERA. El tramo cubierto utiliza el eje del conducto cartografiado en OpenStreetMap y está contrastado con fuentes municipales y arqueológicas. Es la mejor referencia disponible para el corredor de 1492, pero la bóveda moderna pudo rectificar localmente el lecho.",
+          "geometry_variant_id": "c1492.water.darro",
+          "citations": [
+            {
+              "source_id": "source.granada-water-culture",
+              "locator": "Apartado 5.2, «Red hidráulica medieval»",
+              "supports": "Función del Darro en el abastecimiento y relación con la red hidráulica medieval."
+            },
+            {
+              "source_id": "source.granada-carrera-darro",
+              "locator": "Descripción de la Carrera del Darro",
+              "supports": "Curso visible actual, puentes y relación espacial entre la Alhambra y el Albaicín."
+            },
+            {
+              "source_id": "source.granada-darro-vault",
+              "locator": "Apartado «Embovedado del río Darro»",
+              "supports": "Continuidad del cauce cubierto desde Plaza Nueva hasta su desembocadura en el Genil."
+            },
+            {
+              "source_id": "source.junta-darro-reyes-catolicos",
+              "locator": "Resumen y resultados de la intervención",
+              "supports": "Paso del cauce y de la bóveda bajo la alineación de Reyes Católicos."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.551999,
+            37.1782832
+          ],
+          [
+            -3.5533966,
+            37.1784179
+          ],
+          [
+            -3.5538969,
+            37.1786851
+          ],
+          [
+            -3.5541821,
+            37.1792803
+          ],
+          [
+            -3.5546546,
+            37.1795632
+          ],
+          [
+            -3.5564348,
+            37.179822
+          ],
+          [
+            -3.5572625,
+            37.1801852
+          ],
+          [
+            -3.5591066,
+            37.1798482
+          ],
+          [
+            -3.5593045,
+            37.1804355
+          ],
+          [
+            -3.5601674,
+            37.1805691
+          ],
+          [
+            -3.5607659,
+            37.1808604
+          ],
+          [
+            -3.561127,
+            37.1808631
+          ],
+          [
+            -3.5620045,
+            37.1803129
+          ],
+          [
+            -3.5626387,
+            37.18045
+          ],
+          [
+            -3.5636913,
+            37.1810264
+          ],
+          [
+            -3.5659735,
+            37.1806347
+          ],
+          [
+            -3.5666482,
+            37.1809227
+          ],
+          [
+            -3.5676113,
+            37.1810015
+          ],
+          [
+            -3.5680004,
+            37.1809207
+          ],
+          [
+            -3.5683881,
+            37.1803037
+          ],
+          [
+            -3.568821,
+            37.1801233
+          ],
+          [
+            -3.5693966,
+            37.1809219
+          ],
+          [
+            -3.5703758,
+            37.1809975
+          ],
+          [
+            -3.5718614,
+            37.181448
+          ],
+          [
+            -3.5731571,
+            37.1813112
+          ],
+          [
+            -3.5739227,
+            37.1809537
+          ],
+          [
+            -3.5745005,
+            37.1809688
+          ],
+          [
+            -3.5756351,
+            37.1806076
+          ],
+          [
+            -3.5764222,
+            37.1808857
+          ],
+          [
+            -3.5779101,
+            37.1806233
+          ],
+          [
+            -3.5804635,
+            37.1809366
+          ],
+          [
+            -3.5810798,
+            37.1806075
+          ],
+          [
+            -3.5817521,
+            37.1807845
+          ],
+          [
+            -3.5830254,
+            37.1807697
+          ],
+          [
+            -3.5836849,
+            37.1805186
+          ],
+          [
+            -3.5844088,
+            37.1809799
+          ],
+          [
+            -3.5849481,
+            37.181104
+          ],
+          [
+            -3.586172,
+            37.1801611
+          ],
+          [
+            -3.5865722,
+            37.1793728
+          ],
+          [
+            -3.587697,
+            37.1793365
+          ],
+          [
+            -3.5894253,
+            37.1786145
+          ],
+          [
+            -3.5906595,
+            37.1785531
+          ],
+          [
+            -3.5914125,
+            37.178261
+          ],
+          [
+            -3.5923349,
+            37.1784844
+          ],
+          [
+            -3.5942273,
+            37.1777871
+          ],
+          [
+            -3.5949134,
+            37.1773625
+          ],
+          [
+            -3.5949065,
+            37.1773663
+          ],
+          [
+            -3.5949955,
+            37.1772863
+          ],
+          [
+            -3.59504,
+            37.1772078
+          ],
+          [
+            -3.5951476,
+            37.1771325
+          ],
+          [
+            -3.5957277,
+            37.1768159
+          ],
+          [
+            -3.5963689,
+            37.1764627
+          ],
+          [
+            -3.5964166,
+            37.1764137
+          ],
+          [
+            -3.5972189,
+            37.175955
+          ],
+          [
+            -3.5973014,
+            37.1759329
+          ],
+          [
+            -3.5980447,
+            37.1754872
+          ],
+          [
+            -3.5981617,
+            37.1754119
+          ],
+          [
+            -3.5982679,
+            37.1753195
+          ],
+          [
+            -3.5984014,
+            37.1751829
+          ],
+          [
+            -3.5989547,
+            37.174368
+          ],
+          [
+            -3.5992442,
+            37.1739583
+          ],
+          [
+            -3.5995154,
+            37.1735965
+          ],
+          [
+            -3.5996568,
+            37.1734359
+          ],
+          [
+            -3.5996674,
+            37.1733409
+          ],
+          [
+            -3.5994246,
+            37.1727763
+          ],
+          [
+            -3.599347,
+            37.1726262
+          ],
+          [
+            -3.5987799,
+            37.1715964
+          ],
+          [
+            -3.5985833,
+            37.1712308
+          ],
+          [
+            -3.5984425,
+            37.171009
+          ],
+          [
+            -3.5979287,
+            37.1702356
+          ],
+          [
+            -3.5969906,
+            37.1691588
+          ],
+          [
+            -3.5967019,
+            37.1687817
+          ],
+          [
+            -3.5966222,
+            37.1685807
+          ],
+          [
+            -3.5965838,
+            37.1683466
+          ],
+          [
+            -3.5965668,
+            37.1682275
+          ],
+          [
+            -3.5965614,
+            37.1681739
+          ],
+          [
+            -3.5965624,
+            37.1681367
+          ],
+          [
+            -3.5965718,
+            37.1681015
+          ],
+          [
+            -3.5965802,
+            37.1680854
+          ],
+          [
+            -3.5965917,
+            37.1680701
+          ],
+          [
+            -3.5966225,
+            37.1680429
+          ],
+          [
+            -3.5966968,
+            37.1680086
+          ],
+          [
+            -3.5966869,
+            37.1679243
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.genil",
+      "properties": {
+        "id": "water.genil",
+        "name": "Río Genil",
+        "historical_name": null,
+        "modern_name": "Río Genil",
+        "aliases": [
+          "Genil"
+        ],
+        "modern_search_terms": [
+          "Paseo del Salón",
+          "Puente Romano",
+          "Violón"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "river",
+        "period": {
+          "from_year": null,
+          "to_year": null,
+          "from_precision": "unknown",
+          "to_precision": "unknown",
+          "note": "Curso natural anterior a la ciudad, incluido por su papel en el paisaje y la red hidráulica histórica."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "historical_cartography",
+          "later_description"
+        ],
+        "summary": "Gran corredor fluvial al sur de la ciudad histórica y referencia del paisaje de la Granada nazarí.",
+        "context_1492": "El Genil delimitaba y organizaba el borde meridional de la ciudad y, junto con el Darro y otros cursos, sostenía sistemas de riego y abastecimiento vinculados a la vega y a los espacios urbanos.",
+        "after_1492": "Las riberas fueron canalizadas y urbanizadas gradualmente, mientras el río mantuvo su papel territorial y su relación con los puentes y paseos del sur de Granada.",
+        "today": "El Genil sigue siendo visible al sur del centro. La línea sigue el eje hidrográfico oficial moderno, simplificado para la escala urbana, y no representa un deslinde hidráulico histórico ni actual.",
+        "evidence_note": "La presencia del río es segura; el eje DERA ofrece una referencia moderna comprobable, aunque los márgenes y el cauce han sido transformados desde 1492.",
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.dera-hydrology",
+          "source.granada-water-culture",
+          "source.granada-pepri-islamic-city"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-water-culture",
+            "locator": "Apartado 5.2, «Red hidráulica medieval»",
+            "supports": "Papel del Genil en el sistema fluvial e hidráulico histórico de Granada."
+          },
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, p. 88",
+            "supports": "Relación de los ríos con la estructura de la ciudad nazarí."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "probable",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Río Genil",
+          "function": "river",
+          "summary": "El Genil delimitaba y organizaba el borde meridional de la ciudad y, junto con el Darro y otros cursos, sostenía sistemas de riego y abastecimiento vinculados a la vega y a los espacios urbanos.",
+          "evidence_note": "La presencia del río es segura; el eje DERA ofrece una referencia moderna comprobable, aunque los márgenes y el cauce han sido transformados desde 1492.",
+          "geometry_variant_id": "c1492.water.genil",
+          "citations": [
+            {
+              "source_id": "source.granada-water-culture",
+              "locator": "Apartado 5.2, «Red hidráulica medieval»",
+              "supports": "Papel del Genil en el sistema fluvial e hidráulico histórico de Granada."
+            },
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Anexo V, Memoria urbana, p. 88",
+              "supports": "Relación de los ríos con la estructura de la ciudad nazarí."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5518556,
+            37.1585642
+          ],
+          [
+            -3.5532352,
+            37.1587631
+          ],
+          [
+            -3.5564956,
+            37.1598675
+          ],
+          [
+            -3.5596392,
+            37.1606843
+          ],
+          [
+            -3.5629167,
+            37.1612623
+          ],
+          [
+            -3.5660098,
+            37.1610403
+          ],
+          [
+            -3.5681795,
+            37.161243
+          ],
+          [
+            -3.5762094,
+            37.1631504
+          ],
+          [
+            -3.5783725,
+            37.1635212
+          ],
+          [
+            -3.5828027,
+            37.1649566
+          ],
+          [
+            -3.5874676,
+            37.1658347
+          ],
+          [
+            -3.5882388,
+            37.1661965
+          ],
+          [
+            -3.5892728,
+            37.16712
+          ],
+          [
+            -3.5915969,
+            37.1686535
+          ],
+          [
+            -3.5932462,
+            37.1691318
+          ],
+          [
+            -3.5945267,
+            37.1689389
+          ],
+          [
+            -3.5965469,
+            37.1679632
+          ],
+          [
+            -3.6043681,
+            37.165255
+          ],
+          [
+            -3.6095079,
+            37.1627634
+          ],
+          [
+            -3.6144331,
+            37.1615555
+          ],
+          [
+            -3.6166504,
+            37.1614056
+          ],
+          [
+            -3.6199185,
+            37.1616731
+          ],
+          [
+            -3.6247865,
+            37.1624784
+          ],
+          [
+            -3.6440298,
+            37.1687539
+          ],
+          [
+            -3.6466418,
+            37.1699525
+          ],
+          [
+            -3.6484887,
+            37.171094
+          ],
+          [
+            -3.6490509,
+            37.1711917
+          ],
+          [
+            -3.652411,
+            37.1727493
+          ],
+          [
+            -3.6533401,
+            37.1730079
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "walls.albaicin-north",
+      "properties": {
+        "id": "walls.albaicin-north",
+        "name": "Cerca septentrional del Albaicín",
+        "historical_name": null,
+        "modern_name": "Murallas del Albaicín",
+        "aliases": [
+          "Cerca de Don Gonzalo",
+          "Muralla del Albaicín"
+        ],
+        "modern_search_terms": [
+          "San Cristóbal",
+          "Fajalauza",
+          "Cuesta de la Alhacaba"
+        ],
+        "category": "walls_gates",
+        "subtype": "defensive_wall",
+        "period": {
+          "from_year": 1200,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "La cerca reúne fases y reparaciones distintas; se representa su función en la ciudad nazarí tardía."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Línea defensiva que cerraba y articulaba los sectores septentrionales del Albaicín.",
+        "context_1492": "La cerca recorría la parte alta de la ladera y conectaba puertas y recintos formados en distintas etapas. Era uno de los bordes más visibles de la expansión urbana nazarí.",
+        "after_1492": "Muchos tramos fueron reparados, transformados o absorbidos por nuevas construcciones. Otros lienzos y torres siguen siendo legibles en el paisaje del Albaicín.",
+        "today": "Se conservan largos sectores entre la Alberzana, San Cristóbal, Fajalauza y San Miguel. La línea sigue esos restos y reconstruye los huecos hasta los accesos históricos; no equivale a un levantamiento arqueológico continuo.",
+        "evidence_note": "Los lienzos conservados proceden de la geometría moderna de OpenStreetMap y se contrastan con la cartografía municipal. Las conexiones desaparecidas se mantienen como aproximadas.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-pepri-islamic-city",
+          "source.granada-albaicin-nasrid-wall",
+          "source.ugr-abbas-defences",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, pp. 88-90 y planos",
+            "supports": "Trazado general de cercas, puertas y organización defensiva del Albaicín."
+          },
+          {
+            "source_id": "source.granada-albaicin-nasrid-wall",
+            "locator": "Descripción de la muralla y del Postigo de San Lorenzo",
+            "supports": "Recorrido de la cerca exterior del Albaicín y conservación del tramo de la Alberzana."
+          },
+          {
+            "source_id": "source.ugr-abbas-defences",
+            "locator": "Capítulos sobre las defensas de Granada",
+            "supports": "Contraste tipológico e histórico del sistema defensivo nazarí."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Cerca septentrional del Albaicín",
+          "function": "defensive_wall",
+          "summary": "La cerca recorría la parte alta de la ladera y conectaba puertas y recintos formados en distintas etapas. Era uno de los bordes más visibles de la expansión urbana nazarí.",
+          "evidence_note": "Los lienzos conservados proceden de la geometría moderna de OpenStreetMap y se contrastan con la cartografía municipal. Las conexiones desaparecidas se mantienen como aproximadas.",
+          "geometry_variant_id": "c1492.walls.albaicin-north",
+          "citations": [
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Anexo V, Memoria urbana, pp. 88-90 y planos",
+              "supports": "Trazado general de cercas, puertas y organización defensiva del Albaicín."
+            },
+            {
+              "source_id": "source.granada-albaicin-nasrid-wall",
+              "locator": "Descripción de la muralla y del Postigo de San Lorenzo",
+              "supports": "Recorrido de la cerca exterior del Albaicín y conservación del tramo de la Alberzana."
+            },
+            {
+              "source_id": "source.ugr-abbas-defences",
+              "locator": "Capítulos sobre las defensas de Granada",
+              "supports": "Contraste tipológico e histórico del sistema defensivo nazarí."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5994918,
+            37.1821936
+          ],
+          [
+            -3.5978093,
+            37.1848455
+          ],
+          [
+            -3.5972537,
+            37.1846439
+          ],
+          [
+            -3.596339,
+            37.1846974
+          ],
+          [
+            -3.5954314,
+            37.1845066
+          ],
+          [
+            -3.5949473,
+            37.1851205
+          ],
+          [
+            -3.5945015,
+            37.1855218
+          ],
+          [
+            -3.5937863,
+            37.185882
+          ],
+          [
+            -3.5931119,
+            37.1859342
+          ],
+          [
+            -3.592966,
+            37.1859777
+          ],
+          [
+            -3.5925442,
+            37.1860617
+          ],
+          [
+            -3.5915528,
+            37.186192
+          ],
+          [
+            -3.5914719,
+            37.1861891
+          ],
+          [
+            -3.5909078,
+            37.1861248
+          ],
+          [
+            -3.5904947,
+            37.1858184
+          ],
+          [
+            -3.5898731,
+            37.1854364
+          ],
+          [
+            -3.5891889,
+            37.1852347
+          ],
+          [
+            -3.5887198,
+            37.1851044
+          ],
+          [
+            -3.5879719,
+            37.1848548
+          ],
+          [
+            -3.5877155,
+            37.1846022
+          ],
+          [
+            -3.5873192,
+            37.183715
+          ],
+          [
+            -3.5872183,
+            37.1826812
+          ],
+          [
+            -3.5872614,
+            37.1816785
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "walls.medina-lower",
+      "properties": {
+        "id": "walls.medina-lower",
+        "name": "Cerca exterior de la ciudad baja",
+        "historical_name": null,
+        "modern_name": null,
+        "aliases": [
+          "Muralla de la medina",
+          "Cerca de Madinat Garnata",
+          "Cerca Sur",
+          "Cerca de los arrabales meridionales"
+        ],
+        "modern_search_terms": [
+          "Puerta de Elvira",
+          "Bib-Rambla",
+          "Centro",
+          "Cuesta del Pescado",
+          "Calle Solares",
+          "Vistillas de los Ángeles",
+          "Cuesta Escoriaza",
+          "Cerro de los Mártires"
+        ],
+        "category": "walls_gates",
+        "subtype": "defensive_wall",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "El frente occidental reúne fases anteriores; la prolongación meridional que encerró al-Fajjarin y al-Nayd se completó entre finales del siglo XIII y mediados del XIV."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "historical_cartography",
+          "documentary",
+          "parcel_morphology",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Perímetro exterior tardonazarí de la ciudad baja, prolongado para encerrar los arrabales de al-Fajjarin y al-Nayd.",
+        "context_1492": "La cerca descendía desde la Puerta de Elvira por el frente de Poniente y, desde Cuesta de Aixa y el Cuarto Real, envolvía los arrabales meridionales por Cuesta del Pescado, Solares y Vistillas. Pasaba por la Puerta de la Loma o de los Molinos y ascendía por el Cerro de Ahabul hacia la muralla de la Alhambra.",
+        "after_1492": "La expansión urbana, las reformas viarias y la pérdida de función defensiva provocaron la demolición o integración de muchos tramos en edificios posteriores.",
+        "today": "La mayor parte del recorrido desapareció o quedó bajo el caserío. El mapa enlaza el frente de Poniente con los anclajes de Cuarto Real, Cuesta del Pescado, Solares, Vistillas, la confluencia de Escoriaza y la subida de Los Mártires; no representa fábrica visible de forma continua.",
+        "evidence_note": "Puerta de Elvira, Bibalmazán, Mariana Pineda, Cuarto Real y restos próximos al Paseo de la Bomba ofrecen anclajes desiguales. El tramo Solares–Vistillas–Puerta de la Loma y la subida al Cerro de Ahabul se reconstruyen por documentos, topografía y trazados publicados, por lo que permanecen aproximados.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-pepri-islamic-city",
+          "source.granada-centre-plan",
+          "source.junta-western-wall-2006",
+          "source.junta-gran-capitan-2015",
+          "source.granada-elvira-gate",
+          "source.alhambra-bib-rambla-gate",
+          "source.ugr-abbas-defences",
+          "source.junta-aguado-2009",
+          "source.junta-hoteles-belen-2020",
+          "source.junta-porteria-santo-domingo-2012",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, p. 88 y cartografía asociada",
+            "supports": "Cercas y accesos de la medina en la lectura de conjunto de la ciudad islámica."
+          },
+          {
+            "source_id": "source.granada-elvira-gate",
+            "locator": "Ficha 22",
+            "supports": "Encuentro de la muralla con la Puerta de Elvira y conexiones defensivas."
+          },
+          {
+            "source_id": "source.junta-western-wall-2006",
+            "locator": "pp. 1830-1831, descripción de la cerca de Poniente",
+            "supports": "Secuencia del recorrido desde Puerta Elvira por Boquerón, Universidad, Salamanca, Campillo, Santo Domingo y Realejo hasta Torres Bermejas."
+          },
+          {
+            "source_id": "source.junta-gran-capitan-2015",
+            "locator": "p. 2, valoración histórica y arqueológica",
+            "supports": "Localización aproximada de las puertas de las Cuatro Fuentes, del Molino y de Bibalmazán."
+          },
+          {
+            "source_id": "source.alhambra-bib-rambla-gate",
+            "locator": "Descripción histórica",
+            "supports": "Posición de Bab al-Ramla en el lienzo de la medina baja."
+          },
+          {
+            "source_id": "source.junta-aguado-2009",
+            "locator": "Contexto histórico-arqueológico y figura 1",
+            "supports": "Distingue la cerca interior de la cerca Sur exterior y describe el recorrido Cuesta de Aixa–Cuarto Real–Solares–Vistillas–Puerta de la Loma–Cerro de Ahabul–Alhambra."
+          },
+          {
+            "source_id": "source.junta-hoteles-belen-2020",
+            "locator": "Contexto histórico-arqueológico general",
+            "supports": "Confirma el borde del escarpe, el paso junto al Convento de los Ángeles y la aproximación a Vistillas y Puerta de los Molinos."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Cerca exterior de la ciudad baja",
+          "function": "defensive_wall",
+          "summary": "La cerca descendía desde la Puerta de Elvira por el frente de Poniente y, desde Cuesta de Aixa y el Cuarto Real, envolvía los arrabales meridionales por Cuesta del Pescado, Solares y Vistillas. Pasaba por la Puerta de la Loma o de los Molinos y ascendía por el Cerro de Ahabul hacia la muralla de la Alhambra.",
+          "evidence_note": "Puerta de Elvira, Bibalmazán, Mariana Pineda, Cuarto Real y restos próximos al Paseo de la Bomba ofrecen anclajes desiguales. El tramo Solares–Vistillas–Puerta de la Loma y la subida al Cerro de Ahabul se reconstruyen por documentos, topografía y trazados publicados, por lo que permanecen aproximados.",
+          "geometry_variant_id": "c1492.walls.medina-lower",
+          "citations": [
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Anexo V, Memoria urbana, p. 88 y cartografía asociada",
+              "supports": "Cercas y accesos de la medina en la lectura de conjunto de la ciudad islámica."
+            },
+            {
+              "source_id": "source.granada-elvira-gate",
+              "locator": "Ficha 22",
+              "supports": "Encuentro de la muralla con la Puerta de Elvira y conexiones defensivas."
+            },
+            {
+              "source_id": "source.junta-western-wall-2006",
+              "locator": "pp. 1830-1831, descripción de la cerca de Poniente",
+              "supports": "Secuencia del recorrido desde Puerta Elvira por Boquerón, Universidad, Salamanca, Campillo, Santo Domingo y Realejo hasta Torres Bermejas."
+            },
+            {
+              "source_id": "source.junta-gran-capitan-2015",
+              "locator": "p. 2, valoración histórica y arqueológica",
+              "supports": "Localización aproximada de las puertas de las Cuatro Fuentes, del Molino y de Bibalmazán."
+            },
+            {
+              "source_id": "source.alhambra-bib-rambla-gate",
+              "locator": "Descripción histórica",
+              "supports": "Posición de Bab al-Ramla en el lienzo de la medina baja."
+            },
+            {
+              "source_id": "source.junta-aguado-2009",
+              "locator": "Contexto histórico-arqueológico y figura 1",
+              "supports": "Distingue la cerca interior de la cerca Sur exterior y describe el recorrido Cuesta de Aixa–Cuarto Real–Solares–Vistillas–Puerta de la Loma–Cerro de Ahabul–Alhambra."
+            },
+            {
+              "source_id": "source.junta-hoteles-belen-2020",
+              "locator": "Contexto histórico-arqueológico general",
+              "supports": "Confirma el borde del escarpe, el paso junto al Convento de los Ángeles y la aproximación a Vistillas y Puerta de los Molinos."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5994918,
+            37.1821936
+          ],
+          [
+            -3.6001521,
+            37.1822519
+          ],
+          [
+            -3.6005481,
+            37.1819064
+          ],
+          [
+            -3.6006899,
+            37.1817828
+          ],
+          [
+            -3.6007874,
+            37.1817066
+          ],
+          [
+            -3.6009366,
+            37.1815775
+          ],
+          [
+            -3.6011053,
+            37.1814234
+          ],
+          [
+            -3.6011493,
+            37.181385
+          ],
+          [
+            -3.6011086,
+            37.1813649
+          ],
+          [
+            -3.6010755,
+            37.1813485
+          ],
+          [
+            -3.6009324,
+            37.1812295
+          ],
+          [
+            -3.6006563,
+            37.180978
+          ],
+          [
+            -3.6006345,
+            37.1809511
+          ],
+          [
+            -3.6006231,
+            37.1809308
+          ],
+          [
+            -3.6004758,
+            37.1806624
+          ],
+          [
+            -3.6004628,
+            37.1805931
+          ],
+          [
+            -3.6005746,
+            37.1805774
+          ],
+          [
+            -3.6005985,
+            37.180524
+          ],
+          [
+            -3.600982,
+            37.1802819
+          ],
+          [
+            -3.6011014,
+            37.1803856
+          ],
+          [
+            -3.6013084,
+            37.1805458
+          ],
+          [
+            -3.6017334,
+            37.1785613
+          ],
+          [
+            -3.601775,
+            37.1780521
+          ],
+          [
+            -3.6017812,
+            37.1775243
+          ],
+          [
+            -3.6012183,
+            37.1762951
+          ],
+          [
+            -3.599744,
+            37.1746364
+          ],
+          [
+            -3.5996842,
+            37.1745626
+          ],
+          [
+            -3.599474,
+            37.1743273
+          ],
+          [
+            -3.5992923,
+            37.1741297
+          ],
+          [
+            -3.5992398,
+            37.1740862
+          ],
+          [
+            -3.5980542,
+            37.1721727
+          ],
+          [
+            -3.5971375,
+            37.1722659
+          ],
+          [
+            -3.5949269,
+            37.171666
+          ],
+          [
+            -3.5938441,
+            37.1706222
+          ],
+          [
+            -3.5937585,
+            37.1705355
+          ],
+          [
+            -3.59295,
+            37.1703
+          ],
+          [
+            -3.59195,
+            37.16995
+          ],
+          [
+            -3.59085,
+            37.16965
+          ],
+          [
+            -3.58975,
+            37.16935
+          ],
+          [
+            -3.588662,
+            37.169046
+          ],
+          [
+            -3.58815,
+            37.16885
+          ],
+          [
+            -3.5877,
+            37.16955
+          ],
+          [
+            -3.58725,
+            37.17035
+          ],
+          [
+            -3.58695,
+            37.1713
+          ],
+          [
+            -3.58675,
+            37.17225
+          ],
+          [
+            -3.58665,
+            37.1733
+          ],
+          [
+            -3.5867888,
+            37.1744557
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "walls.mauror-realejo-inner",
+      "properties": {
+        "id": "walls.mauror-realejo-inner",
+        "name": "Cerca interior del Mauror y el Realejo",
+        "historical_name": null,
+        "modern_name": null,
+        "aliases": [
+          "Muralla interior del Mauror",
+          "Cerca de Torres Bermejas a los Alfareros"
+        ],
+        "modern_search_terms": [
+          "Cuarto Real de Santo Domingo",
+          "Plaza Fortuny",
+          "Placeta de la Puerta del Sol",
+          "Torres Bermejas"
+        ],
+        "category": "walls_gates",
+        "subtype": "defensive_wall",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Cerca anterior a la ampliación nazarí exterior; siguió estructurando los pasos entre el núcleo urbano y los arrabales incorporados."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "historical_cartography",
+          "parcel_morphology",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Corredor defensivo interior desde Campos y Santo Domingo a las puertas de Alfareros y Mawrur y Torres Bermejas.",
+        "context_1492": "Tras quedar al-Fajjarin y al-Nayd dentro del perímetro exterior, esta cerca ya no era el límite total de la ciudad. Sus puertas seguían organizando la comunicación entre la medina anterior, el Mauror y los arrabales meridionales.",
+        "after_1492": "La pérdida de función defensiva, la integración en el caserío y las reformas del Realejo fragmentaron o borraron gran parte de su recorrido.",
+        "today": "Corredor aproximado Campos–Santo Domingo–Plaza Fortuny–Puerta del Sol–Torres Bermejas, no trazado de fábrica conservada.",
+        "evidence_note": "Se corrige el tramo casi vertical anterior: desde Bab al-Fajjarin la cerca continuaba al suroeste junto a Santo Domingo, hacia Campos–Cuesta del Progreso. Garrido López (2024, p. 663 y figs. 5–6) y Cuesta del Realejo 26 respaldan el corredor, no cada vértice. No es la cerca exterior tardonazarí.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.garrido-alfareros-2024",
+          "source.junta-cuesta-realejo-2004",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.garrido-alfareros-2024",
+            "locator": "pp. 663–679, figuras 1, 5 y 6",
+            "supports": "Situación del arrabal, cerca occidental y cronología de alfares; límite con al-Nayd no identificado."
+          },
+          {
+            "source_id": "source.junta-cuesta-realejo-2004",
+            "locator": "pp. 470–472: contexto histórico",
+            "supports": "Alfareros en Realejo Alto; puertas, Santo Domingo, Santiago y Cuarto Real."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Cerca interior del Mauror y el Realejo",
+          "function": "defensive_wall",
+          "summary": "Tras quedar al-Fajjarin y al-Nayd dentro del perímetro exterior, esta cerca ya no era el límite total de la ciudad. Sus puertas seguían organizando la comunicación entre la medina anterior, el Mauror y los arrabales meridionales.",
+          "evidence_note": "Se corrige el tramo casi vertical anterior: desde Bab al-Fajjarin la cerca continuaba al suroeste junto a Santo Domingo, hacia Campos–Cuesta del Progreso. Garrido López (2024, p. 663 y figs. 5–6) y Cuesta del Realejo 26 respaldan el corredor, no cada vértice. No es la cerca exterior tardonazarí.",
+          "geometry_variant_id": "c1492.walls.mauror-realejo-inner",
+          "citations": [
+            {
+              "source_id": "source.garrido-alfareros-2024",
+              "locator": "pp. 663–679, figuras 1, 5 y 6",
+              "supports": "Situación del arrabal, cerca occidental y cronología de alfares; límite con al-Nayd no identificado."
+            },
+            {
+              "source_id": "source.junta-cuesta-realejo-2004",
+              "locator": "pp. 470–472: contexto histórico",
+              "supports": "Alfareros en Realejo Alto; puertas, Santo Domingo, Santiago y Cuarto Real."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5961247,
+            37.1723578
+          ],
+          [
+            -3.59584,
+            37.1726
+          ],
+          [
+            -3.59551,
+            37.1728
+          ],
+          [
+            -3.5952,
+            37.1731
+          ],
+          [
+            -3.59491,
+            37.17344
+          ],
+          [
+            -3.59449,
+            37.17375
+          ],
+          [
+            -3.59446,
+            37.1744
+          ],
+          [
+            -3.59448,
+            37.17512
+          ],
+          [
+            -3.5934157,
+            37.1754807
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "walls.alhambra-perimeter",
+      "properties": {
+        "id": "walls.alhambra-perimeter",
+        "name": "Muralla de la Alhambra",
+        "historical_name": null,
+        "modern_name": "Recinto amurallado de la Alhambra",
+        "aliases": [
+          "Cerca de la Alhambra"
+        ],
+        "modern_search_terms": [
+          "Alcazaba",
+          "Torres de la Alhambra",
+          "Camino de Ronda"
+        ],
+        "category": "walls_gates",
+        "subtype": "defensive_wall",
+        "period": {
+          "from_year": 1238,
+          "to_year": null,
+          "from_precision": "year",
+          "to_precision": "unknown",
+          "note": "El recinto se formó y transformó durante los siglos nazaríes y recibió intervenciones posteriores."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary",
+          "historical_cartography"
+        ],
+        "summary": "Perímetro defensivo de la ciudad palatina, reforzado por torres, camino de ronda y accesos en recodo.",
+        "context_1492": "La muralla separaba y protegía la Alcazaba, los palacios y la medina de la Alhambra. Cuatro grandes puertas exteriores controlaban la relación con Granada y el Generalife.",
+        "after_1492": "El recinto mantuvo funciones militares y palatinas, con reparaciones, demoliciones parciales y restauraciones que modificaron algunos puntos sin eliminar su lectura general.",
+        "today": "Gran parte de la muralla y sus torres se conserva dentro del Conjunto Monumental. La línea sigue la fábrica exterior cartografiada, simplificada a tres metros para la escala del mapa, y no sustituye una planta arquitectónica.",
+        "evidence_note": "El perímetro exterior se reconoce en la fábrica conservada y en ortofoto. El trazado procede de la línea de muralla de OpenStreetMap contrastada con PNOA y con la guía del Patronato; no incluye recintos interiores ni pretende separar fases constructivas.",
+        "geometry_method": "surviving_footprint",
+        "geometry_source_refs": [
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022",
+          "source.alhambra-fortified-city-guide",
+          "source.alhambra-gates",
+          "source.alhambra-urban-structure"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-fortified-city-guide",
+            "locator": "pp. 15-35",
+            "supports": "Muralla, torres, camino de ronda, puertas y estructura interior de la ciudad palatina."
+          },
+          {
+            "source_id": "source.alhambra-gates",
+            "locator": "Descripción de los cuatro accesos principales",
+            "supports": "Relación entre el perímetro y las puertas de Justicia, Siete Suelos, Armas y Arrabal."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "probable",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Muralla de la Alhambra",
+          "function": "defensive_wall",
+          "summary": "La muralla separaba y protegía la Alcazaba, los palacios y la medina de la Alhambra. Cuatro grandes puertas exteriores controlaban la relación con Granada y el Generalife.",
+          "evidence_note": "El perímetro exterior se reconoce en la fábrica conservada y en ortofoto. El trazado procede de la línea de muralla de OpenStreetMap contrastada con PNOA y con la guía del Patronato; no incluye recintos interiores ni pretende separar fases constructivas.",
+          "geometry_variant_id": "c1492.walls.alhambra-perimeter",
+          "citations": [
+            {
+              "source_id": "source.alhambra-fortified-city-guide",
+              "locator": "pp. 15-35",
+              "supports": "Muralla, torres, camino de ronda, puertas y estructura interior de la ciudad palatina."
+            },
+            {
+              "source_id": "source.alhambra-gates",
+              "locator": "Descripción de los cuatro accesos principales",
+              "supports": "Relación entre el perímetro y las puertas de Justicia, Siete Suelos, Armas y Arrabal."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5904008,
+            37.1762034
+          ],
+          [
+            -3.5904632,
+            37.1760845
+          ],
+          [
+            -3.5903181,
+            37.1760362
+          ],
+          [
+            -3.5902421,
+            37.1761837
+          ],
+          [
+            -3.5898379,
+            37.1760016
+          ],
+          [
+            -3.5898207,
+            37.1760299
+          ],
+          [
+            -3.5893598,
+            37.1759021
+          ],
+          [
+            -3.5888185,
+            37.175696
+          ],
+          [
+            -3.58824,
+            37.1753493
+          ],
+          [
+            -3.5884215,
+            37.1751752
+          ],
+          [
+            -3.588307,
+            37.175092
+          ],
+          [
+            -3.588113,
+            37.1752738
+          ],
+          [
+            -3.5877169,
+            37.175031
+          ],
+          [
+            -3.587757,
+            37.1749793
+          ],
+          [
+            -3.5876955,
+            37.174949
+          ],
+          [
+            -3.5876555,
+            37.1750008
+          ],
+          [
+            -3.587296,
+            37.1748742
+          ],
+          [
+            -3.5873264,
+            37.1748148
+          ],
+          [
+            -3.5872563,
+            37.1747902
+          ],
+          [
+            -3.5872203,
+            37.1748496
+          ],
+          [
+            -3.5868464,
+            37.1747795
+          ],
+          [
+            -3.5868569,
+            37.1745239
+          ],
+          [
+            -3.5867888,
+            37.1744557
+          ],
+          [
+            -3.5866438,
+            37.1744889
+          ],
+          [
+            -3.5866362,
+            37.174769
+          ],
+          [
+            -3.5860332,
+            37.1747367
+          ],
+          [
+            -3.5860382,
+            37.1746621
+          ],
+          [
+            -3.5859778,
+            37.1746595
+          ],
+          [
+            -3.5859727,
+            37.1747341
+          ],
+          [
+            -3.5856612,
+            37.1747092
+          ],
+          [
+            -3.5856229,
+            37.1746328
+          ],
+          [
+            -3.5855575,
+            37.1746537
+          ],
+          [
+            -3.5855962,
+            37.174731
+          ],
+          [
+            -3.5853783,
+            37.1748143
+          ],
+          [
+            -3.5851333,
+            37.1747984
+          ],
+          [
+            -3.5851283,
+            37.1748943
+          ],
+          [
+            -3.5851749,
+            37.1749141
+          ],
+          [
+            -3.5851523,
+            37.175106
+          ],
+          [
+            -3.5851054,
+            37.1752708
+          ],
+          [
+            -3.5850124,
+            37.1752835
+          ],
+          [
+            -3.5850174,
+            37.1753266
+          ],
+          [
+            -3.5851426,
+            37.1753323
+          ],
+          [
+            -3.5857955,
+            37.1756592
+          ],
+          [
+            -3.585736,
+            37.1757398
+          ],
+          [
+            -3.5858321,
+            37.1757848
+          ],
+          [
+            -3.5858867,
+            37.1757109
+          ],
+          [
+            -3.5860817,
+            37.1758411
+          ],
+          [
+            -3.5863404,
+            37.1761548
+          ],
+          [
+            -3.5862042,
+            37.1762143
+          ],
+          [
+            -3.5862482,
+            37.1762782
+          ],
+          [
+            -3.5863844,
+            37.1762187
+          ],
+          [
+            -3.586602,
+            37.1763751
+          ],
+          [
+            -3.5867935,
+            37.1766103
+          ],
+          [
+            -3.5867189,
+            37.1766663
+          ],
+          [
+            -3.5867603,
+            37.1767014
+          ],
+          [
+            -3.586835,
+            37.1766454
+          ],
+          [
+            -3.5872402,
+            37.1768709
+          ],
+          [
+            -3.5871387,
+            37.176937
+          ],
+          [
+            -3.5871925,
+            37.1770251
+          ],
+          [
+            -3.5871071,
+            37.1770715
+          ],
+          [
+            -3.5871513,
+            37.1771175
+          ],
+          [
+            -3.5870855,
+            37.1771584
+          ],
+          [
+            -3.5871434,
+            37.1772187
+          ],
+          [
+            -3.587341,
+            37.1771162
+          ],
+          [
+            -3.5874662,
+            37.1772301
+          ],
+          [
+            -3.5875589,
+            37.1771667
+          ],
+          [
+            -3.5879109,
+            37.1771306
+          ],
+          [
+            -3.5882113,
+            37.177264
+          ],
+          [
+            -3.5884071,
+            37.1773826
+          ],
+          [
+            -3.5884087,
+            37.1774272
+          ],
+          [
+            -3.5884797,
+            37.1774256
+          ],
+          [
+            -3.5884806,
+            37.1774789
+          ],
+          [
+            -3.5885558,
+            37.177478
+          ],
+          [
+            -3.5885548,
+            37.1774248
+          ],
+          [
+            -3.5888708,
+            37.1774184
+          ],
+          [
+            -3.589209,
+            37.1776591
+          ],
+          [
+            -3.5892664,
+            37.1776483
+          ],
+          [
+            -3.5892533,
+            37.1776041
+          ],
+          [
+            -3.5895935,
+            37.1775553
+          ],
+          [
+            -3.5895922,
+            37.1776325
+          ],
+          [
+            -3.5897694,
+            37.1776344
+          ],
+          [
+            -3.5897718,
+            37.1774932
+          ],
+          [
+            -3.5901561,
+            37.1775157
+          ],
+          [
+            -3.5901551,
+            37.177547
+          ],
+          [
+            -3.5905371,
+            37.1775102
+          ],
+          [
+            -3.5905348,
+            37.1775486
+          ],
+          [
+            -3.5908728,
+            37.1775293
+          ],
+          [
+            -3.5910547,
+            37.1775787
+          ],
+          [
+            -3.5913596,
+            37.1775878
+          ],
+          [
+            -3.5918529,
+            37.1773218
+          ],
+          [
+            -3.5919636,
+            37.1773102
+          ],
+          [
+            -3.5919805,
+            37.1773929
+          ],
+          [
+            -3.59209,
+            37.1773788
+          ],
+          [
+            -3.5920724,
+            37.1772921
+          ],
+          [
+            -3.5925184,
+            37.1772352
+          ],
+          [
+            -3.5929544,
+            37.1771175
+          ],
+          [
+            -3.5929711,
+            37.1771469
+          ],
+          [
+            -3.593067,
+            37.1770697
+          ],
+          [
+            -3.5930402,
+            37.176965
+          ],
+          [
+            -3.5927612,
+            37.1767876
+          ],
+          [
+            -3.5927532,
+            37.1768282
+          ],
+          [
+            -3.592331,
+            37.1768173
+          ],
+          [
+            -3.5923204,
+            37.1767407
+          ],
+          [
+            -3.5921224,
+            37.1767265
+          ],
+          [
+            -3.5921146,
+            37.1768227
+          ],
+          [
+            -3.5912123,
+            37.1767793
+          ],
+          [
+            -3.5909558,
+            37.1765922
+          ],
+          [
+            -3.5910053,
+            37.1765267
+          ],
+          [
+            -3.590914,
+            37.1763735
+          ],
+          [
+            -3.5904008,
+            37.1762034
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route.elvira-axis",
+      "properties": {
+        "id": "route.elvira-axis",
+        "name": "Eje de Elvira",
+        "historical_name": null,
+        "modern_name": "Calle Elvira",
+        "aliases": [
+          "Calle de Elvira"
+        ],
+        "modern_search_terms": [
+          "Puerta de Elvira",
+          "Plaza Nueva",
+          "Calle Elvira"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_route",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "El eje tiene continuidad histórica, aunque su anchura, rasante y encuentros han cambiado."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "historical_cartography",
+          "parcel_morphology",
+          "toponymy",
+          "documentary"
+        ],
+        "summary": "Eje principal de la medina que comunicaba el centro urbano con la Puerta de Elvira.",
+        "context_1492": "La vía articulaba el tramo septentrional de la medina y conducía hacia uno de sus accesos principales. A ella se conectaba una red jerarquizada de calles menores y adarves.",
+        "after_1492": "La calle conservó su función urbana, aunque las aperturas de plazas y nuevas vías alteraron sus extremos y su relación con la antigua cerca.",
+        "today": "La calle Elvira mantiene buena parte del corredor histórico entre Plaza Nueva y la puerta. La línea representa el eje general y no una anchura de calle medieval.",
+        "evidence_note": "La continuidad del corredor está respaldada por la cartografía y la morfología urbana. El recorrido se generaliza sobre la calle actual y se clasifica como probable.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.granada-pepri-islamic-city",
+          "source.granada-elvira-gate",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Anexo V, Memoria urbana, pp. 88-90",
+            "supports": "Función de Elvira como eje viario principal y jerarquía de la red urbana."
+          },
+          {
+            "source_id": "source.granada-elvira-gate",
+            "locator": "Ficha 22",
+            "supports": "Conexión histórica de la puerta fortificada con la calle Elvira."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "probable",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Eje de Elvira",
+          "function": "historical_route",
+          "summary": "La vía articulaba el tramo septentrional de la medina y conducía hacia uno de sus accesos principales. A ella se conectaba una red jerarquizada de calles menores y adarves.",
+          "evidence_note": "La continuidad del corredor está respaldada por la cartografía y la morfología urbana. El recorrido se generaliza sobre la calle actual y se clasifica como probable.",
+          "geometry_variant_id": "c1492.route.elvira-axis",
+          "citations": [
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Anexo V, Memoria urbana, pp. 88-90",
+              "supports": "Función de Elvira como eje viario principal y jerarquía de la red urbana."
+            },
+            {
+              "source_id": "source.granada-elvira-gate",
+              "locator": "Ficha 22",
+              "supports": "Conexión histórica de la puerta fortificada con la calle Elvira."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5994918,
+            37.1821936
+          ],
+          [
+            -3.5995996,
+            37.182147
+          ],
+          [
+            -3.59941,
+            37.1821407
+          ],
+          [
+            -3.5993467,
+            37.1819488
+          ],
+          [
+            -3.5992357,
+            37.1818093
+          ],
+          [
+            -3.5990716,
+            37.1812834
+          ],
+          [
+            -3.5990197,
+            37.180923
+          ],
+          [
+            -3.5990671,
+            37.1803921
+          ],
+          [
+            -3.5989922,
+            37.1800447
+          ],
+          [
+            -3.5987828,
+            37.17949
+          ],
+          [
+            -3.5985535,
+            37.1789831
+          ],
+          [
+            -3.5982961,
+            37.1786549
+          ],
+          [
+            -3.5981206,
+            37.1784702
+          ],
+          [
+            -3.5979548,
+            37.1783085
+          ],
+          [
+            -3.597801,
+            37.1780336
+          ],
+          [
+            -3.5976638,
+            37.1777342
+          ],
+          [
+            -3.5974702,
+            37.177535
+          ],
+          [
+            -3.5972524,
+            37.1773824
+          ],
+          [
+            -3.5970126,
+            37.177205
+          ],
+          [
+            -3.5967634,
+            37.1769489
+          ],
+          [
+            -3.5965861,
+            37.1767225
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route.alhambra-arms-access",
+      "properties": {
+        "id": "route.alhambra-arms-access",
+        "name": "Acceso urbano a la Puerta de las Armas",
+        "historical_name": null,
+        "modern_name": null,
+        "aliases": [
+          "Camino de la Puerta de las Armas"
+        ],
+        "modern_search_terms": [
+          "Puerta de las Armas",
+          "Darro",
+          "Alcazaba"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_route",
+        "period": {
+          "from_year": 1200,
+          "to_year": 1500,
+          "from_precision": "century",
+          "to_precision": "circa",
+          "note": "Se representa la relación funcional medieval, no un itinerario peatonal moderno exacto."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Conexión principal entre la ciudad baja, los pasos del Darro y el acceso septentrional de la Alhambra.",
+        "context_1492": "Antes de las transformaciones cristianas, la Puerta de las Armas era la entrada que comunicaba directamente el centro de Granada con la sede de la corte en la Alhambra.",
+        "after_1492": "La reordenación de accesos y caminos redujo el protagonismo de este itinerario. Tramos y relaciones visuales sobreviven, pero el recorrido dejó de funcionar como entrada principal.",
+        "today": "El mapa muestra una conexión interpretativa entre el corredor del Darro y la puerta. No propone una ruta visitable continua ni afirma que cada tramo conserve la rasante medieval.",
+        "evidence_note": "La función y los extremos están documentados, pero el desarrollo preciso de la subida no se conserva íntegramente. Se dibuja una línea aproximada entre puntos seguros.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.alhambra-arms-gate",
+          "source.alhambra-fortified-city-guide",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-arms-gate",
+            "locator": "Apartado «Herencia almohade» y descripción del acceso",
+            "supports": "Papel de la Puerta de las Armas como conexión directa entre Granada y la corte."
+          },
+          {
+            "source_id": "source.alhambra-fortified-city-guide",
+            "locator": "pp. 25-35",
+            "supports": "Relación de las puertas exteriores con la muralla y las calles de la Alhambra."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Acceso urbano a la Puerta de las Armas",
+          "function": "historical_route",
+          "summary": "Antes de las transformaciones cristianas, la Puerta de las Armas era la entrada que comunicaba directamente el centro de Granada con la sede de la corte en la Alhambra.",
+          "evidence_note": "La función y los extremos están documentados, pero el desarrollo preciso de la subida no se conserva íntegramente. Se dibuja una línea aproximada entre puntos seguros.",
+          "geometry_variant_id": "c1492.route.alhambra-arms-access",
+          "citations": [
+            {
+              "source_id": "source.alhambra-arms-gate",
+              "locator": "Apartado «Herencia almohade» y descripción del acceso",
+              "supports": "Papel de la Puerta de las Armas como conexión directa entre Granada y la corte."
+            },
+            {
+              "source_id": "source.alhambra-fortified-city-guide",
+              "locator": "pp. 25-35",
+              "supports": "Relación de las puertas exteriores con la muralla y las calles de la Alhambra."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.592682,
+            37.1782206
+          ],
+          [
+            -3.59258,
+            37.17807
+          ],
+          [
+            -3.59245,
+            37.17788
+          ],
+          [
+            -3.5923,
+            37.17767
+          ],
+          [
+            -3.59215,
+            37.17746
+          ],
+          [
+            -3.59203,
+            37.1773
+          ],
+          [
+            -3.5919919,
+            37.1771498
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route.zacatin-axis",
+      "properties": {
+        "id": "route.zacatin-axis",
+        "name": "Eje del Zacatín",
+        "historical_name": "Al-Saqqatin",
+        "modern_name": "Calle Zacatín",
+        "aliases": [
+          "Zacatín",
+          "Calle de los ropavejeros"
+        ],
+        "modern_search_terms": [
+          "Calle Zacatín",
+          "Catedral",
+          "Alcaicería",
+          "Plaza Bib-Rambla"
+        ],
+        "category": "commerce_civic",
+        "subtype": "historical_route",
+        "period": {
+          "from_year": 1200,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "El eje comercial está documentado para la Granada nazarí y pervive como calle, aunque su anchura, alineaciones y encuentros han cambiado."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "toponymy",
+          "historical_cartography",
+          "parcel_morphology"
+        ],
+        "summary": "Principal eje comercial de la medina nazarí, asociado a los oficios y al recinto de la Alcaicería.",
+        "context_1492": "El Zacatín concentraba numerosos establecimientos comerciales y enlazaba el corazón religioso de la medina con el entorno de Bib-Rambla y sus mercados.",
+        "after_1492": "La calle mantuvo su función mercantil, pero las reformas del centro, los incendios y la apertura de nuevas vías alteraron fachadas, anchuras y conexiones.",
+        "today": "La calle Zacatín sigue siendo un eje peatonal comercial entre el entorno de la Catedral y Bib-Rambla. La línea sigue su eje actual y no reconstruye sus alineaciones de 1492.",
+        "evidence_note": "La continuidad toponímica y funcional permite fijar el corredor con buena base, pero no demuestra que cada quiebro y cada anchura modernos coincidan con la calle medieval.",
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.granada-centre-plan",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-centre-plan",
+            "locator": "Memoria histórica del ámbito del Sagrario",
+            "supports": "Carácter del Zacatín como calle comercial más representativa de la época nazarí y relación con la Alcaicería."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "probable",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Eje del Zacatín",
+          "function": "historical_route",
+          "summary": "El Zacatín concentraba numerosos establecimientos comerciales y enlazaba el corazón religioso de la medina con el entorno de Bib-Rambla y sus mercados.",
+          "evidence_note": "La continuidad toponímica y funcional permite fijar el corredor con buena base, pero no demuestra que cada quiebro y cada anchura modernos coincidan con la calle medieval.",
+          "geometry_variant_id": "c1492.route.zacatin-axis",
+          "citations": [
+            {
+              "source_id": "source.granada-centre-plan",
+              "locator": "Memoria histórica del ámbito del Sagrario",
+              "supports": "Carácter del Zacatín como calle comercial más representativa de la época nazarí y relación con la Alcaicería."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5977998,
+            37.1760767
+          ],
+          [
+            -3.598181,
+            37.1757812
+          ],
+          [
+            -3.5982812,
+            37.1757152
+          ],
+          [
+            -3.5984363,
+            37.1755916
+          ],
+          [
+            -3.5987475,
+            37.1753635
+          ],
+          [
+            -3.5989011,
+            37.1752542
+          ],
+          [
+            -3.5990038,
+            37.1751776
+          ],
+          [
+            -3.5993124,
+            37.1749566
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-aynadamar",
+      "properties": {
+        "id": "water.acequia-aynadamar",
+        "name": "Acequia de Aynadamar",
+        "historical_name": "Ayn al-Dam'",
+        "modern_name": "Acequia de Aynadamar",
+        "aliases": [
+          "Acequia de Alfacar"
+        ],
+        "modern_search_terms": [
+          "Fuente Grande",
+          "El Fargue",
+          "Fajalauza",
+          "Albaicín alto"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "irrigation_channel",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Conducción formada en época zirí y mantenida durante el periodo nazarí."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Red de la colina del Albaicín, con ramales para sus barrios, mezquitas y aljibes.",
+        "context_1492": "El agua de Alfacar se repartía por el arrabal del Albaicín, la Alcazaba Vieja y las zonas altas de Axares. Se representa la distribución de la colina, incluidos los ramales hacia San Miguel Bajo y San José.",
+        "after_1492": "La acequia siguió activa con reparaciones y transformaciones; su trazado rural y varios testimonios urbanos conservaron la memoria del sistema.",
+        "today": "Los ramales urbanos son reconstrucciones aproximadas. Sus finales indican el alcance representado, no que todo el caudal terminara allí.",
+        "evidence_note": "Se elimina la prolongación sin fundamento hasta el Sagrario. El Mapa 5 se registra mediante cinco controles; el PEPRI, pp. 69-70, distingue la red alta de Aynadamar del abastecimiento de la mezquita mayor por Axares. Los símbolos de las mezquitas de la colina no son las dos aljamas modernas del inventario.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.granada-pepri-islamic-city",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "p. 137 y Mapa 5 (p. 138)",
+            "supports": "Ramificación por la colina y suministro del Albaicín, Alcazaba y Axares alto."
+          },
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Memoria urbana, pp. 69-70 (PDF 71-72)",
+            "supports": "Aljibes del Rey, Tomasas y San José; diferenciación de Aynadamar y Axares."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Acequia de Aynadamar",
+          "function": "irrigation_channel",
+          "summary": "El agua de Alfacar se repartía por el arrabal del Albaicín, la Alcazaba Vieja y las zonas altas de Axares. Se representa la distribución de la colina, incluidos los ramales hacia San Miguel Bajo y San José.",
+          "evidence_note": "Se elimina la prolongación sin fundamento hasta el Sagrario. El Mapa 5 se registra mediante cinco controles; el PEPRI, pp. 69-70, distingue la red alta de Aynadamar del abastecimiento de la mezquita mayor por Axares. Los símbolos de las mezquitas de la colina no son las dos aljamas modernas del inventario.",
+          "geometry_variant_id": "c1492.water.acequia-aynadamar",
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "p. 137 y Mapa 5 (p. 138)",
+              "supports": "Ramificación por la colina y suministro del Albaicín, Alcazaba y Axares alto."
+            },
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Memoria urbana, pp. 69-70 (PDF 71-72)",
+              "supports": "Aljibes del Rey, Tomasas y San José; diferenciación de Aynadamar y Axares."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              -3.5928501,
+              37.1886694
+            ],
+            [
+              -3.5928325,
+              37.1881977
+            ],
+            [
+              -3.592681,
+              37.1877289
+            ],
+            [
+              -3.5926398,
+              37.1873435
+            ],
+            [
+              -3.5927828,
+              37.1868684
+            ],
+            [
+              -3.5928122,
+              37.186224
+            ],
+            [
+              -3.5928189,
+              37.1856874
+            ],
+            [
+              -3.59288,
+              37.1851711
+            ],
+            [
+              -3.5929994,
+              37.1847822
+            ],
+            [
+              -3.5932479,
+              37.1842619
+            ],
+            [
+              -3.5934153,
+              37.1837218
+            ],
+            [
+              -3.5935647,
+              37.1834182
+            ],
+            [
+              -3.593676,
+              37.182815
+            ],
+            [
+              -3.5935845,
+              37.1825165
+            ]
+          ],
+          [
+            [
+              -3.592681,
+              37.1877289
+            ],
+            [
+              -3.5923145,
+              37.1872432
+            ],
+            [
+              -3.5918473,
+              37.1869314
+            ],
+            [
+              -3.5917737,
+              37.1863966
+            ],
+            [
+              -3.5919411,
+              37.1858565
+            ],
+            [
+              -3.5919055,
+              37.1856212
+            ],
+            [
+              -3.5914522,
+              37.1849658
+            ],
+            [
+              -3.5910801,
+              37.1843301
+            ],
+            [
+              -3.5910082,
+              37.1838381
+            ],
+            [
+              -3.5914001,
+              37.1835721
+            ],
+            [
+              -3.5915487,
+              37.1832471
+            ],
+            [
+              -3.5910792,
+              37.1828709
+            ],
+            [
+              -3.5905877,
+              37.182624
+            ],
+            [
+              -3.5895607,
+              37.1823887
+            ],
+            [
+              -3.5890936,
+              37.1820768
+            ],
+            [
+              -3.5887783,
+              37.1815257
+            ]
+          ],
+          [
+            [
+              -3.5929994,
+              37.1847822
+            ],
+            [
+              -3.592543,
+              37.1840411
+            ],
+            [
+              -3.5923056,
+              37.1834239
+            ],
+            [
+              -3.5921021,
+              37.1829991
+            ],
+            [
+              -3.5916925,
+              37.1827934
+            ],
+            [
+              -3.5910712,
+              37.1826565
+            ],
+            [
+              -3.5905877,
+              37.182624
+            ]
+          ],
+          [
+            [
+              -3.5934153,
+              37.1837218
+            ],
+            [
+              -3.594208,
+              37.1834258
+            ],
+            [
+              -3.5951466,
+              37.1834485
+            ],
+            [
+              -3.5957966,
+              37.1829194
+            ],
+            [
+              -3.5966761,
+              37.1827932
+            ],
+            [
+              -3.5974321,
+              37.1829485
+            ],
+            [
+              -3.5982781,
+              37.1833594
+            ],
+            [
+              -3.5990114,
+              37.1836225
+            ]
+          ],
+          [
+            [
+              -3.593676,
+              37.182815
+            ],
+            [
+              -3.5943721,
+              37.1828
+            ],
+            [
+              -3.5949782,
+              37.1825294
+            ],
+            [
+              -3.5957506,
+              37.1824054
+            ],
+            [
+              -3.5969261,
+              37.1823157
+            ],
+            [
+              -3.5978388,
+              37.1823604
+            ],
+            [
+              -3.5988358,
+              37.1825105
+            ],
+            [
+              -3.5995091,
+              37.1826032
+            ],
+            [
+              -3.5996001,
+              37.1821721
+            ],
+            [
+              -3.5994518,
+              37.181789
+            ],
+            [
+              -3.5992499,
+              37.1814072
+            ],
+            [
+              -3.599233,
+              37.1809569
+            ]
+          ],
+          [
+            [
+              -3.5935845,
+              37.1825165
+            ],
+            [
+              -3.5944056,
+              37.1822628
+            ],
+            [
+              -3.5950417,
+              37.1820774
+            ],
+            [
+              -3.5955431,
+              37.1818735
+            ],
+            [
+              -3.5961524,
+              37.1816886
+            ],
+            [
+              -3.5969168,
+              37.1813503
+            ],
+            [
+              -3.5970273,
+              37.1807256
+            ],
+            [
+              -3.5967411,
+              37.1802382
+            ],
+            [
+              -3.5965848,
+              37.1796408
+            ],
+            [
+              -3.5962775,
+              37.1793041
+            ],
+            [
+              -3.5961755,
+              37.1787269
+            ]
+          ],
+          [
+            [
+              -3.5970273,
+              37.1807256
+            ],
+            [
+              -3.5967588,
+              37.1807099
+            ]
+          ],
+          [
+            [
+              -3.5955431,
+              37.1818735
+            ],
+            [
+              -3.5952034,
+              37.1813873
+            ],
+            [
+              -3.594922,
+              37.1810285
+            ],
+            [
+              -3.5947721,
+              37.1806026
+            ],
+            [
+              -3.5947513,
+              37.1800452
+            ],
+            [
+              -3.5949729,
+              37.1795254
+            ],
+            [
+              -3.5951127,
+              37.1789644
+            ],
+            [
+              -3.5952361,
+              37.1786828
+            ]
+          ],
+          [
+            [
+              -3.5935845,
+              37.1825165
+            ],
+            [
+              -3.5933235,
+              37.1819857
+            ],
+            [
+              -3.5929278,
+              37.1814363
+            ]
+          ],
+          [
+            [
+              -3.5947721,
+              37.1806026
+            ],
+            [
+              -3.5942035,
+              37.1804432
+            ],
+            [
+              -3.5940252,
+              37.179975
+            ],
+            [
+              -3.5936596,
+              37.1795108
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-axares",
+      "properties": {
+        "id": "water.acequia-axares",
+        "name": "Acequia de Axares",
+        "historical_name": "Acequia de Axares",
+        "modern_name": null,
+        "aliases": [
+          "Acequia de San Juan"
+        ],
+        "modern_search_terms": [
+          "Paseo de los Tristes",
+          "Carrera del Darro",
+          "San Juan de los Reyes"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "irrigation_channel",
+        "period": {
+          "from_year": 1090,
+          "to_year": null,
+          "from_precision": "circa",
+          "to_precision": "unknown",
+          "note": "Ramal asociado a la expansión urbana de finales del siglo XI."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Acequia de la margen derecha del Darro que abastecía Axares y el aljibe de la Mezquita Mayor.",
+        "context_1492": "Desde el valle oriental recorría el corredor de San Juan de los Reyes y descendía hacia la medina. Axares era el suministro principal del aljibe de la Mezquita Mayor según la síntesis municipal.",
+        "after_1492": "Tras la conquista pasó a denominarse acequia de San Juan. El sistema se mantuvo y transformó dentro de la red urbana moderna, con tramos ocultos o alterados.",
+        "today": "La línea sigue el corredor histórico hasta el solar del Sagrario. El encuentro con el punto de la mezquita expresa su abastecimiento; no identifica una acometida excavada.",
+        "evidence_note": "El Mapa 5 y el PEPRI, pp. 69-70, respaldan este destino. Se conserva como alias San Juan, denominación posterior. La geometría procede del registro afín y permanece aproximada a escala de calle.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.granada-pepri-islamic-city",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5; p. 137, nota 29",
+            "supports": "Trazado de Axares y denominación posterior de San Juan."
+          },
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Memoria urbana, pp. 69-70 (PDF 71-72)",
+            "supports": "Axares como principal abastecimiento del aljibe de la Mezquita Mayor."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Acequia de Axares",
+          "function": "irrigation_channel",
+          "summary": "Desde el valle oriental recorría el corredor de San Juan de los Reyes y descendía hacia la medina. Axares era el suministro principal del aljibe de la Mezquita Mayor según la síntesis municipal.",
+          "evidence_note": "El Mapa 5 y el PEPRI, pp. 69-70, respaldan este destino. Se conserva como alias San Juan, denominación posterior. La geometría procede del registro afín y permanece aproximada a escala de calle.",
+          "geometry_variant_id": "c1492.water.acequia-axares",
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5; p. 137, nota 29",
+              "supports": "Trazado de Axares y denominación posterior de San Juan."
+            },
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Memoria urbana, pp. 69-70 (PDF 71-72)",
+              "supports": "Axares como principal abastecimiento del aljibe de la Mezquita Mayor."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5827175,
+            37.1813771
+          ],
+          [
+            -3.5834947,
+            37.1813818
+          ],
+          [
+            -3.5841947,
+            37.1814741
+          ],
+          [
+            -3.5848372,
+            37.1814603
+          ],
+          [
+            -3.5855521,
+            37.1812303
+          ],
+          [
+            -3.586159,
+            37.1809812
+          ],
+          [
+            -3.586959,
+            37.1808782
+          ],
+          [
+            -3.5880038,
+            37.1808772
+          ],
+          [
+            -3.5882148,
+            37.1807868
+          ],
+          [
+            -3.5882328,
+            37.1805504
+          ],
+          [
+            -3.5885987,
+            37.1803065
+          ],
+          [
+            -3.5890231,
+            37.18019
+          ],
+          [
+            -3.5901467,
+            37.1801444
+          ],
+          [
+            -3.591293,
+            37.179991
+          ],
+          [
+            -3.5921173,
+            37.179823
+          ],
+          [
+            -3.5926634,
+            37.1793821
+          ],
+          [
+            -3.5933474,
+            37.1790454
+          ],
+          [
+            -3.5943682,
+            37.1784011
+          ],
+          [
+            -3.5952696,
+            37.1781457
+          ],
+          [
+            -3.5957498,
+            37.1780924
+          ],
+          [
+            -3.5963851,
+            37.1778855
+          ],
+          [
+            -3.5967055,
+            37.1778572
+          ],
+          [
+            -3.5974106,
+            37.1773699
+          ],
+          [
+            -3.5980638,
+            37.1769266
+          ],
+          [
+            -3.5986586,
+            37.1763558
+          ],
+          [
+            -3.5990298,
+            37.1759292
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-romayla",
+      "properties": {
+        "id": "water.acequia-romayla",
+        "name": "Acequia de Romayla",
+        "historical_name": "Acequia de Romayla",
+        "modern_name": "Acequia de Santa Ana",
+        "aliases": [
+          "Acequia de Santa Ana"
+        ],
+        "modern_search_terms": [
+          "Fuente del Avellano",
+          "Cuesta de Gomérez",
+          "Plaza Nueva",
+          "Sagrario"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "irrigation_channel",
+        "period": {
+          "from_year": 1090,
+          "to_year": null,
+          "from_precision": "circa",
+          "to_precision": "unknown",
+          "note": "Conducción de finales del siglo XI, activa en época nazarí."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Acequia del Darro por el Avellano y la ladera baja de la Sabika, con distribución hacia la ciudad de la margen izquierda.",
+        "context_1492": "El corredor urbano representado discurre por la margen izquierda del Darro y sirve los sectores artesanales al pie de la Alhambra y del Mauror. El acueducto de derivación aguas arriba queda fuera del tramo dibujado.",
+        "after_1492": "Pervivió como acequia de Santa Ana, aunque las cubriciones del Darro y la reforma del centro alteraron su lectura urbana.",
+        "today": "Se muestra el corredor urbano que permite seguir el Mapa 5. No se reconstruyen todos los repartimientos posteriores ni se fija una acometida a la Mezquita Mayor.",
+        "evidence_note": "Existe una discrepancia: el texto de 2025, p. 137, atribuye a Romayla un retorno a la zona de la mezquita, mientras el Mapa 5 y el PEPRI asignan a Axares su abastecimiento principal. Se retira el enlace directo especulativo al Sagrario y se conserva explícita la discrepancia. No se fuerzan dos cruces dentro de este recorte urbano.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.granada-pepri-islamic-city",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "p. 137 y Mapa 5 (p. 138)",
+            "supports": "Recorrido por Avellano y Sabika; discrepancia entre la descripción del final y su representación cartográfica."
+          },
+          {
+            "source_id": "source.granada-pepri-islamic-city",
+            "locator": "Memoria urbana, p. 70 (PDF 72)",
+            "supports": "Romayla abastece la margen izquierda y los talleres; Axares el aljibe de la mezquita."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Acequia de Romayla",
+          "function": "irrigation_channel",
+          "summary": "El corredor urbano representado discurre por la margen izquierda del Darro y sirve los sectores artesanales al pie de la Alhambra y del Mauror. El acueducto de derivación aguas arriba queda fuera del tramo dibujado.",
+          "evidence_note": "Existe una discrepancia: el texto de 2025, p. 137, atribuye a Romayla un retorno a la zona de la mezquita, mientras el Mapa 5 y el PEPRI asignan a Axares su abastecimiento principal. Se retira el enlace directo especulativo al Sagrario y se conserva explícita la discrepancia. No se fuerzan dos cruces dentro de este recorte urbano.",
+          "geometry_variant_id": "c1492.water.acequia-romayla",
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "p. 137 y Mapa 5 (p. 138)",
+              "supports": "Recorrido por Avellano y Sabika; discrepancia entre la descripción del final y su representación cartográfica."
+            },
+            {
+              "source_id": "source.granada-pepri-islamic-city",
+              "locator": "Memoria urbana, p. 70 (PDF 72)",
+              "supports": "Romayla abastece la margen izquierda y los talleres; Axares el aljibe de la mezquita."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5826783,
+            37.1803265
+          ],
+          [
+            -3.5834643,
+            37.1804226
+          ],
+          [
+            -3.5840549,
+            37.1805744
+          ],
+          [
+            -3.5847933,
+            37.180281
+          ],
+          [
+            -3.5855009,
+            37.1798581
+          ],
+          [
+            -3.5859879,
+            37.1792683
+          ],
+          [
+            -3.5866232,
+            37.1790615
+          ],
+          [
+            -3.5872885,
+            37.1789399
+          ],
+          [
+            -3.5879246,
+            37.1787545
+          ],
+          [
+            -3.5886321,
+            37.1783316
+          ],
+          [
+            -3.589144,
+            37.1784064
+          ],
+          [
+            -3.5898108,
+            37.1783277
+          ],
+          [
+            -3.5904501,
+            37.1782281
+          ],
+          [
+            -3.5911965,
+            37.1781262
+          ],
+          [
+            -3.5918438,
+            37.178241
+          ],
+          [
+            -3.5923265,
+            37.178252
+          ],
+          [
+            -3.5926705,
+            37.1781373
+          ],
+          [
+            -3.5933065,
+            37.177952
+          ],
+          [
+            -3.5939694,
+            37.177766
+          ],
+          [
+            -3.5946258,
+            37.1774085
+          ],
+          [
+            -3.5952782,
+            37.1769438
+          ],
+          [
+            -3.5959346,
+            37.1765863
+          ],
+          [
+            -3.5965106,
+            37.1762306
+          ],
+          [
+            -3.5967722,
+            37.1753451
+          ],
+          [
+            -3.5967237,
+            37.1747668
+          ],
+          [
+            -3.596793,
+            37.1737568
+          ],
+          [
+            -3.596993,
+            37.1726581
+          ],
+          [
+            -3.5970939,
+            37.1717761
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-cadi",
+      "properties": {
+        "id": "water.acequia-cadi",
+        "name": "Acequia del Cadí",
+        "historical_name": "Acequia del Cadí",
+        "modern_name": "Acequia del Cadí",
+        "aliases": [
+          "Acequia del Candil",
+          "Acequia de las Tinajas"
+        ],
+        "modern_search_terms": [
+          "Aguas Blancas",
+          "Cenes de la Vega",
+          "Barranco del Abogado",
+          "Antequeruela",
+          "Campo del Príncipe"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "irrigation_channel",
+        "period": {
+          "from_year": 1100,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Conducción de comienzos del siglo XII, reutilizada en época nazarí."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Acequia alta que abastecía los Mártires, Antequeruela, Mauror y el entorno del Campo del Príncipe.",
+        "context_1492": "El Cadí enlazaba el sistema de Aguas Blancas con los barrios y huertas de la ladera meridional de Granada.",
+        "after_1492": "Continuó integrada en el regadío histórico, con transformaciones de caja, reparto y tramos urbanos.",
+        "today": "Se muestra el corredor alto meridional dentro del ámbito del Mapa 5. La captación en Aguas Blancas y su largo recorrido exterior no están representados.",
+        "evidence_note": "El corredor se revisa mediante el registro del Mapa 5 y la secuencia topográfica descrita en p. 139. La figura no rotula todos los tramos: la adscripción de este corredor alto se apoya también en el texto y se conserva como aproximada.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.junta-camino-cementerio-2014",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Apartado sobre la Acequia del Cadí",
+            "supports": "Cronología, captación y abastecimiento de Mártires, Antequeruela y Mauror."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Acequia del Cadí",
+          "function": "irrigation_channel",
+          "summary": "El Cadí enlazaba el sistema de Aguas Blancas con los barrios y huertas de la ladera meridional de Granada.",
+          "evidence_note": "El corredor se revisa mediante el registro del Mapa 5 y la secuencia topográfica descrita en p. 139. La figura no rotula todos los tramos: la adscripción de este corredor alto se apoya también en el texto y se conserva como aproximada.",
+          "geometry_variant_id": "c1492.water.acequia-cadi",
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Apartado sobre la Acequia del Cadí",
+              "supports": "Cronología, captación y abastecimiento de Mártires, Antequeruela y Mauror."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5821909,
+            37.1672475
+          ],
+          [
+            -3.5831617,
+            37.1674198
+          ],
+          [
+            -3.584001,
+            37.1676592
+          ],
+          [
+            -3.584546,
+            37.167905
+          ],
+          [
+            -3.5852067,
+            37.1683844
+          ],
+          [
+            -3.5855943,
+            37.1687194
+          ],
+          [
+            -3.5860825,
+            37.1688805
+          ],
+          [
+            -3.5863913,
+            37.1692601
+          ],
+          [
+            -3.5866506,
+            37.1697481
+          ],
+          [
+            -3.586914,
+            37.1703433
+          ],
+          [
+            -3.5874889,
+            37.1706742
+          ],
+          [
+            -3.5879615,
+            37.1711361
+          ],
+          [
+            -3.5885517,
+            37.1718745
+          ],
+          [
+            -3.5891646,
+            37.172505
+          ],
+          [
+            -3.5899414,
+            37.1732179
+          ],
+          [
+            -3.5904336,
+            37.1734862
+          ],
+          [
+            -3.5908336,
+            37.1734347
+          ],
+          [
+            -3.591257,
+            37.1732968
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-gorda",
+      "properties": {
+        "id": "water.acequia-gorda",
+        "name": "Acequia Gorda",
+        "historical_name": "Acequia Gorda",
+        "modern_name": "Acequia Gorda del Genil",
+        "aliases": [
+          "Acequia Mayor del Genil"
+        ],
+        "modern_search_terms": [
+          "Río Genil",
+          "Paseo del Salón",
+          "Vega de Granada"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "irrigation_channel",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Sistema medieval de larga duración, activo en 1492."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Principal derivación del Genil para el regadío de la Vega y el abastecimiento de sectores meridionales de la ciudad.",
+        "context_1492": "La conducción principal procedía del Genil y repartía agua a ramales urbanos y agrícolas. En el tramo representado pasa al norte del Genil y salva el Darro antes de continuar hacia la Vega.",
+        "after_1492": "Mantuvo una función esencial en el regadío histórico, aunque su red y administración evolucionaron.",
+        "today": "Se representa el tramo urbano y periurbano del Mapa 5, con los encuentros de Tarramonta, Arabuleila y Realejo. La toma del Genil queda aguas arriba, fuera del recorte.",
+        "evidence_note": "Se sustituye el dibujo manual anterior por el corredor registrado del Mapa 5. La topología comprobada incluye el cruce del Darro, la ausencia de cruces del Genil y los repartimientos orientales. Los cauces actuales sirven de control, con posibles diferencias respecto de 1492.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.dera-hydrology",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5, p. 137 y nota 31",
+            "supports": "Corredor principal, cruce del Darro y derivaciones agrícolas y urbanas."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Acequia Gorda",
+          "function": "irrigation_channel",
+          "summary": "La conducción principal procedía del Genil y repartía agua a ramales urbanos y agrícolas. En el tramo representado pasa al norte del Genil y salva el Darro antes de continuar hacia la Vega.",
+          "evidence_note": "Se sustituye el dibujo manual anterior por el corredor registrado del Mapa 5. La topología comprobada incluye el cruce del Darro, la ausencia de cruces del Genil y los repartimientos orientales. Los cauces actuales sirven de control, con posibles diferencias respecto de 1492.",
+          "geometry_variant_id": "c1492.water.acequia-gorda",
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5, p. 137 y nota 31",
+              "supports": "Corredor principal, cruce del Darro y derivaciones agrícolas y urbanas."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5821589,
+            37.1663899
+          ],
+          [
+            -3.5828896,
+            37.1665888
+          ],
+          [
+            -3.5836235,
+            37.1668734
+          ],
+          [
+            -3.5842803,
+            37.1672455
+          ],
+          [
+            -3.5849443,
+            37.1678106
+          ],
+          [
+            -3.5856878,
+            37.1683526
+          ],
+          [
+            -3.5866382,
+            37.1686969
+          ],
+          [
+            -3.5872806,
+            37.1686831
+          ],
+          [
+            -3.5876409,
+            37.1682891
+          ],
+          [
+            -3.5881627,
+            37.1679131
+          ],
+          [
+            -3.5887927,
+            37.1682858
+          ],
+          [
+            -3.5893141,
+            37.1686179
+          ],
+          [
+            -3.5897008,
+            37.1689314
+          ],
+          [
+            -3.5905127,
+            37.16915
+          ],
+          [
+            -3.5913545,
+            37.1694537
+          ],
+          [
+            -3.5921419,
+            37.1697372
+          ],
+          [
+            -3.5928735,
+            37.1699574
+          ],
+          [
+            -3.5936262,
+            37.170027
+          ],
+          [
+            -3.5943465,
+            37.1699471
+          ],
+          [
+            -3.594877,
+            37.1698069
+          ],
+          [
+            -3.5957167,
+            37.1693382
+          ],
+          [
+            -3.5964777,
+            37.1689141
+          ],
+          [
+            -3.5970577,
+            37.1686655
+          ],
+          [
+            -3.5978,
+            37.1684563
+          ],
+          [
+            -3.5986217,
+            37.168224
+          ],
+          [
+            -3.5992017,
+            37.1679754
+          ],
+          [
+            -3.5996204,
+            37.1677089
+          ],
+          [
+            -3.5997933,
+            37.1673189
+          ],
+          [
+            -3.6001356,
+            37.1671613
+          ],
+          [
+            -3.6007245,
+            37.1671486
+          ],
+          [
+            -3.6010976,
+            37.1670976
+          ],
+          [
+            -3.6012972,
+            37.166707
+          ],
+          [
+            -3.601586,
+            37.1665505
+          ],
+          [
+            -3.6019843,
+            37.1664561
+          ],
+          [
+            -3.602651,
+            37.1663773
+          ],
+          [
+            -3.6032059,
+            37.1661722
+          ],
+          [
+            -3.6040543,
+            37.1659392
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-realejo",
+      "properties": {
+        "id": "water.acequia-realejo",
+        "name": "Ramal del Realejo",
+        "historical_name": null,
+        "modern_name": null,
+        "aliases": [
+          "Ramal de la Acequia Gorda"
+        ],
+        "modern_search_terms": [
+          "Calle Santiago",
+          "Realejo",
+          "Campo del Príncipe"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "irrigation_channel",
+        "period": {
+          "from_year": 1200,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Ramal medieval documentado por su paso hacia el Realejo y la Vega."
+        },
+        "present_c1492": "probable",
+        "confidence": {
+          "location": "approximate",
+          "time": "probable"
+        },
+        "evidence_basis": [
+          "documentary",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Derivación urbana del sistema de Gorda que entra desde el sector oriental y abastece el Realejo, con salida hacia la Vega.",
+        "context_1492": "El ramal servía huertas, talleres y viviendas de la ciudad meridional. Su relación con la actual calle Santiago y los repartimientos próximos a los Molinos permite reconocer el corredor general.",
+        "after_1492": "La urbanización y la transformación de las huertas ocultaron o modificaron gran parte de su recorrido.",
+        "today": "La red representa el corredor oriental, la penetración por el Realejo y una salida hacia Gorda. Los quiebros proceden de la reconstrucción publicada y no de un levantamiento de conducciones subterráneas.",
+        "evidence_note": "Se elimina el ramal corto trazado desde la confluencia hacia el norte. La nueva secuencia se contrasta con el Mapa 5 y la referencia textual a Santiago; la identificación de pequeños repartimientos sigue siendo aproximada.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Apartado sobre la Acequia Gorda y el ramal del Realejo",
+            "supports": "Paso por la actual calle Santiago y dirección hacia la Vega."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "probable",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Ramal del Realejo",
+          "function": "irrigation_channel",
+          "summary": "El ramal servía huertas, talleres y viviendas de la ciudad meridional. Su relación con la actual calle Santiago y los repartimientos próximos a los Molinos permite reconocer el corredor general.",
+          "evidence_note": "Se elimina el ramal corto trazado desde la confluencia hacia el norte. La nueva secuencia se contrasta con el Mapa 5 y la referencia textual a Santiago; la identificación de pequeños repartimientos sigue siendo aproximada.",
+          "geometry_variant_id": "c1492.water.acequia-realejo",
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Apartado sobre la Acequia Gorda y el ramal del Realejo",
+              "supports": "Paso por la actual calle Santiago y dirección hacia la Vega."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              -3.5821589,
+              37.1663899
+            ],
+            [
+              -3.5828896,
+              37.1665888
+            ],
+            [
+              -3.5836235,
+              37.1668734
+            ],
+            [
+              -3.5842803,
+              37.1672455
+            ],
+            [
+              -3.5849443,
+              37.1678106
+            ],
+            [
+              -3.5856878,
+              37.1683526
+            ],
+            [
+              -3.5864265,
+              37.1687658
+            ],
+            [
+              -3.5874077,
+              37.1692168
+            ],
+            [
+              -3.58844,
+              37.1696023
+            ],
+            [
+              -3.5893622,
+              37.1699043
+            ],
+            [
+              -3.5900442,
+              37.170233
+            ],
+            [
+              -3.5910222,
+              37.1705982
+            ],
+            [
+              -3.5917398,
+              37.1711621
+            ],
+            [
+              -3.5922668,
+              37.1716442
+            ],
+            [
+              -3.5928223,
+              37.1721687
+            ],
+            [
+              -3.5935423,
+              37.1727969
+            ],
+            [
+              -3.594208,
+              37.1734049
+            ],
+            [
+              -3.5947634,
+              37.1739293
+            ],
+            [
+              -3.5953968,
+              37.1743877
+            ],
+            [
+              -3.5960293,
+              37.1748247
+            ]
+          ],
+          [
+            [
+              -3.5922668,
+              37.1716442
+            ],
+            [
+              -3.5928924,
+              37.1711801
+            ],
+            [
+              -3.5936195,
+              37.1705636
+            ],
+            [
+              -3.5928735,
+              37.1699574
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-tarramonta",
+      "properties": {
+        "id": "water.acequia-tarramonta",
+        "name": "Acequia Tarramonta",
+        "historical_name": "Acequia Tarramonta",
+        "modern_name": "Acequia Tarramonta",
+        "aliases": [
+          "Tarramonta"
+        ],
+        "modern_search_terms": [
+          "Río Genil",
+          "Vega de Granada",
+          "Acequia Gorda"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "irrigation_channel",
+        "period": {
+          "from_year": 1100,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Derivación histórica de la Acequia Gorda destinada principalmente al riego agrícola."
+        },
+        "present_c1492": "probable",
+        "confidence": {
+          "location": "approximate",
+          "time": "probable"
+        },
+        "evidence_basis": [
+          "documentary",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Ramal agrícola de la Acequia Gorda que cruzaba el Genil para regar terrenos de la Vega al sur del río.",
+        "context_1492": "Tarramonta formaba parte del reparto de la Acequia Gorda y se diferenciaba de su cauce principal por atravesar el Genil hacia las tierras meridionales.",
+        "after_1492": "La red de riego continuó evolucionando dentro del sistema histórico de la Vega.",
+        "today": "El cruce aproximado se sitúa al este de la confluencia Darro-Genil, en el entorno meridional de La Loma; desde allí el ramal continúa hacia el suroeste.",
+        "evidence_note": "El trazado anterior cruzaba el Genil aguas abajo, al oeste, con orientación incorrecta. La revisión digitaliza el ramal rotulado Tarramonta en el Mapa 5 y comprueba el cruce oriental respecto de la confluencia. El punto exacto del paso medieval permanece aproximado.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.dera-hydrology"
+        ],
+        "citations": [
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5, sector meridional (p. 138); nota 31",
+            "supports": "Derivación desde Gorda, cruce del Genil al este de la confluencia y continuidad hacia el suroeste."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "probable",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Acequia Tarramonta",
+          "function": "irrigation_channel",
+          "summary": "Tarramonta formaba parte del reparto de la Acequia Gorda y se diferenciaba de su cauce principal por atravesar el Genil hacia las tierras meridionales.",
+          "evidence_note": "El trazado anterior cruzaba el Genil aguas abajo, al oeste, con orientación incorrecta. La revisión digitaliza el ramal rotulado Tarramonta en el Mapa 5 y comprueba el cruce oriental respecto de la confluencia. El punto exacto del paso medieval permanece aproximado.",
+          "geometry_variant_id": "c1492.water.acequia-tarramonta",
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5, sector meridional (p. 138); nota 31",
+              "supports": "Derivación desde Gorda, cruce del Genil al este de la confluencia y continuidad hacia el suroeste."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5897008,
+            37.1689314
+          ],
+          [
+            -3.5901698,
+            37.168578
+          ],
+          [
+            -3.5904027,
+            37.1683584
+          ],
+          [
+            -3.5910012,
+            37.168603
+          ],
+          [
+            -3.591676,
+            37.1687387
+          ],
+          [
+            -3.5922381,
+            37.1687266
+          ],
+          [
+            -3.5927702,
+            37.1686292
+          ],
+          [
+            -3.5932975,
+            37.1684033
+          ],
+          [
+            -3.5939287,
+            37.1680893
+          ],
+          [
+            -3.5946402,
+            37.1677735
+          ],
+          [
+            -3.5952462,
+            37.1675029
+          ],
+          [
+            -3.5956892,
+            37.1671715
+          ],
+          [
+            -3.5960023,
+            37.1669502
+          ],
+          [
+            -3.596099,
+            37.1666691
+          ],
+          [
+            -3.5963878,
+            37.1665127
+          ],
+          [
+            -3.5968543,
+            37.1660949
+          ],
+          [
+            -3.5975414,
+            37.165844
+          ],
+          [
+            -3.5985432,
+            37.1654147
+          ],
+          [
+            -3.5995199,
+            37.1650288
+          ],
+          [
+            -3.6004965,
+            37.1646429
+          ],
+          [
+            -3.601474,
+            37.1642784
+          ],
+          [
+            -3.6026639,
+            37.1638664
+          ],
+          [
+            -3.6039601,
+            37.1634306
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-arabuleila",
+      "properties": {
+        "id": "water.acequia-arabuleila",
+        "name": "Acequia Arabuleila",
+        "historical_name": "Acequia de Darabuleila",
+        "modern_name": "Acequia Arabuleila",
+        "aliases": [
+          "Güe Mayor",
+          "Darabuleila"
+        ],
+        "modern_search_terms": [
+          "Río Genil",
+          "Vega de Granada",
+          "Acequia Gorda"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "irrigation_channel",
+        "period": {
+          "from_year": 1100,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Derivación medieval de la Acequia Gorda destinada al regadío de la Vega."
+        },
+        "present_c1492": "probable",
+        "confidence": {
+          "location": "approximate",
+          "time": "probable"
+        },
+        "evidence_basis": [
+          "documentary",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Derivación agrícola de la Acequia Gorda que continuaba hacia la Vega por el corredor septentrional del Genil.",
+        "context_1492": "Arabuleila recibía una parte del caudal de Gorda y contribuía al riego del paisaje productivo inmediato de Granada.",
+        "after_1492": "La acequia mantuvo una larga continuidad dentro de la red de regadío granadina.",
+        "today": "El ramal se separa del corredor de Gorda al este de Tarramonta, cruza el Genil y continúa por la margen meridional hacia las tierras de riego.",
+        "evidence_note": "Se sigue el ramal meridional rotulado Arabuleila en el Mapa 5. Se corrige la anterior diagonal que atravesaba la confluencia sin reproducir su derivación ni su cruce oriental. Solo se cartografía el tramo incluido en la figura.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.dera-hydrology"
+        ],
+        "citations": [
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5 y nota 31",
+            "supports": "Nombre, condición de derivación de Gorda y destino agrícola de Arabuleila."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "probable",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Acequia Arabuleila",
+          "function": "irrigation_channel",
+          "summary": "Arabuleila recibía una parte del caudal de Gorda y contribuía al riego del paisaje productivo inmediato de Granada.",
+          "evidence_note": "Se sigue el ramal meridional rotulado Arabuleila en el Mapa 5. Se corrige la anterior diagonal que atravesaba la confluencia sin reproducir su derivación ni su cruce oriental. Solo se cartografía el tramo incluido en la figura.",
+          "geometry_variant_id": "c1492.water.acequia-arabuleila",
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5 y nota 31",
+              "supports": "Nombre, condición de derivación de Gorda y destino agrícola de Arabuleila."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5856878,
+            37.1683526
+          ],
+          [
+            -3.585967,
+            37.1679389
+          ],
+          [
+            -3.5861707,
+            37.1676555
+          ],
+          [
+            -3.5861815,
+            37.1672261
+          ],
+          [
+            -3.586696,
+            37.1666572
+          ],
+          [
+            -3.5873216,
+            37.1661931
+          ],
+          [
+            -3.5877295,
+            37.166356
+          ],
+          [
+            -3.5883287,
+            37.166622
+          ],
+          [
+            -3.588564,
+            37.1663069
+          ],
+          [
+            -3.5890375,
+            37.1667298
+          ],
+          [
+            -3.5895289,
+            37.167109
+          ],
+          [
+            -3.5899604,
+            37.1672736
+          ],
+          [
+            -3.5906555,
+            37.1672371
+          ],
+          [
+            -3.5912735,
+            37.1672882
+          ],
+          [
+            -3.5918064,
+            37.1672123
+          ],
+          [
+            -3.5924245,
+            37.1672634
+          ],
+          [
+            -3.592826,
+            37.1672547
+          ],
+          [
+            -3.5932965,
+            37.1669442
+          ],
+          [
+            -3.5935514,
+            37.1665953
+          ],
+          [
+            -3.5939312,
+            37.1660078
+          ],
+          [
+            -3.5943573,
+            37.1652261
+          ],
+          [
+            -3.5947915,
+            37.1646588
+          ],
+          [
+            -3.5951485,
+            37.164179
+          ],
+          [
+            -3.5958683,
+            37.1633695
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "water.acequia-real-alhambra",
+      "properties": {
+        "id": "water.acequia-real-alhambra",
+        "name": "Acequia Real de la Alhambra",
+        "historical_name": "Acequia del Sultán",
+        "modern_name": "Acequia Real",
+        "aliases": [
+          "Acequia del Rey"
+        ],
+        "modern_search_terms": [
+          "Darro",
+          "Cerro del Sol",
+          "Generalife",
+          "Alhambra"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "irrigation_channel",
+        "period": {
+          "from_year": 1238,
+          "to_year": null,
+          "from_precision": "circa",
+          "to_precision": "unknown",
+          "note": "Creada al inicio del emirato nazarí y ampliada mediante ramales."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "documentary",
+          "archaeology",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Conducción palatina que captaba el Darro para regar el Generalife y abastecer la ciudad de la Alhambra.",
+        "context_1492": "La Acequia Real sostenía jardines, huertas, fuentes, baños y consumo doméstico de los recintos palatinos.",
+        "after_1492": "Permaneció como infraestructura esencial del conjunto, con reparaciones y adaptaciones sucesivas.",
+        "today": "Se representa la aproximación oriental al Generalife, el paso por el Patio de la Acequia y la entrada por el acueducto junto a la Torre del Agua. La captación de Jesús del Valle queda fuera del recorte.",
+        "evidence_note": "Se corrige el atajo anterior que no pasaba por el Generalife ni por el acueducto de entrada. Los tramos visibles y sus extremos se apoyan en OSM; los enlaces y la distribución interior se generalizan conforme al Patronato. No se afirma que la línea empiece en la toma del Darro.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.alhambra-real-acequia",
+          "source.alhambra-torre-agua",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.alhambra-real-acequia",
+            "locator": "Recorrido por Generalife y entrada a la Alhambra",
+            "supports": "Paso por el Patio de la Acequia y distribución palatina."
+          },
+          {
+            "source_id": "source.alhambra-torre-agua",
+            "locator": "Descripción del acueducto y la Torre del Agua",
+            "supports": "Punto de entrada del agua en el recinto amurallado."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Acequia Real de la Alhambra",
+          "function": "irrigation_channel",
+          "summary": "La Acequia Real sostenía jardines, huertas, fuentes, baños y consumo doméstico de los recintos palatinos.",
+          "evidence_note": "Se corrige el atajo anterior que no pasaba por el Generalife ni por el acueducto de entrada. Los tramos visibles y sus extremos se apoyan en OSM; los enlaces y la distribución interior se generalizan conforme al Patronato. No se afirma que la línea empiece en la toma del Darro.",
+          "geometry_variant_id": "c1492.water.acequia-real-alhambra",
+          "citations": [
+            {
+              "source_id": "source.alhambra-real-acequia",
+              "locator": "Recorrido por Generalife y entrada a la Alhambra",
+              "supports": "Paso por el Patio de la Acequia y distribución palatina."
+            },
+            {
+              "source_id": "source.alhambra-torre-agua",
+              "locator": "Descripción del acueducto y la Torre del Agua",
+              "supports": "Punto de entrada del agua en el recinto amurallado."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5817625,
+            37.1788478
+          ],
+          [
+            -3.5816603,
+            37.178665
+          ],
+          [
+            -3.581667,
+            37.1785531
+          ],
+          [
+            -3.5819913,
+            37.1787368
+          ],
+          [
+            -3.5824111,
+            37.1787738
+          ],
+          [
+            -3.5832342,
+            37.1787096
+          ],
+          [
+            -3.5839494,
+            37.1789329
+          ],
+          [
+            -3.5840519,
+            37.1790179
+          ],
+          [
+            -3.5842283,
+            37.1788751
+          ],
+          [
+            -3.5845059,
+            37.1787815
+          ],
+          [
+            -3.5848573,
+            37.1785505
+          ],
+          [
+            -3.584979,
+            37.1784263
+          ],
+          [
+            -3.5853513,
+            37.1778787
+          ],
+          [
+            -3.58572,
+            37.17823
+          ],
+          [
+            -3.5859,
+            37.1779
+          ],
+          [
+            -3.5858,
+            37.1775
+          ],
+          [
+            -3.5856,
+            37.1769
+          ],
+          [
+            -3.5853,
+            37.1763
+          ],
+          [
+            -3.58508,
+            37.17555
+          ],
+          [
+            -3.5852216,
+            37.1749396
+          ],
+          [
+            -3.5854219,
+            37.1750104
+          ],
+          [
+            -3.5855848,
+            37.1750621
+          ],
+          [
+            -3.5865,
+            37.1756
+          ],
+          [
+            -3.5874,
+            37.1761
+          ],
+          [
+            -3.5884,
+            37.17665
+          ],
+          [
+            -3.5891,
+            37.1768
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bridge.cadi",
+      "properties": {
+        "id": "bridge.cadi",
+        "name": "Puerta de los Tableros / Puente del Cadí",
+        "historical_name": "Bab al-Difaf",
+        "modern_name": "Restos de la Puerta de los Tableros",
+        "aliases": [
+          "Puente del Cadí",
+          "Puerta de los Tableros",
+          "Bab al-Difaf"
+        ],
+        "modern_search_terms": [
+          "Carrera del Darro 35",
+          "Concepción de Zafra",
+          "El Bañuelo"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "river_gate_bridge",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Obra zirí del siglo XI que seguía formando parte del sistema defensivo e hidráulico medieval."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Puerta-puente militar que atravesaba el Darro y enlazaba las corachas de la Alcazaba Vieja y la Alhambra.",
+        "context_1492": "La estructura cruzaba el cauce y vinculaba los dispositivos defensivos de ambas laderas; una compuerta cerraba el río frente a intrusos.",
+        "after_1492": "La obra perdió su continuidad y quedó reducida al estribo meridional y al arranque del gran arco. El nombre Puente del Cadí convivió con su identificación como Bab al-Difaf.",
+        "today": "Se conserva el estribo meridional junto al Darro. La línea muestra el eje reconstruido del puente-puerta desde la margen septentrional hasta esa fábrica visible.",
+        "evidence_note": "El extremo meridional está anclado en el resto conservado; el vano desaparecido se reconstruye perpendicular al cauce y por ello la geometría completa es probable, no segura.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.granada-tableros-cadi",
+          "source.openstreetmap",
+          "source.pnoa-andalucia-2022"
+        ],
+        "citations": [
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 4, Figura 2 y pp. 134-136",
+            "supports": "Cruce del Darro, conexión de las corachas y conservación del estribo meridional."
+          },
+          {
+            "source_id": "source.alhambra-banuelo",
+            "locator": "Contexto de Bab al-Difaf",
+            "supports": "Distinción entre Bab al-Difaf y la identificación tradicional con el Puente del Cadí."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "probable",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Puerta de los Tableros / Puente del Cadí",
+          "function": "river_gate_bridge",
+          "summary": "La estructura cruzaba el cauce y vinculaba los dispositivos defensivos de ambas laderas; una compuerta cerraba el río frente a intrusos.",
+          "evidence_note": "El extremo meridional está anclado en el resto conservado; el vano desaparecido se reconstruye perpendicular al cauce y por ello la geometría completa es probable, no segura.",
+          "geometry_variant_id": "c1492.bridge.cadi",
+          "citations": [
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 4, Figura 2 y pp. 134-136",
+              "supports": "Cruce del Darro, conexión de las corachas y conservación del estribo meridional."
+            },
+            {
+              "source_id": "source.alhambra-banuelo",
+              "locator": "Contexto de Bab al-Difaf",
+              "supports": "Distinción entre Bab al-Difaf y la identificación tradicional con el Puente del Cadí."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.59286,
+            37.17852
+          ],
+          [
+            -3.59278,
+            37.17839
+          ],
+          [
+            -3.592682,
+            37.1782206
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route.darro-axis",
+      "properties": {
+        "id": "route.darro-axis",
+        "name": "Eje urbano del Darro",
+        "historical_name": null,
+        "modern_name": "Carrera del Darro y Paseo de los Tristes",
+        "aliases": [
+          "Camino del Darro"
+        ],
+        "modern_search_terms": [
+          "Plaza Nueva",
+          "Carrera del Darro",
+          "Paseo de los Tristes",
+          "Puerta de Guadix"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_route",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Corredor de larga duración entre la medina y el acceso oriental."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "documentary",
+          "toponymy",
+          "historical_cartography",
+          "parcel_morphology"
+        ],
+        "summary": "Corredor longitudinal que enlazaba el centro urbano, los puentes del Darro, Axares y la Puerta de Guadix.",
+        "context_1492": "El itinerario articulaba movilidad, abastecimiento y accesos entre la medina, el Albaicín bajo y la ruta oriental.",
+        "after_1492": "La apertura de Plaza Nueva y otras reformas alteró su extremo occidental, mientras Carrera del Darro conservó buena parte de su dirección.",
+        "today": "El eje corresponde aproximadamente a Carrera del Darro y Paseo de los Tristes.",
+        "evidence_note": "La continuidad del corredor es firme, pero las anchuras, rasantes y encuentros de 1492 no coinciden necesariamente con la calle actual.",
+        "geometry_method": "modern_reference_location",
+        "geometry_source_refs": [
+          "source.granada-carrera-darro",
+          "source.granada-pepri-islamic-city",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.granada-carrera-darro",
+            "locator": "Descripción histórica de la Carrera del Darro",
+            "supports": "Continuidad del corredor fluvial y relación con los puentes y ambas laderas."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "probable",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Eje urbano del Darro",
+          "function": "historical_route",
+          "summary": "El itinerario articulaba movilidad, abastecimiento y accesos entre la medina, el Albaicín bajo y la ruta oriental.",
+          "evidence_note": "La continuidad del corredor es firme, pero las anchuras, rasantes y encuentros de 1492 no coinciden necesariamente con la calle actual.",
+          "geometry_variant_id": "c1492.route.darro-axis",
+          "citations": [
+            {
+              "source_id": "source.granada-carrera-darro",
+              "locator": "Descripción histórica de la Carrera del Darro",
+              "supports": "Continuidad del corredor fluvial y relación con los puentes y ambas laderas."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5971,
+            37.1767
+          ],
+          [
+            -3.5957,
+            37.1771
+          ],
+          [
+            -3.5942,
+            37.1778
+          ],
+          [
+            -3.5927,
+            37.1782
+          ],
+          [
+            -3.5907,
+            37.17855
+          ],
+          [
+            -3.58833,
+            37.17924
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route.molinos-sierra-axis",
+      "properties": {
+        "id": "route.molinos-sierra-axis",
+        "name": "Camino de los Molinos y la sierra",
+        "historical_name": null,
+        "modern_name": "Cuesta de los Molinos",
+        "aliases": [
+          "Camino de Güéjar"
+        ],
+        "modern_search_terms": [
+          "Puerta de los Molinos",
+          "Cuesta Escoriaza",
+          "Genil",
+          "Güéjar Sierra"
+        ],
+        "category": "urban_structure",
+        "subtype": "historical_route",
+        "period": {
+          "from_year": 1300,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Corredor asociado a Bab al-Nayd y a los caminos meridionales."
+        },
+        "present_c1492": "probable",
+        "confidence": {
+          "location": "approximate",
+          "time": "probable"
+        },
+        "evidence_basis": [
+          "documentary",
+          "toponymy",
+          "historical_cartography",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Salida meridional desde La Loma hacia los molinos del Genil, las huertas y los caminos de la sierra.",
+        "context_1492": "Bab al-Nayd canalizaba el paso entre el recinto urbano, las infraestructuras molineras y los territorios del Genil y la sierra.",
+        "after_1492": "El corredor mantuvo funciones de salida y acceso, aunque la puerta fue demolida y la red viaria se transformó.",
+        "today": "La línea prolonga la Cuesta de los Molinos hacia el Genil como corredor interpretativo.",
+        "evidence_note": "La puerta y la dirección funcional están documentadas; el trazado fuera del recinto no se presenta como calzada medieval exacta.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.junta-hoteles-belen-2020",
+          "source.junta-aguado-2009",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.junta-hoteles-belen-2020",
+            "locator": "Contexto histórico-arqueológico general",
+            "supports": "Función de la Puerta de la Loma o de los Molinos y su relación con los accesos meridionales."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "probable",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Camino de los Molinos y la sierra",
+          "function": "historical_route",
+          "summary": "Bab al-Nayd canalizaba el paso entre el recinto urbano, las infraestructuras molineras y los territorios del Genil y la sierra.",
+          "evidence_note": "La puerta y la dirección funcional están documentadas; el trazado fuera del recinto no se presenta como calzada medieval exacta.",
+          "geometry_variant_id": "c1492.route.molinos-sierra-axis",
+          "citations": [
+            {
+              "source_id": "source.junta-hoteles-belen-2020",
+              "locator": "Contexto histórico-arqueológico general",
+              "supports": "Función de la Puerta de la Loma o de los Molinos y su relación con los accesos meridionales."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.58815,
+            37.16885
+          ],
+          [
+            -3.5892,
+            37.1678
+          ],
+          [
+            -3.5904,
+            37.1667
+          ],
+          [
+            -3.5916,
+            37.1657
+          ],
+          [
+            -3.5927,
+            37.1647
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "walls.alcazaba-qadima-inner",
+      "properties": {
+        "id": "walls.alcazaba-qadima-inner",
+        "name": "Cerca interior de la Alcazaba Qadima",
+        "historical_name": null,
+        "modern_name": null,
+        "aliases": [
+          "Muralla zirí de la Alcazaba Vieja"
+        ],
+        "modern_search_terms": [
+          "Puerta Monaita",
+          "Casa de la Lona",
+          "San Nicolás",
+          "Puerta de las Pesas"
+        ],
+        "category": "walls_gates",
+        "subtype": "defensive_wall",
+        "period": {
+          "from_year": 1000,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Recinto zirí anterior a las ampliaciones nazaríes, todavía legible como cerca interior en 1492."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "approximate",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "surviving_fabric",
+          "archaeology",
+          "documentary",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Recinto primitivo del núcleo palatino zirí, convertido en una cerca interior tras la expansión de Granada.",
+        "context_1492": "La antigua Alcazaba Qadima conservaba puertas y lienzos dentro del Albaicín, aunque ya no constituía el perímetro exterior de la ciudad.",
+        "after_1492": "La urbanización incorporó, ocultó o destruyó tramos; Monaita y varios lienzos permiten reconocer el sistema.",
+        "today": "Recinto zirí desarrollado entre Monaita, las Pesas, las Tomasas y San Juan de los Reyes, con enlaces reconstruidos hasta la Lona.",
+        "evidence_note": "La línea y el polígono se reconstruyen juntos conforme al Mapa 5 y al itinerario del PEPRI, pp. 63-64. La coincidencia geométrica expresa una sola hipótesis editorial; no demuestra que todo el circuito sea conservado, coetáneo o igualmente seguro.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.granada-pepri-islamic-city",
+          "source.junta-monaita-wall-2000",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.junta-monaita-wall-2000",
+            "locator": "Estudio histórico y resultados arqueológicos",
+            "supports": "Recorrido, puertas y fábrica conservada de la cerca de la Alcazaba Qadima."
+          },
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+            "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Cerca interior de la Alcazaba Qadima",
+          "function": "defensive_wall",
+          "summary": "La antigua Alcazaba Qadima conservaba puertas y lienzos dentro del Albaicín, aunque ya no constituía el perímetro exterior de la ciudad.",
+          "evidence_note": "La línea y el polígono se reconstruyen juntos conforme al Mapa 5 y al itinerario del PEPRI, pp. 63-64. La coincidencia geométrica expresa una sola hipótesis editorial; no demuestra que todo el circuito sea conservado, coetáneo o igualmente seguro.",
+          "geometry_variant_id": "c1492.walls.alcazaba-qadima-inner",
+          "citations": [
+            {
+              "source_id": "source.junta-monaita-wall-2000",
+              "locator": "Estudio histórico y resultados arqueológicos",
+              "supports": "Recorrido, puertas y fábrica conservada de la cerca de la Alcazaba Qadima."
+            },
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+              "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5975658,
+            37.1820543
+          ],
+          [
+            -3.5968809,
+            37.1818231
+          ],
+          [
+            -3.595999,
+            37.1818851
+          ],
+          [
+            -3.5947285,
+            37.1822987
+          ],
+          [
+            -3.5937726,
+            37.1824667
+          ],
+          [
+            -3.593282,
+            37.1823085
+          ],
+          [
+            -3.5923621,
+            37.1820708
+          ],
+          [
+            -3.5914334,
+            37.1815973
+          ],
+          [
+            -3.5917215,
+            37.1814194
+          ],
+          [
+            -3.5916571,
+            37.1804123
+          ],
+          [
+            -3.5921901,
+            37.1803364
+          ],
+          [
+            -3.5921748,
+            37.179929
+          ],
+          [
+            -3.5927062,
+            37.1798103
+          ],
+          [
+            -3.5932689,
+            37.1791099
+          ],
+          [
+            -3.5940354,
+            37.178816
+          ],
+          [
+            -3.5947454,
+            37.1784574
+          ],
+          [
+            -3.5956711,
+            37.178137
+          ],
+          [
+            -3.5962925,
+            37.1782738
+          ],
+          [
+            -3.5970345,
+            37.1787728
+          ],
+          [
+            -3.5974805,
+            37.1792352
+          ],
+          [
+            -3.5977196,
+            37.1798952
+          ],
+          [
+            -3.5978224,
+            37.1804939
+          ],
+          [
+            -3.5976883,
+            37.1812049
+          ],
+          [
+            -3.5975658,
+            37.1820543
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "walls.axares-inner",
+      "properties": {
+        "id": "walls.axares-inner",
+        "name": "Cerca interior de Axares",
+        "historical_name": null,
+        "modern_name": null,
+        "aliases": [
+          "Muralla del arrabal de Axares"
+        ],
+        "modern_search_terms": [
+          "San Juan de los Reyes",
+          "Puerta de Guadix",
+          "Paseo de los Tristes",
+          "Cuesta del Chapiz"
+        ],
+        "category": "walls_gates",
+        "subtype": "defensive_wall",
+        "period": {
+          "from_year": 1100,
+          "to_year": null,
+          "from_precision": "century",
+          "to_precision": "unknown",
+          "note": "Cierre asociado a la expansión de Axares, interiorizado por recintos posteriores."
+        },
+        "present_c1492": "probable",
+        "confidence": {
+          "location": "approximate",
+          "time": "probable"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "toponymy",
+          "scholarly_reconstruction"
+        ],
+        "summary": "Recinto de la expansión de Axares que ayuda a explicar las sucesivas envolventes defensivas del Albaicín.",
+        "context_1492": "Tras la gran ampliación nazarí del Albaicín, esta cerca funcionaba principalmente como límite interior heredado y como soporte de accesos locales.",
+        "after_1492": "Muchos tramos fueron absorbidos por construcciones y calles; la reconstrucción depende de restos parciales y lecturas historiográficas.",
+        "today": "El circuito se dibuja como hipótesis territorial y no como una muralla continua conservada.",
+        "evidence_note": "Circuito interpretativo reconstruido con el barrio, compartiendo el tramo de contacto con Qadima y el frente del Darro. La correspondencia entre cerca y envolvente territorial es aproximada; el río se usa como eje de referencia del frente, no como huella de cimentación.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ujaen-water-route-2025",
+          "source.granada-pepri-islamic-city",
+          "source.alhambra-banuelo",
+          "source.dera-hydrology",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.junta-carmen-negro-2005",
+            "locator": "Contexto urbano medieval",
+            "supports": "Configuración del recinto de Axares y problemas de identificación de sus accesos."
+          },
+          {
+            "source_id": "source.ujaen-water-route-2025",
+            "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+            "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "probable",
+          "spatial_confidence": "approximate",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Cerca interior de Axares",
+          "function": "defensive_wall",
+          "summary": "Tras la gran ampliación nazarí del Albaicín, esta cerca funcionaba principalmente como límite interior heredado y como soporte de accesos locales.",
+          "evidence_note": "Circuito interpretativo reconstruido con el barrio, compartiendo el tramo de contacto con Qadima y el frente del Darro. La correspondencia entre cerca y envolvente territorial es aproximada; el río se usa como eje de referencia del frente, no como huella de cimentación.",
+          "geometry_variant_id": "c1492.walls.axares-inner",
+          "citations": [
+            {
+              "source_id": "source.junta-carmen-negro-2005",
+              "locator": "Contexto urbano medieval",
+              "supports": "Configuración del recinto de Axares y problemas de identificación de sus accesos."
+            },
+            {
+              "source_id": "source.ujaen-water-route-2025",
+              "locator": "Mapa 5 (p. 138); contraste de fases con PEPRI",
+              "supports": "Corredor o envolvente utilizados en el registro cartográfico; no implica un levantamiento exacto de 1492."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.5932689,
+            37.1791099
+          ],
+          [
+            -3.5927062,
+            37.1798103
+          ],
+          [
+            -3.5921748,
+            37.179929
+          ],
+          [
+            -3.5921901,
+            37.1803364
+          ],
+          [
+            -3.5916571,
+            37.1804123
+          ],
+          [
+            -3.5917215,
+            37.1814194
+          ],
+          [
+            -3.5914334,
+            37.1815973
+          ],
+          [
+            -3.5912161,
+            37.1815161
+          ],
+          [
+            -3.5904681,
+            37.1815752
+          ],
+          [
+            -3.590192,
+            37.1820746
+          ],
+          [
+            -3.589406,
+            37.1818341
+          ],
+          [
+            -3.5890703,
+            37.1814551
+          ],
+          [
+            -3.5887874,
+            37.1810534
+          ],
+          [
+            -3.5884673,
+            37.1803737
+          ],
+          [
+            -3.58865,
+            37.17965
+          ],
+          [
+            -3.5894253,
+            37.1786145
+          ],
+          [
+            -3.5906595,
+            37.1785531
+          ],
+          [
+            -3.5914125,
+            37.178261
+          ],
+          [
+            -3.5923349,
+            37.1784844
+          ],
+          [
+            -3.592746806758957,
+            37.17833262311191
+          ],
+          [
+            -3.5932689,
+            37.1791099
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bridge.carbon",
+      "properties": {
+        "id": "bridge.carbon",
+        "name": "Puente del Carbón",
+        "historical_name": "Al-qantara al-yadida",
+        "modern_name": "Calle Puente del Carbón",
+        "aliases": [
+          "Puente Nuevo",
+          "Puente del Corral del Carbón"
+        ],
+        "modern_search_terms": [
+          "Corral del Carbón",
+          "Calle Puente del Carbón",
+          "Reyes Católicos"
+        ],
+        "category": "water_infrastructure",
+        "subtype": "lost_bridge",
+        "period": {
+          "from_year": 1300,
+          "to_year": 1884,
+          "from_precision": "century",
+          "to_precision": "circa",
+          "note": "Puente nazarí del siglo XIV, desaparecido con las transformaciones del Darro y del centro urbano."
+        },
+        "present_c1492": "secure",
+        "confidence": {
+          "location": "probable",
+          "time": "secure"
+        },
+        "evidence_basis": [
+          "archaeology",
+          "documentary",
+          "toponymy",
+          "historical_cartography"
+        ],
+        "summary": "Puente nazarí que conectaba el entorno del Corral del Carbón con la margen opuesta del Darro.",
+        "context_1492": "El Puente Nuevo formaba parte de la red de pasos que cosía el centro comercial a ambos lados del Darro y daba acceso al funduq cercano.",
+        "after_1492": "El embovedado del río y la apertura de Reyes Católicos transformaron el lugar y eliminaron el puente como estructura visible.",
+        "today": "La línea cruza el Darro soterrado al prolongar la calle Puente del Carbón, junto a la entrada del Corral. Resume el paso desaparecido; no reproduce su anchura medieval.",
+        "evidence_note": "Se retira el punto erróneo al noroeste de Bibarrambla. El eje de la calle conservada se prolonga sobre el cauce cubierto y se contrasta con la excavación del estribo de 1992. La reconstrucción del vano sigue siendo probable.",
+        "geometry_method": "reconstructed_from_multiple_sources",
+        "geometry_source_refs": [
+          "source.ugr-puente-carbon",
+          "source.junta-darro-reyes-catolicos",
+          "source.openstreetmap"
+        ],
+        "citations": [
+          {
+            "source_id": "source.ugr-puente-carbon",
+            "locator": "Contexto histórico y arqueológico de la tenería",
+            "supports": "Existencia y cronología nazarí del puente junto al Corral del Carbón."
+          }
+        ],
+        "publication_status": "publishable",
+        "period_id": "c1492",
+        "period_state": {
+          "period_id": "c1492",
+          "presence": "present",
+          "temporal_confidence": "secure",
+          "spatial_confidence": "probable",
+          "change_from_previous": "not_applicable",
+          "physical_state": "unknown",
+          "name": "Puente del Carbón",
+          "function": "lost_bridge",
+          "summary": "El Puente Nuevo formaba parte de la red de pasos que cosía el centro comercial a ambos lados del Darro y daba acceso al funduq cercano.",
+          "evidence_note": "Se retira el punto erróneo al noroeste de Bibarrambla. El eje de la calle conservada se prolonga sobre el cauce cubierto y se contrasta con la excavación del estribo de 1992. La reconstrucción del vano sigue siendo probable.",
+          "geometry_variant_id": "c1492.bridge.carbon",
+          "citations": [
+            {
+              "source_id": "source.ugr-puente-carbon",
+              "locator": "Contexto histórico y arqueológico de la tenería",
+              "supports": "Existencia y cronología nazarí del puente junto al Corral del Carbón."
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.59853,
+            37.17524
+          ],
+          [
+            -3.598396,
+            37.1751453
+          ],
+          [
+            -3.5982066,
+            37.1750254
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,545 @@
+[
+  {
+    "period_id": "c1550",
+    "feature_id": "religious.madraza-yusufiyya",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.ugr-madraza"
+    ],
+    "check_method": "Reutilización del punto c. 1492 como referencia del mismo inmueble, contrastada con la fábrica actual y la identificación institucional.",
+    "notes": "La persistencia del solar se audita de nuevo para c. 1550; el punto no afirma la planta municipal de esa fecha."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "religious.cathedral-granada",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.granada-cathedral"
+    ],
+    "check_method": "Centro de la huella moderna de OpenStreetMap, usado solo como referencia del solar y contrastado con PNOA y la identificación municipal.",
+    "notes": "No se convierte la huella terminada en una planta de 1550; hace falta una planimetría de fases."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "religious.royal-chapel",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.junta-granada-tourism-plan"
+    ],
+    "check_method": "Centro de la entidad conservada en OpenStreetMap, contrastado con PNOA y la ficha cronológica institucional.",
+    "notes": "El punto identifica el edificio completo y no una reconstrucción de sus anexos o contactos constructivos en 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "civic.lonja-mercaderes",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.granada-lonja-mercaderes"
+    ],
+    "check_method": "Punto representativo colocado en Calle Oficios a partir de la dirección institucional, con contraste visual en ortofoto y cartografía moderna.",
+    "notes": "Debe sustituirse por una huella revisada antes de cualquier publicación; no se interpreta el contacto con la Capilla Real."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "civic.real-chancilleria",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.granada-chancilleria"
+    ],
+    "check_method": "Punto representativo del inmueble de Plaza Nueva contrastado con PNOA y la dirección institucional; no se usa su huella terminada.",
+    "notes": "La reconstrucción posterior deberá excluir expresamente la fachada de 1587 y separar crujías por fase."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "civic.hospital-real",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.granada-hospital-real"
+    ],
+    "check_method": "Centro de la entidad moderna de OpenStreetMap, contrastado con PNOA y la dirección institucional del Hospital Real.",
+    "notes": "La huella actual no se publica como fase de 1550; falta lectura arquitectónica de las campañas de obra."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "royal.palace-charles-v",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-charles-v-palace"
+    ],
+    "check_method": "Centro de la huella moderna de OpenStreetMap contrastado con PNOA, usado únicamente como emplazamiento de la obra imperial.",
+    "notes": "Se prohíbe convertir automáticamente la huella terminada en una fase completa de 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "gate.puerta-granadas",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-puerta-granadas-study"
+    ],
+    "check_method": "Nodo moderno de OpenStreetMap contrastado con la fábrica visible en PNOA y el estudio de intervención del Patronato.",
+    "notes": "La localización es segura, pero el punto no describe la altura ni la ornamentación alcanzadas en 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "water.pilar-carlos-v",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-machuca-imperial-works"
+    ],
+    "check_method": "Nodo moderno de OpenStreetMap contrastado con PNOA y la identificación institucional del pilar conservado.",
+    "notes": "La geometría es una referencia puntual y no una medición del frente arquitectónico."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "religious.san-miguel-bajo",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.granada-san-miguel-bajo"
+    ],
+    "check_method": "Centro de la huella moderna de OpenStreetMap contrastado con PNOA y el punto de control independiente de San Miguel Bajo.",
+    "notes": "La futura fase poligonal deberá aislar la mitad construida en 1539 y no usar la iglesia completa."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "religious.san-cristobal",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.granada-san-cristobal"
+    ],
+    "check_method": "Centro de la huella moderna de OpenStreetMap contrastado con PNOA y la dirección institucional del templo.",
+    "notes": "No se atribuye al año 1550 el volumen completo ni las reformas posteriores de la iglesia."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "gate.alhambra-justice",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-puerta-granadas-study"
+    ],
+    "check_method": "Reutilización del punto c. 1492 sobre la puerta conservada, con nueva comprobación de contexto mediante PNOA y la fuente del programa imperial.",
+    "notes": "La continuidad espacial se registra como una afirmación histórica independiente para c. 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "walls.alhambra-perimeter",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-fortified-city-guide",
+      "source.alhambra-history"
+    ],
+    "check_method": "Comparación de la alineación c. 1492 con la fábrica conservada y las fuentes de continuidad de la Casa Real; pendiente de revisar reparaciones del siglo XVI.",
+    "notes": "La misma línea exige una auditoría temporal nueva porque su persistencia en 1550 es una afirmación histórica."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "royal.alhambra",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-fortified-city-guide",
+      "source.alhambra-history"
+    ],
+    "check_method": "Revisión del recinto derivado de la muralla conservada frente a PNOA y a la historia institucional de la Casa Real, sin atribuir uniformidad interior.",
+    "notes": "Área provisional de conjunto; el Palacio de Carlos V se representa aparte como obra en curso."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "civic.maristan",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-maristan",
+      "source.alhambra-maristan-mint-2023"
+    ],
+    "check_method": "Contraste de la envolvente arqueológica actual con la investigación de la adaptación del Maristán como ceca desde 1497.",
+    "notes": "La envolvente es apta para revisión del sitio, no para inferir cada taller o muro interno de 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "religious.medina-great-mosque",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.granada-sagrario",
+      "source.ugr-aljama-mosque-2004",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022"
+    ],
+    "check_method": "Reutilización del punto c. 1492 como referencia del mismo solar, contrastada con la identificación municipal, la ortofoto y la restitución académica del edificio anterior a 1705.",
+    "notes": "La continuidad material queda documentada, pero la planta publicada debe georreferenciarse y revisarse antes de sustituir el punto."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "civic.university-curia",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.ugr-history-timeline",
+      "source.ugr-old-university-building-1975"
+    ],
+    "check_method": "Punto representativo de la antigua Universidad en Plaza Alonso Cano, contrastado con PNOA, la cronología institucional y el estudio arquitectónico del inmueble.",
+    "notes": "No se adopta la manzana actual como huella de 1550 porque incorpora la relación posterior con el Palacio Arzobispal y otras reformas."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "religious.santa-cruz-real",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.granada-santa-cruz-real",
+      "source.ugr-urban-transformation",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022"
+    ],
+    "check_method": "Punto de referencia del sitio moderno contrastado con fuente institucional, OpenStreetMap y ortofoto; no se interpreta como huella edificada de 1550.",
+    "notes": "Representación deliberadamente puntual: localiza el sitio actual y no reconstruye la huella, la parcela ni la fase construida hacia 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "religious.san-jeronimo",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.granada-san-jeronimo",
+      "source.ugr-urban-transformation",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022"
+    ],
+    "check_method": "Punto de referencia del sitio moderno contrastado con fuente institucional, OpenStreetMap y ortofoto; no se interpreta como huella edificada de 1550.",
+    "notes": "Representación deliberadamente puntual: localiza el sitio actual y no reconstruye la huella, la parcela ni la fase construida hacia 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "religious.san-jose",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.granada-san-jose",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022"
+    ],
+    "check_method": "Punto de referencia del sitio moderno contrastado con fuente institucional, OpenStreetMap y ortofoto; no se interpreta como huella edificada de 1550.",
+    "notes": "Representación deliberadamente puntual: localiza el sitio actual y no reconstruye la huella, la parcela ni la fase construida hacia 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "religious.san-juan-reyes",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.granada-san-juan-reyes",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022"
+    ],
+    "check_method": "Punto de referencia del sitio moderno contrastado con fuente institucional, OpenStreetMap y ortofoto; no se interpreta como huella edificada de 1550.",
+    "notes": "Representación deliberadamente puntual: localiza el sitio actual y no reconstruye la huella, la parcela ni la fase construida hacia 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "religious.san-matias",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.granada-san-matias",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022"
+    ],
+    "check_method": "Punto de referencia del sitio moderno contrastado con fuente institucional, OpenStreetMap y ortofoto; no se interpreta como huella edificada de 1550.",
+    "notes": "Representación deliberadamente puntual: localiza el sitio actual y no reconstruye la huella, la parcela ni la fase construida hacia 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "religious.san-luis",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.granada-san-luis",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022"
+    ],
+    "check_method": "Punto de referencia del sitio moderno contrastado con fuente institucional, OpenStreetMap y ortofoto; no se interpreta como huella edificada de 1550.",
+    "notes": "Representación deliberadamente puntual: localiza el sitio actual y no reconstruye la huella, la parcela ni la fase construida hacia 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "gate.elvira",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.dera-protected-heritage",
+      "source.granada-elvira-gate",
+      "source.granada-pepri-islamic-city",
+      "source.ugr-vico-2023"
+    ],
+    "check_method": "Geometría pública heredada contrastada con la ficha de fuentes c. 1550; se conserva como hipótesis auditable y no como reconstrucción verificada.",
+    "notes": "Punto del acceso conservado; no reconstruye el recinto defensivo completo ni las estructuras desaparecidas hacia 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "gate.monaita",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.dera-protected-heritage",
+      "source.granada-pepri-islamic-city",
+      "source.granada-ziri-wall",
+      "source.granada-monaita",
+      "source.junta-monaita-wall-2000"
+    ],
+    "check_method": "Geometría pública heredada contrastada con la ficha de fuentes c. 1550; se conserva como hipótesis auditable y no como reconstrucción verificada.",
+    "notes": "Punto del acceso conservado; no reconstruye el recinto defensivo completo ni las estructuras desaparecidas hacia 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "gate.alhambra-arms",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-arms-gate",
+      "source.alhambra-fortified-city-guide",
+      "source.alhambra-gates"
+    ],
+    "check_method": "Geometría pública heredada contrastada con la ficha de fuentes c. 1550; se conserva como hipótesis auditable y no como reconstrucción verificada.",
+    "notes": "Punto del acceso conservado; no reconstruye el recinto defensivo completo ni las estructuras desaparecidas hacia 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "gate.alhambra-seven-floors",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.alhambra-gates",
+      "source.alhambra-fortified-city-guide"
+    ],
+    "check_method": "Geometría pública heredada contrastada con la ficha de fuentes c. 1550; se conserva como hipótesis auditable y no como reconstrucción verificada.",
+    "notes": "Punto del acceso conservado; no reconstruye el recinto defensivo completo ni las estructuras desaparecidas hacia 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "commerce.corral-carbon",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.alhambra-corral-carbon",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022"
+    ],
+    "check_method": "Geometría pública heredada contrastada con la ficha de fuentes c. 1550; se conserva como hipótesis auditable y no como reconstrucción verificada.",
+    "notes": "Envolvente conservada reutilizada como referencia de sitio; requiere lectura de fases antes de interpretar su perímetro como fábrica exacta de 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "water.banuelo",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.alhambra-banuelo",
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.csic-banuelo-2021"
+    ],
+    "check_method": "Geometría pública heredada contrastada con la ficha de fuentes c. 1550; se conserva como hipótesis auditable y no como reconstrucción verificada.",
+    "notes": "Envolvente conservada reutilizada como referencia de sitio; requiere lectura de fases antes de interpretar su perímetro como fábrica exacta de 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "water.darro",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.dera-hydrology",
+      "source.granada-water-culture",
+      "source.granada-carrera-darro",
+      "source.granada-darro-vault",
+      "source.junta-darro-reyes-catolicos",
+      "source.granada-pepri-islamic-city",
+      "source.openstreetmap",
+      "source.ugr-water-ordinances-2022"
+    ],
+    "check_method": "Geometría pública heredada contrastada con la ficha de fuentes c. 1550; se conserva como hipótesis auditable y no como reconstrucción verificada.",
+    "notes": "Eje heredado para revisión: sostiene localización general y continuidad, pero no prueba cada tramo, anchura o contacto en 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "water.genil",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.dera-hydrology",
+      "source.granada-water-culture",
+      "source.granada-pepri-islamic-city",
+      "source.ugr-water-ordinances-2022",
+      "source.ujaen-water-route-2025"
+    ],
+    "check_method": "Geometría pública heredada contrastada con la ficha de fuentes c. 1550; se conserva como hipótesis auditable y no como reconstrucción verificada.",
+    "notes": "Eje heredado para revisión: sostiene localización general y continuidad, pero no prueba cada tramo, anchura o contacto en 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "route.elvira-axis",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.granada-pepri-islamic-city",
+      "source.granada-elvira-gate",
+      "source.openstreetmap",
+      "source.granada-calle-elvira",
+      "source.ugr-vico-2023"
+    ],
+    "check_method": "Geometría pública heredada contrastada con la ficha de fuentes c. 1550; se conserva como hipótesis auditable y no como reconstrucción verificada.",
+    "notes": "Eje heredado para revisión: sostiene localización general y continuidad, pero no prueba cada tramo, anchura o contacto en 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "bridge.carbon",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.ugr-puente-carbon",
+      "source.junta-darro-reyes-catolicos",
+      "source.openstreetmap",
+      "source.alhambra-corral-carbon"
+    ],
+    "check_method": "Geometría pública heredada contrastada con la ficha de fuentes c. 1550; se conserva como hipótesis auditable y no como reconstrucción verificada.",
+    "notes": "Eje heredado para revisión: sostiene localización general y continuidad, pero no prueba cada tramo, anchura o contacto en 1550."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "gate.fajalauza",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.openstreetmap",
+      "source.pnoa-andalucia-2022",
+      "source.granada-pepri-islamic-city",
+      "source.ugr-abbas-defences",
+      "source.granada-fajalauza",
+      "source.junta-fajalauza-2008",
+      "source.ugr-vico-2023",
+      "source.granada-albaicin-wall-route"
+    ],
+    "check_method": "Punto de la puerta conservada contrastado con fábrica, arqueología y cartografía histórica; no se interpreta como planta del conjunto defensivo.",
+    "notes": "Localizador puntual seguro; torres, patio, conexiones murarias y fases de reparación quedan fuera."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "water.acequia-real-alhambra",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.alhambra-real-acequia",
+      "source.alhambra-torre-agua",
+      "source.openstreetmap",
+      "source.alhambra-real-acequia-2023",
+      "source.ugr-generalife-christian-2017"
+    ],
+    "check_method": "Eje c. 1492 reutilizado únicamente como hipótesis del componente principal, contrastado con controles documentales y topográficos y limitado por exclusiones explícitas en geometry-wave-2.",
+    "notes": "La línea permanece aproximada e in_review; no incorpora anchura, caja, ramales excluidos, tomas, repartidores ni pérdidas no georreferenciadas."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "water.acequia-aynadamar",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.openstreetmap",
+      "source.ugr-water-ordinances-2022",
+      "source.junta-fajalauza-2008"
+    ],
+    "check_method": "Eje c. 1492 reutilizado únicamente como hipótesis del componente principal, contrastado con controles documentales y topográficos y limitado por exclusiones explícitas en geometry-wave-2.",
+    "notes": "La línea permanece aproximada e in_review; no incorpora anchura, caja, ramales excluidos, tomas, repartidores ni pérdidas no georreferenciadas."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "water.acequia-gorda",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.dera-hydrology",
+      "source.openstreetmap",
+      "source.ugr-water-ordinances-2022"
+    ],
+    "check_method": "Eje c. 1492 reutilizado únicamente como hipótesis del componente principal, contrastado con controles documentales y topográficos y limitado por exclusiones explícitas en geometry-wave-2.",
+    "notes": "La línea permanece aproximada e in_review; no incorpora anchura, caja, ramales excluidos, tomas, repartidores ni pérdidas no georreferenciadas."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "water.acequia-cadi",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.junta-camino-cementerio-2014",
+      "source.openstreetmap",
+      "source.ugr-cadi-ordinances-2025"
+    ],
+    "check_method": "Eje c. 1492 reutilizado únicamente como hipótesis del componente principal, contrastado con controles documentales y topográficos y limitado por exclusiones explícitas en geometry-wave-2.",
+    "notes": "La línea permanece aproximada e in_review; no incorpora anchura, caja, ramales excluidos, tomas, repartidores ni pérdidas no georreferenciadas."
+  },
+  {
+    "period_id": "c1550",
+    "feature_id": "water.acequia-romayla",
+    "status": "in_review",
+    "reviewed_on": null,
+    "geometry_source_refs": [
+      "source.ujaen-water-route-2025",
+      "source.granada-pepri-islamic-city",
+      "source.openstreetmap",
+      "source.ugr-water-ordinances-2022"
+    ],
+    "check_method": "Eje c. 1492 reutilizado únicamente como hipótesis del componente principal, contrastado con controles documentales y topográficos y limitado por exclusiones explícitas en geometry-wave-2.",
+    "notes": "La línea permanece aproximada e in_review; no incorpora anchura, caja, ramales excluidos, tomas, repartidores ni pérdidas no georreferenciadas."
+  }
+]
