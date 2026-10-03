@@ -111,8 +111,8 @@ test('tracks location privately and supports passive pan and recenter', async ({
   })
   await expect(page.getByText(/Nearest stop: Palacio de la Madraza/)).toBeVisible()
   await page.getByRole('button', { name: 'Show the full map' }).click()
-  const recenter = page.getByRole('button', { name: 'Recenter on my location' })
-  await expect(recenter).toHaveAttribute('aria-pressed', 'true')
+  const locationControl = page.locator('.map-location-button')
+  await expect(locationControl).toHaveAttribute('aria-pressed', 'true')
   if (testInfo.project.name === 'chromium-desktop') {
     await page.waitForTimeout(800)
     const map = page.locator('#map-canvas')
@@ -132,9 +132,10 @@ test('tracks location privately and supports passive pan and recenter', async ({
     await page.mouse.down()
     await page.mouse.move(dragX + 80, dragY, { steps: 4 })
     await page.mouse.up()
-    await expect(recenter).toHaveAttribute('aria-pressed', 'false')
-    await recenter.click()
-    await expect(recenter).toHaveAttribute('aria-pressed', 'true')
+    await expect(locationControl).toHaveAttribute('aria-pressed', 'false')
+    await expect(locationControl).toHaveAttribute('aria-label', 'Recenter on my location')
+    await locationControl.click()
+    await expect(locationControl).toHaveAttribute('aria-pressed', 'true')
   }
   expect(page.url()).not.toMatch(/-?\d+\.\d{4}/)
   expect(await page.evaluate(() => [localStorage.length, sessionStorage.length])).toEqual([0, 0])
@@ -182,7 +183,7 @@ test('keeps place content usable when the basemap fails', async ({ page }) => {
 })
 
 for (const [code, expected] of [
-  [2, 'Location is unavailable on this device.'],
+  [2, 'Your position is temporarily unavailable.'],
   [3, 'Location timed out.'],
 ] as const) {
   test(`handles geolocation error ${code}`, async ({ page }) => {
@@ -200,8 +201,9 @@ for (const [code, expected] of [
     }, code)
     await page.goto('place/bib-rambla/?lang=en')
     await page.getByRole('button', { name: 'Use my location' }).click()
-    await expect(page.getByText(new RegExp(expected))).toBeVisible()
-    await expect(page.getByRole('button', { name: 'Try again' })).toBeVisible()
+    const locationPanel = page.getByRole('region', { name: 'Where am I?' })
+    await expect(locationPanel.getByText(new RegExp(expected))).toBeVisible()
+    await expect(locationPanel.getByRole('button', { name: 'Try again' })).toBeVisible()
   })
 }
 
@@ -211,7 +213,7 @@ test('handles an unsupported browser', async ({ page }) => {
   })
   await page.goto('place/bib-rambla/?lang=en')
   await page.getByRole('button', { name: 'Use my location' }).click()
-  await expect(page.getByText('Location is unavailable on this device.')).toBeVisible()
+  await expect(page.getByText('Location is unavailable in this browser or device.')).toBeVisible()
 })
 
 test('reports an outside-pilot fix without leaving the route', async ({ page, context }) => {

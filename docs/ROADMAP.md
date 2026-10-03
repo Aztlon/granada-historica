@@ -159,10 +159,11 @@ Preview implementation:
 
 1. [x] Define durable route and place URLs so a public marker can open the
    relevant map position and historical feature without requiring an app.
-2. [x] Add an opt-in, client-side `where am I?` mode that updates while the page
-   is open without transmitting or persisting a visitor's coordinates. The map
-   follows by default, keeps the location visible after a manual pan, and offers
-   a standard recenter control.
+2. [x] Add an application-wide, opt-in, client-side `where am I?` mode that
+   updates while the page is open without transmitting or persisting a
+   visitor's coordinates. A single shared watcher serves the main map and route
+   views. The map follows by default, keeps the location visible after a manual
+   pan, and offers a standard recenter control.
 3. [x] Add a focused desktop side panel and mobile place sheet for the five-stop
    Bibarrambla route, with numbered map stops and feature drill-down.
 4. [x] Add Spanish/English interface and content-routing foundations plus full

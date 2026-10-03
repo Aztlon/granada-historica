@@ -2,6 +2,7 @@ import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } fro
 import { FeatureDrawer } from '../components/FeatureDrawer'
 import { Header } from '../components/Header'
 import { LayerControl } from '../components/LayerControl'
+import { MapLocationControl } from '../components/MapLocationControl'
 import { PeriodSelector } from '../components/PeriodSelector'
 import { PlacePanel } from '../components/PlacePanel'
 import { CATEGORY_CONFIG } from '../data/categories'
@@ -36,7 +37,7 @@ import {
 import type { Locale, PlaceStop } from '../data/pilotSchema'
 import { featureIdSchema, type FeatureCategory, type HistoricalFeatureCollection } from '../data/schema'
 import { messages } from '../i18n/messages'
-import { useVisitorLocation } from '../location/useVisitorLocation'
+import { useMapLocation } from '../location/useMapLocation'
 
 const MapView = lazy(() => import('../map/MapView').then((module) => ({ default: module.MapView })))
 const NO_PILOT_PLACES: readonly PlaceStop[] = []
@@ -81,7 +82,9 @@ export function App({ internalComparisonLoader = DEFAULT_INTERNAL_COMPARISON_LOA
   const [visibleCategories, setVisibleCategories] = useState<Set<FeatureCategory>>(
     () => new Set(Object.keys(CATEGORY_CONFIG) as FeatureCategory[]),
   )
-  const visitorLocation = useVisitorLocation()
+  const mapLocation = useMapLocation()
+  const [isFollowingLocation, setIsFollowingLocation] = useState(false)
+  const [locationRecenterRequest, setLocationRecenterRequest] = useState(0)
   const text = useMemo(() => messages(locale), [locale])
 
   useEffect(() => {
@@ -291,9 +294,23 @@ export function App({ internalComparisonLoader = DEFAULT_INTERNAL_COMPARISON_LOA
     if (selectedFeature?.properties.category === category && visibleCategories.has(category)) closeDrawer()
   }
 
-  const located = visitorLocation.state.status === 'located' ? visitorLocation.state : null
-  const locationInsidePilot = Boolean(located && located.distance <= 2_000)
+  const activeLocation = mapLocation.state.status === 'active' ? mapLocation.state : null
   const showPilot = comparisonPeriod === 'c1492' && (appRoute.kind === 'route' || appRoute.kind === 'place')
+
+  const activateLocation = () => {
+    setIsLayerControlOpen(false)
+    setIsFollowingLocation(true)
+    if (mapLocation.state.status === 'active') {
+      setLocationRecenterRequest((current) => current + 1)
+    } else {
+      mapLocation.request()
+    }
+  }
+
+  const stopLocation = () => {
+    mapLocation.stop()
+    setIsFollowingLocation(false)
+  }
 
   return (
     <main className="app-shell">
@@ -324,8 +341,11 @@ export function App({ internalComparisonLoader = DEFAULT_INTERNAL_COMPARISON_LOA
             visibleCategories={[...visibleCategories]}
             pilotPlaces={showPilot ? pilotRoute.stops : NO_PILOT_PLACES}
             activePlaceId={appRoute.place?.id ?? null}
-            visitorLocation={locationInsidePilot ? located?.fix ?? null : null}
-            visitorLocationTrackingId={locationInsidePilot ? located?.trackingId ?? null : null}
+            visitorLocation={activeLocation?.fix ?? null}
+            visitorLocationTrackingId={activeLocation?.trackingId ?? null}
+            isFollowingLocation={isFollowingLocation}
+            locationRecenterRequest={locationRecenterRequest}
+            onLocationFollowChange={setIsFollowingLocation}
             onSelectFeature={selectFeature}
             onSelectPlace={selectPlace}
             text={text}
@@ -364,28 +384,36 @@ export function App({ internalComparisonLoader = DEFAULT_INTERNAL_COMPARISON_LOA
           <button ref={routeReopenRef} className="route-reopen-button" type="button" onClick={openRoute}>{pilotRoute.title[locale]}</button>
         )}
 
-        <LayerControl
-          isOpen={isLayerControlOpen}
-          historicalVisible={isHistoricalVisible}
-          historicalOpacity={historicalOpacity}
-          modernVisible={isModernVisible}
-          modernStrength={modernStrength}
-          visibleCategories={visibleCategories}
-          categoryCounts={categoryCounts}
-          onToggle={() => setIsLayerControlOpen((isOpen) => !isOpen)}
-          onClose={() => setIsLayerControlOpen(false)}
-          onToggleHistorical={() => setIsHistoricalVisible((visible) => !visible)}
-          onToggleModern={() => setIsModernVisible((visible) => !visible)}
-          onChangeModernStrength={setModernStrength}
-          onChangeHistoricalOpacity={setHistoricalOpacity}
-          onToggleCategory={toggleCategory}
-          onShowAllCategories={() => setVisibleCategories(new Set(Object.keys(CATEGORY_CONFIG) as FeatureCategory[]))}
-          onHideAllCategories={() => {
-            setVisibleCategories(new Set())
-            closeDrawer()
-          }}
-          text={text}
-        />
+        <div className="map-control-stack">
+          <MapLocationControl
+            locale={locale}
+            state={mapLocation.state}
+            isFollowing={isFollowingLocation}
+            onActivate={activateLocation}
+          />
+          <LayerControl
+            isOpen={isLayerControlOpen}
+            historicalVisible={isHistoricalVisible}
+            historicalOpacity={historicalOpacity}
+            modernVisible={isModernVisible}
+            modernStrength={modernStrength}
+            visibleCategories={visibleCategories}
+            categoryCounts={categoryCounts}
+            onToggle={() => setIsLayerControlOpen((isOpen) => !isOpen)}
+            onClose={() => setIsLayerControlOpen(false)}
+            onToggleHistorical={() => setIsHistoricalVisible((visible) => !visible)}
+            onToggleModern={() => setIsModernVisible((visible) => !visible)}
+            onChangeModernStrength={setModernStrength}
+            onChangeHistoricalOpacity={setHistoricalOpacity}
+            onToggleCategory={toggleCategory}
+            onShowAllCategories={() => setVisibleCategories(new Set(Object.keys(CATEGORY_CONFIG) as FeatureCategory[]))}
+            onHideAllCategories={() => {
+              setVisibleCategories(new Set())
+              closeDrawer()
+            }}
+            text={text}
+          />
+        </div>
 
         <div className="map-note" role="note">
           <span className="map-note__mark" aria-hidden="true" />
@@ -402,12 +430,12 @@ export function App({ internalComparisonLoader = DEFAULT_INTERNAL_COMPARISON_LOA
         locale={locale}
         place={appRoute.place}
         featuresById={localizedFeaturesById}
-        locationState={visitorLocation.state}
+        locationState={mapLocation.state}
         onClose={closePlacePanel}
         onSelectPlace={(place) => selectPlace(place.id)}
         onSelectFeature={selectFeature}
-        onLocate={visitorLocation.locate}
-        onClearLocation={visitorLocation.clear}
+        onLocate={activateLocation}
+        onClearLocation={stopLocation}
       />
 
       <FeatureDrawer

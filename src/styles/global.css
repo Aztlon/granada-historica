@@ -480,11 +480,19 @@ a:focus-visible,
   line-height: 1.35;
 }
 
-.layer-control {
+.map-control-stack {
   position: absolute;
   top: 22px;
   right: 22px;
   z-index: 6;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.layer-control,
+.map-location-control {
+  position: relative;
 }
 
 .map-control-button {
@@ -518,6 +526,9 @@ a:focus-visible,
 }
 
 .layer-panel {
+  position: absolute;
+  top: 100%;
+  right: 0;
   width: min(330px, calc(100vw - 32px));
   max-height: calc(100vh - 135px);
   margin-top: 8px;
@@ -1433,22 +1444,8 @@ a:focus-visible,
   height: 36px;
 }
 
-.map-location-control {
-  position: absolute;
-  top: 138px;
-  left: 22px;
-  z-index: 5;
-  margin: 0;
-}
-
 .map-location-button {
-  display: grid;
-  padding: 7px;
-  color: #40504a;
-  background: #fff;
-  border: 0;
-  cursor: pointer;
-  place-items: center;
+  min-width: 44px;
 }
 
 .map-location-button:hover,
@@ -1462,9 +1459,11 @@ a:focus-visible,
   background: #e7f2f4;
 }
 
+.map-location-button--passive {
+  background: rgba(247, 243, 234, 0.96);
+}
+
 .map-location-button svg {
-  width: 22px;
-  height: 22px;
   overflow: visible;
   fill: currentColor;
   stroke: currentColor;
@@ -1474,6 +1473,27 @@ a:focus-visible,
 
 .map-location-button svg circle:last-child {
   fill: none;
+}
+
+.map-location-feedback {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: min(310px, calc(100vw - 28px));
+  padding: 10px 12px;
+  margin: 0;
+  color: #40504a;
+  background: rgba(247, 243, 234, 0.98);
+  border: 1px solid rgba(24, 54, 45, 0.18);
+  border-radius: 9px;
+  box-shadow: var(--shadow);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.map-location-feedback--error {
+  color: #703b2b;
+  border-color: rgba(154, 74, 49, 0.32);
 }
 
 .maplibregl-ctrl-attrib {
@@ -1634,7 +1654,7 @@ a:focus-visible,
     font-size: 0.54rem;
   }
 
-  .layer-control {
+  .map-control-stack {
     top: 14px;
     right: 14px;
   }
@@ -1669,12 +1689,6 @@ a:focus-visible,
   .maplibregl-ctrl-bottom-right {
     right: 10px;
     bottom: 62px;
-  }
-
-  .map-location-control {
-    top: 14px;
-    right: 68px;
-    left: auto;
   }
 
   .maplibregl-ctrl-bottom-left {

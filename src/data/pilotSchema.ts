@@ -1,8 +1,6 @@
 import { z } from 'zod'
+export type { Locale } from '../i18n/types'
 import { FEATURE_CATEGORIES, CONFIDENCE_VALUES, EVIDENCE_BASIS_VALUES, GEOMETRY_METHOD_VALUES } from './schema'
-
-export const LOCALES = ['es', 'en'] as const
-export type Locale = (typeof LOCALES)[number]
 
 const localizedTextSchema = z.object({
   es: z.string().min(1),
@@ -55,13 +53,6 @@ export const featureTranslationsSchema = z.object({
 export type PilotRoute = z.infer<typeof pilotRouteSchema>
 export type PlaceStop = z.infer<typeof placeStopSchema>
 export type FeatureTranslation = z.infer<typeof translatedFeatureSchema>
-
-export interface LocationFix {
-  longitude: number
-  latitude: number
-  accuracy: number
-  timestamp: number
-}
 
 export type LocalizedCategoryLabels = Record<(typeof FEATURE_CATEGORIES)[number], string>
 export type LocalizedConfidenceLabels = Record<(typeof CONFIDENCE_VALUES)[number], string>

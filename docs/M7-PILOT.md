@@ -69,12 +69,15 @@ the current layer. See [the editorial review record](M7-EDITORIAL-REVIEW.md).
 
 ## Privacy and measurement
 
-Location is requested only after the visitor presses the location button and
-grants the browser permission. It updates while the page is open, follows the
-visitor by default, becomes camera-passive after a manual map movement, and can
-be recentered with the map location control. Coordinates remain in memory and
-are not written to URLs, storage, analytics or application requests. The
-visible map still loads third-party map tiles for its viewport.
+Location belongs to the application map rather than to this route. It is
+requested only after the visitor presses the map location button and grants the
+browser permission. One shared browser watcher updates while the page is open,
+follows the visitor by default, becomes camera-passive after a manual map
+movement, and can be recentered with the same control. Entering or leaving the
+pilot route neither starts nor stops a separate watcher; the pilot only consumes
+the shared fix to identify the nearest stop. Coordinates remain in memory and
+are not written to URLs, storage, analytics or application requests. The visible
+map still loads third-party map tiles for its viewport.
 
 Cloudflare Web Analytics may report aggregate page paths for each stop. It must
 not be extended with coordinates, persistent identifiers or custom location

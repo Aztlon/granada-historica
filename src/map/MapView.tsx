@@ -18,7 +18,8 @@ import type {
   FeatureCategory,
   HistoricalFeatureCollection,
 } from '../data/schema'
-import type { LocationFix, PlaceStop } from '../data/pilotSchema'
+import type { PlaceStop } from '../data/pilotSchema'
+import type { LocationFix } from '../location/types'
 import type { Messages } from '../i18n/messages'
 
 const GRANADA_CENTER: [number, number] = [-3.5986, 37.1773]
@@ -178,6 +179,9 @@ interface MapViewProps {
   activePlaceId: string | null
   visitorLocation: LocationFix | null
   visitorLocationTrackingId: number | null
+  isFollowingLocation: boolean
+  locationRecenterRequest: number
+  onLocationFollowChange: (isFollowing: boolean) => void
   onSelectFeature: (featureId: string) => void
   onSelectPlace: (placeId: string) => void
   text: Messages
@@ -197,6 +201,9 @@ export function MapView({
   activePlaceId,
   visitorLocation,
   visitorLocationTrackingId,
+  isFollowingLocation,
+  locationRecenterRequest,
+  onLocationFollowChange,
   onSelectFeature,
   onSelectPlace,
   text,
@@ -204,8 +211,9 @@ export function MapView({
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<Map | null>(null)
   const latestVisitorLocationRef = useRef(visitorLocation)
-  const latestVisitorTrackingIdRef = useRef(visitorLocationTrackingId)
-  const hasCenteredLocationRef = useRef(false)
+  const latestFollowingLocationRef = useRef(isFollowingLocation)
+  const centeredTrackingIdRef = useRef<number | null>(null)
+  const lastRecenterRequestRef = useRef(locationRecenterRequest)
   const basemapVisibilityRef = useRef(
     new globalThis.Map<string, 'visible' | 'none'>(),
   )
@@ -218,14 +226,10 @@ export function MapView({
     visibleCategories,
   })
   const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading')
-  const [pausedTrackingId, setPausedTrackingId] = useState<number | null>(null)
-  const isFollowingLocation = visitorLocationTrackingId !== null
-    && pausedTrackingId !== visitorLocationTrackingId
-
   useEffect(() => {
     latestVisitorLocationRef.current = visitorLocation
-    latestVisitorTrackingIdRef.current = visitorLocationTrackingId
-  }, [visitorLocation, visitorLocationTrackingId])
+    latestFollowingLocationRef.current = isFollowingLocation
+  }, [isFollowingLocation, visitorLocation, visitorLocationTrackingId])
 
   useEffect(() => {
     renderedStateRef.current = {
@@ -341,17 +345,26 @@ export function MapView({
     })
     map.on('mouseenter', 'pilot-place-points', showPointer)
     map.on('mouseleave', 'pilot-place-points', hidePointer)
-    map.on('movestart', (event) => {
-      const fromLocationFollow = 'locationFollowSource' in event && event.locationFollowSource
-      if (fromLocationFollow || !latestVisitorLocationRef.current || map.isZooming()) return
-      setPausedTrackingId(latestVisitorTrackingIdRef.current)
+    const suspendLocationFollow = () => {
+      if (!latestVisitorLocationRef.current || !latestFollowingLocationRef.current) return
+      onLocationFollowChange(false)
+    }
+    map.on('dragstart', suspendLocationFollow)
+    map.on('zoomstart', (event) => {
+      if ('originalEvent' in event && event.originalEvent) suspendLocationFollow()
+    })
+    map.on('rotatestart', (event) => {
+      if ('originalEvent' in event && event.originalEvent) suspendLocationFollow()
+    })
+    map.on('pitchstart', (event) => {
+      if ('originalEvent' in event && event.originalEvent) suspendLocationFollow()
     })
 
     return () => {
       mapRef.current = null
       map.remove()
     }
-  }, [featureCollection, onSelectFeature, onSelectPlace, pilotPlaces, text.locale])
+  }, [featureCollection, onLocationFollowChange, onSelectFeature, onSelectPlace, pilotPlaces, text.locale])
 
   useEffect(() => {
     const map = mapRef.current
@@ -390,21 +403,17 @@ export function MapView({
     if (!map || !source) return
     source.setData(buildVisitorLocationCollection(visitorLocation))
     if (!visitorLocation) {
-      hasCenteredLocationRef.current = false
+      centeredTrackingIdRef.current = null
+      lastRecenterRequestRef.current = locationRecenterRequest
       return
     }
+    const isNewTrackingSession = centeredTrackingIdRef.current !== visitorLocationTrackingId
+    const recenterRequested = lastRecenterRequestRef.current !== locationRecenterRequest
+    lastRecenterRequestRef.current = locationRecenterRequest
     if (!isFollowingLocation) return
-    centerOnVisitor(map, visitorLocation, !hasCenteredLocationRef.current)
-    hasCenteredLocationRef.current = true
-  }, [isFollowingLocation, status, visitorLocation])
-
-  const recenterVisitor = () => {
-    const map = mapRef.current
-    if (!map || !visitorLocation) return
-    setPausedTrackingId(null)
-    centerOnVisitor(map, visitorLocation, true)
-    hasCenteredLocationRef.current = true
-  }
+    centerOnVisitor(map, visitorLocation, isNewTrackingSession || recenterRequested)
+    centeredTrackingIdRef.current = visitorLocationTrackingId
+  }, [isFollowingLocation, locationRecenterRequest, status, visitorLocation, visitorLocationTrackingId])
 
   return (
     <div className="map-frame">
@@ -420,25 +429,6 @@ export function MapView({
       <p id="map-keyboard-help" className="sr-only">
         {text.mapHelp}
       </p>
-
-      {visitorLocation && (
-        <div className="map-location-control maplibregl-ctrl maplibregl-ctrl-group">
-          <button
-            type="button"
-            className={isFollowingLocation ? 'map-location-button map-location-button--active' : 'map-location-button'}
-            aria-label={text.locale === 'en' ? 'Recenter on my location' : 'Centrar en mi ubicación'}
-            aria-pressed={isFollowingLocation}
-            title={text.locale === 'en' ? 'Recenter on my location' : 'Centrar en mi ubicación'}
-            onClick={recenterVisitor}
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="12" cy="12" r="4" />
-              <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
-              <circle cx="12" cy="12" r="8" />
-            </svg>
-          </button>
-        </div>
-      )}
 
       {status === 'loading' && (
         <div className="map-status" role="status">
@@ -570,14 +560,11 @@ function centerOnVisitor(map: Map, location: LocationFix, forceZoom: boolean) {
       : location.accuracy <= 500 ? 15
         : 13.5
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  map.easeTo(
-    {
-      center: [location.longitude, location.latitude],
-      zoom: forceZoom ? Math.max(map.getZoom(), accuracyZoom) : map.getZoom(),
-      duration: reducedMotion ? 0 : forceZoom ? 650 : 450,
-    },
-    { locationFollowSource: true },
-  )
+  map.easeTo({
+    center: [location.longitude, location.latitude],
+    zoom: forceZoom ? Math.max(map.getZoom(), accuracyZoom) : map.getZoom(),
+    duration: reducedMotion ? 0 : forceZoom ? 650 : 450,
+  })
 }
 
 function styleBasemap(map: Map) {

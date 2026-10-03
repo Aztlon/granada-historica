@@ -1,15 +1,15 @@
 import { useEffect, useRef } from 'react'
 import type { HistoricalFeature } from '../data/schema'
 import type { Locale, PlaceStop } from '../data/pilotSchema'
-import { pilotRoute } from '../data/pilot'
-import type { VisitorLocationState } from '../location/useVisitorLocation'
+import { nearestPilotStop, pilotRoute } from '../data/pilot'
+import type { MapLocationState } from '../location/useMapLocation'
 
 interface PlacePanelProps {
   isOpen: boolean
   locale: Locale
   place: PlaceStop | null
   featuresById: ReadonlyMap<string, HistoricalFeature>
-  locationState: VisitorLocationState
+  locationState: MapLocationState
   onClose: () => void
   onSelectPlace: (place: PlaceStop) => void
   onSelectFeature: (featureId: string) => void
@@ -162,29 +162,27 @@ function LocationSection({
   onSelectPlace,
 }: {
   locale: Locale
-  state: VisitorLocationState
+  state: MapLocationState
   onLocate: () => void
   onClear: () => void
   onSelectPlace: (place: PlaceStop) => void
 }) {
   const en = locale === 'en'
-  const nearest = state.status === 'located'
-    ? pilotRoute.stops.find((stop) => stop.id === state.nearestPlaceId) ?? null
-    : null
+  const nearest = state.status === 'active' ? nearestPilotStop(state.fix) : null
 
   return (
     <section className="location-section" aria-labelledby="location-title">
       <h3 id="location-title">{en ? 'Where am I?' : '¿Dónde estoy?'}</h3>
       {state.status === 'idle' && <button type="button" onClick={onLocate}>{en ? 'Use my location' : 'Usar mi ubicación'}</button>}
-      {state.status === 'loading' && <p role="status">{en ? 'Finding your location…' : 'Buscando tu ubicación…'}</p>}
-      {state.status === 'located' && nearest && (
+      {state.status === 'requesting' && <p role="status">{en ? 'Finding your location…' : 'Buscando tu ubicación…'}</p>}
+      {state.status === 'active' && nearest && (
         <div role="status">
-          {state.distance <= 2_000 ? (
+          {nearest.distance <= 2_000 ? (
             <p>{en
-              ? `Nearest stop: ${nearest.title.en}, ${Math.round(state.distance)} m away. Accuracy ±${Math.round(state.fix.accuracy)} m.`
-              : `Parada más cercana: ${nearest.title.es}, a ${Math.round(state.distance)} m. Precisión ±${Math.round(state.fix.accuracy)} m.`}</p>
+              ? `Nearest stop: ${nearest.stop.title.en}, ${Math.round(nearest.distance)} m away. Accuracy ±${Math.round(state.fix.accuracy)} m.`
+              : `Parada más cercana: ${nearest.stop.title.es}, a ${Math.round(nearest.distance)} m. Precisión ±${Math.round(state.fix.accuracy)} m.`}</p>
           ) : (
-            <p>{en ? 'You are outside the 2 km pilot area; the map remains centred on Granada.' : 'Estás fuera del ámbito de 2 km del piloto; el mapa permanece centrado en Granada.'}</p>
+            <p>{en ? 'You are outside the 2 km pilot area; your location remains visible on the map.' : 'Estás fuera del ámbito de 2 km del piloto; tu ubicación sigue visible en el mapa.'}</p>
           )}
           {state.fix.accuracy > 150 && (
             <p className="location-warning">{en
@@ -195,15 +193,17 @@ function LocationSection({
             ? 'Your location updates while this page is open. It stays on this device and is not stored or added to analytics.'
             : 'Tu ubicación se actualiza mientras esta página está abierta. Permanece en este dispositivo y no se guarda ni se añade a la analítica.'}</p>
           <div className="location-actions">
-            {state.distance <= 2_000 && <button type="button" onClick={() => onSelectPlace(nearest)}>{en ? 'Open nearest stop' : 'Abrir la parada más cercana'}</button>}
+            {nearest.distance <= 2_000 && <button type="button" onClick={() => onSelectPlace(nearest.stop)}>{en ? 'Open nearest stop' : 'Abrir la parada más cercana'}</button>}
             <button type="button" onClick={onClear}>{en ? 'Stop using my location' : 'Dejar de usar mi ubicación'}</button>
           </div>
         </div>
       )}
-      {state.status === 'denied' && <p role="alert">{en ? 'Location permission was denied. You can continue using every stop manually.' : 'Se ha denegado el permiso de ubicación. Puedes seguir usando todas las paradas manualmente.'}</p>}
-      {state.status === 'timeout' && <p role="alert">{en ? 'Location timed out. Try again when the device has a clearer signal.' : 'La ubicación ha agotado el tiempo de espera. Inténtalo de nuevo con mejor señal.'}</p>}
-      {state.status === 'unavailable' && <p role="alert">{en ? 'Location is unavailable on this device.' : 'La ubicación no está disponible en este dispositivo.'}</p>}
-      {['denied', 'timeout', 'unavailable'].includes(state.status) && <button type="button" onClick={onLocate}>{en ? 'Try again' : 'Intentar de nuevo'}</button>}
+      {state.status === 'permission-denied' && <p role="alert">{en ? 'Location permission was denied. Allow location for this site in your browser settings, then try again; every stop remains available manually.' : 'Se ha denegado el permiso de ubicación. Permítela para este sitio en la configuración del navegador e inténtalo de nuevo; todas las paradas siguen disponibles manualmente.'}</p>}
+      {state.status === 'error' && <p role="alert">{state.reason === 'timeout'
+        ? (en ? 'Location timed out. Try again when the device has a clearer signal.' : 'La ubicación ha agotado el tiempo de espera. Inténtalo de nuevo con mejor señal.')
+        : (en ? 'Your position is temporarily unavailable. Check device location services and try again.' : 'Tu posición no está disponible temporalmente. Comprueba la ubicación del dispositivo e inténtalo de nuevo.')}</p>}
+      {state.status === 'unavailable' && <p role="alert">{en ? 'Location is unavailable in this browser or device.' : 'La ubicación no está disponible en este navegador o dispositivo.'}</p>}
+      {['permission-denied', 'error', 'unavailable'].includes(state.status) && <button type="button" onClick={onLocate}>{en ? 'Try again' : 'Intentar de nuevo'}</button>}
     </section>
   )
 }

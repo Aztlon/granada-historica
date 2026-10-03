@@ -28,7 +28,8 @@ nombre, estado de conservación y citas.
 
 M7 dispone ya de una implementación de previsualización: una ruta bilingüe de
 cinco paradas entre Bibarrambla y la antigua Mezquita Mayor, enlaces duraderos,
-códigos QR, fichas de lugar y localización actualizada en la página y procesada en el dispositivo.
+códigos QR y fichas de lugar. El mapa general ofrece además localización en
+tiempo real, procesada en el dispositivo y compartida con la ruta piloto.
 Permanece oculta de la navegación principal y marcada `noindex` hasta completar
 la revisión histórica e inglesa, la comprobación de campo, la accesibilidad y el
 acuerdo de mantenimiento. Las reconstrucciones visuales y la realidad aumentada

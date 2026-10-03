@@ -6,9 +6,9 @@ import {
   pilotRouteSchema,
   type FeatureTranslation,
   type Locale,
-  type LocationFix,
   type PlaceStop,
 } from './pilotSchema'
+import type { LocationFix } from '../location/types'
 
 export const pilotRoute = pilotRouteSchema.parse(routeJson)
 export const englishFeatureTranslations = featureTranslationsSchema.parse(
