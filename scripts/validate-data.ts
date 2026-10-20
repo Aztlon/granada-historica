@@ -1,4 +1,5 @@
 import { readFile } from 'node:fs/promises'
+import { createHash } from 'node:crypto'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import {
@@ -9,6 +10,7 @@ import {
   type HistoricalFeature,
 } from '../src/data/schema'
 import { featureTranslationsSchema, pilotRouteSchema } from '../src/data/pilotSchema'
+import { placeResourcesRegistrySchema } from '../src/data/placeResourcesSchema'
 import {
   entityPresentationRegistrySchema,
   periodTitleDecisionRegistrySchema,
@@ -1085,6 +1087,32 @@ async function validate() {
       const feature = featureById.get(featureId)
       if (feature && translation.citation_supports.length !== feature.properties.citations.length) {
         errors.push(`  - ${featureId} debe traducir exactamente ${feature.properties.citations.length} apoyos de cita.`)
+      }
+    }
+  }
+
+  const resourcesResult = placeResourcesRegistrySchema.safeParse(await readJson('data/place-resources.json'))
+  if (!resourcesResult.success) {
+    errors.push(formatIssues('data/place-resources.json', resourcesResult.error.issues))
+  } else {
+    for (const place of resourcesResult.data.places) {
+      if (!featureIds.has(place.entity_id)) errors.push(`  - Recursos de entidad inexistente: ${place.entity_id}`)
+      const refs = [
+        ...(place.context?.source_refs ?? []),
+        ...place.images.flatMap((image) => image.components.flatMap((component) => component.source_refs)),
+      ]
+      for (const id of refs) {
+        if (!sourceIds.has(id)) errors.push(`  - Fuente de recurso inexistente: ${id}`)
+      }
+      for (const image of place.images) {
+        try {
+          const bytes = await readFile(resolve(repositoryRoot, 'public', image.path))
+          if (bytes.length !== image.bytes || createHash('sha256').update(bytes).digest('hex') !== image.sha256) {
+            errors.push(`  - Tamaño o huella de imagen incorrectos: ${image.path}`)
+          }
+        } catch {
+          errors.push(`  - Falta la imagen local: ${image.path}`)
+        }
       }
     }
   }

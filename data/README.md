@@ -195,3 +195,21 @@ entity, and rejects spatial payload in the evidence-preparation test suite.
 Spatial regression checks additionally cover mosque supply, canal crossings and
 branches, bridges on the Darro, wall/gate alignment and shared quarter edges.
 They enforce documented reconstruction assumptions, not historical certainty.
+
+## Optional place media and reading
+
+`place-resources.json` adds optional bilingual context, images and further
+reading keyed by an existing public entity ID. It does not replace canonical
+historical narratives or their citation sequence. Absent resources render
+nothing; absent locale links are omitted. See
+[`BAB-AL-RAMLA-MEDIA-MANIFEST.md`](../docs/BAB-AL-RAMLA-MEDIA-MANIFEST.md) for the
+first text-only example, candidate asset provenance and acquisition limits.
+
+Before adding an image, verify its individual reuse terms and authorship,
+represented date and original/relocated-site distinction. Complete bilingual
+caption, alt text, uncertainty, visible review state and rights/attribution
+metadata. Interpretive reconstructions additionally require accountable review
+and component evidence. Keep licensed pixels self-hosted in `public/media/`,
+record final byte size and SHA-256, and run `npm run validate:data`. The schema
+limits each place to two raster images, 200 kB per image and 300 kB total;
+third-party assets retain their own rights, not `LICENSE-DATA` by default.

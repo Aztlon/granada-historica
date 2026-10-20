@@ -3,6 +3,9 @@ import type { HistoricalFeature } from '../data/schema'
 import type { Locale, PlaceStop } from '../data/pilotSchema'
 import { nearestPilotStop, pilotRoute } from '../data/pilot'
 import type { MapLocationState } from '../location/useMapLocation'
+import { sourcesById } from '../data/historicalData'
+import { placeResourcesById } from '../data/placeResources'
+import { PlaceResources } from './PlaceResources'
 
 interface PlacePanelProps {
   isOpen: boolean
@@ -108,6 +111,7 @@ export function PlacePanel({
             <button className="primary-action" type="button" onClick={() => onSelectFeature(place.primary_feature_id)}>
               {en ? 'Open the complete historical record' : 'Abrir la ficha histórica completa'}
             </button>
+            <PlaceResources resources={placeResourcesById.get(place.primary_feature_id)} locale={locale} sourcesById={sourcesById} />
 
             <section className="related-features" aria-labelledby="related-title">
               <h3 id="related-title">{en ? 'Related places' : 'Lugares relacionados'}</h3>

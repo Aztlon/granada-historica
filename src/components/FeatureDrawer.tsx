@@ -11,6 +11,8 @@ import type {
 import type { LocalizedEntityPresentation } from '../data/entityPresentation'
 import type { GazetteerEntry, HistoricalFeature, HistoricalSource } from '../data/schema'
 import type { Messages } from '../i18n/messages'
+import { placeResourcesById } from '../data/placeResources'
+import { PlaceResources } from './PlaceResources'
 
 interface FeatureDrawerProps {
   isOpen: boolean
@@ -316,6 +318,7 @@ function FeatureDetails({
       </section>
 
       <SourceList citations={properties.citations} sourcesById={sourcesById} text={text} />
+      <PlaceResources resources={placeResourcesById.get(feature.id)} locale={text.locale} sourcesById={sourcesById} />
     </div>
   )
 }

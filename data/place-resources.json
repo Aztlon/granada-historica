@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "places": [
+    {
+      "entity_id": "gate.bib-rambla",
+      "context": {
+        "note": {
+          "es": "El punto del mapa señala el emplazamiento original en Arco de las Orejas con Salamanca. El arco reconstruido en el bosque de la Alhambra está en otro lugar. Aquí no se presenta una reconstrucción visual de 1492.",
+          "en": "The map point marks the original site at Arco de las Orejas and Salamanca. The reconstructed arch in the Alhambra woods stands elsewhere. No visual reconstruction of 1492 is presented here."
+        },
+        "source_refs": ["source.alhambra-bib-rambla-gate"]
+      },
+      "images": [],
+      "further_reading": [
+        {
+          "id": "patronato",
+          "kind": "institutional",
+          "links": {
+            "es": {
+              "title": "La Puerta de Bibarrambla — Patronato de la Alhambra y Generalife",
+              "url": "https://www.alhambra-patronato.es/la-puerta-de-bibarrambla2"
+            },
+            "en": {
+              "title": "Bibarrambla Gate — Patronato de la Alhambra y Generalife",
+              "url": "https://www.alhambra-patronato.es/en/edificios-lugares/puerta-de-bibarrambla"
+            }
+          }
+        },
+        {
+          "id": "wikipedia",
+          "kind": "wikipedia",
+          "links": {
+            "es": {
+              "title": "Puerta de Bib-Rambla — Wikipedia",
+              "url": "https://es.wikipedia.org/wiki/Puerta_de_Bib-Rambla"
+            },
+            "en": {
+              "title": "Gate of Bibarrambla — Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Gate_of_Bibarrambla"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
