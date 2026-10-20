@@ -1078,14 +1078,14 @@ async function validate() {
     ])
     for (const featureId of requiredTranslationIds) {
       const translation = translationsResult.data.features[featureId]
-      const feature = featureById.get(featureId)
       if (!translation) errors.push(`  - Falta la traducción inglesa completa de ${featureId}`)
-      else if (feature && translation.citation_supports.length !== feature.properties.citations.length) {
+    }
+    for (const [featureId, translation] of Object.entries(translationsResult.data.features)) {
+      if (!featureIds.has(featureId)) errors.push(`  - Traducción de una entidad inexistente: ${featureId}`)
+      const feature = featureById.get(featureId)
+      if (feature && translation.citation_supports.length !== feature.properties.citations.length) {
         errors.push(`  - ${featureId} debe traducir exactamente ${feature.properties.citations.length} apoyos de cita.`)
       }
-    }
-    for (const featureId of Object.keys(translationsResult.data.features)) {
-      if (!featureIds.has(featureId)) errors.push(`  - Traducción de una entidad inexistente: ${featureId}`)
     }
   }
 

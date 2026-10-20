@@ -5,6 +5,7 @@ import {
   nearestPilotStop,
   parseAppRoute,
   pilotRoute,
+  pilotFeatureIds,
   resolveLocale,
 } from './pilot'
 
@@ -44,7 +45,9 @@ describe('M7 pilot route', () => {
   })
 
   it('contains complete English pilot translations', () => {
-    expect(Object.keys(englishFeatureTranslations)).toHaveLength(6)
+    for (const id of pilotFeatureIds) {
+      expect(englishFeatureTranslations[id]).toBeDefined()
+    }
   })
 
   it('calculates the nearest stop locally', () => {

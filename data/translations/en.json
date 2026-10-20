@@ -83,6 +83,255 @@
       "today": "Most of the circuit has disappeared or lies beneath the modern city. The map links the western front with the anchors at Cuarto Real, Cuesta del Pescado, Solares, Vistillas, the Escoriaza junction and the ascent to Los Mártires; it does not represent continuously visible masonry.",
       "evidence_note": "Puerta de Elvira, Bibalmazán, Mariana Pineda, Cuarto Real and remains near Paseo de la Bomba provide anchors of unequal strength. The Solares–Vistillas–Puerta de la Loma section and the ascent to Cerro de Ahabul are reconstructed from documents, topography and published plans, and therefore remain approximate.",
       "citation_supports": ["Walls and entrances of the medina in the overall interpretation of the Islamic city.", "The wall's junction with Puerta de Elvira and its defensive connections.", "The western wall sequence from Puerta de Elvira through the lower city towards Torres Bermejas.", "Approximate location of gates on the western front.", "Bab al-Ramla's position in the wall of the lower medina.", "The distinction between the inner and outer southern walls and the route around the southern suburbs.", "The southern escarpment and the approach to Vistillas and the Molinos Gate."]
+    },
+    "royal.alhambra": {
+      "name": "Alhambra",
+      "historical_name": null,
+      "modern_name": "Alhambra and Generalife monumental complex",
+      "aliases": [
+        "Palatine city of the Alhambra",
+        "Alhambra citadel"
+      ],
+      "modern_search_terms": [
+        "Nasrid Palaces",
+        "Alcazaba",
+        "Sabika"
+      ],
+      "period_note": "The palatine city was founded in the Nasrid period and continued to change after 1492. The area represents its configuration around that date in generalised form, rather than all its historical dependencies or the present protected complex.",
+      "summary": "Palatine city, fortress and seat of the Nasrid court on the Sabika hill.",
+      "context_1492": "The Alhambra contained palaces, administrative spaces, houses, workshops, a mosque, baths, water systems and a military alcazaba. Its structure served the court and had evolved for more than two centuries before the conquest.",
+      "after_1492": "After the conquest it became a Christian royal residence. Repairs by the Catholic Monarchs and, later, construction of the palace of Charles V and other changes altered parts of the complex without erasing its extensive Nasrid fabric.",
+      "today": "It is a monumental complex managed by the Patronato de la Alhambra y Generalife. The area on this map represents the space enclosed by the surviving outer wall, rather than the present protected complex or all the Alhambra's historical dependencies.",
+      "evidence_note": "Its location and existence in 1492 are secure on the basis of surviving architecture, archaeology and documentation. The polygon is derived from mapped outer fabric checked against orthophotography; it does not distinguish phases or inner enclosures.",
+      "citation_supports": [
+        "Chronology, palatine functions and development up to the conquest in the late fifteenth century.",
+        "Its character as a palatine city and its urban organisation in the service of the court."
+      ]
+    },
+    "royal.generalife": {
+      "name": "Generalife",
+      "historical_name": null,
+      "modern_name": "Generalife palace and gardens",
+      "aliases": [
+        "Yannat al-Arif",
+        "Jannat al-Arif"
+      ],
+      "modern_search_terms": [
+        "Cerro del Sol",
+        "Patio de la Acequia",
+        "Cuesta de los Chinos"
+      ],
+      "period_note": "The palatine estate developed during the Nasrid period and underwent later alterations; its core and the cultivated plots classified as medieval are shown separately.",
+      "summary": "Palatine estate for agriculture and recreation outside the eastern wall of the Alhambra.",
+      "context_1492": "The Generalife formed a landscape of palace, cultivated plots, gardens and water associated with the Nasrid court, but physically separated from the walled Alhambra by the ravine and its defences.",
+      "after_1492": "The estate continued to change and retained its garden character. Later interventions altered entrances, gardens and buildings without erasing the essential historic organisation.",
+      "today": "The palace and historic cultivated plots form part of the Alhambra and Generalife monumental complex. The mapped patches correspond to the core and the Colorada, Grande, de la Mercería and de Fuente Peña plots; they do not form a present-day administrative boundary.",
+      "evidence_note": "The Plan Director identifies these areas as medieval Islamic. Their edges follow present-day parcels and enclosures in OpenStreetMap, so they express continuity in the landscape rather than an exact boundary survey for 1492.",
+      "citation_supports": [
+        "Its character as a Nasrid recreational estate and its position outside and east of the Alhambra.",
+        "Defensive separation and connection through Puerta del Arrabal and the Cuesta de los Chinos.",
+        "Identification of the core, gardens and cultivated plots classified as medieval Islamic."
+      ]
+    },
+    "gate.elvira": {
+      "name": "Elvira Gate",
+      "historical_name": "Bab Ilbira",
+      "modern_name": "Puerta de Elvira",
+      "aliases": [
+        "Bab Ilbira",
+        "Ilbira Gate"
+      ],
+      "modern_search_terms": [
+        "Plaza de San Gil",
+        "Calle Elvira",
+        "Cuesta de la Alhacaba"
+      ],
+      "period_note": "The gate took shape in the Zirid period and received substantial Nasrid defensive works under Yusuf I.",
+      "summary": "Major northwestern entrance to the medina, linking Calle Elvira with the walls of the Albaicín.",
+      "context_1492": "The gate functioned as an entrance fortress, with successive defences controlling entry to the medina and the ascent towards the Albaicín Alcazaba.",
+      "after_1492": "The barbicans and much of the complex were demolished or altered during the early modern period, while the main arch remained an urban landmark.",
+      "today": "The surviving arch still marks the end of Calle Elvira. The point indicates the visible historic fabric, rather than the full extent of the gate's fortified complex.",
+      "evidence_note": "The location is secure on the basis of surviving fabric and documentation. The marker does not reconstruct the lost courtyards, towers and barbicans.",
+      "citation_supports": [
+        "Chronology, defensive configuration, connections and transformations of the gate."
+      ]
+    },
+    "gate.alhambra-arms": {
+      "name": "Gate of Arms",
+      "historical_name": "Bab al-Silah",
+      "modern_name": "Puerta de las Armas",
+      "aliases": [
+        "Bab al-Silah"
+      ],
+      "modern_search_terms": [
+        "Alcazaba",
+        "Torre de las Armas",
+        "Darro"
+      ],
+      "period_note": "Entrance built in the thirteenth century and in use during the late Nasrid period.",
+      "summary": "Principal medieval entrance between Granada and the palatine city on the northern flank of the Alcazaba.",
+      "context_1492": "It was the usual entrance from the city to the seat of the court. The path climbed from the Darro and passed through a bent entrance designed to control passage.",
+      "after_1492": "New Christian entrances changed the main circulation routes and the gate became less prominent, although its complex defensive structure survived.",
+      "today": "The gate remains part of the Alcazaba enclosure. The point identifies its physical position within the northern wall.",
+      "evidence_note": "Its location, general chronology and function are supported by the surviving fabric and the Patronato's documentation.",
+      "citation_supports": [
+        "Chronology, bent entrance form and role as a direct connection with Granada."
+      ]
+    },
+    "gate.alhambra-justice": {
+      "name": "Gate of Justice",
+      "historical_name": "Bab al-Sharia",
+      "modern_name": "Puerta de la Justicia",
+      "aliases": [
+        "Bab al-Sharia",
+        "Gate of the Esplanade"
+      ],
+      "modern_search_terms": [
+        "Alhambra",
+        "Alhambra woods",
+        "Pilar de Carlos V"
+      ],
+      "period_note": "Major monumental entrance built under Yusuf I and preserved with later alterations.",
+      "summary": "Monumental entrance through the southern wall of the Alhambra, also conceived as a powerful defensive structure.",
+      "context_1492": "The gate controlled entry from the south through a bent passage and expressed the political and defensive character of the palatine city.",
+      "after_1492": "It continued as one of the main entrances and acquired new uses, restorations and symbolic interpretations without losing its essential Nasrid fabric.",
+      "today": "It is one of the most recognisable entrances to the monumental complex. The point marks the surviving passage within the southern front of the wall.",
+      "evidence_note": "Its position and presence in 1492 are secure thanks to the inscription, surviving architecture and historical documentation.",
+      "citation_supports": [
+        "Historical name, southern position and monumental and defensive character.",
+        "Integration of the gate into the wall's system of entrances."
+      ]
+    },
+    "commerce.corral-carbon": {
+      "name": "Corral del Carbón",
+      "historical_name": "Al-Funduq al-Yadida",
+      "modern_name": "Corral del Carbón",
+      "aliases": [
+        "New grain exchange",
+        "Funduq al-Yadida"
+      ],
+      "modern_search_terms": [
+        "Calle Mariana Pineda",
+        "Corral del Carbón",
+        "Plaza Isabel la Católica"
+      ],
+      "period_note": "It was built in the first half of the fourteenth century and retains its fundamental structure despite changes of use.",
+      "summary": "Nasrid grain exchange that stored and sold wheat and provided secure lodging for merchants and their goods.",
+      "context_1492": "The funduq formed part of the medina's commercial infrastructure: its courtyard organised storerooms and lodgings, and the gate closed at nightfall to protect goods and travellers.",
+      "after_1492": "It passed into Christian ownership, served as a courtyard theatre and communal housing, and eventually became associated with charcoal storage. Torres Balbás acquired and restored it between 1929 and 1931.",
+      "today": "The building survives on Calle Mariana Pineda and can be visited. The geometry follows the monument's modern footprint, including its central courtyard.",
+      "evidence_note": "The surviving fabric allows a secure delimitation of the present building. The geometry does not distinguish Nasrid phases from later restorations and transformations.",
+      "citation_supports": [
+        "Chronology, Nasrid functions, later changes, restoration and preservation of the building."
+      ]
+    },
+    "civic.maristan": {
+      "name": "Maristán",
+      "historical_name": "Maristán of Granada",
+      "modern_name": "Archaeological remains of the Maristán",
+      "aliases": [
+        "Hospital of Muhammad V",
+        "Mint"
+      ],
+      "modern_search_terms": [
+        "Calle Concepción de Zafra",
+        "Carrera del Darro",
+        "El Bañuelo"
+      ],
+      "period_note": "Founded by Muhammad V, it was built between 1365 and 1367 and retained its care function until 1494.",
+      "summary": "Hospital founded by Muhammad V in the Axares neighbourhood and organised around a porticoed courtyard with a pool.",
+      "context_1492": "The Maristán was still providing care in a rectangular building with four wings and two storeys. Its royal foundation made it a distinctive institution in Nasrid Granada.",
+      "after_1492": "From 1497 it housed the Royal Mint. It was partly demolished and rebuilt in 1843, and renewed threats of demolition in the twentieth century prompted its investigation and protection.",
+      "today": "The southern portico, eastern wing and archaeological remains below ground survive. The Patronato consolidated and restored the portico between 2017 and 2022.",
+      "evidence_note": "The plot and remains are securely known, but the mapped footprint represents the present archaeological enclosure and does not distinguish each original wall from later reconstructions.",
+      "citation_supports": [
+        "Foundation, dates, function, general plan, changes of use, surviving remains and restoration."
+      ]
+    },
+    "water.banuelo": {
+      "name": "El Bañuelo",
+      "historical_name": "Hammam al-Yawza",
+      "modern_name": "El Bañuelo",
+      "aliases": [
+        "Bath of the Walnut Tree",
+        "Bath of the Guadix Gate"
+      ],
+      "modern_search_terms": [
+        "Carrera del Darro 31",
+        "Calle Bañuelo",
+        "Puente de Espinosa"
+      ],
+      "period_note": "Its dating is debated between a Zirid construction in the eleventh century and a proposed twelfth-century date; it was fully integrated into the medieval city before 1492.",
+      "summary": "Public bath of al-Andalus beside the Darro, one of the best-preserved medieval hammams on the Iberian Peninsula.",
+      "context_1492": "The bath served a densely populated sector beside a main thoroughfare and Bab al-Difaf. Its rooms structured the ritual of physical and spiritual cleansing characteristic of the urban hammam.",
+      "after_1492": "The building survived the prohibitions and transformations that caused many public baths to disappear. Modern restorations consolidated exceptional fabric, although its exact date remains debated.",
+      "today": "El Bañuelo survives and can be visited at Carrera del Darro 31. The geometry follows the building's present footprint, which incorporates restorations and does not amount to a phase-by-phase interpretation.",
+      "evidence_note": "The location and fabric are secure. The chronology is marked as disputed because the Patronato's own synthesis records both eleventh- and twelfth-century proposals.",
+      "citation_supports": [
+        "Historical names, chronological debate, relationship with Bab al-Difaf, function and preservation."
+      ]
+    },
+    "urban.albaicin": {
+      "name": "Nasrid Albaicín",
+      "historical_name": null,
+      "modern_name": "Albaicín",
+      "aliases": [
+        "Albayzín",
+        "Rabad al-Bayyazin"
+      ],
+      "modern_search_terms": [
+        "Cuesta de la Alhacaba",
+        "San Cristóbal",
+        "Sacromonte"
+      ],
+      "period_note": "The sector incorporates enclosures and suburbs formed in different periods; no single date is proposed for the entire area.",
+      "summary": "Large urban sector on the slope north of the Darro, composed of enclosures and neighbourhoods formed in successive phases.",
+      "context_1492": "In the Nasrid period the Albaicín slope was densely structured by walls, gates, radial routes and a secondary network of adarves. It did not form a neighbourhood with simple boundaries or ones identical to those of today.",
+      "after_1492": "The population, religious uses and built fabric changed profoundly, although many routes, plots, cisterns and defensive walls preserved part of the inherited structure.",
+      "today": "Union of the envelopes of the Alcazaba Vieja, Axares and the suburb of al-Bayyazin. Calle Elvira crosses the medina and is no longer used as an artificial boundary for these enclosures.",
+      "evidence_note": "Geometric derivation from three adjoining enclosures. The outer edge retains the audited Nasrid wall, and the inner edges are checked against Mapa 5 and the PEPRI. It does not correspond to the present administrative neighbourhood.",
+      "citation_supports": [
+        "Organisation of the Nasrid Albaicín through walls, gates, radial routes and adarves.",
+        "Spatial relationship between the Albaicín, the medina and the Alhambra.",
+        "Course of the wall from Puerta de Guadix, at the end of Paseo de los Tristes, via San Miguel Alto and Fajalauza to Puerta de Elvira.",
+        "Modern river axis used as a reproducible reference for the southern boundary.",
+        "Western endpoint shared by the outer wall and Calle Elvira.",
+        "Corridor or envelope used in the cartographic record; it does not imply an exact survey of 1492."
+      ]
+    },
+    "urban.lower-medina": {
+      "name": "Lower medina",
+      "historical_name": "Madinat Garnata",
+      "modern_name": "City centre, Realejo and western slopes of the Alhambra",
+      "aliases": [
+        "Medina of Granada",
+        "Lower city"
+      ],
+      "modern_search_terms": [
+        "Cathedral",
+        "Alcaicería",
+        "Bib-Rambla",
+        "Calle Elvira",
+        "City centre",
+        "Realejo",
+        "Campo del Príncipe",
+        "Vistillas de los Ángeles"
+      ],
+      "period_note": "The medina developed from the Zirid period onwards and changed in extent and organisation during subsequent centuries.",
+      "summary": "Walled lower city containing the principal religious and commercial centre and several suburbs of Nasrid Granada.",
+      "context_1492": "The lower city brought together the congregational mosque, Alcaicería, Madrasa, markets, grain exchanges and the former suburbs of Campillo, al-Fajjarin and al-Nayd that had been incorporated into it. Calle Elvira structured its northern edge; the western and southern walls enclosed the plain, the Realejo, Antequeruela and the slopes up to the Alhambra wall.",
+      "after_1492": "The establishment of Christian institutions, the transformation of the Great Mosque and major street alterations changed the centre. Parts of the smaller street network and several buildings of al-Andalus survived in fragmentary form.",
+      "today": "Envelope of the lower city and its southern extensions. To the north it joins the Alcazaba Vieja and Axares along their walls; it includes the medina sector on both sides of Calle Elvira.",
+      "evidence_note": "The northern edge is revised together with the Albaicín enclosures, replacing the artificial closure along Calle Elvira. The southern outer perimeter retains the previous archaeological reconstruction. This entity combines the medina and its incorporated suburbs; it does not claim that they all formed a single neighbourhood.",
+      "citation_supports": [
+        "Structure of the medina, Elvira axis and location of the religious and commercial centre.",
+        "Relationship of Puerta de Elvira with the street of the same name and the medina wall.",
+        "Western and southern perimeter of the lower city as far as Torres Bermejas.",
+        "Walled connection between Torres Bermejas and the Alhambra Alcazaba.",
+        "Relationship between Puerta de las Armas, the Darro and the lower city.",
+        "Course of the southern wall that incorporated Alfareros, Nayd and Antequeruela into the urban enclosure and climbed towards the Alhambra.",
+        "Corridor or envelope used in the cartographic record; it does not imply an exact survey of 1492."
+      ]
     }
   }
 }

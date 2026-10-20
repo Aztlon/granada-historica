@@ -2,6 +2,8 @@ import { act, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { vi } from 'vitest'
 import { internalComparisonDataset } from '../data/internalComparisonData'
+import { publicEntityPresentationsById } from '../data/entityPresentation'
+import { englishFeatureTranslations } from '../data/pilot'
 import { App } from './App'
 
 const loadInternalComparison = async () => internalComparisonDataset
@@ -22,6 +24,41 @@ vi.mock('../map/MapView', () => ({
 describe('App', () => {
   beforeEach(() => {
     window.history.replaceState({}, '', '/?lang=es')
+  })
+
+  it('switches the new English introduction and full narrative together without fallback', async () => {
+    const user = userEvent.setup()
+    const presentation = publicEntityPresentationsById.get('water.banuelo')!
+    window.history.replaceState({}, '', '/?feature=water.banuelo&lang=es')
+    render(<App />)
+    expect(screen.getByText(presentation.general_description.es)).toBeVisible()
+    await user.click(screen.getByRole('button', { name: 'Cambiar idioma a inglés' }))
+    expect(screen.getByText(presentation.general_description.en!)).toBeVisible()
+    expect(screen.getByText(englishFeatureTranslations['water.banuelo'].context_1492)).toBeVisible()
+    expect(screen.queryByText('This historical record is currently available in Spanish.')).toBeNull()
+    expect(new URL(window.location.href).searchParams.get('lang')).toBe('en')
+    await user.click(screen.getByRole('button', { name: 'Change language to Spanish' }))
+    expect(screen.getByText(presentation.general_description.es)).toBeVisible()
+    expect(screen.getByText(/El baño atendía a un sector densamente poblado/)).toBeVisible()
+  })
+
+  it.each([
+    'gate.bib-rambla', 'route.zacatin-axis', 'commerce.alcaiceria',
+    'religious.madraza-yusufiyya', 'religious.medina-great-mosque', 'walls.medina-lower',
+  ])('uses the English entity introduction for existing translation %s', (id) => {
+    window.history.replaceState({}, '', `/?feature=${id}&lang=en`)
+    render(<App />)
+    expect(screen.getByText(publicEntityPresentationsById.get(id)!.general_description.en!))
+      .toBeVisible()
+    expect(screen.queryByText('This historical record is currently available in Spanish.')).toBeNull()
+  })
+
+  it('labels untranslated narratives while independently localizing the introduction', () => {
+    window.history.replaceState({}, '', '/?feature=gate.monaita&lang=en')
+    render(<App />)
+    expect(screen.getByText(publicEntityPresentationsById.get('gate.monaita')!.general_description.en!))
+      .toBeVisible()
+    expect(screen.getByText('This historical record is currently available in Spanish.')).toBeVisible()
   })
 
   it('identifica el mapa y el periodo histórico', async () => {
