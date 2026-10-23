@@ -1,3 +1,4 @@
+import { gazetteerTranslationsSchema } from '../src/data/gazetteerTranslations'
 import { readFile } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
 import { dirname, resolve } from 'node:path'
@@ -1119,10 +1120,22 @@ async function validate() {
 
   errors.push(...auditSpatialRelationships(features).map((error) => `  - ${error}`))
 
+  const gazetteerTranslationsResult = gazetteerTranslationsSchema.safeParse(await readJson('data/translations/gazetteer-en.json'))
+  if (!gazetteerTranslationsResult.success) {
+    errors.push(formatIssues('data/translations/gazetteer-en.json', gazetteerTranslationsResult.error.issues))
+  }
   const gazetteerResult = gazetteerSchema.safeParse(await readJson('data/gazetteer.json'))
   if (!gazetteerResult.success) {
     errors.push(formatIssues('data/gazetteer.json', gazetteerResult.error.issues))
   } else {
+    if (gazetteerTranslationsResult.success) {
+      for (const id of Object.keys(gazetteerTranslationsResult.data.entries)) {
+        const entry = gazetteerResult.data.find((candidate) => candidate.id === id)
+        if (!entry || entry.defensive_context || entry.feature_id !== id.slice(4)) {
+          errors.push(`  - Traducción de nomenclátor fuera del contrato de este tramo: ${id}`)
+        }
+      }
+    }
     const gazetteerIds = new Set<string>()
     const mappedFeatureIds = new Set<string>()
 

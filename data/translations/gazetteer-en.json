@@ -1,0 +1,64 @@
+{
+  "entries": {
+    "gaz.royal.alhambra": {
+      "date_note": "Widely documented medieval palatine name",
+      "attestation_note": "The mapped entity represents the palatine city within its walls.",
+      "survival_note": "The enclosure, architecture and landscape survive with multiple phases.",
+      "notes": "Palatine city."
+    },
+    "gaz.royal.generalife": {
+      "date_note": "Medieval etymology and name transmitted in later accounts",
+      "attestation_note": "There are variants of the exact historical form of the name.",
+      "survival_note": "The palace, cultivated plots and water system survive with alterations.",
+      "notes": "Palatine estate."
+    },
+    "gaz.gate.elvira": {
+      "date_note": "Medieval name transmitted through Arabic and Christian sources",
+      "attestation_note": "The identification and continuity of the place name are secure.",
+      "survival_note": "The main arch survives, but not the entire defensive complex.",
+      "notes": "Junction between enclosures and an urban axis."
+    },
+    "gaz.gate.alhambra-arms": {
+      "date_note": "Transmitted medieval name",
+      "attestation_note": "The identification of the monument is well established.",
+      "survival_note": "Surviving palatine gate.",
+      "notes": "Northern entrance to the palatine city."
+    },
+    "gaz.gate.alhambra-justice": {
+      "date_note": "Inscription and Nasrid tradition from the fourteenth century",
+      "attestation_note": "The name and identification of the monument are secure.",
+      "survival_note": "Surviving monumental gate.",
+      "notes": "Surviving principal entrance."
+    },
+    "gaz.commerce.corral-carbon": {
+      "date_note": "Arabic name transmitted through historical scholarship",
+      "attestation_note": "The present name is later; its identity as a Nasrid funduq is secure.",
+      "survival_note": "The building survives with restorations and alterations.",
+      "notes": "Surviving monument."
+    },
+    "gaz.civic.maristan": {
+      "date_note": "Documented Nasrid foundation",
+      "attestation_note": "Well-established functional and institutional name.",
+      "survival_note": "Remains and an archaeological plot survive, with later reconstructions.",
+      "notes": "Mapped care facility."
+    },
+    "gaz.water.banuelo": {
+      "date_note": "Transmitted Arabic name with debated chronology",
+      "attestation_note": "Its identity as a medieval hammam is secure.",
+      "survival_note": "The medieval bath survives with restorations.",
+      "notes": "Surviving water-related building."
+    },
+    "gaz.urban.albaicin": {
+      "date_note": "Historical name with long continuity, applied here to the large urban sector",
+      "attestation_note": "It groups several nuclei and suburbs, rather than a single homogeneous unit.",
+      "survival_note": "Topography, the urban fabric and numerous elements survive, with alterations.",
+      "notes": "Geometric derivation from three adjoining enclosures. The outer edge retains the audited Nasrid wall, and the inner edges are checked against Mapa 5 and the PEPRI. It does not correspond to the present administrative neighbourhood."
+    },
+    "gaz.urban.lower-medina": {
+      "date_note": "Modern category based on the historical medina",
+      "attestation_note": "The qualifier ‘lower’ is analytical; the later enclosure includes incorporated suburbs.",
+      "survival_note": "Streets, plots and monuments survive, but the wall is highly fragmented.",
+      "notes": "The northern edge is revised together with the Albaicín enclosures, replacing the artificial closure along Calle Elvira. The southern outer perimeter retains the previous archaeological reconstruction. This entity combines the medina and its incorporated suburbs; it does not claim that they all formed a single neighbourhood."
+    }
+  }
+}

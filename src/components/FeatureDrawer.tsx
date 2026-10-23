@@ -1,3 +1,4 @@
+import { GazetteerPanel } from './GazetteerPanel'
 import { useEffect, useRef, type ReactNode } from 'react'
 import {
   SUBTYPE_LABELS,
@@ -255,37 +256,7 @@ function FeatureDetails({
         <p>{properties.today}</p>
       </DetailSection>
 
-      {gazetteerEntry && text.locale === 'es' && (
-        <section className="gazetteer-panel" aria-labelledby="gazetteer-title">
-          <p className="panel-kicker">Nomenclátor histórico</p>
-          <h3 id="gazetteer-title">Nombre y supervivencia</h3>
-          <dl className="confidence-list">
-            <div>
-              <dt>Atestación</dt>
-              <dd>
-                <strong>{NAME_ATTESTATION_LABELS[gazetteerEntry.name_attestation.status]}</strong>
-                <span>{gazetteerEntry.name_attestation.note}</span>
-              </dd>
-            </div>
-            <div>
-              <dt>Supervivencia</dt>
-              <dd>
-                <strong>{SURVIVAL_LABELS[gazetteerEntry.survival.status]}</strong>
-                <span>{gazetteerEntry.survival.note}</span>
-              </dd>
-            </div>
-            {gazetteerEntry.defensive_context && (
-              <div>
-                <dt>Recinto</dt>
-                <dd>
-                  <strong>{DEFENSIVE_ROLE_LABELS[gazetteerEntry.defensive_context.role]}</strong>
-                  <span>{gazetteerEntry.defensive_context.relationship_note}</span>
-                </dd>
-              </div>
-            )}
-          </dl>
-        </section>
-      )}
+      {gazetteerEntry && <GazetteerPanel entry={gazetteerEntry} locale={text.locale} />}
 
       <section className="evidence-panel" aria-labelledby="evidence-title">
         <p className="panel-kicker">{text.evidenceKicker}</p>
@@ -522,32 +493,6 @@ function SourceList({
       </ol>
     </section>
   )
-}
-
-const NAME_ATTESTATION_LABELS: Record<GazetteerEntry['name_attestation']['status'], string> = {
-  contemporary_documentary: 'Documentación coetánea',
-  near_contemporary: 'Documentación próxima en el tiempo',
-  later_documentary: 'Documentación posterior',
-  modern_conventional: 'Denominación moderna convencional',
-  reconstructed: 'Nombre analítico reconstruido',
-  uncertain: 'Atestación incierta',
-}
-
-const SURVIVAL_LABELS: Record<GazetteerEntry['survival']['status'], string> = {
-  surviving: 'Conservado',
-  partial: 'Conservación parcial',
-  lost: 'Desaparecido',
-  buried: 'Enterrado o cubierto',
-  landscape_continuity: 'Continuidad del paisaje o la trama',
-  unknown: 'Sin evaluar',
-  not_applicable: 'No aplicable',
-}
-
-const DEFENSIVE_ROLE_LABELS: Record<NonNullable<GazetteerEntry['defensive_context']>['role'], string> = {
-  outer_enclosure: 'Cerca exterior',
-  inner_enclosure: 'Cerca interior',
-  palatine_enclosure: 'Recinto palatino',
-  unknown: 'Relación defensiva incierta',
 }
 
 function DetailSection({ title, children }: { title: string; children: ReactNode }) {
