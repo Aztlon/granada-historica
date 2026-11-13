@@ -3,7 +3,7 @@
     "gaz.royal.alhambra": {
       "date_note": "Widely documented medieval palatine name",
       "attestation_note": "The mapped entity represents the palatine city within its walls.",
-      "survival_note": "The enclosure, architecture and landscape survive with multiple phases.",
+      "survival_note": "The surviving enclosure, architecture and landscape reflect multiple historical phases.",
       "notes": "Palatine city."
     },
     "gaz.royal.generalife": {
@@ -40,17 +40,17 @@
       "date_note": "Documented Nasrid foundation",
       "attestation_note": "Well-established functional and institutional name.",
       "survival_note": "Remains and an archaeological plot survive, with later reconstructions.",
-      "notes": "Mapped care facility."
+      "notes": "Care facility shown on the map."
     },
     "gaz.water.banuelo": {
       "date_note": "Transmitted Arabic name with debated chronology",
       "attestation_note": "Its identity as a medieval hammam is secure.",
       "survival_note": "The medieval bath survives with restorations.",
-      "notes": "Surviving water-related building."
+      "notes": "Surviving bath building."
     },
     "gaz.urban.albaicin": {
       "date_note": "Historical name with long continuity, applied here to the large urban sector",
-      "attestation_note": "It groups several nuclei and suburbs, rather than a single homogeneous unit.",
+      "attestation_note": "It comprises several settlement cores and suburbs, rather than a single homogeneous unit.",
       "survival_note": "Topography, the urban fabric and numerous elements survive, with alterations.",
       "notes": "Geometric derivation from three adjoining enclosures. The outer edge retains the audited Nasrid wall, and the inner edges are checked against Mapa 5 and the PEPRI. It does not correspond to the present administrative neighbourhood."
     },
